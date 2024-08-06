@@ -13,6 +13,7 @@
 #include <stdio.h>
 #include <math.h>
 
+
 extern struct __cmdline cmdline;
 
 /* 
@@ -28,14 +29,14 @@ int32_t OISL_ReadData(uart_info_t* device, uint8_t* read_data, uint8_t data_leng
     /* Wait until all data received or timeout occurs */
     bytes_available = uart_bytes_available(device);
     while((bytes_available < data_length) && (ms_timeout_counter < OISL_CFG_MS_TIMEOUT))
-    {
+    {   OS_printf("Dentro while line 31");
         ms_timeout_counter++;
         OS_TaskDelay(1);
         bytes_available = uart_bytes_available(device);
     }
 
     if (ms_timeout_counter < OISL_CFG_MS_TIMEOUT)
-    {
+    {   
         /* Limit bytes available */
         if (bytes_available > data_length)
         {
@@ -45,7 +46,8 @@ int32_t OISL_ReadData(uart_info_t* device, uint8_t* read_data, uint8_t data_leng
         /* Read data */
         bytes = uart_read_port(device, read_data, bytes_available);
         if (bytes != bytes_available)
-        {
+        {   
+            OS_printf("  OISL_ReadData: Bytes read != to requested! \n");
             #ifdef OISL_CFG_DEBUG
                 OS_printf("  OISL_ReadData: Bytes read != to requested! \n");
             #endif
@@ -53,7 +55,7 @@ int32_t OISL_ReadData(uart_info_t* device, uint8_t* read_data, uint8_t data_leng
         } /* uart_read */
     }
     else
-    {
+    {   OS_printf("Errore qui in OISL_ReadData.");
         status = OS_ERROR;
     } /* ms_timeout_counter */
 
@@ -210,7 +212,9 @@ int32_t OISL_RequestHK(uart_info_t* device, OISL_Device_HK_tlm_t* data)
 int32_t OISL_RequestData(uart_info_t* device, OISL_Device_Data_tlm_t* data)
 {
     int32_t status = OS_SUCCESS;
-    uint8_t read_data[OISL_DEVICE_DATA_SIZE];
+    // uint8_t read_data[OISL_DEVICE_DATA_SIZE]; //62
+    uint8_t read_data[14]; // the 6 doubles (48 bytes) are not considered.
+
 
     /* Command device to send HK */
     status = OISL_CommandDevice(device, OISL_DEVICE_REQ_DATA_CMD, 0);
@@ -219,7 +223,8 @@ int32_t OISL_RequestData(uart_info_t* device, OISL_Device_Data_tlm_t* data)
         /* Read HK data */
         status = OISL_ReadData(device, read_data, sizeof(read_data));
         if (status == OS_SUCCESS)
-        {
+        {   
+
             #ifdef OISL_CFG_DEBUG
                 OS_printf("  OISL_RequestData = ");
                 for (uint32_t i = 0; i < sizeof(read_data); i++)
@@ -260,7 +265,8 @@ int32_t OISL_RequestData(uart_info_t* device, OISL_Device_Data_tlm_t* data)
             }
         } 
         else
-        {
+        {   
+            OS_printf("  OISL_RequestData: Invalid data read! \n");
             #ifdef OISL_CFG_DEBUG
                 OS_printf("  OISL_RequestData: Invalid data read! \n");
             #endif 
@@ -268,12 +274,33 @@ int32_t OISL_RequestData(uart_info_t* device, OISL_Device_Data_tlm_t* data)
         } /* OISL_ReadData */
     }
     else
-    {
+    {   OS_printf("  OISL_RequestData: OISL_CommandDevice reported error %d \n", status);
         #ifdef OISL_CFG_DEBUG
             OS_printf("  OISL_RequestData: OISL_CommandDevice reported error %d \n", status);
         #endif 
     }
 
+    // Call the new submethod to get the ISL vectors
+    double backward_isl_vector[3];
+    double forward_isl_vector[3];
+    get_isl_vectors(forward_isl_vector, backward_isl_vector);
+
+    // OS_printf("Backward ISL Vector: %f, %f, %f\n", backward_isl_vector[0], backward_isl_vector[1], backward_isl_vector[2]);
+    // OS_printf("Forward ISL Vector: %f, %f, %f\n", forward_isl_vector[0], forward_isl_vector[1], forward_isl_vector[2]);
+
+    data->BACKWARD_ISL_X = backward_isl_vector[0];
+    data->BACKWARD_ISL_Y = backward_isl_vector[1];
+    data->BACKWARD_ISL_Z = backward_isl_vector[2];
+    data->FORWARD_ISL_X = forward_isl_vector[0];
+    data->FORWARD_ISL_Y = forward_isl_vector[1];
+    data->FORWARD_ISL_Z = forward_isl_vector[2];
+
+    return status;
+}
+
+// Submethod to get the forward and backward OISL vectors
+void get_isl_vectors(double* forward_ISL_vector, double* backward_ISL_vector)
+{
     // Call the Python script and get the ECI position vector of the forward and backward satellites
     FILE* fp;
     char buffer[128];
@@ -327,30 +354,38 @@ int32_t OISL_RequestData(uart_info_t* device, OISL_Device_Data_tlm_t* data)
     fscanf(file_in, "%lf %lf %lf", &x, &y, &z);
     fclose(file_in);
     double central_sat [] = {x/1000, y/1000, z/1000};
-    OS_printf("Central Sat ECI Position: [%f, %f, %f]\n", central_sat[0], central_sat[1], central_sat[2]);
-    OS_printf("FOrward Sat Position: [%f, %f, %f]\n", forward_satellite[0], forward_satellite[1], forward_satellite[2]);
-    OS_printf("Backward Sat Position: [%f, %f, %f]\n", backward_satellite[0], backward_satellite[1], backward_satellite[2]);
+    // OS_printf("Central Sat ECI Position: [%f, %f, %f]\n", central_sat[0], central_sat[1], central_sat[2]);
+    // OS_printf("FOrward Sat Position: [%f, %f, %f]\n", forward_satellite[0], forward_satellite[1], forward_satellite[2]);
+    // OS_printf("Backward Sat Position: [%f, %f, %f]\n", backward_satellite[0], backward_satellite[1], backward_satellite[2]);
 
-    // Calculate the OISL vector with the forward satellite
-    double OISL_vector_forward[] = {central_sat[0] - forward_satellite[0], central_sat[1] - forward_satellite[1], central_sat[2] - forward_satellite[2]};
-    double OISL_vector_backward[] = {central_sat[0] - backward_satellite[0], central_sat[1] - backward_satellite[1], central_sat[2] - backward_satellite[2]};
+    // Calculate the ISL vector with the forward satellite
+    double ISL_vector_forward[] = {central_sat[0] - forward_satellite[0], central_sat[1] - forward_satellite[1], central_sat[2] - forward_satellite[2]};
+    double ISL_vector_backward[] = {central_sat[0] - backward_satellite[0], central_sat[1] - backward_satellite[1], central_sat[2] - backward_satellite[2]};
     // OS_printf("OISL vector is [%f, %f, %f]\n", OISL_vector[0], OISL_vector[1], OISL_vector[2]);
 
     // Normalize the difference vector to get the unit vector
-    UNITV(OISL_vector_backward);
-    UNITV(OISL_vector_forward);
+    UNITV2(ISL_vector_backward);
+    UNITV2(ISL_vector_forward);
 
     // Print the normalized vector
-    OS_printf("Normalized OISL vector forward: [%f, %f, %f]\n", OISL_vector_forward[0], OISL_vector_forward[1], OISL_vector_forward[2]);
-    OS_printf("Normalized OISL vector backward: [%f, %f, %f]\n", OISL_vector_backward[0], OISL_vector_backward[1], OISL_vector_backward[2]);
+    // OS_printf("Normalized ISL vector forward: [%f, %f, %f]\n", ISL_vector_forward[0], ISL_vector_forward[1], ISL_vector_forward[2]);
+    // OS_printf("Normalized ISL vector backward: [%f, %f, %f]\n", ISL_vector_backward[0], ISL_vector_backward[1], ISL_vector_backward[2]);
 
-    // data->OISL_vector = OISL_vector_backward;
-    
-    return status;
+    // Assign the normalized vectors to the output parameters
+    backward_ISL_vector[0] = ISL_vector_backward[0];
+    backward_ISL_vector[1] = ISL_vector_backward[1];
+    backward_ISL_vector[2] = ISL_vector_backward[2];
+
+    forward_ISL_vector[0] = ISL_vector_forward[0];
+    forward_ISL_vector[1] = ISL_vector_forward[1];
+    forward_ISL_vector[2] = ISL_vector_forward[2];
+
+
 }
 
+
 /*  Normalize a 3-vector if it is non-zero.                           */
-void UNITV(double V[3])
+void UNITV2(double V[3])
 {
       double A;
 

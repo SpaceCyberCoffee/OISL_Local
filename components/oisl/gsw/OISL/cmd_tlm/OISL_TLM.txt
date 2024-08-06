@@ -42,3 +42,9 @@ TELEMETRY OISL OISL_DATA_TLM LITTLE_ENDIAN "OISL_Device_tlm_t"
     GENERIC_READ_CONVERSION_START FLOAT 32
       (packet.read("RAW_OISL_Z") - 32768.0)/32767.0
     GENERIC_READ_CONVERSION_END
+  APPEND_ITEM    BACKWARD_ISL_VECTOR_X      64 FLOAT        "ISL_vector x component backward satellite"
+  APPEND_ITEM    BACKWARD_ISL_VECTOR_Y      64 FLOAT        "ISL_vector y component backward satellite"
+  APPEND_ITEM    BACKWARD_ISL_VECTOR_Z      64 FLOAT        "ISL_vector z component backward satellite"
+  APPEND_ITEM    FORWARD_ISL_VECTOR_X       64 FLOAT        "ISL_vector x component forward satellite"
+  APPEND_ITEM    FORWARD_ISL_VECTOR_Y       64 FLOAT        "ISL_vector y component forward satellite"
+  APPEND_ITEM    FORWARD_ISL_VECTOR_Z       64 FLOAT        "ISL_vector z component forward satellite"

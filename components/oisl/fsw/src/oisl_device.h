@@ -59,7 +59,12 @@ typedef struct
     uint16_t  DeviceDataX;
     uint16_t  DeviceDataY;
     uint16_t  DeviceDataZ;
-
+    double    BACKWARD_ISL_X;
+    double    BACKWARD_ISL_Y;
+    double    BACKWARD_ISL_Z;
+    double    FORWARD_ISL_X;
+    double    FORWARD_ISL_Y;
+    double    FORWARD_ISL_Z;
 } __attribute__((packed)) OISL_Device_Data_tlm_t;
 #define OISL_DEVICE_DATA_LNGTH sizeof ( OISL_Device_Data_tlm_t )
 #define OISL_DEVICE_DATA_SIZE OISL_DEVICE_DATA_LNGTH + OISL_DEVICE_HDR_TRL_LEN
@@ -72,7 +77,8 @@ int32_t OISL_ReadData(uart_info_t* device, uint8_t* read_data, uint8_t data_leng
 int32_t OISL_CommandDevice(uart_info_t* device, uint8_t cmd, uint32_t payload);
 int32_t OISL_RequestHK(uart_info_t* device, OISL_Device_HK_tlm_t* data);
 int32_t OISL_RequestData(uart_info_t* device, OISL_Device_Data_tlm_t* data);
-void UNITV(double V[3]);
+void get_isl_vectors(double* forward_ISL_vector, double* backward_ISL_vector);
+void UNITV2(double V[3]);
 
 
 #endif /* _OISL_DEVICE_H_ */

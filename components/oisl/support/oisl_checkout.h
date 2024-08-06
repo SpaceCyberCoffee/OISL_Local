@@ -46,7 +46,7 @@
 #define CMD_EXIT     1
 #define CMD_NOOP     2
 #define CMD_HK       3
-#define CMD_OISL   4
+#define CMD_OISL     4
 #define CMD_CFG      5
 
 

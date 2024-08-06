@@ -6,8 +6,8 @@
 */
 #define OISL_CFG
 /* Note: NOS3 uart requires matching handle and bus number */
-#define OISL_CFG_STRING           "/dev/usart_16"
-#define OISL_CFG_HANDLE           16
+#define OISL_CFG_STRING           "/dev/usart_8"
+#define OISL_CFG_HANDLE           8
 #define OISL_CFG_BAUDRATE_HZ      115200
 #define OISL_CFG_MS_TIMEOUT       250
 #define OISL_CFG_DEBUG
