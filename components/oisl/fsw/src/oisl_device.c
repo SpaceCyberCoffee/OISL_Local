@@ -10,7 +10,10 @@
 ** Include Files
 */
 #include "oisl_device.h"
+#include <stdio.h>
+#include <math.h>
 
+extern struct __cmdline cmdline;
 
 /* 
 ** Generic read data from device
@@ -270,5 +273,91 @@ int32_t OISL_RequestData(uart_info_t* device, OISL_Device_Data_tlm_t* data)
             OS_printf("  OISL_RequestData: OISL_CommandDevice reported error %d \n", status);
         #endif 
     }
+
+    // Call the Python script and get the ECI position vector of the forward and backward satellites
+    FILE* fp;
+    char buffer[128];
+    char command[256];
+    const char* tle_file_path_forward = "/home/jstar/Desktop/github-nos3/components/oisl/fsw/src/forward_sat.txt";
+    const char* tle_file_path_backward = "/home/jstar/Desktop/github-nos3/components/oisl/fsw/src/backward_sat.txt";
+    const char* tle_files [] = {tle_file_path_backward, tle_file_path_forward};
+    // Variable to store the position vectors
+    double eci_position[2][3]; // 2 satellites, each with a 3D position vector, back and for
+
+
+    // Retrieve current SIM time
+    CFE_TIME_SysTime_t nowT = CFE_TIME_GetTime();
+    uint32 seconds = nowT.Seconds;
+    uint32 subseconds = nowT.Subseconds;
+
+    // Convert the time to double
+    double pd = (double)seconds + ((double)subseconds / 4294967296.0); // 4294967296.0 = 2^32
+    // OS_printf("TOH TIME PD %f\n", pd);
+
+    for (int i=0; i<2; i++) {
+        // Construct the command with arguments
+        snprintf(command, sizeof(command),
+             "python3 /home/jstar/Desktop/github-nos3/components/oisl/fsw/src/orbital_propagation.py %s %f",
+             tle_files[i], pd);
+
+        // Run the Python script and capture its output
+        fp = popen(command, "r");
+        if (fp == NULL) {
+            fprintf(stderr, "Failed to run Python script\n");
+        }
+    
+        // Read the output and parse the position vector
+        while (fgets(buffer, sizeof(buffer) - 1, fp) != NULL) {
+            if (sscanf(buffer, "ECI propagated Position: [%lf, %lf, %lf]", &eci_position[i][0], &eci_position[i][1], &eci_position[i][2]) == 3) { 
+                // Successfully parsed the position vector
+                // OS_printf("Got the propagation");
+            } else {
+                // Print other output lines if any
+                printf("%s", buffer);
+            }
+        }
+        pclose(fp);
+    }
+    double backward_satellite [] = {eci_position[0][0], eci_position[0][1], eci_position[0][2]};
+    double forward_satellite [] = {eci_position[1][0], eci_position[1][1], eci_position[1][2]};
+
+    // Retrieve the ECI GPS position of this satellite
+    FILE *file_in = fopen("/home/jstar/Desktop/github-nos3/components/oisl/fsw/src/ECI_position.txt", "r");
+    double x, y, z;
+    fscanf(file_in, "%lf %lf %lf", &x, &y, &z);
+    fclose(file_in);
+    double central_sat [] = {x/1000, y/1000, z/1000};
+    OS_printf("Central Sat ECI Position: [%f, %f, %f]\n", central_sat[0], central_sat[1], central_sat[2]);
+    OS_printf("FOrward Sat Position: [%f, %f, %f]\n", forward_satellite[0], forward_satellite[1], forward_satellite[2]);
+    OS_printf("Backward Sat Position: [%f, %f, %f]\n", backward_satellite[0], backward_satellite[1], backward_satellite[2]);
+
+    // Calculate the OISL vector with the forward satellite
+    double OISL_vector_forward[] = {central_sat[0] - forward_satellite[0], central_sat[1] - forward_satellite[1], central_sat[2] - forward_satellite[2]};
+    double OISL_vector_backward[] = {central_sat[0] - backward_satellite[0], central_sat[1] - backward_satellite[1], central_sat[2] - backward_satellite[2]};
+    // OS_printf("OISL vector is [%f, %f, %f]\n", OISL_vector[0], OISL_vector[1], OISL_vector[2]);
+
+    // Normalize the difference vector to get the unit vector
+    UNITV(OISL_vector_backward);
+    UNITV(OISL_vector_forward);
+
+    // Print the normalized vector
+    OS_printf("Normalized OISL vector forward: [%f, %f, %f]\n", OISL_vector_forward[0], OISL_vector_forward[1], OISL_vector_forward[2]);
+    OS_printf("Normalized OISL vector backward: [%f, %f, %f]\n", OISL_vector_backward[0], OISL_vector_backward[1], OISL_vector_backward[2]);
+
+    // data->OISL_vector = OISL_vector_backward;
+    
     return status;
+}
+
+/*  Normalize a 3-vector if it is non-zero.                           */
+void UNITV(double V[3])
+{
+      double A;
+
+      A=sqrt(V[0]*V[0]+V[1]*V[1]+V[2]*V[2]);
+      if (A > 0.0) {
+         V[0]/=A;
+         V[1]/=A;
+         V[2]/=A;
+      }
 }

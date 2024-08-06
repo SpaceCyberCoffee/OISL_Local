@@ -72,6 +72,7 @@ int32_t OISL_ReadData(uart_info_t* device, uint8_t* read_data, uint8_t data_leng
 int32_t OISL_CommandDevice(uart_info_t* device, uint8_t cmd, uint32_t payload);
 int32_t OISL_RequestHK(uart_info_t* device, OISL_Device_HK_tlm_t* data);
 int32_t OISL_RequestData(uart_info_t* device, OISL_Device_Data_tlm_t* data);
+void UNITV(double V[3]);
 
 
 #endif /* _OISL_DEVICE_H_ */
