@@ -175,6 +175,26 @@
         </simulator>
 
         <simulator>
+            <name>oisl_sim</name>
+            <active>true</active>
+            <library>liboisl_sim.so</library>
+            <hardware-model>
+                <type>OISL</type>
+                <connections>
+                    <connection><type>command</type>
+                        <bus-name>command</bus-name>
+                        <node-name>oisl-command</node-name>
+                    </connection>
+                    <connection><type>usart</type>
+                        <bus-name>usart_8</bus-name>
+                        <node-port>8</node-port>
+                    </connection>
+                </connections>
+            </hardware-model>
+        </simulator> 
+
+
+        <simulator>
             <name>camsim</name>
             <active>true</active>
             <library>libcam_sim.so</library>
@@ -420,7 +440,8 @@
                     <max-trq-mtb-2>1.42</max-trq-mtb-2>
                 </params>
             </hardware-model>
-        </simulator>
+        </simulator> 
+
 
         <simulator>
             <name>truth42sim</name>

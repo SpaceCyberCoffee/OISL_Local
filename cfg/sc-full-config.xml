@@ -60,6 +60,10 @@
 		<torquer>
 			<enable>true</enable>
 		</torquer>
+		<oisl>
+        	<enable>true</enable>
+		</oisl>
+
 	</components>
 	<gui>
 		<enable>true</enable>

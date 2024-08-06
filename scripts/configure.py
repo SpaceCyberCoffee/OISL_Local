@@ -79,6 +79,7 @@ else:
         sc_st_en = sc_root.find('components/st/enable').text
         sc_syn_en = sc_root.find('components/syn/enable').text
         sc_torquer_en = sc_root.find('components/torquer/enable').text
+        sc_oisl_en = sc_root.find('components/oisl/enable').text
 
         sc_gui_en = sc_root.find('gui/enable').text
         sc_orbit_tipoff_x = sc_root.find('orbit/tipoff_x').text
@@ -114,6 +115,7 @@ else:
             st_line = ""
             syn_line = ""
             torquer_line = ""
+            oisl_line = ""
             
             # Parse lines
             for line in lines:
@@ -177,8 +179,12 @@ else:
                 if line.find('TORQUER,') != -1:
                     if (sc_torquer_en == 'true'):
                         torquer_line = line
+                if line.find('OISL,') != -1:
+                    if (sc_oisl_en == 'true'):
+                        oisl_line = line
 
         # Modify startup script per spacecraft configuration
+        lines.insert(sc_startup_eof, oisl_line)
         lines.insert(sc_startup_eof, "\n")
         lines.insert(sc_startup_eof, torquer_line)
         lines.insert(sc_startup_eof, syn_line)
@@ -266,6 +272,7 @@ else:
         sample_index = 999
         st_index = 999
         torquer_index = 999
+        oisl_index = 999
 
         with open('./cfg/InOut/Inp_IPC.txt', 'r') as fp:
             lines = fp.readlines()
@@ -312,6 +319,9 @@ else:
                 if line.find('Torquer IPC') != -1:
                     if (lines.index(line)) < torquer_index:
                         torquer_index = lines.index(line) + 1
+                if line.find('Oisl IPC') != -1:
+                    if (lines.index(line)) < oisl_index:
+                        oisl_index = lines.index(line) + 1
         
         ipc_off = 'OFF                                     ! IPC Mode (OFF,TX,RX,TXRX,ACS,WRITEFILE,READFILE)\n'
         if (sc_css_en != 'true'):
@@ -337,6 +347,8 @@ else:
             lines[st_index] = ipc_off
         if (sc_torquer_en != 'true'):
             lines[torquer_index] = ipc_off
+        if (sc_oisl_en != 'true'):
+            lines[oisl_index] = ipc_off
 
         with open('./cfg/build/InOut/Inp_IPC.txt', 'w') as fp:
             lines = "".join(lines)
@@ -359,6 +371,7 @@ else:
         sample_index = 999
         st_index = 999
         torquer_index = 999
+        oisl_index = 999
 
         with open('./cfg/build/sims/nos3-simulator.xml', 'r') as fp:
             lines = fp.readlines()
@@ -405,6 +418,9 @@ else:
                 if line.find('generic_torquer_sim</name>') != -1:
                     if (lines.index(line)) < torquer_index:
                         torquer_index = lines.index(line) + 1
+                if line.find('oisl_sim</name>') != -1:
+                    if (lines.index(line)) < oisl_index:
+                        oisl_index = lines.index(line) + 1
 
         sim_disabled = '            <active>false</active>\n'
         if (sc_cam_en != 'true'):
@@ -433,6 +449,8 @@ else:
             lines[st_index] = sim_disabled
         if (sc_torquer_en != 'true'):
             lines[torquer_index] = sim_disabled
+        if (sc_oisl_en != 'true'):
+            lines[oisl_index] = sim_disabled
 
         with open('./cfg/build/sims/nos3-simulator.xml', 'w') as fp:
             lines = "".join(lines)

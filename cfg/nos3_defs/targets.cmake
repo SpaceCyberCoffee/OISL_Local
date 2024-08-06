@@ -117,6 +117,8 @@ list(APPEND MISSION_GLOBAL_APPLIST
         novatel_oem615/fsw
         sample/fsw
         syn/fsw
+        oisl/fsw
+
 )
 
 # Create Application Platform Include List

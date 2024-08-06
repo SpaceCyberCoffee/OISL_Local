@@ -62,6 +62,8 @@
 #include "sample_msgids.h"
 #include "generic_adcs_msgids.h"
 #include "generic_star_tracker_msgids.h"
+#include "oisl_msgids.h"
+
 
 #include "syn_msgids.h"
 
@@ -127,6 +129,8 @@ TO_LAB_Subs_t TO_LAB_Subs =
         {CFE_SB_MSGID_WRAP_VALUE(GENERIC_ADCS_DO_MID),          {0,0},  32},
         {CFE_SB_MSGID_WRAP_VALUE(GENERIC_STAR_TRACKER_HK_TLM_MID),{0,0},  32},
         {CFE_SB_MSGID_WRAP_VALUE(GENERIC_STAR_TRACKER_DEVICE_TLM_MID),{0,0},  32},
+        {CFE_SB_MSGID_WRAP_VALUE(OISL_HK_TLM_MID),            {0,0},  32},
+        {CFE_SB_MSGID_WRAP_VALUE(OISL_DEVICE_TLM_MID),        {0,0},  32},
 
         {CFE_SB_MSGID_WRAP_VALUE(SYN_HK_TLM_MID),           {0,0},  32},
 
