@@ -352,8 +352,8 @@ SCH_ScheduleEntry_t SCH_DefaultScheduleTable[SCH_TABLE_ENTRIES] =
   {  SCH_ENABLED,  SCH_ACTIVITY_SEND_MSG,  5,  0, 55, SCH_GROUP_CFE_HK },   /* Sample HK Request */
   {  SCH_ENABLED,  SCH_ACTIVITY_SEND_MSG,  1,  0, 56, SCH_GROUP_CFE_HK },   /* Sample Data Request */
   {  SCH_ENABLED,  SCH_ACTIVITY_SEND_MSG,  1,  0, 57, SCH_GROUP_CFE_HK },   /* SYN_APP Data Request */                                        
-  {  SCH_ENABLED,  SCH_ACTIVITY_SEND_MSG,  5,  0, 58, SCH_GROUP_CFE_HK },   /* OISL HK Request */
-  {  SCH_ENABLED,  SCH_ACTIVITY_SEND_MSG,  1,  0, 59, SCH_GROUP_CFE_HK },   /* OISL Data Request */                                        
+  {  SCH_ENABLED,  SCH_ACTIVITY_SEND_MSG,  5,  0, 58, SCH_GROUP_CFS_HK },   /* OISL HK Request */
+  {  SCH_ENABLED,  SCH_ACTIVITY_SEND_MSG,  1,  0, 59, SCH_GROUP_CFS_HK },   /* OISL Data Request */                                        
 
   /* slot #36 */
   {  SCH_ENABLED, SCH_ACTIVITY_SEND_MSG,  1,  0, 23, SCH_GROUP_CFS_HK },  /* DS Wakeup */
