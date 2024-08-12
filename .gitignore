@@ -3,6 +3,7 @@
 #
 .vagrant
 .vscode
+.history
 
 #
 # Build Files
