@@ -431,7 +431,7 @@ void OISL_ReportDeviceTelemetry(void)
     {
         status = OISL_RequestData(&OISL_AppData.OislUart, (OISL_Device_Data_tlm_t*) &OISL_AppData.DevicePkt.Oisl);
         if (status == OS_SUCCESS)
-        {
+        {   
             OISL_AppData.HkTelemetryPkt.DeviceCount++;
             /* Time stamp and publish data telemetry */
             CFE_SB_TimeStampMsg((CFE_MSG_Message_t *) &OISL_AppData.DevicePkt);

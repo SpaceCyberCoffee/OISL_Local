@@ -10,6 +10,6 @@
 1.0 0.0 0.0 0.1 0.0 0.0 0.0               ! sside, vmax, cmd_wbn
 !!!!!!!!!!!!!!! AC OISL !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 0.0047 0.0047 0.0047 0.1329 0.1329 0.1329 ! Kp, Kr gains
-0.0 1.0 0.0 0.1 0.0 0.0 0.0               ! sside, vmax, cmd_wbn
+0.0 1.0 0.0 0.0 -1.0 0.0 0.1 0.0 0.0 0.0  ! sside_F, sside_B, vmax, cmd_wbn
 !!!!!!!!!!!!!!! AC Momentum Management !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 1.0 4.096E-6 0.1 0.5                      ! Kb, Bfield range, wheel capacity fraction below which MM disabled, fraction above which enabled

@@ -29,7 +29,7 @@ int32_t OISL_ReadData(uart_info_t* device, uint8_t* read_data, uint8_t data_leng
     /* Wait until all data received or timeout occurs */
     bytes_available = uart_bytes_available(device);
     while((bytes_available < data_length) && (ms_timeout_counter < OISL_CFG_MS_TIMEOUT))
-    {   OS_printf("Dentro while line 31");
+    {   
         ms_timeout_counter++;
         OS_TaskDelay(1);
         bytes_available = uart_bytes_available(device);
@@ -213,7 +213,7 @@ int32_t OISL_RequestData(uart_info_t* device, OISL_Device_Data_tlm_t* data)
 {
     int32_t status = OS_SUCCESS;
     // uint8_t read_data[OISL_DEVICE_DATA_SIZE]; //62
-    uint8_t read_data[14]; // the 6 doubles (48 bytes) are not considered.
+    uint8_t read_data[10]; // the 6 doubles (48 bytes) are not considered.
 
 
     /* Command device to send HK */
@@ -237,31 +237,13 @@ int32_t OISL_RequestData(uart_info_t* device, OISL_Device_Data_tlm_t* data)
             /* Verify data header and trailer */
             if ((read_data[0]  == OISL_DEVICE_HDR_0)     && 
                 (read_data[1]  == OISL_DEVICE_HDR_1)     && 
-                (read_data[12] == OISL_DEVICE_TRAILER_0) && 
-                (read_data[13] == OISL_DEVICE_TRAILER_1) )
+                (read_data[8] == OISL_DEVICE_TRAILER_0) && 
+                (read_data[9] == OISL_DEVICE_TRAILER_1) )
             {
                 data->DeviceCounter  = read_data[2] << 24;
                 data->DeviceCounter |= read_data[3] << 16;
                 data->DeviceCounter |= read_data[4] << 8;
                 data->DeviceCounter |= read_data[5];
-
-                data->DeviceDataX  = read_data[6] << 8;
-                data->DeviceDataX |= read_data[7];
-
-                data->DeviceDataY  = read_data[8] << 8;
-                data->DeviceDataY |= read_data[9];
-                
-                data->DeviceDataZ  = read_data[10] << 8;
-                data->DeviceDataZ |= read_data[11];
-
-                #ifdef OISL_CFG_DEBUG
-                    OS_printf("  Header  = 0x%02x%02x  \n", read_data[0], read_data[1]);
-                    OS_printf("  Counter = 0x%08x, %d  \n", data->DeviceCounter, data->DeviceCounter);
-                    OS_printf("  Data X  = 0x%04x, %d  \n", data->DeviceDataX, data->DeviceDataX);
-                    OS_printf("  Data Y  = 0x%04x, %d  \n", data->DeviceDataY, data->DeviceDataY);
-                    OS_printf("  Data Z  = 0x%04x, %d  \n", data->DeviceDataZ, data->DeviceDataZ);
-                    OS_printf("  Trailer = 0x%02x%02x  \n", read_data[12], read_data[13]);
-                #endif
             }
         } 
         else
@@ -294,6 +276,14 @@ int32_t OISL_RequestData(uart_info_t* device, OISL_Device_Data_tlm_t* data)
     data->FORWARD_ISL_X = forward_isl_vector[0];
     data->FORWARD_ISL_Y = forward_isl_vector[1];
     data->FORWARD_ISL_Z = forward_isl_vector[2];
+
+    /* Read Forward Alignment */
+    data->ForwardAlignment = read_data[6];
+
+    /* Read Backward Alignment */
+    data->BackwardAlignment = read_data[7];
+
+    // OS_printf("FOrward alignment: %u und backward alignment: %u\n", data->ForwardAlignment, data->BackwardAlignment);
 
     return status;
 }

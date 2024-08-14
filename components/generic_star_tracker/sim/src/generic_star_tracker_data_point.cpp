@@ -35,8 +35,8 @@ namespace Nos3
             ** 42 data stream defined in `42/Source/IPC/SimWriteToSocket.c`
             */
             std::string valid_key, qn_key;
-            valid_key.append("SC[").append(std::to_string(_sc)).append("].AC.ST[").append(std::to_string(_st)).append("]"); // SC[N].AC.ST[M].qn / Valid
-            qn_key = valid_key;
+            valid_key.append("SC[").append(std::to_string(_sc)).append("].AC.ST[").append(std::to_string(_st)).append("]"); // SC[N].B[0].qn / Valid
+            qn_key.append("SC[").append(std::to_string(_sc)).append("].B[0]");
             valid_key.append(".Valid");
             qn_key.append(".qn");
 

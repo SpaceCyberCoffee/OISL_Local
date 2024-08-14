@@ -19,7 +19,7 @@ static void AD_oisl(Generic_ADCS_DI_OISL_Tlm_Payload_t *DI_OISL, const Generic_A
 static void AD_to_GNC(const Generic_ADCS_AD_Tlm_Payload_t *AD, Generic_ADCS_GNC_Tlm_Payload_t *GNC);
 static void AC_bdot(Generic_ADCS_GNC_Tlm_Payload_t *GNC, Generic_ADCS_AC_Bdot_Tlm_t *AC_bdot);
 static void AC_sunsafe(Generic_ADCS_GNC_Tlm_Payload_t *GNC, Generic_ADCS_AC_Sunsafe_Tlm_t *ACS);
-static void AC_oisl(Generic_ADCS_GNC_Tlm_Payload_t *GNC, Generic_ADCS_AC_OISL_Tlm_t *AC_OISL);
+static void AC_oisl(Generic_ADCS_GNC_Tlm_Payload_t *GNC, Generic_ADCS_AC_OISL_Tlm_t *AC_OISL, const char *F_or_B);
 static void AC_h_mgmt(Generic_ADCS_GNC_Tlm_Payload_t *GNC);
 
 void Generic_ADCS_init_attitude_determination_and_attitude_control(FILE *in, Generic_ADCS_AD_Tlm_Payload_t *AD, 
@@ -50,7 +50,8 @@ void Generic_ADCS_init_attitude_determination_and_attitude_control(FILE *in, Gen
     fscanf(in, "%[^\n]%[\n]", junk, &newline);
     fscanf(in, "%lf %lf %lf %lf %lf %lf%[^\n]%[\n]", &ACS->OISL.Kp[0], &ACS->OISL.Kp[1], &ACS->OISL.Kp[2], 
         &ACS->OISL.Kr[0], &ACS->OISL.Kr[1], &ACS->OISL.Kr[2], junk, &newline);
-    fscanf(in, "%lf %lf %lf %lf %lf %lf %lf%[^\n]%[\n]", &ACS->OISL.sside[0], &ACS->OISL.sside[1], &ACS->OISL.sside[2], &ACS->OISL.vmax, 
+    fscanf(in, "%lf %lf %lf %lf %lf %lf %lf %lf %lf %lf%[^\n]%[\n]", &ACS->OISL.sside_F[0], &ACS->OISL.sside_F[1], &ACS->OISL.sside_F[2], 
+    &ACS->OISL.sside_B[0], &ACS->OISL.sside_B[1], &ACS->OISL.sside_B[2], &ACS->OISL.vmax, 
         &ACS->OISL.cmd_wbn[0], &ACS->OISL.cmd_wbn[1], &ACS->OISL.cmd_wbn[2], junk, &newline);
     for (int i = 0; i < 3; i++) {
         ACS->OISL.therr[i] = ACS->OISL.werr[i] = ACS->OISL.Tcmd[i] = 0;
@@ -81,8 +82,12 @@ void Generic_ADCS_execute_attitude_determination_and_attitude_control(const Gene
         AC_sunsafe(GNC, &ACS->Sunsafe);
         break;
 
-    case OISL_MODE:
-        AC_oisl(GNC, &ACS->OISL);
+    case OISL_MODE_F:
+        AC_oisl(GNC, &ACS->OISL, "FORWARD");
+        break;
+
+    case OISL_MODE_B:
+        AC_oisl(GNC, &ACS->OISL, "BACKWARD");
         break;
 
     case PASSIVE_MODE:
@@ -97,10 +102,10 @@ void Generic_ADCS_execute_attitude_determination_and_attitude_control(const Gene
 
 static void AD_oisl(Generic_ADCS_DI_OISL_Tlm_Payload_t *DI_OISL, const Generic_ADCS_DI_St_Tlm_Payload_t *DI_St, Generic_ADCS_AD_ISL_Tlm_Payload_t *AD_ISL)
 {  
-   QxV(DI_St->q, DI_OISL->ISL_vector, DI_OISL->ISL_vector_Body); // convert from sensor frame to body frame
-//    OS_printf("AD oisl: %f %f", DI_St->q[0], DI_St->q[3]); 
-   for (int i = 0; i < 3; i++) AD_ISL->isl[i] = DI_OISL->ISL_vector_Body[i];
-//    OS_printf("AD oisl: %f %f", DI_OISL->ISL_vector_Body[0], DI_OISL->ISL_vector[0]); 
+   QxV(DI_St->q, DI_OISL->ISL_vector_F, DI_OISL->ISL_vector_Body_F); // convert from sensor frame to body frame
+   QxV(DI_St->q, DI_OISL->ISL_vector_B, DI_OISL->ISL_vector_Body_B); // convert from sensor frame to body frame
+   for (int i = 0; i < 3; i++) AD_ISL->isl_F[i] = DI_OISL->ISL_vector_Body_F[i];
+   for (int i = 0; i < 3; i++) AD_ISL->isl_B[i] = DI_OISL->ISL_vector_Body_B[i];
 }
 
 static void AD_imu(const Generic_ADCS_DI_Imu_Tlm_Payload_t *DI_IMU, Generic_ADCS_AD_Imu_Tlm_Payload_t *AD_IMU)
@@ -166,7 +171,8 @@ static void AD_to_GNC(const Generic_ADCS_AD_Tlm_Payload_t *AD, Generic_ADCS_GNC_
         GNC->bvb[i] = AD->Mag.bvb[i];
         GNC->svb[i] = AD->Sol.svb[i];
         GNC->wbn[i] = AD->Imu.wbn[i];
-        GNC->ISL_vector[i] = AD->Isl.isl[i];
+        GNC->ISL_vector_F[i] = AD->Isl.isl_F[i];
+        GNC->ISL_vector_B[i] = AD->Isl.isl_B[i];
     }
     GNC->SunValid = AD->Sol.SunValid;
 }
@@ -265,60 +271,86 @@ static void AC_sunsafe(Generic_ADCS_GNC_Tlm_Payload_t *GNC, Generic_ADCS_AC_Suns
 
 }
 
-static void AC_oisl(Generic_ADCS_GNC_Tlm_Payload_t *GNC, Generic_ADCS_AC_OISL_Tlm_t *ACS)
+static void AC_oisl(Generic_ADCS_GNC_Tlm_Payload_t *GNC, Generic_ADCS_AC_OISL_Tlm_t *ACS, const char *F_or_B)
 {
    int i;
    double u1[3] = {0.0, 0.0, 0.0}, err_b[3] = {0.0, 0.0, 0.0};      /* angle error calculation parameteres */
    double temp_sside[3] = {0.0, 0.0, 0.0};
    double SoS = 0.0;
 
-   /* .. Form attitude error signals */
-   SoS = VoV(GNC->ISL_vector, ACS->sside);
-   // printf("Scalar product between ISL V and desired b2 (should be close to 1): %f\n", SoS);
-   if ((SoS > (EPS - 1.0)) && (SoS < (1.0 - EPS))) {
-      VxV(GNC->ISL_vector, ACS->sside, ACS->therr);
-   }
-   else if (SoS >= (1.0 - EPS)) {
-      ACS->therr[0] = 0.0;
-      ACS->therr[1] = 0.0;
-      ACS->therr[2] = 0.0;
-   }
-   else {
-      err_b[0] = ACS->sside[1];
-      err_b[1] = ACS->sside[2];
-      err_b[2] = ACS->sside[0];
-      if (fabs(err_b[0] - err_b[1]) < EPS && fabs(err_b[0] - err_b[2]) < EPS) {
-         err_b[0] = -err_b[0];
-      }
-      VxV(ACS->sside, err_b, temp_sside);
-      VxV(GNC->ISL_vector, temp_sside, ACS->therr);
-   }
-      
-   /* .. Closed-loop attitude control - PD Method */
-   for(i = 0; i < 3; i++) {
-      /* Clip attitude slew rates */
-      u1[i] = Limit(ACS->Kp[i] / ACS->Kr[i] * ACS->therr[i], -ACS->vmax,ACS->vmax);
-      ACS->werr[i] = GNC->wbn[i] - ACS->cmd_wbn[i];
-      ACS->Tcmd[i] = -ACS->Kr[i] * (u1[i] + ACS->werr[i]);
-   }
+    // Pointers to either forward or backward sside and ISL_vector based on F_or_B
+    double *selected_sside;
+    double *selected_ISL_vector;
 
-   /* .. Apply Torque Command */
-   for(i = 0; i < 3; i++) {
-      GNC->Tcmd[i] = -ACS->Tcmd[i];
-   }
+    double SoS_F = VoV(GNC->ISL_vector_F, ACS->sside_F);
+    double SoS_B = VoV(GNC->ISL_vector_B, ACS->sside_B);
 
-   if (GNC->HmgmtOn) {
-      AC_h_mgmt(GNC);
-      for(i = 0; i < 3; i++) {
-      GNC->Mcmd[i] = GNC->Hmgmt.Mcmd[i];
-      }
-   }
-   else {
-      for(i = 0; i < 3; i++) {
-         GNC->Mcmd[i] = 0.0;
-      }
-   }
+    /* Select the appropriate sside and ISL_vector based on F_or_B */
+    if (strcmp(F_or_B, "FORWARD") == 0) {
+        selected_sside = ACS->sside_F;
+        selected_ISL_vector = GNC->ISL_vector_F;
+        SoS = SoS_F;
+    } else {
+        selected_sside = ACS->sside_B;
+        selected_ISL_vector = GNC->ISL_vector_B;
+        SoS = SoS_B;
+    }
 
+    /* Test writing to a file to be read by OISL HW model */
+    char *filename_F = "/home/jstar/Desktop/github-nos3/sims/build/bin/VoV_FORWARD.txt";
+    FILE *fp_F = fopen(filename_F, "w");
+    fprintf(fp_F, "%f", SoS_F);
+    fclose(fp_F);
+
+    char *filename_B = "/home/jstar/Desktop/github-nos3/sims/build/bin/VoV_BACKWARD.txt";
+    FILE *fp_B = fopen(filename_B, "w");
+    fprintf(fp_B, "%f", SoS_B);
+    fclose(fp_B);
+
+    // printf("Scalar product between ISL V and desired b2 (should be close to 1): %f\n", SoS);
+    if ((SoS > (EPS - 1.0)) && (SoS < (1.0 - EPS))) {
+        VxV(selected_ISL_vector, selected_sside, ACS->therr);
+    }
+    else if (SoS >= (1.0 - EPS)) {
+        ACS->therr[0] = 0.0;
+        ACS->therr[1] = 0.0;
+        ACS->therr[2] = 0.0;
+    }
+    else {
+        err_b[0] = selected_sside[1];
+        err_b[1] = selected_sside[2];
+        err_b[2] = selected_sside[0];
+        if (fabs(err_b[0] - err_b[1]) < EPS && fabs(err_b[0] - err_b[2]) < EPS) {
+            err_b[0] = -err_b[0];
+        }
+        VxV(selected_sside, err_b, temp_sside);
+        VxV(selected_ISL_vector, temp_sside, ACS->therr);
+    }
+
+    /* .. Closed-loop attitude control - PD Method */
+    for(i = 0; i < 3; i++) {
+        /* Clip attitude slew rates */
+        u1[i] = Limit(ACS->Kp[i] / ACS->Kr[i] * ACS->therr[i], -ACS->vmax, ACS->vmax);
+        ACS->werr[i] = GNC->wbn[i] - ACS->cmd_wbn[i];
+        ACS->Tcmd[i] = -ACS->Kr[i] * (u1[i] + ACS->werr[i]);
+    }
+
+    /* .. Apply Torque Command */
+    for(i = 0; i < 3; i++) {
+        GNC->Tcmd[i] = -ACS->Tcmd[i];
+    }
+
+    if (GNC->HmgmtOn) {
+        AC_h_mgmt(GNC);
+        for(i = 0; i < 3; i++) {
+            GNC->Mcmd[i] = GNC->Hmgmt.Mcmd[i];
+        }
+    }
+    else {
+        for(i = 0; i < 3; i++) {
+            GNC->Mcmd[i] = 0.0;
+        }
+    }
 }
 
 

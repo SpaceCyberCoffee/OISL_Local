@@ -165,28 +165,11 @@ void Generic_ADCS_ingest_generic_OISL(CFE_MSG_Message_t * Msg, Generic_ADCS_DI_O
 {
     OISL_Device_tlm_t *oisl = (OISL_Device_tlm_t *)Msg;
 
-    double OISL_vector_ECI[3] = {oisl->Oisl.FORWARD_ISL_X, oisl->Oisl.FORWARD_ISL_Y, oisl->Oisl.FORWARD_ISL_Z};    // SHOULD BE SIMILAR TO VELOCITY UNITY VECTOR since it is backward-central so direction of the forward.
-    // double OISL_vector_Body[3];
-
-    // IMP: Convert the ISL vector from the ECI frame received by OISL component to the body frame used by ADAC control loops.
-    // Generic_ADCS_DI_St_Tlm_Payload_t St;
-    // QxV(St.q, OISL_vector_ECI, OISL_vector_Body); // convert from sensor frame to body frame
+    double OISL_vector_ECI_F[3] = {oisl->Oisl.FORWARD_ISL_X, oisl->Oisl.FORWARD_ISL_Y, oisl->Oisl.FORWARD_ISL_Z};  
+    double OISL_vector_ECI_B[3] = {oisl->Oisl.BACKWARD_ISL_X, oisl->Oisl.BACKWARD_ISL_Y, oisl->Oisl.BACKWARD_ISL_Z};
 
     // Use memcpy to copy the array elements
-    memcpy(OISL->ISL_vector, OISL_vector_ECI, sizeof(OISL_vector_ECI));
-    // OS_printf("Moved from %f %f %f to this in body %f %f %f\n using this quaternion: %f %f %f %f", OISL_vector_ECI[0], OISL_vector_ECI[1], OISL_vector_ECI[2],
-    //  OISL_vector_Body[0], OISL_vector_Body[1], OISL_vector_Body[2], St.q[0],St.q[1], St.q[2], St.q[3]);
+    memcpy(OISL->ISL_vector_F, OISL_vector_ECI_F, sizeof(OISL_vector_ECI_F));
+    memcpy(OISL->ISL_vector_B, OISL_vector_ECI_B, sizeof(OISL_vector_ECI_B));
+
 }
-
-// /*  3x3 Matrix times 3x1 Vector                                       */
-// void MxV (double M[3][3], double V[3], double W[3])
-// {
-//       W[0]=V[0]*M[0][0]+V[1]*M[0][1]+V[2]*M[0][2];
-//       W[1]=V[0]*M[1][0]+V[1]*M[1][1]+V[2]*M[1][2];
-//       W[2]=V[0]*M[2][0]+V[1]*M[2][1]+V[2]*M[2][2];
-// }
-
-// CN:
-// 0.660239 0.262003 -0.703875
-// 0.352089 0.719846 0.598210
-// 0.663414 -0.642788 0.383022

@@ -56,15 +56,14 @@ typedef struct
 typedef struct
 {
     uint32_t  DeviceCounter;
-    uint16_t  DeviceDataX;
-    uint16_t  DeviceDataY;
-    uint16_t  DeviceDataZ;
     double    BACKWARD_ISL_X;
     double    BACKWARD_ISL_Y;
     double    BACKWARD_ISL_Z;
     double    FORWARD_ISL_X;
     double    FORWARD_ISL_Y;
     double    FORWARD_ISL_Z;
+    uint8_t   ForwardAlignment;
+    uint8_t   BackwardAlignment;
 } __attribute__((packed)) OISL_Device_Data_tlm_t;
 #define OISL_DEVICE_DATA_LNGTH sizeof ( OISL_Device_Data_tlm_t )
 #define OISL_DEVICE_DATA_SIZE OISL_DEVICE_DATA_LNGTH + OISL_DEVICE_HDR_TRL_LEN

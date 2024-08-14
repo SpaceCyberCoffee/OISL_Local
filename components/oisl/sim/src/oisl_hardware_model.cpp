@@ -64,6 +64,19 @@ namespace Nos3
         _time_bus.reset(new NosEngine::Client::Bus(_hub, connection_string, time_bus_name));
         sim_logger->info("OislHardwareModel::OislHardwareModel:  Now on time bus named %s.", time_bus_name.c_str());
 
+        /* Remove the VoV file at startup if it exists */
+        if (remove(VoV_forward_filename) == 0) {
+            sim_logger->debug("File VoV deleted successfully.\n");
+        } else {
+            sim_logger->debug("Failed to delete the VoV file.\n");
+        }
+        /* Remove the VoV file at startup if it exists */
+        if (remove(VoV_backward_filename) == 0) {
+            sim_logger->debug("File VoV deleted successfully.\n");
+        } else {
+            sim_logger->debug("Failed to delete the VoV file.\n");
+        }
+        
         /* Construction complete */
         sim_logger->info("OislHardwareModel::OislHardwareModel:  Construction complete.");
     }
@@ -172,10 +185,9 @@ namespace Nos3
     /* Custom function to prepare the Oisl Data */
     void OislHardwareModel::create_oisl_data(std::vector<uint8_t>& out_data)
     {
-        boost::shared_ptr<OislDataPoint> data_point = boost::dynamic_pointer_cast<OislDataPoint>(_oisl_dp->get_data_point());
 
         /* Prepare data size */
-        out_data.resize(14, 0x00);
+        out_data.resize(10, 0x00);
 
         /* Streaming data header - 0xDEAD */
         out_data[0] = 0xDE;
@@ -198,24 +210,36 @@ namespace Nos3
         ** Scale each of the x, y, z (which are in the range [-1.0, 1.0]) by 32767, 
         **   and add 32768 so that the result fits in a uint16
         */
-        double dx = data_point->get_oisl_data_x();
-        double dy = data_point->get_oisl_data_y();
-        double dz = data_point->get_oisl_data_z();
-        uint16_t x   = (uint16_t)(dx*32767.0 + 32768.0);
-        out_data[6]  = (x >> 8) & 0x00FF;
-        out_data[7]  =  x       & 0x00FF;
-        uint16_t y   = (uint16_t)(dy*32767.0 + 32768.0);
-        out_data[8]  = (y >> 8) & 0x00FF;
-        out_data[9]  =  y       & 0x00FF;
-        uint16_t z   = (uint16_t)(dz*32767.0 + 32768.0);
-        out_data[10] = (z >> 8) & 0x00FF;
-        out_data[11] =  z       & 0x00FF;
 
-        sim_logger->debug("OislHardwareModel::create_oisl_data: data_point=%f, %f, %f, converted values=%u, %u, %u.", dx, dy, dz, x, y, z);
+        /* Retrieving VoV for Forward and Backward alignment */
+        FILE *file_VoV_F = fopen(VoV_forward_filename, "r");
+        double VoV_F = 0.0;  // Default value
+        if (file_VoV_F != NULL) {
+            fscanf(file_VoV_F, "%lf", &VoV_F);
+            fclose(file_VoV_F);
+        } else {
+            sim_logger->debug("File FORWARD cannot be opened or does not exist. Setting x to default value: %f\n", VoV_F);
+        }
+        uint8_t forward_alignment = (VoV_F >= cos(FoR)) ? 1 : 0; 
+
+        FILE *file_VoV_B = fopen(VoV_backward_filename, "r");
+        double VoV_B = 0.0;  // Default value
+        if (file_VoV_B != NULL) {
+            fscanf(file_VoV_B, "%lf", &VoV_B);
+            fclose(file_VoV_B);
+        } else {
+            sim_logger->debug("File backward cannot be opened or does not exist. Setting x to default value: %f\n", VoV_B);
+        }
+        uint8_t backward_alignment = (VoV_B >= cos(FoR)) ? 1 : 0; 
+
+        out_data[6] = forward_alignment & 0x00FF;
+        out_data[7] = backward_alignment & 0x00FF;
+
+        sim_logger->debug("OislHardwareModel::create_oisl_data  ALIGNED: =  %u, %u. VoV values for foward and backward: %f %f %f\n", forward_alignment,  backward_alignment, VoV_F, VoV_B, cos(FoR));
 
         /* Streaming data trailer - 0xBEEF */
-        out_data[12] = 0xBE;
-        out_data[13] = 0xEF;
+        out_data[8] = 0xBE;
+        out_data[9] = 0xEF;
     }
 
 

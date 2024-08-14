@@ -116,8 +116,10 @@ typedef struct
 
 typedef struct
 {
-    double ISL_vector[3];
-    double ISL_vector_Body[3];
+    double ISL_vector_F[3];
+    double ISL_vector_Body_F[3];
+    double ISL_vector_B[3];
+    double ISL_vector_Body_B[3];
 } __attribute__((packed)) Generic_ADCS_DI_OISL_Tlm_Payload_t;
 
 typedef struct
@@ -165,7 +167,8 @@ typedef struct
 
 typedef struct
 {
-    double isl[3];
+    double isl_F[3];
+    double isl_B[3];
 } __attribute__((packed)) Generic_ADCS_AD_ISL_Tlm_Payload_t;
 
 typedef struct
@@ -209,7 +212,8 @@ typedef struct {
     double HwhlB[3];
     double Mcmd[3];
     double Tcmd[3];
-    double ISL_vector[3];
+    double ISL_vector_F[3];
+    double ISL_vector_B[3];
 } __attribute__((packed)) Generic_ADCS_GNC_Tlm_Payload_t;
 
 typedef struct
@@ -249,7 +253,8 @@ typedef struct {
    /* Inputs*/
    double Kp[3];
    double Kr[3];
-   double sside[3];
+   double sside_F[3];
+   double sside_B[3];
    double vmax;
    double cmd_wbn[3];
    uint8 h_mgmt;

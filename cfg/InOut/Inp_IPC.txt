@@ -160,8 +160,9 @@ SERVER                                  ! Socket Role (SERVER,CLIENT,GMSEC_CLIEN
 fortytwo       4282                     ! Server Host Name, Port 
 FALSE                                   ! Allow Blocking (i.e. wait on RX)
 FALSE                                   ! Echo to stdout
-1                                       ! Number of TX prefixes
+2                                       ! Number of TX prefixes
 "SC[0].AC.ST"                           ! Prefix 0
+"SC"                                    ! Prefix 1
 **********************************  EPS IPC  *****************************
 TX                                      ! IPC Mode (OFF,TX,RX,TXRX,ACS,WRITEFILE,READFILE)
 0                                       ! AC.ID for ACS mode

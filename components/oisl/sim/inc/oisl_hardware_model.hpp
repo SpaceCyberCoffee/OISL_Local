@@ -5,6 +5,7 @@
 ** Includes
 */
 #include <map>
+#include <math.h>
 
 #include <boost/tuple/tuple.hpp>
 #include <boost/property_tree/ptree.hpp>
@@ -55,6 +56,10 @@ namespace Nos3
         std::uint32_t                                       _count;
         std::uint32_t                                       _config;
         std::uint32_t                                       _status;
+
+        const char *VoV_forward_filename = "/home/jstar/Desktop/github-nos3/sims/build/bin/VoV_FORWARD.txt";
+        const char *VoV_backward_filename = "/home/jstar/Desktop/github-nos3/sims/build/bin/VoV_BACKWARD.txt";
+        const double FoR = 3.0 * (M_PI / 180.0); //Radians 
     };
 }
 
