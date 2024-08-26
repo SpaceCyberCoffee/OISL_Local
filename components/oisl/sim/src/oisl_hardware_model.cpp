@@ -237,6 +237,15 @@ namespace Nos3
 
         sim_logger->debug("OislHardwareModel::create_oisl_data  ALIGNED: =  %u, %u. VoV values for foward and backward: %f %f %f\n", forward_alignment,  backward_alignment, VoV_F, VoV_B, cos(FoR));
 
+        /* Document what is going on with the pointing */
+        const char *filenametest = "/home/jstar/Desktop/github-nos3/sims/build/bin/10km_forward_stability.txt";
+        // open the file for writing
+        FILE *fp3 = fopen(filenametest, "a");
+        // write to the text file
+        fprintf(fp3, "%u %f\n", forward_alignment, VoV_F);
+        // close the file
+        fclose(fp3);   
+
         /* Streaming data trailer - 0xBEEF */
         out_data[8] = 0xBE;
         out_data[9] = 0xEF;
