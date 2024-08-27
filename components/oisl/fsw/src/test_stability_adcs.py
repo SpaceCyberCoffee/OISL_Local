@@ -15,34 +15,45 @@ def read_data(file_path):
 def plot_data(data):
     # Plotting the first column against row numbers
     plt.figure(figsize=(10, 5))
-    plt.plot(data[:, 0], label='First Column')
-    plt.xlabel('Row Number')
-    plt.ylabel('Value')
-    plt.title('Plot of First Column Values')
+    plt.plot(data[:, 0], label='Alignment')
+    plt.xlabel('SIm TIme')
+    plt.ylabel('Alignment')
+    plt.title('Plot of Alignment')
     plt.legend()
-    plt.show()
+    # plt.show()
 
     # Plotting the second column against row numbers
     plt.figure(figsize=(10, 5))
-    plt.plot(data[:, 1], label='Second Column')
-    plt.xlabel('Row Number')
-    plt.ylabel('Value')
-    plt.title('Plot of Second Column Values')
+    plt.plot(data[:, 1], label='Scalar Product')
+    plt.xlabel('SIm TIme')
+    plt.ylabel('Alignment product')
+    plt.title('Plot of Scalar Product SoS')
     plt.legend()
-    plt.show()
+    # plt.show()
+    
+    # # Plotting the third column against row numbers
+    # plt.figure(figsize=(10, 5))
+    # plt.plot(data[:, 2], label='Change of OISL vector')
+    # plt.xlabel('Sim TIme')
+    # plt.ylabel('Percentage change')
+    # plt.title('Plot of Change of OISL vector SoS(previous, current)')
+    # plt.legend()
+    # # plt.show()
+    # plt.savefig("/mnt/extras/SSD/NOS3_RBT/nos3_luca_OISL/nos3_rbt/components/oisl/fsw/src/ChangeISLScalar.png")
     
     # Plotting the second column against row numbers WITHOUT OUTLIERS
     plt.figure(figsize=(10, 5))
-    plt.plot([dat for dat in data[100:, 1] if dat>0.989], label='Second Column')
-    plt.xlabel('Row Number')
-    plt.ylabel('Value')
-    plt.axhline(y=0.99863, color='g', linestyle='-') # 3 degree
-    plt.axhline(y=0.9998, color='r', linestyle='-')  # 1 degree
-    plt.title('Plot of Second Column Values')
+    plt.plot([dat for dat in data[0:, 1] if dat>0.996], label='Alignment Scalar Product')
+    plt.xlabel('Sim Time')
+    plt.ylabel('Scalar Product')
+    plt.axhline(y=0.9998, color='r', linestyle='-', label='1 degree')  # 1 degree
+    plt.axhline(y=0.99863, color='g', linestyle='-', label = '3 degrees') # 3 degree
+    plt.title('Scalar Product between ISL vector and b2')
     plt.legend()
-    plt.show()
+    #plt.show()
+    plt.savefig("/mnt/extras/SSD/NOS3_RBT/nos3_luca_OISL/nos3_rbt/components/oisl/fsw/src/2Vectors_PT3.png")
 
 if __name__ == "__main__":
-    file_path = '/mnt/extras/SSD/NOS3_RBT/nos3_luca_OISL/nos3_rbt/components/oisl/fsw/src/10km_forward_stability.txt'  # Path to your data file
+    file_path = '/mnt/extras/SSD/NOS3_RBT/nos3_luca_OISL/nos3_rbt/components/oisl/fsw/src/forward_stability_2vectorsPT3.txt'  # Path to your data file
     data = read_data(file_path)
     plot_data(data)

@@ -271,29 +271,43 @@ static void AC_sunsafe(Generic_ADCS_GNC_Tlm_Payload_t *GNC, Generic_ADCS_AC_Suns
 
 }
 
+
+#define EPS_OISL 0.9998
+// #define MIN_TORQUE_THRESHOLD 1.0E-5  // Define a small threshold to avoid negligible torque commands
+
 static void AC_oisl(Generic_ADCS_GNC_Tlm_Payload_t *GNC, Generic_ADCS_AC_OISL_Tlm_t *ACS, const char *F_or_B)
 {
    int i;
-   double u1[3] = {0.0, 0.0, 0.0}, err_b[3] = {0.0, 0.0, 0.0};      /* angle error calculation parameteres */
-   double temp_sside[3] = {0.0, 0.0, 0.0};
+   double u1[3] = {0.0, 0.0, 0.0}, combined_err[3] = {0.0, 0.0, 0.0};      /* angle error calculation parameteres */
+//    double temp_sside[3] = {0.0, 0.0, 0.0};
    double SoS = 0.0;
+   double SoS_secondary = 0.0;
+   double err_primary[3] = {0.0, 0.0, 0.0};
+   double err_secondary[3] = {0.0, 0.0, 0.0};
 
     // Pointers to either forward or backward sside and ISL_vector based on F_or_B
     double *selected_sside;
     double *selected_ISL_vector;
+    double *target_secondary;
 
     double SoS_F = VoV(GNC->ISL_vector_F, ACS->sside_F);
     double SoS_B = VoV(GNC->ISL_vector_B, ACS->sside_B);
+
+    
 
     /* Select the appropriate sside and ISL_vector based on F_or_B */
     if (strcmp(F_or_B, "FORWARD") == 0) {
         selected_sside = ACS->sside_F;
         selected_ISL_vector = GNC->ISL_vector_F;
         SoS = SoS_F;
+        target_secondary = ACS->sside_B;
+        SoS_secondary = VoV(target_secondary, GNC->ISL_vector_F);
     } else {
         selected_sside = ACS->sside_B;
         selected_ISL_vector = GNC->ISL_vector_B;
         SoS = SoS_B;
+        target_secondary = ACS->sside_F;
+        SoS_secondary = VoV(target_secondary, GNC->ISL_vector_B);
     }
 
     /* Test writing to a file to be read by OISL HW model */
@@ -308,29 +322,44 @@ static void AC_oisl(Generic_ADCS_GNC_Tlm_Payload_t *GNC, Generic_ADCS_AC_OISL_Tl
     fclose(fp_B);
 
     // printf("Scalar product between ISL V and desired b2 (should be close to 1): %f\n", SoS);
+    
+
+    // Calculate the primary alignment error
     if ((SoS > (EPS - 1.0)) && (SoS < (1.0 - EPS))) {
-        VxV(selected_ISL_vector, selected_sside, ACS->therr);
+        VxV(selected_ISL_vector, selected_sside, err_primary);
     }
-    else if (SoS >= (1.0 - EPS)) {
-        ACS->therr[0] = 0.0;
-        ACS->therr[1] = 0.0;
-        ACS->therr[2] = 0.0;
+
+    // Calculate the secondary alignment error
+    if (fabs(SoS_secondary) < EPS_OISL) {
+        double temp_secondary[3];
+        double neg_ISL_vector[3] = {-selected_ISL_vector[0], -selected_ISL_vector[1], -selected_ISL_vector[2]};
+        VxV(target_secondary, neg_ISL_vector, temp_secondary);
+        VxV(neg_ISL_vector, temp_secondary, err_secondary);
     }
-    else {
-        err_b[0] = selected_sside[1];
-        err_b[1] = selected_sside[2];
-        err_b[2] = selected_sside[0];
-        if (fabs(err_b[0] - err_b[1]) < EPS && fabs(err_b[0] - err_b[2]) < EPS) {
-            err_b[0] = -err_b[0];
+
+    // Combine the errors
+    for (i = 0; i < 3; i++) {
+        combined_err[i] = err_primary[i] + err_secondary[i];
+    }
+
+    OS_printf("Secondary: %f\n", SoS_secondary);
+
+    // If the alignment is within thresholds, zero the error
+    if (SoS >= EPS_OISL && fabs(SoS_secondary) >= EPS_OISL) {
+        for (i = 0; i < 3; i++) {
+            ACS->therr[i] = 0.0;
         }
-        VxV(selected_sside, err_b, temp_sside);
-        VxV(selected_ISL_vector, temp_sside, ACS->therr);
+    } else {
+        for (i = 0; i < 3; i++) {
+            ACS->therr[i] = combined_err[i];
+        }
     }
 
     /* .. Closed-loop attitude control - PD Method */
     for(i = 0; i < 3; i++) {
         /* Clip attitude slew rates */
         u1[i] = Limit(ACS->Kp[i] / ACS->Kr[i] * ACS->therr[i], -ACS->vmax, ACS->vmax);
+        // if (fabs(u1[i]) < MIN_TORQUE_THRESHOLD) u1[i] = 0.0;  // Deadband for small torque commands
         ACS->werr[i] = GNC->wbn[i] - ACS->cmd_wbn[i];
         ACS->Tcmd[i] = -ACS->Kr[i] * (u1[i] + ACS->werr[i]);
     }
@@ -352,6 +381,7 @@ static void AC_oisl(Generic_ADCS_GNC_Tlm_Payload_t *GNC, Generic_ADCS_AC_OISL_Tl
         }
     }
 }
+
 
 
 static void AC_h_mgmt(Generic_ADCS_GNC_Tlm_Payload_t *GNC)
