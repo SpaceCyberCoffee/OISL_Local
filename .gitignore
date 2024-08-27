@@ -4,6 +4,7 @@
 .vagrant
 .vscode
 .history
+.pyc
 
 #
 # Build Files
