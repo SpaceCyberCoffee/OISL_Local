@@ -68,6 +68,8 @@ typedef struct
     */ 
     uart_info_t OislUart;             /* Hardware protocol definition */
 
+    OISL_CFDP_cmd_t CFDP;
+
 } OISL_AppData_t;
 
 
@@ -95,6 +97,7 @@ void  OISL_ReportDeviceTelemetry(void);
 void  OISL_ResetCounters(void);
 void  OISL_Enable(void);
 void  OISL_Disable(void);
+void  OISL_SendFile_CFDP(void);
 int32 OISL_VerifyCmdLength(CFE_MSG_Message_t * msg, uint16 expected_length);
 
 #endif /* _OISL_APP_H_ */

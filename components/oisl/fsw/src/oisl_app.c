@@ -11,6 +11,7 @@
 */
 #include <arpa/inet.h>
 #include "oisl_app.h"
+#include "CFDP_Luca.h"
 
 
 /*
@@ -336,6 +337,20 @@ void OISL_ProcessGroundCommand(void)
             }
             break;
 
+        case OISL_SEND_FILE:
+            if (OISL_VerifyCmdLength(OISL_AppData.MsgPtr, sizeof(OISL_CFDP_cmd_t)) == OS_SUCCESS)
+            {   
+                OISL_CFDP_cmd_t *cmd;
+                cmd = (OISL_CFDP_cmd_t *)OISL_AppData.MsgPtr; 
+                OISL_AppData.CFDP.Target = cmd->Target; // Keep the current value in **one** place
+                CFE_EVS_SendEvent(OISL_CMD_SEND_FILE_EID, CFE_EVS_EventType_INFORMATION, "OISL: Transfer File command received. Trying to reach Sat %u", cmd->Target);
+                OISL_SendFile_CFDP();
+            }
+            else {
+                CFE_EVS_SendEvent(OISL_CMD_SEND_FILE_ERR_EID, CFE_EVS_EventType_INFORMATION, "OISL: Transfer File command received but error encountered");
+            }
+            break;
+
         /*
         ** Invalid Command Codes
         */
@@ -540,6 +555,84 @@ void OISL_Disable(void)
     return;
 }
 
+void OISL_SendFile_CFDP(void)
+{
+    const char *filePath = "/home/jstar/Desktop/github-nos3/components/oisl/fsw/src/TestTransferFile.txt";  // DUMMY VERSION
+    FILE *file;
+    size_t fileSize;
+    char *fileContent;
+    const double transferSpeedMbps = 100.0; // Transfer speed in Mbps
+
+    /* Check that device is enabled */
+    if (OISL_AppData.HkTelemetryPkt.DeviceEnabled == OISL_DEVICE_ENABLED)
+    {
+        // Open the file for reading
+        file = fopen(filePath, "r");
+        if (file == NULL)
+        {
+            OISL_AppData.HkTelemetryPkt.DeviceErrorCount++;
+            CFE_EVS_SendEvent(OISL_CMD_SEND_FILE_ERR_EID, CFE_EVS_EventType_ERROR, "OISL: Unable to open to transfer file %s.", filePath);
+            return;
+        }
+
+        // Determine the file size
+        fseek(file, 0, SEEK_END);
+        fileSize = ftell(file);
+        rewind(file);
+
+        // Allocate memory to hold the file content
+        fileContent = (char *)malloc(fileSize + 1);
+        if (fileContent == NULL)
+        {
+            fclose(file);
+            OISL_AppData.HkTelemetryPkt.DeviceErrorCount++;
+            CFE_EVS_SendEvent(OISL_CMD_SEND_FILE_ERR_EID, CFE_EVS_EventType_ERROR, "OISL: Memory allocation failed for file content.");
+            return;
+        }
+
+        // Read the file content
+        size_t bytesRead = fread(fileContent, 1, fileSize, file);
+        if (bytesRead != fileSize)
+        {
+            free(fileContent);
+            fclose(file);
+            OISL_AppData.HkTelemetryPkt.DeviceErrorCount++;
+            CFE_EVS_SendEvent(OISL_CMD_SEND_FILE_ERR_EID, CFE_EVS_EventType_ERROR, "OISL: Failed to read the entire file %s.", filePath);
+            return;
+        }
+        fileContent[fileSize] = '\0';  // Null-terminate the file content
+
+        // Close the file
+        fclose(file);
+
+        // Estimate transfer time
+        double fileSizeBits = fileSize * 8.0; // Convert file size to bits
+        double transferSpeedBps = transferSpeedMbps * 1e6; // Convert Mbps to bps
+        double estimatedTransferTimeSeconds = fileSizeBits / transferSpeedBps; // Time in seconds
+
+        // TODO: TAKE INTO ACCOUNT DELAY SO IT IS NOT SIMPLY LIKE THAT, FOR EVERY PDU THERE IS A DELAY OF 100ms
+
+        // Log the file size and estimated transfer time
+        CFE_EVS_SendEvent(OISL_CMD_SEND_FILE_EID, CFE_EVS_EventType_INFORMATION,
+                          "OISL FILE CFDP: Just read the file with size: %zu bytes. Estimated transfer time is: %.2f seconds.",
+                          fileSize, estimatedTransferTimeSeconds);
+
+        // TODO IMPLEMENT ALIGNMENT CHECK SOMEHOW
+
+        // Call the sendFile function to transmit the file content
+        sendFile(fileContent);
+
+        // Free the allocated memory
+        free(fileContent);
+    }
+    else
+    {
+        OISL_AppData.HkTelemetryPkt.DeviceErrorCount++;
+        CFE_EVS_SendEvent(OISL_CMD_SEND_FILE_ERR_EID, CFE_EVS_EventType_ERROR, "OISL: Device is disabled, cannot send file.");
+    }
+
+    return;
+}
 
 /*
 ** Verify command packet length matches expected

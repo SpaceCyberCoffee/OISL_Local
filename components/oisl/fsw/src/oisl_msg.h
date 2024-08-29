@@ -22,6 +22,7 @@
 #define OISL_ENABLE_CC               2
 #define OISL_DISABLE_CC              3
 #define OISL_CONFIG_CC               4
+#define OISL_SEND_FILE               5
 
 
 /* 
@@ -52,6 +53,16 @@ typedef struct
     uint32   DeviceCfg;
 
 } OISL_Config_cmd_t;
+
+/*
+** OISL transfer file command
+*/
+typedef struct
+{
+    /* Every command requires a header used to identify it */
+    CFE_MSG_CommandHeader_t CmdHeader;
+    uint8    Target;
+} OISL_CFDP_cmd_t;
 
 
 /*

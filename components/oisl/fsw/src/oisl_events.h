@@ -33,6 +33,10 @@
 /* Device specific command event IDs */
 #define OISL_CMD_CONFIG_INF_EID        20
 
+/* CFDP Transfer File */
+#define OISL_CMD_SEND_FILE_EID         21
+#define OISL_CMD_SEND_FILE_ERR_EID     22
+
 /* Standard telemetry event IDs */
 #define OISL_DEVICE_TLM_ERR_EID        30
 #define OISL_REQ_HK_ERR_EID            31
