@@ -353,6 +353,8 @@ void get_isl_vectors(double* forward_ISL_vector, double* backward_ISL_vector)
     double ISL_vector_backward[] = {backward_satellite[0] - central_sat[0] , backward_satellite[1] - central_sat[1], backward_satellite[2] - central_sat[2]};
     // OS_printf("OISL vector is [%f, %f, %f]\n", OISL_vector[0], OISL_vector[1], OISL_vector[2]);
 
+    // OS_printf("DIstanza tra satelliti in KM: %f", sqrt(ISL_vector_forward[0]*ISL_vector_forward[0]+ISL_vector_forward[1]*ISL_vector_forward[1]+ISL_vector_forward[2]*ISL_vector_forward[2])); // 1758km
+
     // Normalize the difference vector to get the unit vector
     UNITV2(ISL_vector_backward);
     UNITV2(ISL_vector_forward);

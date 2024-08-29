@@ -301,13 +301,13 @@ static void AC_oisl(Generic_ADCS_GNC_Tlm_Payload_t *GNC, Generic_ADCS_AC_OISL_Tl
         selected_ISL_vector = GNC->ISL_vector_F;
         SoS = SoS_F;
         target_secondary = ACS->sside_B;
-        SoS_secondary = VoV(target_secondary, GNC->ISL_vector_F);
+        SoS_secondary = VoV(target_secondary, GNC->ISL_vector_B);
     } else {
         selected_sside = ACS->sside_B;
         selected_ISL_vector = GNC->ISL_vector_B;
         SoS = SoS_B;
         target_secondary = ACS->sside_F;
-        SoS_secondary = VoV(target_secondary, GNC->ISL_vector_B);
+        SoS_secondary = VoV(target_secondary, GNC->ISL_vector_F);
     }
 
     /* Test writing to a file to be read by OISL HW model */

@@ -2,7 +2,7 @@
 4                                 !  Number of FOVs
 --------------------------------------------------------------------
 "SOLID"                           !  Label
-4   4.0                           !  Number of Sides, Length [m]
+4   4.0                           !  c, Length [m]
 8.0  4.0                          !  H Width, V Height [deg]
 0.0 1.0 0.0 0.5                   !  Color RGB+Alpha
 SOLID                             !  WIREFRAME, SOLID, VECTOR, or PLANE 

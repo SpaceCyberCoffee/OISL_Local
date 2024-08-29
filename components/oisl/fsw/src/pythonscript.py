@@ -1,87 +1,64 @@
-import numpy as np
 import matplotlib.pyplot as plt
-from mpl_toolkits.mplot3d import Axes3D
-import matplotlib.cm as cm
+import numpy as np
+import math
 
-# Function to read vector components from a text file
-def read_vectors_from_file_ISL(filename):
-    vectors = []
-    i = 0
-    count = 50
-    with open(filename, 'r') as file:
-        for line in file:
-            start = [0,0,0]
-            components = list(map(float, line.strip().split()))
-            if i == 50:
-                vectors.append(start + components + [count])
-                i = 0
-                count += 50
-            i += 1
-    return vectors
+# Function to read and process the files
+def process_files(file1, file2):
+    # Initialize lists to store the processed data
+    central_sat = []
+    forward_sat = []
 
-def read_vectors_from_file_SUN(filename):
-    vectors = []
-    i = 0
-    count = 50
-    with open(filename, 'r') as file:
-        for line in file:
-            start = [0,0,1]
-            components = list(map(float, line.strip().split()))
-            if i == 500:
-                vectors.append(start + components + [count])
-                i = 0
-                count += 50
-            i += 1
-    return vectors
+    # Process both files simultaneously
+    with open(file1, 'r') as f1, open(file2, 'r') as f2:
+        for i, (line1, line2) in enumerate(zip(f1, f2)):
+            # Skip every other line
+            if i % 3 == 0:
+                # Extract and convert the numbers
+                coords1 = line1.split()
+                coords2 = line2.split()
+                
+                # Append the first coordinate of each set
+                central_sat.append(float(coords1[0]))
+                forward_sat.append(float(coords2[0]))
 
-from scipy.spatial.transform import Rotation
-# quat = np.array([ 0.926360, -0.362657 ,-0.101512, 0.001384])
-# rot = Rotation.from_quat(quat)
-# rot_euler = rot.as_euler('YXZ', degrees=True) # 213 INTRINSIC CAUSE THE EULER ANGLES ARE IN BODY FRAME
-# print(rot_euler)
-rot = Rotation.from_euler('ZYX', (30, 20, 10), True)
-print(rot.as_quat(scalar_first=False))
+    return central_sat, forward_sat
 
-# Read the vectors from the file
-filename_ISL = '/mnt/extras/SSD/NOS3_RBT/nos3_luca_OISL/nos3_rbt/components/oisl/fsw/src/testchanges_ISL.txt'
-vector_components_ISL = read_vectors_from_file_ISL(filename_ISL)
-# Read the vectors from the file
-filename_SUN = '/mnt/extras/SSD/NOS3_RBT/nos3_luca_OISL/nos3_rbt/components/oisl/fsw/src/testchanges_sun.txt'
-vector_components_SUN = read_vectors_from_file_SUN(filename_SUN)
+def calculate_orbital_period(altitude_km):
+    # Constants
+    earth_radius_km = 6371  # Radius of the Earth in kilometers
+    gravitational_constant = 6.674 * 10**-11  # Gravitational constant in N*m^2/kg^2
+    earth_mass_kg = 5.972 * 10**24  # Mass of the Earth in kilograms
 
-vector_components = vector_components_ISL + vector_components_SUN
+    # Calculate orbital period
+    orbital_period_seconds = 2 * math.pi * math.sqrt((((earth_radius_km + altitude_km)*1000)**3) / (gravitational_constant * earth_mass_kg))
 
-# Unpack the direction components
-X, Y, Z, U, V, W, labels = zip(*vector_components)
+    return orbital_period_seconds
 
-# Generate a list of colors for each set of vectors
-num_vectors_ISL = len(vector_components_ISL)
-num_vectors_SUN = len(vector_components_SUN)
-print(num_vectors_ISL, num_vectors_SUN)
+# Main execution
+if __name__ == "__main__":
+    # File names
+    file1 = '/mnt/extras/SSD/NOS3_RBT/nos3_luca_OISL/nos3_rbt/components/oisl/fsw/src/central_test.txt'
+    file2 = '/mnt/extras/SSD/NOS3_RBT/nos3_luca_OISL/nos3_rbt/components/oisl/fsw/src/forward_test.txt'
 
-colors_ISL = cm.rainbow(np.linspace(0, 1, num_vectors_ISL))
-colors_SUN = cm.rainbow(np.linspace(0, 1, num_vectors_SUN))
-colors = np.concatenate((colors_ISL, colors_SUN), axis=0)
+    # Read and process the files
+    central_sat, forward_sat = process_files(file1, file2)
+    print(calculate_orbital_period(400))
 
-# Create a figure and a 3D subplot
-fig = plt.figure()
-ax = fig.add_subplot(111, projection='3d')
+    # Create the plot
+    plt.figure(figsize=(10, 6))
+    plt.plot(range(len(central_sat)), central_sat, label='Central SAT')
+    plt.plot([i + 231 for i in range(len(forward_sat))], forward_sat, label='Forward SAT')
 
-# Offset for labels
-label_offset = 0.3
+    # Set up the axes
+    plt.xlabel('Raw Number')
+    plt.ylabel('Coordinate Value')
+    plt.title('Comparison of Central SAT and Forward SAT Coordinates')
 
-# Plot the vectors with different colors and labels
-for i in range(len(vector_components)):
-    ax.quiver(X[i], Y[i], Z[i], U[i], V[i], W[i], color=colors[i])
-    # Move the label away from the vector slightly
-    ax.text(X[i] + U[i] + label_offset, Y[i] + V[i] + label_offset, Z[i] + W[i] + label_offset, 
-            f'{int(labels[i])}s', color=colors[i])
+    # Add legend and grid
+    plt.legend()
+    plt.grid(True)
 
-# Set the axes limits
-ax.set_xlim([-1, 2])
-ax.set_ylim([-2, 2])
-ax.set_zlim([-1, 1])
-
-# Show the plot
-plt.show()
-plt.close()
+    # Show the plot
+    plt.tight_layout()
+    plt.show()
+    
