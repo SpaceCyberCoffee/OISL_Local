@@ -21,6 +21,14 @@
 #include "oisl_version.h"
 #include "hwlib.h"
 
+#include <pthread.h>
+
+// Structure to hold file transfer data
+typedef struct {
+    char *fileContent;
+    size_t fileSize;
+} FileTransferData;
+
 
 /*
 ** Specified pipe depth - how many messages will be queued in the pipe
@@ -98,6 +106,7 @@ void  OISL_ResetCounters(void);
 void  OISL_Enable(void);
 void  OISL_Disable(void);
 void  OISL_SendFile_CFDP(void);
+void* FileTransferThread(void *arg);
 int32 OISL_VerifyCmdLength(CFE_MSG_Message_t * msg, uint16 expected_length);
 
 #endif /* _OISL_APP_H_ */

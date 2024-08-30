@@ -555,13 +555,38 @@ void OISL_Disable(void)
     return;
 }
 
+// Thread function to handle file transfer
+void* FileTransferThread(void *arg) {
+    FileTransferData *data = (FileTransferData *)arg;
+
+    // Check alignment (if applicable)
+    int waitCount = 0;
+    while (!OISL_AppData.DevicePkt.Oisl.ForwardAlignment && waitCount < 60) {
+        printf("OISL FILE CFDP: The alignment condition is not verified, waiting for alignment.\n");
+        sleep(10);  // Wait for 10 seconds before checking again
+        waitCount += 1;
+    }
+
+    // If the alignment condition is verified, proceed with the file transfer
+    if (OISL_AppData.DevicePkt.Oisl.ForwardAlignment) {
+        sendFile(data->fileContent, data->fileSize);
+    } else {
+        CFE_EVS_SendEvent(OISL_CMD_SEND_FILE_ERR_EID, CFE_EVS_EventType_ERROR,
+                          "OISL FILE CFDP: Alignment condition not met after waiting.");
+    }
+
+    free(data->fileContent);
+    free(data);
+    return NULL;
+}
+
+
 void OISL_SendFile_CFDP(void)
 {
     const char *filePath = "/home/jstar/Desktop/github-nos3/components/oisl/fsw/src/TestTransferFile.txt";  // DUMMY VERSION
     FILE *file;
     size_t fileSize;
     char *fileContent;
-    const double transferSpeedMbps = 100.0; // Transfer speed in Mbps
 
     /* Check that device is enabled */
     if (OISL_AppData.HkTelemetryPkt.DeviceEnabled == OISL_DEVICE_ENABLED)
@@ -605,32 +630,36 @@ void OISL_SendFile_CFDP(void)
         // Close the file
         fclose(file);
 
-        // Estimate transfer time
-        double fileSizeBits = fileSize * 8.0; // Convert file size to bits
-        double transferSpeedBps = transferSpeedMbps * 1e6; // Convert Mbps to bps
-        double estimatedTransferTimeSeconds = fileSizeBits / transferSpeedBps; // Time in seconds
-
-        // TODO: TAKE INTO ACCOUNT DELAY SO IT IS NOT SIMPLY LIKE THAT, FOR EVERY PDU THERE IS A DELAY OF 100ms
-
         // Log the file size and estimated transfer time
         CFE_EVS_SendEvent(OISL_CMD_SEND_FILE_EID, CFE_EVS_EventType_INFORMATION,
-                          "OISL FILE CFDP: Just read the file with size: %zu bytes. Estimated transfer time is: %.2f seconds.",
-                          fileSize, estimatedTransferTimeSeconds);
+                          "OISL FILE CFDP: Just read the file with size: %zu bytes.", fileSize);
 
-        // TODO IMPLEMENT ALIGNMENT CHECK SOMEHOW
+        // Allocate memory for file transfer data and create a new thread
+        FileTransferData *transferData = (FileTransferData *)malloc(sizeof(FileTransferData));
+        if (transferData == NULL) {
+            OISL_AppData.HkTelemetryPkt.DeviceErrorCount++;
+            CFE_EVS_SendEvent(OISL_CMD_SEND_FILE_ERR_EID, CFE_EVS_EventType_ERROR, "OISL: Memory allocation failed for transfer data.");
+            free(fileContent);
+            return;
+        }
+        transferData->fileContent = fileContent;
+        transferData->fileSize = fileSize;
 
-        // Call the sendFile function to transmit the file content
-        sendFile(fileContent);
-
-        // Free the allocated memory
-        free(fileContent);
+        pthread_t transferThread;
+        if (pthread_create(&transferThread, NULL, FileTransferThread, (void *)transferData) != 0) {
+            OISL_AppData.HkTelemetryPkt.DeviceErrorCount++;
+            CFE_EVS_SendEvent(OISL_CMD_SEND_FILE_ERR_EID, CFE_EVS_EventType_ERROR, "OISL: Failed to create file transfer thread.");
+            free(transferData->fileContent);
+            free(transferData);
+        } else {
+            pthread_detach(transferThread);  // Detach thread to run independently
+        }
     }
     else
     {
         OISL_AppData.HkTelemetryPkt.DeviceErrorCount++;
         CFE_EVS_SendEvent(OISL_CMD_SEND_FILE_ERR_EID, CFE_EVS_EventType_ERROR, "OISL: Device is disabled, cannot send file.");
     }
-
     return;
 }
 

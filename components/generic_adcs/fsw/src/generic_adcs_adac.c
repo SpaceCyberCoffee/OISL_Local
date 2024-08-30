@@ -342,7 +342,7 @@ static void AC_oisl(Generic_ADCS_GNC_Tlm_Payload_t *GNC, Generic_ADCS_AC_OISL_Tl
         combined_err[i] = err_primary[i] + err_secondary[i];
     }
 
-    OS_printf("Secondary: %f\n", SoS_secondary);
+    // OS_printf("Secondary: %f\n", SoS_secondary);
 
     // If the alignment is within thresholds, zero the error
     if (SoS >= EPS_OISL && fabs(SoS_secondary) >= EPS_OISL) {
