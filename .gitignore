@@ -5,6 +5,8 @@
 .vscode
 .history
 .pyc
+.exe
+
 
 #
 # Build Files

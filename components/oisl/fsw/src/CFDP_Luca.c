@@ -1,41 +1,51 @@
 #include <stdio.h>
 #include <string.h>
 #include <unistd.h>
-#include "CFDP_Luca.h"
+#include "CFDP_PDU.h"
 #include "oisl_app.h"
 
 const int networkDelay = 100000; // 100 ms
 const double transferSpeedMbps = 100.0; // Transfer speed in Mbps
 
 // Simulated network functions
-int sendSegment(const char *segment, int segmentNumber) {
+int sendSegment(CF_CFDP_PduFileDataHeader_t *header, CF_CFDP_PduFileDataContent_t *content, int segmentNumber, const char *fileContent, int segmentSize) {
     // Simulate network sending
-    printf("Sending segment #%d: %s\n", segmentNumber, segment);
+    printf("Sending PDU #%d \n", segmentNumber);
+    printf("\"%.*s\"\n", segmentSize, content->data);
+    // Here you would add the code to actually send the PDU over the network
     return 1; // Assume it always succeeds for this example
 }
 
 int receiveAck(int segmentNumber) {
     // Simulate receiving an ACK
-    // TODO: THIS MUST COME FROM THE OTHER SATELLITE
-    printf("Received ACK for segment #%d\n", segmentNumber);
+    // TODO: This must come from the other satellite
+    printf("Received ACK for PDU #%d\n", segmentNumber);
     return 1;
 }
 
 void simulateNetworkDelay(void) {
-    // TODO MAYBE THIS IS A PROBLEM
+    // TODO: Maybe this is a problem
     usleep(networkDelay); // Simulate network delay (100 ms)
     // TODO: How to implement this as 100ms sim time, instead of real time?
 }
 
-// Function to segment the file content
-int segmentFile(const char *fileContent, char segments[][5], int segmentSize) {
+// Function to segment the file content into PDUs
+int segmentFileIntoPDUs(const char *fileContent, size_t fileSize, CF_CFDP_PduFileDataHeader_t headers[], CF_CFDP_PduFileDataContent_t contents[], int segmentSize) {
     int segmentCount = 0;
-    int length = strlen(fileContent);
+    int length = fileSize;
     int i;
 
+    printf("Withing segmentfile");
+
     for (i = 0; i < length; i += segmentSize) {
-        strncpy(segments[segmentCount], &fileContent[i], segmentSize);
-        segments[segmentCount][segmentSize] = '\0'; // Ensure null termination
+        // Fill the header with the correct offset
+        headers[segmentCount].offset.octets[0] = (i >> 24) & 0xFF;
+        headers[segmentCount].offset.octets[1] = (i >> 16) & 0xFF;
+        headers[segmentCount].offset.octets[2] = (i >> 8) & 0xFF;
+        headers[segmentCount].offset.octets[3] = i & 0xFF;
+
+        // Copy the segment data into the content structure
+        strncpy((char *)contents[segmentCount].data, &fileContent[i], segmentSize);
         segmentCount++;
     }
 
@@ -54,35 +64,38 @@ double estimateTransferTime(size_t fileSize, int segmentCount) {
 
 // CFDP-like file sending function
 void sendFile(const char *fileContent, const size_t fileSize) {
+
+    printf("Received");
     int segmentNumber = 0;
-    const int segmentSize = 4;
-    char segments[1000][5]; // Assuming a max of 1000 segments, each up to 4 chars + '\0'
-    int segmentCount = segmentFile(fileContent, segments, segmentSize);
+    const int segmentSize = CF_MAX_PDU_SIZE - sizeof(CF_CFDP_PduFileDataHeader_t) - CF_CFDP_MIN_HEADER_SIZE;
+    CF_CFDP_PduFileDataHeader_t headers[1000]; // Assuming a max of 1000 PDUs TODO TEST, MIGHT BE TOO SMALL
+    CF_CFDP_PduFileDataContent_t contents[1000]; // TODO TEST, MIGHT BE TOO SMALL
+    int segmentCount = segmentFileIntoPDUs(fileContent, fileSize, headers, contents, segmentSize);
     double transferTime = estimateTransferTime(fileSize, segmentCount);
     
-    printf("OISL FILE CFDP: Estimated Transfer time including network delay: %f s.", transferTime);
+    printf("OISL FILE CFDP: Estimated Transfer time including network delay: %f s.\n", transferTime);
 
     for (segmentNumber = 0; segmentNumber < segmentCount; segmentNumber++) {
         int sent = 0;
 
         while (!sent) {
             // TODO IMPLEMENT ALIGNMENT CHECK
-            if (OISL_AppData.DevicePkt.Oisl.ForwardAlignment == 1) {
-                sent = sendSegment(segments[segmentNumber], segmentNumber);
+            if (OISL_AppData.DevicePkt.Oisl.ForwardAlignment == 0) { //TODO OF COURSE IT SHOULD BE 1, JUST FOR TESTING IS 0
+                sent = sendSegment(&headers[segmentNumber], &contents[segmentNumber], segmentNumber, fileContent, segmentSize);
                 simulateNetworkDelay();
 
                 if (receiveAck(segmentNumber)) {
                     sent = 1;
                 } else {
-                    printf("Resending segment #%d\n", segmentNumber);
+                    printf("Resending PDU #%d\n", segmentNumber);
                 }
             }
             else {
-                printf("Wait for re-alignment");
+                printf("Wait for re-alignment\n");
                 // TODO GET SIM TIME TO SLEEP
                 sleep(10);           
             }
         }
     }
+    printf("File transmission is over\n");
 }
-
