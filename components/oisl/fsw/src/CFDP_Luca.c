@@ -7,9 +7,22 @@
 const int networkDelay = 100000; // 100 ms
 const double transferSpeedMbps = 100.0; // Transfer speed in Mbps
 
+
+void simulateNetworkDelay(void) {
+    // TODO: Maybe this is a problem
+    usleep(networkDelay); // Simulate network delay (100 ms)
+    // TODO: How to implement this as 100ms sim time, instead of real time?
+}
+
 // Simulated network functions
 int sendSegment(CF_CFDP_PduFileDataHeader_t *header, CF_CFDP_PduFileDataContent_t *content, int segmentNumber, const char *fileContent, int segmentSize) {
-    // Simulate network sending
+    // Simulate a random chance of transmission failure (e.g., 10% failure rate)
+    double failureRate = 0.1;
+    double randomValue = (double)rand() / RAND_MAX;
+
+    if (randomValue < failureRate) {
+        return 0; // Indicate failure
+    }
     printf("Sending PDU #%d \n", segmentNumber);
     printf("\"%.*s\"\n", segmentSize, content->data);
     // Here you would add the code to actually send the PDU over the network
@@ -17,17 +30,20 @@ int sendSegment(CF_CFDP_PduFileDataHeader_t *header, CF_CFDP_PduFileDataContent_
 }
 
 int receiveAck(int segmentNumber) {
-    // Simulate receiving an ACK
     // TODO: This must come from the other satellite
+    // Simulate a random chance of ACK delay or loss
+    double ackDelayRate = 0.05; // 5% chance of delayed ACK
+    double randomValue = (double)rand() / RAND_MAX;
+
+    if (randomValue < ackDelayRate) {
+        // Simulate ACK delay
+        simulateNetworkDelay(); // Delay the ACK
+        printf("ACK for PDU #%d delayed\n", segmentNumber);
+    }
     printf("Received ACK for PDU #%d\n", segmentNumber);
     return 1;
 }
 
-void simulateNetworkDelay(void) {
-    // TODO: Maybe this is a problem
-    usleep(networkDelay); // Simulate network delay (100 ms)
-    // TODO: How to implement this as 100ms sim time, instead of real time?
-}
 
 // Function to segment the file content into PDUs
 int segmentFileIntoPDUs(const char *fileContent, size_t fileSize, CF_CFDP_PduFileDataHeader_t **headers, CF_CFDP_PduFileDataContent_t **contents, int segmentSize) {
@@ -87,26 +103,37 @@ void sendFile(const char *fileContent, const size_t fileSize) {
 
     for (segmentNumber = 0; segmentNumber < segmentCount; segmentNumber++) {
         int sent = 0;
+        int retries = 0;
+        const int maxRetries = 5;
 
-        while (!sent) {
-            // TODO IMPLEMENT ALIGNMENT CHECK
-            if (OISL_AppData.DevicePkt.Oisl.ForwardAlignment == 0) { //TODO OF COURSE IT SHOULD BE 1, JUST FOR TESTING IS 0
+        while (!sent && retries < maxRetries) {
+            // Check alignment
+            if (OISL_AppData.DevicePkt.Oisl.ForwardAlignment == 0) {
                 sent = sendSegment(&headers[segmentNumber], &contents[segmentNumber], segmentNumber, fileContent, segmentSize);
-                simulateNetworkDelay();
+                if (sent == 1) {
+                    simulateNetworkDelay();
 
-                if (receiveAck(segmentNumber)) {
-                    sent = 1;
+                    if (!receiveAck(segmentNumber)) {
+                        sent = 0;
+                        retries++;
+                        printf("PDU #%d not acknowledged, retrying (%d/%d)\n", segmentNumber, retries, maxRetries);
+                    } 
                 } else {
-                    printf("Resending PDU #%d\n", segmentNumber);
+                    retries++;
+                    printf("PDU #%d failed to send, retrying (%d/%d)\n", segmentNumber, retries, maxRetries);
                 }
-            }
-            else {
+            } else {
                 printf("Wait for re-alignment\n");
-                // TODO GET SIM TIME TO SLEEP
-                sleep(10);           
+                sleep(10);  // Adjust sleep as needed
             }
         }
+
+        if (retries == maxRetries) {
+            printf("PDU #%d failed after %d retries, aborting transmission.\n", segmentNumber, maxRetries);
+            break;  // or handle failure as needed
+        }
     }
+
 
     printf("File transmission is over\n");
 
