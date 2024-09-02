@@ -30,23 +30,32 @@ void simulateNetworkDelay(void) {
 }
 
 // Function to segment the file content into PDUs
-int segmentFileIntoPDUs(const char *fileContent, size_t fileSize, CF_CFDP_PduFileDataHeader_t headers[], CF_CFDP_PduFileDataContent_t contents[], int segmentSize) {
+int segmentFileIntoPDUs(const char *fileContent, size_t fileSize, CF_CFDP_PduFileDataHeader_t **headers, CF_CFDP_PduFileDataContent_t **contents, int segmentSize) {
     int segmentCount = 0;
     int length = fileSize;
     int i;
 
-    printf("Withing segmentfile");
+    // Calculate the number of segments needed
+    segmentCount = (fileSize + segmentSize - 1) / segmentSize;
+
+    // Allocate memory for headers and contents dynamically
+    *headers = (CF_CFDP_PduFileDataHeader_t *)malloc(segmentCount * sizeof(CF_CFDP_PduFileDataHeader_t));
+    *contents = (CF_CFDP_PduFileDataContent_t *)malloc(segmentCount * sizeof(CF_CFDP_PduFileDataContent_t));
+
+    if (*headers == NULL || *contents == NULL) {
+    // Handle memory allocation failure
+    fprintf(stderr, "Memory allocation failed\n");
+    }
 
     for (i = 0; i < length; i += segmentSize) {
         // Fill the header with the correct offset
-        headers[segmentCount].offset.octets[0] = (i >> 24) & 0xFF;
-        headers[segmentCount].offset.octets[1] = (i >> 16) & 0xFF;
-        headers[segmentCount].offset.octets[2] = (i >> 8) & 0xFF;
-        headers[segmentCount].offset.octets[3] = i & 0xFF;
+        (*headers)[i / segmentSize].offset.octets[0] = (i >> 24) & 0xFF;
+        (*headers)[i / segmentSize].offset.octets[1] = (i >> 16) & 0xFF;
+        (*headers)[i / segmentSize].offset.octets[2] = (i >> 8) & 0xFF;
+        (*headers)[i / segmentSize].offset.octets[3] = i & 0xFF;
 
         // Copy the segment data into the content structure
-        strncpy((char *)contents[segmentCount].data, &fileContent[i], segmentSize);
-        segmentCount++;
+        strncpy((char *)(*contents)[i / segmentSize].data, &fileContent[i], segmentSize);
     }
 
     return segmentCount;
@@ -65,12 +74,13 @@ double estimateTransferTime(size_t fileSize, int segmentCount) {
 // CFDP-like file sending function
 void sendFile(const char *fileContent, const size_t fileSize) {
 
-    printf("Received");
+
     int segmentNumber = 0;
     const int segmentSize = CF_MAX_PDU_SIZE - sizeof(CF_CFDP_PduFileDataHeader_t) - CF_CFDP_MIN_HEADER_SIZE;
-    CF_CFDP_PduFileDataHeader_t headers[1000]; // Assuming a max of 1000 PDUs TODO TEST, MIGHT BE TOO SMALL
-    CF_CFDP_PduFileDataContent_t contents[1000]; // TODO TEST, MIGHT BE TOO SMALL
-    int segmentCount = segmentFileIntoPDUs(fileContent, fileSize, headers, contents, segmentSize);
+    /* If each PDU can carry 504 bytes of data and you can send a maximum of 1000 PDUs, the maximum file size in bytes is: Max File Size (bytes)=504×1000=504000 bytes = 504 kB*/
+    CF_CFDP_PduFileDataHeader_t *headers = NULL;
+    CF_CFDP_PduFileDataContent_t *contents = NULL;
+    int segmentCount = segmentFileIntoPDUs(fileContent, fileSize, &headers, &contents, segmentSize);
     double transferTime = estimateTransferTime(fileSize, segmentCount);
     
     printf("OISL FILE CFDP: Estimated Transfer time including network delay: %f s.\n", transferTime);
@@ -97,5 +107,11 @@ void sendFile(const char *fileContent, const size_t fileSize) {
             }
         }
     }
+
     printf("File transmission is over\n");
+
+    // Free dynamically allocated memory
+    free(headers);
+    free(contents);
+
 }
