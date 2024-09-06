@@ -1,0 +1,41 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/synopsis.dir/src/ASDS.cpp.o"
+  "CMakeFiles/synopsis.dir/src/ASDS.cpp.o.d"
+  "CMakeFiles/synopsis.dir/src/DownlinkPlanner.cpp.o"
+  "CMakeFiles/synopsis.dir/src/DownlinkPlanner.cpp.o.d"
+  "CMakeFiles/synopsis.dir/src/DpDbMsg.cpp.o"
+  "CMakeFiles/synopsis.dir/src/DpDbMsg.cpp.o.d"
+  "CMakeFiles/synopsis.dir/src/DpMsg.cpp.o"
+  "CMakeFiles/synopsis.dir/src/DpMsg.cpp.o.d"
+  "CMakeFiles/synopsis.dir/src/LinuxClock.cpp.o"
+  "CMakeFiles/synopsis.dir/src/LinuxClock.cpp.o.d"
+  "CMakeFiles/synopsis.dir/src/MaxMarginalRelevanceDownlinkPlanner.cpp.o"
+  "CMakeFiles/synopsis.dir/src/MaxMarginalRelevanceDownlinkPlanner.cpp.o.d"
+  "CMakeFiles/synopsis.dir/src/PassthroughASDS.cpp.o"
+  "CMakeFiles/synopsis.dir/src/PassthroughASDS.cpp.o.d"
+  "CMakeFiles/synopsis.dir/src/RuleAST.cpp.o"
+  "CMakeFiles/synopsis.dir/src/RuleAST.cpp.o.d"
+  "CMakeFiles/synopsis.dir/src/Similarity.cpp.o"
+  "CMakeFiles/synopsis.dir/src/Similarity.cpp.o.d"
+  "CMakeFiles/synopsis.dir/src/Sqlite3Statement.cpp.o"
+  "CMakeFiles/synopsis.dir/src/Sqlite3Statement.cpp.o.d"
+  "CMakeFiles/synopsis.dir/src/SqliteASDPDB.cpp.o"
+  "CMakeFiles/synopsis.dir/src/SqliteASDPDB.cpp.o.d"
+  "CMakeFiles/synopsis.dir/src/StdLogger.cpp.o"
+  "CMakeFiles/synopsis.dir/src/StdLogger.cpp.o.d"
+  "CMakeFiles/synopsis.dir/src/Timer.cpp.o"
+  "CMakeFiles/synopsis.dir/src/Timer.cpp.o.d"
+  "CMakeFiles/synopsis.dir/src/itc_synopsis_bridge.cpp.o"
+  "CMakeFiles/synopsis.dir/src/itc_synopsis_bridge.cpp.o.d"
+  "CMakeFiles/synopsis.dir/src/sqlite3.c.o"
+  "CMakeFiles/synopsis.dir/src/sqlite3.c.o.d"
+  "CMakeFiles/synopsis.dir/src/synopsis.cpp.o"
+  "CMakeFiles/synopsis.dir/src/synopsis.cpp.o.d"
+  "libsynopsis.pdb"
+  "libsynopsis.so"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang C CXX)
+  include(CMakeFiles/synopsis.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

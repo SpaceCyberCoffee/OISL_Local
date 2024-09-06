@@ -1,0 +1,1 @@
+/usr/bin/gcc -fPIC  -std=c99 -Wstrict-prototypes -pedantic -Werror -Wall -Wwrite-strings -Wpointer-arith -Wno-address-of-packed-member -g -shared  -o ci.so CMakeFiles/ci.dir/fsw/src/ci_app.c.o CMakeFiles/ci.dir/fsw/src/ci_utils.c.o CMakeFiles/ci.dir/fsw/examples/udp_tf/ci_custom.c.o 

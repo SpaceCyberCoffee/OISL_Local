@@ -1,0 +1,72 @@
+#---------------------------------------------------------------------------
+# Sample doxygen setup for generating mission documentation
+#---------------------------------------------------------------------------
+
+# Allow overrides
+@INCLUDE_PATH          = /home/jstar/Desktop/github-nos3/fsw
+
+# Common configuration and default settings
+@INCLUDE               = /home/jstar/Desktop/github-nos3/fsw/build/docs/cfe-common.doxyfile
+
+# Example mission doc design setup
+PROJECT_NAME           = "NOS3"
+PROJECT_BRIEF          = "Core Flight System project built using \"../cfg/build/nos3\" configuration"
+OUTPUT_DIRECTORY       = /home/jstar/Desktop/github-nos3/fsw/build/docs/mission-doc
+WARN_LOGFILE           = mission-doc-warnings.log
+
+# Include mission defs directory
+INPUT                 += /home/jstar/Desktop/github-nos3/fsw/../cfg/build/nos3_defs
+STRIP_FROM_PATH       += /home/jstar/Desktop/github-nos3/fsw/../cfg/build/nos3_defs
+
+# The user content doxyfile contains paths to the mission-specific applications
+INPUT += /home/jstar/Desktop/github-nos3/fsw/cfe/modules/core_api
+INPUT += /home/jstar/Desktop/github-nos3/fsw/cfe/modules/core_private
+INPUT += /home/jstar/Desktop/github-nos3/fsw/cfe/modules/cfe_assert
+INPUT += /home/jstar/Desktop/github-nos3/components/cryptolib
+INPUT += /home/jstar/Desktop/github-nos3/fsw/apps/hwlib
+INPUT += /home/jstar/Desktop/github-nos3/fsw/apps/io_lib
+@INCLUDE = /home/jstar/Desktop/github-nos3/fsw/build/docs/cf-detaildesign.doxyfile
+INPUT += /home/jstar/Desktop/github-nos3/fsw/apps/ci
+INPUT += /home/jstar/Desktop/github-nos3/fsw/apps/ci_lab
+@INCLUDE = /home/jstar/Desktop/github-nos3/fsw/build/docs/ds-detaildesign.doxyfile
+@INCLUDE = /home/jstar/Desktop/github-nos3/fsw/build/docs/fm-detaildesign.doxyfile
+@INCLUDE = /home/jstar/Desktop/github-nos3/fsw/build/docs/lc-detaildesign.doxyfile
+@INCLUDE = /home/jstar/Desktop/github-nos3/fsw/build/docs/sc-detaildesign.doxyfile
+INPUT += /home/jstar/Desktop/github-nos3/fsw/apps/sch
+INPUT += /home/jstar/Desktop/github-nos3/fsw/apps/to
+INPUT += /home/jstar/Desktop/github-nos3/fsw/apps/to_lab
+INPUT += /home/jstar/Desktop/github-nos3/components/arducam/fsw
+INPUT += /home/jstar/Desktop/github-nos3/components/generic_adcs/fsw
+INPUT += /home/jstar/Desktop/github-nos3/components/generic_css/fsw
+INPUT += /home/jstar/Desktop/github-nos3/components/generic_eps/fsw
+INPUT += /home/jstar/Desktop/github-nos3/components/generic_fss/fsw
+INPUT += /home/jstar/Desktop/github-nos3/components/generic_imu/fsw
+INPUT += /home/jstar/Desktop/github-nos3/components/generic_mag/fsw
+INPUT += /home/jstar/Desktop/github-nos3/components/generic_reaction_wheel/fsw
+INPUT += /home/jstar/Desktop/github-nos3/components/generic_radio/fsw
+INPUT += /home/jstar/Desktop/github-nos3/components/generic_star_tracker/fsw
+INPUT += /home/jstar/Desktop/github-nos3/components/generic_torquer/fsw
+INPUT += /home/jstar/Desktop/github-nos3/components/novatel_oem615/fsw
+INPUT += /home/jstar/Desktop/github-nos3/components/sample/fsw
+INPUT += /home/jstar/Desktop/github-nos3/components/syn/fsw
+INPUT += /home/jstar/Desktop/github-nos3/components/oisl/fsw
+INPUT += /home/jstar/Desktop/github-nos3/fsw/cfe/modules/es
+INPUT += /home/jstar/Desktop/github-nos3/fsw/cfe/modules/evs
+INPUT += /home/jstar/Desktop/github-nos3/fsw/cfe/modules/fs
+INPUT += /home/jstar/Desktop/github-nos3/fsw/cfe/modules/sb
+INPUT += /home/jstar/Desktop/github-nos3/fsw/cfe/modules/tbl
+INPUT += /home/jstar/Desktop/github-nos3/fsw/cfe/modules/time
+@INCLUDE = /home/jstar/Desktop/github-nos3/fsw/build/docs/osal-detaildesign.doxyfile
+INPUT += /home/jstar/Desktop/github-nos3/fsw/psp
+INPUT += /home/jstar/Desktop/github-nos3/fsw/cfe/modules/msg
+INPUT += /home/jstar/Desktop/github-nos3/fsw/cfe/modules/sbr
+INPUT += /home/jstar/Desktop/github-nos3/fsw/cfe/modules/resourceid
+INPUT += /home/jstar/Desktop/github-nos3/fsw/cfe/modules/config
+
+@INCLUDE = /home/jstar/Desktop/github-nos3/fsw/build/docs/tgtsystem-content-amd64_linux_gnu_default_cpu1.doxyfile
+
+
+# Exclude coverage tests, stubs and associated framework from the documentation
+EXCLUDE_PATTERNS       += "*/ut-stubs/*"
+EXCLUDE_PATTERNS       += "*/ut-coverage/*"
+EXCLUDE_PATTERNS       += "*/unit-test*/*"

@@ -1,0 +1,6 @@
+#---------------------------------------------------------------------------
+# Doxygen Configuration options for mission detailed documentation
+#---------------------------------------------------------------------------
+
+# Common files
+@INCLUDE = /home/jstar/Desktop/github-nos3/fsw/build/docs/ds-common.doxyfile

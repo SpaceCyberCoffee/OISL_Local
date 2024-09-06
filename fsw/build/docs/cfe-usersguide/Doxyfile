@@ -1,0 +1,23 @@
+#---------------------------------------------------------------------------
+# Doxygen Configuration options to generate the "cFE Users Guide"
+#---------------------------------------------------------------------------
+
+# Allow overrides
+@INCLUDE_PATH          = /home/jstar/Desktop/github-nos3/fsw
+
+# Common setup
+@INCLUDE               = /home/jstar/Desktop/github-nos3/fsw/build/docs/cfe-common.doxyfile
+
+# Include osal to resolve references and provide default settings
+@INCLUDE               = /home/jstar/Desktop/github-nos3/fsw/build/docs/osal-common.doxyfile
+
+# Document specific settings
+PROJECT_NAME           = "Core Flight Executive Users Guide"
+OUTPUT_DIRECTORY       = /home/jstar/Desktop/github-nos3/fsw/build/docs/cfe-usersguide
+WARN_LOGFILE           = cfe-usersguide-warnings.log
+
+# For purposes of the user guide, reference the "stock" mission configuration
+# Although missions may override these files, for the users guide we are mainly
+# interested in the documentation of those items.
+STRIP_FROM_PATH       += /home/jstar/Desktop/github-nos3/fsw/cfe/cmake/sample_defs
+INPUT                 += /home/jstar/Desktop/github-nos3/fsw/cfe/cmake/sample_defs

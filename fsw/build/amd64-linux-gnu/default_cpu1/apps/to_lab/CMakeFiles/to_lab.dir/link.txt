@@ -1,0 +1,1 @@
+/usr/bin/gcc -fPIC  -std=c99 -Wstrict-prototypes -pedantic -Werror -Wall -Wwrite-strings -Wpointer-arith -Wno-address-of-packed-member -g -shared  -o to_lab.so CMakeFiles/to_lab.dir/fsw/src/to_lab_app.c.o 

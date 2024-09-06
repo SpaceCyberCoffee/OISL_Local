@@ -1,0 +1,2 @@
+/usr/bin/ar qc libeeprom_notimpl.a CMakeFiles/eeprom_notimpl.dir/cfe_psp_eeprom_notimpl.c.o
+/usr/bin/ranlib libeeprom_notimpl.a

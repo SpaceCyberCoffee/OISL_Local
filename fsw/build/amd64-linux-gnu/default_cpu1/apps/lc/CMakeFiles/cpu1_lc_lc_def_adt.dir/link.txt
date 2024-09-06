@@ -1,0 +1,2 @@
+/usr/bin/ar qc libcpu1_lc_lc_def_adt.a CMakeFiles/cpu1_lc_lc_def_adt.dir/fsw/tables/lc_def_adt.c.o
+/usr/bin/ranlib libcpu1_lc_lc_def_adt.a

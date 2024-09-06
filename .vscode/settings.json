@@ -1,0 +1,17 @@
+{
+    "files.associations": {
+        "math.h": "c",
+        "*.tcc": "c",
+        "limits": "c",
+        "ranges": "c",
+        "functional": "c",
+        "tuple": "c",
+        "string": "c",
+        "vector": "c",
+        "string_view": "c",
+        "istream": "c",
+        "ostream": "c",
+        "sstream": "c",
+        "streambuf": "c"
+    }
+}

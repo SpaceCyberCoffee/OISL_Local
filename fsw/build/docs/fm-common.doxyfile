@@ -1,0 +1,9 @@
+#---------------------------------------------------------------------------
+# Common doxygen configuration items
+#---------------------------------------------------------------------------
+
+# Include front material followed by everything in fsw
+INPUT      += /home/jstar/Desktop/github-nos3/fsw/apps/fm/docs/dox_src/cfs_fm.dox
+INPUT      += /home/jstar/Desktop/github-nos3/fsw/apps/fm/fsw
+
+IMAGE_PATH += /home/jstar/Desktop/github-nos3/fsw/apps/fm/docs/dox_src

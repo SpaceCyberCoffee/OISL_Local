@@ -1,0 +1,1 @@
+{"virtualbox":{"/home/jstar/Desktop/github-nos3":{"owner":"jstar","group":"vboxsf","automount":"true","mount_options":["dmode=0770","fmode=0770","uid=1001","gid=999","_netdev"],"guestpath":"/home/jstar/Desktop/github-nos3","hostpath":"/mnt/extras/SSD/NOS3_RBT/nos3_luca_OISL/nos3_rbt","disabled":false,"__vagrantfile":true}}}

@@ -1,0 +1,3 @@
+from delete import summm
+print(a)
+summm()

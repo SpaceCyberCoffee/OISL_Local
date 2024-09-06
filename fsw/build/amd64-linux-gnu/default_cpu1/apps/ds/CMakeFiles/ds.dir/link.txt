@@ -1,0 +1,1 @@
+/usr/bin/gcc -fPIC  -std=c99 -Wstrict-prototypes -pedantic -Werror -Wall -Wwrite-strings -Wpointer-arith -Wno-address-of-packed-member -g -shared  -o ds.so CMakeFiles/ds.dir/fsw/src/ds_table.c.o CMakeFiles/ds.dir/fsw/src/ds_cmds.c.o CMakeFiles/ds.dir/fsw/src/ds_app.c.o CMakeFiles/ds.dir/fsw/src/ds_file.c.o CMakeFiles/ds.dir/fsw/src/ds_dispatch.c.o 

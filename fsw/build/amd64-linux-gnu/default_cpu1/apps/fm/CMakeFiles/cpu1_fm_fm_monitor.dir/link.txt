@@ -1,0 +1,2 @@
+/usr/bin/ar qc libcpu1_fm_fm_monitor.a CMakeFiles/cpu1_fm_fm_monitor.dir/fsw/tables/fm_monitor.c.o
+/usr/bin/ranlib libcpu1_fm_fm_monitor.a

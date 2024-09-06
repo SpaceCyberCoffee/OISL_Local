@@ -1,0 +1,2 @@
+/usr/bin/ar qc libcpu1_ds_ds_file_tbl.a CMakeFiles/cpu1_ds_ds_file_tbl.dir/home/jstar/Desktop/github-nos3/cfg/build/nos3_defs/tables/ds_file_tbl.c.o
+/usr/bin/ranlib libcpu1_ds_ds_file_tbl.a

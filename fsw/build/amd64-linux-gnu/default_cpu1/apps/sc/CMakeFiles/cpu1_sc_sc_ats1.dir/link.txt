@@ -1,0 +1,2 @@
+/usr/bin/ar qc libcpu1_sc_sc_ats1.a CMakeFiles/cpu1_sc_sc_ats1.dir/fsw/tables/sc_ats1.c.o
+/usr/bin/ranlib libcpu1_sc_sc_ats1.a

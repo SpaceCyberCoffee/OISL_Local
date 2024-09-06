@@ -1,0 +1,2 @@
+/usr/bin/ar qc libcpu1_sc_sc_rts025.a CMakeFiles/cpu1_sc_sc_rts025.dir/fsw/tables/sc_rts025.c.o
+/usr/bin/ranlib libcpu1_sc_sc_rts025.a

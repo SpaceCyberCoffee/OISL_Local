@@ -1,0 +1,1 @@
+/usr/bin/gcc -fPIC  -std=c99 -Wstrict-prototypes -pedantic -Werror -Wall -Wwrite-strings -Wpointer-arith -Wno-address-of-packed-member -g -shared  -o fm.so CMakeFiles/fm.dir/fsw/src/fm_cmd_utils.c.o CMakeFiles/fm.dir/fsw/src/fm_app.c.o CMakeFiles/fm.dir/fsw/src/fm_cmds.c.o CMakeFiles/fm.dir/fsw/src/fm_child.c.o CMakeFiles/fm.dir/fsw/src/fm_tbl.c.o 

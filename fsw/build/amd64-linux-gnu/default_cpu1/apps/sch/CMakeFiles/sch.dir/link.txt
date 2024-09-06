@@ -1,0 +1,1 @@
+/usr/bin/gcc -fPIC  -std=c99 -Wstrict-prototypes -pedantic -Werror -Wall -Wwrite-strings -Wpointer-arith -Wno-address-of-packed-member -g -shared  -o sch.so CMakeFiles/sch.dir/fsw/src/sch_api.c.o CMakeFiles/sch.dir/fsw/src/sch_app.c.o CMakeFiles/sch.dir/fsw/src/sch_cmds.c.o CMakeFiles/sch.dir/fsw/src/sch_custom.c.o 

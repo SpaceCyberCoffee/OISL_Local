@@ -1,0 +1,1 @@
+/usr/bin/gcc -fPIC -Wno-format -g -shared  -o syn.so CMakeFiles/syn.dir/src/syn_app.c.o  -Wl,-rpath,/home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/apps/syn: ../libsynopsis.so 

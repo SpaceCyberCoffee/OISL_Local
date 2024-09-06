@@ -1,0 +1,17 @@
+#
+# Metadata
+#
+.vagrant
+.vscode
+.history
+.pyc
+.exe
+
+#
+# Build Files
+#
+build
+*.o
+support/nos3_install.log
+tmp
+core.*

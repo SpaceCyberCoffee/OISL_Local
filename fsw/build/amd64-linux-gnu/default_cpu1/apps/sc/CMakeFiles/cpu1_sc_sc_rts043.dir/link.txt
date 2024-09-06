@@ -1,0 +1,2 @@
+/usr/bin/ar qc libcpu1_sc_sc_rts043.a CMakeFiles/cpu1_sc_sc_rts043.dir/fsw/tables/sc_rts043.c.o
+/usr/bin/ranlib libcpu1_sc_sc_rts043.a

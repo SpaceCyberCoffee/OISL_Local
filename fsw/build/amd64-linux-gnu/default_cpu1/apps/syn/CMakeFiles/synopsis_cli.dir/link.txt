@@ -1,0 +1,1 @@
+/usr/bin/g++ -Wno-format -g CMakeFiles/synopsis_cli.dir/bin/synopsis_cli.cpp.o -o synopsis_cli  -Wl,-rpath,/home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/apps/syn libsynopsis.so -lpthread 
