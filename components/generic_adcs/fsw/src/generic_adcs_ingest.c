@@ -87,6 +87,7 @@ void Generic_ADCS_ingest_generic_fss(CFE_MSG_Message_t * Msg, Generic_ADCS_DI_Fs
         svs[2] = 1.0 / sqrt(1 + ta*ta + tb*tb);
         svs[0] = svs[2] * ta;
         svs[1] = svs[2] * tb;
+        QxV(Fss->qbs, svs, Fss->svb);
     } else {
         Fss->svb[0] = 0.0;
         Fss->svb[1] = 0.0;

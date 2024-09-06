@@ -321,7 +321,7 @@ static void AC_oisl(Generic_ADCS_GNC_Tlm_Payload_t *GNC, Generic_ADCS_AC_OISL_Tl
     fprintf(fp_B, "%f", SoS_B);
     fclose(fp_B);
 
-    // printf("Scalar product between ISL V and desired b2 (should be close to 1): %f\n", SoS);
+    printf("Scalar product between ISL V and desired b2 (should be close to 1): %f\n", SoS);
     
 
     // Calculate the primary alignment error

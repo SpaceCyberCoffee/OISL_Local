@@ -289,6 +289,13 @@ typedef struct CF_CFDP_PduFin
 } CF_CFDP_PduFin_t;
 
 /**
+ * @brief Transaction Status for CFDP.
+ */
+typedef enum {
+    CF_CFDP_TransactionStatus_SUCCESS = 0x00
+} CF_CFDP_TransactionStatus_t;
+
+/**
  * @brief Structure representing CFDP Acknowledge PDU
  *
  * Defined per section 5.2.4 / table 5-8 of CCSDS 727.0-B-5

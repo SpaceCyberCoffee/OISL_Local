@@ -117,7 +117,7 @@ FALSE                                   ! Echo to stdout
 "SC[0].B[0]"                            ! Prefix 5
 "Orb"                                   ! Prefix 6
 **********************************  Write to file for analysis *****************************
-WRITEFILE                               ! IPC Mode (OFF,TX,RX,TXRX,ACS,WRITEFILE,READFILE)
+OFF                             ! IPC Mode (OFF,TX,RX,TXRX,ACS,WRITEFILE,READFILE)
 0                                       ! AC.ID for ACS mode
 "State.42"                              ! File name for WRITE or READ
 SERVER                                  ! Socket Role (SERVER,CLIENT,GMSEC_CLIENT)

@@ -3,25 +3,26 @@ import numpy as np
 import math
 
 # Function to read and process the files
-def process_files(file1, file2):
+def process_files(file1, file2): # 42 e prop
     # Initialize lists to store the processed data
-    central_sat = []
-    forward_sat = []
+    forw_42 = []
+    forw_prop = []
 
     # Process both files simultaneously
-    with open(file1, 'r') as f1, open(file2, 'r') as f2:
-        for i, (line1, line2) in enumerate(zip(f1, f2)):
+    with open(file1, 'r') as f1:
+        for i, line1 in enumerate(f1):
             # Skip every other line
-            if i % 3 == 0:
+            if i % 2 == 0:
                 # Extract and convert the numbers
                 coords1 = line1.split()
-                coords2 = line2.split()
-                
-                # Append the first coordinate of each set
-                central_sat.append(float(coords1[0]))
-                forward_sat.append(float(coords2[0]))
+                forw_42.append(float(coords1[0])/1000)
+    with open(file2, 'r') as f2:
+        for i, line2 in enumerate(f2):
+            # Skip every other line 
+            coords2 = line2.split()
+            forw_prop.append(float(coords2[0]))
 
-    return central_sat, forward_sat
+    return forw_42, forw_prop
 
 def calculate_orbital_period(altitude_km):
     # Constants
@@ -37,22 +38,23 @@ def calculate_orbital_period(altitude_km):
 # Main execution
 if __name__ == "__main__":
     # File names
-    file1 = '/mnt/extras/SSD/NOS3_RBT/nos3_luca_OISL/nos3_rbt/components/oisl/fsw/src/central_test.txt'
-    file2 = '/mnt/extras/SSD/NOS3_RBT/nos3_luca_OISL/nos3_rbt/components/oisl/fsw/src/forward_test.txt'
+    file42 = '/mnt/extras/SSD/NOS3_RBT/nos3_luca_OISL/nos3_rbt/components/oisl/fsw/src/FORWARD_position_42_2.txt'
+    filePROP = '/mnt/extras/SSD/NOS3_RBT/nos3_luca_OISL/nos3_rbt/components/oisl/fsw/src/FORWARD_position_PROPAGATED.txt'
 
     # Read and process the files
-    central_sat, forward_sat = process_files(file1, file2)
-    print(calculate_orbital_period(400))
+    forward_42, forward_PROP = process_files(file42, filePROP)
+    print(calculate_orbital_period(400)/24)
+    print(len(forward_42), len(forward_PROP), 4%2)
 
     # Create the plot
     plt.figure(figsize=(10, 6))
-    plt.plot(range(len(central_sat)), central_sat, label='Central SAT')
-    plt.plot([i + 231 for i in range(len(forward_sat))], forward_sat, label='Forward SAT')
+    plt.plot(range(len(forward_42)), forward_42, label='42 SAT')
+    plt.plot([i + 0 for i in range(len(forward_PROP))], forward_PROP, label='Propagated SAT')
 
     # Set up the axes
     plt.xlabel('Raw Number')
     plt.ylabel('Coordinate Value')
-    plt.title('Comparison of Central SAT and Forward SAT Coordinates')
+    plt.title('Comparison of 42 SAT and Prop SAT Coordinates')
 
     # Add legend and grid
     plt.legend()

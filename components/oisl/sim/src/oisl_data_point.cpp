@@ -38,7 +38,8 @@ namespace Nos3
                 ** 42 data stream defined in `42/Source/IPC/SimWriteToSocket.c`
                 */
                 std::string key;
-                key.append("SC[").append(std::to_string(_sc)).append("].svb"); // SC[N].svb
+                // key.append("SC[").append(std::to_string(_sc)).append("].svb"); // SC[N].svb
+                key.append("SC[1].AC.GPS[0].PosN"); // SC[N].svb
 
                 /* Parse 42 telemetry */
                 std::string values = _dp.get_value_for_key(key);
@@ -57,7 +58,7 @@ namespace Nos3
                 _not_parsed = false;
 
                 /* Debug print */
-                sim_logger->trace("OislDataPoint::OislDataPoint:  Parsed svb = %f %f %f", _oisl_data[0], _oisl_data[1], _oisl_data[2]);
+                sim_logger->debug("OislDataPoint::OislDataPoint:  Parsed svb = %f %f %f", _oisl_data[0], _oisl_data[1], _oisl_data[2]);
             } catch (const std::exception &e) {
                 sim_logger->error("OislDataPoint::OislDataPoint:  Error parsing svb.  Error=%s", e.what());
             }

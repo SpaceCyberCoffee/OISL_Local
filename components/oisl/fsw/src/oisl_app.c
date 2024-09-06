@@ -561,14 +561,14 @@ void* FileTransferThread(void *arg) {
 
     // Check alignment (if applicable)
     int waitCount = 0;
-    while (OISL_AppData.DevicePkt.Oisl.ForwardAlignment == 1 && waitCount < 60) { // TODO OF COURSE SHOULD BE ==0
+    while (OISL_AppData.DevicePkt.Oisl.ForwardAlignment == 0 && waitCount < 60) { // TODO OF COURSE SHOULD BE ==0
         printf("OISL FILE CFDP: The alignment condition is not verified, waiting for alignment.\n");
         sleep(10);  // Wait for 10 seconds before checking again
         waitCount += 1;
     }
 
     // If the alignment condition is verified, proceed with the file transfer
-    if (!OISL_AppData.DevicePkt.Oisl.ForwardAlignment) { //TODO OF COURSE IS WITHOUT !
+    if (OISL_AppData.DevicePkt.Oisl.ForwardAlignment) { //TODO OF COURSE IS WITHOUT !
         sendFile(data->fileContent, data->fileSize);
     } else {
         CFE_EVS_SendEvent(OISL_CMD_SEND_FILE_ERR_EID, CFE_EVS_EventType_ERROR,
@@ -582,7 +582,8 @@ void* FileTransferThread(void *arg) {
 
 
 void OISL_SendFile_CFDP(void)
-{
+{   
+    // TODO must add what we are transmitting: TLE, COMMAND, TM, AND SO ON. THEN IN THE CFDP METHOD THE RECEIVING SAT BEHAVES DIFFERENTLY DEPENDING ON WHAT IT IS
     const char *filePath = "/home/jstar/Desktop/github-nos3/components/oisl/fsw/src/TestTransferFile.txt";  // DUMMY VERSION
     FILE *file;
     size_t fileSize;
