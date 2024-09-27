@@ -131,17 +131,17 @@ void sendFile(const char *fileContent, const size_t fileSize) {
     int segmentCount = segmentFileIntoPDUs(fileContent, fileSize, &headers, &contents, segmentSize);
     double transferTime = estimateTransferTime(fileSize, segmentCount);
 
-    uint8 target_to_align;
+    uint8 connection_establishment;
     if (OISL_AppData.CFDP.Target == 0) {
-        target_to_align = OISL_AppData.DevicePkt.Oisl.BackwardAlignment;
+        connection_establishment = OISL_AppData.DevicePkt.Oisl.BackwardConnection;
     }
     else if (OISL_AppData.CFDP.Target == 1)
     {
-        target_to_align = OISL_AppData.DevicePkt.Oisl.ForwardAlignment;
+        connection_establishment = OISL_AppData.DevicePkt.Oisl.ForwardConnection;
     }
     else {
         printf("Unknown taget to align with, or method not yet impemented for target %u, default to forward", OISL_AppData.CFDP.Target);
-        target_to_align = OISL_AppData.DevicePkt.Oisl.ForwardAlignment;
+        connection_establishment = OISL_AppData.DevicePkt.Oisl.ForwardConnection;
     }
     
     printf("OISL FILE CFDP: Estimated Transfer time including network delay: %f s.\n", transferTime);
@@ -153,7 +153,7 @@ void sendFile(const char *fileContent, const size_t fileSize) {
 
         while (!sent && retries < maxRetries) {
             // Check alignment TODO THEN WILL BE ALIGNMENT OF BOTH.
-            if (target_to_align == 1) { // OF COURSE ==1
+            if (connection_establishment == 1) { // OF COURSE ==1
                 sent = sendPDU(&headers[segmentNumber], &contents[segmentNumber], segmentNumber, fileContent, segmentSize);
                 if (sent == 1) {
                     simulateNetworkDelay();
