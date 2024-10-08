@@ -44,6 +44,7 @@ COMMAND OISL OISL_SEND_FILE BIG_ENDIAN "Oisl Transfer File Command CFDP"
     STATE BACKWARD_SAT                 0
     STATE FORWARD_SAT                  1
     STATE GROUND_STATION               2
+  APPEND_PARAMETER FILE_NAME           800 STRING "/home/jstar/Desktop/github-nos3/components/oisl/fsw/src/TestTransferFile.txt" "Path/Filename to send"
 
 COMMAND OISL OISL_REQ_HK BIG_ENDIAN "Oisl Request HK Packet Command"
   APPEND_PARAMETER CCSDS_STREAMID      16 UINT MIN_UINT16 MAX_UINT16 0x1899 "CCSDS Packet Identification" 

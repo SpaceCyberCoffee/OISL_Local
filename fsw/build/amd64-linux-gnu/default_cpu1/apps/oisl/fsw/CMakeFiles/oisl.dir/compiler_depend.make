@@ -243,7 +243,8 @@ apps/oisl/fsw/CMakeFiles/oisl.dir/src/CFDP_Luca.c.o: /home/jstar/Desktop/github-
   /usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h \
   /usr/include/x86_64-linux-gnu/bits/setjmp.h \
   /usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h \
-  /usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h
+  /usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h \
+  /home/jstar/Desktop/github-nos3/components/oisl/fsw/src/CFDP_Luca.h
 
 apps/oisl/fsw/CMakeFiles/oisl.dir/src/oisl_app.c.o: /home/jstar/Desktop/github-nos3/components/oisl/fsw/src/oisl_app.c \
   /usr/include/stdc-predef.h \
@@ -736,11 +737,11 @@ apps/oisl/fsw/CMakeFiles/oisl.dir/src/oisl_device.c.o: /home/jstar/Desktop/githu
 
 /usr/include/math.h:
 
-/home/jstar/Desktop/github-nos3/components/oisl/fsw/src/CFDP_Luca.h:
-
 /usr/include/x86_64-linux-gnu/bits/in.h:
 
 /home/jstar/Desktop/github-nos3/components/oisl/fsw/src/oisl_app.c:
+
+/home/jstar/Desktop/github-nos3/components/oisl/fsw/src/CFDP_Luca.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h:
 

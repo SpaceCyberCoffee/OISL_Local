@@ -709,7 +709,17 @@
 			}
 			}
 		},
-		"GENERIC_ADCS": {
+		"GENERIC_ADCS_DEBUG": {
+			"tc": {
+				"GENERIC_ADCS_SET_MODE_CC":{
+				"stream_id": "0x1940",
+				"parameter_names": ["GNC_MODE"],
+				"parameter_values": ["OISL_MODE_F"],
+				"sizes": [8],
+				"types": ["UINT8"],
+				"descriptions": ["SET ADCS MODE Command"]
+				}
+			},
 			"tm": {
 			"GENERIC_ADCS_DI": {
 				  "CSS0_X": {

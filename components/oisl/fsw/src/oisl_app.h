@@ -24,6 +24,7 @@
 #include <pthread.h>
 
 // Structure to hold file transfer data
+// TODO: ADD THE FILENAME PARAMETER. The file will have: type (Text, CMD, TM), SOURCE DIRECTORY and then the destination in the receiving sat. THIS IS WRITTEN WITHIN THE FILE. 
 typedef struct {
     char *fileContent;
     size_t fileSize;

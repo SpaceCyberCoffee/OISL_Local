@@ -13,5 +13,6 @@
         "ostream": "c",
         "sstream": "c",
         "streambuf": "c"
-    }
+    },
+    "cmake.sourceDirectory": "/mnt/extras/SSD/NOS3_RBT/nos3_luca_OISL/nos3_rbt/sims"
 }

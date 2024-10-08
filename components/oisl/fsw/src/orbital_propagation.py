@@ -28,7 +28,7 @@ def propagate_orbit(tle_file, seconds_elapsed):
                   current_time.hour, current_time.minute, current_time.second + current_time.microsecond / 1e6)
     e, r, v = satellite.sgp4(jd, fr)
 
-    return r
+    return r 
 
 if __name__ == "__main__":
     if len(sys.argv) != 3:

@@ -3,15 +3,18 @@
 #include <unistd.h>
 #include "CFDP_PDU.h"
 #include "oisl_app.h"
+#include "CFDP_Luca.h"
 
 const int networkDelay = 7000; // 7 ms ONE TRIP
 const double transferSpeedMbps = 100.0; // Transfer speed in Mbps
+
+static const char* fileSent_confirmation = "/home/jstar/Desktop/github-nos3/file_sent.txt";
 
 
 void simulateNetworkDelay(void) {
     usleep(networkDelay); // Simulate network delay for a OISL distance of around 2000km -> 7 ms
     // TODO: How to implement this as 100ms sim time, instead of real time?
-}
+}  
 
 // Simulated network functions
 int sendPDU(CF_CFDP_PduFileDataHeader_t *header, CF_CFDP_PduFileDataContent_t *content, int segmentNumber, const char *fileContent, int segmentSize) {
@@ -121,8 +124,25 @@ double estimateTransferTime(size_t fileSize, int segmentCount) {
     return estimatedTransferTimeSeconds + delay;
 }
 
+void createSentFile(const char *fileContent) {
+    // TODO source and dest must be defined by the file content. 
+    FILE *sentFile = fopen(fileSent_confirmation, "w");
+    if (sentFile != NULL) {
+        // Write the entire file content to the confirmation file
+        fprintf(sentFile, "%s", fileContent);
+        fclose(sentFile);
+        printf("File 'file_sent_confirmation.txt' created with the content copied from fileContent.\n");
+    } else {
+        printf("Error creating 'file_sent_confirmation.txt' file.\n");
+    }
+}
+
+
+
 // CFDP-like file sending function
 void sendFile(const char *fileContent, const size_t fileSize) {
+    // TODO: GIVEN FILECONTENT EXTRACT THE SOURCE AND DESTINATION  and PASS THEM TO THE CREATE FILE METHOD.
+    // TODO: EXTEND TO INCLUDE POSSIBLER FILES CONTAINIGN BOTH TM AND COMMANDS. (IF REALISTIC)
     int segmentNumber = 0;
     const int segmentSize = CF_MAX_PDU_SIZE - sizeof(CF_CFDP_PduFileDataHeader_t) - CF_CFDP_MIN_HEADER_SIZE;
     /* If each PDU can carry 504 bytes of data and you can send a maximum of 1000 PDUs, the maximum file size in bytes is: Max File Size (bytes)=504×1000=504000 bytes = 504 kB*/
@@ -131,17 +151,17 @@ void sendFile(const char *fileContent, const size_t fileSize) {
     int segmentCount = segmentFileIntoPDUs(fileContent, fileSize, &headers, &contents, segmentSize);
     double transferTime = estimateTransferTime(fileSize, segmentCount);
 
-    uint8 connection_establishment;
+    uint8 *connection_establishment;
     if (OISL_AppData.CFDP.Target == 0) {
-        connection_establishment = OISL_AppData.DevicePkt.Oisl.BackwardConnection;
+        connection_establishment = &OISL_AppData.DevicePkt.Oisl.BackwardConnection;
     }
     else if (OISL_AppData.CFDP.Target == 1)
     {
-        connection_establishment = OISL_AppData.DevicePkt.Oisl.ForwardConnection;
+        connection_establishment = &OISL_AppData.DevicePkt.Oisl.ForwardConnection;
     }
     else {
         printf("Unknown taget to align with, or method not yet impemented for target %u, default to forward", OISL_AppData.CFDP.Target);
-        connection_establishment = OISL_AppData.DevicePkt.Oisl.ForwardConnection;
+        connection_establishment = &OISL_AppData.DevicePkt.Oisl.ForwardConnection;
     }
     
     printf("OISL FILE CFDP: Estimated Transfer time including network delay: %f s.\n", transferTime);
@@ -152,8 +172,7 @@ void sendFile(const char *fileContent, const size_t fileSize) {
         const int maxRetries = 5;
 
         while (!sent && retries < maxRetries) {
-            // Check alignment TODO THEN WILL BE ALIGNMENT OF BOTH.
-            if (connection_establishment == 1) { // OF COURSE ==1
+            if (*connection_establishment == 1) {
                 sent = sendPDU(&headers[segmentNumber], &contents[segmentNumber], segmentNumber, fileContent, segmentSize);
                 if (sent == 1) {
                     simulateNetworkDelay();
@@ -186,7 +205,13 @@ void sendFile(const char *fileContent, const size_t fileSize) {
         }
     }
 
-    printf("File transmission is over\n");
+    if (segmentNumber == segmentCount) {
+        printf("All PDUs sent successfully. File transmission is over \n");
+        createSentFile(fileContent);
+    } 
+    else {
+        printf("File transmission incomplete.\n");
+    }
 
     // Free dynamically allocated memory
     free(headers);

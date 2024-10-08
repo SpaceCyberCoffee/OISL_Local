@@ -23,17 +23,31 @@ class IF2COSMOS:
 
     def sendCommand(self, commandName, parameterNames=[], parameterValues=[]):
         io.prnt(f'Sending command {commandName} for {self.subsystem}', P2S)
-
+        if isinstance(parameterNames, str):
+                print("1")
+        if type(parameterValues) != list:
+                print("2")    
+        if commandName not in self.config['tc']:
+                raise TypeError('Command not specified in json file!')   
+        if parameterNames:
+                print("3")
+                for para in parameterNames:
+                    print(self.config['tc'][commandName])
+                    if para not in self.config['tc'][commandName]['parameter_names']:
+                        raise TypeError(f'Command parameter {para} not specified or wrong written')
         try:
             if isinstance(parameterNames, str):
+                print("1")
                 parameterNames = [parameterNames]
 
             if type(parameterValues) != list:
+                print("2")
                 parameterValues = [parameterValues]
 
             if commandName not in self.config['tc']:
                 raise TypeError('Command not specified in json file!')
             if parameterNames:
+                print("3")
                 for para in parameterNames:
                     print(self.config['tc'][commandName])
                     if para not in self.config['tc'][commandName]['parameter_names']:

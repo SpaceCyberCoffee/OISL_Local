@@ -60,8 +60,9 @@ typedef struct
 typedef struct
 {
     /* Every command requires a header used to identify it */
-    CFE_MSG_CommandHeader_t CmdHeader;
-    uint8    Target;
+    CFE_MSG_CommandHeader_t CmdHeader; //size is 8
+    uint8                   Target;
+    char                    FileName[64];
 } OISL_CFDP_cmd_t;
 
 

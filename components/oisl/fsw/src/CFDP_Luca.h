@@ -85,4 +85,9 @@ double estimateTransferTime(size_t fileSize, int segmentCount);
  */
 void sendFile(const char *fileContent, const size_t fileSize);
 
+/**
+ * @brief Method to create a file to signal the server to move the sourceFile to the destFile.
+ */
+void createSentFile(const char *fileContent);
+
 #endif

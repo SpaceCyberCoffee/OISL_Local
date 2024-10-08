@@ -11,7 +11,7 @@
 */
 #include <arpa/inet.h>
 #include "oisl_app.h"
-#include "CFDP_Luca.h"
+#include "CFDP_Luca.h" 
 
 
 /*
@@ -191,9 +191,9 @@ int32 OISL_AppInit(void)
 
     /* Remove the my alignment file at startup if it exists */
     if (remove("/home/jstar/Desktop/github-nos3/components/oisl/fsw/src/my_alignments.txt") == 0) {
-        sim_logger->debug("File my alignment deleted successfully.\n");
+        printf("File my alignment deleted successfully.\n");
     } else {
-        sim_logger->debug("Failed to delete the alignment file. Does not exist\n");
+        printf("Failed to delete the alignment file. Does not exist\n");
     }
 
     /* 
@@ -345,17 +345,32 @@ void OISL_ProcessGroundCommand(void)
             break;
 
         case OISL_SEND_FILE:
-            if (OISL_VerifyCmdLength(OISL_AppData.MsgPtr, sizeof(OISL_CFDP_cmd_t)) == OS_SUCCESS)
-            {   
+            CFE_EVS_SendEvent(OISL_CMD_SEND_FILE_ERR_EID, CFE_EVS_EventType_INFORMATION, "sIZE OF CMD HEADER: %lu \n", sizeof(CFE_MSG_CommandHeader_t));
+            CFE_EVS_SendEvent(OISL_CMD_SEND_FILE_ERR_EID, CFE_EVS_EventType_INFORMATION, "SIze of THE CFDP CMD T: %lu \n", sizeof(OISL_CFDP_cmd_t));
+            
+            // if (OISL_VerifyCmdLength(OISL_AppData.MsgPtr, sizeof(OISL_CFDP_cmd_t)) == OS_SUCCESS)
+            // {   
                 OISL_CFDP_cmd_t *cmd;
                 cmd = (OISL_CFDP_cmd_t *)OISL_AppData.MsgPtr; 
-                OISL_AppData.CFDP.Target = cmd->Target; // Keep the current value in **one** place
+                if (cmd->FileName == NULL) {
+                    CFE_EVS_SendEvent(OISL_CMD_SEND_FILE_ERR_EID, CFE_EVS_EventType_INFORMATION, "Error: cmd->FileName is NULL\n");
+                    
+                }
+                strcpy(OISL_AppData.CFDP.FileName, cmd->FileName); 
+                if (OISL_AppData.CFDP.FileName != NULL) {
+                    strcpy(OISL_AppData.CFDP.FileName, cmd->FileName);  // Copy the file path
+                    CFE_EVS_SendEvent(OISL_CMD_SEND_FILE_ERR_EID, CFE_EVS_EventType_INFORMATION, "Filename is %s", OISL_AppData.CFDP.FileName);
+                }
+                else {
+                    CFE_EVS_SendEvent(OISL_CMD_SEND_FILE_ERR_EID, CFE_EVS_EventType_INFORMATION, "Nulllll");
+                }
+                OISL_AppData.CFDP.Target = cmd->Target; 
                 CFE_EVS_SendEvent(OISL_CMD_SEND_FILE_EID, CFE_EVS_EventType_INFORMATION, "OISL: Transfer File command received. Trying to reach Sat %u", cmd->Target);
                 OISL_SendFile_CFDP();
-            }
-            else {
-                CFE_EVS_SendEvent(OISL_CMD_SEND_FILE_ERR_EID, CFE_EVS_EventType_INFORMATION, "OISL: Transfer File command received but error encountered");
-            }
+            // }
+            // else {
+            //     CFE_EVS_SendEvent(OISL_CMD_SEND_FILE_ERR_EID, CFE_EVS_EventType_INFORMATION, "OISL: Transfer File command received but error encountered");
+            // }
             break;
 
         /*
@@ -367,6 +382,7 @@ void OISL_ProcessGroundCommand(void)
             CFE_EVS_SendEvent(OISL_CMD_ERR_EID, CFE_EVS_EventType_ERROR, 
                 "OISL: Invalid command code for packet, MID = 0x%x, cmdCode = 0x%x", CFE_SB_MsgIdToValue(MsgId), CommandCode);
             break;
+            
     }
     return;
 } 
@@ -559,6 +575,12 @@ void OISL_Disable(void)
         OISL_AppData.HkTelemetryPkt.DeviceErrorCount++;
         CFE_EVS_SendEvent(OISL_DISABLE_ERR_EID, CFE_EVS_EventType_ERROR, "OISL: Device disable failed, already disabled");
     }
+    /* Remove the my alignment file at startup if it exists */
+    if (remove("/home/jstar/Desktop/github-nos3/components/oisl/fsw/src/my_alignments.txt") == 0) {
+        printf("File my alignment deleted successfully.\n");
+    } else {
+        printf("Failed to delete the alignment file. Does not exist\n");
+    }
     return;
 }
 
@@ -566,29 +588,32 @@ void OISL_Disable(void)
 void* FileTransferThread(void *arg) {
     FileTransferData *data = (FileTransferData *)arg;
 
-    // Check alignment (if applicable)
+    // Check alignment 
     int waitCount = 0;
-    uint8_t target_to_align;
+
+    uint8_t *target_to_align = NULL;
     if (data->target == 0) {
-        target_to_align = OISL_AppData.DevicePkt.Oisl.BackwardAlignment;
+        target_to_align = &OISL_AppData.DevicePkt.Oisl.BackwardAlignment;
     }
     else if (data->target == 1)
     {
-        target_to_align = OISL_AppData.DevicePkt.Oisl.ForwardAlignment;
+        target_to_align = &OISL_AppData.DevicePkt.Oisl.ForwardAlignment;
     }
     else {
         printf("Unknown taget to align with, or method not yet impemented for target %u", data->target);
+        free(data->fileContent);
+        free(data);
         return NULL;
     }
     
-    while (target_to_align == 0 && waitCount < 60) { // TODO OF COURSE SHOULD BE ==0
+    while (*target_to_align == 0 && waitCount < 60) { 
         printf("OISL FILE CFDP: The alignment condition is not verified, waiting for alignment.\n");
         sleep(10);  // Wait for 10 seconds before checking again
         waitCount += 1;
     }
 
     // If the alignment condition is verified, proceed with the file transfer
-    if (target_to_align) { //TODO OF COURSE IS WITHOUT !
+    if (*target_to_align) { 
         sendFile(data->fileContent, data->fileSize);
     } else {
         CFE_EVS_SendEvent(OISL_CMD_SEND_FILE_ERR_EID, CFE_EVS_EventType_ERROR,
@@ -603,8 +628,8 @@ void* FileTransferThread(void *arg) {
 
 void OISL_SendFile_CFDP(void)
 {   
-    // TODO must add what we are transmitting: TLE, COMMAND, TM, AND SO ON. THEN IN THE CFDP METHOD THE RECEIVING SAT BEHAVES DIFFERENTLY DEPENDING ON WHAT IT IS
-    const char *filePath = "/home/jstar/Desktop/github-nos3/components/oisl/fsw/src/TestTransferFile.txt";  // DUMMY VERSION
+    
+    const char *filePath = OISL_AppData.CFDP.FileName;  
     FILE *file;
     size_t fileSize;
     char *fileContent;
@@ -707,7 +732,7 @@ int32 OISL_VerifyCmdLength(CFE_MSG_Message_t * msg, uint16 expected_length)
         CFE_MSG_GetFcnCode(msg, &cmd_code);
 
         CFE_EVS_SendEvent(OISL_LEN_ERR_EID, CFE_EVS_EventType_ERROR,
-           "Invalid msg length: ID = 0x%X,  CC = %d, Len = %ld, Expected = %d",
+           "Invalid msg length: ID = 0x%X,  CC = %d, Len = %ld, Expected = %d",    // Invalid msg length: ID = 0x1898,  CC = 5, Len = 9, Expected = 24
               CFE_SB_MsgIdToValue(msg_id), cmd_code, actual_length, expected_length);
 
         status = OS_ERROR;
