@@ -312,6 +312,17 @@ int32_t OISL_RequestData(uart_info_t* device, OISL_Device_Data_tlm_t* data)
     fprintf(fp, "%u %u", data->ForwardAlignment,  data->BackwardAlignment);
     fclose(fp);   
 
+    // // THEN DELETE ME
+    /* Write to file the alignment conditions. Used by other sats to establish connection. */
+    // const char* my_alignment = "/home/jstar/Desktop/github-nos3/components/oisl/fsw/src/TEST_CUBESAT_STABILITY_1.txt";
+    // FILE *fp3 = fopen(my_alignment, "a");
+    // if (fp3 == NULL)
+    // {
+    //     OS_printf("Error opening the file %s", my_alignment);
+    // }
+    // fprintf(fp3, "%u\n", data->ForwardAlignment);
+    // fclose(fp3);
+
     // /* Connection with Forward Satellite */
     const char* alignment_info_forward = "/home/jstar/Desktop/github-nos3/components/oisl/fsw/src/F_sat_back_alignment.txt";
     if (data->ForwardAlignment == 0) {

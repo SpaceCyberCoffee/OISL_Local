@@ -75,6 +75,9 @@ typedef struct
     double ECIX;
     double ECIY;
     double ECIZ;
+    double ECEFX;
+    double ECEFY;
+    double ECEFZ;
     double VelX;
     double VelY;
     double VelZ;

@@ -782,6 +782,9 @@ namespace Nos3
         Double p_x_i = data_point.get_ECI_x();
         Double p_y_i = data_point.get_ECI_y();
         Double p_z_i = data_point.get_ECI_z();
+        Double p_x_i_e = data_point.get_ECEF_x();
+        Double p_y_i_e = data_point.get_ECEF_y();
+        Double p_z_i_e = data_point.get_ECEF_z();
         Float p_x_sigma = 0.0; // - TODO FIX ME - Just an example
         Float p_y_sigma = 0.0; // - TODO FIX ME - Just an example
         Float p_z_sigma = 0.0; // - TODO FIX ME - Just an example
@@ -824,6 +827,9 @@ namespace Nos3
         ss << p_x_i << ",";
         ss << p_y_i << ",";
         ss << p_z_i << ",";
+        ss << p_x_i_e << ",";
+        ss << p_y_i_e << ",";
+        ss << p_z_i_e << ",";
         ss << p_x_sigma << ",";
         ss << p_y_sigma << ",";
         ss << p_z_sigma << ",";
@@ -875,6 +881,15 @@ namespace Nos3
         out.insert(out.end(), bytes.begin(), bytes.end());
         bytes.clear();
         double_to_uint8vector(data_point.get_ECI_z(), bytes); // P-Z_I
+        out.insert(out.end(), bytes.begin(), bytes.end());
+        bytes.clear();
+        double_to_uint8vector(data_point.get_ECEF_x(), bytes); // P-X_I
+        out.insert(out.end(), bytes.begin(), bytes.end());
+        bytes.clear();
+        double_to_uint8vector(data_point.get_ECEF_y(), bytes); // P-Y_I
+        out.insert(out.end(), bytes.begin(), bytes.end());
+        bytes.clear();
+        double_to_uint8vector(data_point.get_ECEF_z(), bytes); // P-Z_I
         out.insert(out.end(), bytes.begin(), bytes.end());
         bytes.clear();
 

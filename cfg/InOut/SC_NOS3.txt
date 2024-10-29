@@ -27,10 +27,10 @@ NONE                        ! Shaker File Name
 ************************************************************************
 1                           ! Number of Bodies
 ================================ Body 0 ================================
-4.0                         ! Mass
-0.0067  0.033  0.033        ! Moments of Inertia (kg-m^2)
+6.0                         ! Mass
+0.10  0.10  0.04            ! Moments of Inertia (kg-m^2)
 0.0  0.0  0.0               ! Products of Inertia (xy,xz,yz)
-0.12  -0.25  0.2            ! Location of mass center, m
+0.1  0.1  0.2               ! Location of mass center, m
 0.0  0.0  0.0               ! Constant Embedded Momentum (Nms)
 0.0  0.0  0.0               ! Constant Embedded Magnetic Dipole (A-m^2)
 stf1_red.obj                ! Geometry Input File Name
@@ -63,7 +63,7 @@ FALSE                       ! Wheel Jitter Active
 =============================  Wheel X  ================================
 0.0                         ! Initial Momentum, N-m-sec
 1.0   0.0   0.0             ! Wheel Axis Components, [X, Y, Z]
-0.001   0.01082             ! Max Torque (N-m), Momentum (N-m-sec)
+0.005   0.005             ! Max Torque (N-m), Momentum (N-m-sec)
 1.72e-5                     ! Wheel Rotor Inertia, kg-m^2
 0                           ! Body
 0                           ! Node
@@ -71,7 +71,7 @@ NONE                        ! Drag/Jitter Input File Name
 =============================  Wheel Y  ================================
 0.0                         ! Initial Momentum, N-m-sec
 0.0   1.0   0.0             ! Wheel Axis Components, [X, Y, Z]
-0.001   0.01082             ! Max Torque (N-m), Momentum (N-m-sec)
+0.005   0.005             ! Max Torque (N-m), Momentum (N-m-sec)
 1.72e-5                     ! Wheel Rotor Inertia, kg-m^2
 0                           ! Body
 0                           ! Node
@@ -79,7 +79,7 @@ NONE                        ! Drag/Jitter Input File Name
 =============================  Wheel Z  ================================
 0.0                         ! Initial Momentum, N-m-sec
 0.0   0.0   1.0             ! Wheel Axis Components, [X, Y, Z]
-0.001   0.01082             ! Max Torque (N-m), Momentum (N-m-sec)
+0.005   0.005            ! Max Torque (N-m), Momentum (N-m-sec)
 1.72e-5                     ! Wheel Rotor Inertia, kg-m^2
 0                           ! Body
 0                           ! Node

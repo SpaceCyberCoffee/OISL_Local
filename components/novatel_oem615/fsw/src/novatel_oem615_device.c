@@ -550,6 +550,9 @@ void NOVATEL_OEM615_ParseBestXYZA(NOVATEL_OEM615_Device_Data_tlm_t* device_data_
     device_data_struct->ECIX = 0.0;
     device_data_struct->ECIY = 0.0;
     device_data_struct->ECIZ = 0.0;
+    device_data_struct->ECEFX = 0.0;
+    device_data_struct->ECEFY = 0.0;
+    device_data_struct->ECEFZ = 0.0;
     device_data_struct->VelX = 0.0;
     device_data_struct->VelY = 0.0;
     device_data_struct->VelZ = 0.0;
@@ -582,6 +585,12 @@ void NOVATEL_OEM615_ParseBestXYZA(NOVATEL_OEM615_Device_Data_tlm_t* device_data_
     if (token != NULL) device_data_struct->ECIY = atof(token);
     token = strtok_r(NULL, ",; ", &saveptr); // P-Z (m)
     if (token != NULL) device_data_struct->ECIZ = atof(token);
+    token = strtok_r(NULL, ",; ", &saveptr); // P-X (m)
+    if (token != NULL) device_data_struct->ECEFX = atof(token);
+    token = strtok_r(NULL, ",; ", &saveptr); // P-Y (m)
+    if (token != NULL) device_data_struct->ECEFY = atof(token);
+    token = strtok_r(NULL, ",; ", &saveptr); // P-Z (m)
+    if (token != NULL) device_data_struct->ECEFZ = atof(token);
     token = strtok_r(NULL, ",; ", &saveptr); // P-X sigma
     token = strtok_r(NULL, ",; ", &saveptr); // P-Y sigma
     token = strtok_r(NULL, ",; ", &saveptr); // P-Z sigma
@@ -621,5 +630,21 @@ void NOVATEL_OEM615_ParseBestXYZA(NOVATEL_OEM615_Device_Data_tlm_t* device_data_
     }
     // close the file
     fclose(fp);   
+
+    // double ECEF_vector [] = {device_data_struct->ECEFX, device_data_struct->ECEFY, device_data_struct->ECEFZ};
+    // filename = "/home/jstar/Desktop/github-nos3/components/generic_adcs/fsw/src/ECEF_position.txt";
+
+    // // open the file for writing
+    // fp = fopen(filename, "w");
+    // if (fp == NULL)
+    // {
+    //     OS_printf("Error opening the file %s", filename);
+    // }
+    // // write to the text file
+    // for (int i = 0; i < 3; i++) {
+    //     fprintf(fp, "%f ", ECEF_vector[i]);
+    // }
+    // // close the file
+    // fclose(fp);
 
 } /* NAV_ParseOEM615Bestxyza */

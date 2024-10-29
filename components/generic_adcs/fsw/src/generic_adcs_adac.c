@@ -10,6 +10,10 @@
 #include "generic_adcs_app.h"
 #include "generic_adcs_utilities.h"
 #include "generic_adcs_adac.h"
+#include <stdlib.h>
+#include <stdint.h>
+#include <string.h>
+
 
 static void AD_imu(const Generic_ADCS_DI_Imu_Tlm_Payload_t *DI_IMU, Generic_ADCS_AD_Imu_Tlm_Payload_t *AD_IMU);
 static void AD_mag(const Generic_ADCS_DI_Mag_Tlm_Payload_t *DI_Mag, Generic_ADCS_AD_Mag_Tlm_Payload_t *AD_Mag);
@@ -21,6 +25,11 @@ static void AC_bdot(Generic_ADCS_GNC_Tlm_Payload_t *GNC, Generic_ADCS_AC_Bdot_Tl
 static void AC_sunsafe(Generic_ADCS_GNC_Tlm_Payload_t *GNC, Generic_ADCS_AC_Sunsafe_Tlm_t *ACS);
 static void AC_oisl(Generic_ADCS_GNC_Tlm_Payload_t *GNC, Generic_ADCS_AC_OISL_Tlm_t *AC_OISL, const char *F_or_B);
 static void AC_h_mgmt(Generic_ADCS_GNC_Tlm_Payload_t *GNC);
+static void AC_oisl_OGS(Generic_ADCS_GNC_Tlm_Payload_t *GNC, Generic_ADCS_AC_OISL_Tlm_t *ACS, const Generic_ADCS_DI_St_Tlm_Payload_t *DI_St, const char *ogs_name);
+/*  Normalize a 3-vector if it is non-zero.                           */
+void UNITV2(double V[3]);
+static void AC_oisl_NADIR(Generic_ADCS_GNC_Tlm_Payload_t *GNC, Generic_ADCS_AC_Sunsafe_Tlm_t *ACS, const Generic_ADCS_DI_St_Tlm_Payload_t *DI_St);
+
 
 void Generic_ADCS_init_attitude_determination_and_attitude_control(FILE *in, Generic_ADCS_AD_Tlm_Payload_t *AD, 
     Generic_ADCS_GNC_Tlm_Payload_t *GNC, Generic_ADCS_AC_Tlm_Payload_t *ACS)
@@ -88,6 +97,14 @@ void Generic_ADCS_execute_attitude_determination_and_attitude_control(const Gene
 
     case OISL_MODE_B:
         AC_oisl(GNC, &ACS->OISL, "BACKWARD");
+        break;
+
+    case OISL_MODE_OGS:
+        AC_oisl_OGS(GNC, &ACS->OISL, &DI->St,  "Tiflis"); // todo: DOES NOT WORK
+        break;
+
+    case OISL_MODE_NADIR:
+        AC_oisl_NADIR(GNC, &ACS->Sunsafe, &DI->St); 
         break;
 
     case PASSIVE_MODE:
@@ -271,6 +288,77 @@ static void AC_sunsafe(Generic_ADCS_GNC_Tlm_Payload_t *GNC, Generic_ADCS_AC_Suns
 
 }
 
+static void AC_oisl_NADIR(Generic_ADCS_GNC_Tlm_Payload_t *GNC, Generic_ADCS_AC_Sunsafe_Tlm_t *ACS, const Generic_ADCS_DI_St_Tlm_Payload_t *DI_St)
+{
+    int i;
+    double u1[3] = {0.0, 0.0, 0.0}, err_b[3] = {0.0, 0.0, 0.0};      /* angle error calculation parameteres */
+    double temp_sside[3] = {0.0, 0.0, 0.0};
+    double SoS = 0.0;
+    double side[] = {0,1,0};
+
+    // Retrieve the ECI GPS position of this satellite
+    FILE *file_in = fopen("/home/jstar/Desktop/github-nos3/components/oisl/fsw/src/ECI_position.txt", "r");
+    double x, y, z;
+    fscanf(file_in, "%lf %lf %lf", &x, &y, &z);
+    fclose(file_in);
+    double ECISat [] = {x/1000, y/1000, z/1000};
+
+    double NADIR[] = {-ECISat[0], -ECISat[1], - ECISat[2]};
+    UNITV2(NADIR);
+    printf("ECI: %f %f %f\n", NADIR[0], NADIR[1], NADIR[2]);
+    double nadir_body[3]; // New vector for NADIR in body frame
+    QxV(DI_St->q, NADIR, nadir_body); // Convert from ECI to body frame
+    printf("BODY: %f %f %f\n", nadir_body[0], nadir_body[1], nadir_body[2]);
+
+/* .. Form attitude error signals */
+      SoS = VoV(nadir_body, side);
+      printf("Value of SoS %f\n", SoS);
+      if ((SoS > (EPS - 1.0)) && (SoS < (1.0 - EPS))) {
+         VxV(nadir_body, side, ACS->therr);
+      }
+      else if (SoS >= (1.0 - EPS)) {
+         ACS->therr[0] = 0.0;
+         ACS->therr[1] = 0.0;
+         ACS->therr[2] = 0.0;
+         }
+      else {
+         err_b[0] = side[0];
+         err_b[1] = side[2];
+         err_b[2] = side[1];
+         if (fabs(err_b[1] - err_b[0]) < EPS && fabs(err_b[1] - err_b[2]) < EPS) {
+            err_b[1] = -err_b[1];
+         }
+         VxV(side, err_b, temp_sside);
+         VxV(nadir_body, temp_sside, ACS->therr);
+      }
+      
+/* .. Closed-loop attitude control - PD Method */
+      for(i = 0; i < 3; i++) {
+         /* Clip attitude slew rates */
+         u1[i] = Limit(ACS->Kp[i] / ACS->Kr[i] * ACS->therr[i], -ACS->vmax,ACS->vmax);
+         ACS->werr[i] = GNC->wbn[i] - ACS->cmd_wbn[i];
+         ACS->Tcmd[i] = -ACS->Kr[i] * (u1[i] + ACS->werr[i]);
+      }
+
+/* .. Apply Torque Command */
+      for(i = 0; i < 3; i++) {
+         GNC->Tcmd[i] = -ACS->Tcmd[i];
+      }
+
+   if (GNC->HmgmtOn) {
+      AC_h_mgmt(GNC);
+      for(i = 0; i < 3; i++) {
+        GNC->Mcmd[i] = GNC->Hmgmt.Mcmd[i];
+      }
+   }
+   else {
+      for(i = 0; i < 3; i++) {
+         GNC->Mcmd[i] = 0.0;
+      }
+   }
+
+}
+
 
 #define EPS_OISL 0.9998
 // #define MIN_TORQUE_THRESHOLD 1.0E-5  // Define a small threshold to avoid negligible torque commands
@@ -382,6 +470,121 @@ static void AC_oisl(Generic_ADCS_GNC_Tlm_Payload_t *GNC, Generic_ADCS_AC_OISL_Tl
     }
 }
 
+static void AC_oisl_OGS(Generic_ADCS_GNC_Tlm_Payload_t *GNC, Generic_ADCS_AC_OISL_Tlm_t *ACS, const Generic_ADCS_DI_St_Tlm_Payload_t *DI_St, const char *ogs_name) //TODO: NOw is just to see if the tracking is possible. If so, and if it makes sense, then further development.
+{ 
+    
+    double ECEF_OGS[] = {3384.41090081, 3360.86534927, 4221.1653491};
+    // Retrieve current SIM time
+    CFE_TIME_SysTime_t nowT = CFE_TIME_GetTime();
+    uint32 seconds = nowT.Seconds;
+    uint32 subseconds = nowT.Subseconds;
+    // Convert the time to double
+    double pd = (double)seconds + ((double)subseconds / 4294967296.0); // 4294967296.0 = 2^32
+
+    // Python command to call the conversion script
+    char command[256];
+    FILE *fp;
+    char buffer[128];
+    double ECI_OGS[3] = {0.0, 0.0, 0.0}; // To store ECI coordinates
+
+    // Construct the command to call the Python script
+    snprintf(command, sizeof(command),
+         "python3 /home/jstar/Desktop/github-nos3/components/generic_adcs/fsw/src/ECEF2ECI.py %f %f %f %f",
+         ECEF_OGS[0], ECEF_OGS[1], ECEF_OGS[2], pd);
+
+    // Run the Python script and capture its output
+    fp = popen(command, "r");
+    if (fp == NULL) {
+        fprintf(stderr, "Failed to run Python script\n");
+        return; // Exit if the script fails
+    }
+
+    // Read the output and parse the position vector
+    while (fgets(buffer, sizeof(buffer) - 1, fp) != NULL) {
+        if (sscanf(buffer, "ECI propagated Position: [%lf, %lf, %lf]", &ECI_OGS[0], &ECI_OGS[1], &ECI_OGS[2]) == 3) {
+            printf("Got the ECI coordinates: [%f, %f, %f]\n", ECI_OGS[0], ECI_OGS[1], ECI_OGS[2]);
+        } else {
+            printf("Failed to parse the line: %s", buffer); // Debugging line
+        }
+    }
+    pclose(fp);
+
+    // printf("In the end the position of the OGS in ECI is: [%f, %f, %f]\n", ECI_OGS[0], ECI_OGS[1], ECI_OGS[2]);
+
+    // Retrieve the ECI GPS position of this satellite
+    FILE *file_in = fopen("/home/jstar/Desktop/github-nos3/components/oisl/fsw/src/ECI_position.txt", "r");
+    double x, y, z;
+    fscanf(file_in, "%lf %lf %lf", &x, &y, &z);
+    fclose(file_in);
+    double ECISat [] = {x/1000, y/1000, z/1000};
+
+    double ISL_OGS[] = {ECI_OGS[0] - ECISat[0], ECI_OGS[1] - ECISat[1], ECI_OGS[2] - ECISat[2]};
+
+    UNITV2(ISL_OGS);
+
+    printf("ECI: %f %f %f\n", ISL_OGS[0], ISL_OGS[1], ISL_OGS[2]);
+    double ISL_OGS_body[3] ;
+    QxV(DI_St->q, ISL_OGS, ISL_OGS_body); // convert from sensor frame to body frame
+
+    printf("BODY: %f %f %f\n", ISL_OGS_body[0], ISL_OGS_body[1], ISL_OGS_body[2]);
+    
+
+   int i;
+   double u1[3] = {0.0, 0.0, 0.0}, err_b[3] = {0.0, 0.0, 0.0};      /* angle error calculation parameteres */
+   double temp_sside[3] = {0.0, 0.0, 0.0};
+   double SoS = 0.0;
+
+   double side[] = {0.0, 1.0, 0.0};
+
+
+/* .. Form attitude error signals */
+      SoS = VoV(ISL_OGS_body, side);
+      printf("Scalar product between ISL V and desired b2 (should be close to 1): %f\n", SoS);
+      if ((SoS > (EPS - 1.0)) && (SoS < (1.0 - EPS))) {
+         VxV(ISL_OGS_body, side, ACS->therr);
+      }
+      else if (SoS >= (1.0 - EPS)) {
+         ACS->therr[0] = 0.0;
+         ACS->therr[1] = 0.0;
+         ACS->therr[2] = 0.0;
+         }
+      else {
+         err_b[0] = side[0];
+         err_b[1] = side[2];
+         err_b[2] = side[1];
+         if (fabs(err_b[0] - err_b[1]) < EPS && fabs(err_b[0] - err_b[2]) < EPS) {
+            err_b[0] = -err_b[0];
+         }
+         VxV(side, err_b, temp_sside);
+         VxV(ISL_OGS_body, temp_sside, ACS->therr);
+      }
+      
+/* .. Closed-loop attitude control - PD Method */
+      for(i = 0; i < 3; i++) {
+         /* Clip attitude slew rates */
+         u1[i] = Limit(ACS->Kp[i] / ACS->Kr[i] * ACS->therr[i], -ACS->vmax,ACS->vmax);
+         ACS->werr[i] = GNC->wbn[i] - ACS->cmd_wbn[i];
+         ACS->Tcmd[i] = -ACS->Kr[i] * (u1[i] + ACS->werr[i]);
+      }
+
+/* .. Apply Torque Command */
+      for(i = 0; i < 3; i++) {
+         GNC->Tcmd[i] = -ACS->Tcmd[i];
+      }
+
+   if (GNC->HmgmtOn) {
+      AC_h_mgmt(GNC);
+      for(i = 0; i < 3; i++) {
+        GNC->Mcmd[i] = GNC->Hmgmt.Mcmd[i];
+      }
+   }
+   else {
+      for(i = 0; i < 3; i++) {
+         GNC->Mcmd[i] = 0.0;
+      }
+   }
+
+}
 
 
 static void AC_h_mgmt(Generic_ADCS_GNC_Tlm_Payload_t *GNC)
@@ -420,4 +623,17 @@ static void AC_h_mgmt(Generic_ADCS_GNC_Tlm_Payload_t *GNC)
       }
    }
 
+}
+
+/*  Normalize a 3-vector if it is non-zero.                           */
+void UNITV2(double V[3])
+{
+      double A;
+
+      A=sqrt(V[0]*V[0]+V[1]*V[1]+V[2]*V[2]);
+      if (A > 0.0) {
+         V[0]/=A;
+         V[1]/=A;
+         V[2]/=A;
+      }
 }
