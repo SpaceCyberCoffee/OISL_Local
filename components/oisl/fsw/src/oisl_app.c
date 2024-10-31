@@ -354,16 +354,13 @@ void OISL_ProcessGroundCommand(void)
                 cmd = (OISL_CFDP_cmd_t *)OISL_AppData.MsgPtr; 
                 if (cmd->FileName == NULL) {
                     CFE_EVS_SendEvent(OISL_CMD_SEND_FILE_ERR_EID, CFE_EVS_EventType_INFORMATION, "Error: cmd->FileName is NULL\n");
-                    
-                }
-                strcpy(OISL_AppData.CFDP.FileName, cmd->FileName); 
-                if (OISL_AppData.CFDP.FileName != NULL) {
+                } 
+                else {
                     strcpy(OISL_AppData.CFDP.FileName, cmd->FileName);  // Copy the file path
                     CFE_EVS_SendEvent(OISL_CMD_SEND_FILE_ERR_EID, CFE_EVS_EventType_INFORMATION, "Filename is %s", OISL_AppData.CFDP.FileName);
                 }
-                else {
-                    CFE_EVS_SendEvent(OISL_CMD_SEND_FILE_ERR_EID, CFE_EVS_EventType_INFORMATION, "Nulllll");
-                }
+                // strcpy(OISL_AppData.CFDP.OGSName, cmd->OGSName);
+                // CFE_EVS_SendEvent(OISL_CMD_SEND_FILE_ERR_EID, CFE_EVS_EventType_INFORMATION, "OGS Name is %s", OISL_AppData.CFDP.OGSName);
                 OISL_AppData.CFDP.Target = cmd->Target; 
                 CFE_EVS_SendEvent(OISL_CMD_SEND_FILE_EID, CFE_EVS_EventType_INFORMATION, "OISL: Transfer File command received. Trying to reach Sat %u", cmd->Target);
                 OISL_SendFile_CFDP();
@@ -598,6 +595,11 @@ void* FileTransferThread(void *arg) {
     else if (data->target == 1)
     {
         target_to_align = &OISL_AppData.DevicePkt.Oisl.ForwardAlignment;
+    }
+    else if (data->target == 2)
+    {   
+        printf("Trying to transfer data to a OGS. The filecontent will be passed to CFDP automatically to plan the DL and eventual relay.\n");
+        target_to_align = &OISL_AppData.HkTelemetryPkt.DeviceEnabled;
     }
     else {
         printf("Unknown taget to align with, or method not yet impemented for target %u", data->target);

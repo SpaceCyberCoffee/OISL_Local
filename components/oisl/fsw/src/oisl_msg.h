@@ -63,6 +63,7 @@ typedef struct
     CFE_MSG_CommandHeader_t CmdHeader; //size is 8
     uint8                   Target;
     char                    FileName[64];
+    // char                    OGSName[64];
 } OISL_CFDP_cmd_t;
 
 
