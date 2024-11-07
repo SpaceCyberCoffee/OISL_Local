@@ -22,7 +22,7 @@
     #define NOVATEL_OEM615_CFG_HANDLE           1
     #define NOVATEL_OEM615_CFG_BAUDRATE_HZ      115200
     #define NOVATEL_OEM615_CFG_MS_TIMEOUT       50            /* Max 255 */
-    #define NOVATEL_OEM615_CFG_READ_TIMEOUT     0.5 
+    #define NOVATEL_OEM615_CFG_READ_TIMEOUT     0.3 
     /* Note: Debug flag disabled (commented out) by default */
     //#define NOVATEL_OEM615_CFG_DEBUG
 #endif

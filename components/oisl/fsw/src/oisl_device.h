@@ -66,6 +66,7 @@ typedef struct
     uint8_t   BackwardAlignment;
     uint8_t   ForwardConnection;
     uint8_t   BackwardConnection;
+    uint8_t   OGSAlignment;
 } __attribute__((packed)) OISL_Device_Data_tlm_t;
 #define OISL_DEVICE_DATA_LNGTH sizeof ( OISL_Device_Data_tlm_t )
 #define OISL_DEVICE_DATA_SIZE OISL_DEVICE_DATA_LNGTH + OISL_DEVICE_HDR_TRL_LEN

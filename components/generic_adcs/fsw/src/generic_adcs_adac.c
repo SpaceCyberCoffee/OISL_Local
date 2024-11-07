@@ -522,11 +522,11 @@ static void AC_oisl_OGS(Generic_ADCS_GNC_Tlm_Payload_t *GNC, Generic_ADCS_AC_OIS
 
     UNITV2(ISL_OGS);
 
-    printf("ECI: %f %f %f\n", ISL_OGS[0], ISL_OGS[1], ISL_OGS[2]);
+    //printf("ECI: %f %f %f\n", ISL_OGS[0], ISL_OGS[1], ISL_OGS[2]);
     double ISL_OGS_body[3] ;
     QxV(DI_St->q, ISL_OGS, ISL_OGS_body); // convert from sensor frame to body frame
 
-    printf("BODY: %f %f %f\n", ISL_OGS_body[0], ISL_OGS_body[1], ISL_OGS_body[2]);
+    //printf("BODY: %f %f %f\n", ISL_OGS_body[0], ISL_OGS_body[1], ISL_OGS_body[2]);
     
 
    int i;
@@ -539,6 +539,12 @@ static void AC_oisl_OGS(Generic_ADCS_GNC_Tlm_Payload_t *GNC, Generic_ADCS_AC_OIS
 
 /* .. Form attitude error signals */
       SoS = VoV(ISL_OGS_body, side);
+    /* Test writing to a file to be read by OISL HW model */
+    char *filename_OGS = "/home/jstar/Desktop/github-nos3/sims/build/bin/VoV_OGS.txt";
+    FILE *fp_O = fopen(filename_OGS, "w");
+    fprintf(fp_O, "%f", SoS);
+    fclose(fp_O);
+
       printf("Scalar product between ISL V and desired b2 (should be close to 1): %f\n", SoS);
       if ((SoS > (EPS - 1.0)) && (SoS < (1.0 - EPS))) {
          VxV(ISL_OGS_body, side, ACS->therr);

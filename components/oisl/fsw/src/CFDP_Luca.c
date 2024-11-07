@@ -16,6 +16,9 @@ const double transferSpeedMbps = 100.0; // Transfer speed in Mbps
 
 static const char* fileSent_confirmation = "/home/jstar/Desktop/github-nos3/file_sent.txt";
 
+static const char* Sat_Name = "Sat_1_1";
+static const double margin  = 30.0;
+
 
 void simulateNetworkDelay(void) {
     usleep(networkDelay); // Simulate network delay for a OISL distance of around 2000km -> 7 ms
@@ -184,20 +187,81 @@ void extractOGSName(const char *fileContent, char *OGS_name, size_t max_len) {
     pclose(fp);
 }
 
+time_t get_current_time(void) {
+    // Base time for the simulation (2025-10-18 08:30:00 UTC)
+    struct tm base_time = { .tm_year = 2025 - 1900, .tm_mon = 10 - 1, .tm_mday = 18,
+                            .tm_hour = 8, .tm_min = 30, .tm_sec = 0, .tm_isdst = -1 };
+    time_t base_timestamp = mktime(&base_time);
+
+    // Retrieve current simulation time in seconds and subseconds
+    CFE_TIME_SysTime_t nowT = CFE_TIME_GetTime();
+    uint32_t seconds = nowT.Seconds;
+    uint32_t subseconds = nowT.Subseconds;
+
+    // Convert to full timestamp in seconds
+    double sim_seconds = (double)seconds + ((double)subseconds / 4294967296.0);
+    return base_timestamp + (time_t)sim_seconds;
+}
+
 // Function to check if a given time is within a visibility window
-int is_visible(time_t current_time, const char *vis_start, const char *vis_end) {
+int is_visible(time_t current_time, const char *vis_start, const char *vis_end, time_t *vis_start_time) {
     struct tm tm_start, tm_end;
     time_t start_time, end_time;
 
-    // Parse visibility start and end times
-    strptime(vis_start, "%Y-%m-%dT%H:%M:%S", &tm_start);
-    strptime(vis_end, "%Y-%m-%dT%H:%M:%S", &tm_end);
+     // Ensure tm_isdst is set to -1 to handle DST automatically TODO Prob delete
+    tm_start.tm_isdst = -1;
+    tm_end.tm_isdst = -1;
+
+    // Temporary buffers to hold truncated visibility start and end times
+    char vis_start_trunc[20];
+    char vis_end_trunc[20];
+
+    // Copy only the first 19 characters (ignoring fractional seconds)
+    strncpy(vis_start_trunc, vis_start, 19);
+    vis_start_trunc[19] = '\0';
+    strncpy(vis_end_trunc, vis_end, 19);
+    vis_end_trunc[19] = '\0';
+
+    // Parse visibility start time
+    if (strptime(vis_start_trunc, "%Y-%m-%dT%H:%M:%S", &tm_start) == NULL) {
+        printf("Failed to parse vis_start: %s\n", vis_start_trunc);
+        return 0;
+    }
+
+    // Parse visibility end time
+    if (strptime(vis_end_trunc, "%Y-%m-%dT%H:%M:%S", &tm_end) == NULL) {
+        printf("Failed to parse vis_end: %s\n", vis_end_trunc);
+        return 0;
+    } else {
+        // Print tm_end in a readable format
+        char end_str[20];
+        strftime(end_str, sizeof(end_str), "%Y-%m-%d %H:%M:%S", &tm_end);
+        printf("Parsed vis_end: %s\n", end_str);
+    }
 
     // Convert to time_t format for comparison
     start_time = mktime(&tm_start);
     end_time = mktime(&tm_end);
 
-    return (current_time >= start_time && current_time <= end_time);
+    // Check if mktime failed
+    if (start_time == -1) {
+        printf("mktime failed to convert start_time.\n");
+        return 0;
+    }
+    if (end_time == -1) {
+        printf("mktime failed to convert end_time.\n");
+        return 0;
+    }
+
+    // Print start, end, and current times for debugging
+    // printf("Is Visible Start time: %ld\n", start_time);
+    // printf("Is Visible End time: %ld\n", end_time);
+    // printf("Is Visible Current time: %ld\n", current_time);
+
+    // Output the visibility start time for external checks
+    if (vis_start_time) *vis_start_time = start_time;
+
+    return (current_time >= (start_time - (time_t)margin) && current_time <= (end_time + (time_t)margin));
 }
 
 // Function to check if Sat_1_2 is visible sooner
@@ -213,8 +277,8 @@ int routing_Sat(FILE *vis_file, time_t current_time) {
 
     while (fgets(line, sizeof(line), vis_file) != NULL) {
         // Parse satellite ID, visibility start and end times
-        if (sscanf(line, "%35[^,],%35[^,],%35[^,],%lf", sat_id, vis_start, vis_end, &duration) == 4) {
-            printf("Line 212");
+        if (sscanf(line, "%20[^,],%20[^,],%20[^,],%lf", sat_id, vis_start, vis_end, &duration) == 4) {
+            // printf("Line 212");
             struct tm tm_start;
             time_t start_time;
 
@@ -224,7 +288,7 @@ int routing_Sat(FILE *vis_file, time_t current_time) {
 
             // If the entry is for Sat_1_2 and has an upcoming visibility
             if (strcmp(sat_id, "Sat_1_2") == 0 && start_time > current_time) {
-                printf("Line 222");
+                // printf("Line 222");
                 if (earliest_visibility == 0 || start_time < earliest_visibility) {
                     earliest_visibility = start_time;
                     recommend_forward = 1;
@@ -232,7 +296,7 @@ int routing_Sat(FILE *vis_file, time_t current_time) {
                 }
             }
             // If Sat_1_1 has an earlier visibility window, do not recommend forward
-            else if (strcmp(sat_id, "Sat_1_1") == 0 && start_time > current_time && start_time < earliest_visibility) {
+            else if (strcmp(sat_id, Sat_Name) == 0 && start_time > current_time && start_time < earliest_visibility) {
                 recommend_forward = 0;
                 break;
             }
@@ -281,19 +345,10 @@ void sendFile(const char *fileContent, const size_t fileSize) {
         if (vis_file == NULL) {
             perror("Failed to open visibility prediction file");
         }
-        // Base time for the simulation (2025-10-18 08:30:00 UTC)
-        struct tm base_time = { .tm_year = 2025 - 1900, .tm_mon = 10 - 1, .tm_mday = 18,
-                                .tm_hour = 8, .tm_min = 30, .tm_sec = 0, .tm_isdst = -1 };
-        time_t base_timestamp = mktime(&base_time);
-        // Retrieve current simulation time in seconds and subseconds
-        CFE_TIME_SysTime_t nowT = CFE_TIME_GetTime();
-        uint32 seconds = nowT.Seconds;
-        uint32 subseconds = nowT.Subseconds;
-        // Convert to full timestamp in seconds
-        double sim_seconds = (double)seconds + ((double)subseconds / 4294967296.0);
-        time_t current_time = base_timestamp + (time_t)sim_seconds;
+        time_t current_time = get_current_time();
 
         char line[256];
+        time_t vis_start_time;
         int is_visible_now = 0;
 
         // ADCS MODE will be changed
@@ -302,17 +357,17 @@ void sendFile(const char *fileContent, const size_t fileSize) {
         CFE_MSG_SetFcnCode((CFE_MSG_Message_t *)&cmd8, GENERIC_ADCS_SET_MODE_CC);
 
         while (fgets(line, sizeof(line), vis_file) != NULL) {
-            printf("Line 291\n");
-            char sat_id[35], vis_start[35], vis_end[35];
+            //printf("Line 291\n");
+            char sat_id[20], vis_start[20], vis_end[20];
             double duration;
 
             // Ensure line ends at '\n' and doesn't include any hidden characters 
             line[strcspn(line, "\r\n")] = 0;
-            int items = sscanf(line, "%35[^,],%35[^,],%35[^,], %lf", sat_id, vis_start, vis_end, &duration); //TODO: REMOVE THE 00+00 and improve time format in the visibility file so that you can reduce froom 35 to 30
-            printf("Sat id: %s then vis start: %s \n vis end: %s \n duration %f \n", sat_id, vis_start, vis_end,  duration);
+            int items = sscanf(line, "%20[^,],%20[^,],%20[^,], %lf", sat_id, vis_start, vis_end, &duration); //TODO: REMOVE THE 00+00 and improve time format in the visibility file so that you can reduce froom 35 to 30
+            //printf("Sat id: %s then vis start: %s \n vis end: %s \n duration %f \n", sat_id, vis_start, vis_end,  duration);
             if (items == 4) { 
-                printf("Line 297\n");
-                if (strcmp(sat_id, "Sat_1_1") == 0 && is_visible(current_time, vis_start, vis_end)) {
+                //printf("Line 297\n");
+                if (strcmp(sat_id, Sat_Name) == 0 && is_visible(current_time, vis_start, vis_end, &vis_start_time)) {
                     printf("Satellite %s is currently visible from OGS.\n", sat_id);
                     is_visible_now = 1;
                     break;
@@ -327,15 +382,39 @@ void sendFile(const char *fileContent, const size_t fileSize) {
         if (!is_visible_now) {
             printf("Satellite Sat_1_1 is not visible from OGS at this time.\n");
             int routing = routing_Sat(vis_file, current_time); // Call routing_Sat to check visibility of Sat_1_2 TODO generalize
-            if (routing == 1) {
+            if (routing == 1) { // Another sat has an earlier visibility --> align to forward and start to route the info. TODO: MOdify the file to transfer so that the receiving sat knows what to do
                 connection_establishment = &OISL_AppData.DevicePkt.Oisl.ForwardConnection;
                 cmd8.Mode = OISL_MODE_F;
             }
-            else {
+            else { // ROuting is not best option --> align with the OGS and wait for the window to start
+                // Run a loop until conditions are met
                 cmd8.Mode = OISL_MODE_OGS;
+                CFE_SB_TimeStampMsg((CFE_MSG_Message_t *)&cmd8);
+                CFE_SB_TransmitMsg((CFE_MSG_Message_t *)&cmd8, true);
+                while (1) {
+                    // Continuously update current time
+                    current_time = get_current_time();
+
+                    // Check conditions: OGSAlignment is 1 and current_time >= vis_start_time
+                    if (OISL_AppData.DevicePkt.Oisl.OGSAlignment == 1 && current_time >= vis_start_time) {
+                        // Conditions are met, establish connection and exit loop
+                        uint8 conn_est = 1;
+                        connection_establishment = &conn_est;
+                        printf("Connection established to OGS.\n");
+                        break;
+                    }
+                    
+                    // Sleep briefly to avoid busy-waiting (adjust delay as needed)
+                    // Calculate the remaining time until the visibility window starts
+                    time_t time_to_vis_start = vis_start_time - current_time;
+                    // Print status message with current time and remaining wait time
+                    printf("Waiting to enter the visibility window. Time until start: %ld seconds\n", (long)time_to_vis_start);
+                    sleep(10); // Add a short delay (e.g., 1 second) to reduce CPU usage TODO regolate the time based on time to vis start
+                }
             }
         }
-        else {
+        else { // VISIBLE NOW --> Only condition to check is the OGS alignment. TODO: Include consideration on transfer duration and for how long is the satellite visible 
+        connection_establishment = &OISL_AppData.DevicePkt.Oisl.OGSAlignment; 
         cmd8.Mode = OISL_MODE_OGS;
         }
 
@@ -345,7 +424,7 @@ void sendFile(const char *fileContent, const size_t fileSize) {
 
         // Close the visibility file
         fclose(vis_file);
-        connection_establishment = &OISL_AppData.DevicePkt.Oisl.ForwardConnection; // TODO wait for what to align? maybe wait for the visibility? if now > start visibility then connection established and go
+        
     }
     else {
         printf("Unknown taget to align with, or method not yet impemented for target %u, default to forward", OISL_AppData.CFDP.Target);

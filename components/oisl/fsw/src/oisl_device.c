@@ -232,7 +232,7 @@ int32_t OISL_RequestData(uart_info_t* device, OISL_Device_Data_tlm_t* data)
 {
     int32_t status = OS_SUCCESS;
     // uint8_t read_data[OISL_DEVICE_DATA_SIZE]; //62
-    uint8_t read_data[10]; // the 6 doubles (48 bytes) are not considered.
+    uint8_t read_data[11]; // the 6 doubles (48 bytes) are not considered.
 
 
     /* Command device to send HK */
@@ -301,6 +301,9 @@ int32_t OISL_RequestData(uart_info_t* device, OISL_Device_Data_tlm_t* data)
 
     /* Read Backward Alignment */
     data->BackwardAlignment = read_data[7];
+
+    /* Read OGS Alignment */
+    data->OGSAlignment = read_data[8];
 
     /* Write to file the alignment conditions. Used by other sats to establish connection. */
     const char* my_alignments = "/home/jstar/Desktop/github-nos3/components/oisl/fsw/src/my_alignments.txt";

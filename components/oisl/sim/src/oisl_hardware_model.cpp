@@ -76,6 +76,12 @@ namespace Nos3
         } else {
             sim_logger->debug("Failed to delete the VoV file.\n");
         }
+        /* Remove the VoV file at startup if it exists */
+        if (remove(VoV_OGS_filename) == 0) {
+            sim_logger->debug("File VoV deleted successfully.\n");
+        } else {
+            sim_logger->debug("Failed to delete the VoV file.\n");
+        }
         
         /* Construction complete */
         sim_logger->info("OislHardwareModel::OislHardwareModel:  Construction complete.");
@@ -187,7 +193,7 @@ namespace Nos3
     {
 
         /* Prepare data size */
-        out_data.resize(10, 0x00);
+        out_data.resize(11, 0x00);
 
         /* Streaming data header - 0xDEAD */
         out_data[0] = 0xDE;
@@ -223,6 +229,8 @@ namespace Nos3
             sim_logger->debug("File FORWARD cannot be opened or does not exist. Setting x to default value: %f\n", VoV_F);
         }
         uint8_t forward_alignment = (VoV_F >= cos(FoR)) ? 1 : 0; 
+        // DELETE FILE ONCE THE VALUE IS READ. If the ADCS mode is active, the file will be created again.
+        remove(VoV_forward_filename);
 
         FILE *file_VoV_B = fopen(VoV_backward_filename, "r");
         double VoV_B = 0.0;  // Default value
@@ -233,16 +241,32 @@ namespace Nos3
             sim_logger->debug("File backward cannot be opened or does not exist. Setting x to default value: %f\n", VoV_B);
         }
         uint8_t backward_alignment = (VoV_B >= cos(FoR)) ? 1 : 0; 
+        // DELETE FILE ONCE THE VALUE IS READ. If the ADCS mode is active, the file will be created again.
+        remove(VoV_backward_filename);
 
         out_data[6] = forward_alignment & 0x00FF;
         out_data[7] = backward_alignment & 0x00FF;
 
         sim_logger->debug("OislHardwareModel::create_oisl_data  ALIGNED: =  %u, %u. VoV values for foward and backward: %f %f %f\n", forward_alignment,  backward_alignment, VoV_F, VoV_B, cos(FoR));
 
+        // OGS Alignment
+        FILE *file_VoV_OGS = fopen(VoV_OGS_filename, "r");
+        double VoV_OGS = 0.0;  // Default value
+        if (file_VoV_OGS != NULL) {
+            fscanf(file_VoV_OGS, "%lf", &VoV_OGS);
+            fclose(file_VoV_OGS);
+        } else {
+            sim_logger->debug("File OGS cannot be opened or does not exist. Setting x to default value: %f\n", VoV_OGS);
+        }
+        uint8_t OGS_alignment = (VoV_OGS >= cos(FoR_OGS)) ? 1 : 0;
+        // DELETE FILE ONCE THE VALUE IS READ. If the ADCS mode is active, the file will be created again.
+        remove(VoV_OGS_filename);
+
+        out_data[8] = OGS_alignment & 0x00FF;
 
         /* Streaming data trailer - 0xBEEF */
-        out_data[8] = 0xBE;
-        out_data[9] = 0xEF;
+        out_data[9] = 0xBE;
+        out_data[10] = 0xEF;
     }
 
 

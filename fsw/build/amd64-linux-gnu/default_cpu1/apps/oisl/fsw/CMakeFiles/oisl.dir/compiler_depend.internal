@@ -248,6 +248,7 @@ apps/oisl/fsw/CMakeFiles/oisl.dir/src/CFDP_Luca.c.o
  /home/jstar/Desktop/github-nos3/components/oisl/fsw/src/CFDP_Luca.h
  /home/jstar/Desktop/github-nos3/components/generic_adcs/fsw/platform_inc/generic_adcs_msgids.h
  /home/jstar/Desktop/github-nos3/components/generic_adcs/fsw/src/generic_adcs_msg.h
+ /home/jstar/Desktop/github-nos3/components/generic_adcs/fsw/src/generic_adcs_adac.h
 
 apps/oisl/fsw/CMakeFiles/oisl.dir/src/oisl_app.c.o
  /home/jstar/Desktop/github-nos3/components/oisl/fsw/src/oisl_app.c
