@@ -227,4 +227,8 @@ apps/sc/CMakeFiles/cpu1_sc_sc_rts003.dir/home/jstar/Desktop/github-nos3/cfg/buil
  /home/jstar/Desktop/github-nos3/components/generic_star_tracker/fsw/src/generic_star_tracker_msg.h \
  /home/jstar/Desktop/github-nos3/components/generic_star_tracker/fsw/src/generic_star_tracker_device.h \
  /home/jstar/Desktop/github-nos3/components/generic_star_tracker/fsw/platform_inc/generic_star_tracker_platform_cfg.h \
- /home/jstar/Desktop/github-nos3/components/generic_star_tracker/fsw/platform_inc/generic_star_tracker_msgids.h
+ /home/jstar/Desktop/github-nos3/components/generic_star_tracker/fsw/platform_inc/generic_star_tracker_msgids.h \
+ /home/jstar/Desktop/github-nos3/components/oisl/fsw/src/oisl_msg.h \
+ /home/jstar/Desktop/github-nos3/components/oisl/fsw/src/oisl_device.h \
+ /home/jstar/Desktop/github-nos3/components/oisl/fsw/platform_inc/oisl_platform_cfg.h \
+ /home/jstar/Desktop/github-nos3/components/oisl/fsw/platform_inc/oisl_msgids.h

@@ -17,7 +17,10 @@ const double transferSpeedMbps = 100.0; // Transfer speed in Mbps
 static const char* fileSent_confirmation = "/home/jstar/Desktop/github-nos3/file_sent.txt";
 
 static const char* Sat_Name = "Sat_1_1";
+static const char* Sat_For = "Sat_1_2";
+static const char* Sat_Back = "Sat_1_24";
 static const double margin  = 30.0;
+static const double margin_routing = 200.0; //time to align with forward + time for the forward to align with OGS
 
 
 void simulateNetworkDelay(void) {
@@ -264,10 +267,11 @@ int is_visible(time_t current_time, const char *vis_start, const char *vis_end, 
     return (current_time >= (start_time - (time_t)margin) && current_time <= (end_time + (time_t)margin));
 }
 
-// Function to check if Sat_1_2 is visible sooner
-int routing_Sat(FILE *vis_file, time_t current_time) {
+// Function to check if Sat_1_2 is visible sooner TODO IMPROVE LOGIC CONSIDERING MORE SATS AND THE TIME TO ALIGN WITH THAT SAT AND THAT SAT TO OGS. ALSO OPTIMIZE IS TO CONSIDER ONLY INCOMING VISIBILITIES AND NOT THE ENTIRE FILE
+int routing_Sat(FILE *vis_file, time_t current_time, time_t *start_visibility) {
+    //TODO: IF THE SATELLIUTE IS BACKWARD RETURN 2, IF THE SAT IS FORWARD RETURN 1. if no routing return 0
     char line[256];
-    char sat_id[35], vis_start[35], vis_end[35]; //todo improve time format in vis files and use 30 here
+    char sat_id[20], vis_start[20], vis_end[20]; // Improve time format in vis files and use 30 here
     double duration;
     time_t earliest_visibility = 0;
     int recommend_forward = 0;
@@ -278,7 +282,8 @@ int routing_Sat(FILE *vis_file, time_t current_time) {
     while (fgets(line, sizeof(line), vis_file) != NULL) {
         // Parse satellite ID, visibility start and end times
         if (sscanf(line, "%20[^,],%20[^,],%20[^,],%lf", sat_id, vis_start, vis_end, &duration) == 4) {
-            // printf("Line 212");
+            char *trimmed_sat_id = strtok(sat_id, " \t\n\r");
+
             struct tm tm_start;
             time_t start_time;
 
@@ -286,30 +291,26 @@ int routing_Sat(FILE *vis_file, time_t current_time) {
             strptime(vis_start, "%Y-%m-%dT%H:%M:%S", &tm_start);
             start_time = mktime(&tm_start);
 
-            // If the entry is for Sat_1_2 and has an upcoming visibility
-            if (strcmp(sat_id, "Sat_1_2") == 0 && start_time > current_time) {
-                // printf("Line 222");
-                if (earliest_visibility == 0 || start_time < earliest_visibility) {
+            // If the entry is for Sat_1_3 and has an upcoming visibility
+            if (start_time > current_time + (time_t)margin_routing) { 
+                printf("292: Line matches: %20s, %20s, %20s, %lf\n", sat_id, vis_start, vis_end, duration);
+                if (earliest_visibility == 0 || start_time < earliest_visibility - (time_t)margin_routing) {
+                    printf("295: start_time: %ld, current_time + margin_routing: %ld\n", start_time, current_time + (time_t)margin_routing);
                     earliest_visibility = start_time;
-                    recommend_forward = 1;
-                    break;
+
+                    // Compare trimmed sat_id with Sat_Name
+                    if (strcmp(trimmed_sat_id, Sat_Name) == 0) {
+                        recommend_forward = 0;
+                    } else {
+                        recommend_forward = 1;  
+                    }
                 }
-            }
-            // If Sat_1_1 has an earlier visibility window, do not recommend forward
-            else if (strcmp(sat_id, Sat_Name) == 0 && start_time > current_time && start_time < earliest_visibility) {
-                recommend_forward = 0;
-                break;
             }
         }
     }
 
-    if (recommend_forward) {
-        printf("Recommendation: Better to connect with forward satellite (Sat_1_2) for earlier visibility.\n");
-    } else {
-        printf("No recommendation to connect with forward satellite.\n");
-    }
-
-    return recommend_forward;
+    *start_visibility = earliest_visibility; // Assign earliest visibility to start_visibility
+    return recommend_forward; // Return recommendation
 }
 
 // CFDP-like file sending function
@@ -381,10 +382,14 @@ void sendFile(const char *fileContent, const size_t fileSize) {
 
         if (!is_visible_now) {
             printf("Satellite Sat_1_1 is not visible from OGS at this time.\n");
-            int routing = routing_Sat(vis_file, current_time); // Call routing_Sat to check visibility of Sat_1_2 TODO generalize
-            if (routing == 1) { // Another sat has an earlier visibility --> align to forward and start to route the info. TODO: MOdify the file to transfer so that the receiving sat knows what to do
+            int routing = routing_Sat(vis_file, current_time, &vis_start_time); // Call routing_Sat to check visibility of Sat_1_2 TODO generalize
+            if (routing == 1) { // Another sat has an earlier visibility --> align to forward and start to route the info. 
                 connection_establishment = &OISL_AppData.DevicePkt.Oisl.ForwardConnection;
                 cmd8.Mode = OISL_MODE_F;
+            }
+            else if (routing == 2) { // routing backwards
+                connection_establishment = &OISL_AppData.DevicePkt.Oisl.BackardConnection;
+                cmd8.Mode = OISL_MODE_B;
             }
             else { // ROuting is not best option --> align with the OGS and wait for the window to start
                 // Run a loop until conditions are met

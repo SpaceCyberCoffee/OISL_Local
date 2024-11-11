@@ -25,6 +25,8 @@
 #include "generic_adcs_adac.h"
 #include "generic_star_tracker_msg.h"
 #include "generic_star_tracker_msgids.h"
+#include "oisl_msg.h"
+#include "oisl_msgids.h"
 
 /* Custom table structure, modify as needed to add desired commands */
 typedef struct
@@ -50,9 +52,12 @@ typedef struct
     /* 7 - Enable ST */
     SC_RtsEntryHeader_t hdr7;
     GENERIC_STAR_TRACKER_NoArgs_cmd_t cmd7;
-    /* 8 - Set ADCS to SUNSAFE_MODE */
+    /* 8 - Enable OISL */
     SC_RtsEntryHeader_t hdr8;
-    Generic_ADCS_Mode_cmd_t cmd8;
+    OISL_NoArgs_cmd_t cmd8;
+    /* 9 - Set ADCS to OISL_MODE_B */
+    SC_RtsEntryHeader_t hdr9;
+    Generic_ADCS_Mode_cmd_t cmd9;
 } SC_RtsStruct003_t;
 
 /* Define the union to size the table correctly */
@@ -96,10 +101,14 @@ SC_RtsTable003_t SC_Rts003 = {
         .hdr7.TimeTag = 1,
         .cmd7.CmdHeader = CFE_MSG_CMD_HDR_INIT(GENERIC_STAR_TRACKER_CMD_MID, SC_MEMBER_SIZE(cmd7), GENERIC_STAR_TRACKER_ENABLE_CC, 0x00),
 
-        /* 8 - Set ADCS to SUNSAFE_MODE */
-        .hdr8.TimeTag = 5,
-        .cmd8.CmdHeader = CFE_MSG_CMD_HDR_INIT(GENERIC_ADCS_CMD_MID, SC_MEMBER_SIZE(cmd8), GENERIC_ADCS_SET_MODE_CC, 0x00),
-        .cmd8.Mode = SUNSAFE_MODE,
+        /* 8 - Enable OISL */
+        .hdr8.TimeTag = 1,
+        .cmd8.CmdHeader = CFE_MSG_CMD_HDR_INIT(OISL_CMD_MID, SC_MEMBER_SIZE(cmd8), OISL_ENABLE_CC, 0x00),
+
+        /* 9 - Set ADCS to SUNSAFE_MODE */
+        .hdr9.TimeTag = 5,
+        .cmd9.CmdHeader = CFE_MSG_CMD_HDR_INIT(GENERIC_ADCS_CMD_MID, SC_MEMBER_SIZE(cmd9), GENERIC_ADCS_SET_MODE_CC, 0x00),
+        .cmd9.Mode = OISL_MODE_B,
     }
 };
 
