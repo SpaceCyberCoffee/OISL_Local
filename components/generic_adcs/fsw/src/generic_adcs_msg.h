@@ -41,6 +41,7 @@ typedef struct
     /* Every command requires a header used to identify it */
     CFE_MSG_CommandHeader_t CmdHeader;
     uint8    Mode;
+    char     OGS_Name[20];
 } Generic_ADCS_Mode_cmd_t;
 
 typedef struct
@@ -214,6 +215,7 @@ typedef struct {
     double Tcmd[3];
     double ISL_vector_F[3];
     double ISL_vector_B[3];
+    char OGS_Name[20];
 } __attribute__((packed)) Generic_ADCS_GNC_Tlm_Payload_t;
 
 typedef struct

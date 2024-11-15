@@ -3,9 +3,9 @@
 const CFE_ConfigKeyValue_t CFE_BUILD_ENV_TABLE[] = {
 
 
-{ "BUILDDATE", "202411110906" },
+{ "BUILDDATE", "202411151347" },
 { "BUILDUSER", "jstar" },
-{ "BUILDHOST", "38e5ab95479b" },
+{ "BUILDHOST", "2ce6cf887d41" },
 
 { NULL, NULL } /* End of list */
 };

@@ -1,0 +1,5 @@
+Time: 2025-10-18T08:31:12
+Sat_1_1,2025-10-18T08:46:45,2025-10-18T08:50:17,211.607985  15 minutes to wait --> we can do better
+Sat_1_2,2025-10-18T08:42:44,2025-10-18T08:46:14,209.820145  11 minutes to wait --> 1 hop is definetely achievable, but we gain only 4 minutes
+Sat_1_3,2025-10-18T08:38:44,2025-10-18T08:42:13,208.911198  7.30 minutes to wait --> 2 hops are achievable and we gain 8 minutes --> best option.
+Sat_1_4,2025-10-18T08:34:44,2025-10-18T08:38:10,206.370436  3 minutes to wait --> 3 hops are not achievable and the same goes for the next sats. 

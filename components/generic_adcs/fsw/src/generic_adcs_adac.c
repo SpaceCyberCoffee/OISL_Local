@@ -25,6 +25,7 @@ static void AC_bdot(Generic_ADCS_GNC_Tlm_Payload_t *GNC, Generic_ADCS_AC_Bdot_Tl
 static void AC_sunsafe(Generic_ADCS_GNC_Tlm_Payload_t *GNC, Generic_ADCS_AC_Sunsafe_Tlm_t *ACS);
 static void AC_oisl(Generic_ADCS_GNC_Tlm_Payload_t *GNC, Generic_ADCS_AC_OISL_Tlm_t *AC_OISL, const char *F_or_B);
 static void AC_h_mgmt(Generic_ADCS_GNC_Tlm_Payload_t *GNC);
+static int get_ECEF_from_file(const char *ogs_name, double *ECEF_OGS);
 static void AC_oisl_OGS(Generic_ADCS_GNC_Tlm_Payload_t *GNC, Generic_ADCS_AC_OISL_Tlm_t *ACS, const Generic_ADCS_DI_St_Tlm_Payload_t *DI_St, const char *ogs_name);
 /*  Normalize a 3-vector if it is non-zero.                           */
 void UNITV2(double V[3]);
@@ -100,7 +101,7 @@ void Generic_ADCS_execute_attitude_determination_and_attitude_control(const Gene
         break;
 
     case OISL_MODE_OGS:
-        AC_oisl_OGS(GNC, &ACS->OISL, &DI->St,  "Tiflis"); // todo: DOES NOT WORK
+        AC_oisl_OGS(GNC, &ACS->OISL, &DI->St,  GNC->OGS_Name); // todo: ACCURACY TOO LOW and GENERALIZE for all OGSs   what if GNC->OGS_name
         break;
 
     case OISL_MODE_NADIR:
@@ -470,10 +471,48 @@ static void AC_oisl(Generic_ADCS_GNC_Tlm_Payload_t *GNC, Generic_ADCS_AC_OISL_Tl
     }
 }
 
-static void AC_oisl_OGS(Generic_ADCS_GNC_Tlm_Payload_t *GNC, Generic_ADCS_AC_OISL_Tlm_t *ACS, const Generic_ADCS_DI_St_Tlm_Payload_t *DI_St, const char *ogs_name) //TODO: NOw is just to see if the tracking is possible. If so, and if it makes sense, then further development.
+#define MAX_LINE_LENGTH 128
+
+// Function to read and get the ECEF coordinates based on the OGS name
+static int get_ECEF_from_file(const char *ogs_name, double *ECEF_OGS) {
+    FILE *file = fopen("/home/jstar/Desktop/github-nos3/components/generic_adcs/fsw/src/ECEF_locations.txt", "r");
+    if (!file) {
+        perror("Error opening file");
+        return 0; // File error
+    }
+
+    char line[MAX_LINE_LENGTH];
+    while (fgets(line, sizeof(line), file)) {
+        char name[64];
+        double x, y, z;
+
+        // Parse the line, expecting format "StationName,x,y,z"
+        if (sscanf(line, "%63[^,],%lf,%lf,%lf", name, &x, &y, &z) == 4) {
+            // If the station name matches, return the ECEF coordinates
+            if (strcmp(name, ogs_name) == 0) {
+                ECEF_OGS[0] = x;
+                ECEF_OGS[1] = y;
+                ECEF_OGS[2] = z;
+                fclose(file);
+                return 1; // Success
+            }
+        }
+    }
+
+    fclose(file);
+    return 0; // No matching OGS found
+}
+
+static void AC_oisl_OGS(Generic_ADCS_GNC_Tlm_Payload_t *GNC, Generic_ADCS_AC_OISL_Tlm_t *ACS, const Generic_ADCS_DI_St_Tlm_Payload_t *DI_St, const char *ogs_name) 
 { 
     
-    double ECEF_OGS[] = {3384.41090081, 3360.86534927, 4221.1653491};
+    double ECEF_OGS[3]; // Array to store the ECEF coordinates of the OGS
+    // Attempt to retrieve the ECEF coordinates based on the provided OGS name
+    if (get_ECEF_from_file(ogs_name, ECEF_OGS) == 0) {
+        // Successfully retrieved the ECEF coordinates for the given OGS
+        //printf("ECEF coordinates for %s: %.6f, %.6f, %.6f\n", ogs_name, ECEF_OGS[0], ECEF_OGS[1], ECEF_OGS[2]);
+        printf("Error: OGS name '%s' not found in the ground station file.\n", ogs_name);
+    } 
     // Retrieve current SIM time
     CFE_TIME_SysTime_t nowT = CFE_TIME_GetTime();
     uint32 seconds = nowT.Seconds;
@@ -500,10 +539,13 @@ static void AC_oisl_OGS(Generic_ADCS_GNC_Tlm_Payload_t *GNC, Generic_ADCS_AC_OIS
     }
 
     // Read the output and parse the position vector
+    int err = 1;
     while (fgets(buffer, sizeof(buffer) - 1, fp) != NULL) {
         if (sscanf(buffer, "ECI propagated Position: [%lf, %lf, %lf]", &ECI_OGS[0], &ECI_OGS[1], &ECI_OGS[2]) == 3) {
-            printf("Got the ECI coordinates: [%f, %f, %f]\n", ECI_OGS[0], ECI_OGS[1], ECI_OGS[2]);
-        } else {
+            // printf("Got the ECI coordinates: [%f, %f, %f]\n", ECI_OGS[0], ECI_OGS[1], ECI_OGS[2]);
+            err = 0;
+        } 
+        if (err == 1) {
             printf("Failed to parse the line: %s", buffer); // Debugging line
         }
     }
@@ -545,7 +587,7 @@ static void AC_oisl_OGS(Generic_ADCS_GNC_Tlm_Payload_t *GNC, Generic_ADCS_AC_OIS
     fprintf(fp_O, "%f", SoS);
     fclose(fp_O);
 
-      printf("Scalar product between ISL V and desired b2 (should be close to 1): %f\n", SoS);
+    //   printf("Scalar product between ISL V and desired b2 (should be close to 1): %f\n", SoS);
       if ((SoS > (EPS - 1.0)) && (SoS < (1.0 - EPS))) {
          VxV(ISL_OGS_body, side, ACS->therr);
       }
