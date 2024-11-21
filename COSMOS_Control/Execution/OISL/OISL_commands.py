@@ -51,17 +51,6 @@ def check_folder(folder_path):
                     # TM
                     else: 
                         archive_folder = archive_folder_tm
-                        # V1
-                        '''
-                        # TODO implement better handling 
-                        for parameter in file_content["CONTENT"]:
-                            subsystem_name = parameter["SUBSYSTEM"]
-                            packet_name = parameter["PACKET_NAME"]
-                            parameter_name = parameter["PARAMETER_NAME"]
-                            parameter_value = parameter["VALUE"]
-                            print(f"Received the TM Parameter {parameter_name} for the subsystem {subsystem_name}. The value is {parameter_value}")
-                        '''
-                        # V2
                         # Process telemetry data
                         telemetry_data = file_content["telemetry_data"]
                         instructions = file_content["instructions"]
@@ -85,7 +74,22 @@ def check_folder(folder_path):
                             relay_window_end = instructions["relay"]["relay_window_end"]
                             print(f"Preparing to relay TM to ground station {ground_station_id} between {relay_window_start} and {relay_window_end}.")
                             # Here you would implement the actual relaying logic
-                        
+
+                        # DL tm to ground station if specified
+                        if "DL" in instructions:
+                            ground_station_id = instructions["DL"]["ground_station_name"]
+                            print(f"Preparing to relay TM to ground station {ground_station_id}.")
+                            # Send DL command
+                            subsystem_name = "OISL_DEBUG"
+                            command_name = "OISL_SEND_FILE"
+                            parameter_name = ["TARGET_SAT", "FILE_NAME"]
+                            parameter_value = ["GROUND_STATION", "/home/jstar/Desktop/github-nos3/components/oisl/fsw/src/fileInput/OGS.txt"]
+                            # Execute the command
+                            print("Received the command {} for the subsystem {}. About to execute it".format(command_name, subsystem_name))
+                            # MOVE THE FILE TO A FOLDER THAT CAN BE READ: from "/home/jstar/Desktop/github-nos3/COSMOS_Control/Execution/OISL/files_received/OGS.txt" to /home/jstar/Desktop/github-nos3/components/oisl/fsw/src/fileInput/OGS.txt"
+                            print("Hallooo", fileInput_dir + file)
+                            shutil.move(received_file, fileInput_dir + file)
+                            command_executer(subsystem_name, command_name, parameter_name, parameter_value)
 
                     # Move the command file to the archive folder
                     time = file_content["header"]["timestamp"]
@@ -97,7 +101,10 @@ def check_folder(folder_path):
                     archive_path = f"{archive_folder}/{new_file_name}"
 
                     # Move and rename the file
-                    shutil.move(received_file, archive_path)
+                    try:
+                        shutil.move(received_file, archive_path)
+                    except: # The file has been moved during the if "DL" 
+                        shutil.copyfile(fileInput_dir + file, archive_path)
                     print(f"Archived '{received_file}' to '{archive_path}'")
                     
                 except json.JSONDecodeError:
@@ -113,6 +120,7 @@ if __name__ == "__main__":
         folder_to_check = '/home/jstar/Desktop/github-nos3/COSMOS_Control/Execution/OISL/files_received'
         archive_folder_cmd = '/home/jstar/Desktop/github-nos3/COSMOS_Control/Execution/OISL/commands_archived'
         archive_folder_tm = '/home/jstar/Desktop/github-nos3/COSMOS_Control/Execution/OISL/tm_archived'
+        fileInput_dir = "/home/jstar/Desktop/github-nos3/components/oisl/fsw/src/fileInput/"
 
         # Check the folder
         check_folder(folder_to_check)

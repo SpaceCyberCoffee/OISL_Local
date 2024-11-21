@@ -19,7 +19,7 @@ static const char* fileSent_confirmation = "/home/jstar/Desktop/github-nos3/file
 static const char* Sat_Name = "Sat_1_1";
 // static const char* Sat_For = "Sat_1_2";
 // static const char* Sat_Back = "Sat_1_24";
-static const double margin  = 30.0;
+static const double margin  = 60.0;    // THis depends: if the sat is already in OGS Mode the margin is 0. If it has to get into that mode then it might be even higher. TODO add autoregolation based on the mode you are in now. 
 static const double margin_routing = 200.0; //time to align with forward + time for the forward to align with OGS
 
 
@@ -207,11 +207,9 @@ time_t get_current_time(void) {
 }
 
 // Function to check if a given time is within a visibility window
-int is_visible(time_t current_time, const char *vis_start, const char *vis_end, time_t *vis_start_time) {
+int is_visible(time_t current_time, const char *vis_start, const char *vis_end, time_t *vis_start_time, double fileTransferDur, double vis_duration) {
     struct tm tm_start, tm_end;
     time_t start_time, end_time;
-
-    // printf("Received vis_start: %s, vis_end: %s\n", vis_start, vis_end);
 
      // Ensure tm_isdst is set to -1 to handle DST automatically TODO Prob delete
     tm_start.tm_isdst = -1;
@@ -232,29 +230,12 @@ int is_visible(time_t current_time, const char *vis_start, const char *vis_end, 
         printf("Failed to parse vis_start: %s\n", vis_start_trunc);
         return 0;
     }
-    // else {
-    //     // Print tm_end in a readable format
-    //     char st_str[20];
-    //     strftime(st_str, sizeof(st_str), "%Y-%m-%d %H:%M:%S", &tm_start);
-    //     printf("Parsed vis_st: %s\n", st_str);
-    // }
 
     // Parse visibility end time
     if (strptime(vis_end, "%Y-%m-%dT%H:%M:%S", &tm_end) == NULL) {
         printf("Failed to parse vis_end: %s\n", vis_end_trunc);
         return 0;
     } 
-    // else {
-    //     // Print tm_end in a readable format
-    //     char end_str[20];
-    //     strftime(end_str, sizeof(end_str), "%Y-%m-%d %H:%M:%S", &tm_end);
-    //     printf("Parsed vis_end: %s\n", end_str);
-    // }
-
-    // Debug: Print the content of tm_start before calling mktime
-    // printf("tm_start: %d-%02d-%02d %02d:%02d:%02d\n", tm_start.tm_year + 1900, tm_start.tm_mon + 1, tm_start.tm_mday,
-    //        tm_start.tm_hour, tm_start.tm_min, tm_start.tm_sec);
-  
 
     // Convert to time_t format for comparison
     start_time = mktime(&tm_start);
@@ -271,31 +252,31 @@ int is_visible(time_t current_time, const char *vis_start, const char *vis_end, 
         return 0;
     }
 
-    // Print start, end, and current times for debugging
-    // printf("Is Visible Start time: %ld\n", start_time);
-    // printf("Is Visible End time: %ld\n", end_time);
-    // printf("Is Visible Current time: %ld\n", current_time);
-
-    // Update the next upcoming visibility start time if conditions are met
+    // Update the next upcoming visibility start time if conditions are met 
     if (start_time > current_time && (*vis_start_time == -1 || start_time < *vis_start_time)) {
-        *vis_start_time = start_time;
+        if (vis_duration >= fileTransferDur) {
+            *vis_start_time = start_time;
+        }
     }
 
-    return (current_time >= start_time && current_time <= (end_time - (time_t)margin)); 
+    // Adjust the end time by subtracting margin and file transfer duration
+    time_t adjusted_end_time = end_time - (time_t)(margin + fileTransferDur);
+
+    // Check if the current time is within the adjusted visibility window
+    return (current_time >= start_time && current_time <= adjusted_end_time);
 }
  
-int routing_Sat(FILE *vis_file, time_t current_time, time_t *start_visibility) { 
+int routing_Sat(FILE *vis_file, time_t current_time, time_t *start_visibility, double fileTransferDur) { 
     char line[300];
     char sat_id[20], vis_start[20], vis_end[20];
     double duration;
-    time_t earliest_visibility = 0;
+    time_t earliest_visibility = *start_visibility; // ASSUME FIRST THAT THE EARLIEST VISIBILITY FEASIBLE (CONSIDERING TRANSFER TIME AND VIS DURATION) IS THE NEXT ONE OF THE CENTRAL SAT.
     int recommend_direction = 0;
     int central_index;
-    int winning_index;
+    int winning_index = 1; // If no feasible visibility before the next one of this sat, select this sat
 
     // Extract the index of the current satellite (e.g., from `1_2` → get `2`)
     sscanf(strrchr(Sat_Name, '_') + 1, "%d", &central_index);
-    // printf("Index of this sat: %i \n", central_index);
 
     // Reset file pointer to the beginning
     rewind(vis_file);
@@ -313,40 +294,19 @@ int routing_Sat(FILE *vis_file, time_t current_time, time_t *start_visibility) {
             time_t start_time;
 
             // Ensure tm_isdst is set to -1 to handle DST automatically TODO Prob delete
-    tm_start.tm_isdst = -1;
+            tm_start.tm_isdst = -1;
 
-    // Temporary buffers to hold truncated visibility start and end times
-    vis_start[19] = '\0';
+            // Temporary buffers to hold truncated visibility start and end times
+            vis_start[19] = '\0';
 
             // Parse the start time
             strptime(vis_start, "%Y-%m-%dT%H:%M:%S", &tm_start);
-            // Check the contents of tm_start before calling mktime
-    // printf("Parsed time: %d-%d-%d %d:%d:%d\n",
-    //     tm_start.tm_year + 1900, tm_start.tm_mon + 1, tm_start.tm_mday,
-    //     tm_start.tm_hour, tm_start.tm_min, tm_start.tm_sec);
             start_time = mktime(&tm_start);
 
-            //CHECK IF Sstart_time is correct. if it is -1 then there you go your problem
-            // Check if mktime failed   //PROBLEM HEEREEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE PD CANE
+            // Check if mktime failed   
             if (start_time == -1) {
                 printf("ROUTING : mktime failed to convert start_time.\n");
             }
-
-            // DELETEME
-            // printf("Current time + 200 s is: ");
-            // // Add margin to current time
-            // time_t future_time = current_time + (time_t)margin_routing;
-            // // Convert future_time to struct tm
-            // struct tm* future_tm = localtime(&future_time);
-            // // Format and print the time
-            // char formatted_time[20];
-            // strftime(formatted_time, sizeof(formatted_time), "%Y-%m-%d %H:%M:%S", future_tm);
-            // printf("%s\n", formatted_time);
-            // // Print vis_start in the same format
-            // char formatted_vis_start[20];
-            // strftime(formatted_vis_start, sizeof(formatted_vis_start), "%Y-%m-%d %H:%M:%S", &tm_start);
-            // printf("vis_start of this SAT: %s is: %s\n", sat_id, formatted_vis_start);
-            //STOP DELETING
 
             // Check if visibility is upcoming
             if (start_time > current_time + (time_t)margin_routing) {
@@ -372,13 +332,15 @@ int routing_Sat(FILE *vis_file, time_t current_time, time_t *start_visibility) {
 
                 // Check alignment time feasibility
                 if (start_time > current_time + alignment_time) {
-                    if (earliest_visibility == 0 || start_time < earliest_visibility) {
-                        earliest_visibility = start_time;
-                        recommend_direction = direction;
-                        winning_index = sat_index;
-                        *start_visibility = earliest_visibility;
-                        printf("ENTERED sat index e hops: %i %i\n", sat_index, hops_needed);
-                        printf("323: start_time: %ld, current_time + margin_routing: %ld\n", start_time, current_time + alignment_time);
+                    if (duration >= fileTransferDur) { //TODO PROBABLY BETTER ADD A MARGIN TO CONSIDER THE LOST OF ALIGNMENT DURING LARGER FILE TRANSFERS
+                        if (start_time < earliest_visibility) {
+                            earliest_visibility = start_time;
+                            recommend_direction = direction;
+                            winning_index = sat_index;
+                            *start_visibility = earliest_visibility;
+                            printf("ENTERED sat index e hops: %i %i\n", sat_index, hops_needed);
+                            printf("323: start_time: %ld, current_time + margin_routing: %ld\n", start_time, current_time + alignment_time);
+                        }
                     }
                 }
             }
@@ -400,6 +362,8 @@ void sendFile(const char *fileContent, const size_t fileSize) {
     CF_CFDP_PduFileDataContent_t *contents = NULL;
     int segmentCount = segmentFileIntoPDUs(fileContent, fileSize, &headers, &contents, segmentSize);
     double transferTime = estimateTransferTime(fileSize, segmentCount);
+    // transferTime += 100;
+    printf("OISL FILE CFDP: Estimated Transfer time including network delay (modified): %f s.\n", transferTime);
 
     uint8 *connection_establishment;
     if (OISL_AppData.CFDP.Target == 0) {
@@ -443,10 +407,8 @@ void sendFile(const char *fileContent, const size_t fileSize) {
             // Ensure line ends at '\n' and doesn't include any hidden characters 
             line[strcspn(line, "\r\n")] = 0;
             int items = sscanf(line, "%20[^,],%20[^,],%20[^,], %lf", sat_id, vis_start, vis_end, &duration); 
-            //printf("Sat id: %s then vis start: %s \n vis end: %s \n duration %f \n", sat_id, vis_start, vis_end,  duration);
             if (items == 4) { 
-                //printf("Line 297\n");
-                if (strcmp(sat_id, Sat_Name) == 0 && is_visible(current_time, vis_start, vis_end, &vis_start_time)) { // vis_start_time stores the earliest visibility of the central sat that is larger than current time
+                if (strcmp(sat_id, Sat_Name) == 0 && is_visible(current_time, vis_start, vis_end, &vis_start_time, transferTime, duration)) {            // vis_start_time stores the earliest visibility of the central sat that is larger than current time
                     printf("Satellite %s is currently visible from OGS.\n", sat_id);
                     char formatted_current[20];
                     strftime(formatted_current, sizeof(formatted_current), "%Y-%m-%d %H:%M:%S", localtime(&(current_time)));
@@ -454,18 +416,12 @@ void sendFile(const char *fileContent, const size_t fileSize) {
                     is_visible_now = 1;
                     break;
                 }
-        //         else { // TODO then delete
-        //          if (strcmp(sat_id, Sat_Name) == 0) {
-        //         char formatted_current[20];
-        //         strftime(formatted_current, sizeof(formatted_current), "%Y-%m-%d %H:%M:%S", localtime(&(current_time)));
-        // printf("Satellite %s is not currently visible from OGS. Current time: %s, Visibility start: %s e visibility end: %s \n", sat_id, formatted_current, vis_start, vis_end);
-        //         }}
             }
         }
 
         if (!is_visible_now) {
             printf("Satellite Sat_1_1 is not visible from OGS at this time.\n");
-            int routing = routing_Sat(vis_file, current_time, &vis_start_time); //TODO: THIS SHOULD BE THE VALUE PREVIOUSLY UPDATED BY IS VISIBLE!!!
+            int routing = routing_Sat(vis_file, current_time, &vis_start_time, transferTime); // THIS IS THE VALUE PREVIOUSLY UPDATED BY IS VISIBLE!!!
             if (routing == 1) { // Another sat has an earlier visibility --> align to forward and start to route the info. 
                 connection_establishment = &OISL_AppData.DevicePkt.Oisl.ForwardConnection;
                 cmd8.Mode = OISL_MODE_F;
@@ -522,8 +478,6 @@ void sendFile(const char *fileContent, const size_t fileSize) {
         printf("Unknown taget to align with, or method not yet impemented for target %u, default to forward", OISL_AppData.CFDP.Target);
         connection_establishment = &OISL_AppData.DevicePkt.Oisl.ForwardConnection;
     }
-    
-    printf("OISL FILE CFDP: Estimated Transfer time including network delay: %f s.\n", transferTime);
 
     for (segmentNumber = 0; segmentNumber < segmentCount; segmentNumber++) {
         int sent = 0;
