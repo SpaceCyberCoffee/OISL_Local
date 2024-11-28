@@ -348,8 +348,8 @@ void OISL_ProcessGroundCommand(void)
             CFE_EVS_SendEvent(OISL_CMD_SEND_FILE_ERR_EID, CFE_EVS_EventType_INFORMATION, "sIZE OF CMD HEADER: %lu \n", sizeof(CFE_MSG_CommandHeader_t));
             CFE_EVS_SendEvent(OISL_CMD_SEND_FILE_ERR_EID, CFE_EVS_EventType_INFORMATION, "SIze of THE CFDP CMD T: %lu \n", sizeof(OISL_CFDP_cmd_t));
             
-            // if (OISL_VerifyCmdLength(OISL_AppData.MsgPtr, sizeof(OISL_CFDP_cmd_t)) == OS_SUCCESS)
-            // {   
+            if (OISL_VerifyCmdLength(OISL_AppData.MsgPtr, sizeof(OISL_CFDP_cmd_t)) == OS_SUCCESS)
+            {   
                 OISL_CFDP_cmd_t *cmd;
                 cmd = (OISL_CFDP_cmd_t *)OISL_AppData.MsgPtr; 
                 if (cmd->FileName == NULL) {
@@ -364,10 +364,10 @@ void OISL_ProcessGroundCommand(void)
                 OISL_AppData.CFDP.Target = cmd->Target; 
                 CFE_EVS_SendEvent(OISL_CMD_SEND_FILE_EID, CFE_EVS_EventType_INFORMATION, "OISL: Transfer File command received. Trying to reach Sat %u", cmd->Target);
                 OISL_SendFile_CFDP();
-            // }
-            // else {
-            //     CFE_EVS_SendEvent(OISL_CMD_SEND_FILE_ERR_EID, CFE_EVS_EventType_INFORMATION, "OISL: Transfer File command received but error encountered");
-            // }
+            }
+            else {
+                CFE_EVS_SendEvent(OISL_CMD_SEND_FILE_ERR_EID, CFE_EVS_EventType_INFORMATION, "OISL: Transfer File command received but error encountered");
+            }
             break;
 
         /*

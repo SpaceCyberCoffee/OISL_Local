@@ -40,8 +40,8 @@ typedef struct
 {
     /* Every command requires a header used to identify it */
     CFE_MSG_CommandHeader_t CmdHeader;
-    uint8    Mode;
     char     OGS_Name[20];
+    uint8    Mode;
 } Generic_ADCS_Mode_cmd_t;
 
 typedef struct

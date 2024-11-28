@@ -21,7 +21,7 @@ Vagrant.configure("2") do |config|
 
     ### General configuration
     config.vm.provider "virtualbox" do |vbox|
-        vbox.name = "nos3_OISL"
+        vbox.name = "nos3_OISL_Central"
         vbox.gui = true
         ### Enable additional configuration as needed
         vbox.cpus = 8
