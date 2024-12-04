@@ -328,14 +328,15 @@ int32_t OISL_RequestData(uart_info_t* device, OISL_Device_Data_tlm_t* data)
 
     // /* Connection with Forward Satellite */
     const char* alignment_info_forward = "/home/jstar/Desktop/github-nos3/components/oisl/fsw/src/F_sat_back_alignment.txt";
-    if (data->ForwardAlignment == 0) {
-        data->ForwardConnection = 0;
-    }
-    else {
-        data->ForwardConnection = read_alignment_info(alignment_info_forward);
-    }
+    
+    if (data->ForwardAlignment == 0) { 
+        data->ForwardConnection = 0; 
+    } 
+    else { 
+        data->ForwardConnection = read_alignment_info(alignment_info_forward); 
+    } 
 
-    // /* Connection with Backward Satellite */
+    /* Connection with Backward Satellite */
     const char* alignment_info_backward = "/home/jstar/Desktop/github-nos3/components/oisl/fsw/src/B_sat_for_alignment.txt";
     if (data->BackwardAlignment == 0) {
         data->BackwardConnection = 0;
@@ -344,7 +345,21 @@ int32_t OISL_RequestData(uart_info_t* device, OISL_Device_Data_tlm_t* data)
         data->BackwardConnection = read_alignment_info(alignment_info_backward);
     }
 
-    // OS_printf("FOrward alignment: %u und backward alignment: %u\n", data->ForwardAlignment, data->BackwardAlignment);
+    // Create or delete the file based on Connection values
+    const char* file_path_color = "/home/jstar/Desktop/github-nos3/try.txt"; 
+    if (data->ForwardConnection == 1 || data->BackwardConnection == 1) { 
+        FILE *fpdef = fopen(file_path_color, "w"); 
+        // Create the file 
+        if (fpdef == NULL) { 
+            OS_printf("Error creating the file "); 
+        } 
+        else { 
+            fclose(fpdef); 
+        } 
+    } 
+    else { 
+        remove(file_path_color); 
+    }
 
     return status;
 }
