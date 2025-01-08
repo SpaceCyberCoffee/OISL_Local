@@ -12,8 +12,10 @@
 #include "oisl_device.h"
 #include <stdio.h>
 #include <math.h>
+#include "CFDP_Luca.h"
 
-
+const char* file_beam_forward = "/home/jstar/Desktop/github-nos3/F.txt"; 
+const char* file_beam_backward = "/home/jstar/Desktop/github-nos3/B.txt"; 
 
 extern struct __cmdline cmdline;
 
@@ -303,28 +305,7 @@ int32_t OISL_RequestData(uart_info_t* device, OISL_Device_Data_tlm_t* data)
     data->BackwardAlignment = read_data[7];
 
     /* Read OGS Alignment */
-    data->OGSAlignment = read_data[8];
-
-    /* Write to file the alignment conditions. Used by other sats to establish connection. */
-    const char* my_alignments = "/home/jstar/Desktop/github-nos3/components/oisl/fsw/src/my_alignments.txt";
-    FILE *fp = fopen(my_alignments, "w");
-    if (fp == NULL)
-    {
-        OS_printf("Error opening the file %s", my_alignments);
-    }
-    fprintf(fp, "%u %u", data->ForwardAlignment,  data->BackwardAlignment);
-    fclose(fp);   
-
-    // // THEN DELETE ME
-    /* Write to file the alignment conditions. Used by other sats to establish connection. */
-    // const char* my_alignment = "/home/jstar/Desktop/github-nos3/components/oisl/fsw/src/TEST_CUBESAT_STABILITY_1.txt";
-    // FILE *fp3 = fopen(my_alignment, "a");
-    // if (fp3 == NULL)
-    // {
-    //     OS_printf("Error opening the file %s", my_alignment);
-    // }
-    // fprintf(fp3, "%u\n", data->ForwardAlignment);
-    // fclose(fp3);
+    data->OGSAlignment = read_data[8];   
 
     // /* Connection with Forward Satellite */
     const char* alignment_info_forward = "/home/jstar/Desktop/github-nos3/components/oisl/fsw/src/F_sat_back_alignment.txt";
@@ -346,9 +327,9 @@ int32_t OISL_RequestData(uart_info_t* device, OISL_Device_Data_tlm_t* data)
     }
 
     // Create or delete the file based on Connection values
-    const char* file_path_color = "/home/jstar/Desktop/github-nos3/try.txt"; 
-    if (data->ForwardConnection == 1 || data->BackwardConnection == 1) { 
-        FILE *fpdef = fopen(file_path_color, "w"); 
+    FILE *fpdef = NULL;
+    if (data->ForwardConnection == 1) { 
+        fpdef = fopen(file_beam_forward, "w"); 
         // Create the file 
         if (fpdef == NULL) { 
             OS_printf("Error creating the file "); 
@@ -358,8 +339,35 @@ int32_t OISL_RequestData(uart_info_t* device, OISL_Device_Data_tlm_t* data)
         } 
     } 
     else { 
-        remove(file_path_color); 
+        remove(file_beam_forward); 
     }
+    if (data->BackwardConnection == 1) { 
+        fpdef = fopen(file_beam_backward, "w"); 
+        // Create the file 
+        if (fpdef == NULL) { 
+            OS_printf("Error creating the file "); 
+        } 
+        else { 
+            fclose(fpdef); 
+        } 
+    } 
+    else { 
+        remove(file_beam_backward); 
+    }
+
+    // Add memory info
+    data->MemoryUsed = (double)memoryInfo->currentUsed/1e3; // move from Bytes to kB 
+    data->MemoryAvailable = memoryInfo->isAvailable; 
+
+    /* Write to file the alignment conditions. Used by other sats to establish connection. Send also the memoryUsed information. This simulates a kind of handshake before starting the iteraction */
+    const char* my_alignments = "/home/jstar/Desktop/github-nos3/components/oisl/fsw/src/my_alignments.txt";
+    FILE *fp = fopen(my_alignments, "w");
+    if (fp == NULL)
+    {
+        OS_printf("Error opening the file %s", my_alignments);
+    }
+    fprintf(fp, "%u %u %f", data->ForwardAlignment,  data->BackwardAlignment,  data->MemoryUsed);
+    fclose(fp);
 
     return status;
 }

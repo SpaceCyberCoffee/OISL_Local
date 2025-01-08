@@ -47,3 +47,7 @@ TELEMETRY OISL OISL_DATA_TLM LITTLE_ENDIAN "OISL_Device_tlm_t"
   APPEND_ITEM    OGS_ALIGNMENT                8 UINT        "ISL OGS alignment Status"
    STATE DISALIGNED 0
    STATE ALIGNED    1
+  APPEND_ITEM    MEMORY_USED                 64 FLOAT       "Memory used for OISL data in kB"
+  APPEND_ITEM    MEMORY_AVAILABLE             8 UINT        "Available if there are less then 8GB of payload data"
+   STATE NOT_AVAILABLE 0
+   STATE AVAILABLE     1

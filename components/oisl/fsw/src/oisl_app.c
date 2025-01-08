@@ -630,7 +630,6 @@ void* FileTransferThread(void *arg) {
 
 void OISL_SendFile_CFDP(void)
 {   
-    
     const char *filePath = OISL_AppData.CFDP.FileName;  
     FILE *file;
     size_t fileSize;

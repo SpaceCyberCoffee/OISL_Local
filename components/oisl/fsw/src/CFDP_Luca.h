@@ -90,4 +90,15 @@ void sendFile(const char *fileContent, const size_t fileSize);
  */
 void createSentFile(const char *fileContent);
 
+// Structure to track memory status
+typedef struct {
+    size_t totalSize;
+    size_t currentUsed;
+    bool isAvailable;
+} MemoryStatus;
+
+extern MemoryStatus *memoryInfo;  // declare as external so it can be accessed from device.c
+
+void receiveMemoryInfo(const char* filename);
+
 #endif

@@ -729,7 +729,9 @@ apps/oisl/fsw/CMakeFiles/oisl.dir/src/oisl_device.c.o: /home/jstar/Desktop/githu
   /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h \
   /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
   /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
-  /usr/include/x86_64-linux-gnu/bits/iscanonical.h
+  /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
+  /home/jstar/Desktop/github-nos3/components/oisl/fsw/src/CFDP_Luca.h \
+  /home/jstar/Desktop/github-nos3/components/oisl/fsw/src/CFDP_PDU.h
 
 
 /usr/include/x86_64-linux-gnu/bits/waitflags.h:
