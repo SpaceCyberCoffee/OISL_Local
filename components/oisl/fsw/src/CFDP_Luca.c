@@ -317,7 +317,7 @@ int is_visible(time_t current_time, const char *vis_start, const char *vis_end, 
     time_t adjusted_end_time = end_time - (time_t)(margin + fileTransferDur);
 
     // Check if the current time is within the adjusted visibility window
-    return (current_time >= start_time && current_time <= adjusted_end_time);
+    return ((current_time >= start_time && current_time <= adjusted_end_time) && (vis_duration - margin - marginDL >= fileTransferDur));
 }
 
 int routing_Sat_V2(FILE *vis_file, time_t current_time, time_t *start_visibility, double fileTransferDur, SplittingInfo *info) {
