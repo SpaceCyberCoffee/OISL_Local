@@ -101,4 +101,6 @@ extern MemoryStatus *memoryInfo;  // declare as external so it can be accessed f
 
 void receiveMemoryInfo(const char* filename);
 
+int sendIteration(const char *fileContent, size_t fileSize, CF_CFDP_PduFileDataHeader_t *headers, CF_CFDP_PduFileDataContent_t *contents, int segmentCount, int segmentSize, uint8_t *connection_establishment, const char *filename_memory);
+
 #endif

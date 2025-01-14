@@ -1,3 +1,5 @@
+# SCRIPT TO BE RUNNED FROM WITHIN THE VM OF THIS SAT
+
 import os
 import shutil
 import json
@@ -108,7 +110,37 @@ def check_folder(folder_path):
                     print(f"Archived '{received_file}' to '{archive_path}'")
                     
                 except json.JSONDecodeError:
-                    print(f"Error: Invalid JSON format in '{received_file}'")
+                    print(f"Error: Invalid JSON format in '{received_file}'. I WILL ASSUME IT IS LARGE FILE TRANSFER NOW.")
+                    # 13.01.2025: Assume is large file transfer: send it as a OGS DL command.
+                    # Copy the file to the fileInput folder of the receiver
+                    receiver_folder_OISL = "/home/jstar/Desktop/github-nos3/components/oisl/fsw/src/fileInput/receivedFile.txt"
+                    shutil.copyfile(received_file, receiver_folder_OISL)
+                    # Send DL command
+                    subsystem_name = "OISL_DEBUG"
+                    command_name = "OISL_SEND_FILE"
+                    parameter_name = ["TARGET_SAT", "FILE_NAME"]
+                    parameter_value = ["GROUND_STATION", "/home/jstar/Desktop/github-nos3/components/oisl/fsw/src/fileInput/receivedFile.txt"]
+                    # Execute the command
+                    print("Received the command {} for the subsystem {}. About to execute it".format(command_name, subsystem_name))
+                    # MOVE THE FILE TO A FOLDER THAT CAN BE READ: from "/home/jstar/Desktop/github-nos3/COSMOS_Control/Execution/OISL/files_received/OGS.txt" to /home/jstar/Desktop/github-nos3/components/oisl/fsw/src/fileInput/OGS.txt"
+                    print("Hallooo", fileInput_dir + file)
+                    shutil.move(received_file, fileInput_dir + file)
+                    command_executer(subsystem_name, command_name, parameter_name, parameter_value)
+                    # Move the command file to the archive folder
+                    archive_folder = archive_folder_tm
+                    time = file_content["header"]["timestamp"]
+                    # Extract filename without extension and add timestamp
+                    file_base = received_file.split('/')[-1][:-4]  # Removing '.txt' from the file name
+                    new_file_name = f"{file_base}_{time}.txt"
+                    # Full destination path in the archive folder
+                    archive_path = f"{archive_folder}/{new_file_name}"
+                    # Move and rename the file
+                    try:
+                        shutil.move(received_file, archive_path)
+                    except: # The file has been moved during the if "DL" 
+                        shutil.copyfile(fileInput_dir + file, archive_path)
+                    print(f"Archived '{received_file}' to '{archive_path}'")
+
                 except KeyError as e:
                     print(f"Error: Missing key in JSON: {e}")
 

@@ -15,7 +15,9 @@
         "streambuf": "c",
         "generic_adcs_msgids.h": "c",
         "generic_adcs_adac.h": "c",
-        "generic_adcs_msg.h": "c"
+        "generic_adcs_msg.h": "c",
+        "map": "cpp",
+        "cfe.h": "c"
     },
     "cmake.sourceDirectory": "/mnt/extras/SSD/NOS3_RBT/nos3_luca_OISL/nos3_rbt/sims"
 }
