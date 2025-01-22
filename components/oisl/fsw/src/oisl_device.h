@@ -70,6 +70,7 @@ typedef struct
     uint8_t   OGSAlignment;
     double    MemoryUsed;
     uint8_t   MemoryAvailable;
+    uint8_t   TransferActive;
 } __attribute__((packed)) OISL_Device_Data_tlm_t;
 #define OISL_DEVICE_DATA_LNGTH sizeof ( OISL_Device_Data_tlm_t )
 #define OISL_DEVICE_DATA_SIZE OISL_DEVICE_DATA_LNGTH + OISL_DEVICE_HDR_TRL_LEN

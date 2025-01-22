@@ -245,6 +245,16 @@ apps/oisl/fsw/CMakeFiles/oisl.dir/src/CFDP_Luca.c.o: /home/jstar/Desktop/github-
   /usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h \
   /usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h \
   /home/jstar/Desktop/github-nos3/components/oisl/fsw/src/CFDP_Luca.h \
+  /usr/include/math.h \
+  /usr/include/x86_64-linux-gnu/bits/math-vector.h \
+  /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h \
+  /usr/include/x86_64-linux-gnu/bits/flt-eval-method.h \
+  /usr/include/x86_64-linux-gnu/bits/fp-logb.h \
+  /usr/include/x86_64-linux-gnu/bits/fp-fast.h \
+  /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h \
+  /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
+  /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
+  /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
   /home/jstar/Desktop/github-nos3/components/generic_adcs/fsw/platform_inc/generic_adcs_msgids.h \
   /home/jstar/Desktop/github-nos3/components/generic_adcs/fsw/src/generic_adcs_msg.h \
   /home/jstar/Desktop/github-nos3/components/generic_adcs/fsw/src/generic_adcs_adac.h
@@ -734,6 +744,8 @@ apps/oisl/fsw/CMakeFiles/oisl.dir/src/oisl_device.c.o: /home/jstar/Desktop/githu
   /home/jstar/Desktop/github-nos3/components/oisl/fsw/src/CFDP_PDU.h
 
 
+/home/jstar/Desktop/github-nos3/components/oisl/fsw/src/oisl_device.c:
+
 /usr/include/x86_64-linux-gnu/bits/waitflags.h:
 
 /home/jstar/Desktop/github-nos3/fsw/cfe/modules/core_api/fsw/inc/cfe_time_extern_typedefs.h:
@@ -831,8 +843,6 @@ osal/inc/osconfig.h:
 /usr/include/x86_64-linux-gnu/bits/endian.h:
 
 /usr/include/x86_64-linux-gnu/gnu/stubs.h:
-
-/home/jstar/Desktop/github-nos3/components/oisl/fsw/src/oisl_device.c:
 
 /usr/include/string.h:
 
@@ -1154,10 +1164,6 @@ inc/device_cfg.h:
 
 /usr/include/asm-generic/errno.h:
 
-/usr/include/x86_64-linux-gnu/bits/iscanonical.h:
-
-/home/jstar/Desktop/github-nos3/fsw/apps/hwlib/fsw/public_inc/libspi.h:
-
 /usr/include/x86_64-linux-gnu/bits/types/error_t.h:
 
 /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h:
@@ -1167,6 +1173,12 @@ inc/device_cfg.h:
 /usr/include/linux/hdlc/ioctl.h:
 
 /usr/include/x86_64-linux-gnu/bits/fcntl.h:
+
+/usr/include/x86_64-linux-gnu/bits/in.h:
+
+/usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h:
+
+/usr/include/linux/falloc.h:
 
 /usr/include/x86_64-linux-gnu/bits/stat.h:
 
@@ -1198,6 +1210,10 @@ inc/device_cfg.h:
 
 /home/jstar/Desktop/github-nos3/components/oisl/fsw/platform_inc/oisl_platform_cfg.h:
 
+/home/jstar/Desktop/github-nos3/fsw/apps/hwlib/fsw/public_inc/libspi.h:
+
+/usr/include/x86_64-linux-gnu/bits/iscanonical.h:
+
 /home/jstar/Desktop/github-nos3/components/oisl/fsw/src/oisl_events.h:
 
 /home/jstar/Desktop/github-nos3/components/oisl/fsw/mission_inc/oisl_perfids.h:
@@ -1222,18 +1238,6 @@ inc/device_cfg.h:
 
 /home/jstar/Desktop/github-nos3/components/oisl/fsw/src/CFDP_Luca.h:
 
-/home/jstar/Desktop/github-nos3/components/generic_adcs/fsw/src/generic_adcs_msg.h:
-
-/home/jstar/Desktop/github-nos3/components/generic_adcs/fsw/src/generic_adcs_adac.h:
-
-/home/jstar/Desktop/github-nos3/components/oisl/fsw/src/oisl_app.c:
-
-/usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h:
-
-/usr/include/linux/falloc.h:
-
-/usr/include/x86_64-linux-gnu/bits/in.h:
-
 /usr/include/x86_64-linux-gnu/bits/types/__FILE.h:
 
 /usr/include/x86_64-linux-gnu/asm/sockios.h:
@@ -1251,3 +1255,9 @@ inc/device_cfg.h:
 /usr/include/x86_64-linux-gnu/bits/fp-fast.h:
 
 /usr/include/x86_64-linux-gnu/bits/mathcalls.h:
+
+/home/jstar/Desktop/github-nos3/components/generic_adcs/fsw/src/generic_adcs_msg.h:
+
+/home/jstar/Desktop/github-nos3/components/generic_adcs/fsw/src/generic_adcs_adac.h:
+
+/home/jstar/Desktop/github-nos3/components/oisl/fsw/src/oisl_app.c:

@@ -51,3 +51,6 @@ TELEMETRY OISL OISL_DATA_TLM LITTLE_ENDIAN "OISL_Device_tlm_t"
   APPEND_ITEM    MEMORY_AVAILABLE             8 UINT        "Available if there are less then 8GB of payload data"
    STATE NOT_AVAILABLE 0
    STATE AVAILABLE     1
+  APPEND_ITEM    TRANSFER_ACTIVE              8 UINT        "Is there a file transfer during the connection? 1 or 0"
+   STATE INACTIVE 0
+   STATE ACTIVE   1

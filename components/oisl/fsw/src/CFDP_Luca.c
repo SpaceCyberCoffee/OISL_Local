@@ -5,6 +5,7 @@
 #include "oisl_app.h"
 #include "CFDP_Luca.h"
 #include <time.h>
+#include <math.h>
 
 #include "/home/jstar/Desktop/github-nos3/components/generic_adcs/fsw/platform_inc/generic_adcs_msgids.h"
 #include "/home/jstar/Desktop/github-nos3/components/generic_adcs/fsw/src/generic_adcs_msg.h"
@@ -21,6 +22,12 @@ const size_t memoryCapacity = 8e9; // 8 GB for payload data
 const int    marginDL = 10;        // this is the margin assuming alignment achieved, it is to quanitfy how much data could be transfered during a pass. TODO check if it contrasts with margin.
 
 const double    DLCapacityperSecond = 12.5e6;   // 100Mbps = 12.5e6 Bytes per second
+const int       time_to_make_it_realistic = 20;
+const double    transfer_time_to_add = 640.0;   // 8GB
+
+const char *OGS_ASSUMED = "Igrim";
+
+#define MAX_CANDIDATES 24  // Maximum number of satellites in constellation
 
 // Global memory status for receiver
 MemoryStatus receiverMemory = {
@@ -36,12 +43,27 @@ MemoryStatus memoryStatusInstance = {
 };
 MemoryStatus *memoryInfo = &memoryStatusInstance;
 
+uint8_t transfering = 0;
+uint8_t *transferActive = &transfering;
+
 typedef struct {
     int *direction; // Direction of transfer: 1, 2 or both 
     double *segment_sizes; // Array to hold segment sizes in bytes
     char *sat_indexes;     // Index array.
     size_t num_segments; // how many satellites will be active in DL info
 } SplittingInfo;
+
+
+// New structure to track multiple satellite candidates
+typedef struct {
+    int sat_index;
+    int direction;
+    time_t visibility_start;
+    double transfer_ratio;
+    int hops;
+    double dl_capacity;  // Downlink capacity in bytes
+    double allocated_bytes; // bytes task to transfer
+} SatCandidate;
 
 
 const int networkDelay = 7000; // 7 ms ONE TRIP
@@ -53,7 +75,7 @@ static const char* Sat_Name = "Sat_1_1";
 // static const char* Sat_For = "Sat_1_2";
 // static const char* Sat_Back = "Sat_1_24";
 static const double margin  = 60.0;    // THis depends: if the sat is already in OGS Mode the margin is 0. If it has to get into that mode then it might be even higher. TODO add autoregolation based on the mode you are in now.
-static const double margin_routing = 200.0; //time to align with forward + time for the forward to align with OGS
+static const double margin_routing = 120.0; //time to align with forward + time for the forward to align with OGS MODIFIED 17/1/2025 
 
 void simulateNetworkDelay(void) {
     usleep(networkDelay); // Simulate network delay for a OISL distance of around 2000km -> 7 ms
@@ -320,24 +342,416 @@ int is_visible(time_t current_time, const char *vis_start, const char *vis_end, 
     return ((current_time >= start_time && current_time <= adjusted_end_time) && (vis_duration - margin - marginDL >= fileTransferDur));
 }
 
-int routing_Sat_V2(FILE *vis_file, time_t current_time, time_t *start_visibility, double fileTransferDur, SplittingInfo *info) {
+
+double calculate_previous_transfers(SatCandidate *candidates, int curr_index, 
+                                 int candidate_count, int central_index, int first_direction) {
+    double total_transfer_time = 0;
+    SatCandidate *curr = &candidates[curr_index];
+
+    
+    // If transfer starts forward (first_direction == 1)
+    if (first_direction == 1) {
+        if (curr->direction == 1) {
+            // For forward satellites: sum all previous forward transfers
+            for (int i = 0; i < curr_index; i++) {
+                if (candidates[i].direction == 1) {
+                    total_transfer_time += candidates[i].allocated_bytes / DLCapacityperSecond;
+                }
+            }
+        } else if (curr->direction == 2) {
+            // For backward satellites: add first forward transfer time only
+            for (int i = 0; i < curr_index; i++) {
+                if (candidates[i].direction == 1 && candidates[i].allocated_bytes > 0) {
+                    total_transfer_time += candidates[i].allocated_bytes / DLCapacityperSecond;
+                    break;  // Only need first forward
+                }
+            }
+        }
+    }
+    // If transfer starts backward (first_direction == 2)
+    else if (first_direction == 2) {
+        if (curr->direction == 2) {
+            // For backward satellites: sum all previous backward transfers
+            for (int i = 0; i < curr_index; i++) {
+                if (candidates[i].direction == 2) {
+                    total_transfer_time += candidates[i].allocated_bytes / DLCapacityperSecond;
+                }
+            }
+        } else if (curr->direction == 1) {
+            // For forward satellites: add first backward transfer time only
+            for (int i = 0; i < curr_index; i++) {
+                if (candidates[i].direction == 2 && candidates[i].allocated_bytes > 0) {
+                    total_transfer_time += candidates[i].allocated_bytes / DLCapacityperSecond;
+                    break;  // Only need first backward
+                }
+            }
+        }
+    }
+    
+    return total_transfer_time;
+}
+
+// Adjust candidate capacities based on initial file division plan
+// Preserves time-based ordering of candidates
+int adjust_candidate_capacities_V2(SatCandidate *candidates, int candidate_count, 
+                              int central_index, time_t current_time, 
+                              double fileTransferDur) {
+    printf("\n=== Starting Capacity Adjustment ===\n");
+    
+    // Step 0: Calculate total bytes to transfer
+    double total_bytes = fileTransferDur * DLCapacityperSecond;
+    printf("Total bytes to transfer: %.2f GB\n", total_bytes/1e9);
+    
+    // Step 1: Calculate total GB in each direction
+    double total_forward = 0;
+    double total_backward = 0;
+    for (int i = 0; i < candidate_count; i++) {
+        if (candidates[i].direction == 1) {
+            total_forward += candidates[i].allocated_bytes;
+        } else if (candidates[i].direction == 2) {
+            total_backward += candidates[i].allocated_bytes;
+        } 
+    }
+    double total_central = total_bytes - (total_backward + total_forward);
+    printf("Initial forward allocation: %.2f GB\n", total_forward/1e9);
+    printf("Initial central allocation: %.2f GB\n", total_central/1e9);
+    printf("Initial backward allocation: %.2f GB\n", total_backward/1e9);
+
+    int dir_principale = candidates[0].direction;
+    
+    // Running total of excess bytes that need reallocation
+    double excess_bytes = 0;
+    
+    // Step 2-4: Process each satellite and adjust allocations
+    for (int i = 0; i < candidate_count; i++) {
+        SatCandidate *curr = &candidates[i];
+        printf("\n--- Processing Satellite %d ---\n", curr->sat_index);
+        
+        if (curr->allocated_bytes <= 0 && excess_bytes <= 0) {
+            printf("Satellite has no allocation and no excess bytes, skipping\n");
+            continue;
+        }
+        
+        // Calculate total routing time needed
+        double time_available = difftime(curr->visibility_start, current_time);
+        printf("Time available before visibility start: %.2f s\n", time_available);
+
+        // Compute time needed to reach
+        double transfer_bytes = 0;
+        double base_routing_time = 0;
+        // central case 120 + FORW POIRTION + 12O+ BACK PORTION + ASSSINGED PORTION
+        if (curr->direction == 0) {
+            printf("Case centrale\n");
+            // both forward and backward directions
+            if (total_backward >=0 && total_forward >=0)  {
+                base_routing_time = 2 * margin_routing;
+            }
+            // only forward or only backward
+            else {
+                base_routing_time = margin_routing;
+            }
+            printf("Base routing %f\n", base_routing_time);
+            // get other bytes  
+            transfer_bytes = total_forward + total_backward;
+            printf("Transfer bytes is %f GB\n", transfer_bytes/1e9);
+        }
+        // forward case FORWARD ASSIGNED + (FWD - HOP PRIMA) + (FSW - THIS HOP)
+        else if (curr->direction == 1 && dir_principale == 1) {
+            printf("Case foward main dir\n");
+            base_routing_time = curr->hops * margin_routing;  // Alignment time per hop
+            printf("Base routing %f\n", base_routing_time);
+            transfer_bytes = total_forward; // at least total forward to move from central to forward
+            double tot_forward = total_forward;
+            int numb_hops_curr = curr->hops; // ex 1 --> stop, 2 take the portion assgined to this, 3 take this plus the forward - previous assigned
+            for (int j = 1; j < numb_hops_curr; j++) { // stop at the current numb hops
+                // pick the candidate in this direction with hops == j
+                for (int i = 0; i < candidate_count; i++) {
+                    if (candidates[i].direction == 1 && candidates[i].hops == j) {
+                        printf("DEBVUG: found this one\n");
+                        transfer_bytes += tot_forward - candidates[i].allocated_bytes;
+                        tot_forward -= candidates[i].allocated_bytes;
+                    }
+                }
+            }
+            printf("Trasnfer bytes is %f\n", transfer_bytes/1e9);
+        }
+        // DIR SECONDARY? FORW ASSIGNED + 120 + BACK ASSIGNED + 120 + mia portion if only 1 back. if multiple is an issue
+        else if (curr->direction == 2 && dir_principale == 1) {
+            printf("Case backward with main dir forward\n");
+            base_routing_time = curr->hops * margin_routing + margin_routing;  // Alignment time per hop and marign routing for the first forward transfer
+            printf("Base routing %f\n", base_routing_time);
+            transfer_bytes = total_backward + total_forward; // at least total backward to move from central to backward and totoal forward because first you route forward!
+            double tot_backward = total_backward;
+            int numb_hops_curr = curr->hops; // ex 1 --> stop, 2 take the portion assgined to this, 3 take this plus the backward - previous assigned
+            for (int j = 1; j < numb_hops_curr; j++) { // stop at the current numb hops
+                // pick the candidate in this direction with hops == j
+                for (int i = 0; i < candidate_count; i++) {
+                    if (candidates[i].direction == 2 && candidates[i].hops == j) {
+                        printf("DEBVUG: found this one\n");
+                        transfer_bytes += tot_backward - candidates[i].allocated_bytes;
+                        tot_backward -= candidates[i].allocated_bytes;
+                    }
+                }
+            }
+            printf("Total bytes is %f\n", transfer_bytes/1e9);
+        }
+        else {
+            printf("ERROR: NOT IMPLEMENTED YET BUT SHOULD NOT BE HERE\n");
+        }
+        double transfer_time = transfer_bytes / DLCapacityperSecond;   
+        double time_needed_reach = base_routing_time + transfer_time; // TRANSFER TIME IS TIME TO GET TO TOUCH THIS SATELLITE. IT EXCLUDES THE TRANSFER OF ITS OWN MATERIAL. 
+
+        printf("Time needed to reach this satellite: %.2f s\n", time_needed_reach);
+
+        // REMEMEBER: DL CAPACITY HAS ALSO A MARGIN!
+        
+        // Check if we need to adjust allocation
+    if (time_needed_reach > time_available) { // todo improve: reduce it by the minimum! YOU HAVE EXCESS, BUT EXCESS MUST BE DISTRIBUTED ACVROSS ALL TRANSFERS. SO IF YOU GET RID OF 0.2GB, YU REACH THIS SAT EARLIER
+            // It takes longer to reach this satellite. From time available compute how much info can reach this sat before its visibility start.
+            double time_loss = time_needed_reach - time_available; // ex: 20 seconds less of info
+            // new excess
+            double excess = time_loss * DLCapacityperSecond;
+            // Not necessarily this is what you delete, because you save time. Maybe start with a portion, like excess / 10. Compute the change in time needed reach.
+            // IT DEPENDS ON HOW MANY HOPS. WITH 1 HOP, THEN YOU NEED TO REDUCE IT BY THIS. IF TWO HOPS, LESS! MAYBE HALF?
+            int number_hops = fmax(curr->hops, 1);        // how many time this info has to be transferred from central to this one? 
+            excess = excess / number_hops;
+            // DONE IT.
+            excess = fmin(excess, curr->allocated_bytes); // avoid getting negative reduction
+            // new bytes to be allocated
+            double new_allocated = curr->allocated_bytes - excess;
+            
+            printf("Reducing allocation from %.2f GB to %.2f GB\n",    
+                   curr->allocated_bytes/1e9, new_allocated/1e9);
+            
+            // Add difference to excess
+            curr->allocated_bytes = new_allocated;
+            excess_bytes += excess;
+            // modify the distribution as well
+            if (curr->direction == 1) {total_forward -= excess;}
+            else if (curr->direction == 2) {total_backward -= excess;}
+            else {total_central-=excess;}
+            printf("Debug: now excess is: %f and the total forward is %f\n", excess_bytes, total_forward);
+           
+        } 
+        else if (excess_bytes > 0) {
+            // Calculate how many excess bytes this satellite can handle:
+            double extra_time = time_available - time_needed_reach;
+            double max_extra_bytes = (extra_time * DLCapacityperSecond);
+            double bytes_to_add = fmin(excess_bytes, max_extra_bytes);
+            // Cannot exceed the DL capacity
+            if (bytes_to_add + curr->allocated_bytes > curr->dl_capacity) {
+                bytes_to_add = curr->dl_capacity - curr->allocated_bytes;
+                if (bytes_to_add < 0) {printf("WTF THIS IS WRONGGGG\n");}
+            }
+            
+            printf("Adding %.2f GB from excess to current allocation of %.2f GB\n",
+                   bytes_to_add/1e9, curr->allocated_bytes/1e9);
+            
+            curr->allocated_bytes += bytes_to_add;
+            excess_bytes -= bytes_to_add;
+            // modify distributions as well
+            if (curr->direction == 1) {total_forward += bytes_to_add;}
+            else if (curr->direction == 2) {total_backward += bytes_to_add;}
+            else {total_central += bytes_to_add;}
+        }
+        
+        // Update transfer ratio
+        curr->transfer_ratio = (curr->allocated_bytes / DLCapacityperSecond) / fileTransferDur;
+    }
+    
+    // Step 6: If there are still excess bytes, try to assign to satellites with zero allocation TODO TEST MIGHT BE WRONG
+    if (excess_bytes > 0) {
+        printf("\n=== Attempting to allocate remaining %.2f GB ===\n", excess_bytes/1e9);
+        for (int i = 0; i < candidate_count && excess_bytes > 0; i++) {
+            if (candidates[i].allocated_bytes <= 0) {
+                double time_available = difftime(candidates[i].visibility_start, current_time);
+                double base_routing_time = candidates[i].hops * margin_routing;
+                double usable_time = time_available - base_routing_time;
+                
+                if (usable_time > 0) {
+                    double max_possible = (usable_time * DLCapacityperSecond) / candidates[i].hops;
+                    double bytes_to_add = fmin(excess_bytes, max_possible);
+                    
+                    candidates[i].allocated_bytes = bytes_to_add;
+                    candidates[i].transfer_ratio = (bytes_to_add / DLCapacityperSecond) / fileTransferDur;
+                    excess_bytes -= bytes_to_add;
+                    
+                    printf("Allocated %.2f GB to previously empty satellite %d\n",
+                           bytes_to_add/1e9, candidates[i].sat_index);
+                }
+            }
+        }
+    }
+    
+    // Remove satellites with zero allocation and count valid ones
+    int new_count = 0;
+    for (int i = 0; i < candidate_count; i++) {
+        if (candidates[i].allocated_bytes > 0) {
+            if (i != new_count) {
+                candidates[new_count] = candidates[i];
+            }
+            new_count++;
+        }
+    }
+    
+    printf("\n=== Final Allocation State ===\n");
+    for (int i = 0; i < new_count; i++) {
+        printf("Sat %d: %.2f GB\n", candidates[i].sat_index, 
+               candidates[i].allocated_bytes/1e9);
+    }
+    
+    if (excess_bytes > 0) {
+        printf("Warning: %.2f GB could not be allocated\n", excess_bytes/1e9);
+    }
+    
+    return new_count;
+}
+
+
+
+// Adjust candidate capacities based on initial file division plan
+// Preserves time-based ordering of candidates
+int adjust_candidate_capacities(SatCandidate *candidates, int candidate_count, 
+                              int central_index, time_t current_time, 
+                              double fileTransferDur) {
+    printf("\n=== Starting Capacity Adjustment ===\n");
+    
+    // Step 0: Calculate total bytes to transfer
+    double total_bytes = fileTransferDur * DLCapacityperSecond;
+    printf("Total bytes to transfer: %.2f GB\n", total_bytes/1e9);
+    
+    // Step 1: Calculate total GB in each direction
+    double total_forward = 0;
+    double total_backward = 0;
+    for (int i = 0; i < candidate_count; i++) {
+        if (candidates[i].direction == 1) {
+            total_forward += candidates[i].allocated_bytes;
+        } else if (candidates[i].direction == 2) {
+            total_backward += candidates[i].allocated_bytes;
+        } 
+    }
+    double total_central = total_bytes - (total_backward + total_forward);
+    printf("Initial forward allocation: %.2f GB\n", total_forward/1e9);
+    printf("Initial central allocation: %.2f GB\n", total_central/1e9);
+    printf("Initial backward allocation: %.2f GB\n", total_backward/1e9);
+    
+    // Running total of excess bytes that need reallocation
+    double excess_bytes = 0;
+    
+    // Step 2-4: Process each satellite and adjust allocations
+    for (int i = 0; i < candidate_count; i++) {
+        SatCandidate *curr = &candidates[i];
+        printf("\n--- Processing Satellite %d ---\n", curr->sat_index);
+        
+        if (curr->allocated_bytes <= 0 && excess_bytes <= 0) {
+            printf("Satellite has no allocation and no excess bytes, skipping\n");
+            continue;
+        }
+        
+        // Calculate total routing time needed
+        double time_available = difftime(curr->visibility_start, current_time);
+        double base_routing_time = curr->hops * margin_routing;  // Alignment time per hop
+        double transfer_time = curr->allocated_bytes / DLCapacityperSecond; // IDEA 1: CHANGE ALLOCATED BYTES. IT IS NOT THE ONE OF THE CURR, BUT ALSO THE PREVIOUS. 
+        // ALLOCATED BYTES E' FORWARD ASSIGNED + (FWD - HOP PRIMA) + (FSW - THIS HOP) ==> WORKS FOR DIR PRINCIPALE. 
+        // CENTRAL? 120 + FORW POIRTION + 12O+ BACK PORTION + ASSSINGED PORTION
+        // DIR SECONDARY? FORW ASSIGNED + 120 + BACK ASSIGNED + 120 + mia portion if only 1 back. if multiple is an issue
+        double previous_transfers = calculate_previous_transfers(candidates, i, candidate_count, central_index, candidates[0].direction); // this should simply add the previous transfger times since base routing time considers the hops already
+        double total_time_needed = base_routing_time + transfer_time + previous_transfers;
+        // PROBLEM FOR NEW ALLOCATION: WRONG TOTAL TIME SINCE IT CONSIDERS ONLY THE DIRECTION
+        printf("Time available: %.2f s\n", time_available);
+        printf("Time needed: %.2f s\n", total_time_needed);
+        
+        // Check if we need to adjust allocation
+        if (total_time_needed > time_available) {
+            // Calculate maximum bytes possible in available time
+            double usable_time = time_available - base_routing_time;
+            double max_bytes = (usable_time * DLCapacityperSecond) / curr->hops;
+            
+            printf("Reducing allocation from %.2f GB to %.2f GB\n", 
+                   curr->allocated_bytes/1e9, max_bytes/1e9);
+            
+            // Add difference to excess
+            excess_bytes += (curr->allocated_bytes - max_bytes);
+            curr->allocated_bytes = max_bytes;
+        } 
+        else if (excess_bytes > 0) {
+            // Calculate how many excess bytes this satellite can handle:
+            double extra_time = time_available - total_time_needed;
+            double max_extra_bytes = (extra_time * DLCapacityperSecond);
+            double bytes_to_add = fmin(excess_bytes, max_extra_bytes);
+            // Cannot exceed the DL capacity
+            if (bytes_to_add + curr->allocated_bytes > curr->dl_capacity) {
+                bytes_to_add = curr->dl_capacity - curr->allocated_bytes;
+                if (bytes_to_add < 0) {printf("WTF THIS IS WRONGGGG\n");}
+            }
+            // bytes_to_add = fmin(bytes_to_add, (curr->dl_capacity - (curr->allocated_bytes + bytes_to_add)));
+            
+            printf("Adding %.2f GB from excess to current allocation of %.2f GB\n",
+                   bytes_to_add/1e9, curr->allocated_bytes/1e9);
+            
+            curr->allocated_bytes += bytes_to_add;
+            excess_bytes -= bytes_to_add;
+        }
+        
+        // Update transfer ratio
+        curr->transfer_ratio = (curr->allocated_bytes / DLCapacityperSecond) / fileTransferDur;
+    }
+    
+    // Step 6: If there are still excess bytes, try to assign to satellites with zero allocation
+    if (excess_bytes > 0) {
+        printf("\n=== Attempting to allocate remaining %.2f GB ===\n", excess_bytes/1e9);
+        for (int i = 0; i < candidate_count && excess_bytes > 0; i++) {
+            if (candidates[i].allocated_bytes <= 0) {
+                double time_available = difftime(candidates[i].visibility_start, current_time);
+                double base_routing_time = candidates[i].hops * margin_routing;
+                double usable_time = time_available - base_routing_time;
+                
+                if (usable_time > 0) {
+                    double max_possible = (usable_time * DLCapacityperSecond) / candidates[i].hops;
+                    double bytes_to_add = fmin(excess_bytes, max_possible);
+                    
+                    candidates[i].allocated_bytes = bytes_to_add;
+                    candidates[i].transfer_ratio = (bytes_to_add / DLCapacityperSecond) / fileTransferDur;
+                    excess_bytes -= bytes_to_add;
+                    
+                    printf("Allocated %.2f GB to previously empty satellite %d\n",
+                           bytes_to_add/1e9, candidates[i].sat_index);
+                }
+            }
+        }
+    }
+    
+    // Remove satellites with zero allocation and count valid ones
+    int new_count = 0;
+    for (int i = 0; i < candidate_count; i++) {
+        if (candidates[i].allocated_bytes > 0) {
+            if (i != new_count) {
+                candidates[new_count] = candidates[i];
+            }
+            new_count++;
+        }
+    }
+    
+    printf("\n=== Final Allocation State ===\n");
+    for (int i = 0; i < new_count; i++) {
+        printf("Sat %d: %.2f GB\n", candidates[i].sat_index, 
+               candidates[i].allocated_bytes/1e9);
+    }
+    
+    if (excess_bytes > 0) {
+        printf("Warning: %.2f GB could not be allocated\n", excess_bytes/1e9);
+    }
+    
+    return new_count;
+}
+
+int routing_Sat_V2(FILE *vis_file, time_t current_time, time_t *start_visibility, double fileTransferDur, SplittingInfo *info) {  
     char line[300];
     char sat_id[20], vis_start[20], vis_end[20];
     double duration;
     int recommend_direction = 0;
     int central_index;
 
-    // New structure to track multiple satellite candidates
-    typedef struct {
-        int sat_index;
-        int direction;
-        time_t visibility_start;
-        double transfer_ratio;
-        int hops;
-        double dl_capacity;  // Downlink capacity in bytes
-    } SatCandidate;
-
-    #define MAX_CANDIDATES 24  // Maximum number of satellites in constellation
     SatCandidate candidates[MAX_CANDIDATES];
     int candidate_count = 0;
 
@@ -367,7 +781,7 @@ int routing_Sat_V2(FILE *vis_file, time_t current_time, time_t *start_visibility
                     continue;
                 }
 
-                if (start_time > current_time + (time_t)margin_routing) {
+                // if (start_time > current_time + (time_t)margin_routing) {
                     int sat_index = atoi(strrchr(trimmed_sat_id, '_') + 1);
 
                     // Determine direction
@@ -388,7 +802,7 @@ int routing_Sat_V2(FILE *vis_file, time_t current_time, time_t *start_visibility
 
                     time_t alignment_time = hops_needed * (time_t)margin_routing;
 
-                    // If satellite is reachable in time, add to candidates
+                    // If satellite is reachable in time, add to candidates. SO FAR THE TRANSFER TIME IS NOT TAKEN INTO ACCOUNT
                     if (start_time > current_time + alignment_time) {
                         double transfer_ratio = (duration - marginDL - margin) / fileTransferDur;
 
@@ -409,10 +823,11 @@ int routing_Sat_V2(FILE *vis_file, time_t current_time, time_t *start_visibility
                             candidates[candidate_count].transfer_ratio = transfer_ratio;
                             candidates[candidate_count].hops = hops_needed;
                             candidates[candidate_count].dl_capacity = dlCapacity;
+                            candidates[candidate_count].allocated_bytes = 0;
                             candidate_count++;
                         }
                     }
-                }
+                // }
             }
         }
     }
@@ -450,13 +865,14 @@ int routing_Sat_V2(FILE *vis_file, time_t current_time, time_t *start_visibility
             total_capacity += candidates[i].dl_capacity;
             total_transfer_ratio += candidates[i].transfer_ratio;
 
-            printf("Sat %d: Direction=%d, Start=%ld, Capacity=%.2f GB, TR=%.2f, Hops=%d\n",
+            printf("Sat %d: Direction=%d, Start=%ld, Capacity=%.2f GB, TR=%.2f, Hops=%d Allocated bytes=%f\n",
                    candidates[i].sat_index,
                    candidates[i].direction,
                    candidates[i].visibility_start,
                    candidates[i].dl_capacity / 1e9,  // DL CAPACITY IN GB
                    candidates[i].transfer_ratio,
-                   candidates[i].hops);
+                   candidates[i].hops,
+                   candidates[i].allocated_bytes);
         }
 
         // If combined capacity is sufficient
@@ -478,35 +894,73 @@ int routing_Sat_V2(FILE *vis_file, time_t current_time, time_t *start_visibility
             double remaining_file = fileTransferDur;
             for (int i = 0; i < candidate_count && remaining_file > 0; i++) {
                 double this_transfer = (candidates[i].dl_capacity < remaining_file *DLCapacityperSecond) ? candidates[i].dl_capacity : remaining_file *DLCapacityperSecond;
+                candidates[i].allocated_bytes = this_transfer;
                 printf("Sat %d: %.2f GB (%.1f%%)\n",
                        candidates[i].sat_index,
                        this_transfer / 1e9,
                        (this_transfer / (fileTransferDur *DLCapacityperSecond)) * 100);
                 remaining_file -= this_transfer /DLCapacityperSecond;
-
-                // Fill the SplittingInfo structure with the current satellite data
-                info->sat_indexes[info->num_segments] = candidates[i].sat_index;
-                info->segment_sizes[info->num_segments] = this_transfer; // bytes
-                // Determine direction (forward or backward)
-                info->direction[info->num_segments] = candidates[i].direction;
-
-                // Increment the number of segments
-                info->num_segments++;
             }
-            // If you want to shrink the arrays (optional):
-            info->sat_indexes = realloc(info->sat_indexes, info->num_segments * sizeof(char));
-            info->segment_sizes = realloc(info->segment_sizes, info->num_segments * sizeof(double));
-            info->direction = realloc(info->direction, info->num_segments * sizeof(int));
 
-            
-            // DEBUG Optionally print the final results:
-            for (size_t i = 0; i < info->num_segments; i++) {
-                printf("Sat %d: Direction=%d, Segment Size=%.2f GB\n",
-                info->sat_indexes[i],
-                info->direction[i],
-                info->segment_sizes[i] / 1e9);  // Convert segment size to GB
+            // Before adding the candidate to the Trasnfer program, see if the portion to trasnfer can be transferred in time. REMEMEBER THAT ALSO THE TIMES TO TRANSFER THE FILE SEGMENTS MUST ACCUMULATE: SAT 1_3 HAS TWO HOPS AND TWO TRANSFER TIMES.
+            //code.
+
+            // Adjust capacities considering routing constraints
+            int updated_count = adjust_candidate_capacities_V2(candidates, candidate_count, 
+                                                  central_index, current_time,
+                                                  fileTransferDur);
+    
+            // Update candidate_count with the new count
+            candidate_count = updated_count;
+
+            // TODO: RECALCULATE? YES.
+            // Recalculate total capacity and transfer ratio
+            total_transfer_ratio = 0.0;
+            for (int i = 0; i < candidate_count; i++) {
+                printf("Debug sat %d this transfer ratio is: %f",candidates[i].sat_index, candidates[i].transfer_ratio);
+                total_transfer_ratio += candidates[i].transfer_ratio;
+                
+            }
+            printf("DEBUG Total transfer ratio: %f\n", total_transfer_ratio);
+            // Then proceed with your splitting info if still viable
+            if (total_transfer_ratio >= 0.99) {
+    
+                // here the sats are ordered by start time and have updated portions assigned stored in allocateddBYtes
+                double remaining_file = fileTransferDur;
+                for (int i = 0; i < candidate_count && remaining_file > 0; i++) {
+                    double this_transfer = candidates[i].allocated_bytes;
+                    printf("Sat %d: %.2f GB (%.1f%%)\n",
+                        candidates[i].sat_index,
+                        this_transfer / 1e9,
+                        (this_transfer / (fileTransferDur *DLCapacityperSecond)) * 100);
+                    remaining_file -= this_transfer / DLCapacityperSecond;
+                // Fill the SplittingInfo structure with the current satellite data
+                    info->sat_indexes[info->num_segments] = candidates[i].sat_index;
+                    info->segment_sizes[info->num_segments] = this_transfer; // bytes
+                    // Determine direction (forward or backward)
+                    info->direction[info->num_segments] = candidates[i].direction;
+
+                    // Increment the number of segments
+                    info->num_segments++;
+                }
+                // Shrink the arrays (optional):
+                info->sat_indexes = realloc(info->sat_indexes, info->num_segments * sizeof(char));
+                info->segment_sizes = realloc(info->segment_sizes, info->num_segments * sizeof(double));
+                info->direction = realloc(info->direction, info->num_segments * sizeof(int));
+
+                
+                // DEBUG Optionally print the final results:
+                for (size_t i = 0; i < info->num_segments; i++) {
+                    printf("Sat %d: Direction=%d, Segment Size=%.2f GB\n",
+                    info->sat_indexes[i],
+                    info->direction[i],
+                    info->segment_sizes[i] / 1e9);  // Convert segment size to GB
+                }
+            }
+            else { printf("Total transfer ratio not enough.\n");}
+        
         }
-        } else {
+        else {
             printf("\nWarning: Even with splitting, total capacity (%.2f) is insufficient for complete transfer\n",
                    total_transfer_ratio);
         }
@@ -643,7 +1097,7 @@ void process_direction(int direction, double size, const uint8 mode, uint8_t *co
         CFE_MSG_Init(CFE_MSG_PTR(cmd8.CmdHeader), CFE_SB_ValueToMsgId(GENERIC_ADCS_CMD_MID), sizeof(Generic_ADCS_Mode_cmd_t)); //TODO then move these lines above
         CFE_MSG_SetFcnCode((CFE_MSG_Message_t *)&cmd8, GENERIC_ADCS_SET_MODE_CC);
         cmd8.Mode = mode;
-        if (mode == 5) {strcpy(cmd8.OGS_Name, "Tiflis");}
+        if (mode == 5) {strcpy(cmd8.OGS_Name, OGS_ASSUMED);}  
         CFE_SB_TimeStampMsg((CFE_MSG_Message_t *)&cmd8);  // ERROR: Mode is not transmitted correctly/ 
         CFE_SB_TransmitMsg((CFE_MSG_Message_t *)&cmd8, true);
 
@@ -673,8 +1127,10 @@ void process_direction(int direction, double size, const uint8 mode, uint8_t *co
         }
 
         // Proceed to send the iteration
+        // Calculate fake duration of this segment to simulate longer transfers
+        double fake_duration = size / DLCapacityperSecond;   // Ex: 1.6GB / 12.5 MB/s
         int confirmation = sendIteration(portion.data, portion.size, headers, contents, 
-                                      segmentCount, segmentSize, connection, filename_mem);
+                                      segmentCount, segmentSize, connection, filename_mem, fake_duration);
         
         if (confirmation != 0) {
             printf("ERROR: Something went wrong during %d transfer\n", mode);
@@ -777,7 +1233,7 @@ void free_splitting_info(SplittingInfo* info) {
     }
 }
 
-int sendIteration(const char *fileContent, size_t fileSize, CF_CFDP_PduFileDataHeader_t *headers, CF_CFDP_PduFileDataContent_t *contents, int segmentCount, int segmentSize, uint8_t *connection_establishment, const char *filename_memory) {
+int sendIteration(const char *fileContent, size_t fileSize, CF_CFDP_PduFileDataHeader_t *headers, CF_CFDP_PduFileDataContent_t *contents, int segmentCount, int segmentSize, uint8_t *connection_establishment, const char *filename_memory, double fake_duration) {
     // Check memory availability for OISL
     if (strcmp(filename_memory, "OGS") != 0) {
         if (*connection_establishment == 1) {
@@ -796,6 +1252,10 @@ int sendIteration(const char *fileContent, size_t fileSize, CF_CFDP_PduFileDataH
         }
     }
 
+    // Calculate realistic sleep time
+    double sleep_time = fake_duration / segmentCount;
+    printf("DEbug: I will sleep %f after every PDUs sent to get to a fake duration of %f\n", sleep_time, fake_duration);
+
     for (int segmentNumber = 0; segmentNumber < segmentCount; segmentNumber++) {
         int sent = 0;
         int retries = 0;
@@ -803,6 +1263,7 @@ int sendIteration(const char *fileContent, size_t fileSize, CF_CFDP_PduFileDataH
 
         while (!sent && retries < maxRetries) {
             if (*connection_establishment == 1) {
+                *transferActive = 1;
                 sent = sendPDU(&headers[segmentNumber], &contents[segmentNumber], segmentNumber, fileContent, segmentSize);
                 if (sent == 1) {
                     simulateNetworkDelay();
@@ -822,7 +1283,7 @@ int sendIteration(const char *fileContent, size_t fileSize, CF_CFDP_PduFileDataH
                             memoryInfo->currentUsed = (memoryInfo->currentUsed < (size_t)segmentSize) ? 0 : memoryInfo->currentUsed - segmentSize;
                             memoryInfo->isAvailable = (memoryInfo->currentUsed < memoryCapacity) ? 1 : 0;
                             // DEBUG TO SEE MEM CHANGING + TEST STABILITY 
-                            sleep(20);
+                            sleep((int)sleep_time);
                         }
                     }
                 } else {
@@ -831,17 +1292,20 @@ int sendIteration(const char *fileContent, size_t fileSize, CF_CFDP_PduFileDataH
                 }
             } else {
                 printf("Wait for re-alignment\n");
+                if (*transferActive == 1) {*transferActive = 0;}
                 sleep(10); // Adjust sleep as needed
             }
         }
 
         if (retries == maxRetries) {
             printf("PDU #%d failed after %d retries, aborting transmission.\n", segmentNumber, maxRetries);
+            if (*transferActive == 1) {*transferActive = 0;}
             return -1; // Indicate failure
         }
     }
 
     printf("All PDUs sent successfully.\n");
+    if (*transferActive == 1) {*transferActive = 0;}
 
     // Free dynamically allocated memory
     free(headers);
@@ -860,7 +1324,7 @@ void sendFile(const char *fileContent, const size_t fileSize) {
     CF_CFDP_PduFileDataContent_t *contents = NULL;
     int segmentCount = segmentFileIntoPDUs(fileContent, fileSize, &headers, &contents, segmentSize); // TODO: probably not here, or mayube segment it again afterr routing...
     double transferTime = estimateTransferTime(fileSize, segmentCount);
-    //transferTime += 800; // AKA 10GB of file to DOWNLINK
+    transferTime += transfer_time_to_add; // AKA 3GB of file to DOWNLINK
     printf("OISL FILE CFDP: Estimated (BIGGER) Transfer time including network delay: %f s.\n", transferTime);
 
     // Update memory information
@@ -1031,6 +1495,7 @@ void sendFile(const char *fileContent, const size_t fileSize) {
 
         while (!sent && retries < maxRetries) {
             if (*connection_establishment == 1) {
+                *transferActive = 1;
                 sent = sendPDU(&headers[segmentNumber], &contents[segmentNumber], segmentNumber, fileContent, segmentSize);
                 if (sent == 1) {
                     simulateNetworkDelay();
@@ -1047,7 +1512,7 @@ void sendFile(const char *fileContent, const size_t fileSize) {
                             printf("PDU #%d not acknowledged, retrying (%d/%d)\n", segmentNumber, retries, maxRetries);
                         }
                         // PDU sent and correctly received --> update memory of this sat
-                        sleep(20); // then delete NOW TO SIMULATE LARGER FILE TRANSFER AND TEST STABILITY
+                        sleep(time_to_make_it_realistic); // then delete NOW TO SIMULATE LARGER FILE TRANSFER AND TEST STABILITY
                         memoryInfo->currentUsed = (memoryInfo->currentUsed < (size_t)segmentSize) ? 0 : memoryInfo->currentUsed - segmentSize;
                         memoryInfo->isAvailable = (memoryInfo->currentUsed < memoryCapacity) ? 1 : 0;
                     }
@@ -1057,6 +1522,7 @@ void sendFile(const char *fileContent, const size_t fileSize) {
                 }
             } else {
                 printf("Wait for re-alignment\n");
+                if (*transferActive == 1) {*transferActive = 0;}
                 sleep(10);  // Adjust sleep as needed
             }
         }
@@ -1074,6 +1540,8 @@ void sendFile(const char *fileContent, const size_t fileSize) {
     else {
         printf("File transmission incomplete.\n");
     }
+
+    if (*transferActive == 1) {*transferActive = 0;}
 
     // Free dynamically allocated memory
     free(headers);

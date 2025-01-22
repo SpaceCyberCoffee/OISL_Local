@@ -30,7 +30,7 @@ NONE                        ! Shaker File Name
 6.0                         ! Mass
 0.10  0.10  0.04            ! Moments of Inertia (kg-m^2)
 0.0  0.0  0.0               ! Products of Inertia (xy,xz,yz)
-0.1  0.1  0.2               ! Location of mass center, m
+0.12  -0.25  0.2               ! Location of mass center, m
 0.0  0.0  0.0               ! Constant Embedded Momentum (Nms)
 0.0  0.0  0.0               ! Constant Embedded Magnetic Dipole (A-m^2)
 stf1_red.obj                ! Geometry Input File Name

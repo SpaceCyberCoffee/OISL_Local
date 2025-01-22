@@ -16,6 +16,7 @@
 
 const char* file_beam_forward = "/home/jstar/Desktop/github-nos3/F.txt"; 
 const char* file_beam_backward = "/home/jstar/Desktop/github-nos3/B.txt"; 
+const char* file_beam_receiver = "/home/jstar/Desktop/github-nos3/components/oisl/fsw/src/fileInput/ireceive.txt";    // if this file is present, then this sat is the receving end of a transmission.
 
 extern struct __cmdline cmdline;
 
@@ -326,9 +327,18 @@ int32_t OISL_RequestData(uart_info_t* device, OISL_Device_Data_tlm_t* data)
         data->BackwardConnection = read_alignment_info(alignment_info_backward);
     }
 
-    // Create or delete the file based on Connection values
+    // Add TransferActive info
+    data->TransferActive = *transferActive;
+    // Check if this satellite is acting as the receiving end of a transfer and if so adjust TransferActive value
+    FILE *file_receiver = fopen(file_beam_receiver, "r"); 
+    if (file_receiver) { 
+        data->TransferActive = 1; 
+        fclose(file_receiver); 
+    }
+
+    // Create or delete the file based on Connection values. FOR OGS MODE DRAW BEAM FORWARD, ALIGNED WITH b2, because the mode does so.
     FILE *fpdef = NULL;
-    if (data->ForwardConnection == 1) { 
+    if ((data->ForwardConnection == 1 && data->TransferActive == 1) || (data->OGSAlignment == 1 && data->TransferActive == 1)) { 
         fpdef = fopen(file_beam_forward, "w"); 
         // Create the file 
         if (fpdef == NULL) { 
@@ -341,7 +351,7 @@ int32_t OISL_RequestData(uart_info_t* device, OISL_Device_Data_tlm_t* data)
     else { 
         remove(file_beam_forward); 
     }
-    if (data->BackwardConnection == 1) { 
+    if (data->BackwardConnection == 1 && data->TransferActive == 1) { 
         fpdef = fopen(file_beam_backward, "w"); 
         // Create the file 
         if (fpdef == NULL) { 

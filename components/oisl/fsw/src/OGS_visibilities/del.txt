@@ -1,7 +1,0 @@
-Time: 2025-10-18T08:32:00, Transfer time: 100s
-Sat_1_1,2025-10-18T08:40:28,2025-10-18T08:43:51,203.525671  // Wait 8 minutes but the duration is sufficient --> store this visibility before the routing algorithm is called 
-Sat_1_2,2025-10-18T08:36:22,2025-10-18T08:36:46,24.105632  // Within the reach for 1 Hop (current time + margin 200s = 08:35:20) but the duration is too short
-Sat_1_3,2025-10-18T08:32:19,2025-10-18T08:36:37,257.790354 // Too late
-...
-Sat_1_24,2025-10-18T08:44:34,2025-10-18T08:47:53,198.687999 // Within the reach for 1 hop (08:35:20) and duration > 100 s however the start is after the best start (08:40:28).
-Better to wait for Sat_1_1!
