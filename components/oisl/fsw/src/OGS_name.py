@@ -19,5 +19,5 @@ if __name__ == "__main__":
             ogs_name = data['instructions']['DL']['ground_station_name']
             print(f"OGS Name: {ogs_name}")
         except:
-            print(f"OGS Name: Igrim")
+            print(f"OGS Name: Tiflis")
     

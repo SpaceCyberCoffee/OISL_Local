@@ -91,17 +91,19 @@ void sendFile(const char *fileContent, const size_t fileSize);
 void createSentFile(const char *fileContent);
 
 // Structure to track memory status
-typedef struct {
+typedef struct
+{
     size_t totalSize;
     size_t currentUsed;
     bool isAvailable;
 } MemoryStatus;
 
-extern MemoryStatus *memoryInfo;  // declare as external so it can be accessed from device.c
-extern uint8_t *transferActive;   // declare as external so it can be accessed from device.c
+extern MemoryStatus *memoryInfo; // declare as external so it can be accessed from device.c
+extern uint8_t *transferActive;  // declare as external so it can be accessed from device.c
 
-void receiveMemoryInfo(const char* filename);
+void receiveMemoryInfo(const char *filename);
 
-int sendIteration(const char *fileContent, size_t fileSize, CF_CFDP_PduFileDataHeader_t *headers, CF_CFDP_PduFileDataContent_t *contents, int segmentCount, int segmentSize, uint8_t *connection_establishment, const char *filename_memory, double fake_duration);
+int sendIteration(const char *fileContent, size_t fileSize, CF_CFDP_PduFileDataHeader_t *headers, CF_CFDP_PduFileDataContent_t *contents, 
+                int segmentCount, int segmentSize, uint8_t *connection_establishment, const char *filename_memory, double fake_duration);
 
 #endif
