@@ -21,7 +21,8 @@ def check_folder(folder_path):
 
     # Check if the folder is empty
     if not os.listdir(folder_path):
-        print(f"Folder '{folder_path}' is empty.")
+        # print(f"Folder '{folder_path}' is empty.")
+        pass
     else:
         print('File received. Next action.')
         
@@ -128,10 +129,8 @@ def check_folder(folder_path):
                     command_executer(subsystem_name, command_name, parameter_name, parameter_value)
                     # Move the command file to the archive folder
                     archive_folder = archive_folder_tm
-                    time = file_content["header"]["timestamp"]
-                    # Extract filename without extension and add timestamp
-                    file_base = received_file.split('/')[-1][:-4]  # Removing '.txt' from the file name
-                    new_file_name = f"{file_base}_{time}.txt"
+                    # new_file_name = f"{file_base}_{time}.txt"
+                    new_file_name = "filetoarchive.txt"
                     # Full destination path in the archive folder
                     archive_path = f"{archive_folder}/{new_file_name}"
                     # Move and rename the file

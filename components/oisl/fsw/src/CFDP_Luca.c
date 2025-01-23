@@ -31,9 +31,9 @@ const int    marginDL = 10;        // this is the margin assuming alignment achi
 
 const double    DLCapacityperSecond = 12.5e6;   // 100Mbps = 12.5e6 Bytes per second
 const int       time_to_make_it_realistic = 20;
-const double    transfer_time_to_add = 240.0;   // 3GB
+const double    transfer_time_to_add = 280.0;   // 3.52 GB
 
-const char *OGS_ASSUMED = "Tiflis";
+const char *OGS_ASSUMED = "Igrim";
 
 #define MAX_CANDIDATES 24  // Maximum number of satellites in constellation
 
@@ -246,11 +246,6 @@ void extractOGSName(const char *fileContent, char *OGS_name, size_t max_len) {
         snprintf(command, sizeof(command),
                 "python3 /home/jstar/Desktop/github-nos3/components/oisl/fsw/src/OGS_name.py /home/jstar/Desktop/github-nos3/components/oisl/fsw/src/ftemp.json");
     }
-
-    // // Prepare the command to call the Python script
-    // snprintf(command, sizeof(command),
-    //          "python3 /home/jstar/Desktop/github-nos3/components/oisl/fsw/src/OGS_name.py '%s'",
-    //          fileContent);
 
     printf("Command: %s\n", command);
 
@@ -567,6 +562,19 @@ int adjust_candidate_capacities_V2(SatCandidate *candidates, int candidate_count
     return new_count;
 }
 
+int determine_direction(int sat_index, int central_index, int total_satellites) {
+    // Normalize satellite indices to handle wrap-around
+    int normalized_sat = (sat_index - central_index + total_satellites) % total_satellites;
+    
+    if (normalized_sat == 0) {
+        return 0; // Central satellite
+    } else if (normalized_sat <= total_satellites / 2) {
+        return 1; // Forward direction
+    } else {
+        return 2; // Backward direction
+    }
+}
+
 int routing_Sat_V2(FILE *vis_file, time_t current_time, time_t *start_visibility, double fileTransferDur, SplittingInfo *info) {  
     char line[300];
     char sat_id[20], vis_start[20], vis_end[20];
@@ -607,14 +615,7 @@ int routing_Sat_V2(FILE *vis_file, time_t current_time, time_t *start_visibility
                     int sat_index = atoi(strrchr(trimmed_sat_id, '_') + 1);
 
                     // Determine direction
-                    int direction;
-                    if (sat_index > central_index && sat_index <= central_index + 12) {
-                        direction = 1;  // Forward
-                    } else if (sat_index < central_index || sat_index > central_index + 12) {
-                        direction = 2;  // Backward
-                    } else if (sat_index == central_index) {
-                        direction = 0;  // Central satellite
-                    }
+                    int direction = determine_direction(sat_index, central_index, MAX_CANDIDATES);
 
                     // Calculate hops
                     int hops_needed = abs(sat_index - central_index);
@@ -670,7 +671,7 @@ int routing_Sat_V2(FILE *vis_file, time_t current_time, time_t *start_visibility
         // First check if the sat with earliest visibility can handle the entire file transfer -> situation of small file. Otherwise, file splitting. In this way we avoid doing a dangerous ping pong during large file transfer.
         if (candidates[0].transfer_ratio >= 1.0) {
                 // Found a satellite that can handle the entire file
-                printf("DEBUG: Found this satellite for the routing to DL data: %d", candidates[0].sat_index);
+                printf("Found this satellite for the routing to DL data: %d", candidates[0].sat_index);
                 *start_visibility = candidates[0].visibility_start;
                 return candidates[0].direction;
         }
@@ -724,8 +725,7 @@ int routing_Sat_V2(FILE *vis_file, time_t current_time, time_t *start_visibility
                 remaining_file -= this_transfer /DLCapacityperSecond;
             }
 
-            // Before adding the candidate to the Trasnfer program, see if the portion to trasnfer can be transferred in time. REMEMEBER THAT ALSO THE TIMES TO TRANSFER THE FILE SEGMENTS MUST ACCUMULATE: SAT 1_3 HAS TWO HOPS AND TWO TRANSFER TIMES.
-            //code.
+            // Before adding the candidate to the Trasnfer program, see if the portion to trasnfer can be transferred in time. 
 
             // Adjust capacities considering routing constraints
             int updated_count = adjust_candidate_capacities_V2(candidates, candidate_count, 
@@ -735,15 +735,14 @@ int routing_Sat_V2(FILE *vis_file, time_t current_time, time_t *start_visibility
             // Update candidate_count with the new count
             candidate_count = updated_count;
 
-            // TODO: RECALCULATE? YES.
             // Recalculate total capacity and transfer ratio
             total_transfer_ratio = 0.0;
             for (int i = 0; i < candidate_count; i++) {
-                printf("Debug sat %d this transfer ratio is: %f",candidates[i].sat_index, candidates[i].transfer_ratio);
+                // printf("Debug sat %d this transfer ratio is: %f",candidates[i].sat_index, candidates[i].transfer_ratio);
                 total_transfer_ratio += candidates[i].transfer_ratio;
                 
             }
-            printf("DEBUG Total transfer ratio: %f\n", total_transfer_ratio);
+            // printf("DEBUG Total transfer ratio: %f\n", total_transfer_ratio);
             // Then proceed with your splitting info if still viable
             if (total_transfer_ratio >= 0.99) {
     
@@ -1111,13 +1110,13 @@ int sendIteration(const char *fileContent, size_t fileSize, CF_CFDP_PduFileDataH
                             memoryInfo->currentUsed = (memoryInfo->currentUsed < (size_t)segmentSize) ? 0 : memoryInfo->currentUsed - segmentSize;
                             memoryInfo->isAvailable = (memoryInfo->currentUsed < memoryCapacity) ? 1 : 0;
                             // DEBUG TO SEE MEM CHANGING + TEST STABILITY 
-                            printf("DEbug: sleep now\n");
                             while (start_segment_time < end_segment_time) {
                                 sleep(2);
                                 // update start segment time
                                 start_segment_time = get_current_time();
+                                // If it is the last segment, do not sleep. 
+                                if (segmentNumber ==  segmentCount - 1) {start_segment_time = end_segment_time;}
                             }                    
-                            printf("DEbug: awake now\n");
                             // update end segment time
                             end_segment_time += sleep_time;
                         }
@@ -1324,6 +1323,12 @@ void sendFile(const char *fileContent, const size_t fileSize) {
         }
     }
 
+    // Calculate realistic sleep time
+    double sleep_time = transferTime / segmentCount;
+    printf("DEbug: I will sleep %f after every PDUs sent to get to a fake duration of %f\n", sleep_time, transferTime);
+    time_t start_segment_time;
+    time_t end_segment_time;
+
     for (segmentNumber = 0; segmentNumber < segmentCount; segmentNumber++) {   // probably make this a method, so that it can be put here for the majority of thecases, but also called by handle_splitting. 
         int sent = 0;
         int retries = 0;
@@ -1331,6 +1336,10 @@ void sendFile(const char *fileContent, const size_t fileSize) {
 
         while (!sent && retries < maxRetries) {
             if (*connection_establishment == 1) {
+                    if (sent == 0) {
+                        start_segment_time = get_current_time();
+                        end_segment_time = start_segment_time + sleep_time;
+                    }
                 *transferActive = 1;
                 sent = sendPDU(&headers[segmentNumber], &contents[segmentNumber], segmentNumber, fileContent, segmentSize);
                 if (sent == 1) {
@@ -1351,6 +1360,16 @@ void sendFile(const char *fileContent, const size_t fileSize) {
                         sleep(time_to_make_it_realistic); // then delete NOW TO SIMULATE LARGER FILE TRANSFER AND TEST STABILITY
                         memoryInfo->currentUsed = (memoryInfo->currentUsed < (size_t)segmentSize) ? 0 : memoryInfo->currentUsed - segmentSize;
                         memoryInfo->isAvailable = (memoryInfo->currentUsed < memoryCapacity) ? 1 : 0;
+                        // Sleep to make it realistic
+                        while (start_segment_time < end_segment_time) {
+                                sleep(2);
+                                // update start segment time
+                                start_segment_time = get_current_time();
+                                // If it is the last segment, do not sleep. 
+                                if (segmentNumber ==  segmentCount - 1) {start_segment_time = end_segment_time;}
+                            }                    
+                            // update end segment time
+                            end_segment_time += sleep_time;
                     }
                 } else {
                     retries++;
