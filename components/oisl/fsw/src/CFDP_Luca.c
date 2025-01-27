@@ -30,9 +30,9 @@ const size_t memoryCapacity = 8e9; // 8 GB for payload data
 const int    marginDL = 10;        // this is the margin assuming alignment achieved, it is to quanitfy how much data could be transfered during a pass. TODO check if it contrasts with margin.
 
 const double    DLCapacityperSecond = 12.5e6;   // 100Mbps = 12.5e6 Bytes per secondf
-const double    transfer_time_to_add = 360.0;   // 5 GB
+const double    transfer_time_to_add = 255.0;   // around 3.35 GB
 
-const char *OGS_ASSUMED = "Tiflis";
+const char *OGS_ASSUMED = "Igrim";
 
 #define MAX_CANDIDATES 24  // Maximum number of satellites in constellation
 
