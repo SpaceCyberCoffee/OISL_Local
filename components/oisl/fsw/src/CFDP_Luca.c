@@ -29,11 +29,10 @@ static const char* back_dest = "/mnt/extras/SSD/NOS3_RBT/nos3_luca_OISL/Backward
 const size_t memoryCapacity = 8e9; // 8 GB for payload data
 const int    marginDL = 10;        // this is the margin assuming alignment achieved, it is to quanitfy how much data could be transfered during a pass. TODO check if it contrasts with margin.
 
-const double    DLCapacityperSecond = 12.5e6;   // 100Mbps = 12.5e6 Bytes per second
-const int       time_to_make_it_realistic = 20;
-const double    transfer_time_to_add = 280.0;   // 3.52 GB
+const double    DLCapacityperSecond = 12.5e6;   // 100Mbps = 12.5e6 Bytes per secondf
+const double    transfer_time_to_add = 360.0;   // 5 GB
 
-const char *OGS_ASSUMED = "Igrim";
+const char *OGS_ASSUMED = "Tiflis";
 
 #define MAX_CANDIDATES 24  // Maximum number of satellites in constellation
 
@@ -200,6 +199,22 @@ double estimateTransferTime(size_t fileSize, int segmentCount) {
     return estimatedTransferTimeSeconds + delay;
 }
 
+time_t get_current_time(void) {
+    // Base time for the simulation (2025-10-18 08:30:00 UTC)
+    struct tm base_time = { .tm_year = 2025 - 1900, .tm_mon = 10 - 1, .tm_mday = 18,
+                            .tm_hour = 8, .tm_min = 30, .tm_sec = 0, .tm_isdst = -1 };
+    time_t base_timestamp = mktime(&base_time);
+
+    // Retrieve current simulation time in seconds and subseconds
+    CFE_TIME_SysTime_t nowT = CFE_TIME_GetTime();
+    uint32_t seconds = nowT.Seconds;
+    uint32_t subseconds = nowT.Subseconds;
+
+    // Convert to full timestamp in seconds
+    double sim_seconds = (double)seconds + ((double)subseconds / 4294967296.0);
+    return base_timestamp + (time_t)sim_seconds;
+}
+
 void createSentFile(const char *fileContent) {
     // TODO source and dest must be defined by the file content.
     FILE *sentFile = fopen(fileSent_confirmation, "w");
@@ -223,6 +238,13 @@ void createSentFile2(const char *fileContent, const int direction) {
         }
         else if (direction == 2) { 
             fprintf(sentFile, "%s %s\n", my_src, back_dest); 
+        }
+        else { // OGS DL
+            time_t current_time = get_current_time();
+            struct tm *timeinfo = localtime(&current_time);  // Convert to local time
+            char buffer[20]; // Buffer to store formatted time
+            strftime(buffer, sizeof(buffer), "%Y-%m-%d %H:%M:%S", timeinfo);
+            fprintf(sentFile, "%s %s\n", Sat_Name, buffer);  // Write the timestamp to the file
         }
         // Write the entire file content to the confirmation file
         fprintf(sentFile, "%s", fileContent);
@@ -267,22 +289,6 @@ void extractOGSName(const char *fileContent, char *OGS_name, size_t max_len) {
         }
     }
     pclose(fp);
-}
-
-time_t get_current_time(void) {
-    // Base time for the simulation (2025-10-18 08:30:00 UTC)
-    struct tm base_time = { .tm_year = 2025 - 1900, .tm_mon = 10 - 1, .tm_mday = 18,
-                            .tm_hour = 8, .tm_min = 30, .tm_sec = 0, .tm_isdst = -1 };
-    time_t base_timestamp = mktime(&base_time);
-
-    // Retrieve current simulation time in seconds and subseconds
-    CFE_TIME_SysTime_t nowT = CFE_TIME_GetTime();
-    uint32_t seconds = nowT.Seconds;
-    uint32_t subseconds = nowT.Subseconds;
-
-    // Convert to full timestamp in seconds
-    double sim_seconds = (double)seconds + ((double)subseconds / 4294967296.0);
-    return base_timestamp + (time_t)sim_seconds;
 }
 
 // Function to check if a given time is within a visibility window
@@ -626,6 +632,7 @@ int routing_Sat_V2(FILE *vis_file, time_t current_time, time_t *start_visibility
                     time_t alignment_time = hops_needed * (time_t)margin_routing;
 
                     // If satellite is reachable in time, add to candidates. SO FAR THE TRANSFER TIME IS NOT TAKEN INTO ACCOUNT
+                    // HOW TO AVOID THE PING PONG WITH THE FORWARD IF THE FILE IS A PORTION RECEIVED BY THE FORWARD?
                     if (start_time > current_time + alignment_time) {
                         double transfer_ratio = (duration - marginDL - margin) / fileTransferDur;
 
@@ -1357,7 +1364,6 @@ void sendFile(const char *fileContent, const size_t fileSize) {
                             printf("PDU #%d not acknowledged, retrying (%d/%d)\n", segmentNumber, retries, maxRetries);
                         }
                         // PDU sent and correctly received --> update memory of this sat
-                        sleep(time_to_make_it_realistic); // then delete NOW TO SIMULATE LARGER FILE TRANSFER AND TEST STABILITY
                         memoryInfo->currentUsed = (memoryInfo->currentUsed < (size_t)segmentSize) ? 0 : memoryInfo->currentUsed - segmentSize;
                         memoryInfo->isAvailable = (memoryInfo->currentUsed < memoryCapacity) ? 1 : 0;
                         // Sleep to make it realistic
