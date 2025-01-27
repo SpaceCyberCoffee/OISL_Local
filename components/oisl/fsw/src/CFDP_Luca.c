@@ -32,6 +32,8 @@ const int    marginDL = 10;        // this is the margin assuming alignment achi
 const double    DLCapacityperSecond = 12.5e6;   // 100Mbps = 12.5e6 Bytes per secondf
 const double    transfer_time_to_add = 255.0;   // around 3.35 GB
 
+const int       forbidden_direction = 5;         // Forbidden direction for routing to avoid ping pong: todo: improve making it smarter
+
 const char *OGS_ASSUMED = "Igrim";
 
 #define MAX_CANDIDATES 24  // Maximum number of satellites in constellation
@@ -79,8 +81,6 @@ const double transferSpeedMbps = 100.0; // Transfer speed in Mbps
 static const char* fileSent_confirmation = "/home/jstar/Desktop/github-nos3/file_sent.txt";
 
 static const char* Sat_Name = "Sat_1_1";
-// static const char* Sat_For = "Sat_1_2";
-// static const char* Sat_Back = "Sat_1_24";
 static const double margin  = 60.0;    // THis depends: if the sat is already in OGS Mode the margin is 0. If it has to get into that mode then it might be even higher. TODO add autoregolation based on the mode you are in now.
 static const double margin_routing = 120.0; //time to align with forward + time for the forward to align with OGS MODIFIED 17/1/2025 
 
@@ -215,10 +215,17 @@ time_t get_current_time(void) {
     return base_timestamp + (time_t)sim_seconds;
 }
 
-void createSentFile(const char *fileContent) {
+void createSentFile(const char *fileContent, const char *fileMemn) {
     // TODO source and dest must be defined by the file content.
     FILE *sentFile = fopen(fileSent_confirmation, "w");
     if (sentFile != NULL) {
+        if (fileMemn == "OGS") {
+            time_t current_time = get_current_time();
+            struct tm *timeinfo = localtime(&current_time);  // Convert to local time
+            char buffer[20]; // Buffer to store formatted time
+            strftime(buffer, sizeof(buffer), "%Y-%m-%d %H:%M:%S", timeinfo);
+            fprintf(sentFile, "%s %s\n", Sat_Name, buffer);  // Write the timestamp to the file
+        }
         // Write the entire file content to the confirmation file
         fprintf(sentFile, "%s", fileContent);
         fclose(sentFile);
@@ -622,6 +629,12 @@ int routing_Sat_V2(FILE *vis_file, time_t current_time, time_t *start_visibility
 
                     // Determine direction
                     int direction = determine_direction(sat_index, central_index, MAX_CANDIDATES);
+
+                    // HOW TO AVOID THE PING PONG WITH THE FORWARD IF THE FILE IS A PORTION RECEIVED BY THE FORWARD?
+                    // FORBIDDEN DIRECTION: DO NOT ADD IT. DIRTY FIX
+                    if (direction == forbidden_direction) {
+                        continue;
+                    }
 
                     // Calculate hops
                     int hops_needed = abs(sat_index - central_index);
@@ -1396,7 +1409,7 @@ void sendFile(const char *fileContent, const size_t fileSize) {
 
     if (segmentNumber == segmentCount) {
         printf("All PDUs sent successfully. File transmission is over \n");
-        createSentFile(fileContent);
+        createSentFile(fileContent, filename_memory);
     } 
     else {
         printf("File transmission incomplete.\n");
