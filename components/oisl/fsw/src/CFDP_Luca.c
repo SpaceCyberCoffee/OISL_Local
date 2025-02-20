@@ -30,7 +30,7 @@ const size_t memoryCapacity = 8e9; // 8 GB for payload data
 const int    marginDL = 10;        // this is the margin assuming alignment achieved, it is to quanitfy how much data could be transfered during a pass. TODO check if it contrasts with margin.
 
 const double    DLCapacityperSecond = 12.5e6;   // 100Mbps = 12.5e6 Bytes per secondf
-const double    transfer_time_to_add = 255.0;   // around 3.35 GB
+const double    transfer_time_to_add = 280.0;   // around 3.52 GB
 
 const int       forbidden_direction = 5;         // Forbidden direction for routing to avoid ping pong: todo: improve making it smarter
 
@@ -219,7 +219,7 @@ void createSentFile(const char *fileContent, const char *fileMemn) {
     // TODO source and dest must be defined by the file content.
     FILE *sentFile = fopen(fileSent_confirmation, "w");
     if (sentFile != NULL) {
-        if (fileMemn == "OGS") {
+        if (strcmp(fileMemn, "OGS") == 0) {
             time_t current_time = get_current_time();
             struct tm *timeinfo = localtime(&current_time);  // Convert to local time
             char buffer[20]; // Buffer to store formatted time
@@ -1183,7 +1183,7 @@ void sendFile(const char *fileContent, const size_t fileSize) {
     printf("OISL FILE CFDP: Estimated (BIGGER) Transfer time including network delay: %f s.\n", transferTime);
 
     // Update memory information
-    memoryInfo->currentUsed = fileSize; // Bytes
+    memoryInfo->currentUsed += fileSize; // Bytes
     memoryInfo->isAvailable = (memoryInfo->currentUsed < memoryCapacity) ? 1 : 0;
 
     uint8 *connection_establishment;

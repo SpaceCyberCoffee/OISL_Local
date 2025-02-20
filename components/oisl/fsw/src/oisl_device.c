@@ -366,7 +366,7 @@ int32_t OISL_RequestData(uart_info_t* device, OISL_Device_Data_tlm_t* data)
     }
 
     // Add memory info
-    data->MemoryUsed = (double)memoryInfo->currentUsed/1e3; // move from Bytes to kB 
+    data->MemoryUsed = (double)memoryInfo->currentUsed; //Bytes 
     data->MemoryAvailable = memoryInfo->isAvailable; 
 
     /* Write to file the alignment conditions. Used by other sats to establish connection. Send also the memoryUsed information. This simulates a kind of handshake before starting the iteraction */

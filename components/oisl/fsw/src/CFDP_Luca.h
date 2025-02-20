@@ -88,7 +88,7 @@ void sendFile(const char *fileContent, const size_t fileSize);
 /**
  * @brief Method to create a file to signal the server to move the sourceFile to the destFile.
  */
-void createSentFile(const char *fileContent);
+void createSentFile(const char *fileContent, const char *fileMemn);
 
 // Structure to track memory status
 typedef struct

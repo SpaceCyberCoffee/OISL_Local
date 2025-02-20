@@ -361,7 +361,7 @@ static void AC_oisl_NADIR(Generic_ADCS_GNC_Tlm_Payload_t *GNC, Generic_ADCS_AC_S
 }
 
 
-#define EPS_OISL 0.9998
+#define EPS_OISL 0.99998 //MODIFIED
 // #define MIN_TORQUE_THRESHOLD 1.0E-5  // Define a small threshold to avoid negligible torque commands
 
 static void AC_oisl(Generic_ADCS_GNC_Tlm_Payload_t *GNC, Generic_ADCS_AC_OISL_Tlm_t *ACS, const char *F_or_B)

@@ -59,9 +59,9 @@ namespace Nos3
 
         const char *VoV_forward_filename = "/home/jstar/Desktop/github-nos3/sims/build/bin/VoV_FORWARD.txt";
         const char *VoV_backward_filename = "/home/jstar/Desktop/github-nos3/sims/build/bin/VoV_BACKWARD.txt";
-        const double FoR = 3 * (M_PI / 180.0); //Radians 
+        const double FoR = 1 * (M_PI / 180.0); //Radians 
         const char *VoV_OGS_filename = "/home/jstar/Desktop/github-nos3/sims/build/bin/VoV_OGS.txt";
-        const double FoR_OGS = 18 * (M_PI / 180.0); //Radians
+        const double FoR_OGS = 12 * (M_PI / 180.0); //Radians
     };
 }
 
