@@ -4,16 +4,18 @@ NOS3                            !  Time Mode (FAST, REAL, EXTERNAL, or NOS3)
 86400.0   0.01                  !  Sim Duration, Step Size [sec]
 1.0                             !  File Output Interval [sec]
 0                               !  RNG Seed
-TRUE                           !  Graphics Front End?
+TRUE                            !  Graphics Front End?
 Inp_Cmd.txt                     !  Command Script File Name
 **************************  Reference Orbits  **************************
-2                               !  Number of Reference Orbits
+3                               !  Number of Reference Orbits
 TRUE   Orb_LEO.txt              !  Input file name for Orb 0
 TRUE   Orb_LEO_FORWARD.txt      !  Input file name for Orb 1
+TRUE   Orb_LEO_BACKWARD.txt     !  Input file name for Orb 2
 *****************************  Spacecraft  *****************************
-2                               !  Number of Spacecraft
+3                               !  Number of Spacecraft
 TRUE  0 SC_NOS3.txt             !  Existence, RefOrb, Input file for SC 0
 TRUE  1 SC_NOS3_FORWARD.txt     !  Existence, RefOrb, Input file for SC 1
+TRUE  2 SC_NOS3_BACKWARD.txt    !  Existence, RefOrb, Input file for SC 2
 ***************************** Environment  *****************************
 10 18 2025                      !  Date (UTC) (Month, Day, Year)
 08 30 00.00                     !  Time (UTC) (Hr,Min,Sec)
@@ -60,4 +62,4 @@ TRUE  EARTH  115.4 -29.0  "Dongara"          ! Exists, World, Lng, Lat, Label
 TRUE  EARTH  -71.0 -33.0  "Santiago"         ! Exists, World, Lng, Lat, Label
 TRUE  LUNA   45.0  45.0   "Moon Base Alpha"  ! Exists, World, Lng, Lat, Label
 TRUE  EARTH  44.8  41.7   "Tiflis"           ! Exists, World, Lng, Lat, Label
-TRUE  EARTH  64.0  63.0  "Igrim"             ! Exists, World, Lng, Lat, Label
+TRUE  EARTH  64.0  63.0   "Igrim"            ! Exists, World, Lng, Lat, Label
