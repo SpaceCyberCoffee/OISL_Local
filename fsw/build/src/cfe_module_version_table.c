@@ -3,7 +3,7 @@
 const CFE_ConfigKeyValue_t CFE_MODULE_VERSION_TABLE[] = {
 
 
-{ "MISSION", "git:v1_07_00-50-g85032879-dirty" },
+{ "MISSION", "git:v1_07_00-51-g09d70e4a-dirty" },
 { "core_api", "git:draco-rc4-2-g79c22d9e-dirty" },
 { "core_private", "git:draco-rc4-2-g79c22d9e-dirty" },
 { "cfe_assert", "git:draco-rc4-2-g79c22d9e-dirty" },
@@ -21,7 +21,7 @@ const CFE_ConfigKeyValue_t CFE_MODULE_VERSION_TABLE[] = {
 { "to", "git:1.5-36-gdb65b43-dirty" },
 { "to_lab", "git:v2.5.0-rc4-56-gbdee03f-dirty" },
 { "arducam/fsw", "git:b05c974-dirty" },
-{ "generic_adcs/fsw", "git:v1_07_00-50-g85032879-dirty" },
+{ "generic_adcs/fsw", "git:v1_07_00-51-g09d70e4a-dirty" },
 { "generic_css/fsw", "git:448e025-dirty" },
 { "generic_eps/fsw", "git:c460ba5-dirty" },
 { "generic_fss/fsw", "git:29426d8-dirty" },
@@ -29,9 +29,9 @@ const CFE_ConfigKeyValue_t CFE_MODULE_VERSION_TABLE[] = {
 { "generic_mag/fsw", "git:c995ff7-dirty" },
 { "generic_reaction_wheel/fsw", "git:838cc68-dirty" },
 { "generic_radio/fsw", "git:f721f9b-dirty" },
-{ "generic_star_tracker/fsw", "git:v1_07_00-50-g85032879-dirty" },
+{ "generic_star_tracker/fsw", "git:v1_07_00-51-g09d70e4a-dirty" },
 { "generic_torquer/fsw", "git:bd9242d-dirty" },
-{ "novatel_oem615/fsw", "git:v1_07_00-50-g85032879-dirty" },
+{ "novatel_oem615/fsw", "git:v1_07_00-51-g09d70e4a-dirty" },
 { "sample/fsw", "git:34260dd-dirty" },
 { "syn/fsw", "git:b7d5cc8-dirty" },
 { "oisl/fsw", NULL },
