@@ -162,6 +162,7 @@ void Generic_ADCS_ingest_generic_st(CFE_MSG_Message_t * Msg, Generic_ADCS_DI_St_
     }
 }
 
+// Method to ingest the ISL vector in ECI frame from the OISL subsystem
 void Generic_ADCS_ingest_generic_OISL(CFE_MSG_Message_t * Msg, Generic_ADCS_DI_OISL_Tlm_Payload_t *OISL)
 {
     OISL_Device_tlm_t *oisl = (OISL_Device_tlm_t *)Msg;

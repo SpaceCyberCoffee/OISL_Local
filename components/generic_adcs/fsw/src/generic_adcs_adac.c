@@ -118,6 +118,7 @@ void Generic_ADCS_execute_attitude_determination_and_attitude_control(const Gene
     }
 }
 
+// Method to convert the ISL versors from ECI to body frame using ST's quaternion
 static void AD_oisl(Generic_ADCS_DI_OISL_Tlm_Payload_t *DI_OISL, const Generic_ADCS_DI_St_Tlm_Payload_t *DI_St, Generic_ADCS_AD_ISL_Tlm_Payload_t *AD_ISL)
 {  
    QxV(DI_St->q, DI_OISL->ISL_vector_F, DI_OISL->ISL_vector_Body_F); // convert from sensor frame to body frame
@@ -362,8 +363,25 @@ static void AC_oisl_NADIR(Generic_ADCS_GNC_Tlm_Payload_t *GNC, Generic_ADCS_AC_S
 
 
 #define EPS_OISL 0.99998 //MODIFIED
-// #define MIN_TORQUE_THRESHOLD 1.0E-5  // Define a small threshold to avoid negligible torque commands
-
+/**
+ * @brief Aligns the satellite body axis (b2) with the Optical Inter-Satellite Link (OISL) vector using PD control.
+ *
+ * This function computes the required torque commands to align the satellite's body frame with either the 
+ * forward or backward ISL direction, using Proportional-Derivative (PD) control based on the alignment error. 
+ * It selects the correct vector pair (body side and ISL direction) depending on the `F_or_B` flag.
+ * A secondary alignment error is calculated if the primary is not sufficient, and both are combined
+ * for a robust alignment. If alignment is achieved within a defined threshold, the error is nulled.
+ *
+ * The final torque commands are applied to the reaction wheels, and optionally managed via magnetic torquers
+ * if momentum dumping is enabled.
+ *
+ * @param[in,out] GNC Pointer to the generic GNC telemetry structure (contains dynamics and control data).
+ * @param[in,out] ACS Pointer to the ACS structure containing control parameters and actuator commands.
+ * @param[in]     F_or_B String ("FORWARD" or other) to determine which ISL alignment to perform.
+ *
+ * @note The scalar product between the ISL vector and the desired axis is written to text files 
+ *       ("VoV_FORWARD.txt" and "VoV_BACKWARD.txt") for debugging and hardware model interface purposes.
+ */
 static void AC_oisl(Generic_ADCS_GNC_Tlm_Payload_t *GNC, Generic_ADCS_AC_OISL_Tlm_t *ACS, const char *F_or_B)
 {
    int i;
@@ -399,7 +417,7 @@ static void AC_oisl(Generic_ADCS_GNC_Tlm_Payload_t *GNC, Generic_ADCS_AC_OISL_Tl
         SoS_secondary = VoV(target_secondary, GNC->ISL_vector_F);
     }
 
-    /* Test writing to a file to be read by OISL HW model */
+    /* Writing to a file to be read by OISL HW model to understand if the alignment has been accomplished. TODO: if needed make more elegant*/
     char *filename_F = "/home/jstar/Desktop/github-nos3/sims/build/bin/VoV_FORWARD.txt";
     FILE *fp_F = fopen(filename_F, "w");
     fprintf(fp_F, "%f", SoS_F);
@@ -411,7 +429,6 @@ static void AC_oisl(Generic_ADCS_GNC_Tlm_Payload_t *GNC, Generic_ADCS_AC_OISL_Tl
     fclose(fp_B);
 
     // printf("Scalar product between ISL V and desired b2 (should be close to 1): %f\n", SoS);
-    
 
     // Calculate the primary alignment error
     if ((SoS > (EPS - 1.0)) && (SoS < (1.0 - EPS))) {
@@ -472,10 +489,10 @@ static void AC_oisl(Generic_ADCS_GNC_Tlm_Payload_t *GNC, Generic_ADCS_AC_OISL_Tl
 }
 
 #define MAX_LINE_LENGTH 128
-
+#define OGS_ECEF_LOCATION_PATH "/home/jstar/Desktop/github-nos3/components/generic_adcs/fsw/src/ECEF_locations.txt"
 // Function to read and get the ECEF coordinates based on the OGS name
 static int get_ECEF_from_file(const char *ogs_name, double *ECEF_OGS) {
-    FILE *file = fopen("/home/jstar/Desktop/github-nos3/components/generic_adcs/fsw/src/ECEF_locations.txt", "r");
+    FILE *file = fopen(OGS_ECEF_LOCATION_PATH, "r");
     if (!file) {
         perror("Error opening file");
         return 0; // File error
@@ -503,6 +520,29 @@ static int get_ECEF_from_file(const char *ogs_name, double *ECEF_OGS) {
     return 0; // No matching OGS found
 }
 
+/**
+ * @brief Aligns the satellite's body frame (b2 axis) with the direction vector
+ *        pointing toward a specified Optical Ground Station (OGS), based on its name.
+ *
+ * This function performs the following:
+ * 1. Retrieves the ECEF coordinates of the OGS by name from a file.
+ * 2. Converts those ECEF coordinates to ECI using a Python script and current simulation time.
+ * 3. Reads the satellite's current position in ECI from a file.
+ * 4. Computes the unit vector from the satellite to the OGS in ECI and transforms it into the body frame.
+ * 5. Compares the direction to the satellite's desired body axis (b2) to generate an attitude error.
+ * 6. Applies a Proportional-Derivative (PD) control law to compute torque commands for attitude alignment.
+ * 7. Optionally applies magnetorquer commands if momentum management is enabled.
+ * 8. Writes the scalar projection between the OGS vector and b2 to a file used by the OISL hardware model.
+ *
+ * @param GNC Pointer to the structure holding the satellite's GNC telemetry and control data.
+ * @param ACS Pointer to the structure holding the Attitude Control System (ACS) telemetry data.
+ * @param DI_St Pointer to the structure holding the current sensor quaternion (attitude information).
+ * @param ogs_name Name of the Optical Ground Station (OGS) to align with.
+ */
+#define PY_SCRIPT_PATH "/home/jstar/Desktop/github-nos3/components/generic_adcs/fsw/src/ECEF2ECI.py"
+#define OGS_ECI_POS_PATH "/home/jstar/Desktop/github-nos3/components/oisl/fsw/src/ECI_position.txt"
+#define VOV_OUTPUT_PATH "/home/jstar/Desktop/github-nos3/sims/build/bin/VoV_OGS.txt"
+
 static void AC_oisl_OGS(Generic_ADCS_GNC_Tlm_Payload_t *GNC, Generic_ADCS_AC_OISL_Tlm_t *ACS, const Generic_ADCS_DI_St_Tlm_Payload_t *DI_St, const char *ogs_name) 
 { 
     
@@ -528,7 +568,7 @@ static void AC_oisl_OGS(Generic_ADCS_GNC_Tlm_Payload_t *GNC, Generic_ADCS_AC_OIS
 
     // Construct the command to call the Python script
     snprintf(command, sizeof(command),
-         "python3 /home/jstar/Desktop/github-nos3/components/generic_adcs/fsw/src/ECEF2ECI.py %f %f %f %f",
+         "python3 " PY_SCRIPT_PATH " %f %f %f %f",
          ECEF_OGS[0], ECEF_OGS[1], ECEF_OGS[2], pd);
 
     // Run the Python script and capture its output
@@ -542,7 +582,6 @@ static void AC_oisl_OGS(Generic_ADCS_GNC_Tlm_Payload_t *GNC, Generic_ADCS_AC_OIS
     int err = 1;
     while (fgets(buffer, sizeof(buffer) - 1, fp) != NULL) {
         if (sscanf(buffer, "ECI propagated Position: [%lf, %lf, %lf]", &ECI_OGS[0], &ECI_OGS[1], &ECI_OGS[2]) == 3) {
-            // printf("Got the ECI coordinates: [%f, %f, %f]\n", ECI_OGS[0], ECI_OGS[1], ECI_OGS[2]);
             err = 0;
         } 
         if (err == 1) {
@@ -551,10 +590,8 @@ static void AC_oisl_OGS(Generic_ADCS_GNC_Tlm_Payload_t *GNC, Generic_ADCS_AC_OIS
     }
     pclose(fp);
 
-    // printf("In the end the position of the OGS in ECI is: [%f, %f, %f]\n", ECI_OGS[0], ECI_OGS[1], ECI_OGS[2]);
-
     // Retrieve the ECI GPS position of this satellite
-    FILE *file_in = fopen("/home/jstar/Desktop/github-nos3/components/oisl/fsw/src/ECI_position.txt", "r");
+    FILE *file_in = fopen(OGS_ECI_POS_PATH, "r");
     double x, y, z;
     fscanf(file_in, "%lf %lf %lf", &x, &y, &z);
     fclose(file_in);
@@ -582,7 +619,7 @@ static void AC_oisl_OGS(Generic_ADCS_GNC_Tlm_Payload_t *GNC, Generic_ADCS_AC_OIS
 /* .. Form attitude error signals */
       SoS = VoV(ISL_OGS_body, side);
     /* Test writing to a file to be read by OISL HW model */
-    char *filename_OGS = "/home/jstar/Desktop/github-nos3/sims/build/bin/VoV_OGS.txt";
+    char *filename_OGS = VOV_OUTPUT_PATH;
     FILE *fp_O = fopen(filename_OGS, "w");
     fprintf(fp_O, "%f", SoS);
     fclose(fp_O);
