@@ -1,9 +1,10 @@
 /*******************************************************
-** To adapt it to this satellite modify:
-** my_src
-** for_dest
-** back_dest
-** Sat_Name
+ * Core O-ISL script to exchange data between two satellites.
+** To adapt it to this satellite modify Sat_Name.
+** For large file transfer and routing modify also:
+** my_src:    filename containing the data (text) to transfer from this satellite to the receiver
+** for_dest:  directory where the file must be moved if the receiver is the forward satellite
+** back_dest: directory where the file must be moved if the receiver is the backward satellite
 ** For large file transfer modify transfer_time_to_add and OGS_ASSUMED
  ********************************************************/
 #include <stdio.h>
@@ -20,23 +21,18 @@
 #include "/home/jstar/Desktop/github-nos3/components/generic_adcs/fsw/src/generic_adcs_adac.h"
 #include "cfe.h"
 
+/************************************************************
+ *                      Satellite and Link properties       *
+ ************************************************************/
+
+static const char* Sat_Name = "Sat_1_1";
+const size_t memoryCapacity = 8e9; // 8 GB for payload data
+const double transferSpeedMbps = 100.0;                        // Transfer speed in Mbps
+const double DLCapacityperSecond = (transferSpeedMbps/8)1e6;   // 100Mbps = 12.5e6 Bytes per second
+
 const int segmentSize = CF_MAX_PDU_SIZE - sizeof(CF_CFDP_PduFileDataHeader_t) - CF_CFDP_MIN_HEADER_SIZE;
 
-static const char* my_src = "/mnt/extras/SSD/NOS3_RBT/nos3_luca_OISL/nos3_rbt/components/oisl/fsw/src/files_Test/plainText.txt";
-static const char* for_dest = "/mnt/extras/SSD/NOS3_RBT/nos3_luca_OISL/forward_sat/nos3_rbt/COSMOS_Control/Execution/OISL/files_received/plainText.txt";
-static const char* back_dest = "/mnt/extras/SSD/NOS3_RBT/nos3_luca_OISL/Backward_Sat/COSMOS_Control/Execution/OISL/files_received/plainText.txt";
-
-const size_t memoryCapacity = 8e9; // 8 GB for payload data
-const int    marginDL = 10;        // this is the margin assuming alignment achieved, it is to quanitfy how much data could be transfered during a pass. TODO check if it contrasts with margin.
-
-const double    DLCapacityperSecond = 12.5e6;   // 100Mbps = 12.5e6 Bytes per secondf
-const double    transfer_time_to_add = 280.0;   // around 3.52 GB
-
-const int       forbidden_direction = 5;         // Forbidden direction for routing to avoid ping pong: todo: improve making it smarter
-
-const char *OGS_ASSUMED = "Igrim";
-
-#define MAX_CANDIDATES 24  // Maximum number of satellites in constellation
+#define MAX_CANDIDATES 24  // Maximum number of satellites in constellation/orbital ring
 
 // Global memory status for receiver
 MemoryStatus receiverMemory = {
@@ -50,46 +46,63 @@ MemoryStatus memoryStatusInstance = {
     .currentUsed = 0,
     .isAvailable = true
 };
+
 MemoryStatus *memoryInfo = &memoryStatusInstance;
 
 uint8_t transfering = 0;
 uint8_t *transferActive = &transfering;
 
+/************************************************************
+ *                      File paths                          *
+ ************************************************************/
+
+static const char* fileSent_confirmation = "/home/jstar/Desktop/github-nos3/file_sent.txt";
+
+static const char* my_src = "/mnt/extras/SSD/NOS3_RBT/nos3_luca_OISL/nos3_rbt/components/oisl/fsw/src/files_Test/plainText.txt";
+static const char* for_dest = "/mnt/extras/SSD/NOS3_RBT/nos3_luca_OISL/forward_sat/nos3_rbt/COSMOS_Control/Execution/OISL/files_received/plainText.txt";
+static const char* back_dest = "/mnt/extras/SSD/NOS3_RBT/nos3_luca_OISL/Backward_Sat/COSMOS_Control/Execution/OISL/files_received/plainText.txt";
+
+const double    transfer_time_to_add = 280.0;   // around 3.52 GB.  Used only for Large file transfer to simulate a larger size
+const int       forbidden_direction = 5;         // Forbidden direction for routing to avoid ping pong: TODO: improve making it smarter
+const char *OGS_ASSUMED = "Igrim";               // For large file transfers since the OGS name is written only in the header file
+
+/************************************************************
+ *             Routing structures and margins               *
+ ************************************************************/
+
 typedef struct {
-    int *direction; // Direction of transfer: 1, 2 or both 
-    double *segment_sizes; // Array to hold segment sizes in bytes
-    char *sat_indexes;     // Index array.
-    size_t num_segments; // how many satellites will be active in DL info
+    int *direction;         // Direction of transfer: 1, 2 or both 
+    double *segment_sizes;  // Array to hold segment sizes in bytes
+    char *sat_indexes;      // Index array.
+    size_t num_segments;    // how many satellites will be active in DL info
 } SplittingInfo;
 
-
-// New structure to track multiple satellite candidates
+// Structure to track multiple satellite candidates
 typedef struct {
     int sat_index;
     int direction;
     time_t visibility_start;
     double transfer_ratio;
     int hops;
-    double dl_capacity;  // Downlink capacity in bytes
-    double allocated_bytes; // bytes task to transfer
+    double dl_capacity;        // Downlink capacity in bytes
+    double allocated_bytes;    // bytes task to transfer
 } SatCandidate;
 
+static const double margin  = 60.0;           // This depends: if the sat is already in OGS Mode the margin is 0. If it has to get into that mode then it might be even higher. TODO add autoregolation based on the mode you are in now
+static const double margin_routing = 120.0;   // time to align with receiver + time for the receiver to eventually align with OGS/another receiver
+static const int    marginDL = 10;            // This is the margin assuming alignment achieved, it is used to quantify how much data could be transfered during a pass. Assume 10 seconds of loss due to atmospheric conditions 
 
-const int networkDelay = 7000; // 7 ms ONE TRIP
-const double transferSpeedMbps = 100.0; // Transfer speed in Mbps
+/************************************************************
+ *                      Simulated Network Functions         *
+ ************************************************************/
 
-static const char* fileSent_confirmation = "/home/jstar/Desktop/github-nos3/file_sent.txt";
-
-static const char* Sat_Name = "Sat_1_1";
-static const double margin  = 60.0;    // THis depends: if the sat is already in OGS Mode the margin is 0. If it has to get into that mode then it might be even higher. TODO add autoregolation based on the mode you are in now.
-static const double margin_routing = 120.0; //time to align with forward + time for the forward to align with OGS MODIFIED 17/1/2025 
+const int networkDelay = 7000;                // 7 ms ONE TRIP
 
 void simulateNetworkDelay(void) {
     usleep(networkDelay); // Simulate network delay for a OISL distance of around 2000km -> 7 ms
     // TODO: How to implement this as 100ms sim time, instead of real time?
 }
 
-// Simulated network functions
 int sendPDU(CF_CFDP_PduFileDataHeader_t *header, CF_CFDP_PduFileDataContent_t *content, int segmentNumber, const char *fileContent, int segmentSize) {
     // Simulate a random chance of transmission failure (e.g., 10% failure rate)
     double failureRate = 0.1;
@@ -124,13 +137,13 @@ int receivePDU(CF_CFDP_PduFileDataHeader_t *receivedHeader, CF_CFDP_PduFileDataC
 
 CF_CFDP_PduAck_t createAck(CF_CFDP_FileDirective_t dir_code, CF_CFDP_ConditionCode_t cc, int segmentNumber) {
     CF_CFDP_PduAck_t ack;
-    ack.directive_and_subtype_code.octets[0] = (uint8)((dir_code << 4) | 1); // Directive and subtype code
+    ack.directive_and_subtype_code.octets[0] = (uint8)((dir_code << 4) | 1);                          // Directive and subtype code
     ack.cc_and_transaction_status.octets[0] = (uint8)((cc << 4) | CF_CFDP_TransactionStatus_SUCCESS); // Condition code and transaction status
 
     // For simplicity, print ACK details
-    printf("Created ACK for PDU #%d\n", segmentNumber);
-    printf("Directive and subtype code: %u\n", (unsigned int)ack.directive_and_subtype_code.octets[0]);
-    printf("Condition code and transaction status: %u\n", (unsigned int)ack.cc_and_transaction_status.octets[0]);
+    // printf("Created ACK for PDU #%d\n", segmentNumber);
+    // printf("Directive and subtype code: %u\n", (unsigned int)ack.directive_and_subtype_code.octets[0]);
+    // printf("Condition code and transaction status: %u\n", (unsigned int)ack.cc_and_transaction_status.octets[0]);
 
     return ack;
 }
@@ -155,7 +168,10 @@ int receiveAck(int segmentNumber, CF_CFDP_PduAck_t *ack) {
     }
 }
 
-// Function to segment the file content into PDUs
+/************************************************************
+ *                     Helper Functions                     *
+ ************************************************************/
+
 int segmentFileIntoPDUs(const char *fileContent, size_t fileSize, CF_CFDP_PduFileDataHeader_t **headers, CF_CFDP_PduFileDataContent_t **contents, int segmentSize) {
     int segmentCount = 0;
     int length = fileSize;
@@ -185,17 +201,19 @@ int segmentFileIntoPDUs(const char *fileContent, size_t fileSize, CF_CFDP_PduFil
         int currentSegmentSize = (i + segmentSize > length) ? (length - i) : segmentSize; // Handle last segment which might be smaller
         strncpy((char *)(*contents)[i / segmentSize].data, &fileContent[i], currentSegmentSize);
     }
-
     return segmentCount;
 }
 
 double estimateTransferTime(size_t fileSize, int segmentCount) {
-    // Estimate transfer time
-    double fileSizeBits = fileSize * 8.0; // Convert file size to bits
-    double transferSpeedBps = transferSpeedMbps * 1e6; // Convert Mbps to bps
-    double estimatedTransferTimeSeconds = fileSizeBits / transferSpeedBps; // Time in seconds
+    // Convert file size to bits
+    double fileSizeBits = fileSize * 8.0; 
+    // Convert Mbps to bps
+    double transferSpeedBps = transferSpeedMbps * 1e6; 
+    // Time in seconds
+    double estimatedTransferTimeSeconds = fileSizeBits / transferSpeedBps; 
     // Get segmentCount to take into consideration the Network delay
     double delay = segmentCount * (networkDelay / 1e6); // seconds
+
     return estimatedTransferTimeSeconds + delay;
 }
 
@@ -236,7 +254,7 @@ void createSentFile(const char *fileContent, const char *fileMemn) {
 }
 
 void createSentFile2(const char *fileContent, const int direction) { 
-    // TODO source and dest must be defined by the file content.
+    // source and dest must be defined by the file content.
     FILE *sentFile = fopen(fileSent_confirmation, "w");
     if (sentFile != NULL) {
         // Write src and dest as the first line based on direction
@@ -261,6 +279,10 @@ void createSentFile2(const char *fileContent, const int direction) {
         printf("Error creating 'file_sent_confirmation.txt' file.\n");
     }
 }
+
+/************************************************************
+ *                     OGS Visibility Functions             *
+ ************************************************************/
 
 // Function to extract the ground station name directly from the file content
 void extractOGSName(const char *fileContent, char *OGS_name, size_t max_len) {
@@ -346,9 +368,7 @@ int is_visible(time_t current_time, const char *vis_start, const char *vis_end, 
 
     // Update the next upcoming visibility start time if conditions are met
     if (start_time > current_time && (*vis_start_time == -1 || start_time < *vis_start_time)) {
-        //if (vis_duration - margin - marginDL >= fileTransferDur) {                                 // Updated: pass duration - alignment with OGS - loss of signal / tracking.
-            *vis_start_time = start_time;
-        //}
+        *vis_start_time = start_time;
     }
 
     // Adjust the end time by subtracting margin and file transfer duration
@@ -358,10 +378,26 @@ int is_visible(time_t current_time, const char *vis_start, const char *vis_end, 
     return ((current_time >= start_time && current_time <= adjusted_end_time) && (vis_duration - margin - marginDL >= fileTransferDur));
 }
 
+/************************************************************
+ *                     Routing Functions                    *
+ ************************************************************/
 
-// Adjust candidate capacities based on initial file division plan
+int determine_direction(int sat_index, int central_index, int total_satellites) {
+    // Normalize satellite indices to handle wrap-around
+    int normalized_sat = (sat_index - central_index + total_satellites) % total_satellites;
+    
+    if (normalized_sat == 0) {
+        return 0; // Central satellite
+    } else if (normalized_sat <= total_satellites / 2) {
+        return 1; // Forward direction
+    } else {
+        return 2; // Backward direction
+    }
+}
+
+// Adjust candidate capacities based on initial file division plan TOD START HEERE
 // Preserves time-based ordering of candidates
-int adjust_candidate_capacities_V2(SatCandidate *candidates, int candidate_count, 
+int adjust_candidate_capacities(SatCandidate *candidates, int candidate_count, 
                               int central_index, time_t current_time, 
                               double fileTransferDur) {
     printf("\n=== Starting Capacity Adjustment ===\n");
@@ -575,20 +611,7 @@ int adjust_candidate_capacities_V2(SatCandidate *candidates, int candidate_count
     return new_count;
 }
 
-int determine_direction(int sat_index, int central_index, int total_satellites) {
-    // Normalize satellite indices to handle wrap-around
-    int normalized_sat = (sat_index - central_index + total_satellites) % total_satellites;
-    
-    if (normalized_sat == 0) {
-        return 0; // Central satellite
-    } else if (normalized_sat <= total_satellites / 2) {
-        return 1; // Forward direction
-    } else {
-        return 2; // Backward direction
-    }
-}
-
-int routing_Sat_V2(FILE *vis_file, time_t current_time, time_t *start_visibility, double fileTransferDur, SplittingInfo *info) {  
+int routing_Sat(FILE *vis_file, time_t current_time, time_t *start_visibility, double fileTransferDur, SplittingInfo *info) {  
     char line[300];
     char sat_id[20], vis_start[20], vis_end[20];
     double duration;
@@ -748,7 +771,7 @@ int routing_Sat_V2(FILE *vis_file, time_t current_time, time_t *start_visibility
             // Before adding the candidate to the Trasnfer program, see if the portion to trasnfer can be transferred in time. 
 
             // Adjust capacities considering routing constraints
-            int updated_count = adjust_candidate_capacities_V2(candidates, candidate_count, 
+            int updated_count = adjust_candidate_capacities(candidates, candidate_count, 
                                                   central_index, current_time,
                                                   fileTransferDur);
     
@@ -1258,7 +1281,7 @@ void sendFile(const char *fileContent, const size_t fileSize) {
             info->segment_sizes = NULL;
             info->sat_indexes = NULL;
             info->num_segments = 0;
-            int routing = routing_Sat_V2(vis_file, current_time, &vis_start_time, transferTime, info); // THIS IS THE VALUE PREVIOUSLY UPDATED BY IS VISIBLE!!!
+            int routing = routing_Sat(vis_file, current_time, &vis_start_time, transferTime, info); // THIS IS THE VALUE PREVIOUSLY UPDATED BY IS VISIBLE!!!
             if (routing == 1) { // Another sat has an earlier visibility --> align to forward and start to route the info.
                 connection_establishment = &OISL_AppData.DevicePkt.Oisl.ForwardConnection;
                 filename_memory = "/home/jstar/Desktop/github-nos3/components/oisl/fsw/src/F_sat_back_alignment.txt";

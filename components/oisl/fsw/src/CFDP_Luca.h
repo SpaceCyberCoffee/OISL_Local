@@ -86,9 +86,29 @@ double estimateTransferTime(size_t fileSize, int segmentCount);
 void sendFile(const char *fileContent, const size_t fileSize);
 
 /**
- * @brief Method to create a file to signal the server to move the sourceFile to the destFile.
+ * @brief Creates a confirmation file after sending data. Used to signal the server to move the file in the specified directory.
+ *
+ * This function writes a timestamp along with the satellite name (Sat_Name) to the first line 
+ * of the confirmation file 'file_sent_confirmation.txt', but only if the destination is "OGS". 
+ * Then, it writes the provided file content.
+ *
+ * @param fileContent The content to be written in the confirmation file.
+ * @param fileMemn A string to identify if the file is being sent to an OGS ("OGS") or not.
  */
 void createSentFile(const char *fileContent, const char *fileMemn);
+
+/**
+ * @brief Creates a confirmation file after sending data, with direction-aware source/destination. USED IN CASE OF ROUTING OF LARGE FILES
+ *
+ * This version supports inter-satellite links (forward/backward) and downlink to OGS.
+ * Based on the `direction`, it writes a source-destination pair or timestamp as the first line,
+ * followed by the full content of the file.
+ *
+ * @param fileContent The content to be written in the confirmation file.
+ * @param direction Integer code indicating transmission direction:
+ *        1 = forward link, 2 = backward link, any other = downlink to OGS.
+ */
+void createSentFile2(const char *fileContent, const int direction);
 
 // Structure to track memory status
 typedef struct
@@ -100,6 +120,24 @@ typedef struct
 
 extern MemoryStatus *memoryInfo; // declare as external so it can be accessed from device.c
 extern uint8_t *transferActive;  // declare as external so it can be accessed from device.c
+
+/**
+ * @brief Determines the relative direction of a satellite with respect to a central satellite.
+ *
+ * This function calculates whether a satellite is in the forward, backward,
+ * or central position relative to a given central satellite index, accounting
+ * for wrap-around in a circular constellation (e.g., ring topology).
+ *
+ * @param sat_index Index of the satellite to evaluate.
+ * @param central_index Index of the reference (central) satellite.
+ * @param total_satellites Total number of satellites in the constellation.
+ * 
+ * @return int Direction:
+ *         0 = central satellite,
+ *         1 = forward (moving in increasing index order),
+ *         2 = backward (moving in decreasing index order).
+ */
+int determine_direction(int sat_index, int central_index, int total_satellites);
 
 void receiveMemoryInfo(const char *filename);
 
