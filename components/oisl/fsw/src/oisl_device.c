@@ -14,9 +14,21 @@
 #include <math.h>
 #include "CFDP_Luca.h"
 
+/*
+** Constants representing the paths of different files
+*/
 const char* file_beam_forward = "/home/jstar/Desktop/github-nos3/F.txt"; 
 const char* file_beam_backward = "/home/jstar/Desktop/github-nos3/B.txt"; 
 const char* file_beam_receiver = "/home/jstar/Desktop/github-nos3/components/oisl/fsw/src/fileInput/ireceive.txt";    // if this file is present, then this sat is the receving end of a transmission.
+
+const char* alignment_info_forward = "/home/jstar/Desktop/github-nos3/components/oisl/fsw/src/F_sat_back_alignment.txt";
+const char* alignment_info_backward = "/home/jstar/Desktop/github-nos3/components/oisl/fsw/src/B_sat_for_alignment.txt";
+const char* my_alignments = "/home/jstar/Desktop/github-nos3/components/oisl/fsw/src/my_alignments.txt";
+
+const char* tle_file_path_forward = "/home/jstar/Desktop/github-nos3/components/oisl/fsw/src/forward_sat.txt";
+const char* tle_file_path_backward = "/home/jstar/Desktop/github-nos3/components/oisl/fsw/src/backward_sat.txt";
+
+const char* ECI_position_file_path = "/home/jstar/Desktop/github-nos3/components/oisl/fsw/src/ECI_position.txt";
 
 extern struct __cmdline cmdline;
 
@@ -231,10 +243,33 @@ int read_alignment_info(const char* filename) {
 /*
 ** Request data command
 */
+/**
+ * @brief Requests and processes OISL device telemetry and alignment data.
+ *
+ * This function is responsible for requesting housekeeping (HK) data from the Optical Inter-Satellite Link (OISL) hardware,
+ * parsing the returned information, and populating the telemetry structure `OISL_Device_Data_tlm_t` with device counters,
+ * alignment states, ISL vector data, and connection status with other satellites or a ground station.
+ * 
+ * Key operations include:
+ * 1. Sending a command to the OISL device to request telemetry data.
+ * 2. Reading a compact telemetry packet containing device counters and alignment flags.
+ * 3. Validating the packet using header and trailer bytes.
+ * 4. Parsing forward, backward, and ground station alignment flags from the data.
+ * 5. Obtaining current ISL direction vectors using `get_isl_vectors()`.
+ * 6. Evaluating connection availability with neighbors based on alignment status and external files.
+ * 7. Setting the `TransferActive` status, including checking if this satellite is currently receiving data.
+ * 8. Creating or removing symbolic files that visualize active laser beams for telemetry downlink or relay.
+ * 9. Storing the current memory usage and availability from the platform.
+ * 10. Writing out a local file with alignment and memory status, enabling other satellites to perform a handshake.
+ *
+ * @param device Pointer to the UART device interface used to communicate with the OISL hardware.
+ * @param data Pointer to the telemetry structure to be filled with parsed values.
+ * @return int32_t Returns OS_SUCCESS (0) on success or OS_ERROR on failure.
+ */
+
 int32_t OISL_RequestData(uart_info_t* device, OISL_Device_Data_tlm_t* data)
 {
     int32_t status = OS_SUCCESS;
-    // uint8_t read_data[OISL_DEVICE_DATA_SIZE]; //62
     uint8_t read_data[11]; // the 6 doubles (48 bytes) are not considered.
 
 
@@ -289,9 +324,6 @@ int32_t OISL_RequestData(uart_info_t* device, OISL_Device_Data_tlm_t* data)
     double forward_isl_vector[3];
     get_isl_vectors(forward_isl_vector, backward_isl_vector);
 
-    // OS_printf("Backward ISL Vector: %f, %f, %f\n", backward_isl_vector[0], backward_isl_vector[1], backward_isl_vector[2]);
-    // OS_printf("Forward ISL Vector: %f, %f, %f\n", forward_isl_vector[0], forward_isl_vector[1], forward_isl_vector[2]);
-
     data->BACKWARD_ISL_X = backward_isl_vector[0];
     data->BACKWARD_ISL_Y = backward_isl_vector[1];
     data->BACKWARD_ISL_Z = backward_isl_vector[2];
@@ -308,9 +340,9 @@ int32_t OISL_RequestData(uart_info_t* device, OISL_Device_Data_tlm_t* data)
     /* Read OGS Alignment */
     data->OGSAlignment = read_data[8];   
 
+    // TODO: Is it possible to get the alignment and memory information of the neighbour sats in a better way?
+
     // /* Connection with Forward Satellite */
-    const char* alignment_info_forward = "/home/jstar/Desktop/github-nos3/components/oisl/fsw/src/F_sat_back_alignment.txt";
-    
     if (data->ForwardAlignment == 0) { 
         data->ForwardConnection = 0; 
     } 
@@ -319,7 +351,6 @@ int32_t OISL_RequestData(uart_info_t* device, OISL_Device_Data_tlm_t* data)
     } 
 
     /* Connection with Backward Satellite */
-    const char* alignment_info_backward = "/home/jstar/Desktop/github-nos3/components/oisl/fsw/src/B_sat_for_alignment.txt";
     if (data->BackwardAlignment == 0) {
         data->BackwardConnection = 0;
     }
@@ -370,7 +401,6 @@ int32_t OISL_RequestData(uart_info_t* device, OISL_Device_Data_tlm_t* data)
     data->MemoryAvailable = memoryInfo->isAvailable; 
 
     /* Write to file the alignment conditions. Used by other sats to establish connection. Send also the memoryUsed information. This simulates a kind of handshake before starting the iteraction */
-    const char* my_alignments = "/home/jstar/Desktop/github-nos3/components/oisl/fsw/src/my_alignments.txt";
     FILE *fp = fopen(my_alignments, "w");
     if (fp == NULL)
     {
@@ -383,18 +413,37 @@ int32_t OISL_RequestData(uart_info_t* device, OISL_Device_Data_tlm_t* data)
 }
 
 // Submethod to get the forward and backward OISL vectors
+/**
+ * @brief Computes the normalized Optical Inter-Satellite Link (OISL) direction vectors
+ *        between the current (central) satellite and both its forward and backward neighbors.
+ *
+ * This function calls a Python script to propagate the TLEs of the forward and backward satellites,
+ * obtaining their current ECI position vectors at the current simulation time. It also reads the
+ * current satellite's ECI position from a file. The function then computes the directional vectors
+ * from the central satellite to the forward and backward satellites and normalizes them to obtain
+ * unit vectors pointing along the forward and backward OISLs.
+ *
+ * @param[out] forward_ISL_vector  Pointer to an array of 3 doubles to store the forward OISL unit vector.
+ * @param[out] backward_ISL_vector Pointer to an array of 3 doubles to store the backward OISL unit vector.
+ *
+ * The forward and backward satellite TLE paths are defined in:
+ *     - tle_file_path_forward
+ *     - tle_file_path_backward
+ * The current satellite's ECI position is read from:
+ *     - ECI_position_file_path
+ *
+ * Note: Make sure the external Python script `orbital_propagation.py` prints the ECI position in the format:
+ *       ECI propagated Position: [x, y, z]
+ */
+
 void get_isl_vectors(double* forward_ISL_vector, double* backward_ISL_vector)
 {
-    // Call the Python script and get the ECI position vector of the forward and backward satellites
     FILE* fp;
     char buffer[128];
     char command[256];
-    const char* tle_file_path_forward = "/home/jstar/Desktop/github-nos3/components/oisl/fsw/src/forward_sat.txt";
-    const char* tle_file_path_backward = "/home/jstar/Desktop/github-nos3/components/oisl/fsw/src/backward_sat.txt";
     const char* tle_files [] = {tle_file_path_backward, tle_file_path_forward};
     // Variable to store the position vectors
     double eci_position[2][3]; // 2 satellites, each with a 3D position vector, back and for
-
 
     // Retrieve current SIM time
     CFE_TIME_SysTime_t nowT = CFE_TIME_GetTime();
@@ -403,7 +452,6 @@ void get_isl_vectors(double* forward_ISL_vector, double* backward_ISL_vector)
 
     // Convert the time to double
     double pd = (double)seconds + ((double)subseconds / 4294967296.0); // 4294967296.0 = 2^32
-    // OS_printf("TOH TIME PD %f\n", pd);
 
     for (int i=0; i<2; i++) {
         // Construct the command with arguments
@@ -433,29 +481,19 @@ void get_isl_vectors(double* forward_ISL_vector, double* backward_ISL_vector)
     double forward_satellite [] = {eci_position[1][0], eci_position[1][1], eci_position[1][2]};
 
     // Retrieve the ECI GPS position of this satellite
-    FILE *file_in = fopen("/home/jstar/Desktop/github-nos3/components/oisl/fsw/src/ECI_position.txt", "r");
+    FILE *file_in = fopen(ECI_position_file_path, "r");
     double x, y, z;
     fscanf(file_in, "%lf %lf %lf", &x, &y, &z);
     fclose(file_in);
     double central_sat [] = {x/1000, y/1000, z/1000};
-    // OS_printf("Central Sat ECI Position: [%f, %f, %f]\n", central_sat[0], central_sat[1], central_sat[2]);
-    // OS_printf("FOrward Sat Position: [%f, %f, %f]\n", forward_satellite[0], forward_satellite[1], forward_satellite[2]);
-    // OS_printf("Backward Sat Position: [%f, %f, %f]\n", backward_satellite[0], backward_satellite[1], backward_satellite[2]);
 
     // Calculate the ISL vector with the forward satellite
     double ISL_vector_forward[] = {forward_satellite[0] - central_sat[0], forward_satellite[1] - central_sat[1], forward_satellite[2] - central_sat[2]};
     double ISL_vector_backward[] = {backward_satellite[0] - central_sat[0] , backward_satellite[1] - central_sat[1], backward_satellite[2] - central_sat[2]};
-    // OS_printf("OISL vector is [%f, %f, %f]\n", OISL_vector[0], OISL_vector[1], OISL_vector[2]);
-
-    // OS_printf("DIstanza tra satelliti in KM: %f", sqrt(ISL_vector_forward[0]*ISL_vector_forward[0]+ISL_vector_forward[1]*ISL_vector_forward[1]+ISL_vector_forward[2]*ISL_vector_forward[2])); // 1758km
 
     // Normalize the difference vector to get the unit vector
     UNITV2(ISL_vector_backward);
     UNITV2(ISL_vector_forward);
-
-    // Print the normalized vector
-    // OS_printf("Normalized ISL vector forward: [%f, %f, %f]\n", ISL_vector_forward[0], ISL_vector_forward[1], ISL_vector_forward[2]);
-    // OS_printf("Normalized ISL vector backward: [%f, %f, %f]\n", ISL_vector_backward[0], ISL_vector_backward[1], ISL_vector_backward[2]);
 
     // Assign the normalized vectors to the output parameters
     backward_ISL_vector[0] = ISL_vector_backward[0];
@@ -465,7 +503,6 @@ void get_isl_vectors(double* forward_ISL_vector, double* backward_ISL_vector)
     forward_ISL_vector[0] = ISL_vector_forward[0];
     forward_ISL_vector[1] = ISL_vector_forward[1];
     forward_ISL_vector[2] = ISL_vector_forward[2];
-
 
 }
 
