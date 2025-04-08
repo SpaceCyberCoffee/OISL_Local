@@ -345,9 +345,6 @@ void OISL_ProcessGroundCommand(void)
             break;
 
         case OISL_SEND_FILE:
-            CFE_EVS_SendEvent(OISL_CMD_SEND_FILE_ERR_EID, CFE_EVS_EventType_INFORMATION, "sIZE OF CMD HEADER: %lu \n", sizeof(CFE_MSG_CommandHeader_t));
-            CFE_EVS_SendEvent(OISL_CMD_SEND_FILE_ERR_EID, CFE_EVS_EventType_INFORMATION, "SIze of THE CFDP CMD T: %lu \n", sizeof(OISL_CFDP_cmd_t));
-            
             if (OISL_VerifyCmdLength(OISL_AppData.MsgPtr, sizeof(OISL_CFDP_cmd_t)) == OS_SUCCESS)
             {   
                 OISL_CFDP_cmd_t *cmd;
@@ -359,8 +356,6 @@ void OISL_ProcessGroundCommand(void)
                     strcpy(OISL_AppData.CFDP.FileName, cmd->FileName);  // Copy the file path
                     CFE_EVS_SendEvent(OISL_CMD_SEND_FILE_ERR_EID, CFE_EVS_EventType_INFORMATION, "Filename is %s", OISL_AppData.CFDP.FileName);
                 }
-                // strcpy(OISL_AppData.CFDP.OGSName, cmd->OGSName);
-                // CFE_EVS_SendEvent(OISL_CMD_SEND_FILE_ERR_EID, CFE_EVS_EventType_INFORMATION, "OGS Name is %s", OISL_AppData.CFDP.OGSName);
                 OISL_AppData.CFDP.Target = cmd->Target; 
                 CFE_EVS_SendEvent(OISL_CMD_SEND_FILE_EID, CFE_EVS_EventType_INFORMATION, "OISL: Transfer File command received. Trying to reach Sat %u", cmd->Target);
                 OISL_SendFile_CFDP();
@@ -581,7 +576,29 @@ void OISL_Disable(void)
     return;
 }
 
-// Thread function to handle file transfer
+/**
+ * @brief Thread function responsible for handling file transfer over OISL or to an OGS.
+ *
+ * This function checks whether the alignment condition is met before proceeding
+ * with file transfer. Depending on the target (forward, backward satellite, or
+ * ground station), it waits for the corresponding alignment flag to be set.
+ *
+ * Target mapping:
+ *  - 0: Backward satellite (checks BackwardAlignment flag)
+ *  - 1: Forward satellite (checks ForwardAlignment flag)
+ *  - 2: Ground station (bypasses alignment check; proceeds to CFDP downlink planning)
+ *
+ * The function waits up to 10 minutes (60 attempts with 10s sleep) for alignment.
+ * If alignment is achieved within the time window, the file is sent using `sendFile()`.
+ * If not, it logs an error via CFE event services.
+ *
+ * After the operation (success or failure), the allocated memory for the file
+ * content and transfer data structure is released.
+ *
+ * @param arg Pointer to a FileTransferData struct containing file content, size, and target.
+ * @return NULL Always returns NULL when the thread exits.
+ */
+
 void* FileTransferThread(void *arg) {
     FileTransferData *data = (FileTransferData *)arg;
 
@@ -627,6 +644,29 @@ void* FileTransferThread(void *arg) {
     return NULL;
 }
 
+/**
+ * @brief Sends a file using the CFDP (CCSDS File Delivery Protocol) over the Optical Inter-Satellite Link (OISL).
+ *
+ * This function performs the following steps:
+ *  - Checks if the OISL device is enabled.
+ *  - Attempts to open the file specified in OISL_AppData.CFDP.FileName.
+ *  - Reads the file contents into dynamically allocated memory.
+ *  - Logs the file size using a CFE event.
+ *  - Prepares a FileTransferData structure for the file transfer.
+ *  - Spawns a new detached pthread to handle the file transfer asynchronously.
+ * 
+ * Error conditions, such as failure to open the file, memory allocation errors,
+ * and thread creation failures, are logged and increment an error counter.
+ * 
+ * Preconditions:
+ *  - OISL_AppData.CFDP.FileName and OISL_AppData.CFDP.Target must be set correctly.
+ *  - OISL device must be enabled (OISL_DEVICE_ENABLED).
+ * 
+ * Postconditions:
+ *  - A file transfer is initiated in a separate thread if all checks pass.
+ * 
+ * Threaded transfer is handled via the FileTransferThread function.
+ */
 
 void OISL_SendFile_CFDP(void)
 {   
