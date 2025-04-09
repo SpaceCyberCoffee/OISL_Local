@@ -10,6 +10,6 @@
 #define OISL_CFG_HANDLE           8
 #define OISL_CFG_BAUDRATE_HZ      115200
 #define OISL_CFG_MS_TIMEOUT       250
-#define OISL_CFG_DEBUG
+#define OISL_CFG_DEBUG            
 
 #endif /* _OISL_CHECKOUT_DEVICE_CFG_H_ */

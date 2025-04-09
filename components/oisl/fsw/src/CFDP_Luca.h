@@ -3,6 +3,9 @@
 
 #include "CFDP_PDU.h"
 
+// #define ROUTING_LOGGING
+#define FILE_PORTION_LOGGING
+
 /**
  * @brief Simulate network delay based on a specified delay time.
  */
@@ -121,6 +124,13 @@ typedef struct
 extern MemoryStatus *memoryInfo; // declare as external so it can be accessed from device.c
 extern uint8_t *transferActive;  // declare as external so it can be accessed from device.c
 
+// Structure to hold file portion information
+typedef struct {
+    char* data;
+    size_t size;
+    size_t offset;
+} FilePortion;
+
 /**
  * @brief Determines the relative direction of a satellite with respect to a central satellite.
  *
@@ -139,7 +149,118 @@ extern uint8_t *transferActive;  // declare as external so it can be accessed fr
  */
 int determine_direction(int sat_index, int central_index, int total_satellites);
 
+/**
+ * adjust_candidate_capacities - Optimizes satellite capacity allocation for file splitting based on initial file division plan provided by routing_sat
+ * 
+ * This function adjusts the allocated bytes for each satellite candidate based on timing
+ * constraints and routing efficiency. It ensures that:
+ *   1. Each satellite receives data only when it's actually visible
+ *   2. Data routing between satellites respects hop constraints and transfer times
+ *   3. Satellite capacity is maximized while accounting for routing overhead
+ *   4. Excess data is redistributed to satellites that can handle additional load
+ * 
+ * The algorithm models the propagation of data through the satellite network and accounts
+ * for the cascading effects of data transfer from the central satellite to each candidate,
+ * considering both forward and backward routing paths.
+ * 
+ * @param candidates      Array of satellite candidates provided by routing_sat
+ * @param candidate_count Number of candidates in the array
+ * @param current_time    Current sim timestamp when routing decisions are made
+ * @param fileTransferDur Duration needed to transfer the complete file
+ * 
+ * @return Updated count of viable candidates after adjustment
+ */
+int adjust_candidate_capacities(SatCandidate *candidates, int candidate_count, time_t current_time, double fileTransferDur);
+
+/**
+ * routing_Sat - Determines optimal satellite routing strategy for file transfers
+ * 
+ * This function analyzes available satellite visibility windows to determine the best
+ * routing strategy for transferring data. It can either:
+ *   1. Find a single satellite capable of handling the entire file transfer
+ *   2. Split the file across multiple satellites when no single satellite has sufficient capacity
+ * 
+ * The function considers factors such as:
+ *   - Satellite GS visibility windows
+ *   - Inter-satellite hop distances
+ *   - Transfer ratios and DL capacities
+ *   - Routing timing constraints
+ *   - Direction constraints to prevent routing loops
+ * 
+ * First step: Collect all viable candidates for the routing, i.e. satellites with a pass duration above the margin (currently set to 70 s). Only earlliest visibility for each candidate.
+ * Second step: Analyze the list of candidates to determine the optimal routing strategy. This includes
+ * 2.1: check if one satellite in the list can handle the entire file transfer. If so, route in this direction.
+ * 2.2: in the negative case, assing to each satellite a portion of file based on their DL capacities.
+ * 2.3: in case of split, the adjust_candidate_capacities method is called.
+ * Third step: return an id representing the routing direction.
+ * 
+ * @param vis_file          File pointer to OGS visibility data file
+ * @param current_time      Current simulation time
+ * @param start_visibility  Pointer to store the selected visibility start time. It is the start of the pass for the first (and possibly only) satellite in the routing path
+ * @param fileTransferDur   Duration needed for complete file transfer
+ * @param info              Pointer to structure for storing splitting information
+ * 
+ * @return Direction code for routing (0=none, 1=forward, 2=backward, 3=split)
+ */
+int routing_Sat(FILE *vis_file, time_t current_time, time_t *start_visibility, double fileTransferDur, SplittingInfo *info);
+
+/**
+ * waitForReceiverMemory - Waits until receiving satellite has sufficient memory available
+ * 
+ * This function polls the receiver's memory status and blocks until either:
+ *   1. The receiving satellite has enough free memory to handle the transfer, or
+ *   2. The maximum wait time is exceeded (timeout)
+ * 
+ * The function checks memory status by reading from a specified file that contains
+ * memory information that would be updated via inter-satellite communication
+ * in a real implementation.
+ * 
+ * @param requiredSize  Size of memory required for the transfer (in bytes)
+ * @param filename      Path to the file containing receiver memory information
+ * 
+ * @return true if sufficient memory became available, false if timed out
+ */
+bool waitForReceiverMemory(size_t requiredSize, const char* filename);
+
+/**
+ * receiveMemoryInfo - Reads receiver memory status from a file
+ * 
+ * This function opens and parses a file containing memory information about
+ * the receiving satellite. The file is expected to contain at least two values:
+ * an identifier (which is ignored) and the current memory usage.
+ * 
+ * In a real implementation, this file would be updated via inter-satellite
+ * communication to reflect the current memory state of the receiving satellite.
+ * 
+ * @param filename  Path to the file containing receiver memory information
+ */
 void receiveMemoryInfo(const char *filename);
+
+/**
+ * get_file_portion - Extracts a portion of a file based on offset and size parameters
+ * 
+ * This function creates a FilePortion structure containing a segment of the provided
+ * file content. It handles two modes of operation:
+ *   1. Absolute mode: Uses exact offset and size values to extract a specific byte range
+ *   2. Percentage mode: Falls back to percentage-based calculations if absolute values
+ *      would exceed the file boundaries. THIS HAPPENS IN CASE OF SIMULATED LARGE FILE TRANSFER
+ * 
+ * The function allocates memory for the extracted portion, which must be freed by the caller.
+ * If memory allocation fails or if parameters are invalid, the function returns a FilePortion
+ * with NULL data pointer and size of 0.
+ * 
+ * @param fileContent      Pointer to the complete file content in memory
+ * @param totalSize        Total size of the file in bytes
+ * @param offset           Byte offset from which to start extraction (absolute mode)
+ * @param size             Number of bytes to extract (absolute mode)
+ * @param sizePercentage   Percentage of total file to extract (percentage mode)
+ * @param offsetPercentage Percentage position to start extraction (percentage mode)
+ * 
+ * @return FilePortion structure containing the extracted data segment, its size, and offset
+ */
+FilePortion get_file_portion(const char* fileContent, size_t totalSize, size_t offset, size_t size, double sizePercentage, double offsetPercentage);
+
+void process_direction(int direction, double size, const uint8 mode, uint8_t *connection, const char *filename_mem, const char* fileContent, size_t totalSize, size_t offset, SplittingInfo* info, double fake_file_size, time_t vis_start_time);
 
 int sendIteration(const char *fileContent, size_t fileSize, CF_CFDP_PduFileDataHeader_t *headers, CF_CFDP_PduFileDataContent_t *contents, 
                 int segmentCount, int segmentSize, uint8_t *connection_establishment, const char *filename_memory, double fake_duration);
