@@ -131,6 +131,24 @@ typedef struct {
     size_t offset;
 } FilePortion;
 
+typedef struct {
+    int *direction;         // Direction of transfer: 1, 2 or both 
+    double *segment_sizes;  // Array to hold segment sizes in bytes
+    char *sat_indexes;      // Index array.
+    size_t num_segments;    // how many satellites will be active in DL info
+} SplittingInfo;
+
+// Structure to track multiple satellite candidates
+typedef struct {
+    int sat_index;
+    int direction;
+    time_t visibility_start;
+    double transfer_ratio;
+    int hops;
+    double dl_capacity;        // Downlink capacity in bytes
+    double allocated_bytes;    // bytes task to transfer
+} SatCandidate;
+
 /**
  * @brief Determines the relative direction of a satellite with respect to a central satellite.
  *
@@ -260,8 +278,62 @@ void receiveMemoryInfo(const char *filename);
  */
 FilePortion get_file_portion(const char* fileContent, size_t totalSize, size_t offset, size_t size, double sizePercentage, double offsetPercentage);
 
+/**
+ * @brief Processes a directional file transfer by extracting a portion of a file and sending it based on the mode.
+ * 
+ * This function handles the segmentation and transmission of a portion of a file to a target direction,
+ * which can represent a satellite (forward/backward) or ground station (central). It computes the size
+ * and offset percentages of the file, extracts the appropriate portion, sets the satellite's ADCS mode 
+ * accordingly, and manages visibility conditions if sending to an OGS. It then segments the file portion 
+ * into CFDP PDUs and initiates the transfer. A confirmation mechanism ensures successful delivery.
+ * 
+ * @param direction        Direction of transmission: 0 (central/OGS), 1 (forward), or 2 (backward).
+ * @param size             Size of the file segment to transmit, in bytes.
+ * @param mode             ADCS mode to align the satellite for transmission.
+ * @param connection       Pointer to variable indicating if a connection has been established.
+ * @param filename_mem     Filename or identifier for the file being transmitted.
+ * @param fileContent      Full content of the file in memory.
+ * @param totalSize        Total size of the original file in bytes.
+ * @param offset           Offset from the beginning of the file from which to extract the portion.
+ * @param info             Pointer to SplittingInfo structure containing satellite and segment info.
+ * @param fake_file_size   Total 'virtual' size of the file for calculating relative size percentages.
+ * @param vis_start_time   Start time of visibility window for downlink to ground station.
+ */
 void process_direction(int direction, double size, const uint8 mode, uint8_t *connection, const char *filename_mem, const char* fileContent, size_t totalSize, size_t offset, SplittingInfo* info, double fake_file_size, time_t vis_start_time);
 
+/**
+ * @brief Handles the splitting and processing of a large file into segments for different transfer directions.
+ *
+ * This function divides a file based on the splitting information provided and calls `process_direction`
+ * for each direction (Forward, Backward, or Central/OGS). The order of processing depends on the priority
+ * direction indicated by the first element of `info->direction`. Offsets are calculated to extract correct
+ * portions of the file content. 
+ *
+ * @param info Pointer to SplittingInfo structure containing segment sizes and direction mapping.
+ * @param fileContent Pointer to the complete content of the file to be transmitted.
+ * @param fileSize Total size of the input file.
+ * @param start_visibility Visibility start time for downlinking to the OGS.
+ */
+void handle_splitting(SplittingInfo* info, const char *fileContent, const size_t fileSize, time_t start_visibility);
+
+/**
+ * @brief Sends a file in segments (PDUs) to a receiving node using a simulated CFDP-like protocol.
+ *
+ * This function checks memory availability on the receiver side, waits if necessary, and attempts
+ * to send each segment with a retry mechanism. After each successful transmission, it simulates
+ * a network delay and waits to maintain a fake total duration for the entire file transfer.
+ *
+ * @param fileContent The content of the file to be sent.
+ * @param fileSize The total size of the file in bytes.
+ * @param headers Array of PDU file data headers corresponding to each segment.
+ * @param contents Array of PDU file data contents for each segment.
+ * @param segmentCount The total number of segments into which the file is divided.
+ * @param segmentSize The size of each segment.
+ * @param connection_establishment Pointer to the current connection establishment flag.
+ * @param filename_memory Identifier string for the receiver (used for memory availability checks). If "OGS" it means that the receiver is the GS, so always memory available
+ * @param fake_duration The intended fake total transfer duration (used to simulate time spacing in large file transfers).
+ * @return int 0 on success, -1 on failure.
+ */
 int sendIteration(const char *fileContent, size_t fileSize, CF_CFDP_PduFileDataHeader_t *headers, CF_CFDP_PduFileDataContent_t *contents, 
                 int segmentCount, int segmentSize, uint8_t *connection_establishment, const char *filename_memory, double fake_duration);
 

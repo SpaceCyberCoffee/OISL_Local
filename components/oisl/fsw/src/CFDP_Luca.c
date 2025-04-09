@@ -70,24 +70,6 @@ const char *OGS_ASSUMED = "Igrim";               // For large file transfers sin
  *             Routing structures and margins               *
  ************************************************************/
 
-typedef struct {
-    int *direction;         // Direction of transfer: 1, 2 or both 
-    double *segment_sizes;  // Array to hold segment sizes in bytes
-    char *sat_indexes;      // Index array.
-    size_t num_segments;    // how many satellites will be active in DL info
-} SplittingInfo;
-
-// Structure to track multiple satellite candidates
-typedef struct {
-    int sat_index;
-    int direction;
-    time_t visibility_start;
-    double transfer_ratio;
-    int hops;
-    double dl_capacity;        // Downlink capacity in bytes
-    double allocated_bytes;    // bytes task to transfer
-} SatCandidate;
-
 static const double margin  = 60.0;           // Margin to align with the OGS. If the sat is already in OGS Mode the margin is 0. If it has to get into that mode then it might be even higher. TODO add autoregolation based on the mode you are in now
 static const double margin_routing = 120.0;   // time to align with receiver + time for the receiver to eventually align with OGS/another receiver
 static const int    marginDL = 10;            // This is the margin assuming alignment achieved, it is used to quantify how much data could be transfered during a pass. Assume 10 seconds of loss due to atmospheric conditions 
@@ -1052,47 +1034,60 @@ FilePortion get_file_portion(const char* fileContent, size_t totalSize, size_t o
     return portion;
 }
 
-// Modified process_direction function
 void process_direction(int direction, double size, const uint8 mode, uint8_t *connection, 
                       const char *filename_mem, const char* fileContent, size_t totalSize, size_t offset, SplittingInfo* info, double fake_file_size, time_t vis_start_time) { // size is now in BYTES.
+    
+    // Skip processing if size is zero or negative
     if (size <= 0) return;
     
-    printf("\n=== Processing %d Distribution ===\n", mode);
-    printf("Going into mode %d for %.2f GB transfer\n", mode, size/1e9);
-
-    // DEBUG Print satellite sequence
-    for (size_t i = 0; i < info->num_segments; i++) {
-        if (info->direction[i] == direction) {
-            printf("- Sat_%d: %.2f B\n", info->sat_indexes[i], info->segment_sizes[i]);  // segment_sizes is in byte!
+    #ifdef FILE_PORTION_LOGGING
+        printf("\n=== Processing %d Distribution ===\n", mode);
+        printf("Going into mode %d for %.2f GB transfer\n", mode, size/1e9);
+        // DEBUG Print satellite sequence
+        for (size_t i = 0; i < info->num_segments; i++) {
+            if (info->direction[i] == direction) {
+                printf("- Sat_%d: %.2f B\n", info->sat_indexes[i], info->segment_sizes[i]);  // segment_sizes is in byte!
+            }
         }
-    }
+    #endif
 
     size_t sizeInBytes = (size_t)(size); // Convert double to size_t
-    // COMPUTE THE SIZE PERCENTAGE AND ALSO THE OFFSET PERCENTAGE TO PASS TO GET FILE PORTION
     double sizePercentage = (size / fake_file_size) * 100; 
     double offsetPercentage = ((double)offset / fake_file_size)* 100; 
-    printf("Debug: size and offset percentages: %f and %f", sizePercentage, offsetPercentage);
+    #ifdef FILE_PORTION_LOGGING
+        printf("process_direction [Debug]: size and offset percentages: %f and %f", sizePercentage, offsetPercentage);
+    #endif
+
+    // Exctract the portion of file assigned to this direction/transfer
     FilePortion portion = get_file_portion(fileContent, totalSize, offset, sizeInBytes, sizePercentage, offsetPercentage);
     
     if (portion.data != NULL) {
-        printf("%d portion extracted.\n", mode);
+
+        #ifdef FILE_PORTION_LOGGING
+            printf("process_direction [DEBUG]: %d portion extracted.\n", mode);
+        #endif
 
         // Transmit the portion
-
         // ADCS MODE will be changed
         Generic_ADCS_Mode_cmd_t cmd8;
         CFE_MSG_Init(CFE_MSG_PTR(cmd8.CmdHeader), CFE_SB_ValueToMsgId(GENERIC_ADCS_CMD_MID), sizeof(Generic_ADCS_Mode_cmd_t)); //TODO then move these lines above
         CFE_MSG_SetFcnCode((CFE_MSG_Message_t *)&cmd8, GENERIC_ADCS_SET_MODE_CC);
         cmd8.Mode = mode;
-        if (mode == 5) {strcpy(cmd8.OGS_Name, OGS_ASSUMED);}  
-        CFE_SB_TimeStampMsg((CFE_MSG_Message_t *)&cmd8);  // ERROR: Mode is not transmitted correctly/ 
+
+        // Set OGS name if switching to ground alignment mode
+        if (mode == 5) {
+            strcpy(cmd8.OGS_Name, OGS_ASSUMED);
+        }  
+
+        CFE_SB_TimeStampMsg((CFE_MSG_Message_t *)&cmd8);  
         CFE_SB_TransmitMsg((CFE_MSG_Message_t *)&cmd8, true);
 
+        // Segment the file portion into CFDP PDUs
         CF_CFDP_PduFileDataHeader_t *headers = NULL;
         CF_CFDP_PduFileDataContent_t *contents = NULL;
         int segmentCount = segmentFileIntoPDUs(portion.data, portion.size, &headers, &contents, segmentSize);
 
-        // In case of central case (aka OGS DL) check visibility to OGS // MISSING: VIS START TIME OF CENTRAL, now it is of the first visible sat!!!!
+        // If downlinking to OGS, wait until visibility and alignment are confirmed
         if (direction == 0) {
             while (1) {
                 // Continuously update current time
@@ -1107,40 +1102,51 @@ void process_direction(int direction, double size, const uint8 mode, uint8_t *co
                 }
                 // Calculate the remaining time until the visibility window starts
                 time_t time_to_vis_start = vis_start_time - current_time;
-                // Print status message with current time and remaining wait time
-                printf("Waiting to enter the visibility window. The visibility start is: %ld and Time until start: %ld seconds\n", (long)vis_start_time, (long)time_to_vis_start);
+                #ifdef FILE_PORTION_LOGGING
+                    // Print status message with current time and remaining wait time
+                    printf("process_direction [DEBUG]: Waiting to enter the visibility window. The visibility start is: %ld and Time until start: %ld seconds\n", (long)vis_start_time, (long)time_to_vis_start);
+                #endif
                 sleep((int)time_to_vis_start);
             }
         }
 
         // Proceed to send the iteration
-        // Calculate fake duration of this segment to simulate longer transfers
-        double fake_duration = size / TransferCapacityperSecond;   // Ex: 1.6GB / 12.5 MB/s
+
+        // Simulate transfer duration based on segment size and link capacity
+        double fake_duration = size / TransferCapacityperSecond;
+
+        // Send the data and check for confirmation
         int confirmation = sendIteration(portion.data, portion.size, headers, contents, 
-                                      segmentCount, segmentSize, connection, filename_mem, fake_duration);
+                                         segmentCount, segmentSize, connection, filename_mem, fake_duration);
         
         if (confirmation != 0) {
-            printf("ERROR: Something went wrong during %d transfer\n", mode);
-        }
-        else {
-            printf("Iteration sent. Creating the SentFile\n");
+            printf("process_direction [ERROR]: Something went wrong during %d transfer\n", mode);
+        } else {
+            #ifdef FILE_PORTION_LOGGING
+                printf("process_direction [DEBUG]: Iteration sent. Creating the SentFile\n");
+            #endif
             createSentFile2(portion.data, direction);
         }
-        
+
+        // Free memory used for the file portion
         free(portion.data);
     }
     else {
-        printf("ERROR: Portion of the file not extracted\n");
+        printf("process_direction [ERROR]: Portion of the file not extracted\n");
     }
 
-    printf("Finished transmitting %.2f GB to the %d direction.\n", size/1e9, mode);
+    #ifdef FILE_PORTION_LOGGING
+        printf("process_direction [DEBUG]: Finished transmitting %.2f GB to the %d direction.\n", size/1e9, mode);
+    #endif
 }
 
-void handle_splitting(SplittingInfo* info, const char *fileContent, const size_t fileSize, time_t start_visibility) {  // start vis useful for the DL to the OGS of this sat
+void handle_splitting(SplittingInfo* info, const char *fileContent, const size_t fileSize, time_t start_visibility) {  
+    
     if (info == NULL || info->num_segments == 0) {
-        printf("Error: Invalid splitting info\n");
+        printf("handle_splitting [ERROR]: Invalid splitting info\n");
         return;
     }
+
     // Calculate sizes and offsets for each direction
     double forward_size = 0.0;
     double backward_size = 0.0;
@@ -1164,17 +1170,21 @@ void handle_splitting(SplittingInfo* info, const char *fileContent, const size_t
                 central_size += size_bytes;
                 break;
             default:
-                printf("Error default case why?\n");
+                printf("handle_splitting [ERROR] Direction not recognized.\n");
                 break;
         }
     }
 
-    printf("\nFile Distribution Analysis:\n");
-    printf("Forward: %.2f GB \n", forward_size/1e9);  
-    printf("Backward: %.2f GB \n", backward_size/1e9);
-    printf("Central: %.2f GB \n", central_size/1e9);
+    
+    #ifdef FILE_PORTION_LOGGING
+        printf("\nFile Distribution Analysis:\n");
+        printf("Forward: %.2f GB\n", forward_size / 1e9);  
+        printf("Backward: %.2f GB\n", backward_size / 1e9);
+        printf("Central: %.2f GB\n", central_size / 1e9);
+    #endif
 
-    double fake_file_size = forward_size + central_size + backward_size;    // this is like 3GB
+    // Fake size because we simulate GBs of data but handle kBs of data
+    double fake_file_size = forward_size + central_size + backward_size;    
 
     // Determine processing order based on priority
     int priority = info->direction[0];
@@ -1221,6 +1231,7 @@ void free_splitting_info(SplittingInfo* info) {
 }
 
 int sendIteration(const char *fileContent, size_t fileSize, CF_CFDP_PduFileDataHeader_t *headers, CF_CFDP_PduFileDataContent_t *contents, int segmentCount, int segmentSize, uint8_t *connection_establishment, const char *filename_memory, double fake_duration) {
+
     // Check memory availability for OISL
     if (strcmp(filename_memory, "OGS") != 0) {
         if (*connection_establishment == 1) {
@@ -1231,9 +1242,11 @@ int sendIteration(const char *fileContent, size_t fileSize, CF_CFDP_PduFileDataH
         }
 
         if (receiverMemory.isAvailable == false) {
-            printf("DEBUG: memory of the receiver not available. %zu. Will wait for the memory to free again. \n", receiverMemory.totalSize - receiverMemory.currentUsed);
+            #ifdef FILE_PORTION_LOGGING
+                printf("sendIteration [DEBUG]: memory of the receiver not available. %zu. Will wait for the memory to free again. \n", receiverMemory.totalSize - receiverMemory.currentUsed);
+            #endif
             if (!waitForReceiverMemory(fileSize, filename_memory)) {
-                printf("Timeout waiting for receiver memory, aborting transfer\n");
+                printf("sendIteration [ERROR]: Timeout waiting for receiver memory, aborting transfer\n");
                 return -1; // Indicate failure
             }
         }
@@ -1241,7 +1254,9 @@ int sendIteration(const char *fileContent, size_t fileSize, CF_CFDP_PduFileDataH
 
     // Calculate realistic sleep time
     double sleep_time = fake_duration / segmentCount;
-    printf("DEbug: I will sleep %f after every PDUs sent to get to a fake duration of %f\n", sleep_time, fake_duration);
+    #ifdef FILE_PORTION_LOGGING
+        printf("sendIteration [DEBUG]: I will sleep %f after every PDUs sent to get to a fake duration of %f\n", sleep_time, fake_duration);
+    #endif
     time_t start_segment_time;
     time_t end_segment_time;
 
@@ -1270,7 +1285,7 @@ int sendIteration(const char *fileContent, size_t fileSize, CF_CFDP_PduFileDataH
                         if (!receiveAck(segmentNumber, &ack)) {
                             sent = 0;
                             retries++;
-                            printf("PDU #%d not acknowledged, retrying (%d/%d)\n", segmentNumber, retries, maxRetries);
+                            printf("sendIteration [WARNING]: PDU #%d not acknowledged, retrying (%d/%d)\n", segmentNumber, retries, maxRetries);
                         } else {
                             // Update memory usage
                             memoryInfo->currentUsed = (memoryInfo->currentUsed < (size_t)segmentSize) ? 0 : memoryInfo->currentUsed - segmentSize;
@@ -1289,24 +1304,30 @@ int sendIteration(const char *fileContent, size_t fileSize, CF_CFDP_PduFileDataH
                     }
                 } else {
                     retries++;
-                    printf("PDU #%d failed to send, retrying (%d/%d)\n", segmentNumber, retries, maxRetries);
+                    printf("sendIteration [WARNING]: PDU #%d failed to send, retrying (%d/%d)\n", segmentNumber, retries, maxRetries);
                 }
             } else {
-                printf("Wait for re-alignment\n");
-                if (*transferActive == 1) {*transferActive = 0;}
+                printf("sendIteration [DEBUG]: Wait for re-alignment\n");
+                if (*transferActive == 1) {
+                    *transferActive = 0;
+                }
                 sleep(10); // Adjust sleep as needed
             }
         }
 
         if (retries == maxRetries) {
-            printf("PDU #%d failed after %d retries, aborting transmission.\n", segmentNumber, maxRetries);
-            if (*transferActive == 1) {*transferActive = 0;}
+            printf("sendIteration [ERROR]: PDU #%d failed after %d retries, aborting transmission.\n", segmentNumber, maxRetries);
+            if (*transferActive == 1) {
+                *transferActive = 0;
+            }
             return -1; // Indicate failure
         }
     }
 
-    printf("All PDUs sent successfully.\n");
-    if (*transferActive == 1) {*transferActive = 0;}
+    printf("sendIteration [DEBUG]: All PDUs sent successfully.\n");
+    if (*transferActive == 1) {
+        *transferActive = 0;
+    }
 
     // Free dynamically allocated memory
     free(headers);
