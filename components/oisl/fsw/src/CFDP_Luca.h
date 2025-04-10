@@ -81,14 +81,6 @@ int segmentFileIntoPDUs(const char *fileContent, size_t fileSize, CF_CFDP_PduFil
 double estimateTransferTime(size_t fileSize, int segmentCount);
 
 /**
- * @brief Sends a file using a CFDP-like protocol, handling segmentation, transmission, and acknowledgment.
- *
- * @param fileContent Pointer to the file content to be sent.
- * @param fileSize The size of the file content.
- */
-void sendFile(const char *fileContent, const size_t fileSize);
-
-/**
  * @brief Creates a confirmation file after sending data. Used to signal the server to move the file in the specified directory.
  *
  * This function writes a timestamp along with the satellite name (Sat_Name) to the first line 
@@ -336,5 +328,29 @@ void handle_splitting(SplittingInfo* info, const char *fileContent, const size_t
  */
 int sendIteration(const char *fileContent, size_t fileSize, CF_CFDP_PduFileDataHeader_t *headers, CF_CFDP_PduFileDataContent_t *contents, 
                 int segmentCount, int segmentSize, uint8_t *connection_establishment, const char *filename_memory, double fake_duration);
+
+/**
+ * @brief Sends a file using CFDP (CCSDS File Delivery Protocol) over an optical inter-satellite link (OISL)
+ * 
+ * This function handles the complete process of file transmission including:
+ * - Memory management and verification on both sender and receiver
+ * - File segmentation into Protocol Data Units (PDUs)
+ * - Route determination (forward, backward, or to ground station)
+ * - Connection establishment with the appropriate target
+ * - ADCS (Attitude Determination and Control System) mode adjustment as needed
+ * - Reliable transfer with acknowledgments and retry mechanism
+ * - Realistic transfer time simulation
+ * 
+ * @param fileContent Pointer to the content of the file to be sent
+ * @param fileSize Size of the file in bytes
+ * 
+ * @note Each PDU can carry 504 bytes of data
+ * @note transfer_time_to_add is used to simulate a large file transfer
+ * @note Only the OGS target scenario includes routing, since case 0 and 1 are simple file transfers to neighbor sats
+ * @note In the current implementation, for case 0 and 1 the ADCS mode is not changed, i.e. the CMD to change mode must be sent beforehand
+ * @note The function handles different routing scenarios based on visibility windows and pass planning
+ * @note When downlinking to ground station (OGS), the function will wait for the pass to start before transmitting the data
+ */
+void sendFile(const char *fileContent, const size_t fileSize);
 
 #endif

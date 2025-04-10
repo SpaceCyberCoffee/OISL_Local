@@ -62,6 +62,9 @@ static const char* my_src = "/mnt/extras/SSD/NOS3_RBT/nos3_luca_OISL/nos3_rbt/co
 static const char* for_dest = "/mnt/extras/SSD/NOS3_RBT/nos3_luca_OISL/forward_sat/nos3_rbt/COSMOS_Control/Execution/OISL/files_received/plainText.txt";
 static const char* back_dest = "/mnt/extras/SSD/NOS3_RBT/nos3_luca_OISL/Backward_Sat/COSMOS_Control/Execution/OISL/files_received/plainText.txt";
 
+static const char* back_alignment_mem_info = "/home/jstar/Desktop/github-nos3/components/oisl/fsw/src/B_sat_for_alignment.txt";
+static const char* for_alignment_mem_info = "/home/jstar/Desktop/github-nos3/components/oisl/fsw/src/F_sat_back_alignment.txt";
+
 const double    transfer_time_to_add = 280.0;   // around 3.52 GB.  Used only for Large file transfer to simulate a larger size
 const int       forbidden_direction = 5;         // Forbidden direction for routing to avoid ping pong: TODO: improve making it smarter
 const char *OGS_ASSUMED = "Igrim";               // For large file transfers since the OGS name is written only in the header file
@@ -1070,7 +1073,7 @@ void process_direction(int direction, double size, const uint8 mode, uint8_t *co
         // Transmit the portion
         // ADCS MODE will be changed
         Generic_ADCS_Mode_cmd_t cmd8;
-        CFE_MSG_Init(CFE_MSG_PTR(cmd8.CmdHeader), CFE_SB_ValueToMsgId(GENERIC_ADCS_CMD_MID), sizeof(Generic_ADCS_Mode_cmd_t)); //TODO then move these lines above
+        CFE_MSG_Init(CFE_MSG_PTR(cmd8.CmdHeader), CFE_SB_ValueToMsgId(GENERIC_ADCS_CMD_MID), sizeof(Generic_ADCS_Mode_cmd_t)); 
         CFE_MSG_SetFcnCode((CFE_MSG_Message_t *)&cmd8, GENERIC_ADCS_SET_MODE_CC);
         cmd8.Mode = mode;
 
@@ -1338,42 +1341,54 @@ int sendIteration(const char *fileContent, size_t fileSize, CF_CFDP_PduFileDataH
 
 
 void sendFile(const char *fileContent, const size_t fileSize) {
-    // CHECK MEMORY
-    printf("CFDP: Received a file with size: %zu bytes\n", fileSize);
+    // Log received file information
+    printf("CFDP sendFile [INFO]: Received a file with size: %zu bytes\n", fileSize);
+
     int segmentNumber = 0;
-    /* If each PDU can carry 504 bytes of data and you can send a maximum of 1000 PDUs, the maximum file size in bytes is: Max File Size (bytes)=504�1000=504000 bytes = 504 kB*/
+    // Allocate memory for PDU headers and contents
     CF_CFDP_PduFileDataHeader_t *headers = NULL;
     CF_CFDP_PduFileDataContent_t *contents = NULL;
-    int segmentCount = segmentFileIntoPDUs(fileContent, fileSize, &headers, &contents, segmentSize); // TODO: probably not here, or mayube segment it again afterr routing...
+
+    // Segment the file into PDUs for transmission
+    int segmentCount = segmentFileIntoPDUs(fileContent, fileSize, &headers, &contents, segmentSize); 
+
+    // Calculate expected transfer time including network delays
     double transferTime = estimateTransferTime(fileSize, segmentCount);
     transferTime += transfer_time_to_add; // AKA 3GB of file to DOWNLINK
-    printf("OISL FILE CFDP: Estimated (BIGGER) Transfer time including network delay: %f s.\n", transferTime);
+    printf("CFDP sendFile [INFO]: Estimated (BIGGER) Transfer time including network delay: %f s.\n", transferTime);
 
-    // Update memory information
+    // Update local memory usage information
     memoryInfo->currentUsed += fileSize; // Bytes
     memoryInfo->isAvailable = (memoryInfo->currentUsed < memoryCapacity) ? 1 : 0;
 
+    // Determine connection parameters based on target
     uint8 *connection_establishment;
     const char* filename_memory;
+
+    // Handle different target scenarios (0=Backward, 1=Forward, 2=Ground Station: this scenario involves routing)
     if (OISL_AppData.CFDP.Target == 0) {
+        // Target is backward satellite
         connection_establishment = &OISL_AppData.DevicePkt.Oisl.BackwardConnection;
-        filename_memory = "/home/jstar/Desktop/github-nos3/components/oisl/fsw/src/B_sat_for_alignment.txt";
+        filename_memory = back_alignment_mem_info;
     }
-    else if (OISL_AppData.CFDP.Target == 1)
-    {
+    else if (OISL_AppData.CFDP.Target == 1) {
+        // Target is forward satellite
         connection_establishment = &OISL_AppData.DevicePkt.Oisl.ForwardConnection;
-        filename_memory = "/home/jstar/Desktop/github-nos3/components/oisl/fsw/src/F_sat_back_alignment.txt";
+        filename_memory = for_alignment_mem_info;
     }
-    else if (OISL_AppData.CFDP.Target == 2)
-    {
-        char OGS_name[64]; // Buffer to hold the extracted ground station name
-        // Extract the ground station name from the file content
-        extractOGSName(fileContent, OGS_name, sizeof(OGS_name)); // this receives every time the fileContent entire, so OGS_Name is found always.
-        // Print the OGS name as confirmation
-        printf("CFDP: File received. OGS specified for the DL: %s\n", OGS_name);
-        // Open the visibility file
+    else if (OISL_AppData.CFDP.Target == 2) {
+        // Target is Optical Ground Station (OGS)
+        
+        // Extract ground station name from file content
+        char OGS_name[64];
+        extractOGSName(fileContent, OGS_name, sizeof(OGS_name));
+        printf("CFDP sendFile [INFO]: File received. OGS specified for the DL: %s\n", OGS_name);
+        
+        // Open visibility prediction file for the specified ground station
         char vis_file_name[200];
-        snprintf(vis_file_name, sizeof(vis_file_name), "/home/jstar/Desktop/github-nos3/components/oisl/fsw/src/OGS_visibilities/%s_vis_prediction.txt", OGS_name);
+        snprintf(vis_file_name, sizeof(vis_file_name), 
+                "/home/jstar/Desktop/github-nos3/components/oisl/fsw/src/OGS_visibilities/%s_vis_prediction.txt", 
+                OGS_name);
         FILE *vis_file = fopen(vis_file_name, "r");
         if (vis_file == NULL) {
             perror("Failed to open visibility prediction file");
@@ -1383,79 +1398,89 @@ void sendFile(const char *fileContent, const size_t fileSize) {
         time_t vis_start_time = -1;
         int is_visible_now = 0;
 
-        // ADCS MODE will be changed
+        // Prepare ADCS mode change command
         Generic_ADCS_Mode_cmd_t cmd8;
-        CFE_MSG_Init(CFE_MSG_PTR(cmd8.CmdHeader), CFE_SB_ValueToMsgId(GENERIC_ADCS_CMD_MID), sizeof(Generic_ADCS_Mode_cmd_t)); //TODO then move these lines above
-        CFE_MSG_SetFcnCode((CFE_MSG_Message_t *)&cmd8, GENERIC_ADCS_SET_MODE_CC);
+        CFE_MSG_Init(CFE_MSG_PTR(cmd8.CmdHeader), CFE_SB_ValueToMsgId(GENERIC_ADCS_CMD_MID), sizeof(Generic_ADCS_Mode_cmd_t)); 
 
         time_t current_time = get_current_time();
 
+        // Check visibility window status of the current satellite
         while (fgets(line, sizeof(line), vis_file) != NULL) {
             char sat_id[20], vis_start[20], vis_end[20];
             double duration;
             // Ensure line ends at '\n' and doesn't include any hidden characters
             line[strcspn(line, "\r\n")] = 0;
+
             int items = sscanf(line, "%20[^,],%20[^,],%20[^,], %lf", sat_id, vis_start, vis_end, &duration); 
             if (items == 4) {
-                if (strcmp(sat_id, Sat_Name) == 0 && is_visible(current_time, vis_start, vis_end, &vis_start_time, transferTime, duration)) {            // vis_start_time stores the earliest visibility of the central sat that is larger than current time
-                    printf("Satellite %s is currently visible from OGS.\n", sat_id);
+                // Check if satellite is currently visible from ground station
+                // vis_start_time stores the earliest visibility of the central sat that is larger than current time
+                if (strcmp(sat_id, Sat_Name) == 0 && 
+                    is_visible(current_time, vis_start, vis_end, &vis_start_time, transferTime, duration)) {   
+                    printf("CFDP sendFile [INFO]: Satellite %s is currently visible from OGS.\n", sat_id);
                     char formatted_current[20];
                     strftime(formatted_current, sizeof(formatted_current), "%Y-%m-%d %H:%M:%S", localtime(&(current_time)));
-                    printf("DEBUG: CHECK IT: Current time: %s, Visibility start: %s Visibility end: %s\n", formatted_current, vis_start, vis_end);
                     is_visible_now = 1;
                     break;
                 }
             }
         }
 
+        // OGS Downlink: current satellite not visible (not having a pass) or pass too short --> look for routing!
         if (!is_visible_now) { 
             time_t my_vis_start = vis_start_time;           // Meaning, either it is not veasible, or the pass duration is too short.
-            printf("Satellite Sat is not visible from OGS at this time.\n");
-            // Create structure for file segmentation if needed
-            // SplittingInfo splitting_info = NULL;
-            // First, allocate memory for the SplittingInfo structure itself
+            printf("CFDP sendFile [INFO]: Satellite Sat is not visible from OGS at this time.\n");
+            
+            // Create structure for file routing information
             SplittingInfo* info = malloc(sizeof(SplittingInfo));
             if (info == NULL) {
-                // Handle allocation failure
-                printf("ERROR: ALLOCATION ERROR FOR SPLIOTTING INGO");
+                printf("CFDP sendFile [ERROR]: ALLOCATION ERROR FOR SPLITTING INFO\n");
                 return;
             }
-            // Initialize all pointers to NULL
+
+            // Initialize routing info structure
             info->direction = NULL;
             info->segment_sizes = NULL;
             info->sat_indexes = NULL;
             info->num_segments = 0;
-            int routing = routing_Sat(vis_file, current_time, &vis_start_time, transferTime, info); // THIS IS THE VALUE PREVIOUSLY UPDATED BY IS VISIBLE!!!
-            if (routing == 1) { // Another sat has an earlier visibility --> align to forward and start to route the info.
+
+            // Determine optimal routing path within the orbital ring
+            int routing = routing_Sat(vis_file, current_time, &vis_start_time, transferTime, info); 
+
+            if (routing == 1) { 
+                // Route forward - another satellite has earlier visibility
                 connection_establishment = &OISL_AppData.DevicePkt.Oisl.ForwardConnection;
-                filename_memory = "/home/jstar/Desktop/github-nos3/components/oisl/fsw/src/F_sat_back_alignment.txt";
+                filename_memory = for_alignment_mem_info;
                 cmd8.Mode = OISL_MODE_F;
-                printf("Routing forward\n");
+                printf("CFDP sendFile [INFO]: Routing forward\n");
             }
-            else if (routing == 2) { // routing backwards
+            else if (routing == 2) { 
+                // Route backward
                 connection_establishment = &OISL_AppData.DevicePkt.Oisl.BackwardConnection;
-                filename_memory = "/home/jstar/Desktop/github-nos3/components/oisl/fsw/src/B_sat_for_alignment.txt";
+                filename_memory = back_alignment_mem_info;
                 cmd8.Mode = OISL_MODE_B;
-                printf("Routing backward\n");
+                printf("CFDP sendFile [INFO]: Routing backward\n");
             }
-            else if (routing == 3 && info != NULL) { // file too large so I need also the division into parts and file segmentation.
+            else if (routing == 3 && info != NULL) {
+                // File is too large for a single transfer - split into parts 
                 handle_splitting(info, fileContent, fileSize, my_vis_start);
                 free_splitting_info(info);
-                printf("Concluded my work here.\n");
+                printf("CFDP sendFile [INFO]: File has been splitted and each portion has been sent/downlinked. Concluded my work here.\n");
                 return;
             }
-            else { // ROuting is not best option AND THE FILE SIZE IS PROPER TO BE DL BY THIS SAT ALONE --> align with the OGS and wait for the window to start
-                // Run a loop until conditions are met
+            else { 
+                // Direct downlink is best option - align with OGS and wait for visibility window
                 cmd8.Mode = OISL_MODE_OGS;
                 filename_memory = "OGS";
                 strcpy(cmd8.OGS_Name, OGS_name);
                 CFE_SB_TimeStampMsg((CFE_MSG_Message_t *)&cmd8);
                 CFE_SB_TransmitMsg((CFE_MSG_Message_t *)&cmd8, true);
+
+                // Wait until satellite enters visibility window
                 while (1) {
-                    // Continuously update current time
                     current_time = get_current_time();
 
-                    // Check conditions: OGSAlignment is 1 and current_time >= vis_start_time
+                    // Check if satellite is properly aligned and visibility window has started
                     if (OISL_AppData.DevicePkt.Oisl.OGSAlignment == 1 && current_time >= vis_start_time) {
                         // Conditions are met, establish connection and exit loop
                         uint8 conn_est = 1;
@@ -1464,15 +1489,18 @@ void sendFile(const char *fileContent, const size_t fileSize) {
                         break;
                     }
 
-                    // Calculate the remaining time until the visibility window starts
+                    // Calculate and display time remaining until visibility window
                     time_t time_to_vis_start = vis_start_time - current_time;
                     // Print status message with current time and remaining wait time
-                    printf("Waiting to enter the visibility window. The visibility start is: %ld and Time until start: %ld seconds\n", (long)vis_start_time, (long)time_to_vis_start);
+                    printf("CFDP sendFile [INFO]: Waiting to enter the visibility window. The visibility start is: %ld and Time until start: %ld seconds\n", (long)vis_start_time, (long)time_to_vis_start);
                     sleep((int)time_to_vis_start);
                 }
             }
-        }
-        else { // VISIBLE NOW and DL SIZE OKAY--> Only condition to check is the OGS alignment. TODO: Include consideration on transfer duration and for how long is the satellite visible
+        } // Current sat not visible now
+
+        else {
+            // Satellite is visible now and download size is acceptable
+            // Set up for direct downlink to OGS 
             strcpy(cmd8.OGS_Name, OGS_name);
             connection_establishment = &OISL_AppData.DevicePkt.Oisl.OGSAlignment;
             filename_memory = "OGS";
@@ -1486,13 +1514,17 @@ void sendFile(const char *fileContent, const size_t fileSize) {
         // Close the visibility file
         fclose(vis_file);
 
-    }
-    else {
-        printf("Unknown taget to align with, or method not yet impemented for target %u, default to forward", OISL_AppData.CFDP.Target);
-        connection_establishment = &OISL_AppData.DevicePkt.Oisl.ForwardConnection;
+    } // CASE: DOWNLINK TO OGS
+
+    else { 
+        // Handle unknown target - default to forward routing
+        printf("CFDP sendFile [ERROR]: Unknown taget to align with, or method not yet impemented for target %u, EXIT.", OISL_AppData.CFDP.Target);
+        return;
     }
 
-    // For OISL check first memory of the receiver. For OGS not needed.
+    // Handshake and memory check before starting the connection
+
+    // Check receiver memory availability (not needed for OGS)
     if (strcmp(filename_memory, "OGS") != 0) {
         if (*connection_establishment == 1) {
             receiveMemoryInfo(filename_memory);
@@ -1501,39 +1533,50 @@ void sendFile(const char *fileContent, const size_t fileSize) {
             }
         }
 
+        // Wait for receiver memory to become available if necessary
         if (receiverMemory.isAvailable == false) {
-            printf("DEBUG: memory of the receiver not available. %zu. Will wait for the memory to free again. \n", receiverMemory.totalSize - receiverMemory.currentUsed);
+            printf("CFDP sendFile [INFO]: memory of the receiver not available. %zu. Will wait for the memory to free again. \n", receiverMemory.totalSize - receiverMemory.currentUsed);
             if (!waitForReceiverMemory(fileSize, filename_memory)) {
-                printf("Timeout waiting for receiver memory, aborting transfer\n");
+                printf("CFDP sendFile [ERROR]: Timeout waiting for receiver memory, aborting transfer.\n");
                 return;
             }
         }
     }
 
-    // Calculate realistic sleep time
+    // Calculate sleep time to simulate realistic transfer duration
     double sleep_time = transferTime / segmentCount;
-    printf("DEbug: I will sleep %f after every PDUs sent to get to a fake duration of %f\n", sleep_time, transferTime);
     time_t start_segment_time;
     time_t end_segment_time;
 
-    for (segmentNumber = 0; segmentNumber < segmentCount; segmentNumber++) {   // probably make this a method, so that it can be put here for the majority of thecases, but also called by handle_splitting. 
+    // Start transferring PDUs
+    // TODO MAKE IT A METHOD
+    for (segmentNumber = 0; segmentNumber < segmentCount; segmentNumber++) {  
         int sent = 0;
         int retries = 0;
         const int maxRetries = 5;
 
+        // Attempt to send each PDU with retry mechanism
         while (!sent && retries < maxRetries) {
             if (*connection_establishment == 1) {
-                    if (sent == 0) {
-                        start_segment_time = get_current_time();
-                        end_segment_time = start_segment_time + sleep_time;
-                    }
+                if (sent == 0) {
+                    // Initialize timing for this segment
+                    start_segment_time = get_current_time();
+                    end_segment_time = start_segment_time + sleep_time;
+                }
+
+                // Set transfer active flag
                 *transferActive = 1;
+
+                // Send the PDU segment
                 sent = sendPDU(&headers[segmentNumber], &contents[segmentNumber], segmentNumber, fileContent, segmentSize);
+
                 if (sent == 1) {
+                    // Simulate network delay
                     simulateNetworkDelay();
 
-                    // Simulate the other satellite receiving the PDU TODO THIS MUST COME FROM OTHER SAT
+                    // Simulate receiving the PDU at the destination. TODO THIS MUST COME FROM OTHER SAT
                     if (receivePDU(&headers[segmentNumber], &contents[segmentNumber], segmentNumber)) {
+                        // Create and send acknowledgment 
                         CF_CFDP_PduAck_t ack = createAck(CF_CFDP_FileDirective_ACK, CF_CFDP_ConditionCode_NO_ERROR, segmentNumber);
                         sendAck(&ack);
 
@@ -1541,45 +1584,58 @@ void sendFile(const char *fileContent, const size_t fileSize) {
                         if (!receiveAck(segmentNumber, &ack)) {
                             sent = 0;
                             retries++;
-                            printf("PDU #%d not acknowledged, retrying (%d/%d)\n", segmentNumber, retries, maxRetries);
+                            printf("CFDP sendFile [WARNING]: PDU #%d not acknowledged, retrying (%d/%d)\n", segmentNumber, retries, maxRetries);
                         }
+                        else {
                         // PDU sent and correctly received --> update memory of this sat
                         memoryInfo->currentUsed = (memoryInfo->currentUsed < (size_t)segmentSize) ? 0 : memoryInfo->currentUsed - segmentSize;
                         memoryInfo->isAvailable = (memoryInfo->currentUsed < memoryCapacity) ? 1 : 0;
-                        // Sleep to make it realistic
+                        
+                        // Sleep to simulate realistic transfer time
                         while (start_segment_time < end_segment_time) {
-                                sleep(2);
+                                sleep(1);
                                 // update start segment time
                                 start_segment_time = get_current_time();
                                 // If it is the last segment, do not sleep. 
-                                if (segmentNumber ==  segmentCount - 1) {start_segment_time = end_segment_time;}
-                            }                    
-                            // update end segment time
-                            end_segment_time += sleep_time;
+                                if (segmentNumber ==  segmentCount - 1) {
+                                    start_segment_time = end_segment_time;
+                                }
+                        }                    
+                            
+                        // update end segment time for next segment
+                        end_segment_time += sleep_time;
+                        }
                     }
-                } else {
+                } // PDU correctly sent
+                else {
+                    // Failed to send PDU - retry
                     retries++;
-                    printf("PDU #%d failed to send, retrying (%d/%d)\n", segmentNumber, retries, maxRetries);
+                    printf("CFDP sendFile [WARNING]: PDU #%d failed to send, retrying (%d/%d)\n", segmentNumber, retries, maxRetries);
                 }
-            } else {
-                printf("Wait for re-alignment\n");
+                
+            } // connection established
+            else {
+                // Connection not established - wait for re-alignment
+                printf("CFDP sendFile [INFO]: Handshake not established. Wait for re-alignment\n");
                 if (*transferActive == 1) {*transferActive = 0;}
                 sleep(10);  // Adjust sleep as needed
             }
         }
 
+        // Abort transmission if max retries reached
         if (retries == maxRetries) {
-            printf("PDU #%d failed after %d retries, aborting transmission.\n", segmentNumber, maxRetries);
+            printf("CFDP sendFile [ERROR]: PDU #%d failed after %d retries, aborting transmission.\n", segmentNumber, maxRetries);
             break;
         }
-    }
+    } // loop for each PDU
 
+    // Finalize transmission
     if (segmentNumber == segmentCount) {
-        printf("All PDUs sent successfully. File transmission is over \n");
+        printf("CFDP sendFile [INFO]: All PDUs sent successfully. File transmission is over \n");
         createSentFile(fileContent, filename_memory);
     } 
     else {
-        printf("File transmission incomplete.\n");
+        printf("CFDP sendFile [ERROR]: File transmission incomplete.\n");
     }
 
     if (*transferActive == 1) {*transferActive = 0;}
@@ -1587,5 +1643,4 @@ void sendFile(const char *fileContent, const size_t fileSize) {
     // Free dynamically allocated memory
     free(headers);
     free(contents);
-    
 }
