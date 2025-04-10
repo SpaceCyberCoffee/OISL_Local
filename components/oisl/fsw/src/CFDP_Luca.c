@@ -28,7 +28,7 @@
 static const char* Sat_Name = "Sat_1_1";
 const size_t memoryCapacity = 8e9;                                   // 8 GB for payload data
 const double transferSpeedMbps = 100.0;                              // Transfer speed in Mbps
-const double TransferCapacityperSecond = (transferSpeedMbps/8)1e6;   // 100Mbps = 12.5e6 Bytes per second
+const double TransferCapacityperSecond = (transferSpeedMbps/8)*1e6;   // 100Mbps = 12.5e6 Bytes per second
 
 const int segmentSize = CF_MAX_PDU_SIZE - sizeof(CF_CFDP_PduFileDataHeader_t) - CF_CFDP_MIN_HEADER_SIZE;
 
@@ -873,9 +873,7 @@ int routing_Sat(FILE *vis_file, time_t current_time, time_t *start_visibility, d
 
             // Adjust capacities considering routing constraints
             // This function may remove candidates that can't be reached in time
-            int updated_count = adjust_candidate_capacities(candidates, candidate_count, 
-                                                  central_index, current_time,
-                                                  fileTransferDur);
+            int updated_count = adjust_candidate_capacities(candidates, candidate_count, current_time, fileTransferDur);
     
             // Update candidate_count with the new count
             candidate_count = updated_count;
@@ -1522,125 +1520,16 @@ void sendFile(const char *fileContent, const size_t fileSize) {
         return;
     }
 
-    // Handshake and memory check before starting the connection
+    // Use sendIteration to handle the actual file transmission
+    int result = sendIteration(fileContent, fileSize, headers, contents, segmentCount, segmentSize, 
+        connection_establishment, filename_memory, transferTime);
 
-    // Check receiver memory availability (not needed for OGS)
-    if (strcmp(filename_memory, "OGS") != 0) {
-        if (*connection_establishment == 1) {
-            receiveMemoryInfo(filename_memory);
-            if (receiverMemory.currentUsed > receiverMemory.totalSize || receiverMemory.totalSize - receiverMemory.currentUsed < fileSize) {
-                receiverMemory.isAvailable = false;
-            }
-        }
-
-        // Wait for receiver memory to become available if necessary
-        if (receiverMemory.isAvailable == false) {
-            printf("CFDP sendFile [INFO]: memory of the receiver not available. %zu. Will wait for the memory to free again. \n", receiverMemory.totalSize - receiverMemory.currentUsed);
-            if (!waitForReceiverMemory(fileSize, filename_memory)) {
-                printf("CFDP sendFile [ERROR]: Timeout waiting for receiver memory, aborting transfer.\n");
-                return;
-            }
-        }
-    }
-
-    // Calculate sleep time to simulate realistic transfer duration
-    double sleep_time = transferTime / segmentCount;
-    time_t start_segment_time;
-    time_t end_segment_time;
-
-    // Start transferring PDUs
-    // TODO MAKE IT A METHOD
-    for (segmentNumber = 0; segmentNumber < segmentCount; segmentNumber++) {  
-        int sent = 0;
-        int retries = 0;
-        const int maxRetries = 5;
-
-        // Attempt to send each PDU with retry mechanism
-        while (!sent && retries < maxRetries) {
-            if (*connection_establishment == 1) {
-                if (sent == 0) {
-                    // Initialize timing for this segment
-                    start_segment_time = get_current_time();
-                    end_segment_time = start_segment_time + sleep_time;
-                }
-
-                // Set transfer active flag
-                *transferActive = 1;
-
-                // Send the PDU segment
-                sent = sendPDU(&headers[segmentNumber], &contents[segmentNumber], segmentNumber, fileContent, segmentSize);
-
-                if (sent == 1) {
-                    // Simulate network delay
-                    simulateNetworkDelay();
-
-                    // Simulate receiving the PDU at the destination. TODO THIS MUST COME FROM OTHER SAT
-                    if (receivePDU(&headers[segmentNumber], &contents[segmentNumber], segmentNumber)) {
-                        // Create and send acknowledgment 
-                        CF_CFDP_PduAck_t ack = createAck(CF_CFDP_FileDirective_ACK, CF_CFDP_ConditionCode_NO_ERROR, segmentNumber);
-                        sendAck(&ack);
-
-                        // Simulate the sender receiving the ACK
-                        if (!receiveAck(segmentNumber, &ack)) {
-                            sent = 0;
-                            retries++;
-                            printf("CFDP sendFile [WARNING]: PDU #%d not acknowledged, retrying (%d/%d)\n", segmentNumber, retries, maxRetries);
-                        }
-                        else {
-                        // PDU sent and correctly received --> update memory of this sat
-                        memoryInfo->currentUsed = (memoryInfo->currentUsed < (size_t)segmentSize) ? 0 : memoryInfo->currentUsed - segmentSize;
-                        memoryInfo->isAvailable = (memoryInfo->currentUsed < memoryCapacity) ? 1 : 0;
-                        
-                        // Sleep to simulate realistic transfer time
-                        while (start_segment_time < end_segment_time) {
-                                sleep(1);
-                                // update start segment time
-                                start_segment_time = get_current_time();
-                                // If it is the last segment, do not sleep. 
-                                if (segmentNumber ==  segmentCount - 1) {
-                                    start_segment_time = end_segment_time;
-                                }
-                        }                    
-                            
-                        // update end segment time for next segment
-                        end_segment_time += sleep_time;
-                        }
-                    }
-                } // PDU correctly sent
-                else {
-                    // Failed to send PDU - retry
-                    retries++;
-                    printf("CFDP sendFile [WARNING]: PDU #%d failed to send, retrying (%d/%d)\n", segmentNumber, retries, maxRetries);
-                }
-                
-            } // connection established
-            else {
-                // Connection not established - wait for re-alignment
-                printf("CFDP sendFile [INFO]: Handshake not established. Wait for re-alignment\n");
-                if (*transferActive == 1) {*transferActive = 0;}
-                sleep(10);  // Adjust sleep as needed
-            }
-        }
-
-        // Abort transmission if max retries reached
-        if (retries == maxRetries) {
-            printf("CFDP sendFile [ERROR]: PDU #%d failed after %d retries, aborting transmission.\n", segmentNumber, maxRetries);
-            break;
-        }
-    } // loop for each PDU
-
-    // Finalize transmission
-    if (segmentNumber == segmentCount) {
-        printf("CFDP sendFile [INFO]: All PDUs sent successfully. File transmission is over \n");
+    // Process result of transmission
+    if (result == 0) {
+        printf("All PDUs sent successfully. File transmission is over \n");
         createSentFile(fileContent, filename_memory);
     } 
     else {
         printf("CFDP sendFile [ERROR]: File transmission incomplete.\n");
     }
-
-    if (*transferActive == 1) {*transferActive = 0;}
-
-    // Free dynamically allocated memory
-    free(headers);
-    free(contents);
 }
