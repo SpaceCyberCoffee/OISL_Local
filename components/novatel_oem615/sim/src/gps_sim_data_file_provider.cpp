@@ -25,7 +25,7 @@
 
 namespace Nos3
 {
-    REGISTER_DATA_PROVIDER(GPSSimDataFileProvider,"GPSFILE");
+    REGISTER_DATA_PROVIDER(GPSSimDataFileProvider,"GPSFILE");  // NOT USED!! NO FILE.
 
     extern ItcLogger::Logger *sim_logger;
 
@@ -53,17 +53,18 @@ namespace Nos3
      * Non-mutating public worker methods
      *************************************************************************/
 
-    boost::shared_ptr<SimIDataPoint> GPSSimDataFileProvider::get_data_point() const
+    boost::shared_ptr<SimIDataPoint> GPSSimDataFileProvider::get_data_point() const // Not called
     {
         //get_gps_data();
         //SimIDataPoint *dp = new GPSSimDataPoint(_data_point);
+        sim_logger->debug("GPSSimDataFileProvider::get_gps_data:\n");
         return get_gps_data(); // boost::shared_ptr<SimIDataPoint>(dp);
     }
 
     /*************************************************************************
      * Private helper methods
      *************************************************************************/
-    boost::shared_ptr<GPSSimDataPoint> GPSSimDataFileProvider::get_gps_data() const
+    boost::shared_ptr<GPSSimDataPoint> GPSSimDataFileProvider::get_gps_data() const  // Method not called
     {
 		int i;
         double j2000 = 0.0;

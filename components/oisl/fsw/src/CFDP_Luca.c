@@ -65,7 +65,7 @@ static const char* back_dest = "/mnt/extras/SSD/NOS3_RBT/nos3_luca_OISL/Backward
 static const char* back_alignment_mem_info = "/home/jstar/Desktop/github-nos3/components/oisl/fsw/src/B_sat_for_alignment.txt";
 static const char* for_alignment_mem_info = "/home/jstar/Desktop/github-nos3/components/oisl/fsw/src/F_sat_back_alignment.txt";
 
-const double    transfer_time_to_add = 280.0;   // around 3.52 GB.  Used only for Large file transfer to simulate a larger size
+const double    transfer_time_to_add = 0.0;    // around 3.52 GB.  Used only for Large file transfer to simulate a larger size
 const int       forbidden_direction = 5;         // Forbidden direction for routing to avoid ping pong: TODO: improve making it smarter
 const char *OGS_ASSUMED = "Igrim";               // For large file transfers since the OGS name is written only in the header file
 
@@ -1342,7 +1342,6 @@ void sendFile(const char *fileContent, const size_t fileSize) {
     // Log received file information
     printf("CFDP sendFile [INFO]: Received a file with size: %zu bytes\n", fileSize);
 
-    int segmentNumber = 0;
     // Allocate memory for PDU headers and contents
     CF_CFDP_PduFileDataHeader_t *headers = NULL;
     CF_CFDP_PduFileDataContent_t *contents = NULL;

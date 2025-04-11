@@ -12,7 +12,7 @@ class IF2COSMOS:
         self.subsystem = subsystem
         self.config = configData['subsystems'][self.subsystem]
         self.url = "http://localhost:2900/openc3-api/api"
-        self.headers = {'content-type': 'application/json', 'Authorization': 'cst4r!'}
+        self.headers = {'content-type': 'application/json', 'Authorization': 'cst4r'}
         self.payload = {
             "jsonrpc": "2.0",
             "method": "",

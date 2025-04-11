@@ -30,7 +30,7 @@ namespace Nos3
         ~Generic_star_trackerDataPoint(void) {};
 
         // Private mutators
-        inline void parse_data_point(void) const {if (_not_parsed) do_parsing();}
+        inline void parse_data_point(void) const {do_parsing();}
         void do_parsing(void) const;
 
         mutable Sim42DataPoint _dp;

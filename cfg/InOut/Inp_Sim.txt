@@ -4,7 +4,7 @@ NOS3                            !  Time Mode (FAST, REAL, EXTERNAL, or NOS3)
 86400.0   0.01                  !  Sim Duration, Step Size [sec]
 1.0                             !  File Output Interval [sec]
 0                               !  RNG Seed
-TRUE                            !  Graphics Front End?
+TRUE                           !  Graphics Front End?
 Inp_Cmd.txt                     !  Command Script File Name
 **************************  Reference Orbits  **************************
 3                               !  Number of Reference Orbits
@@ -62,4 +62,4 @@ TRUE  EARTH  115.4 -29.0  "Dongara"          ! Exists, World, Lng, Lat, Label
 TRUE  EARTH  -71.0 -33.0  "Santiago"         ! Exists, World, Lng, Lat, Label
 TRUE  LUNA   45.0  45.0   "Moon Base Alpha"  ! Exists, World, Lng, Lat, Label
 TRUE  EARTH  44.8  41.7   "Tiflis"           ! Exists, World, Lng, Lat, Label
-TRUE  EARTH  64.0  63.0   "Igrim"            ! Exists, World, Lng, Lat, Label
+TRUE  EARTH  64.0  63.0  "Igrim"             ! Exists, World, Lng, Lat, Label

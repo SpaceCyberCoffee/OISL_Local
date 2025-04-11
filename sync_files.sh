@@ -1,10 +1,10 @@
 #!/bin/bash
 
-SOURCE="/mnt/extras/SSD/NOS3_RBT/nos3_luca_OISL/nos3_rbt"
-DEST="/mnt/extras/SSD/NOS3_RBT/nos3_luca_OISL/42_central"
-FORWARD="/mnt/extras/SSD/NOS3_RBT/nos3_luca_OISL/forward_sat/nos3_rbt/components/oisl/fsw/src/fileInput/ireceive.txt"
-BACKWARD="/mnt/extras/SSD/NOS3_RBT/nos3_luca_OISL/Backward_Sat/components/oisl/fsw/src/fileInput/ireceive.txt"
-INTERVAL=2 # Check every 2 seconds (you can adjust this)
+SOURCE="/mnt/extras/SSD/NOS3_RBT/nos3_luca_OISL/Backward_Sat"
+DEST="/mnt/extras/SSD/NOS3_RBT/nos3_luca_OISL/42_backward"
+FORWARD="/mnt/extras/SSD/NOS3_RBT/nos3_luca_OISL/nos3_rbt/components/oisl/fsw/src/fileInput/ireceive.txt"
+BACKWARD="/mnt/extras/SSD/NOS3_RBT/nos3_luca_OISL/Sat_1_23/components/oisl/fsw/src/fileInput/ireceive.txt"
+INTERVAL=2 # Check every 10 seconds (you can adjust this)
 
 while true; do
     if [ -f "$SOURCE/F.txt" ]; then

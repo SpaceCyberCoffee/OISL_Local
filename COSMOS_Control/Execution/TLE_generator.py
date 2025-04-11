@@ -62,7 +62,7 @@ print(f"Fraction of the year: {fraction_of_year:.6f}")
 l1 = '1 25544U 98067A   25291.35416700  .00022424  00000+0  39310-3 0  9991'
 l2 = '2 25544  52.0000 180.0000 0009824 0.008873 0.003093 15.50434953465062'
 
-lines = ['HALLO', l1, l2]
+lines = ['DIOCANE', l1, l2]
 r1 = propagate_orbit(lines, 173)
 print(r1)
 

@@ -1,46 +1,4 @@
 # SCRIPT TO BE RUNNED FROM WITHIN THE VM OF THIS SAT
-"""
-SCRIPT PURPOSE:
----------------
-This script is designed to run continuously on a virtual machine (VM) representing a NOS3 satellite.
-Its main function is to monitor a specific folder (`files_received`) for incoming files, 
-and take actions depending on their type and content.
-
-FLOW OVERVIEW:
---------------
-1. **Monitoring Phase**:
-   - The script continuously checks the `files_received` directory for new files.
-   - Files are expected to contain either commands (CMD) or telemetry (TM) in JSON format.
-   - Files that are not properly formatted JSON are assumed to be large data files intended for downlink.
-
-2. **Command Handling (TYPE: "CMD")**:
-   - Extracts the subsystem name, command name, parameter(s), and their values.
-   - Sends the command via the IF2COSMOS interface.
-   - Moves the file to the command archive folder, appending a timestamp.
-
-3. **Telemetry Handling (TYPE: "TM")**:
-   - Extracts and logs telemetry data for each subsystem and parameter.
-   - Parses optional instructions:
-     - `diagnostics`: Triggers diagnostics routines comparing this sat to another.
-     - `relay`: Prepares the telemetry to be relayed via OISL to another satellite.
-     - `DL`: Initiates downlink to the ground station via OISL by issuing a command.
-   - Moves the file to the telemetry archive folder, appending a timestamp.
-
-4. **Large File Handling (Invalid JSON)**:
-   - If the JSON can't be parsed, the file is assumed to be a large binary/data file.
-   - It is copied to the appropriate input folder (`fileInput`) for downlink via OISL by NOS3 FSW.
-   - A downlink command is then issued using IF2COSMOS.
-   - The file is archived afterward.
-
-NOTES:
-------
-- The script makes use of a configuration file located at:
-  `/home/jstar/Desktop/github-nos3/COSMOS_Control/Configuration/config_files/satellite_config.json`
-- Commands are executed using the `IF2COSMOS` interface, which acts as the bridge to COSMOS.
-- Archive folders for commands and telemetry are distinct and timestamped.
-- The system assumes any improperly formatted file is to be downlinked.
-
-"""
 
 import os
 import shutil
@@ -56,19 +14,15 @@ def command_executer(subsystem_name, command_name, parameter_name, parameter_val
     subsystem.sendCommand(commandName=command_name, parameterNames=parameter_name, parameterValues=parameter_value)
 
 def check_folder(folder_path):
-
     # Check if the folder exists
     if not os.path.exists(folder_path):
-        print(f"ERROR: Folder '{folder_path}' does not exist.")
+        print(f"Folder '{folder_path}' does not exist.")
         return
 
     # Check if the folder is empty
     if not os.listdir(folder_path):
-        # print(f"Folder '{folder_path}' is empty.")
         pass
-
     else:
-
         print('File received. Next action.')
         
         for file in os.listdir(folder_path):
@@ -96,7 +50,6 @@ def check_folder(folder_path):
                         # Execute the command
                         print("Received the command {} for the subsystem {}. About to execute it", command_name, subsystem_name)
                         command_executer(subsystem_name, command_name, parameter_name, parameter_value)
-
                     # TM
                     else: 
                         archive_folder = archive_folder_tm
@@ -136,6 +89,7 @@ def check_folder(folder_path):
                             # Execute the command
                             print("Received the command {} for the subsystem {}. About to execute it".format(command_name, subsystem_name))
                             # MOVE THE FILE TO A FOLDER THAT CAN BE READ: from "/home/jstar/Desktop/github-nos3/COSMOS_Control/Execution/OISL/files_received/OGS.txt" to /home/jstar/Desktop/github-nos3/components/oisl/fsw/src/fileInput/OGS.txt"
+                            print("Hallooo", fileInput_dir + file)
                             shutil.move(received_file, fileInput_dir + file)
                             command_executer(subsystem_name, command_name, parameter_name, parameter_value)
 
@@ -154,8 +108,7 @@ def check_folder(folder_path):
                     except: # The file has been moved during the if "DL" 
                         shutil.copyfile(fileInput_dir + file, archive_path)
                     print(f"Archived '{received_file}' to '{archive_path}'")
-                
-                # EXCEPT CASE: LARGE FILE TRANSFER! FORMAT IS INVALID, A DL TO OGS IS ASSUMED!
+                    
                 except json.JSONDecodeError:
                     print(f"Error: Invalid JSON format in '{received_file}'. I WILL ASSUME IT IS LARGE FILE TRANSFER NOW.")
                     # 13.01.2025: Assume is large file transfer: send it as a OGS DL command.
@@ -170,12 +123,15 @@ def check_folder(folder_path):
                     # Execute the command
                     print("Received the command {} for the subsystem {}. About to execute it".format(command_name, subsystem_name))
                     # MOVE THE FILE TO A FOLDER THAT CAN BE READ: from "/home/jstar/Desktop/github-nos3/COSMOS_Control/Execution/OISL/files_received/OGS.txt" to /home/jstar/Desktop/github-nos3/components/oisl/fsw/src/fileInput/OGS.txt"
+                    print("Hallooo", fileInput_dir + file)
                     shutil.move(received_file, fileInput_dir + file)
                     command_executer(subsystem_name, command_name, parameter_name, parameter_value)
                     # Move the command file to the archive folder
                     archive_folder = archive_folder_tm
-                    # new_file_name = f"{file_base}_{time}.txt"
-                    new_file_name = "filetoarchive.txt"
+                    time = file_content["header"]["timestamp"]
+                    # Extract filename without extension and add timestamp
+                    file_base = received_file.split('/')[-1][:-4]  # Removing '.txt' from the file name
+                    new_file_name = f"{file_base}_{time}.txt"
                     # Full destination path in the archive folder
                     archive_path = f"{archive_folder}/{new_file_name}"
                     # Move and rename the file

@@ -29,9 +29,9 @@ void NOVATEL_OEM615_ChildTask(void)
     CFE_ES_ExitChildTask();
 }
 
-void NOVATEL_OEM615_ProcessData(void)
+void NOVATEL_OEM615_ProcessData(void) // check every ms!!!
 {   
-    // OS_printf("I am here in child process.");
+    // OS_printf("I am here in child process.\n");
     const uint32 sleeptime = NOVATEL_OEM615_CFG_READ_TIMEOUT;
     int32 status = CFE_SUCCESS;
     if (NOVATEL_OEM615_GetDeviceEnabledStatus() == NOVATEL_OEM615_DEVICE_ENABLED)
@@ -48,8 +48,8 @@ void NOVATEL_OEM615_ProcessData(void)
         {
             NOVATEL_OEM615_IncrementDeviceErrorCount();
             // This spams the NOS3 FSW window when uncommented.
-            //CFE_EVS_SendEvent(NOVATEL_OEM615_UART_READ_ERR_EID, CFE_EVS_EventType_ERROR, 
-            //    "(ChildTask) NOVATEL_OEM615_ProcessData: Device read error.  NOVATEL_OEM615_ChildProcessRequestData returned %d.", status);
+            // CFE_EVS_SendEvent(NOVATEL_OEM615_UART_READ_ERR_EID, CFE_EVS_EventType_ERROR, 
+            //    "(ChildTask) NOVATEL_OEM615_ProcessData: Device read error.  NOVATEL_OEM615_ChildProcessRequestData returned %d.\n", status);
         }
     }
     OS_TaskDelay(sleeptime);

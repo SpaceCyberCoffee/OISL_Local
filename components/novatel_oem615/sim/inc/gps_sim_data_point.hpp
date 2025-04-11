@@ -99,7 +99,7 @@ namespace Nos3
     private:
         /// @name Private mutators
         //@{
-        inline void parse_data_point(void) const {if (_not_parsed) do_parsing();}
+        inline void parse_data_point(void) const {if (_not_parsed) do_parsing();} // if you always parse data the fsw collapses, probably due to task overload. 
         void do_parsing(void) const;
         //@}
 

@@ -44,12 +44,12 @@ namespace Nos3
      * Non-mutating public worker methods
      *************************************************************************/
 
-    boost::shared_ptr<SimIDataPoint> GPSSimData42SocketProvider::get_data_point(void) const
-    {
+    boost::shared_ptr<SimIDataPoint> GPSSimData42SocketProvider::get_data_point(void) const // THIS IS THE ONE CALLED BY send_periodic_data, probably to create a data ppoint, but not to fill it! that is done by do prsing, called by the getbestxyzA method. 
+    {   
         const boost::shared_ptr<Sim42DataPoint> dp42 =
-            boost::dynamic_pointer_cast<Sim42DataPoint>(SimData42SocketProvider::get_data_point());
+            boost::dynamic_pointer_cast<Sim42DataPoint>(SimData42SocketProvider::get_data_point()); // this is the general method to get a data point
 
-        SimIDataPoint *dp = new GPSSimDataPoint(_sc, _gps, _leap_seconds, dp42);
+        SimIDataPoint *dp = new GPSSimDataPoint(_sc, _gps, _leap_seconds, dp42);  // This is just to construct the data point, the parsing is done later.
 
         if (sim_logger->is_level_enabled(ItcLogger::LOGGER_TRACE)) {
             sim_logger->trace("GPSSimDataFileProvider::get_data_point: %s", dp->to_string().c_str()); // log data in a man readable format

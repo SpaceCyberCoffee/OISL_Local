@@ -62,8 +62,8 @@ namespace Nos3
         _time_bus.reset(new NosEngine::Client::Bus(_hub, connection_string, time_bus_name));
         sim_logger->debug("GPSSimHardwareModelOEM615::GPSSimHardwareModelOEM615:  Time bus %s now active.", time_bus_name.c_str());
 
-        std::string bus_name = "usart_0";
-        int node_port = 0;
+        std::string bus_name = "usart_1";
+        int node_port = 1;
         // Use config data if it exists
         if (config.get_child_optional("simulator.hardware-model.connections")) {
             BOOST_FOREACH(const boost::property_tree::ptree::value_type &v, config.get_child("simulator.hardware-model.connections")) {
@@ -89,7 +89,7 @@ namespace Nos3
         _uart_connection->set_read_callback(
             std::bind(&GPSSimHardwareModelOEM615::uart_read_callback, this, std::placeholders::_1, std::placeholders::_2));
 
-        _get_log_data_map.insert(std::map<std::string, get_log_data_func>::value_type("BESTXYZA", &GPSSimHardwareModelOEM615::get_bestxyza_response));
+        _get_log_data_map.insert(std::map<std::string, get_log_data_func>::value_type("BESTXYZA", &GPSSimHardwareModelOEM615::get_bestxyza_response)); // What is this? this is the responsible for the creation of gps data. It connects a specific message string, like "BESTXYZA", with its corresponding function!
         _get_log_data_map.insert(std::map<std::string, get_log_data_func>::value_type("GPGGAA", &GPSSimHardwareModelOEM615::get_gpggaa_response));
         _get_log_data_map.insert(std::map<std::string, get_log_data_func>::value_type("RANGECMPA", &GPSSimHardwareModelOEM615::get_rangecmpa_response));
         _get_log_data_map.insert(std::map<std::string, get_log_data_func>::value_type("BESTXYZB", &GPSSimHardwareModelOEM615::get_bestxyzb_response));
@@ -97,7 +97,7 @@ namespace Nos3
         // TODO - The following two lines are a hack for now to set the configuration of the sim to be the same as the configuration that is saved
         // in the firmware of the STF-1 NovAtel OEM615 - Remove me and make me a configuration option and/or out of band commanding option
         _periodic_logs.insert(std::map<std::string, boost::tuple<double, double>>::value_type("RANGECMPA", boost::tuple<double, double>(_absolute_start_time + 10.0, 1.0)));
-        _periodic_logs.insert(std::map<std::string, boost::tuple<double, double>>::value_type("BESTXYZA", boost::tuple<double, double>(_absolute_start_time + 10.0, 1.0)));
+        _periodic_logs.insert(std::map<std::string, boost::tuple<double, double>>::value_type("BESTXYZA", boost::tuple<double, double>(_absolute_start_time + 10.0, 1.0))); // what is this doing then? starting from start time, every second, published the string, which triggers getbestxyza responde!!!!! THIS IS KEY.
     }
 
     GPSSimHardwareModelOEM615::~GPSSimHardwareModelOEM615(void)
@@ -128,7 +128,7 @@ namespace Nos3
     }
 */
 
-    void GPSSimHardwareModelOEM615::uart_read_callback(const uint8_t *buf, size_t len)
+    void GPSSimHardwareModelOEM615::uart_read_callback(const uint8_t *buf, size_t len) // DOES NOT CALL DATA TM, ONLY HK
     {
         std::vector<uint8_t> out_data; 
         std::uint8_t valid = NOVATEL_OEM615_SIM_SUCCESS;
@@ -248,8 +248,8 @@ namespace Nos3
         out_data[15] = 0xEF;
     }
 
-    void GPSSimHardwareModelOEM615::create_novatel_oem615_data(std::vector<uint8_t>& out_data)
-    {
+    void GPSSimHardwareModelOEM615::create_novatel_oem615_data(std::vector<uint8_t>& out_data) // NOT CALLED BY ANY METHOD. getbestxyza response is called by the log map defined at line 92
+    {   sim_logger->debug("I AM HERE I EXIST\n");
         boost::shared_ptr<GPSSimDataPoint> data_point = boost::dynamic_pointer_cast<GPSSimDataPoint>(_sim_data_provider->get_data_point());
         get_bestxyza_response(*data_point, out_data);
     }
@@ -389,10 +389,10 @@ namespace Nos3
         return valid;
     }
 
-    void GPSSimHardwareModelOEM615::send_periodic_data(NosEngine::Common::SimTime time)
-    {
+    void GPSSimHardwareModelOEM615::send_periodic_data(NosEngine::Common::SimTime time)  // RESPONSBILE FOR GPS DATA. THis is called quite often, more often than the HK from uart_read_callback, but the data point is obtained only less often: 
+    {   
         const boost::shared_ptr<GPSSimDataPoint> data_point =
-            boost::dynamic_pointer_cast<GPSSimDataPoint>(_sim_data_provider->get_data_point());
+            boost::dynamic_pointer_cast<GPSSimDataPoint>(_sim_data_provider->get_data_point()); // method defined in 42socket_provider.cpp
 
         std::vector<uint8_t> data;
 
@@ -409,6 +409,7 @@ namespace Nos3
                 if (search != _get_log_data_map.end()) {
                     get_log_data_func f = search->second;
                     (this->*f)(*data_point, data);
+                    sim_logger->debug("Writing to uart\n");
                     _uart_connection->write(&data[0], data.size());
                 }
             }
@@ -773,7 +774,7 @@ namespace Nos3
     }
 
     // Reference:  Section 3.2.17, pp. 420-422, OEM6 Family Firmware Reference Manual, OM-20000129, Rev 8, January 2015 (file om-20000129.pdf)
-    void GPSSimHardwareModelOEM615::get_bestxyza_response(const GPSSimDataPoint& data_point, std::vector<uint8_t>& out_data)
+    void GPSSimHardwareModelOEM615::get_bestxyza_response(const GPSSimDataPoint& data_point, std::vector<uint8_t>& out_data)   // THIS IS KING. WHEN THIS IS CALLED, parsing is done.
     {
         // Computations
 

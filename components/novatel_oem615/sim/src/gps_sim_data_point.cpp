@@ -51,8 +51,8 @@ namespace Nos3
      * Mutators
      *************************************************************************/
 
-    void GPSSimDataPoint::do_parsing(void) const
-    {
+    void GPSSimDataPoint::do_parsing(void) const // this method is the one responsible for the GPS data tm and is called by send_periodic_data method in HW model.
+    {    
         try {
             std::string valid_key;
             valid_key.append("SC[").append(std::to_string(_sc)).append("].AC.GPS[").append(std::to_string(_gps)).append("].");

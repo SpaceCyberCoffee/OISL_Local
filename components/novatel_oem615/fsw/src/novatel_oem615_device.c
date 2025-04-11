@@ -403,12 +403,10 @@ int32_t NOVATEL_OEM615_RequestData(uart_info_t* uart_device, NOVATEL_OEM615_Devi
     status = NOVATEL_OEM615_CommandDevice(uart_device, NOVATEL_OEM615_DEVICE_REQ_DATA_CMD, 0);
     if (status == OS_SUCCESS)
     {   
-        OS_printf("  COmmandDevice passed/! \n");
         /* check how many bytes are waiting on the uart */
         bytes_available = uart_bytes_available(uart_device);
         if (bytes_available > 0)
         {   
-            OS_printf("  bUTES AVAILABLE passed/! \n");
             uint8_t* temp_read_data = (uint8_t*)calloc(bytes_available, sizeof(uint8_t));
             /* Read all existing data on uart port */
             bytes = uart_read_port(uart_device, temp_read_data, bytes_available);
@@ -423,7 +421,6 @@ int32_t NOVATEL_OEM615_RequestData(uart_info_t* uart_device, NOVATEL_OEM615_Devi
             }
             else
             {   
-                OS_printf("  read port passed/! \n");
                 /* search uart data for token signifying start of bestxyza gps data packet */
                 #ifdef NOVATEL_OEM615_CFG_DEBUG
                     OS_printf(" ALL UART BYTES READ FROM BUFFER: \n");
@@ -439,7 +436,6 @@ int32_t NOVATEL_OEM615_RequestData(uart_info_t* uart_device, NOVATEL_OEM615_Devi
                     #ifdef NOVATEL_OEM615_CFG_DEBUG
                         OS_printf(" DATA TOKEN FOUND = %s\n", token);
                     #endif
-                    OS_printf(" DATA TOKEN FOUND  about to call parsebestXYZ= %s\n", token);
                     NOVATEL_OEM615_ParseBestXYZA(data);
                 }
                 else
@@ -475,7 +471,7 @@ int32_t NOVATEL_OEM615_RequestData(uart_info_t* uart_device, NOVATEL_OEM615_Devi
 /*
 ** Request data command for child task THIS IS THE ONE.
 */
-int32_t NOVATEL_OEM615_ChildProcessReadData(uart_info_t* uart_device, NOVATEL_OEM615_Device_Data_tlm_t* data)
+int32_t NOVATEL_OEM615_ChildProcessReadData(uart_info_t* uart_device, NOVATEL_OEM615_Device_Data_tlm_t* data) // called every ms! but the uart does not have data every ms! So useless calls --> sleep for longer or make the HW model produce data faster --> it breaks because the FSW can process data only up to 0.2 seconds.
 {
     int32_t status = OS_SUCCESS;
     int32_t bytes = 0;
@@ -490,7 +486,7 @@ int32_t NOVATEL_OEM615_ChildProcessReadData(uart_info_t* uart_device, NOVATEL_OE
         /* Read all existing data on uart port */
         bytes = uart_read_port(uart_device, temp_read_data, bytes_available);
         if (bytes != bytes_available)
-        {
+        {   OS_printf("  NOVATEL_OEM615_ChildProcessReadData: no bytes avaialvble! \n");
             #ifdef NOVATEL_OEM615_CFG_DEBUG
                 OS_printf("  NOVATEL_OEM615_ChildProcessReadData: Bytes read != to requested! \n");
             #endif
@@ -510,15 +506,15 @@ int32_t NOVATEL_OEM615_ChildProcessReadData(uart_info_t* uart_device, NOVATEL_OE
             #endif
             token = strtok_r((char*)temp_read_data, ",", &saveptr);
             if ((token != NULL) && (strncmp(token, "#BESTXYZA", 9) == 0)) 
-            {
+            {   
                 #ifdef NOVATEL_OEM615_CFG_DEBUG
                     OS_printf(" DATA TOKEN FOUND = %s\n", token);
                 #endif
-                // OS_printf("Callin parse from child");
+                // OS_printf("Callin parse from child\n");
                 NOVATEL_OEM615_ParseBestXYZA(data);
             }
             else
-            {
+            {   OS_printf("  NOVATEL_OEM615_ChildProcessReadData: No #BESTXYZA token found when reading uart port! \n");
                 #ifdef NOVATEL_OEM615_CFG_DEBUG
                     OS_printf("  NOVATEL_OEM615_ChildProcessReadData: No #BESTXYZA token found when reading uart port! \n");
                 #endif
@@ -528,7 +524,8 @@ int32_t NOVATEL_OEM615_ChildProcessReadData(uart_info_t* uart_device, NOVATEL_OE
         }
     }
     else
-    {
+    {    // TODO: ADD SLEEP??
+        // OS_printf("  NOVATEL_OEM615_ChildProcessReadData: No data available when attempting to read from uart port! \n");
         #ifdef NOVATEL_OEM615_CFG_DEBUG
             OS_printf("  NOVATEL_OEM615_ChildProcessReadData: No data available when attempting to read from uart port! \n");
         #endif

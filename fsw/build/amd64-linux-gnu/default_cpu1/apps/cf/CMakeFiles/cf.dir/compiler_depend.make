@@ -774,14 +774,6 @@ apps/cf/CMakeFiles/cf.dir/fsw/src/cf_cfdp_s.c.o: /home/jstar/Desktop/github-nos3
   /home/jstar/Desktop/github-nos3/fsw/apps/cf/fsw/inc/cf_events.h \
   /home/jstar/Desktop/github-nos3/fsw/apps/cf/fsw/src/cf_utils.h \
   /home/jstar/Desktop/github-nos3/fsw/apps/cf/fsw/src/cf_assert.h \
-  /usr/include/unistd.h \
-  /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
-  /usr/include/x86_64-linux-gnu/bits/environments.h \
-  /usr/include/x86_64-linux-gnu/bits/confname.h \
-  /usr/include/x86_64-linux-gnu/bits/getopt_posix.h \
-  /usr/include/x86_64-linux-gnu/bits/getopt_core.h \
-  /usr/include/x86_64-linux-gnu/bits/unistd_ext.h \
-  /usr/include/linux/close_range.h \
   /home/jstar/Desktop/github-nos3/fsw/apps/cf/fsw/src/cf_cfdp_s.h \
   /home/jstar/Desktop/github-nos3/fsw/apps/cf/fsw/src/cf_cfdp_dispatch.h
 
@@ -1962,14 +1954,6 @@ apps/cf/CMakeFiles/cf.dir/fsw/src/cf_utils.c.o: /home/jstar/Desktop/github-nos3/
 
 /home/jstar/Desktop/github-nos3/fsw/apps/cf/fsw/src/cf_cfdp_sbintf.c:
 
-/usr/include/x86_64-linux-gnu/bits/getopt_core.h:
-
-/usr/include/x86_64-linux-gnu/bits/getopt_posix.h:
-
-/usr/include/x86_64-linux-gnu/bits/confname.h:
-
-/usr/include/x86_64-linux-gnu/bits/posix_opt.h:
-
 /home/jstar/Desktop/github-nos3/fsw/apps/cf/fsw/src/cf_cfdp_s.c:
 
 /home/jstar/Desktop/github-nos3/fsw/apps/cf/fsw/src/cf_cfdp_r.c:
@@ -1977,8 +1961,6 @@ apps/cf/CMakeFiles/cf.dir/fsw/src/cf_utils.c.o: /home/jstar/Desktop/github-nos3/
 /home/jstar/Desktop/github-nos3/fsw/apps/cf/fsw/src/cf_cfdp_dispatch.c:
 
 /home/jstar/Desktop/github-nos3/fsw/apps/cf/fsw/src/cf_cfdp_dispatch.h:
-
-/usr/include/x86_64-linux-gnu/bits/unistd_ext.h:
 
 /home/jstar/Desktop/github-nos3/fsw/apps/cf/fsw/src/cf_cfdp_s.h:
 
@@ -2152,8 +2134,6 @@ apps/cf/CMakeFiles/cf.dir/fsw/src/cf_utils.c.o: /home/jstar/Desktop/github-nos3/
 
 /home/jstar/Desktop/github-nos3/fsw/osal/src/os/inc/osapi-task.h:
 
-/usr/include/unistd.h:
-
 /usr/include/x86_64-linux-gnu/sys/select.h:
 
 /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h:
@@ -2167,8 +2147,6 @@ apps/cf/CMakeFiles/cf.dir/fsw/src/cf_utils.c.o: /home/jstar/Desktop/github-nos3/
 /home/jstar/Desktop/github-nos3/fsw/osal/src/os/inc/osapi-version.h:
 
 osal/inc/osconfig.h:
-
-/usr/include/linux/close_range.h:
 
 /home/jstar/Desktop/github-nos3/fsw/osal/src/os/inc/osapi-common.h:
 
@@ -2219,8 +2197,6 @@ osal/inc/osconfig.h:
 /home/jstar/Desktop/github-nos3/fsw/osal/src/os/inc/osapi-queue.h:
 
 /home/jstar/Desktop/github-nos3/fsw/osal/src/os/inc/osapi-shell.h:
-
-/usr/include/x86_64-linux-gnu/bits/environments.h:
 
 /home/jstar/Desktop/github-nos3/fsw/osal/src/os/inc/osapi-clock.h:
 
