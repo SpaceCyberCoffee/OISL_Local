@@ -1,5 +1,5 @@
 apps/syn/CMakeFiles/synopsis.dir/src/sqlite3.c.o: \
- /home/jstar/Desktop/github-nos3/components/syn/synopsis/src/sqlite3.c \
+ /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/syn/synopsis/src/sqlite3.c \
  /usr/include/stdc-predef.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdarg.h /usr/include/stdio.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \

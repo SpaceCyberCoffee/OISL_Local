@@ -1,5 +1,5 @@
 apps/syn/CMakeFiles/synopsis.dir/src/LinuxClock.cpp.o: \
- /home/jstar/Desktop/github-nos3/components/syn/synopsis/src/LinuxClock.cpp \
+ /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/syn/synopsis/src/LinuxClock.cpp \
  /usr/include/stdc-predef.h /usr/include/c++/11/ctime \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -29,7 +29,7 @@ apps/syn/CMakeFiles/synopsis.dir/src/LinuxClock.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h \
  /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
- /home/jstar/Desktop/github-nos3/components/syn/synopsis/include/LinuxClock.hpp \
- /home/jstar/Desktop/github-nos3/components/syn/synopsis/include/Clock.hpp \
- /home/jstar/Desktop/github-nos3/components/syn/synopsis/include/synopsis_types.hpp \
+ /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/syn/synopsis/include/LinuxClock.hpp \
+ /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/syn/synopsis/include/Clock.hpp \
+ /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/syn/synopsis/include/synopsis_types.hpp \
  /usr/include/c++/11/cstddef

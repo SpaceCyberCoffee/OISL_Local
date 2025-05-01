@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/jstar/Desktop/github-nos3/fsw/cfe
+CMAKE_SOURCE_DIR = /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/cfe
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1
+CMAKE_BINARY_DIR = /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1
 
 # Include any dependencies generated for this target.
 include apps/ci_lab/CMakeFiles/ci_lab.dir/depend.make
@@ -70,18 +70,18 @@ include apps/ci_lab/CMakeFiles/ci_lab.dir/progress.make
 include apps/ci_lab/CMakeFiles/ci_lab.dir/flags.make
 
 apps/ci_lab/CMakeFiles/ci_lab.dir/fsw/src/ci_lab_app.c.o: apps/ci_lab/CMakeFiles/ci_lab.dir/flags.make
-apps/ci_lab/CMakeFiles/ci_lab.dir/fsw/src/ci_lab_app.c.o: /home/jstar/Desktop/github-nos3/fsw/apps/ci_lab/fsw/src/ci_lab_app.c
+apps/ci_lab/CMakeFiles/ci_lab.dir/fsw/src/ci_lab_app.c.o: /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/apps/ci_lab/fsw/src/ci_lab_app.c
 apps/ci_lab/CMakeFiles/ci_lab.dir/fsw/src/ci_lab_app.c.o: apps/ci_lab/CMakeFiles/ci_lab.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object apps/ci_lab/CMakeFiles/ci_lab.dir/fsw/src/ci_lab_app.c.o"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/apps/ci_lab && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT apps/ci_lab/CMakeFiles/ci_lab.dir/fsw/src/ci_lab_app.c.o -MF CMakeFiles/ci_lab.dir/fsw/src/ci_lab_app.c.o.d -o CMakeFiles/ci_lab.dir/fsw/src/ci_lab_app.c.o -c /home/jstar/Desktop/github-nos3/fsw/apps/ci_lab/fsw/src/ci_lab_app.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object apps/ci_lab/CMakeFiles/ci_lab.dir/fsw/src/ci_lab_app.c.o"
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/apps/ci_lab && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT apps/ci_lab/CMakeFiles/ci_lab.dir/fsw/src/ci_lab_app.c.o -MF CMakeFiles/ci_lab.dir/fsw/src/ci_lab_app.c.o.d -o CMakeFiles/ci_lab.dir/fsw/src/ci_lab_app.c.o -c /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/apps/ci_lab/fsw/src/ci_lab_app.c
 
 apps/ci_lab/CMakeFiles/ci_lab.dir/fsw/src/ci_lab_app.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ci_lab.dir/fsw/src/ci_lab_app.c.i"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/apps/ci_lab && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jstar/Desktop/github-nos3/fsw/apps/ci_lab/fsw/src/ci_lab_app.c > CMakeFiles/ci_lab.dir/fsw/src/ci_lab_app.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/apps/ci_lab && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/apps/ci_lab/fsw/src/ci_lab_app.c > CMakeFiles/ci_lab.dir/fsw/src/ci_lab_app.c.i
 
 apps/ci_lab/CMakeFiles/ci_lab.dir/fsw/src/ci_lab_app.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ci_lab.dir/fsw/src/ci_lab_app.c.s"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/apps/ci_lab && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jstar/Desktop/github-nos3/fsw/apps/ci_lab/fsw/src/ci_lab_app.c -o CMakeFiles/ci_lab.dir/fsw/src/ci_lab_app.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/apps/ci_lab && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/apps/ci_lab/fsw/src/ci_lab_app.c -o CMakeFiles/ci_lab.dir/fsw/src/ci_lab_app.c.s
 
 # Object files for target ci_lab
 ci_lab_OBJECTS = \
@@ -93,18 +93,18 @@ ci_lab_EXTERNAL_OBJECTS =
 apps/ci_lab/ci_lab.so: apps/ci_lab/CMakeFiles/ci_lab.dir/fsw/src/ci_lab_app.c.o
 apps/ci_lab/ci_lab.so: apps/ci_lab/CMakeFiles/ci_lab.dir/build.make
 apps/ci_lab/ci_lab.so: apps/ci_lab/CMakeFiles/ci_lab.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C shared module ci_lab.so"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/apps/ci_lab && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ci_lab.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C shared module ci_lab.so"
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/apps/ci_lab && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ci_lab.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 apps/ci_lab/CMakeFiles/ci_lab.dir/build: apps/ci_lab/ci_lab.so
 .PHONY : apps/ci_lab/CMakeFiles/ci_lab.dir/build
 
 apps/ci_lab/CMakeFiles/ci_lab.dir/clean:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/apps/ci_lab && $(CMAKE_COMMAND) -P CMakeFiles/ci_lab.dir/cmake_clean.cmake
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/apps/ci_lab && $(CMAKE_COMMAND) -P CMakeFiles/ci_lab.dir/cmake_clean.cmake
 .PHONY : apps/ci_lab/CMakeFiles/ci_lab.dir/clean
 
 apps/ci_lab/CMakeFiles/ci_lab.dir/depend:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/jstar/Desktop/github-nos3/fsw/cfe /home/jstar/Desktop/github-nos3/fsw/apps/ci_lab /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/apps/ci_lab /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/apps/ci_lab/CMakeFiles/ci_lab.dir/DependInfo.cmake --color=$(COLOR)
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/cfe /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/apps/ci_lab /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/apps/ci_lab /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/apps/ci_lab/CMakeFiles/ci_lab.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : apps/ci_lab/CMakeFiles/ci_lab.dir/depend
 

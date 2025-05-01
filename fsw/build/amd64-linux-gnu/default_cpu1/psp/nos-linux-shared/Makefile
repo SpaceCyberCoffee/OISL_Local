@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/jstar/Desktop/github-nos3/fsw/cfe
+CMAKE_SOURCE_DIR = /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/cfe
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1
+CMAKE_BINARY_DIR = /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -142,14 +142,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(CMAKE_COMMAND) -E cmake_progress_start /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/psp/nos-linux-shared//CMakeFiles/progress.marks
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 psp/nos-linux-shared/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles 0
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(CMAKE_COMMAND) -E cmake_progress_start /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/psp/nos-linux-shared//CMakeFiles/progress.marks
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 psp/nos-linux-shared/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 psp/nos-linux-shared/clean
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 psp/nos-linux-shared/clean
 .PHONY : clean
 
 # The main clean target
@@ -158,22 +158,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 psp/nos-linux-shared/preinstall
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 psp/nos-linux-shared/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 psp/nos-linux-shared/preinstall
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 psp/nos-linux-shared/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 psp/nos-linux-shared/CMakeFiles/psp-nos-linux-shared.dir/rule:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 psp/nos-linux-shared/CMakeFiles/psp-nos-linux-shared.dir/rule
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 psp/nos-linux-shared/CMakeFiles/psp-nos-linux-shared.dir/rule
 .PHONY : psp/nos-linux-shared/CMakeFiles/psp-nos-linux-shared.dir/rule
 
 # Convenience name for target.
@@ -182,7 +182,7 @@ psp-nos-linux-shared: psp/nos-linux-shared/CMakeFiles/psp-nos-linux-shared.dir/r
 
 # fast build rule for target.
 psp-nos-linux-shared/fast:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f psp/nos-linux-shared/CMakeFiles/psp-nos-linux-shared.dir/build.make psp/nos-linux-shared/CMakeFiles/psp-nos-linux-shared.dir/build
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f psp/nos-linux-shared/CMakeFiles/psp-nos-linux-shared.dir/build.make psp/nos-linux-shared/CMakeFiles/psp-nos-linux-shared.dir/build
 .PHONY : psp-nos-linux-shared/fast
 
 src/cfe_psp_error.o: src/cfe_psp_error.c.o
@@ -190,7 +190,7 @@ src/cfe_psp_error.o: src/cfe_psp_error.c.o
 
 # target to build an object file
 src/cfe_psp_error.c.o:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f psp/nos-linux-shared/CMakeFiles/psp-nos-linux-shared.dir/build.make psp/nos-linux-shared/CMakeFiles/psp-nos-linux-shared.dir/src/cfe_psp_error.c.o
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f psp/nos-linux-shared/CMakeFiles/psp-nos-linux-shared.dir/build.make psp/nos-linux-shared/CMakeFiles/psp-nos-linux-shared.dir/src/cfe_psp_error.c.o
 .PHONY : src/cfe_psp_error.c.o
 
 src/cfe_psp_error.i: src/cfe_psp_error.c.i
@@ -198,7 +198,7 @@ src/cfe_psp_error.i: src/cfe_psp_error.c.i
 
 # target to preprocess a source file
 src/cfe_psp_error.c.i:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f psp/nos-linux-shared/CMakeFiles/psp-nos-linux-shared.dir/build.make psp/nos-linux-shared/CMakeFiles/psp-nos-linux-shared.dir/src/cfe_psp_error.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f psp/nos-linux-shared/CMakeFiles/psp-nos-linux-shared.dir/build.make psp/nos-linux-shared/CMakeFiles/psp-nos-linux-shared.dir/src/cfe_psp_error.c.i
 .PHONY : src/cfe_psp_error.c.i
 
 src/cfe_psp_error.s: src/cfe_psp_error.c.s
@@ -206,7 +206,7 @@ src/cfe_psp_error.s: src/cfe_psp_error.c.s
 
 # target to generate assembly for a file
 src/cfe_psp_error.c.s:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f psp/nos-linux-shared/CMakeFiles/psp-nos-linux-shared.dir/build.make psp/nos-linux-shared/CMakeFiles/psp-nos-linux-shared.dir/src/cfe_psp_error.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f psp/nos-linux-shared/CMakeFiles/psp-nos-linux-shared.dir/build.make psp/nos-linux-shared/CMakeFiles/psp-nos-linux-shared.dir/src/cfe_psp_error.c.s
 .PHONY : src/cfe_psp_error.c.s
 
 src/cfe_psp_exceptionstorage.o: src/cfe_psp_exceptionstorage.c.o
@@ -214,7 +214,7 @@ src/cfe_psp_exceptionstorage.o: src/cfe_psp_exceptionstorage.c.o
 
 # target to build an object file
 src/cfe_psp_exceptionstorage.c.o:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f psp/nos-linux-shared/CMakeFiles/psp-nos-linux-shared.dir/build.make psp/nos-linux-shared/CMakeFiles/psp-nos-linux-shared.dir/src/cfe_psp_exceptionstorage.c.o
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f psp/nos-linux-shared/CMakeFiles/psp-nos-linux-shared.dir/build.make psp/nos-linux-shared/CMakeFiles/psp-nos-linux-shared.dir/src/cfe_psp_exceptionstorage.c.o
 .PHONY : src/cfe_psp_exceptionstorage.c.o
 
 src/cfe_psp_exceptionstorage.i: src/cfe_psp_exceptionstorage.c.i
@@ -222,7 +222,7 @@ src/cfe_psp_exceptionstorage.i: src/cfe_psp_exceptionstorage.c.i
 
 # target to preprocess a source file
 src/cfe_psp_exceptionstorage.c.i:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f psp/nos-linux-shared/CMakeFiles/psp-nos-linux-shared.dir/build.make psp/nos-linux-shared/CMakeFiles/psp-nos-linux-shared.dir/src/cfe_psp_exceptionstorage.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f psp/nos-linux-shared/CMakeFiles/psp-nos-linux-shared.dir/build.make psp/nos-linux-shared/CMakeFiles/psp-nos-linux-shared.dir/src/cfe_psp_exceptionstorage.c.i
 .PHONY : src/cfe_psp_exceptionstorage.c.i
 
 src/cfe_psp_exceptionstorage.s: src/cfe_psp_exceptionstorage.c.s
@@ -230,7 +230,7 @@ src/cfe_psp_exceptionstorage.s: src/cfe_psp_exceptionstorage.c.s
 
 # target to generate assembly for a file
 src/cfe_psp_exceptionstorage.c.s:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f psp/nos-linux-shared/CMakeFiles/psp-nos-linux-shared.dir/build.make psp/nos-linux-shared/CMakeFiles/psp-nos-linux-shared.dir/src/cfe_psp_exceptionstorage.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f psp/nos-linux-shared/CMakeFiles/psp-nos-linux-shared.dir/build.make psp/nos-linux-shared/CMakeFiles/psp-nos-linux-shared.dir/src/cfe_psp_exceptionstorage.c.s
 .PHONY : src/cfe_psp_exceptionstorage.c.s
 
 src/cfe_psp_memrange.o: src/cfe_psp_memrange.c.o
@@ -238,7 +238,7 @@ src/cfe_psp_memrange.o: src/cfe_psp_memrange.c.o
 
 # target to build an object file
 src/cfe_psp_memrange.c.o:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f psp/nos-linux-shared/CMakeFiles/psp-nos-linux-shared.dir/build.make psp/nos-linux-shared/CMakeFiles/psp-nos-linux-shared.dir/src/cfe_psp_memrange.c.o
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f psp/nos-linux-shared/CMakeFiles/psp-nos-linux-shared.dir/build.make psp/nos-linux-shared/CMakeFiles/psp-nos-linux-shared.dir/src/cfe_psp_memrange.c.o
 .PHONY : src/cfe_psp_memrange.c.o
 
 src/cfe_psp_memrange.i: src/cfe_psp_memrange.c.i
@@ -246,7 +246,7 @@ src/cfe_psp_memrange.i: src/cfe_psp_memrange.c.i
 
 # target to preprocess a source file
 src/cfe_psp_memrange.c.i:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f psp/nos-linux-shared/CMakeFiles/psp-nos-linux-shared.dir/build.make psp/nos-linux-shared/CMakeFiles/psp-nos-linux-shared.dir/src/cfe_psp_memrange.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f psp/nos-linux-shared/CMakeFiles/psp-nos-linux-shared.dir/build.make psp/nos-linux-shared/CMakeFiles/psp-nos-linux-shared.dir/src/cfe_psp_memrange.c.i
 .PHONY : src/cfe_psp_memrange.c.i
 
 src/cfe_psp_memrange.s: src/cfe_psp_memrange.c.s
@@ -254,7 +254,7 @@ src/cfe_psp_memrange.s: src/cfe_psp_memrange.c.s
 
 # target to generate assembly for a file
 src/cfe_psp_memrange.c.s:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f psp/nos-linux-shared/CMakeFiles/psp-nos-linux-shared.dir/build.make psp/nos-linux-shared/CMakeFiles/psp-nos-linux-shared.dir/src/cfe_psp_memrange.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f psp/nos-linux-shared/CMakeFiles/psp-nos-linux-shared.dir/build.make psp/nos-linux-shared/CMakeFiles/psp-nos-linux-shared.dir/src/cfe_psp_memrange.c.s
 .PHONY : src/cfe_psp_memrange.c.s
 
 src/cfe_psp_memutils.o: src/cfe_psp_memutils.c.o
@@ -262,7 +262,7 @@ src/cfe_psp_memutils.o: src/cfe_psp_memutils.c.o
 
 # target to build an object file
 src/cfe_psp_memutils.c.o:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f psp/nos-linux-shared/CMakeFiles/psp-nos-linux-shared.dir/build.make psp/nos-linux-shared/CMakeFiles/psp-nos-linux-shared.dir/src/cfe_psp_memutils.c.o
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f psp/nos-linux-shared/CMakeFiles/psp-nos-linux-shared.dir/build.make psp/nos-linux-shared/CMakeFiles/psp-nos-linux-shared.dir/src/cfe_psp_memutils.c.o
 .PHONY : src/cfe_psp_memutils.c.o
 
 src/cfe_psp_memutils.i: src/cfe_psp_memutils.c.i
@@ -270,7 +270,7 @@ src/cfe_psp_memutils.i: src/cfe_psp_memutils.c.i
 
 # target to preprocess a source file
 src/cfe_psp_memutils.c.i:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f psp/nos-linux-shared/CMakeFiles/psp-nos-linux-shared.dir/build.make psp/nos-linux-shared/CMakeFiles/psp-nos-linux-shared.dir/src/cfe_psp_memutils.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f psp/nos-linux-shared/CMakeFiles/psp-nos-linux-shared.dir/build.make psp/nos-linux-shared/CMakeFiles/psp-nos-linux-shared.dir/src/cfe_psp_memutils.c.i
 .PHONY : src/cfe_psp_memutils.c.i
 
 src/cfe_psp_memutils.s: src/cfe_psp_memutils.c.s
@@ -278,7 +278,7 @@ src/cfe_psp_memutils.s: src/cfe_psp_memutils.c.s
 
 # target to generate assembly for a file
 src/cfe_psp_memutils.c.s:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f psp/nos-linux-shared/CMakeFiles/psp-nos-linux-shared.dir/build.make psp/nos-linux-shared/CMakeFiles/psp-nos-linux-shared.dir/src/cfe_psp_memutils.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f psp/nos-linux-shared/CMakeFiles/psp-nos-linux-shared.dir/build.make psp/nos-linux-shared/CMakeFiles/psp-nos-linux-shared.dir/src/cfe_psp_memutils.c.s
 .PHONY : src/cfe_psp_memutils.c.s
 
 src/cfe_psp_module.o: src/cfe_psp_module.c.o
@@ -286,7 +286,7 @@ src/cfe_psp_module.o: src/cfe_psp_module.c.o
 
 # target to build an object file
 src/cfe_psp_module.c.o:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f psp/nos-linux-shared/CMakeFiles/psp-nos-linux-shared.dir/build.make psp/nos-linux-shared/CMakeFiles/psp-nos-linux-shared.dir/src/cfe_psp_module.c.o
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f psp/nos-linux-shared/CMakeFiles/psp-nos-linux-shared.dir/build.make psp/nos-linux-shared/CMakeFiles/psp-nos-linux-shared.dir/src/cfe_psp_module.c.o
 .PHONY : src/cfe_psp_module.c.o
 
 src/cfe_psp_module.i: src/cfe_psp_module.c.i
@@ -294,7 +294,7 @@ src/cfe_psp_module.i: src/cfe_psp_module.c.i
 
 # target to preprocess a source file
 src/cfe_psp_module.c.i:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f psp/nos-linux-shared/CMakeFiles/psp-nos-linux-shared.dir/build.make psp/nos-linux-shared/CMakeFiles/psp-nos-linux-shared.dir/src/cfe_psp_module.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f psp/nos-linux-shared/CMakeFiles/psp-nos-linux-shared.dir/build.make psp/nos-linux-shared/CMakeFiles/psp-nos-linux-shared.dir/src/cfe_psp_module.c.i
 .PHONY : src/cfe_psp_module.c.i
 
 src/cfe_psp_module.s: src/cfe_psp_module.c.s
@@ -302,7 +302,7 @@ src/cfe_psp_module.s: src/cfe_psp_module.c.s
 
 # target to generate assembly for a file
 src/cfe_psp_module.c.s:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f psp/nos-linux-shared/CMakeFiles/psp-nos-linux-shared.dir/build.make psp/nos-linux-shared/CMakeFiles/psp-nos-linux-shared.dir/src/cfe_psp_module.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f psp/nos-linux-shared/CMakeFiles/psp-nos-linux-shared.dir/build.make psp/nos-linux-shared/CMakeFiles/psp-nos-linux-shared.dir/src/cfe_psp_module.c.s
 .PHONY : src/cfe_psp_module.c.s
 
 src/cfe_psp_version.o: src/cfe_psp_version.c.o
@@ -310,7 +310,7 @@ src/cfe_psp_version.o: src/cfe_psp_version.c.o
 
 # target to build an object file
 src/cfe_psp_version.c.o:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f psp/nos-linux-shared/CMakeFiles/psp-nos-linux-shared.dir/build.make psp/nos-linux-shared/CMakeFiles/psp-nos-linux-shared.dir/src/cfe_psp_version.c.o
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f psp/nos-linux-shared/CMakeFiles/psp-nos-linux-shared.dir/build.make psp/nos-linux-shared/CMakeFiles/psp-nos-linux-shared.dir/src/cfe_psp_version.c.o
 .PHONY : src/cfe_psp_version.c.o
 
 src/cfe_psp_version.i: src/cfe_psp_version.c.i
@@ -318,7 +318,7 @@ src/cfe_psp_version.i: src/cfe_psp_version.c.i
 
 # target to preprocess a source file
 src/cfe_psp_version.c.i:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f psp/nos-linux-shared/CMakeFiles/psp-nos-linux-shared.dir/build.make psp/nos-linux-shared/CMakeFiles/psp-nos-linux-shared.dir/src/cfe_psp_version.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f psp/nos-linux-shared/CMakeFiles/psp-nos-linux-shared.dir/build.make psp/nos-linux-shared/CMakeFiles/psp-nos-linux-shared.dir/src/cfe_psp_version.c.i
 .PHONY : src/cfe_psp_version.c.i
 
 src/cfe_psp_version.s: src/cfe_psp_version.c.s
@@ -326,7 +326,7 @@ src/cfe_psp_version.s: src/cfe_psp_version.c.s
 
 # target to generate assembly for a file
 src/cfe_psp_version.c.s:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f psp/nos-linux-shared/CMakeFiles/psp-nos-linux-shared.dir/build.make psp/nos-linux-shared/CMakeFiles/psp-nos-linux-shared.dir/src/cfe_psp_version.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f psp/nos-linux-shared/CMakeFiles/psp-nos-linux-shared.dir/build.make psp/nos-linux-shared/CMakeFiles/psp-nos-linux-shared.dir/src/cfe_psp_version.c.s
 .PHONY : src/cfe_psp_version.c.s
 
 # Help Target
@@ -372,6 +372,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

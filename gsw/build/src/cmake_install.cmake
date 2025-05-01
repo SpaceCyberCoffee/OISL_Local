@@ -1,8 +1,8 @@
-# Install script for directory: /home/jstar/Desktop/github-nos3/components/cryptolib/src
+# Install script for directory: /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/cryptolib/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/jstar/Desktop/github-nos3/components/cryptolib/install")
+  set(CMAKE_INSTALL_PREFIX "/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/cryptolib/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -43,29 +43,29 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  if(EXISTS "$ENV{DESTDIR}/home/jstar/Desktop/github-nos3/components/cryptolib/install/lib/libcrypto.so" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}/home/jstar/Desktop/github-nos3/components/cryptolib/install/lib/libcrypto.so")
+  if(EXISTS "$ENV{DESTDIR}/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/cryptolib/install/lib/libcrypto.so" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/cryptolib/install/lib/libcrypto.so")
     file(RPATH_CHECK
-         FILE "$ENV{DESTDIR}/home/jstar/Desktop/github-nos3/components/cryptolib/install/lib/libcrypto.so"
+         FILE "$ENV{DESTDIR}/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/cryptolib/install/lib/libcrypto.so"
          RPATH "$ORIGIN/../lib")
   endif()
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/jstar/Desktop/github-nos3/components/cryptolib/install/lib/libcrypto.so")
+   "/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/cryptolib/install/lib/libcrypto.so")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/home/jstar/Desktop/github-nos3/components/cryptolib/install/lib" TYPE SHARED_LIBRARY FILES "/home/jstar/Desktop/github-nos3/gsw/build/src/libcrypto.so")
-  if(EXISTS "$ENV{DESTDIR}/home/jstar/Desktop/github-nos3/components/cryptolib/install/lib/libcrypto.so" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}/home/jstar/Desktop/github-nos3/components/cryptolib/install/lib/libcrypto.so")
+  file(INSTALL DESTINATION "/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/cryptolib/install/lib" TYPE SHARED_LIBRARY FILES "/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/gsw/build/src/libcrypto.so")
+  if(EXISTS "$ENV{DESTDIR}/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/cryptolib/install/lib/libcrypto.so" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/cryptolib/install/lib/libcrypto.so")
     file(RPATH_CHANGE
-         FILE "$ENV{DESTDIR}/home/jstar/Desktop/github-nos3/components/cryptolib/install/lib/libcrypto.so"
+         FILE "$ENV{DESTDIR}/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/cryptolib/install/lib/libcrypto.so"
          OLD_RPATH "::::::::::::::"
          NEW_RPATH "$ORIGIN/../lib")
     if(CMAKE_INSTALL_DO_STRIP)
-      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}/home/jstar/Desktop/github-nos3/components/cryptolib/install/lib/libcrypto.so")
+      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/cryptolib/install/lib/libcrypto.so")
     endif()
   endif()
 endif()
@@ -75,25 +75,25 @@ endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/jstar/Desktop/github-nos3/components/cryptolib/install/include/crypto.h;/home/jstar/Desktop/github-nos3/components/cryptolib/install/include/crypto_config.h;/home/jstar/Desktop/github-nos3/components/cryptolib/install/include/crypto_config_structs.h;/home/jstar/Desktop/github-nos3/components/cryptolib/install/include/crypto_error.h;/home/jstar/Desktop/github-nos3/components/cryptolib/install/include/crypto_events.h;/home/jstar/Desktop/github-nos3/components/cryptolib/install/include/crypto_print.h;/home/jstar/Desktop/github-nos3/components/cryptolib/install/include/crypto_structs.h;/home/jstar/Desktop/github-nos3/components/cryptolib/install/include/cryptography_interface.h;/home/jstar/Desktop/github-nos3/components/cryptolib/install/include/key_interface.h;/home/jstar/Desktop/github-nos3/components/cryptolib/install/include/mc_interface.h;/home/jstar/Desktop/github-nos3/components/cryptolib/install/include/sa_interface.h")
+   "/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/cryptolib/install/include/crypto.h;/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/cryptolib/install/include/crypto_config.h;/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/cryptolib/install/include/crypto_config_structs.h;/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/cryptolib/install/include/crypto_error.h;/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/cryptolib/install/include/crypto_events.h;/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/cryptolib/install/include/crypto_print.h;/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/cryptolib/install/include/crypto_structs.h;/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/cryptolib/install/include/cryptography_interface.h;/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/cryptolib/install/include/key_interface.h;/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/cryptolib/install/include/mc_interface.h;/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/cryptolib/install/include/sa_interface.h")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/home/jstar/Desktop/github-nos3/components/cryptolib/install/include" TYPE FILE FILES
-    "/home/jstar/Desktop/github-nos3/components/cryptolib/src/../include/crypto.h"
-    "/home/jstar/Desktop/github-nos3/components/cryptolib/src/../include/crypto_config.h"
-    "/home/jstar/Desktop/github-nos3/components/cryptolib/src/../include/crypto_config_structs.h"
-    "/home/jstar/Desktop/github-nos3/components/cryptolib/src/../include/crypto_error.h"
-    "/home/jstar/Desktop/github-nos3/components/cryptolib/src/../include/crypto_events.h"
-    "/home/jstar/Desktop/github-nos3/components/cryptolib/src/../include/crypto_print.h"
-    "/home/jstar/Desktop/github-nos3/components/cryptolib/src/../include/crypto_structs.h"
-    "/home/jstar/Desktop/github-nos3/components/cryptolib/src/../include/cryptography_interface.h"
-    "/home/jstar/Desktop/github-nos3/components/cryptolib/src/../include/key_interface.h"
-    "/home/jstar/Desktop/github-nos3/components/cryptolib/src/../include/mc_interface.h"
-    "/home/jstar/Desktop/github-nos3/components/cryptolib/src/../include/sa_interface.h"
+  file(INSTALL DESTINATION "/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/cryptolib/install/include" TYPE FILE FILES
+    "/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/cryptolib/src/../include/crypto.h"
+    "/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/cryptolib/src/../include/crypto_config.h"
+    "/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/cryptolib/src/../include/crypto_config_structs.h"
+    "/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/cryptolib/src/../include/crypto_error.h"
+    "/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/cryptolib/src/../include/crypto_events.h"
+    "/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/cryptolib/src/../include/crypto_print.h"
+    "/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/cryptolib/src/../include/crypto_structs.h"
+    "/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/cryptolib/src/../include/cryptography_interface.h"
+    "/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/cryptolib/src/../include/key_interface.h"
+    "/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/cryptolib/src/../include/mc_interface.h"
+    "/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/cryptolib/src/../include/sa_interface.h"
     )
 endif()
 

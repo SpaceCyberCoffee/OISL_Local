@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/jstar/Desktop/github-nos3/fsw/cfe
+CMAKE_SOURCE_DIR = /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/cfe
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1
+CMAKE_BINARY_DIR = /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -142,14 +142,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(CMAKE_COMMAND) -E cmake_progress_start /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/apps/cfe_assert//CMakeFiles/progress.marks
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/cfe_assert/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles 0
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(CMAKE_COMMAND) -E cmake_progress_start /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/apps/cfe_assert//CMakeFiles/progress.marks
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/cfe_assert/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/cfe_assert/clean
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/cfe_assert/clean
 .PHONY : clean
 
 # The main clean target
@@ -158,22 +158,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/cfe_assert/preinstall
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/cfe_assert/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/cfe_assert/preinstall
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/cfe_assert/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 apps/cfe_assert/CMakeFiles/cfe_assert.dir/rule:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/cfe_assert/CMakeFiles/cfe_assert.dir/rule
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/cfe_assert/CMakeFiles/cfe_assert.dir/rule
 .PHONY : apps/cfe_assert/CMakeFiles/cfe_assert.dir/rule
 
 # Convenience name for target.
@@ -182,7 +182,7 @@ cfe_assert: apps/cfe_assert/CMakeFiles/cfe_assert.dir/rule
 
 # fast build rule for target.
 cfe_assert/fast:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/cfe_assert/CMakeFiles/cfe_assert.dir/build.make apps/cfe_assert/CMakeFiles/cfe_assert.dir/build
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/cfe_assert/CMakeFiles/cfe_assert.dir/build.make apps/cfe_assert/CMakeFiles/cfe_assert.dir/build
 .PHONY : cfe_assert/fast
 
 src/cfe_assert_init.o: src/cfe_assert_init.c.o
@@ -190,7 +190,7 @@ src/cfe_assert_init.o: src/cfe_assert_init.c.o
 
 # target to build an object file
 src/cfe_assert_init.c.o:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/cfe_assert/CMakeFiles/cfe_assert.dir/build.make apps/cfe_assert/CMakeFiles/cfe_assert.dir/src/cfe_assert_init.c.o
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/cfe_assert/CMakeFiles/cfe_assert.dir/build.make apps/cfe_assert/CMakeFiles/cfe_assert.dir/src/cfe_assert_init.c.o
 .PHONY : src/cfe_assert_init.c.o
 
 src/cfe_assert_init.i: src/cfe_assert_init.c.i
@@ -198,7 +198,7 @@ src/cfe_assert_init.i: src/cfe_assert_init.c.i
 
 # target to preprocess a source file
 src/cfe_assert_init.c.i:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/cfe_assert/CMakeFiles/cfe_assert.dir/build.make apps/cfe_assert/CMakeFiles/cfe_assert.dir/src/cfe_assert_init.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/cfe_assert/CMakeFiles/cfe_assert.dir/build.make apps/cfe_assert/CMakeFiles/cfe_assert.dir/src/cfe_assert_init.c.i
 .PHONY : src/cfe_assert_init.c.i
 
 src/cfe_assert_init.s: src/cfe_assert_init.c.s
@@ -206,7 +206,7 @@ src/cfe_assert_init.s: src/cfe_assert_init.c.s
 
 # target to generate assembly for a file
 src/cfe_assert_init.c.s:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/cfe_assert/CMakeFiles/cfe_assert.dir/build.make apps/cfe_assert/CMakeFiles/cfe_assert.dir/src/cfe_assert_init.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/cfe_assert/CMakeFiles/cfe_assert.dir/build.make apps/cfe_assert/CMakeFiles/cfe_assert.dir/src/cfe_assert_init.c.s
 .PHONY : src/cfe_assert_init.c.s
 
 src/cfe_assert_io.o: src/cfe_assert_io.c.o
@@ -214,7 +214,7 @@ src/cfe_assert_io.o: src/cfe_assert_io.c.o
 
 # target to build an object file
 src/cfe_assert_io.c.o:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/cfe_assert/CMakeFiles/cfe_assert.dir/build.make apps/cfe_assert/CMakeFiles/cfe_assert.dir/src/cfe_assert_io.c.o
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/cfe_assert/CMakeFiles/cfe_assert.dir/build.make apps/cfe_assert/CMakeFiles/cfe_assert.dir/src/cfe_assert_io.c.o
 .PHONY : src/cfe_assert_io.c.o
 
 src/cfe_assert_io.i: src/cfe_assert_io.c.i
@@ -222,7 +222,7 @@ src/cfe_assert_io.i: src/cfe_assert_io.c.i
 
 # target to preprocess a source file
 src/cfe_assert_io.c.i:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/cfe_assert/CMakeFiles/cfe_assert.dir/build.make apps/cfe_assert/CMakeFiles/cfe_assert.dir/src/cfe_assert_io.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/cfe_assert/CMakeFiles/cfe_assert.dir/build.make apps/cfe_assert/CMakeFiles/cfe_assert.dir/src/cfe_assert_io.c.i
 .PHONY : src/cfe_assert_io.c.i
 
 src/cfe_assert_io.s: src/cfe_assert_io.c.s
@@ -230,7 +230,7 @@ src/cfe_assert_io.s: src/cfe_assert_io.c.s
 
 # target to generate assembly for a file
 src/cfe_assert_io.c.s:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/cfe_assert/CMakeFiles/cfe_assert.dir/build.make apps/cfe_assert/CMakeFiles/cfe_assert.dir/src/cfe_assert_io.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/cfe_assert/CMakeFiles/cfe_assert.dir/build.make apps/cfe_assert/CMakeFiles/cfe_assert.dir/src/cfe_assert_io.c.s
 .PHONY : src/cfe_assert_io.c.s
 
 src/cfe_assert_runner.o: src/cfe_assert_runner.c.o
@@ -238,7 +238,7 @@ src/cfe_assert_runner.o: src/cfe_assert_runner.c.o
 
 # target to build an object file
 src/cfe_assert_runner.c.o:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/cfe_assert/CMakeFiles/cfe_assert.dir/build.make apps/cfe_assert/CMakeFiles/cfe_assert.dir/src/cfe_assert_runner.c.o
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/cfe_assert/CMakeFiles/cfe_assert.dir/build.make apps/cfe_assert/CMakeFiles/cfe_assert.dir/src/cfe_assert_runner.c.o
 .PHONY : src/cfe_assert_runner.c.o
 
 src/cfe_assert_runner.i: src/cfe_assert_runner.c.i
@@ -246,7 +246,7 @@ src/cfe_assert_runner.i: src/cfe_assert_runner.c.i
 
 # target to preprocess a source file
 src/cfe_assert_runner.c.i:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/cfe_assert/CMakeFiles/cfe_assert.dir/build.make apps/cfe_assert/CMakeFiles/cfe_assert.dir/src/cfe_assert_runner.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/cfe_assert/CMakeFiles/cfe_assert.dir/build.make apps/cfe_assert/CMakeFiles/cfe_assert.dir/src/cfe_assert_runner.c.i
 .PHONY : src/cfe_assert_runner.c.i
 
 src/cfe_assert_runner.s: src/cfe_assert_runner.c.s
@@ -254,7 +254,7 @@ src/cfe_assert_runner.s: src/cfe_assert_runner.c.s
 
 # target to generate assembly for a file
 src/cfe_assert_runner.c.s:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/cfe_assert/CMakeFiles/cfe_assert.dir/build.make apps/cfe_assert/CMakeFiles/cfe_assert.dir/src/cfe_assert_runner.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/cfe_assert/CMakeFiles/cfe_assert.dir/build.make apps/cfe_assert/CMakeFiles/cfe_assert.dir/src/cfe_assert_runner.c.s
 .PHONY : src/cfe_assert_runner.c.s
 
 # Help Target
@@ -291,6 +291,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

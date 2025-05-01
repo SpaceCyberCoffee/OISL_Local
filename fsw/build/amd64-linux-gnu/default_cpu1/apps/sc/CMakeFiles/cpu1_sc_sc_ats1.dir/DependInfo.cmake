@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/jstar/Desktop/github-nos3/fsw/apps/sc/fsw/tables/sc_ats1.c" "apps/sc/CMakeFiles/cpu1_sc_sc_ats1.dir/fsw/tables/sc_ats1.c.o" "gcc" "apps/sc/CMakeFiles/cpu1_sc_sc_ats1.dir/fsw/tables/sc_ats1.c.o.d"
+  "/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/apps/sc/fsw/tables/sc_ats1.c" "apps/sc/CMakeFiles/cpu1_sc_sc_ats1.dir/fsw/tables/sc_ats1.c.o" "gcc" "apps/sc/CMakeFiles/cpu1_sc_sc_ats1.dir/fsw/tables/sc_ats1.c.o.d"
   )
 
 # Targets to which this target links.

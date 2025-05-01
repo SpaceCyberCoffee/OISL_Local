@@ -1,8 +1,8 @@
-# Install script for directory: /home/jstar/Desktop/github-nos3/sims
+# Install script for directory: /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/sims
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/jstar/Desktop/github-nos3/sims/build")
+  set(CMAKE_INSTALL_PREFIX "/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/sims/build")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -44,31 +44,31 @@ endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xconfigx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE FILE FILES
-    "/home/jstar/Desktop/github-nos3/sims/../cfg/build/sims/nos_engine_server_config.json"
-    "/home/jstar/Desktop/github-nos3/sims/../cfg/build/sims/nos3-simulator.xml"
-    "/home/jstar/Desktop/github-nos3/sims/../cfg/build/sims/sim_log_config.xml"
+    "/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/sims/../cfg/build/sims/nos_engine_server_config.json"
+    "/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/sims/../cfg/build/sims/nos3-simulator.xml"
+    "/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/sims/../cfg/build/sims/sim_log_config.xml"
     )
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/jstar/Desktop/github-nos3/sims/build/sim_common/cmake_install.cmake")
-  include("/home/jstar/Desktop/github-nos3/sims/build/nos_time_driver/cmake_install.cmake")
-  include("/home/jstar/Desktop/github-nos3/sims/build/sim_terminal/cmake_install.cmake")
-  include("/home/jstar/Desktop/github-nos3/sims/build/truth_42_sim/cmake_install.cmake")
-  include("/home/jstar/Desktop/github-nos3/sims/build/arducam/cmake_install.cmake")
-  include("/home/jstar/Desktop/github-nos3/sims/build/generic_css/cmake_install.cmake")
-  include("/home/jstar/Desktop/github-nos3/sims/build/generic_eps/cmake_install.cmake")
-  include("/home/jstar/Desktop/github-nos3/sims/build/generic_fss/cmake_install.cmake")
-  include("/home/jstar/Desktop/github-nos3/sims/build/generic_imu/cmake_install.cmake")
-  include("/home/jstar/Desktop/github-nos3/sims/build/generic_mag/cmake_install.cmake")
-  include("/home/jstar/Desktop/github-nos3/sims/build/generic_radio/cmake_install.cmake")
-  include("/home/jstar/Desktop/github-nos3/sims/build/generic_reaction_wheel/cmake_install.cmake")
-  include("/home/jstar/Desktop/github-nos3/sims/build/generic_star_tracker/cmake_install.cmake")
-  include("/home/jstar/Desktop/github-nos3/sims/build/generic_torquer/cmake_install.cmake")
-  include("/home/jstar/Desktop/github-nos3/sims/build/novatel_oem615/cmake_install.cmake")
-  include("/home/jstar/Desktop/github-nos3/sims/build/oisl/cmake_install.cmake")
-  include("/home/jstar/Desktop/github-nos3/sims/build/sample/cmake_install.cmake")
+  include("/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/sims/build/sim_common/cmake_install.cmake")
+  include("/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/sims/build/nos_time_driver/cmake_install.cmake")
+  include("/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/sims/build/sim_terminal/cmake_install.cmake")
+  include("/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/sims/build/truth_42_sim/cmake_install.cmake")
+  include("/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/sims/build/arducam/cmake_install.cmake")
+  include("/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/sims/build/generic_css/cmake_install.cmake")
+  include("/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/sims/build/generic_eps/cmake_install.cmake")
+  include("/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/sims/build/generic_fss/cmake_install.cmake")
+  include("/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/sims/build/generic_imu/cmake_install.cmake")
+  include("/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/sims/build/generic_mag/cmake_install.cmake")
+  include("/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/sims/build/generic_radio/cmake_install.cmake")
+  include("/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/sims/build/generic_reaction_wheel/cmake_install.cmake")
+  include("/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/sims/build/generic_star_tracker/cmake_install.cmake")
+  include("/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/sims/build/generic_torquer/cmake_install.cmake")
+  include("/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/sims/build/novatel_oem615/cmake_install.cmake")
+  include("/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/sims/build/oisl/cmake_install.cmake")
+  include("/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/sims/build/sample/cmake_install.cmake")
 
 endif()
 
@@ -80,5 +80,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/jstar/Desktop/github-nos3/sims/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/sims/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

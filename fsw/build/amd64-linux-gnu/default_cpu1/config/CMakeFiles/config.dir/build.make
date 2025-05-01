@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/jstar/Desktop/github-nos3/fsw/cfe
+CMAKE_SOURCE_DIR = /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/cfe
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1
+CMAKE_BINARY_DIR = /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1
 
 # Include any dependencies generated for this target.
 include config/CMakeFiles/config.dir/depend.make
@@ -70,74 +70,74 @@ include config/CMakeFiles/config.dir/progress.make
 include config/CMakeFiles/config.dir/flags.make
 
 config/CMakeFiles/config.dir/fsw/src/cfe_config_init.c.o: config/CMakeFiles/config.dir/flags.make
-config/CMakeFiles/config.dir/fsw/src/cfe_config_init.c.o: /home/jstar/Desktop/github-nos3/fsw/cfe/modules/config/fsw/src/cfe_config_init.c
+config/CMakeFiles/config.dir/fsw/src/cfe_config_init.c.o: /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/cfe/modules/config/fsw/src/cfe_config_init.c
 config/CMakeFiles/config.dir/fsw/src/cfe_config_init.c.o: config/CMakeFiles/config.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object config/CMakeFiles/config.dir/fsw/src/cfe_config_init.c.o"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/config && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT config/CMakeFiles/config.dir/fsw/src/cfe_config_init.c.o -MF CMakeFiles/config.dir/fsw/src/cfe_config_init.c.o.d -o CMakeFiles/config.dir/fsw/src/cfe_config_init.c.o -c /home/jstar/Desktop/github-nos3/fsw/cfe/modules/config/fsw/src/cfe_config_init.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object config/CMakeFiles/config.dir/fsw/src/cfe_config_init.c.o"
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/config && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT config/CMakeFiles/config.dir/fsw/src/cfe_config_init.c.o -MF CMakeFiles/config.dir/fsw/src/cfe_config_init.c.o.d -o CMakeFiles/config.dir/fsw/src/cfe_config_init.c.o -c /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/cfe/modules/config/fsw/src/cfe_config_init.c
 
 config/CMakeFiles/config.dir/fsw/src/cfe_config_init.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/config.dir/fsw/src/cfe_config_init.c.i"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/config && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jstar/Desktop/github-nos3/fsw/cfe/modules/config/fsw/src/cfe_config_init.c > CMakeFiles/config.dir/fsw/src/cfe_config_init.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/config && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/cfe/modules/config/fsw/src/cfe_config_init.c > CMakeFiles/config.dir/fsw/src/cfe_config_init.c.i
 
 config/CMakeFiles/config.dir/fsw/src/cfe_config_init.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/config.dir/fsw/src/cfe_config_init.c.s"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/config && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jstar/Desktop/github-nos3/fsw/cfe/modules/config/fsw/src/cfe_config_init.c -o CMakeFiles/config.dir/fsw/src/cfe_config_init.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/config && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/cfe/modules/config/fsw/src/cfe_config_init.c -o CMakeFiles/config.dir/fsw/src/cfe_config_init.c.s
 
 config/CMakeFiles/config.dir/fsw/src/cfe_config_lookup.c.o: config/CMakeFiles/config.dir/flags.make
-config/CMakeFiles/config.dir/fsw/src/cfe_config_lookup.c.o: /home/jstar/Desktop/github-nos3/fsw/cfe/modules/config/fsw/src/cfe_config_lookup.c
+config/CMakeFiles/config.dir/fsw/src/cfe_config_lookup.c.o: /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/cfe/modules/config/fsw/src/cfe_config_lookup.c
 config/CMakeFiles/config.dir/fsw/src/cfe_config_lookup.c.o: config/CMakeFiles/config.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object config/CMakeFiles/config.dir/fsw/src/cfe_config_lookup.c.o"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/config && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT config/CMakeFiles/config.dir/fsw/src/cfe_config_lookup.c.o -MF CMakeFiles/config.dir/fsw/src/cfe_config_lookup.c.o.d -o CMakeFiles/config.dir/fsw/src/cfe_config_lookup.c.o -c /home/jstar/Desktop/github-nos3/fsw/cfe/modules/config/fsw/src/cfe_config_lookup.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object config/CMakeFiles/config.dir/fsw/src/cfe_config_lookup.c.o"
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/config && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT config/CMakeFiles/config.dir/fsw/src/cfe_config_lookup.c.o -MF CMakeFiles/config.dir/fsw/src/cfe_config_lookup.c.o.d -o CMakeFiles/config.dir/fsw/src/cfe_config_lookup.c.o -c /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/cfe/modules/config/fsw/src/cfe_config_lookup.c
 
 config/CMakeFiles/config.dir/fsw/src/cfe_config_lookup.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/config.dir/fsw/src/cfe_config_lookup.c.i"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/config && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jstar/Desktop/github-nos3/fsw/cfe/modules/config/fsw/src/cfe_config_lookup.c > CMakeFiles/config.dir/fsw/src/cfe_config_lookup.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/config && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/cfe/modules/config/fsw/src/cfe_config_lookup.c > CMakeFiles/config.dir/fsw/src/cfe_config_lookup.c.i
 
 config/CMakeFiles/config.dir/fsw/src/cfe_config_lookup.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/config.dir/fsw/src/cfe_config_lookup.c.s"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/config && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jstar/Desktop/github-nos3/fsw/cfe/modules/config/fsw/src/cfe_config_lookup.c -o CMakeFiles/config.dir/fsw/src/cfe_config_lookup.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/config && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/cfe/modules/config/fsw/src/cfe_config_lookup.c -o CMakeFiles/config.dir/fsw/src/cfe_config_lookup.c.s
 
 config/CMakeFiles/config.dir/fsw/src/cfe_config_get.c.o: config/CMakeFiles/config.dir/flags.make
-config/CMakeFiles/config.dir/fsw/src/cfe_config_get.c.o: /home/jstar/Desktop/github-nos3/fsw/cfe/modules/config/fsw/src/cfe_config_get.c
+config/CMakeFiles/config.dir/fsw/src/cfe_config_get.c.o: /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/cfe/modules/config/fsw/src/cfe_config_get.c
 config/CMakeFiles/config.dir/fsw/src/cfe_config_get.c.o: config/CMakeFiles/config.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object config/CMakeFiles/config.dir/fsw/src/cfe_config_get.c.o"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/config && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT config/CMakeFiles/config.dir/fsw/src/cfe_config_get.c.o -MF CMakeFiles/config.dir/fsw/src/cfe_config_get.c.o.d -o CMakeFiles/config.dir/fsw/src/cfe_config_get.c.o -c /home/jstar/Desktop/github-nos3/fsw/cfe/modules/config/fsw/src/cfe_config_get.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object config/CMakeFiles/config.dir/fsw/src/cfe_config_get.c.o"
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/config && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT config/CMakeFiles/config.dir/fsw/src/cfe_config_get.c.o -MF CMakeFiles/config.dir/fsw/src/cfe_config_get.c.o.d -o CMakeFiles/config.dir/fsw/src/cfe_config_get.c.o -c /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/cfe/modules/config/fsw/src/cfe_config_get.c
 
 config/CMakeFiles/config.dir/fsw/src/cfe_config_get.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/config.dir/fsw/src/cfe_config_get.c.i"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/config && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jstar/Desktop/github-nos3/fsw/cfe/modules/config/fsw/src/cfe_config_get.c > CMakeFiles/config.dir/fsw/src/cfe_config_get.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/config && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/cfe/modules/config/fsw/src/cfe_config_get.c > CMakeFiles/config.dir/fsw/src/cfe_config_get.c.i
 
 config/CMakeFiles/config.dir/fsw/src/cfe_config_get.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/config.dir/fsw/src/cfe_config_get.c.s"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/config && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jstar/Desktop/github-nos3/fsw/cfe/modules/config/fsw/src/cfe_config_get.c -o CMakeFiles/config.dir/fsw/src/cfe_config_get.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/config && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/cfe/modules/config/fsw/src/cfe_config_get.c -o CMakeFiles/config.dir/fsw/src/cfe_config_get.c.s
 
 config/CMakeFiles/config.dir/fsw/src/cfe_config_set.c.o: config/CMakeFiles/config.dir/flags.make
-config/CMakeFiles/config.dir/fsw/src/cfe_config_set.c.o: /home/jstar/Desktop/github-nos3/fsw/cfe/modules/config/fsw/src/cfe_config_set.c
+config/CMakeFiles/config.dir/fsw/src/cfe_config_set.c.o: /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/cfe/modules/config/fsw/src/cfe_config_set.c
 config/CMakeFiles/config.dir/fsw/src/cfe_config_set.c.o: config/CMakeFiles/config.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object config/CMakeFiles/config.dir/fsw/src/cfe_config_set.c.o"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/config && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT config/CMakeFiles/config.dir/fsw/src/cfe_config_set.c.o -MF CMakeFiles/config.dir/fsw/src/cfe_config_set.c.o.d -o CMakeFiles/config.dir/fsw/src/cfe_config_set.c.o -c /home/jstar/Desktop/github-nos3/fsw/cfe/modules/config/fsw/src/cfe_config_set.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object config/CMakeFiles/config.dir/fsw/src/cfe_config_set.c.o"
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/config && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT config/CMakeFiles/config.dir/fsw/src/cfe_config_set.c.o -MF CMakeFiles/config.dir/fsw/src/cfe_config_set.c.o.d -o CMakeFiles/config.dir/fsw/src/cfe_config_set.c.o -c /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/cfe/modules/config/fsw/src/cfe_config_set.c
 
 config/CMakeFiles/config.dir/fsw/src/cfe_config_set.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/config.dir/fsw/src/cfe_config_set.c.i"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/config && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jstar/Desktop/github-nos3/fsw/cfe/modules/config/fsw/src/cfe_config_set.c > CMakeFiles/config.dir/fsw/src/cfe_config_set.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/config && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/cfe/modules/config/fsw/src/cfe_config_set.c > CMakeFiles/config.dir/fsw/src/cfe_config_set.c.i
 
 config/CMakeFiles/config.dir/fsw/src/cfe_config_set.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/config.dir/fsw/src/cfe_config_set.c.s"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/config && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jstar/Desktop/github-nos3/fsw/cfe/modules/config/fsw/src/cfe_config_set.c -o CMakeFiles/config.dir/fsw/src/cfe_config_set.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/config && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/cfe/modules/config/fsw/src/cfe_config_set.c -o CMakeFiles/config.dir/fsw/src/cfe_config_set.c.s
 
-config/CMakeFiles/config.dir/home/jstar/Desktop/github-nos3/fsw/build/src/cfe_config_map.c.o: config/CMakeFiles/config.dir/flags.make
-config/CMakeFiles/config.dir/home/jstar/Desktop/github-nos3/fsw/build/src/cfe_config_map.c.o: /home/jstar/Desktop/github-nos3/fsw/build/src/cfe_config_map.c
-config/CMakeFiles/config.dir/home/jstar/Desktop/github-nos3/fsw/build/src/cfe_config_map.c.o: config/CMakeFiles/config.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object config/CMakeFiles/config.dir/home/jstar/Desktop/github-nos3/fsw/build/src/cfe_config_map.c.o"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/config && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT config/CMakeFiles/config.dir/home/jstar/Desktop/github-nos3/fsw/build/src/cfe_config_map.c.o -MF CMakeFiles/config.dir/home/jstar/Desktop/github-nos3/fsw/build/src/cfe_config_map.c.o.d -o CMakeFiles/config.dir/home/jstar/Desktop/github-nos3/fsw/build/src/cfe_config_map.c.o -c /home/jstar/Desktop/github-nos3/fsw/build/src/cfe_config_map.c
+config/CMakeFiles/config.dir/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/src/cfe_config_map.c.o: config/CMakeFiles/config.dir/flags.make
+config/CMakeFiles/config.dir/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/src/cfe_config_map.c.o: /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/src/cfe_config_map.c
+config/CMakeFiles/config.dir/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/src/cfe_config_map.c.o: config/CMakeFiles/config.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object config/CMakeFiles/config.dir/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/src/cfe_config_map.c.o"
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/config && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT config/CMakeFiles/config.dir/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/src/cfe_config_map.c.o -MF CMakeFiles/config.dir/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/src/cfe_config_map.c.o.d -o CMakeFiles/config.dir/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/src/cfe_config_map.c.o -c /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/src/cfe_config_map.c
 
-config/CMakeFiles/config.dir/home/jstar/Desktop/github-nos3/fsw/build/src/cfe_config_map.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/config.dir/home/jstar/Desktop/github-nos3/fsw/build/src/cfe_config_map.c.i"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/config && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jstar/Desktop/github-nos3/fsw/build/src/cfe_config_map.c > CMakeFiles/config.dir/home/jstar/Desktop/github-nos3/fsw/build/src/cfe_config_map.c.i
+config/CMakeFiles/config.dir/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/src/cfe_config_map.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/config.dir/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/src/cfe_config_map.c.i"
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/config && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/src/cfe_config_map.c > CMakeFiles/config.dir/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/src/cfe_config_map.c.i
 
-config/CMakeFiles/config.dir/home/jstar/Desktop/github-nos3/fsw/build/src/cfe_config_map.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/config.dir/home/jstar/Desktop/github-nos3/fsw/build/src/cfe_config_map.c.s"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/config && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jstar/Desktop/github-nos3/fsw/build/src/cfe_config_map.c -o CMakeFiles/config.dir/home/jstar/Desktop/github-nos3/fsw/build/src/cfe_config_map.c.s
+config/CMakeFiles/config.dir/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/src/cfe_config_map.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/config.dir/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/src/cfe_config_map.c.s"
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/config && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/src/cfe_config_map.c -o CMakeFiles/config.dir/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/src/cfe_config_map.c.s
 
 # Object files for target config
 config_OBJECTS = \
@@ -145,7 +145,7 @@ config_OBJECTS = \
 "CMakeFiles/config.dir/fsw/src/cfe_config_lookup.c.o" \
 "CMakeFiles/config.dir/fsw/src/cfe_config_get.c.o" \
 "CMakeFiles/config.dir/fsw/src/cfe_config_set.c.o" \
-"CMakeFiles/config.dir/home/jstar/Desktop/github-nos3/fsw/build/src/cfe_config_map.c.o"
+"CMakeFiles/config.dir/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/src/cfe_config_map.c.o"
 
 # External object files for target config
 config_EXTERNAL_OBJECTS =
@@ -154,22 +154,22 @@ config/libconfig.a: config/CMakeFiles/config.dir/fsw/src/cfe_config_init.c.o
 config/libconfig.a: config/CMakeFiles/config.dir/fsw/src/cfe_config_lookup.c.o
 config/libconfig.a: config/CMakeFiles/config.dir/fsw/src/cfe_config_get.c.o
 config/libconfig.a: config/CMakeFiles/config.dir/fsw/src/cfe_config_set.c.o
-config/libconfig.a: config/CMakeFiles/config.dir/home/jstar/Desktop/github-nos3/fsw/build/src/cfe_config_map.c.o
+config/libconfig.a: config/CMakeFiles/config.dir/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/src/cfe_config_map.c.o
 config/libconfig.a: config/CMakeFiles/config.dir/build.make
 config/libconfig.a: config/CMakeFiles/config.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking C static library libconfig.a"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/config && $(CMAKE_COMMAND) -P CMakeFiles/config.dir/cmake_clean_target.cmake
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/config && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/config.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking C static library libconfig.a"
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/config && $(CMAKE_COMMAND) -P CMakeFiles/config.dir/cmake_clean_target.cmake
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/config && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/config.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 config/CMakeFiles/config.dir/build: config/libconfig.a
 .PHONY : config/CMakeFiles/config.dir/build
 
 config/CMakeFiles/config.dir/clean:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/config && $(CMAKE_COMMAND) -P CMakeFiles/config.dir/cmake_clean.cmake
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/config && $(CMAKE_COMMAND) -P CMakeFiles/config.dir/cmake_clean.cmake
 .PHONY : config/CMakeFiles/config.dir/clean
 
 config/CMakeFiles/config.dir/depend:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/jstar/Desktop/github-nos3/fsw/cfe /home/jstar/Desktop/github-nos3/fsw/cfe/modules/config /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/config /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/config/CMakeFiles/config.dir/DependInfo.cmake --color=$(COLOR)
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/cfe /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/cfe/modules/config /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/config /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/config/CMakeFiles/config.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : config/CMakeFiles/config.dir/depend
 

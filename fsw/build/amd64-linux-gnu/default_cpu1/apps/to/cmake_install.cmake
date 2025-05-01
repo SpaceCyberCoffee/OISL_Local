@@ -1,8 +1,8 @@
-# Install script for directory: /home/jstar/Desktop/github-nos3/fsw/apps/to
+# Install script for directory: /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/apps/to
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/jstar/Desktop/github-nos3/fsw/build/exe")
+  set(CMAKE_INSTALL_PREFIX "/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/exe")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -49,7 +49,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/cpu1/cf/to.so"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/cpu1/cf" TYPE MODULE FILES "/home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/apps/to/to.so")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/cpu1/cf" TYPE MODULE FILES "/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/apps/to/to.so")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/cpu1/cf/to.so" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/cpu1/cf/to.so")
     if(CMAKE_INSTALL_DO_STRIP)
@@ -59,6 +59,6 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/cpu1/cf" TYPE FILE FILES "/home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/apps/to/cpu1_to_to_config/to_config.tbl")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/cpu1/cf" TYPE FILE FILES "/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/apps/to/cpu1_to_to_config/to_config.tbl")
 endif()
 

@@ -16,9 +16,9 @@
 #include <time.h>
 #include <math.h>
 
-#include "/home/jstar/Desktop/github-nos3/components/generic_adcs/fsw/platform_inc/generic_adcs_msgids.h"
-#include "/home/jstar/Desktop/github-nos3/components/generic_adcs/fsw/src/generic_adcs_msg.h"
-#include "/home/jstar/Desktop/github-nos3/components/generic_adcs/fsw/src/generic_adcs_adac.h"
+#include "generic_adcs_msgids.h"
+#include "generic_adcs_msg.h"
+#include "generic_adcs_adac.h"
 #include "cfe.h"
 
 /************************************************************
@@ -56,14 +56,14 @@ uint8_t *transferActive = &transfering;
  *                      File paths                          *
  ************************************************************/
 
-static const char* fileSent_confirmation = "/home/jstar/Desktop/github-nos3/file_sent.txt";
+static const char* fileSent_confirmation = "/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/file_sent.txt";
 
 static const char* my_src = "/mnt/extras/SSD/NOS3_RBT/nos3_luca_OISL/nos3_rbt/components/oisl/fsw/src/files_Test/plainText.txt";
 static const char* for_dest = "/mnt/extras/SSD/NOS3_RBT/nos3_luca_OISL/forward_sat/nos3_rbt/COSMOS_Control/Execution/OISL/files_received/plainText.txt";
 static const char* back_dest = "/mnt/extras/SSD/NOS3_RBT/nos3_luca_OISL/Backward_Sat/COSMOS_Control/Execution/OISL/files_received/plainText.txt";
 
-static const char* back_alignment_mem_info = "/home/jstar/Desktop/github-nos3/components/oisl/fsw/src/B_sat_for_alignment.txt";
-static const char* for_alignment_mem_info = "/home/jstar/Desktop/github-nos3/components/oisl/fsw/src/F_sat_back_alignment.txt";
+static const char* back_alignment_mem_info = "/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/oisl/fsw/src/B_sat_for_alignment.txt";
+static const char* for_alignment_mem_info = "/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/oisl/fsw/src/F_sat_back_alignment.txt";
 
 const double    transfer_time_to_add = 0.0;    // around 3.52 GB.  Used only for Large file transfer to simulate a larger size
 const int       forbidden_direction = 5;         // Forbidden direction for routing to avoid ping pong: TODO: improve making it smarter
@@ -275,12 +275,12 @@ void extractOGSName(const char *fileContent, char *OGS_name, size_t max_len) {
     FILE *fp;
     char buffer[500];
 
-    FILE *temp_file = fopen("/home/jstar/Desktop/github-nos3/components/oisl/fsw/src/ftemp.json", "w");
+    FILE *temp_file = fopen("/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/oisl/fsw/src/ftemp.json", "w");
     if (temp_file != NULL) {
         fputs(fileContent, temp_file);
         fclose(temp_file);
         snprintf(command, sizeof(command),
-                "python3 /home/jstar/Desktop/github-nos3/components/oisl/fsw/src/OGS_name.py /home/jstar/Desktop/github-nos3/components/oisl/fsw/src/ftemp.json");
+                "python3 /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/oisl/fsw/src/OGS_name.py /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/oisl/fsw/src/ftemp.json");
     }
 
     printf("Command: %s\n", command);
@@ -1384,7 +1384,7 @@ void sendFile(const char *fileContent, const size_t fileSize) {
         // Open visibility prediction file for the specified ground station
         char vis_file_name[200];
         snprintf(vis_file_name, sizeof(vis_file_name), 
-                "/home/jstar/Desktop/github-nos3/components/oisl/fsw/src/OGS_visibilities/%s_vis_prediction.txt", 
+                "/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/oisl/fsw/src/OGS_visibilities/%s_vis_prediction.txt", 
                 OGS_name);
         FILE *vis_file = fopen(vis_file_name, "r");
         if (vis_file == NULL) {

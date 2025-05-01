@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/jstar/Desktop/github-nos3/fsw/cfe
+CMAKE_SOURCE_DIR = /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/cfe
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1
+CMAKE_BINARY_DIR = /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -142,14 +142,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(CMAKE_COMMAND) -E cmake_progress_start /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/apps/ci//CMakeFiles/progress.marks
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/ci/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles 0
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(CMAKE_COMMAND) -E cmake_progress_start /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/apps/ci//CMakeFiles/progress.marks
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/ci/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/ci/clean
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/ci/clean
 .PHONY : clean
 
 # The main clean target
@@ -158,22 +158,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/ci/preinstall
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/ci/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/ci/preinstall
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/ci/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 apps/ci/CMakeFiles/ci.dir/rule:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/ci/CMakeFiles/ci.dir/rule
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/ci/CMakeFiles/ci.dir/rule
 .PHONY : apps/ci/CMakeFiles/ci.dir/rule
 
 # Convenience name for target.
@@ -182,7 +182,7 @@ ci: apps/ci/CMakeFiles/ci.dir/rule
 
 # fast build rule for target.
 ci/fast:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/ci/CMakeFiles/ci.dir/build.make apps/ci/CMakeFiles/ci.dir/build
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/ci/CMakeFiles/ci.dir/build.make apps/ci/CMakeFiles/ci.dir/build
 .PHONY : ci/fast
 
 fsw/examples/udp_tf/ci_custom.o: fsw/examples/udp_tf/ci_custom.c.o
@@ -190,7 +190,7 @@ fsw/examples/udp_tf/ci_custom.o: fsw/examples/udp_tf/ci_custom.c.o
 
 # target to build an object file
 fsw/examples/udp_tf/ci_custom.c.o:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/ci/CMakeFiles/ci.dir/build.make apps/ci/CMakeFiles/ci.dir/fsw/examples/udp_tf/ci_custom.c.o
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/ci/CMakeFiles/ci.dir/build.make apps/ci/CMakeFiles/ci.dir/fsw/examples/udp_tf/ci_custom.c.o
 .PHONY : fsw/examples/udp_tf/ci_custom.c.o
 
 fsw/examples/udp_tf/ci_custom.i: fsw/examples/udp_tf/ci_custom.c.i
@@ -198,7 +198,7 @@ fsw/examples/udp_tf/ci_custom.i: fsw/examples/udp_tf/ci_custom.c.i
 
 # target to preprocess a source file
 fsw/examples/udp_tf/ci_custom.c.i:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/ci/CMakeFiles/ci.dir/build.make apps/ci/CMakeFiles/ci.dir/fsw/examples/udp_tf/ci_custom.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/ci/CMakeFiles/ci.dir/build.make apps/ci/CMakeFiles/ci.dir/fsw/examples/udp_tf/ci_custom.c.i
 .PHONY : fsw/examples/udp_tf/ci_custom.c.i
 
 fsw/examples/udp_tf/ci_custom.s: fsw/examples/udp_tf/ci_custom.c.s
@@ -206,7 +206,7 @@ fsw/examples/udp_tf/ci_custom.s: fsw/examples/udp_tf/ci_custom.c.s
 
 # target to generate assembly for a file
 fsw/examples/udp_tf/ci_custom.c.s:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/ci/CMakeFiles/ci.dir/build.make apps/ci/CMakeFiles/ci.dir/fsw/examples/udp_tf/ci_custom.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/ci/CMakeFiles/ci.dir/build.make apps/ci/CMakeFiles/ci.dir/fsw/examples/udp_tf/ci_custom.c.s
 .PHONY : fsw/examples/udp_tf/ci_custom.c.s
 
 fsw/src/ci_app.o: fsw/src/ci_app.c.o
@@ -214,7 +214,7 @@ fsw/src/ci_app.o: fsw/src/ci_app.c.o
 
 # target to build an object file
 fsw/src/ci_app.c.o:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/ci/CMakeFiles/ci.dir/build.make apps/ci/CMakeFiles/ci.dir/fsw/src/ci_app.c.o
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/ci/CMakeFiles/ci.dir/build.make apps/ci/CMakeFiles/ci.dir/fsw/src/ci_app.c.o
 .PHONY : fsw/src/ci_app.c.o
 
 fsw/src/ci_app.i: fsw/src/ci_app.c.i
@@ -222,7 +222,7 @@ fsw/src/ci_app.i: fsw/src/ci_app.c.i
 
 # target to preprocess a source file
 fsw/src/ci_app.c.i:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/ci/CMakeFiles/ci.dir/build.make apps/ci/CMakeFiles/ci.dir/fsw/src/ci_app.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/ci/CMakeFiles/ci.dir/build.make apps/ci/CMakeFiles/ci.dir/fsw/src/ci_app.c.i
 .PHONY : fsw/src/ci_app.c.i
 
 fsw/src/ci_app.s: fsw/src/ci_app.c.s
@@ -230,7 +230,7 @@ fsw/src/ci_app.s: fsw/src/ci_app.c.s
 
 # target to generate assembly for a file
 fsw/src/ci_app.c.s:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/ci/CMakeFiles/ci.dir/build.make apps/ci/CMakeFiles/ci.dir/fsw/src/ci_app.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/ci/CMakeFiles/ci.dir/build.make apps/ci/CMakeFiles/ci.dir/fsw/src/ci_app.c.s
 .PHONY : fsw/src/ci_app.c.s
 
 fsw/src/ci_utils.o: fsw/src/ci_utils.c.o
@@ -238,7 +238,7 @@ fsw/src/ci_utils.o: fsw/src/ci_utils.c.o
 
 # target to build an object file
 fsw/src/ci_utils.c.o:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/ci/CMakeFiles/ci.dir/build.make apps/ci/CMakeFiles/ci.dir/fsw/src/ci_utils.c.o
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/ci/CMakeFiles/ci.dir/build.make apps/ci/CMakeFiles/ci.dir/fsw/src/ci_utils.c.o
 .PHONY : fsw/src/ci_utils.c.o
 
 fsw/src/ci_utils.i: fsw/src/ci_utils.c.i
@@ -246,7 +246,7 @@ fsw/src/ci_utils.i: fsw/src/ci_utils.c.i
 
 # target to preprocess a source file
 fsw/src/ci_utils.c.i:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/ci/CMakeFiles/ci.dir/build.make apps/ci/CMakeFiles/ci.dir/fsw/src/ci_utils.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/ci/CMakeFiles/ci.dir/build.make apps/ci/CMakeFiles/ci.dir/fsw/src/ci_utils.c.i
 .PHONY : fsw/src/ci_utils.c.i
 
 fsw/src/ci_utils.s: fsw/src/ci_utils.c.s
@@ -254,7 +254,7 @@ fsw/src/ci_utils.s: fsw/src/ci_utils.c.s
 
 # target to generate assembly for a file
 fsw/src/ci_utils.c.s:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/ci/CMakeFiles/ci.dir/build.make apps/ci/CMakeFiles/ci.dir/fsw/src/ci_utils.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/ci/CMakeFiles/ci.dir/build.make apps/ci/CMakeFiles/ci.dir/fsw/src/ci_utils.c.s
 .PHONY : fsw/src/ci_utils.c.s
 
 # Help Target
@@ -291,6 +291,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

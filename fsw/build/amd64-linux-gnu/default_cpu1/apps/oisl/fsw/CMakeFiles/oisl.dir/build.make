@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/jstar/Desktop/github-nos3/fsw/cfe
+CMAKE_SOURCE_DIR = /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/cfe
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1
+CMAKE_BINARY_DIR = /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1
 
 # Include any dependencies generated for this target.
 include apps/oisl/fsw/CMakeFiles/oisl.dir/depend.make
@@ -70,46 +70,46 @@ include apps/oisl/fsw/CMakeFiles/oisl.dir/progress.make
 include apps/oisl/fsw/CMakeFiles/oisl.dir/flags.make
 
 apps/oisl/fsw/CMakeFiles/oisl.dir/src/CFDP_Luca.c.o: apps/oisl/fsw/CMakeFiles/oisl.dir/flags.make
-apps/oisl/fsw/CMakeFiles/oisl.dir/src/CFDP_Luca.c.o: /home/jstar/Desktop/github-nos3/components/oisl/fsw/src/CFDP_Luca.c
+apps/oisl/fsw/CMakeFiles/oisl.dir/src/CFDP_Luca.c.o: /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/oisl/fsw/src/CFDP_Luca.c
 apps/oisl/fsw/CMakeFiles/oisl.dir/src/CFDP_Luca.c.o: apps/oisl/fsw/CMakeFiles/oisl.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object apps/oisl/fsw/CMakeFiles/oisl.dir/src/CFDP_Luca.c.o"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/apps/oisl/fsw && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT apps/oisl/fsw/CMakeFiles/oisl.dir/src/CFDP_Luca.c.o -MF CMakeFiles/oisl.dir/src/CFDP_Luca.c.o.d -o CMakeFiles/oisl.dir/src/CFDP_Luca.c.o -c /home/jstar/Desktop/github-nos3/components/oisl/fsw/src/CFDP_Luca.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object apps/oisl/fsw/CMakeFiles/oisl.dir/src/CFDP_Luca.c.o"
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/apps/oisl/fsw && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT apps/oisl/fsw/CMakeFiles/oisl.dir/src/CFDP_Luca.c.o -MF CMakeFiles/oisl.dir/src/CFDP_Luca.c.o.d -o CMakeFiles/oisl.dir/src/CFDP_Luca.c.o -c /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/oisl/fsw/src/CFDP_Luca.c
 
 apps/oisl/fsw/CMakeFiles/oisl.dir/src/CFDP_Luca.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/oisl.dir/src/CFDP_Luca.c.i"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/apps/oisl/fsw && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jstar/Desktop/github-nos3/components/oisl/fsw/src/CFDP_Luca.c > CMakeFiles/oisl.dir/src/CFDP_Luca.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/apps/oisl/fsw && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/oisl/fsw/src/CFDP_Luca.c > CMakeFiles/oisl.dir/src/CFDP_Luca.c.i
 
 apps/oisl/fsw/CMakeFiles/oisl.dir/src/CFDP_Luca.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/oisl.dir/src/CFDP_Luca.c.s"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/apps/oisl/fsw && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jstar/Desktop/github-nos3/components/oisl/fsw/src/CFDP_Luca.c -o CMakeFiles/oisl.dir/src/CFDP_Luca.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/apps/oisl/fsw && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/oisl/fsw/src/CFDP_Luca.c -o CMakeFiles/oisl.dir/src/CFDP_Luca.c.s
 
 apps/oisl/fsw/CMakeFiles/oisl.dir/src/oisl_app.c.o: apps/oisl/fsw/CMakeFiles/oisl.dir/flags.make
-apps/oisl/fsw/CMakeFiles/oisl.dir/src/oisl_app.c.o: /home/jstar/Desktop/github-nos3/components/oisl/fsw/src/oisl_app.c
+apps/oisl/fsw/CMakeFiles/oisl.dir/src/oisl_app.c.o: /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/oisl/fsw/src/oisl_app.c
 apps/oisl/fsw/CMakeFiles/oisl.dir/src/oisl_app.c.o: apps/oisl/fsw/CMakeFiles/oisl.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object apps/oisl/fsw/CMakeFiles/oisl.dir/src/oisl_app.c.o"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/apps/oisl/fsw && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT apps/oisl/fsw/CMakeFiles/oisl.dir/src/oisl_app.c.o -MF CMakeFiles/oisl.dir/src/oisl_app.c.o.d -o CMakeFiles/oisl.dir/src/oisl_app.c.o -c /home/jstar/Desktop/github-nos3/components/oisl/fsw/src/oisl_app.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object apps/oisl/fsw/CMakeFiles/oisl.dir/src/oisl_app.c.o"
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/apps/oisl/fsw && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT apps/oisl/fsw/CMakeFiles/oisl.dir/src/oisl_app.c.o -MF CMakeFiles/oisl.dir/src/oisl_app.c.o.d -o CMakeFiles/oisl.dir/src/oisl_app.c.o -c /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/oisl/fsw/src/oisl_app.c
 
 apps/oisl/fsw/CMakeFiles/oisl.dir/src/oisl_app.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/oisl.dir/src/oisl_app.c.i"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/apps/oisl/fsw && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jstar/Desktop/github-nos3/components/oisl/fsw/src/oisl_app.c > CMakeFiles/oisl.dir/src/oisl_app.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/apps/oisl/fsw && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/oisl/fsw/src/oisl_app.c > CMakeFiles/oisl.dir/src/oisl_app.c.i
 
 apps/oisl/fsw/CMakeFiles/oisl.dir/src/oisl_app.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/oisl.dir/src/oisl_app.c.s"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/apps/oisl/fsw && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jstar/Desktop/github-nos3/components/oisl/fsw/src/oisl_app.c -o CMakeFiles/oisl.dir/src/oisl_app.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/apps/oisl/fsw && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/oisl/fsw/src/oisl_app.c -o CMakeFiles/oisl.dir/src/oisl_app.c.s
 
 apps/oisl/fsw/CMakeFiles/oisl.dir/src/oisl_device.c.o: apps/oisl/fsw/CMakeFiles/oisl.dir/flags.make
-apps/oisl/fsw/CMakeFiles/oisl.dir/src/oisl_device.c.o: /home/jstar/Desktop/github-nos3/components/oisl/fsw/src/oisl_device.c
+apps/oisl/fsw/CMakeFiles/oisl.dir/src/oisl_device.c.o: /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/oisl/fsw/src/oisl_device.c
 apps/oisl/fsw/CMakeFiles/oisl.dir/src/oisl_device.c.o: apps/oisl/fsw/CMakeFiles/oisl.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object apps/oisl/fsw/CMakeFiles/oisl.dir/src/oisl_device.c.o"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/apps/oisl/fsw && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT apps/oisl/fsw/CMakeFiles/oisl.dir/src/oisl_device.c.o -MF CMakeFiles/oisl.dir/src/oisl_device.c.o.d -o CMakeFiles/oisl.dir/src/oisl_device.c.o -c /home/jstar/Desktop/github-nos3/components/oisl/fsw/src/oisl_device.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object apps/oisl/fsw/CMakeFiles/oisl.dir/src/oisl_device.c.o"
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/apps/oisl/fsw && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT apps/oisl/fsw/CMakeFiles/oisl.dir/src/oisl_device.c.o -MF CMakeFiles/oisl.dir/src/oisl_device.c.o.d -o CMakeFiles/oisl.dir/src/oisl_device.c.o -c /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/oisl/fsw/src/oisl_device.c
 
 apps/oisl/fsw/CMakeFiles/oisl.dir/src/oisl_device.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/oisl.dir/src/oisl_device.c.i"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/apps/oisl/fsw && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jstar/Desktop/github-nos3/components/oisl/fsw/src/oisl_device.c > CMakeFiles/oisl.dir/src/oisl_device.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/apps/oisl/fsw && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/oisl/fsw/src/oisl_device.c > CMakeFiles/oisl.dir/src/oisl_device.c.i
 
 apps/oisl/fsw/CMakeFiles/oisl.dir/src/oisl_device.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/oisl.dir/src/oisl_device.c.s"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/apps/oisl/fsw && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jstar/Desktop/github-nos3/components/oisl/fsw/src/oisl_device.c -o CMakeFiles/oisl.dir/src/oisl_device.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/apps/oisl/fsw && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/oisl/fsw/src/oisl_device.c -o CMakeFiles/oisl.dir/src/oisl_device.c.s
 
 # Object files for target oisl
 oisl_OBJECTS = \
@@ -125,18 +125,18 @@ apps/oisl/fsw/oisl.so: apps/oisl/fsw/CMakeFiles/oisl.dir/src/oisl_app.c.o
 apps/oisl/fsw/oisl.so: apps/oisl/fsw/CMakeFiles/oisl.dir/src/oisl_device.c.o
 apps/oisl/fsw/oisl.so: apps/oisl/fsw/CMakeFiles/oisl.dir/build.make
 apps/oisl/fsw/oisl.so: apps/oisl/fsw/CMakeFiles/oisl.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C shared module oisl.so"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/apps/oisl/fsw && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/oisl.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C shared module oisl.so"
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/apps/oisl/fsw && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/oisl.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 apps/oisl/fsw/CMakeFiles/oisl.dir/build: apps/oisl/fsw/oisl.so
 .PHONY : apps/oisl/fsw/CMakeFiles/oisl.dir/build
 
 apps/oisl/fsw/CMakeFiles/oisl.dir/clean:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/apps/oisl/fsw && $(CMAKE_COMMAND) -P CMakeFiles/oisl.dir/cmake_clean.cmake
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/apps/oisl/fsw && $(CMAKE_COMMAND) -P CMakeFiles/oisl.dir/cmake_clean.cmake
 .PHONY : apps/oisl/fsw/CMakeFiles/oisl.dir/clean
 
 apps/oisl/fsw/CMakeFiles/oisl.dir/depend:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/jstar/Desktop/github-nos3/fsw/cfe /home/jstar/Desktop/github-nos3/components/oisl/fsw /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/apps/oisl/fsw /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/apps/oisl/fsw/CMakeFiles/oisl.dir/DependInfo.cmake --color=$(COLOR)
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/cfe /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/oisl/fsw /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/apps/oisl/fsw /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/apps/oisl/fsw/CMakeFiles/oisl.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : apps/oisl/fsw/CMakeFiles/oisl.dir/depend
 

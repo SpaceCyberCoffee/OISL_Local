@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/jstar/Desktop/github-nos3/fsw/cfe
+CMAKE_SOURCE_DIR = /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/cfe
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1
+CMAKE_BINARY_DIR = /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1
 
 # Include any dependencies generated for this target.
 include apps/syn/fsw/CMakeFiles/syn.dir/depend.make
@@ -70,18 +70,18 @@ include apps/syn/fsw/CMakeFiles/syn.dir/progress.make
 include apps/syn/fsw/CMakeFiles/syn.dir/flags.make
 
 apps/syn/fsw/CMakeFiles/syn.dir/src/syn_app.c.o: apps/syn/fsw/CMakeFiles/syn.dir/flags.make
-apps/syn/fsw/CMakeFiles/syn.dir/src/syn_app.c.o: /home/jstar/Desktop/github-nos3/components/syn/fsw/src/syn_app.c
+apps/syn/fsw/CMakeFiles/syn.dir/src/syn_app.c.o: /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/syn/fsw/src/syn_app.c
 apps/syn/fsw/CMakeFiles/syn.dir/src/syn_app.c.o: apps/syn/fsw/CMakeFiles/syn.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object apps/syn/fsw/CMakeFiles/syn.dir/src/syn_app.c.o"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/apps/syn/fsw && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT apps/syn/fsw/CMakeFiles/syn.dir/src/syn_app.c.o -MF CMakeFiles/syn.dir/src/syn_app.c.o.d -o CMakeFiles/syn.dir/src/syn_app.c.o -c /home/jstar/Desktop/github-nos3/components/syn/fsw/src/syn_app.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object apps/syn/fsw/CMakeFiles/syn.dir/src/syn_app.c.o"
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/apps/syn/fsw && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT apps/syn/fsw/CMakeFiles/syn.dir/src/syn_app.c.o -MF CMakeFiles/syn.dir/src/syn_app.c.o.d -o CMakeFiles/syn.dir/src/syn_app.c.o -c /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/syn/fsw/src/syn_app.c
 
 apps/syn/fsw/CMakeFiles/syn.dir/src/syn_app.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/syn.dir/src/syn_app.c.i"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/apps/syn/fsw && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jstar/Desktop/github-nos3/components/syn/fsw/src/syn_app.c > CMakeFiles/syn.dir/src/syn_app.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/apps/syn/fsw && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/syn/fsw/src/syn_app.c > CMakeFiles/syn.dir/src/syn_app.c.i
 
 apps/syn/fsw/CMakeFiles/syn.dir/src/syn_app.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/syn.dir/src/syn_app.c.s"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/apps/syn/fsw && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jstar/Desktop/github-nos3/components/syn/fsw/src/syn_app.c -o CMakeFiles/syn.dir/src/syn_app.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/apps/syn/fsw && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/syn/fsw/src/syn_app.c -o CMakeFiles/syn.dir/src/syn_app.c.s
 
 # Object files for target syn
 syn_OBJECTS = \
@@ -94,18 +94,18 @@ apps/syn/fsw/syn.so: apps/syn/fsw/CMakeFiles/syn.dir/src/syn_app.c.o
 apps/syn/fsw/syn.so: apps/syn/fsw/CMakeFiles/syn.dir/build.make
 apps/syn/fsw/syn.so: apps/syn/libsynopsis.so
 apps/syn/fsw/syn.so: apps/syn/fsw/CMakeFiles/syn.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C shared module syn.so"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/apps/syn/fsw && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/syn.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C shared module syn.so"
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/apps/syn/fsw && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/syn.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 apps/syn/fsw/CMakeFiles/syn.dir/build: apps/syn/fsw/syn.so
 .PHONY : apps/syn/fsw/CMakeFiles/syn.dir/build
 
 apps/syn/fsw/CMakeFiles/syn.dir/clean:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/apps/syn/fsw && $(CMAKE_COMMAND) -P CMakeFiles/syn.dir/cmake_clean.cmake
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/apps/syn/fsw && $(CMAKE_COMMAND) -P CMakeFiles/syn.dir/cmake_clean.cmake
 .PHONY : apps/syn/fsw/CMakeFiles/syn.dir/clean
 
 apps/syn/fsw/CMakeFiles/syn.dir/depend:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/jstar/Desktop/github-nos3/fsw/cfe /home/jstar/Desktop/github-nos3/components/syn/fsw /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/apps/syn/fsw /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/apps/syn/fsw/CMakeFiles/syn.dir/DependInfo.cmake --color=$(COLOR)
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/cfe /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/syn/fsw /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/apps/syn/fsw /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/apps/syn/fsw/CMakeFiles/syn.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : apps/syn/fsw/CMakeFiles/syn.dir/depend
 

@@ -4,7 +4,7 @@
 # compile C with /usr/bin/cc
 C_DEFINES = -D_XOPEN_SOURCE=600
 
-C_INCLUDES = -I/home/jstar/Desktop/github-nos3/fsw/cfe/modules/core_api/fsw/inc -I/home/jstar/Desktop/github-nos3/fsw/osal/src/os/inc -I/home/jstar/Desktop/github-nos3/fsw/psp/psp/fsw/inc -I/home/jstar/Desktop/github-nos3/fsw/build/inc -I/src/inc
+C_INCLUDES = -I/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/cfe/modules/core_api/fsw/inc -I/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/src/os/inc -I/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/psp/psp/fsw/inc -I/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/inc -I/src/inc
 
 C_FLAGS = -g -std=c99 -pedantic -Wall -Wstrict-prototypes -Wwrite-strings -Wpointer-arith -Wcast-align -Werror
 

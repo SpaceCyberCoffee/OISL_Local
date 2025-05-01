@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/jstar/Desktop/github-nos3/fsw/cfe
+CMAKE_SOURCE_DIR = /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/cfe
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/jstar/Desktop/github-nos3/fsw/build
+CMAKE_BINARY_DIR = /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build
 
 # Utility rule file for cf-usersguide.
 
@@ -67,7 +67,7 @@ include docs/cf-usersguide/CMakeFiles/cf-usersguide.dir/compiler_depend.make
 include docs/cf-usersguide/CMakeFiles/cf-usersguide.dir/progress.make
 
 docs/cf-usersguide/CMakeFiles/cf-usersguide:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/docs/cf-usersguide && echo CF\ UsersGuide:\ file:///home/jstar/Desktop/github-nos3/fsw/build/docs/cf-usersguide/html/index.html
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/docs/cf-usersguide && echo CF\ UsersGuide:\ file:///mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/docs/cf-usersguide/html/index.html
 
 cf-usersguide: docs/cf-usersguide/CMakeFiles/cf-usersguide
 cf-usersguide: docs/cf-usersguide/CMakeFiles/cf-usersguide.dir/build.make
@@ -78,10 +78,10 @@ docs/cf-usersguide/CMakeFiles/cf-usersguide.dir/build: cf-usersguide
 .PHONY : docs/cf-usersguide/CMakeFiles/cf-usersguide.dir/build
 
 docs/cf-usersguide/CMakeFiles/cf-usersguide.dir/clean:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/docs/cf-usersguide && $(CMAKE_COMMAND) -P CMakeFiles/cf-usersguide.dir/cmake_clean.cmake
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/docs/cf-usersguide && $(CMAKE_COMMAND) -P CMakeFiles/cf-usersguide.dir/cmake_clean.cmake
 .PHONY : docs/cf-usersguide/CMakeFiles/cf-usersguide.dir/clean
 
 docs/cf-usersguide/CMakeFiles/cf-usersguide.dir/depend:
-	cd /home/jstar/Desktop/github-nos3/fsw/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/jstar/Desktop/github-nos3/fsw/cfe /home/jstar/Desktop/github-nos3/fsw/apps/cf/docs/dox_src /home/jstar/Desktop/github-nos3/fsw/build /home/jstar/Desktop/github-nos3/fsw/build/docs/cf-usersguide /home/jstar/Desktop/github-nos3/fsw/build/docs/cf-usersguide/CMakeFiles/cf-usersguide.dir/DependInfo.cmake --color=$(COLOR)
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/cfe /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/apps/cf/docs/dox_src /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/docs/cf-usersguide /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/docs/cf-usersguide/CMakeFiles/cf-usersguide.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : docs/cf-usersguide/CMakeFiles/cf-usersguide.dir/depend
 

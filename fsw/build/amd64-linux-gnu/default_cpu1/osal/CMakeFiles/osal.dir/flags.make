@@ -4,7 +4,7 @@
 # compile C with /usr/bin/gcc
 C_DEFINES = -DBYTE_ORDER_LE -D_GNU_SOURCE -D_LINUX_OS_ -D_NOS_OS_ -D_XOPEN_SOURCE=600
 
-C_INCLUDES = -I/home/jstar/Desktop/github-nos3/fsw/build/inc -I/home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/inc -I/home/jstar/Desktop/github-nos3/fsw/osal/src/os/inc -I/home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/osal/inc -I/home/jstar/Desktop/github-nos3/fsw/osal/src/os/shared/inc -I/home/jstar/Desktop/github-nos3/fsw/osal/src/bsp/shared/inc
+C_INCLUDES = -I/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/inc -I/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/inc -I/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/src/os/inc -I/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/osal/inc -I/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/src/os/shared/inc -I/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/src/bsp/shared/inc
 
 C_FLAGS =  -std=c99 -Wstrict-prototypes -pedantic -Werror -Wall -Wwrite-strings -Wpointer-arith -Wno-address-of-packed-member -g -fPIC -DBYTE_ORDER_LE -D_LINUX_OS_ -D_DEFAULT_SOURCE
 

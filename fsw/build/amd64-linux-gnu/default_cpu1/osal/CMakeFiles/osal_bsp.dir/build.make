@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/jstar/Desktop/github-nos3/fsw/cfe
+CMAKE_SOURCE_DIR = /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/cfe
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1
+CMAKE_BINARY_DIR = /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1
 
 # Include any dependencies generated for this target.
 include osal/CMakeFiles/osal_bsp.dir/depend.make
@@ -70,74 +70,74 @@ include osal/CMakeFiles/osal_bsp.dir/progress.make
 include osal/CMakeFiles/osal_bsp.dir/flags.make
 
 osal/CMakeFiles/osal_bsp.dir/src/bsp/shared/src/osapi-bsp.c.o: osal/CMakeFiles/osal_bsp.dir/flags.make
-osal/CMakeFiles/osal_bsp.dir/src/bsp/shared/src/osapi-bsp.c.o: /home/jstar/Desktop/github-nos3/fsw/osal/src/bsp/shared/src/osapi-bsp.c
+osal/CMakeFiles/osal_bsp.dir/src/bsp/shared/src/osapi-bsp.c.o: /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/src/bsp/shared/src/osapi-bsp.c
 osal/CMakeFiles/osal_bsp.dir/src/bsp/shared/src/osapi-bsp.c.o: osal/CMakeFiles/osal_bsp.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object osal/CMakeFiles/osal_bsp.dir/src/bsp/shared/src/osapi-bsp.c.o"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/osal && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT osal/CMakeFiles/osal_bsp.dir/src/bsp/shared/src/osapi-bsp.c.o -MF CMakeFiles/osal_bsp.dir/src/bsp/shared/src/osapi-bsp.c.o.d -o CMakeFiles/osal_bsp.dir/src/bsp/shared/src/osapi-bsp.c.o -c /home/jstar/Desktop/github-nos3/fsw/osal/src/bsp/shared/src/osapi-bsp.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object osal/CMakeFiles/osal_bsp.dir/src/bsp/shared/src/osapi-bsp.c.o"
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/osal && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT osal/CMakeFiles/osal_bsp.dir/src/bsp/shared/src/osapi-bsp.c.o -MF CMakeFiles/osal_bsp.dir/src/bsp/shared/src/osapi-bsp.c.o.d -o CMakeFiles/osal_bsp.dir/src/bsp/shared/src/osapi-bsp.c.o -c /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/src/bsp/shared/src/osapi-bsp.c
 
 osal/CMakeFiles/osal_bsp.dir/src/bsp/shared/src/osapi-bsp.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/osal_bsp.dir/src/bsp/shared/src/osapi-bsp.c.i"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/osal && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jstar/Desktop/github-nos3/fsw/osal/src/bsp/shared/src/osapi-bsp.c > CMakeFiles/osal_bsp.dir/src/bsp/shared/src/osapi-bsp.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/osal && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/src/bsp/shared/src/osapi-bsp.c > CMakeFiles/osal_bsp.dir/src/bsp/shared/src/osapi-bsp.c.i
 
 osal/CMakeFiles/osal_bsp.dir/src/bsp/shared/src/osapi-bsp.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/osal_bsp.dir/src/bsp/shared/src/osapi-bsp.c.s"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/osal && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jstar/Desktop/github-nos3/fsw/osal/src/bsp/shared/src/osapi-bsp.c -o CMakeFiles/osal_bsp.dir/src/bsp/shared/src/osapi-bsp.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/osal && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/src/bsp/shared/src/osapi-bsp.c -o CMakeFiles/osal_bsp.dir/src/bsp/shared/src/osapi-bsp.c.s
 
 osal/CMakeFiles/osal_bsp.dir/src/bsp/shared/src/bsp_default_app_run.c.o: osal/CMakeFiles/osal_bsp.dir/flags.make
-osal/CMakeFiles/osal_bsp.dir/src/bsp/shared/src/bsp_default_app_run.c.o: /home/jstar/Desktop/github-nos3/fsw/osal/src/bsp/shared/src/bsp_default_app_run.c
+osal/CMakeFiles/osal_bsp.dir/src/bsp/shared/src/bsp_default_app_run.c.o: /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/src/bsp/shared/src/bsp_default_app_run.c
 osal/CMakeFiles/osal_bsp.dir/src/bsp/shared/src/bsp_default_app_run.c.o: osal/CMakeFiles/osal_bsp.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object osal/CMakeFiles/osal_bsp.dir/src/bsp/shared/src/bsp_default_app_run.c.o"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/osal && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT osal/CMakeFiles/osal_bsp.dir/src/bsp/shared/src/bsp_default_app_run.c.o -MF CMakeFiles/osal_bsp.dir/src/bsp/shared/src/bsp_default_app_run.c.o.d -o CMakeFiles/osal_bsp.dir/src/bsp/shared/src/bsp_default_app_run.c.o -c /home/jstar/Desktop/github-nos3/fsw/osal/src/bsp/shared/src/bsp_default_app_run.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object osal/CMakeFiles/osal_bsp.dir/src/bsp/shared/src/bsp_default_app_run.c.o"
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/osal && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT osal/CMakeFiles/osal_bsp.dir/src/bsp/shared/src/bsp_default_app_run.c.o -MF CMakeFiles/osal_bsp.dir/src/bsp/shared/src/bsp_default_app_run.c.o.d -o CMakeFiles/osal_bsp.dir/src/bsp/shared/src/bsp_default_app_run.c.o -c /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/src/bsp/shared/src/bsp_default_app_run.c
 
 osal/CMakeFiles/osal_bsp.dir/src/bsp/shared/src/bsp_default_app_run.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/osal_bsp.dir/src/bsp/shared/src/bsp_default_app_run.c.i"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/osal && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jstar/Desktop/github-nos3/fsw/osal/src/bsp/shared/src/bsp_default_app_run.c > CMakeFiles/osal_bsp.dir/src/bsp/shared/src/bsp_default_app_run.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/osal && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/src/bsp/shared/src/bsp_default_app_run.c > CMakeFiles/osal_bsp.dir/src/bsp/shared/src/bsp_default_app_run.c.i
 
 osal/CMakeFiles/osal_bsp.dir/src/bsp/shared/src/bsp_default_app_run.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/osal_bsp.dir/src/bsp/shared/src/bsp_default_app_run.c.s"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/osal && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jstar/Desktop/github-nos3/fsw/osal/src/bsp/shared/src/bsp_default_app_run.c -o CMakeFiles/osal_bsp.dir/src/bsp/shared/src/bsp_default_app_run.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/osal && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/src/bsp/shared/src/bsp_default_app_run.c -o CMakeFiles/osal_bsp.dir/src/bsp/shared/src/bsp_default_app_run.c.s
 
 osal/CMakeFiles/osal_bsp.dir/src/bsp/shared/src/bsp_default_app_startup.c.o: osal/CMakeFiles/osal_bsp.dir/flags.make
-osal/CMakeFiles/osal_bsp.dir/src/bsp/shared/src/bsp_default_app_startup.c.o: /home/jstar/Desktop/github-nos3/fsw/osal/src/bsp/shared/src/bsp_default_app_startup.c
+osal/CMakeFiles/osal_bsp.dir/src/bsp/shared/src/bsp_default_app_startup.c.o: /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/src/bsp/shared/src/bsp_default_app_startup.c
 osal/CMakeFiles/osal_bsp.dir/src/bsp/shared/src/bsp_default_app_startup.c.o: osal/CMakeFiles/osal_bsp.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object osal/CMakeFiles/osal_bsp.dir/src/bsp/shared/src/bsp_default_app_startup.c.o"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/osal && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT osal/CMakeFiles/osal_bsp.dir/src/bsp/shared/src/bsp_default_app_startup.c.o -MF CMakeFiles/osal_bsp.dir/src/bsp/shared/src/bsp_default_app_startup.c.o.d -o CMakeFiles/osal_bsp.dir/src/bsp/shared/src/bsp_default_app_startup.c.o -c /home/jstar/Desktop/github-nos3/fsw/osal/src/bsp/shared/src/bsp_default_app_startup.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object osal/CMakeFiles/osal_bsp.dir/src/bsp/shared/src/bsp_default_app_startup.c.o"
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/osal && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT osal/CMakeFiles/osal_bsp.dir/src/bsp/shared/src/bsp_default_app_startup.c.o -MF CMakeFiles/osal_bsp.dir/src/bsp/shared/src/bsp_default_app_startup.c.o.d -o CMakeFiles/osal_bsp.dir/src/bsp/shared/src/bsp_default_app_startup.c.o -c /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/src/bsp/shared/src/bsp_default_app_startup.c
 
 osal/CMakeFiles/osal_bsp.dir/src/bsp/shared/src/bsp_default_app_startup.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/osal_bsp.dir/src/bsp/shared/src/bsp_default_app_startup.c.i"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/osal && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jstar/Desktop/github-nos3/fsw/osal/src/bsp/shared/src/bsp_default_app_startup.c > CMakeFiles/osal_bsp.dir/src/bsp/shared/src/bsp_default_app_startup.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/osal && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/src/bsp/shared/src/bsp_default_app_startup.c > CMakeFiles/osal_bsp.dir/src/bsp/shared/src/bsp_default_app_startup.c.i
 
 osal/CMakeFiles/osal_bsp.dir/src/bsp/shared/src/bsp_default_app_startup.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/osal_bsp.dir/src/bsp/shared/src/bsp_default_app_startup.c.s"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/osal && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jstar/Desktop/github-nos3/fsw/osal/src/bsp/shared/src/bsp_default_app_startup.c -o CMakeFiles/osal_bsp.dir/src/bsp/shared/src/bsp_default_app_startup.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/osal && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/src/bsp/shared/src/bsp_default_app_startup.c -o CMakeFiles/osal_bsp.dir/src/bsp/shared/src/bsp_default_app_startup.c.s
 
 osal/CMakeFiles/osal_bsp.dir/src/bsp/shared/src/bsp_default_symtab.c.o: osal/CMakeFiles/osal_bsp.dir/flags.make
-osal/CMakeFiles/osal_bsp.dir/src/bsp/shared/src/bsp_default_symtab.c.o: /home/jstar/Desktop/github-nos3/fsw/osal/src/bsp/shared/src/bsp_default_symtab.c
+osal/CMakeFiles/osal_bsp.dir/src/bsp/shared/src/bsp_default_symtab.c.o: /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/src/bsp/shared/src/bsp_default_symtab.c
 osal/CMakeFiles/osal_bsp.dir/src/bsp/shared/src/bsp_default_symtab.c.o: osal/CMakeFiles/osal_bsp.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object osal/CMakeFiles/osal_bsp.dir/src/bsp/shared/src/bsp_default_symtab.c.o"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/osal && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT osal/CMakeFiles/osal_bsp.dir/src/bsp/shared/src/bsp_default_symtab.c.o -MF CMakeFiles/osal_bsp.dir/src/bsp/shared/src/bsp_default_symtab.c.o.d -o CMakeFiles/osal_bsp.dir/src/bsp/shared/src/bsp_default_symtab.c.o -c /home/jstar/Desktop/github-nos3/fsw/osal/src/bsp/shared/src/bsp_default_symtab.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object osal/CMakeFiles/osal_bsp.dir/src/bsp/shared/src/bsp_default_symtab.c.o"
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/osal && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT osal/CMakeFiles/osal_bsp.dir/src/bsp/shared/src/bsp_default_symtab.c.o -MF CMakeFiles/osal_bsp.dir/src/bsp/shared/src/bsp_default_symtab.c.o.d -o CMakeFiles/osal_bsp.dir/src/bsp/shared/src/bsp_default_symtab.c.o -c /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/src/bsp/shared/src/bsp_default_symtab.c
 
 osal/CMakeFiles/osal_bsp.dir/src/bsp/shared/src/bsp_default_symtab.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/osal_bsp.dir/src/bsp/shared/src/bsp_default_symtab.c.i"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/osal && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jstar/Desktop/github-nos3/fsw/osal/src/bsp/shared/src/bsp_default_symtab.c > CMakeFiles/osal_bsp.dir/src/bsp/shared/src/bsp_default_symtab.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/osal && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/src/bsp/shared/src/bsp_default_symtab.c > CMakeFiles/osal_bsp.dir/src/bsp/shared/src/bsp_default_symtab.c.i
 
 osal/CMakeFiles/osal_bsp.dir/src/bsp/shared/src/bsp_default_symtab.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/osal_bsp.dir/src/bsp/shared/src/bsp_default_symtab.c.s"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/osal && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jstar/Desktop/github-nos3/fsw/osal/src/bsp/shared/src/bsp_default_symtab.c -o CMakeFiles/osal_bsp.dir/src/bsp/shared/src/bsp_default_symtab.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/osal && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/src/bsp/shared/src/bsp_default_symtab.c -o CMakeFiles/osal_bsp.dir/src/bsp/shared/src/bsp_default_symtab.c.s
 
 osal/CMakeFiles/osal_bsp.dir/src/bsp/shared/src/bsp_default_resourcecfg.c.o: osal/CMakeFiles/osal_bsp.dir/flags.make
-osal/CMakeFiles/osal_bsp.dir/src/bsp/shared/src/bsp_default_resourcecfg.c.o: /home/jstar/Desktop/github-nos3/fsw/osal/src/bsp/shared/src/bsp_default_resourcecfg.c
+osal/CMakeFiles/osal_bsp.dir/src/bsp/shared/src/bsp_default_resourcecfg.c.o: /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/src/bsp/shared/src/bsp_default_resourcecfg.c
 osal/CMakeFiles/osal_bsp.dir/src/bsp/shared/src/bsp_default_resourcecfg.c.o: osal/CMakeFiles/osal_bsp.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object osal/CMakeFiles/osal_bsp.dir/src/bsp/shared/src/bsp_default_resourcecfg.c.o"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/osal && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT osal/CMakeFiles/osal_bsp.dir/src/bsp/shared/src/bsp_default_resourcecfg.c.o -MF CMakeFiles/osal_bsp.dir/src/bsp/shared/src/bsp_default_resourcecfg.c.o.d -o CMakeFiles/osal_bsp.dir/src/bsp/shared/src/bsp_default_resourcecfg.c.o -c /home/jstar/Desktop/github-nos3/fsw/osal/src/bsp/shared/src/bsp_default_resourcecfg.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object osal/CMakeFiles/osal_bsp.dir/src/bsp/shared/src/bsp_default_resourcecfg.c.o"
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/osal && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT osal/CMakeFiles/osal_bsp.dir/src/bsp/shared/src/bsp_default_resourcecfg.c.o -MF CMakeFiles/osal_bsp.dir/src/bsp/shared/src/bsp_default_resourcecfg.c.o.d -o CMakeFiles/osal_bsp.dir/src/bsp/shared/src/bsp_default_resourcecfg.c.o -c /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/src/bsp/shared/src/bsp_default_resourcecfg.c
 
 osal/CMakeFiles/osal_bsp.dir/src/bsp/shared/src/bsp_default_resourcecfg.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/osal_bsp.dir/src/bsp/shared/src/bsp_default_resourcecfg.c.i"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/osal && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jstar/Desktop/github-nos3/fsw/osal/src/bsp/shared/src/bsp_default_resourcecfg.c > CMakeFiles/osal_bsp.dir/src/bsp/shared/src/bsp_default_resourcecfg.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/osal && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/src/bsp/shared/src/bsp_default_resourcecfg.c > CMakeFiles/osal_bsp.dir/src/bsp/shared/src/bsp_default_resourcecfg.c.i
 
 osal/CMakeFiles/osal_bsp.dir/src/bsp/shared/src/bsp_default_resourcecfg.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/osal_bsp.dir/src/bsp/shared/src/bsp_default_resourcecfg.c.s"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/osal && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jstar/Desktop/github-nos3/fsw/osal/src/bsp/shared/src/bsp_default_resourcecfg.c -o CMakeFiles/osal_bsp.dir/src/bsp/shared/src/bsp_default_resourcecfg.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/osal && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/src/bsp/shared/src/bsp_default_resourcecfg.c -o CMakeFiles/osal_bsp.dir/src/bsp/shared/src/bsp_default_resourcecfg.c.s
 
 # Object files for target osal_bsp
 osal_bsp_OBJECTS = \
@@ -149,31 +149,31 @@ osal_bsp_OBJECTS = \
 
 # External object files for target osal_bsp
 osal_bsp_EXTERNAL_OBJECTS = \
-"/home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/osal/nos-linux_impl/CMakeFiles/osal_nos-linux_impl.dir/home/jstar/Desktop/github-nos3/fsw/osal/src/bsp/generic-linux/src/bsp_start.c.o" \
-"/home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/osal/nos-linux_impl/CMakeFiles/osal_nos-linux_impl.dir/home/jstar/Desktop/github-nos3/fsw/osal/src/bsp/generic-linux/src/bsp_console.c.o"
+"/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/osal/nos-linux_impl/CMakeFiles/osal_nos-linux_impl.dir/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/src/bsp/generic-linux/src/bsp_start.c.o" \
+"/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/osal/nos-linux_impl/CMakeFiles/osal_nos-linux_impl.dir/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/src/bsp/generic-linux/src/bsp_console.c.o"
 
 osal/libosal_bsp.a: osal/CMakeFiles/osal_bsp.dir/src/bsp/shared/src/osapi-bsp.c.o
 osal/libosal_bsp.a: osal/CMakeFiles/osal_bsp.dir/src/bsp/shared/src/bsp_default_app_run.c.o
 osal/libosal_bsp.a: osal/CMakeFiles/osal_bsp.dir/src/bsp/shared/src/bsp_default_app_startup.c.o
 osal/libosal_bsp.a: osal/CMakeFiles/osal_bsp.dir/src/bsp/shared/src/bsp_default_symtab.c.o
 osal/libosal_bsp.a: osal/CMakeFiles/osal_bsp.dir/src/bsp/shared/src/bsp_default_resourcecfg.c.o
-osal/libosal_bsp.a: osal/nos-linux_impl/CMakeFiles/osal_nos-linux_impl.dir/home/jstar/Desktop/github-nos3/fsw/osal/src/bsp/generic-linux/src/bsp_start.c.o
-osal/libosal_bsp.a: osal/nos-linux_impl/CMakeFiles/osal_nos-linux_impl.dir/home/jstar/Desktop/github-nos3/fsw/osal/src/bsp/generic-linux/src/bsp_console.c.o
+osal/libosal_bsp.a: osal/nos-linux_impl/CMakeFiles/osal_nos-linux_impl.dir/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/src/bsp/generic-linux/src/bsp_start.c.o
+osal/libosal_bsp.a: osal/nos-linux_impl/CMakeFiles/osal_nos-linux_impl.dir/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/src/bsp/generic-linux/src/bsp_console.c.o
 osal/libosal_bsp.a: osal/CMakeFiles/osal_bsp.dir/build.make
 osal/libosal_bsp.a: osal/CMakeFiles/osal_bsp.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking C static library libosal_bsp.a"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/osal && $(CMAKE_COMMAND) -P CMakeFiles/osal_bsp.dir/cmake_clean_target.cmake
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/osal && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/osal_bsp.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking C static library libosal_bsp.a"
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/osal && $(CMAKE_COMMAND) -P CMakeFiles/osal_bsp.dir/cmake_clean_target.cmake
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/osal && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/osal_bsp.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 osal/CMakeFiles/osal_bsp.dir/build: osal/libosal_bsp.a
 .PHONY : osal/CMakeFiles/osal_bsp.dir/build
 
 osal/CMakeFiles/osal_bsp.dir/clean:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/osal && $(CMAKE_COMMAND) -P CMakeFiles/osal_bsp.dir/cmake_clean.cmake
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/osal && $(CMAKE_COMMAND) -P CMakeFiles/osal_bsp.dir/cmake_clean.cmake
 .PHONY : osal/CMakeFiles/osal_bsp.dir/clean
 
 osal/CMakeFiles/osal_bsp.dir/depend:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/jstar/Desktop/github-nos3/fsw/cfe /home/jstar/Desktop/github-nos3/fsw/osal /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/osal /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/osal/CMakeFiles/osal_bsp.dir/DependInfo.cmake --color=$(COLOR)
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/cfe /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/osal /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/osal/CMakeFiles/osal_bsp.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : osal/CMakeFiles/osal_bsp.dir/depend
 

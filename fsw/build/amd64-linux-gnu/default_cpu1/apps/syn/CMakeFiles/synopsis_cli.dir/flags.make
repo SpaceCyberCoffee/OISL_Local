@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/g++
 CXX_DEFINES = -DBYTE_ORDER_LE -D_LINUX_OS_
 
-CXX_INCLUDES = -I/home/jstar/Desktop/github-nos3/fsw/build/inc -I/home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/inc -I/home/jstar/Desktop/github-nos3/components/syn/synopsis/include -I/home/jstar/Desktop/github-nos3/components/syn/synopsis/json/single_include
+CXX_INCLUDES = -I/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/inc -I/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/inc -I/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/syn/synopsis/include -I/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/syn/synopsis/json/single_include
 
 CXX_FLAGS = -Wno-format -g -fPIE -DBYTE_ORDER_LE -D_LINUX_OS_ -D_DEFAULT_SOURCE -std=gnu++11
 

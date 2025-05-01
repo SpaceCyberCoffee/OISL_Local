@@ -5,9 +5,9 @@
 
 
 
-/* /home/jstar/Desktop/github-nos3/fsw/../cfg/build/nos3_defs/cfe_platform_cfg.h does not exist */
-/* /home/jstar/Desktop/github-nos3/fsw/../cfg/build/nos3_defs/default_platform_cfg.h does not exist */
-#include "/home/jstar/Desktop/github-nos3/fsw/../cfg/build/nos3_defs/cpu1_platform_cfg.h"
+/* /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/../cfg/build/nos3_defs/cfe_platform_cfg.h does not exist */
+/* /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/../cfg/build/nos3_defs/default_platform_cfg.h does not exist */
+#include "/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/../cfg/build/nos3_defs/cpu1_platform_cfg.h"
 
 
 #endif /* GENERATED_INCLUDE_CFE_PLATFORM_CFG_H */

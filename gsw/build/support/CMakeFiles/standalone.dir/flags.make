@@ -4,7 +4,7 @@
 # compile C with /usr/bin/cc
 C_DEFINES = 
 
-C_INCLUDES = -I/home/jstar/Desktop/github-nos3/components/cryptolib/include -I/home/jstar/Desktop/github-nos3/components/cryptolib/support/./standalone
+C_INCLUDES = -I/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/cryptolib/include -I/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/cryptolib/support/./standalone
 
 C_FLAGS =  -Wall -Wextra -Werror -g -O0 -g
 

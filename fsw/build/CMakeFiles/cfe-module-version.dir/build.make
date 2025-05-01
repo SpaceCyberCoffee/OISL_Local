@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/jstar/Desktop/github-nos3/fsw/cfe
+CMAKE_SOURCE_DIR = /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/cfe
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/jstar/Desktop/github-nos3/fsw/build
+CMAKE_BINARY_DIR = /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build
 
 # Utility rule file for cfe-module-version.
 
@@ -67,7 +67,7 @@ include CMakeFiles/cfe-module-version.dir/compiler_depend.make
 include CMakeFiles/cfe-module-version.dir/progress.make
 
 CMakeFiles/cfe-module-version:
-	cd /home/jstar/Desktop/github-nos3/fsw/cfe && /usr/bin/cmake -D BIN=/home/jstar/Desktop/github-nos3/fsw/build -P /home/jstar/Desktop/github-nos3/fsw/cfe/cmake/generate_git_module_version.cmake
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/cfe && /usr/bin/cmake -D BIN=/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build -P /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/cfe/cmake/generate_git_module_version.cmake
 
 cfe-module-version: CMakeFiles/cfe-module-version
 cfe-module-version: CMakeFiles/cfe-module-version.dir/build.make
@@ -82,6 +82,6 @@ CMakeFiles/cfe-module-version.dir/clean:
 .PHONY : CMakeFiles/cfe-module-version.dir/clean
 
 CMakeFiles/cfe-module-version.dir/depend:
-	cd /home/jstar/Desktop/github-nos3/fsw/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/jstar/Desktop/github-nos3/fsw/cfe /home/jstar/Desktop/github-nos3/fsw/cfe /home/jstar/Desktop/github-nos3/fsw/build /home/jstar/Desktop/github-nos3/fsw/build /home/jstar/Desktop/github-nos3/fsw/build/CMakeFiles/cfe-module-version.dir/DependInfo.cmake --color=$(COLOR)
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/cfe /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/cfe /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/CMakeFiles/cfe-module-version.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/cfe-module-version.dir/depend
 

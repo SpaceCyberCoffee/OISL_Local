@@ -8,11 +8,11 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/jstar/Desktop/github-nos3/fsw/apps/ds/fsw/src/ds_app.c" "apps/ds/CMakeFiles/ds.dir/fsw/src/ds_app.c.o" "gcc" "apps/ds/CMakeFiles/ds.dir/fsw/src/ds_app.c.o.d"
-  "/home/jstar/Desktop/github-nos3/fsw/apps/ds/fsw/src/ds_cmds.c" "apps/ds/CMakeFiles/ds.dir/fsw/src/ds_cmds.c.o" "gcc" "apps/ds/CMakeFiles/ds.dir/fsw/src/ds_cmds.c.o.d"
-  "/home/jstar/Desktop/github-nos3/fsw/apps/ds/fsw/src/ds_dispatch.c" "apps/ds/CMakeFiles/ds.dir/fsw/src/ds_dispatch.c.o" "gcc" "apps/ds/CMakeFiles/ds.dir/fsw/src/ds_dispatch.c.o.d"
-  "/home/jstar/Desktop/github-nos3/fsw/apps/ds/fsw/src/ds_file.c" "apps/ds/CMakeFiles/ds.dir/fsw/src/ds_file.c.o" "gcc" "apps/ds/CMakeFiles/ds.dir/fsw/src/ds_file.c.o.d"
-  "/home/jstar/Desktop/github-nos3/fsw/apps/ds/fsw/src/ds_table.c" "apps/ds/CMakeFiles/ds.dir/fsw/src/ds_table.c.o" "gcc" "apps/ds/CMakeFiles/ds.dir/fsw/src/ds_table.c.o.d"
+  "/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/apps/ds/fsw/src/ds_app.c" "apps/ds/CMakeFiles/ds.dir/fsw/src/ds_app.c.o" "gcc" "apps/ds/CMakeFiles/ds.dir/fsw/src/ds_app.c.o.d"
+  "/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/apps/ds/fsw/src/ds_cmds.c" "apps/ds/CMakeFiles/ds.dir/fsw/src/ds_cmds.c.o" "gcc" "apps/ds/CMakeFiles/ds.dir/fsw/src/ds_cmds.c.o.d"
+  "/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/apps/ds/fsw/src/ds_dispatch.c" "apps/ds/CMakeFiles/ds.dir/fsw/src/ds_dispatch.c.o" "gcc" "apps/ds/CMakeFiles/ds.dir/fsw/src/ds_dispatch.c.o.d"
+  "/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/apps/ds/fsw/src/ds_file.c" "apps/ds/CMakeFiles/ds.dir/fsw/src/ds_file.c.o" "gcc" "apps/ds/CMakeFiles/ds.dir/fsw/src/ds_file.c.o.d"
+  "/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/apps/ds/fsw/src/ds_table.c" "apps/ds/CMakeFiles/ds.dir/fsw/src/ds_table.c.o" "gcc" "apps/ds/CMakeFiles/ds.dir/fsw/src/ds_table.c.o.d"
   )
 
 # Targets to which this target links.

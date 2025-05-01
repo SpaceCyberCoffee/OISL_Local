@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/jstar/Desktop/github-nos3/fsw/cfe
+CMAKE_SOURCE_DIR = /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/cfe
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/jstar/Desktop/github-nos3/fsw/build
+CMAKE_BINARY_DIR = /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -142,14 +142,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/jstar/Desktop/github-nos3/fsw/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/jstar/Desktop/github-nos3/fsw/build/CMakeFiles /home/jstar/Desktop/github-nos3/fsw/build/docs/ds-usersguide//CMakeFiles/progress.marks
-	cd /home/jstar/Desktop/github-nos3/fsw/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/ds-usersguide/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/jstar/Desktop/github-nos3/fsw/build/CMakeFiles 0
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build && $(CMAKE_COMMAND) -E cmake_progress_start /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/CMakeFiles /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/docs/ds-usersguide//CMakeFiles/progress.marks
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/ds-usersguide/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/jstar/Desktop/github-nos3/fsw/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/ds-usersguide/clean
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/ds-usersguide/clean
 .PHONY : clean
 
 # The main clean target
@@ -158,22 +158,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/jstar/Desktop/github-nos3/fsw/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/ds-usersguide/preinstall
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/ds-usersguide/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/jstar/Desktop/github-nos3/fsw/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/ds-usersguide/preinstall
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/ds-usersguide/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/jstar/Desktop/github-nos3/fsw/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 docs/ds-usersguide/CMakeFiles/ds-usersguide.dir/rule:
-	cd /home/jstar/Desktop/github-nos3/fsw/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/ds-usersguide/CMakeFiles/ds-usersguide.dir/rule
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/ds-usersguide/CMakeFiles/ds-usersguide.dir/rule
 .PHONY : docs/ds-usersguide/CMakeFiles/ds-usersguide.dir/rule
 
 # Convenience name for target.
@@ -182,7 +182,7 @@ ds-usersguide: docs/ds-usersguide/CMakeFiles/ds-usersguide.dir/rule
 
 # fast build rule for target.
 ds-usersguide/fast:
-	cd /home/jstar/Desktop/github-nos3/fsw/build && $(MAKE) $(MAKESILENT) -f docs/ds-usersguide/CMakeFiles/ds-usersguide.dir/build.make docs/ds-usersguide/CMakeFiles/ds-usersguide.dir/build
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build && $(MAKE) $(MAKESILENT) -f docs/ds-usersguide/CMakeFiles/ds-usersguide.dir/build.make docs/ds-usersguide/CMakeFiles/ds-usersguide.dir/build
 .PHONY : ds-usersguide/fast
 
 # Help Target
@@ -210,6 +210,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/jstar/Desktop/github-nos3/fsw/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

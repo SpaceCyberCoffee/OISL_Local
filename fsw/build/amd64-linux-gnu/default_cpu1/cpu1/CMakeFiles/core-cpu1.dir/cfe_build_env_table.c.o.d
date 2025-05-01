@@ -1,8 +1,8 @@
 cpu1/CMakeFiles/core-cpu1.dir/cfe_build_env_table.c.o: \
- /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/cpu1/cfe_build_env_table.c \
+ /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/cpu1/cfe_build_env_table.c \
  /usr/include/stdc-predef.h \
- /home/jstar/Desktop/github-nos3/fsw/cfe/cmake/target/inc/target_config.h \
- /home/jstar/Desktop/github-nos3/fsw/osal/src/os/inc/common_types.h \
+ /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/cfe/cmake/target/inc/target_config.h \
+ /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/src/os/inc/common_types.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \

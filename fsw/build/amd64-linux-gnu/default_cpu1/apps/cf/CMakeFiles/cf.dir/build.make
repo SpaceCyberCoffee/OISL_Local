@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/jstar/Desktop/github-nos3/fsw/cfe
+CMAKE_SOURCE_DIR = /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/cfe
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1
+CMAKE_BINARY_DIR = /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1
 
 # Include any dependencies generated for this target.
 include apps/cf/CMakeFiles/cf.dir/depend.make
@@ -70,186 +70,186 @@ include apps/cf/CMakeFiles/cf.dir/progress.make
 include apps/cf/CMakeFiles/cf.dir/flags.make
 
 apps/cf/CMakeFiles/cf.dir/fsw/src/cf_app.c.o: apps/cf/CMakeFiles/cf.dir/flags.make
-apps/cf/CMakeFiles/cf.dir/fsw/src/cf_app.c.o: /home/jstar/Desktop/github-nos3/fsw/apps/cf/fsw/src/cf_app.c
+apps/cf/CMakeFiles/cf.dir/fsw/src/cf_app.c.o: /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/apps/cf/fsw/src/cf_app.c
 apps/cf/CMakeFiles/cf.dir/fsw/src/cf_app.c.o: apps/cf/CMakeFiles/cf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object apps/cf/CMakeFiles/cf.dir/fsw/src/cf_app.c.o"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/apps/cf && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT apps/cf/CMakeFiles/cf.dir/fsw/src/cf_app.c.o -MF CMakeFiles/cf.dir/fsw/src/cf_app.c.o.d -o CMakeFiles/cf.dir/fsw/src/cf_app.c.o -c /home/jstar/Desktop/github-nos3/fsw/apps/cf/fsw/src/cf_app.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object apps/cf/CMakeFiles/cf.dir/fsw/src/cf_app.c.o"
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/apps/cf && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT apps/cf/CMakeFiles/cf.dir/fsw/src/cf_app.c.o -MF CMakeFiles/cf.dir/fsw/src/cf_app.c.o.d -o CMakeFiles/cf.dir/fsw/src/cf_app.c.o -c /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/apps/cf/fsw/src/cf_app.c
 
 apps/cf/CMakeFiles/cf.dir/fsw/src/cf_app.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cf.dir/fsw/src/cf_app.c.i"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/apps/cf && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jstar/Desktop/github-nos3/fsw/apps/cf/fsw/src/cf_app.c > CMakeFiles/cf.dir/fsw/src/cf_app.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/apps/cf && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/apps/cf/fsw/src/cf_app.c > CMakeFiles/cf.dir/fsw/src/cf_app.c.i
 
 apps/cf/CMakeFiles/cf.dir/fsw/src/cf_app.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cf.dir/fsw/src/cf_app.c.s"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/apps/cf && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jstar/Desktop/github-nos3/fsw/apps/cf/fsw/src/cf_app.c -o CMakeFiles/cf.dir/fsw/src/cf_app.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/apps/cf && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/apps/cf/fsw/src/cf_app.c -o CMakeFiles/cf.dir/fsw/src/cf_app.c.s
 
 apps/cf/CMakeFiles/cf.dir/fsw/src/cf_cfdp.c.o: apps/cf/CMakeFiles/cf.dir/flags.make
-apps/cf/CMakeFiles/cf.dir/fsw/src/cf_cfdp.c.o: /home/jstar/Desktop/github-nos3/fsw/apps/cf/fsw/src/cf_cfdp.c
+apps/cf/CMakeFiles/cf.dir/fsw/src/cf_cfdp.c.o: /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/apps/cf/fsw/src/cf_cfdp.c
 apps/cf/CMakeFiles/cf.dir/fsw/src/cf_cfdp.c.o: apps/cf/CMakeFiles/cf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object apps/cf/CMakeFiles/cf.dir/fsw/src/cf_cfdp.c.o"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/apps/cf && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT apps/cf/CMakeFiles/cf.dir/fsw/src/cf_cfdp.c.o -MF CMakeFiles/cf.dir/fsw/src/cf_cfdp.c.o.d -o CMakeFiles/cf.dir/fsw/src/cf_cfdp.c.o -c /home/jstar/Desktop/github-nos3/fsw/apps/cf/fsw/src/cf_cfdp.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object apps/cf/CMakeFiles/cf.dir/fsw/src/cf_cfdp.c.o"
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/apps/cf && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT apps/cf/CMakeFiles/cf.dir/fsw/src/cf_cfdp.c.o -MF CMakeFiles/cf.dir/fsw/src/cf_cfdp.c.o.d -o CMakeFiles/cf.dir/fsw/src/cf_cfdp.c.o -c /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/apps/cf/fsw/src/cf_cfdp.c
 
 apps/cf/CMakeFiles/cf.dir/fsw/src/cf_cfdp.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cf.dir/fsw/src/cf_cfdp.c.i"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/apps/cf && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jstar/Desktop/github-nos3/fsw/apps/cf/fsw/src/cf_cfdp.c > CMakeFiles/cf.dir/fsw/src/cf_cfdp.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/apps/cf && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/apps/cf/fsw/src/cf_cfdp.c > CMakeFiles/cf.dir/fsw/src/cf_cfdp.c.i
 
 apps/cf/CMakeFiles/cf.dir/fsw/src/cf_cfdp.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cf.dir/fsw/src/cf_cfdp.c.s"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/apps/cf && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jstar/Desktop/github-nos3/fsw/apps/cf/fsw/src/cf_cfdp.c -o CMakeFiles/cf.dir/fsw/src/cf_cfdp.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/apps/cf && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/apps/cf/fsw/src/cf_cfdp.c -o CMakeFiles/cf.dir/fsw/src/cf_cfdp.c.s
 
 apps/cf/CMakeFiles/cf.dir/fsw/src/cf_cfdp_r.c.o: apps/cf/CMakeFiles/cf.dir/flags.make
-apps/cf/CMakeFiles/cf.dir/fsw/src/cf_cfdp_r.c.o: /home/jstar/Desktop/github-nos3/fsw/apps/cf/fsw/src/cf_cfdp_r.c
+apps/cf/CMakeFiles/cf.dir/fsw/src/cf_cfdp_r.c.o: /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/apps/cf/fsw/src/cf_cfdp_r.c
 apps/cf/CMakeFiles/cf.dir/fsw/src/cf_cfdp_r.c.o: apps/cf/CMakeFiles/cf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object apps/cf/CMakeFiles/cf.dir/fsw/src/cf_cfdp_r.c.o"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/apps/cf && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT apps/cf/CMakeFiles/cf.dir/fsw/src/cf_cfdp_r.c.o -MF CMakeFiles/cf.dir/fsw/src/cf_cfdp_r.c.o.d -o CMakeFiles/cf.dir/fsw/src/cf_cfdp_r.c.o -c /home/jstar/Desktop/github-nos3/fsw/apps/cf/fsw/src/cf_cfdp_r.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object apps/cf/CMakeFiles/cf.dir/fsw/src/cf_cfdp_r.c.o"
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/apps/cf && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT apps/cf/CMakeFiles/cf.dir/fsw/src/cf_cfdp_r.c.o -MF CMakeFiles/cf.dir/fsw/src/cf_cfdp_r.c.o.d -o CMakeFiles/cf.dir/fsw/src/cf_cfdp_r.c.o -c /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/apps/cf/fsw/src/cf_cfdp_r.c
 
 apps/cf/CMakeFiles/cf.dir/fsw/src/cf_cfdp_r.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cf.dir/fsw/src/cf_cfdp_r.c.i"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/apps/cf && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jstar/Desktop/github-nos3/fsw/apps/cf/fsw/src/cf_cfdp_r.c > CMakeFiles/cf.dir/fsw/src/cf_cfdp_r.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/apps/cf && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/apps/cf/fsw/src/cf_cfdp_r.c > CMakeFiles/cf.dir/fsw/src/cf_cfdp_r.c.i
 
 apps/cf/CMakeFiles/cf.dir/fsw/src/cf_cfdp_r.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cf.dir/fsw/src/cf_cfdp_r.c.s"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/apps/cf && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jstar/Desktop/github-nos3/fsw/apps/cf/fsw/src/cf_cfdp_r.c -o CMakeFiles/cf.dir/fsw/src/cf_cfdp_r.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/apps/cf && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/apps/cf/fsw/src/cf_cfdp_r.c -o CMakeFiles/cf.dir/fsw/src/cf_cfdp_r.c.s
 
 apps/cf/CMakeFiles/cf.dir/fsw/src/cf_cfdp_s.c.o: apps/cf/CMakeFiles/cf.dir/flags.make
-apps/cf/CMakeFiles/cf.dir/fsw/src/cf_cfdp_s.c.o: /home/jstar/Desktop/github-nos3/fsw/apps/cf/fsw/src/cf_cfdp_s.c
+apps/cf/CMakeFiles/cf.dir/fsw/src/cf_cfdp_s.c.o: /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/apps/cf/fsw/src/cf_cfdp_s.c
 apps/cf/CMakeFiles/cf.dir/fsw/src/cf_cfdp_s.c.o: apps/cf/CMakeFiles/cf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object apps/cf/CMakeFiles/cf.dir/fsw/src/cf_cfdp_s.c.o"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/apps/cf && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT apps/cf/CMakeFiles/cf.dir/fsw/src/cf_cfdp_s.c.o -MF CMakeFiles/cf.dir/fsw/src/cf_cfdp_s.c.o.d -o CMakeFiles/cf.dir/fsw/src/cf_cfdp_s.c.o -c /home/jstar/Desktop/github-nos3/fsw/apps/cf/fsw/src/cf_cfdp_s.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object apps/cf/CMakeFiles/cf.dir/fsw/src/cf_cfdp_s.c.o"
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/apps/cf && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT apps/cf/CMakeFiles/cf.dir/fsw/src/cf_cfdp_s.c.o -MF CMakeFiles/cf.dir/fsw/src/cf_cfdp_s.c.o.d -o CMakeFiles/cf.dir/fsw/src/cf_cfdp_s.c.o -c /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/apps/cf/fsw/src/cf_cfdp_s.c
 
 apps/cf/CMakeFiles/cf.dir/fsw/src/cf_cfdp_s.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cf.dir/fsw/src/cf_cfdp_s.c.i"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/apps/cf && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jstar/Desktop/github-nos3/fsw/apps/cf/fsw/src/cf_cfdp_s.c > CMakeFiles/cf.dir/fsw/src/cf_cfdp_s.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/apps/cf && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/apps/cf/fsw/src/cf_cfdp_s.c > CMakeFiles/cf.dir/fsw/src/cf_cfdp_s.c.i
 
 apps/cf/CMakeFiles/cf.dir/fsw/src/cf_cfdp_s.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cf.dir/fsw/src/cf_cfdp_s.c.s"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/apps/cf && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jstar/Desktop/github-nos3/fsw/apps/cf/fsw/src/cf_cfdp_s.c -o CMakeFiles/cf.dir/fsw/src/cf_cfdp_s.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/apps/cf && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/apps/cf/fsw/src/cf_cfdp_s.c -o CMakeFiles/cf.dir/fsw/src/cf_cfdp_s.c.s
 
 apps/cf/CMakeFiles/cf.dir/fsw/src/cf_cfdp_sbintf.c.o: apps/cf/CMakeFiles/cf.dir/flags.make
-apps/cf/CMakeFiles/cf.dir/fsw/src/cf_cfdp_sbintf.c.o: /home/jstar/Desktop/github-nos3/fsw/apps/cf/fsw/src/cf_cfdp_sbintf.c
+apps/cf/CMakeFiles/cf.dir/fsw/src/cf_cfdp_sbintf.c.o: /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/apps/cf/fsw/src/cf_cfdp_sbintf.c
 apps/cf/CMakeFiles/cf.dir/fsw/src/cf_cfdp_sbintf.c.o: apps/cf/CMakeFiles/cf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object apps/cf/CMakeFiles/cf.dir/fsw/src/cf_cfdp_sbintf.c.o"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/apps/cf && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT apps/cf/CMakeFiles/cf.dir/fsw/src/cf_cfdp_sbintf.c.o -MF CMakeFiles/cf.dir/fsw/src/cf_cfdp_sbintf.c.o.d -o CMakeFiles/cf.dir/fsw/src/cf_cfdp_sbintf.c.o -c /home/jstar/Desktop/github-nos3/fsw/apps/cf/fsw/src/cf_cfdp_sbintf.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object apps/cf/CMakeFiles/cf.dir/fsw/src/cf_cfdp_sbintf.c.o"
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/apps/cf && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT apps/cf/CMakeFiles/cf.dir/fsw/src/cf_cfdp_sbintf.c.o -MF CMakeFiles/cf.dir/fsw/src/cf_cfdp_sbintf.c.o.d -o CMakeFiles/cf.dir/fsw/src/cf_cfdp_sbintf.c.o -c /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/apps/cf/fsw/src/cf_cfdp_sbintf.c
 
 apps/cf/CMakeFiles/cf.dir/fsw/src/cf_cfdp_sbintf.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cf.dir/fsw/src/cf_cfdp_sbintf.c.i"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/apps/cf && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jstar/Desktop/github-nos3/fsw/apps/cf/fsw/src/cf_cfdp_sbintf.c > CMakeFiles/cf.dir/fsw/src/cf_cfdp_sbintf.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/apps/cf && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/apps/cf/fsw/src/cf_cfdp_sbintf.c > CMakeFiles/cf.dir/fsw/src/cf_cfdp_sbintf.c.i
 
 apps/cf/CMakeFiles/cf.dir/fsw/src/cf_cfdp_sbintf.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cf.dir/fsw/src/cf_cfdp_sbintf.c.s"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/apps/cf && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jstar/Desktop/github-nos3/fsw/apps/cf/fsw/src/cf_cfdp_sbintf.c -o CMakeFiles/cf.dir/fsw/src/cf_cfdp_sbintf.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/apps/cf && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/apps/cf/fsw/src/cf_cfdp_sbintf.c -o CMakeFiles/cf.dir/fsw/src/cf_cfdp_sbintf.c.s
 
 apps/cf/CMakeFiles/cf.dir/fsw/src/cf_cfdp_dispatch.c.o: apps/cf/CMakeFiles/cf.dir/flags.make
-apps/cf/CMakeFiles/cf.dir/fsw/src/cf_cfdp_dispatch.c.o: /home/jstar/Desktop/github-nos3/fsw/apps/cf/fsw/src/cf_cfdp_dispatch.c
+apps/cf/CMakeFiles/cf.dir/fsw/src/cf_cfdp_dispatch.c.o: /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/apps/cf/fsw/src/cf_cfdp_dispatch.c
 apps/cf/CMakeFiles/cf.dir/fsw/src/cf_cfdp_dispatch.c.o: apps/cf/CMakeFiles/cf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object apps/cf/CMakeFiles/cf.dir/fsw/src/cf_cfdp_dispatch.c.o"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/apps/cf && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT apps/cf/CMakeFiles/cf.dir/fsw/src/cf_cfdp_dispatch.c.o -MF CMakeFiles/cf.dir/fsw/src/cf_cfdp_dispatch.c.o.d -o CMakeFiles/cf.dir/fsw/src/cf_cfdp_dispatch.c.o -c /home/jstar/Desktop/github-nos3/fsw/apps/cf/fsw/src/cf_cfdp_dispatch.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object apps/cf/CMakeFiles/cf.dir/fsw/src/cf_cfdp_dispatch.c.o"
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/apps/cf && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT apps/cf/CMakeFiles/cf.dir/fsw/src/cf_cfdp_dispatch.c.o -MF CMakeFiles/cf.dir/fsw/src/cf_cfdp_dispatch.c.o.d -o CMakeFiles/cf.dir/fsw/src/cf_cfdp_dispatch.c.o -c /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/apps/cf/fsw/src/cf_cfdp_dispatch.c
 
 apps/cf/CMakeFiles/cf.dir/fsw/src/cf_cfdp_dispatch.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cf.dir/fsw/src/cf_cfdp_dispatch.c.i"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/apps/cf && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jstar/Desktop/github-nos3/fsw/apps/cf/fsw/src/cf_cfdp_dispatch.c > CMakeFiles/cf.dir/fsw/src/cf_cfdp_dispatch.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/apps/cf && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/apps/cf/fsw/src/cf_cfdp_dispatch.c > CMakeFiles/cf.dir/fsw/src/cf_cfdp_dispatch.c.i
 
 apps/cf/CMakeFiles/cf.dir/fsw/src/cf_cfdp_dispatch.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cf.dir/fsw/src/cf_cfdp_dispatch.c.s"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/apps/cf && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jstar/Desktop/github-nos3/fsw/apps/cf/fsw/src/cf_cfdp_dispatch.c -o CMakeFiles/cf.dir/fsw/src/cf_cfdp_dispatch.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/apps/cf && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/apps/cf/fsw/src/cf_cfdp_dispatch.c -o CMakeFiles/cf.dir/fsw/src/cf_cfdp_dispatch.c.s
 
 apps/cf/CMakeFiles/cf.dir/fsw/src/cf_chunk.c.o: apps/cf/CMakeFiles/cf.dir/flags.make
-apps/cf/CMakeFiles/cf.dir/fsw/src/cf_chunk.c.o: /home/jstar/Desktop/github-nos3/fsw/apps/cf/fsw/src/cf_chunk.c
+apps/cf/CMakeFiles/cf.dir/fsw/src/cf_chunk.c.o: /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/apps/cf/fsw/src/cf_chunk.c
 apps/cf/CMakeFiles/cf.dir/fsw/src/cf_chunk.c.o: apps/cf/CMakeFiles/cf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object apps/cf/CMakeFiles/cf.dir/fsw/src/cf_chunk.c.o"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/apps/cf && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT apps/cf/CMakeFiles/cf.dir/fsw/src/cf_chunk.c.o -MF CMakeFiles/cf.dir/fsw/src/cf_chunk.c.o.d -o CMakeFiles/cf.dir/fsw/src/cf_chunk.c.o -c /home/jstar/Desktop/github-nos3/fsw/apps/cf/fsw/src/cf_chunk.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object apps/cf/CMakeFiles/cf.dir/fsw/src/cf_chunk.c.o"
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/apps/cf && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT apps/cf/CMakeFiles/cf.dir/fsw/src/cf_chunk.c.o -MF CMakeFiles/cf.dir/fsw/src/cf_chunk.c.o.d -o CMakeFiles/cf.dir/fsw/src/cf_chunk.c.o -c /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/apps/cf/fsw/src/cf_chunk.c
 
 apps/cf/CMakeFiles/cf.dir/fsw/src/cf_chunk.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cf.dir/fsw/src/cf_chunk.c.i"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/apps/cf && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jstar/Desktop/github-nos3/fsw/apps/cf/fsw/src/cf_chunk.c > CMakeFiles/cf.dir/fsw/src/cf_chunk.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/apps/cf && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/apps/cf/fsw/src/cf_chunk.c > CMakeFiles/cf.dir/fsw/src/cf_chunk.c.i
 
 apps/cf/CMakeFiles/cf.dir/fsw/src/cf_chunk.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cf.dir/fsw/src/cf_chunk.c.s"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/apps/cf && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jstar/Desktop/github-nos3/fsw/apps/cf/fsw/src/cf_chunk.c -o CMakeFiles/cf.dir/fsw/src/cf_chunk.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/apps/cf && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/apps/cf/fsw/src/cf_chunk.c -o CMakeFiles/cf.dir/fsw/src/cf_chunk.c.s
 
 apps/cf/CMakeFiles/cf.dir/fsw/src/cf_clist.c.o: apps/cf/CMakeFiles/cf.dir/flags.make
-apps/cf/CMakeFiles/cf.dir/fsw/src/cf_clist.c.o: /home/jstar/Desktop/github-nos3/fsw/apps/cf/fsw/src/cf_clist.c
+apps/cf/CMakeFiles/cf.dir/fsw/src/cf_clist.c.o: /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/apps/cf/fsw/src/cf_clist.c
 apps/cf/CMakeFiles/cf.dir/fsw/src/cf_clist.c.o: apps/cf/CMakeFiles/cf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object apps/cf/CMakeFiles/cf.dir/fsw/src/cf_clist.c.o"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/apps/cf && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT apps/cf/CMakeFiles/cf.dir/fsw/src/cf_clist.c.o -MF CMakeFiles/cf.dir/fsw/src/cf_clist.c.o.d -o CMakeFiles/cf.dir/fsw/src/cf_clist.c.o -c /home/jstar/Desktop/github-nos3/fsw/apps/cf/fsw/src/cf_clist.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object apps/cf/CMakeFiles/cf.dir/fsw/src/cf_clist.c.o"
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/apps/cf && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT apps/cf/CMakeFiles/cf.dir/fsw/src/cf_clist.c.o -MF CMakeFiles/cf.dir/fsw/src/cf_clist.c.o.d -o CMakeFiles/cf.dir/fsw/src/cf_clist.c.o -c /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/apps/cf/fsw/src/cf_clist.c
 
 apps/cf/CMakeFiles/cf.dir/fsw/src/cf_clist.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cf.dir/fsw/src/cf_clist.c.i"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/apps/cf && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jstar/Desktop/github-nos3/fsw/apps/cf/fsw/src/cf_clist.c > CMakeFiles/cf.dir/fsw/src/cf_clist.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/apps/cf && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/apps/cf/fsw/src/cf_clist.c > CMakeFiles/cf.dir/fsw/src/cf_clist.c.i
 
 apps/cf/CMakeFiles/cf.dir/fsw/src/cf_clist.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cf.dir/fsw/src/cf_clist.c.s"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/apps/cf && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jstar/Desktop/github-nos3/fsw/apps/cf/fsw/src/cf_clist.c -o CMakeFiles/cf.dir/fsw/src/cf_clist.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/apps/cf && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/apps/cf/fsw/src/cf_clist.c -o CMakeFiles/cf.dir/fsw/src/cf_clist.c.s
 
 apps/cf/CMakeFiles/cf.dir/fsw/src/cf_codec.c.o: apps/cf/CMakeFiles/cf.dir/flags.make
-apps/cf/CMakeFiles/cf.dir/fsw/src/cf_codec.c.o: /home/jstar/Desktop/github-nos3/fsw/apps/cf/fsw/src/cf_codec.c
+apps/cf/CMakeFiles/cf.dir/fsw/src/cf_codec.c.o: /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/apps/cf/fsw/src/cf_codec.c
 apps/cf/CMakeFiles/cf.dir/fsw/src/cf_codec.c.o: apps/cf/CMakeFiles/cf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object apps/cf/CMakeFiles/cf.dir/fsw/src/cf_codec.c.o"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/apps/cf && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT apps/cf/CMakeFiles/cf.dir/fsw/src/cf_codec.c.o -MF CMakeFiles/cf.dir/fsw/src/cf_codec.c.o.d -o CMakeFiles/cf.dir/fsw/src/cf_codec.c.o -c /home/jstar/Desktop/github-nos3/fsw/apps/cf/fsw/src/cf_codec.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object apps/cf/CMakeFiles/cf.dir/fsw/src/cf_codec.c.o"
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/apps/cf && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT apps/cf/CMakeFiles/cf.dir/fsw/src/cf_codec.c.o -MF CMakeFiles/cf.dir/fsw/src/cf_codec.c.o.d -o CMakeFiles/cf.dir/fsw/src/cf_codec.c.o -c /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/apps/cf/fsw/src/cf_codec.c
 
 apps/cf/CMakeFiles/cf.dir/fsw/src/cf_codec.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cf.dir/fsw/src/cf_codec.c.i"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/apps/cf && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jstar/Desktop/github-nos3/fsw/apps/cf/fsw/src/cf_codec.c > CMakeFiles/cf.dir/fsw/src/cf_codec.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/apps/cf && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/apps/cf/fsw/src/cf_codec.c > CMakeFiles/cf.dir/fsw/src/cf_codec.c.i
 
 apps/cf/CMakeFiles/cf.dir/fsw/src/cf_codec.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cf.dir/fsw/src/cf_codec.c.s"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/apps/cf && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jstar/Desktop/github-nos3/fsw/apps/cf/fsw/src/cf_codec.c -o CMakeFiles/cf.dir/fsw/src/cf_codec.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/apps/cf && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/apps/cf/fsw/src/cf_codec.c -o CMakeFiles/cf.dir/fsw/src/cf_codec.c.s
 
 apps/cf/CMakeFiles/cf.dir/fsw/src/cf_cmd.c.o: apps/cf/CMakeFiles/cf.dir/flags.make
-apps/cf/CMakeFiles/cf.dir/fsw/src/cf_cmd.c.o: /home/jstar/Desktop/github-nos3/fsw/apps/cf/fsw/src/cf_cmd.c
+apps/cf/CMakeFiles/cf.dir/fsw/src/cf_cmd.c.o: /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/apps/cf/fsw/src/cf_cmd.c
 apps/cf/CMakeFiles/cf.dir/fsw/src/cf_cmd.c.o: apps/cf/CMakeFiles/cf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object apps/cf/CMakeFiles/cf.dir/fsw/src/cf_cmd.c.o"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/apps/cf && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT apps/cf/CMakeFiles/cf.dir/fsw/src/cf_cmd.c.o -MF CMakeFiles/cf.dir/fsw/src/cf_cmd.c.o.d -o CMakeFiles/cf.dir/fsw/src/cf_cmd.c.o -c /home/jstar/Desktop/github-nos3/fsw/apps/cf/fsw/src/cf_cmd.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object apps/cf/CMakeFiles/cf.dir/fsw/src/cf_cmd.c.o"
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/apps/cf && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT apps/cf/CMakeFiles/cf.dir/fsw/src/cf_cmd.c.o -MF CMakeFiles/cf.dir/fsw/src/cf_cmd.c.o.d -o CMakeFiles/cf.dir/fsw/src/cf_cmd.c.o -c /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/apps/cf/fsw/src/cf_cmd.c
 
 apps/cf/CMakeFiles/cf.dir/fsw/src/cf_cmd.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cf.dir/fsw/src/cf_cmd.c.i"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/apps/cf && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jstar/Desktop/github-nos3/fsw/apps/cf/fsw/src/cf_cmd.c > CMakeFiles/cf.dir/fsw/src/cf_cmd.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/apps/cf && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/apps/cf/fsw/src/cf_cmd.c > CMakeFiles/cf.dir/fsw/src/cf_cmd.c.i
 
 apps/cf/CMakeFiles/cf.dir/fsw/src/cf_cmd.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cf.dir/fsw/src/cf_cmd.c.s"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/apps/cf && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jstar/Desktop/github-nos3/fsw/apps/cf/fsw/src/cf_cmd.c -o CMakeFiles/cf.dir/fsw/src/cf_cmd.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/apps/cf && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/apps/cf/fsw/src/cf_cmd.c -o CMakeFiles/cf.dir/fsw/src/cf_cmd.c.s
 
 apps/cf/CMakeFiles/cf.dir/fsw/src/cf_crc.c.o: apps/cf/CMakeFiles/cf.dir/flags.make
-apps/cf/CMakeFiles/cf.dir/fsw/src/cf_crc.c.o: /home/jstar/Desktop/github-nos3/fsw/apps/cf/fsw/src/cf_crc.c
+apps/cf/CMakeFiles/cf.dir/fsw/src/cf_crc.c.o: /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/apps/cf/fsw/src/cf_crc.c
 apps/cf/CMakeFiles/cf.dir/fsw/src/cf_crc.c.o: apps/cf/CMakeFiles/cf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object apps/cf/CMakeFiles/cf.dir/fsw/src/cf_crc.c.o"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/apps/cf && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT apps/cf/CMakeFiles/cf.dir/fsw/src/cf_crc.c.o -MF CMakeFiles/cf.dir/fsw/src/cf_crc.c.o.d -o CMakeFiles/cf.dir/fsw/src/cf_crc.c.o -c /home/jstar/Desktop/github-nos3/fsw/apps/cf/fsw/src/cf_crc.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object apps/cf/CMakeFiles/cf.dir/fsw/src/cf_crc.c.o"
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/apps/cf && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT apps/cf/CMakeFiles/cf.dir/fsw/src/cf_crc.c.o -MF CMakeFiles/cf.dir/fsw/src/cf_crc.c.o.d -o CMakeFiles/cf.dir/fsw/src/cf_crc.c.o -c /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/apps/cf/fsw/src/cf_crc.c
 
 apps/cf/CMakeFiles/cf.dir/fsw/src/cf_crc.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cf.dir/fsw/src/cf_crc.c.i"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/apps/cf && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jstar/Desktop/github-nos3/fsw/apps/cf/fsw/src/cf_crc.c > CMakeFiles/cf.dir/fsw/src/cf_crc.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/apps/cf && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/apps/cf/fsw/src/cf_crc.c > CMakeFiles/cf.dir/fsw/src/cf_crc.c.i
 
 apps/cf/CMakeFiles/cf.dir/fsw/src/cf_crc.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cf.dir/fsw/src/cf_crc.c.s"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/apps/cf && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jstar/Desktop/github-nos3/fsw/apps/cf/fsw/src/cf_crc.c -o CMakeFiles/cf.dir/fsw/src/cf_crc.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/apps/cf && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/apps/cf/fsw/src/cf_crc.c -o CMakeFiles/cf.dir/fsw/src/cf_crc.c.s
 
 apps/cf/CMakeFiles/cf.dir/fsw/src/cf_timer.c.o: apps/cf/CMakeFiles/cf.dir/flags.make
-apps/cf/CMakeFiles/cf.dir/fsw/src/cf_timer.c.o: /home/jstar/Desktop/github-nos3/fsw/apps/cf/fsw/src/cf_timer.c
+apps/cf/CMakeFiles/cf.dir/fsw/src/cf_timer.c.o: /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/apps/cf/fsw/src/cf_timer.c
 apps/cf/CMakeFiles/cf.dir/fsw/src/cf_timer.c.o: apps/cf/CMakeFiles/cf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object apps/cf/CMakeFiles/cf.dir/fsw/src/cf_timer.c.o"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/apps/cf && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT apps/cf/CMakeFiles/cf.dir/fsw/src/cf_timer.c.o -MF CMakeFiles/cf.dir/fsw/src/cf_timer.c.o.d -o CMakeFiles/cf.dir/fsw/src/cf_timer.c.o -c /home/jstar/Desktop/github-nos3/fsw/apps/cf/fsw/src/cf_timer.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object apps/cf/CMakeFiles/cf.dir/fsw/src/cf_timer.c.o"
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/apps/cf && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT apps/cf/CMakeFiles/cf.dir/fsw/src/cf_timer.c.o -MF CMakeFiles/cf.dir/fsw/src/cf_timer.c.o.d -o CMakeFiles/cf.dir/fsw/src/cf_timer.c.o -c /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/apps/cf/fsw/src/cf_timer.c
 
 apps/cf/CMakeFiles/cf.dir/fsw/src/cf_timer.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cf.dir/fsw/src/cf_timer.c.i"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/apps/cf && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jstar/Desktop/github-nos3/fsw/apps/cf/fsw/src/cf_timer.c > CMakeFiles/cf.dir/fsw/src/cf_timer.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/apps/cf && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/apps/cf/fsw/src/cf_timer.c > CMakeFiles/cf.dir/fsw/src/cf_timer.c.i
 
 apps/cf/CMakeFiles/cf.dir/fsw/src/cf_timer.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cf.dir/fsw/src/cf_timer.c.s"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/apps/cf && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jstar/Desktop/github-nos3/fsw/apps/cf/fsw/src/cf_timer.c -o CMakeFiles/cf.dir/fsw/src/cf_timer.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/apps/cf && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/apps/cf/fsw/src/cf_timer.c -o CMakeFiles/cf.dir/fsw/src/cf_timer.c.s
 
 apps/cf/CMakeFiles/cf.dir/fsw/src/cf_utils.c.o: apps/cf/CMakeFiles/cf.dir/flags.make
-apps/cf/CMakeFiles/cf.dir/fsw/src/cf_utils.c.o: /home/jstar/Desktop/github-nos3/fsw/apps/cf/fsw/src/cf_utils.c
+apps/cf/CMakeFiles/cf.dir/fsw/src/cf_utils.c.o: /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/apps/cf/fsw/src/cf_utils.c
 apps/cf/CMakeFiles/cf.dir/fsw/src/cf_utils.c.o: apps/cf/CMakeFiles/cf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object apps/cf/CMakeFiles/cf.dir/fsw/src/cf_utils.c.o"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/apps/cf && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT apps/cf/CMakeFiles/cf.dir/fsw/src/cf_utils.c.o -MF CMakeFiles/cf.dir/fsw/src/cf_utils.c.o.d -o CMakeFiles/cf.dir/fsw/src/cf_utils.c.o -c /home/jstar/Desktop/github-nos3/fsw/apps/cf/fsw/src/cf_utils.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object apps/cf/CMakeFiles/cf.dir/fsw/src/cf_utils.c.o"
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/apps/cf && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT apps/cf/CMakeFiles/cf.dir/fsw/src/cf_utils.c.o -MF CMakeFiles/cf.dir/fsw/src/cf_utils.c.o.d -o CMakeFiles/cf.dir/fsw/src/cf_utils.c.o -c /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/apps/cf/fsw/src/cf_utils.c
 
 apps/cf/CMakeFiles/cf.dir/fsw/src/cf_utils.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cf.dir/fsw/src/cf_utils.c.i"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/apps/cf && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jstar/Desktop/github-nos3/fsw/apps/cf/fsw/src/cf_utils.c > CMakeFiles/cf.dir/fsw/src/cf_utils.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/apps/cf && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/apps/cf/fsw/src/cf_utils.c > CMakeFiles/cf.dir/fsw/src/cf_utils.c.i
 
 apps/cf/CMakeFiles/cf.dir/fsw/src/cf_utils.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cf.dir/fsw/src/cf_utils.c.s"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/apps/cf && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jstar/Desktop/github-nos3/fsw/apps/cf/fsw/src/cf_utils.c -o CMakeFiles/cf.dir/fsw/src/cf_utils.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/apps/cf && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/apps/cf/fsw/src/cf_utils.c -o CMakeFiles/cf.dir/fsw/src/cf_utils.c.s
 
 # Object files for target cf
 cf_OBJECTS = \
@@ -285,18 +285,18 @@ apps/cf/cf.so: apps/cf/CMakeFiles/cf.dir/fsw/src/cf_timer.c.o
 apps/cf/cf.so: apps/cf/CMakeFiles/cf.dir/fsw/src/cf_utils.c.o
 apps/cf/cf.so: apps/cf/CMakeFiles/cf.dir/build.make
 apps/cf/cf.so: apps/cf/CMakeFiles/cf.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Linking C shared module cf.so"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/apps/cf && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/cf.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Linking C shared module cf.so"
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/apps/cf && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/cf.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 apps/cf/CMakeFiles/cf.dir/build: apps/cf/cf.so
 .PHONY : apps/cf/CMakeFiles/cf.dir/build
 
 apps/cf/CMakeFiles/cf.dir/clean:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/apps/cf && $(CMAKE_COMMAND) -P CMakeFiles/cf.dir/cmake_clean.cmake
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/apps/cf && $(CMAKE_COMMAND) -P CMakeFiles/cf.dir/cmake_clean.cmake
 .PHONY : apps/cf/CMakeFiles/cf.dir/clean
 
 apps/cf/CMakeFiles/cf.dir/depend:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/jstar/Desktop/github-nos3/fsw/cfe /home/jstar/Desktop/github-nos3/fsw/apps/cf /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/apps/cf /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/apps/cf/CMakeFiles/cf.dir/DependInfo.cmake --color=$(COLOR)
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/cfe /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/apps/cf /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/apps/cf /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/apps/cf/CMakeFiles/cf.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : apps/cf/CMakeFiles/cf.dir/depend
 

@@ -1,5 +1,5 @@
 osal/nos_impl/CMakeFiles/osal_nos_impl.dir/src/os-impl-nos-gettime.c.o: \
- /home/jstar/Desktop/github-nos3/fsw/osal/src/os/nos/src/os-impl-nos-gettime.c \
+ /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/src/os/nos/src/os-impl-nos-gettime.c \
  /usr/include/stdc-predef.h /usr/include/string.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -17,9 +17,9 @@ osal/nos_impl/CMakeFiles/osal_nos_impl.dir/src/os-impl-nos-gettime.c.o: \
  /usr/include/x86_64-linux-gnu/asm/errno.h \
  /usr/include/asm-generic/errno.h /usr/include/asm-generic/errno-base.h \
  /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
- /home/jstar/Desktop/github-nos3/fsw/osal/src/os/inc/osapi-clock.h \
- /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/osal/inc/osconfig.h \
- /home/jstar/Desktop/github-nos3/fsw/osal/src/os/inc/common_types.h \
+ /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/src/os/inc/osapi-clock.h \
+ /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/osal/inc/osconfig.h \
+ /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/src/os/inc/common_types.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/types.h \
  /usr/include/x86_64-linux-gnu/bits/typesizes.h \
@@ -28,7 +28,7 @@ osal/nos_impl/CMakeFiles/osal_nos_impl.dir/src/os-impl-nos-gettime.c.o: \
  /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdbool.h \
- /home/jstar/Desktop/github-nos3/fsw/osal/src/os/nos/../posix/inc/os-impl-gettime.h \
+ /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/src/os/nos/../posix/inc/os-impl-gettime.h \
  /usr/include/time.h /usr/include/x86_64-linux-gnu/bits/time.h \
  /usr/include/x86_64-linux-gnu/bits/timex.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h \
@@ -41,12 +41,12 @@ osal/nos_impl/CMakeFiles/osal_nos_impl.dir/src/os-impl-nos-gettime.c.o: \
  /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/timer_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h \
- /home/jstar/Desktop/github-nos3/fsw/osal/src/os/shared/inc/os-shared-clock.h \
- /home/jstar/Desktop/github-nos3/fsw/osal/src/os/shared/inc/os-shared-globaldefs.h \
- /home/jstar/Desktop/github-nos3/fsw/osal/src/os/inc/common_types.h \
- /home/jstar/Desktop/github-nos3/fsw/osal/src/os/inc/osapi-constants.h \
- /home/jstar/Desktop/github-nos3/fsw/osal/src/os/inc/osapi-error.h \
- /home/jstar/Desktop/github-nos3/fsw/osal/src/os/inc/osapi-macros.h \
+ /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/src/os/shared/inc/os-shared-clock.h \
+ /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/src/os/shared/inc/os-shared-globaldefs.h \
+ /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/src/os/inc/common_types.h \
+ /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/src/os/inc/osapi-constants.h \
+ /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/src/os/inc/osapi-error.h \
+ /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/src/os/inc/osapi-macros.h \
  /usr/include/stdio.h /usr/lib/gcc/x86_64-linux-gnu/11/include/stdarg.h \
  /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h \
@@ -74,5 +74,5 @@ osal/nos_impl/CMakeFiles/osal_nos_impl.dir/src/os-impl-nos-gettime.c.o: \
  /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
  /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h /usr/include/alloca.h \
  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
- /home/jstar/Desktop/github-nos3/fsw/osal/src/os/inc/osapi-printf.h \
- /home/jstar/Desktop/github-nos3/fsw/osal/src/os/nos/inc/NOS-time.h
+ /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/src/os/inc/osapi-printf.h \
+ /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/src/os/nos/inc/NOS-time.h

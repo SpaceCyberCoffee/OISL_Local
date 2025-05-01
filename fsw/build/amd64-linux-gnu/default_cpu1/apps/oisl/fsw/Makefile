@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/jstar/Desktop/github-nos3/fsw/cfe
+CMAKE_SOURCE_DIR = /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/cfe
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1
+CMAKE_BINARY_DIR = /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -142,14 +142,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(CMAKE_COMMAND) -E cmake_progress_start /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/apps/oisl/fsw//CMakeFiles/progress.marks
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/oisl/fsw/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles 0
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(CMAKE_COMMAND) -E cmake_progress_start /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/apps/oisl/fsw//CMakeFiles/progress.marks
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/oisl/fsw/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/oisl/fsw/clean
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/oisl/fsw/clean
 .PHONY : clean
 
 # The main clean target
@@ -158,22 +158,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/oisl/fsw/preinstall
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/oisl/fsw/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/oisl/fsw/preinstall
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/oisl/fsw/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 apps/oisl/fsw/CMakeFiles/oisl.dir/rule:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/oisl/fsw/CMakeFiles/oisl.dir/rule
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/oisl/fsw/CMakeFiles/oisl.dir/rule
 .PHONY : apps/oisl/fsw/CMakeFiles/oisl.dir/rule
 
 # Convenience name for target.
@@ -182,7 +182,7 @@ oisl: apps/oisl/fsw/CMakeFiles/oisl.dir/rule
 
 # fast build rule for target.
 oisl/fast:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/oisl/fsw/CMakeFiles/oisl.dir/build.make apps/oisl/fsw/CMakeFiles/oisl.dir/build
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/oisl/fsw/CMakeFiles/oisl.dir/build.make apps/oisl/fsw/CMakeFiles/oisl.dir/build
 .PHONY : oisl/fast
 
 src/CFDP_Luca.o: src/CFDP_Luca.c.o
@@ -190,7 +190,7 @@ src/CFDP_Luca.o: src/CFDP_Luca.c.o
 
 # target to build an object file
 src/CFDP_Luca.c.o:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/oisl/fsw/CMakeFiles/oisl.dir/build.make apps/oisl/fsw/CMakeFiles/oisl.dir/src/CFDP_Luca.c.o
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/oisl/fsw/CMakeFiles/oisl.dir/build.make apps/oisl/fsw/CMakeFiles/oisl.dir/src/CFDP_Luca.c.o
 .PHONY : src/CFDP_Luca.c.o
 
 src/CFDP_Luca.i: src/CFDP_Luca.c.i
@@ -198,7 +198,7 @@ src/CFDP_Luca.i: src/CFDP_Luca.c.i
 
 # target to preprocess a source file
 src/CFDP_Luca.c.i:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/oisl/fsw/CMakeFiles/oisl.dir/build.make apps/oisl/fsw/CMakeFiles/oisl.dir/src/CFDP_Luca.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/oisl/fsw/CMakeFiles/oisl.dir/build.make apps/oisl/fsw/CMakeFiles/oisl.dir/src/CFDP_Luca.c.i
 .PHONY : src/CFDP_Luca.c.i
 
 src/CFDP_Luca.s: src/CFDP_Luca.c.s
@@ -206,7 +206,7 @@ src/CFDP_Luca.s: src/CFDP_Luca.c.s
 
 # target to generate assembly for a file
 src/CFDP_Luca.c.s:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/oisl/fsw/CMakeFiles/oisl.dir/build.make apps/oisl/fsw/CMakeFiles/oisl.dir/src/CFDP_Luca.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/oisl/fsw/CMakeFiles/oisl.dir/build.make apps/oisl/fsw/CMakeFiles/oisl.dir/src/CFDP_Luca.c.s
 .PHONY : src/CFDP_Luca.c.s
 
 src/oisl_app.o: src/oisl_app.c.o
@@ -214,7 +214,7 @@ src/oisl_app.o: src/oisl_app.c.o
 
 # target to build an object file
 src/oisl_app.c.o:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/oisl/fsw/CMakeFiles/oisl.dir/build.make apps/oisl/fsw/CMakeFiles/oisl.dir/src/oisl_app.c.o
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/oisl/fsw/CMakeFiles/oisl.dir/build.make apps/oisl/fsw/CMakeFiles/oisl.dir/src/oisl_app.c.o
 .PHONY : src/oisl_app.c.o
 
 src/oisl_app.i: src/oisl_app.c.i
@@ -222,7 +222,7 @@ src/oisl_app.i: src/oisl_app.c.i
 
 # target to preprocess a source file
 src/oisl_app.c.i:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/oisl/fsw/CMakeFiles/oisl.dir/build.make apps/oisl/fsw/CMakeFiles/oisl.dir/src/oisl_app.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/oisl/fsw/CMakeFiles/oisl.dir/build.make apps/oisl/fsw/CMakeFiles/oisl.dir/src/oisl_app.c.i
 .PHONY : src/oisl_app.c.i
 
 src/oisl_app.s: src/oisl_app.c.s
@@ -230,7 +230,7 @@ src/oisl_app.s: src/oisl_app.c.s
 
 # target to generate assembly for a file
 src/oisl_app.c.s:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/oisl/fsw/CMakeFiles/oisl.dir/build.make apps/oisl/fsw/CMakeFiles/oisl.dir/src/oisl_app.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/oisl/fsw/CMakeFiles/oisl.dir/build.make apps/oisl/fsw/CMakeFiles/oisl.dir/src/oisl_app.c.s
 .PHONY : src/oisl_app.c.s
 
 src/oisl_device.o: src/oisl_device.c.o
@@ -238,7 +238,7 @@ src/oisl_device.o: src/oisl_device.c.o
 
 # target to build an object file
 src/oisl_device.c.o:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/oisl/fsw/CMakeFiles/oisl.dir/build.make apps/oisl/fsw/CMakeFiles/oisl.dir/src/oisl_device.c.o
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/oisl/fsw/CMakeFiles/oisl.dir/build.make apps/oisl/fsw/CMakeFiles/oisl.dir/src/oisl_device.c.o
 .PHONY : src/oisl_device.c.o
 
 src/oisl_device.i: src/oisl_device.c.i
@@ -246,7 +246,7 @@ src/oisl_device.i: src/oisl_device.c.i
 
 # target to preprocess a source file
 src/oisl_device.c.i:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/oisl/fsw/CMakeFiles/oisl.dir/build.make apps/oisl/fsw/CMakeFiles/oisl.dir/src/oisl_device.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/oisl/fsw/CMakeFiles/oisl.dir/build.make apps/oisl/fsw/CMakeFiles/oisl.dir/src/oisl_device.c.i
 .PHONY : src/oisl_device.c.i
 
 src/oisl_device.s: src/oisl_device.c.s
@@ -254,7 +254,7 @@ src/oisl_device.s: src/oisl_device.c.s
 
 # target to generate assembly for a file
 src/oisl_device.c.s:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/oisl/fsw/CMakeFiles/oisl.dir/build.make apps/oisl/fsw/CMakeFiles/oisl.dir/src/oisl_device.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/oisl/fsw/CMakeFiles/oisl.dir/build.make apps/oisl/fsw/CMakeFiles/oisl.dir/src/oisl_device.c.s
 .PHONY : src/oisl_device.c.s
 
 # Help Target
@@ -291,6 +291,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

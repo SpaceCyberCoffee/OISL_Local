@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/jstar/Desktop/github-nos3/fsw/apps/ci_lab/fsw/src/ci_lab_app.c" "apps/ci_lab/CMakeFiles/ci_lab.dir/fsw/src/ci_lab_app.c.o" "gcc" "apps/ci_lab/CMakeFiles/ci_lab.dir/fsw/src/ci_lab_app.c.o.d"
+  "/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/apps/ci_lab/fsw/src/ci_lab_app.c" "apps/ci_lab/CMakeFiles/ci_lab.dir/fsw/src/ci_lab_app.c.o" "gcc" "apps/ci_lab/CMakeFiles/ci_lab.dir/fsw/src/ci_lab_app.c.o.d"
   )
 
 # Targets to which this target links.

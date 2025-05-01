@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/jstar/Desktop/github-nos3/fsw/cfe
+CMAKE_SOURCE_DIR = /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/cfe
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1
+CMAKE_BINARY_DIR = /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1
 
 # Utility rule file for generate_osapi_stubs.
 
@@ -67,7 +67,7 @@ include osal/ut-stubs/CMakeFiles/generate_osapi_stubs.dir/compiler_depend.make
 include osal/ut-stubs/CMakeFiles/generate_osapi_stubs.dir/progress.make
 
 osal/ut-stubs/CMakeFiles/generate_osapi_stubs:
-	cd /home/jstar/Desktop/github-nos3/fsw/osal/src/ut-stubs && /home/jstar/Desktop/github-nos3/fsw/osal/ut_assert/scripts/generate_stubs.pl /home/jstar/Desktop/github-nos3/fsw/osal/src/ut-stubs /home/jstar/Desktop/github-nos3/fsw/osal/src/os/inc/osapi-binsem.h /home/jstar/Desktop/github-nos3/fsw/osal/src/os/inc/osapi-bsp.h /home/jstar/Desktop/github-nos3/fsw/osal/src/os/inc/osapi-clock.h /home/jstar/Desktop/github-nos3/fsw/osal/src/os/inc/osapi-common.h /home/jstar/Desktop/github-nos3/fsw/osal/src/os/inc/osapi-condvar.h /home/jstar/Desktop/github-nos3/fsw/osal/src/os/inc/osapi-constants.h /home/jstar/Desktop/github-nos3/fsw/osal/src/os/inc/osapi-countsem.h /home/jstar/Desktop/github-nos3/fsw/osal/src/os/inc/osapi-dir.h /home/jstar/Desktop/github-nos3/fsw/osal/src/os/inc/osapi-error.h /home/jstar/Desktop/github-nos3/fsw/osal/src/os/inc/osapi-file.h /home/jstar/Desktop/github-nos3/fsw/osal/src/os/inc/osapi-filesys.h /home/jstar/Desktop/github-nos3/fsw/osal/src/os/inc/osapi-heap.h /home/jstar/Desktop/github-nos3/fsw/osal/src/os/inc/osapi-idmap.h /home/jstar/Desktop/github-nos3/fsw/osal/src/os/inc/osapi-macros.h /home/jstar/Desktop/github-nos3/fsw/osal/src/os/inc/osapi-module.h /home/jstar/Desktop/github-nos3/fsw/osal/src/os/inc/osapi-mutex.h /home/jstar/Desktop/github-nos3/fsw/osal/src/os/inc/osapi-network.h /home/jstar/Desktop/github-nos3/fsw/osal/src/os/inc/osapi-printf.h /home/jstar/Desktop/github-nos3/fsw/osal/src/os/inc/osapi-queue.h /home/jstar/Desktop/github-nos3/fsw/osal/src/os/inc/osapi-select.h /home/jstar/Desktop/github-nos3/fsw/osal/src/os/inc/osapi-shell.h /home/jstar/Desktop/github-nos3/fsw/osal/src/os/inc/osapi-sockets.h /home/jstar/Desktop/github-nos3/fsw/osal/src/os/inc/osapi-task.h /home/jstar/Desktop/github-nos3/fsw/osal/src/os/inc/osapi-timebase.h /home/jstar/Desktop/github-nos3/fsw/osal/src/os/inc/osapi-timer.h /home/jstar/Desktop/github-nos3/fsw/osal/src/os/inc/osapi-version.h
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/src/ut-stubs && /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/ut_assert/scripts/generate_stubs.pl /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/src/ut-stubs /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/src/os/inc/osapi-binsem.h /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/src/os/inc/osapi-bsp.h /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/src/os/inc/osapi-clock.h /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/src/os/inc/osapi-common.h /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/src/os/inc/osapi-condvar.h /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/src/os/inc/osapi-constants.h /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/src/os/inc/osapi-countsem.h /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/src/os/inc/osapi-dir.h /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/src/os/inc/osapi-error.h /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/src/os/inc/osapi-file.h /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/src/os/inc/osapi-filesys.h /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/src/os/inc/osapi-heap.h /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/src/os/inc/osapi-idmap.h /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/src/os/inc/osapi-macros.h /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/src/os/inc/osapi-module.h /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/src/os/inc/osapi-mutex.h /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/src/os/inc/osapi-network.h /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/src/os/inc/osapi-printf.h /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/src/os/inc/osapi-queue.h /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/src/os/inc/osapi-select.h /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/src/os/inc/osapi-shell.h /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/src/os/inc/osapi-sockets.h /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/src/os/inc/osapi-task.h /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/src/os/inc/osapi-timebase.h /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/src/os/inc/osapi-timer.h /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/src/os/inc/osapi-version.h
 
 generate_osapi_stubs: osal/ut-stubs/CMakeFiles/generate_osapi_stubs
 generate_osapi_stubs: osal/ut-stubs/CMakeFiles/generate_osapi_stubs.dir/build.make
@@ -78,10 +78,10 @@ osal/ut-stubs/CMakeFiles/generate_osapi_stubs.dir/build: generate_osapi_stubs
 .PHONY : osal/ut-stubs/CMakeFiles/generate_osapi_stubs.dir/build
 
 osal/ut-stubs/CMakeFiles/generate_osapi_stubs.dir/clean:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/osal/ut-stubs && $(CMAKE_COMMAND) -P CMakeFiles/generate_osapi_stubs.dir/cmake_clean.cmake
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/osal/ut-stubs && $(CMAKE_COMMAND) -P CMakeFiles/generate_osapi_stubs.dir/cmake_clean.cmake
 .PHONY : osal/ut-stubs/CMakeFiles/generate_osapi_stubs.dir/clean
 
 osal/ut-stubs/CMakeFiles/generate_osapi_stubs.dir/depend:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/jstar/Desktop/github-nos3/fsw/cfe /home/jstar/Desktop/github-nos3/fsw/osal/src/ut-stubs /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/osal/ut-stubs /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/osal/ut-stubs/CMakeFiles/generate_osapi_stubs.dir/DependInfo.cmake --color=$(COLOR)
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/cfe /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/src/ut-stubs /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/osal/ut-stubs /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/osal/ut-stubs/CMakeFiles/generate_osapi_stubs.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : osal/ut-stubs/CMakeFiles/generate_osapi_stubs.dir/depend
 

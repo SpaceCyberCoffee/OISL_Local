@@ -1,9 +1,9 @@
 cpu1/CMakeFiles/core-cpu1.dir/cfe_static_symbol_list.c.o: \
- /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/cpu1/cfe_static_symbol_list.c \
+ /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/cpu1/cfe_static_symbol_list.c \
  /usr/include/stdc-predef.h \
- /home/jstar/Desktop/github-nos3/fsw/osal/src/os/inc/osapi-module.h \
- /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/osal/inc/osconfig.h \
- /home/jstar/Desktop/github-nos3/fsw/osal/src/os/inc/common_types.h \
+ /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/src/os/inc/osapi-module.h \
+ /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/osal/inc/osconfig.h \
+ /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/src/os/inc/common_types.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \

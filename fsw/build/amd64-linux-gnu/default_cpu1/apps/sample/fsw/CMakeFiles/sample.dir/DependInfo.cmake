@@ -8,8 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/jstar/Desktop/github-nos3/components/sample/fsw/src/sample_app.c" "apps/sample/fsw/CMakeFiles/sample.dir/src/sample_app.c.o" "gcc" "apps/sample/fsw/CMakeFiles/sample.dir/src/sample_app.c.o.d"
-  "/home/jstar/Desktop/github-nos3/components/sample/fsw/src/sample_device.c" "apps/sample/fsw/CMakeFiles/sample.dir/src/sample_device.c.o" "gcc" "apps/sample/fsw/CMakeFiles/sample.dir/src/sample_device.c.o.d"
+  "/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/sample/fsw/src/sample_app.c" "apps/sample/fsw/CMakeFiles/sample.dir/src/sample_app.c.o" "gcc" "apps/sample/fsw/CMakeFiles/sample.dir/src/sample_app.c.o.d"
+  "/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/sample/fsw/src/sample_device.c" "apps/sample/fsw/CMakeFiles/sample.dir/src/sample_device.c.o" "gcc" "apps/sample/fsw/CMakeFiles/sample.dir/src/sample_device.c.o.d"
   )
 
 # Targets to which this target links.

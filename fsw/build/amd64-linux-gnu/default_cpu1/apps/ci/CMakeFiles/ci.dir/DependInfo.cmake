@@ -8,9 +8,9 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/jstar/Desktop/github-nos3/fsw/apps/ci/fsw/examples/udp_tf/ci_custom.c" "apps/ci/CMakeFiles/ci.dir/fsw/examples/udp_tf/ci_custom.c.o" "gcc" "apps/ci/CMakeFiles/ci.dir/fsw/examples/udp_tf/ci_custom.c.o.d"
-  "/home/jstar/Desktop/github-nos3/fsw/apps/ci/fsw/src/ci_app.c" "apps/ci/CMakeFiles/ci.dir/fsw/src/ci_app.c.o" "gcc" "apps/ci/CMakeFiles/ci.dir/fsw/src/ci_app.c.o.d"
-  "/home/jstar/Desktop/github-nos3/fsw/apps/ci/fsw/src/ci_utils.c" "apps/ci/CMakeFiles/ci.dir/fsw/src/ci_utils.c.o" "gcc" "apps/ci/CMakeFiles/ci.dir/fsw/src/ci_utils.c.o.d"
+  "/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/apps/ci/fsw/examples/udp_tf/ci_custom.c" "apps/ci/CMakeFiles/ci.dir/fsw/examples/udp_tf/ci_custom.c.o" "gcc" "apps/ci/CMakeFiles/ci.dir/fsw/examples/udp_tf/ci_custom.c.o.d"
+  "/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/apps/ci/fsw/src/ci_app.c" "apps/ci/CMakeFiles/ci.dir/fsw/src/ci_app.c.o" "gcc" "apps/ci/CMakeFiles/ci.dir/fsw/src/ci_app.c.o.d"
+  "/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/apps/ci/fsw/src/ci_utils.c" "apps/ci/CMakeFiles/ci.dir/fsw/src/ci_utils.c.o" "gcc" "apps/ci/CMakeFiles/ci.dir/fsw/src/ci_utils.c.o.d"
   )
 
 # Targets to which this target links.

@@ -1,8 +1,8 @@
-# Install script for directory: /home/jstar/Desktop/github-nos3/fsw/psp
+# Install script for directory: /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/psp
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/jstar/Desktop/github-nos3/fsw/build/exe")
+  set(CMAKE_INSTALL_PREFIX "/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/exe")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -44,11 +44,11 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/psp/nos-linux-impl/cmake_install.cmake")
-  include("/home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/psp/nos-linux-shared/cmake_install.cmake")
-  include("/home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/psp/eeprom_notimpl-nos-linux-impl/cmake_install.cmake")
-  include("/home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/psp/port_notimpl-nos-linux-impl/cmake_install.cmake")
-  include("/home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/psp/ram_notimpl-nos-linux-impl/cmake_install.cmake")
+  include("/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/psp/nos-linux-impl/cmake_install.cmake")
+  include("/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/psp/nos-linux-shared/cmake_install.cmake")
+  include("/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/psp/eeprom_notimpl-nos-linux-impl/cmake_install.cmake")
+  include("/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/psp/port_notimpl-nos-linux-impl/cmake_install.cmake")
+  include("/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/psp/ram_notimpl-nos-linux-impl/cmake_install.cmake")
 
 endif()
 

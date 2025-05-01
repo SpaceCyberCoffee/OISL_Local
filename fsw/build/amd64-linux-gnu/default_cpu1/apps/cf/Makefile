@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/jstar/Desktop/github-nos3/fsw/cfe
+CMAKE_SOURCE_DIR = /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/cfe
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1
+CMAKE_BINARY_DIR = /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -142,14 +142,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(CMAKE_COMMAND) -E cmake_progress_start /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/apps/cf//CMakeFiles/progress.marks
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/cf/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles 0
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(CMAKE_COMMAND) -E cmake_progress_start /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/apps/cf//CMakeFiles/progress.marks
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/cf/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/cf/clean
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/cf/clean
 .PHONY : clean
 
 # The main clean target
@@ -158,22 +158,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/cf/preinstall
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/cf/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/cf/preinstall
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/cf/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 apps/cf/CMakeFiles/cf.dir/rule:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/cf/CMakeFiles/cf.dir/rule
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/cf/CMakeFiles/cf.dir/rule
 .PHONY : apps/cf/CMakeFiles/cf.dir/rule
 
 # Convenience name for target.
@@ -182,12 +182,12 @@ cf: apps/cf/CMakeFiles/cf.dir/rule
 
 # fast build rule for target.
 cf/fast:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/cf/CMakeFiles/cf.dir/build.make apps/cf/CMakeFiles/cf.dir/build
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/cf/CMakeFiles/cf.dir/build.make apps/cf/CMakeFiles/cf.dir/build
 .PHONY : cf/fast
 
 # Convenience name for target.
 apps/cf/CMakeFiles/cpu1_cf_cf_def_config.dir/rule:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/cf/CMakeFiles/cpu1_cf_cf_def_config.dir/rule
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/cf/CMakeFiles/cpu1_cf_cf_def_config.dir/rule
 .PHONY : apps/cf/CMakeFiles/cpu1_cf_cf_def_config.dir/rule
 
 # Convenience name for target.
@@ -196,12 +196,12 @@ cpu1_cf_cf_def_config: apps/cf/CMakeFiles/cpu1_cf_cf_def_config.dir/rule
 
 # fast build rule for target.
 cpu1_cf_cf_def_config/fast:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/cf/CMakeFiles/cpu1_cf_cf_def_config.dir/build.make apps/cf/CMakeFiles/cpu1_cf_cf_def_config.dir/build
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/cf/CMakeFiles/cpu1_cf_cf_def_config.dir/build.make apps/cf/CMakeFiles/cpu1_cf_cf_def_config.dir/build
 .PHONY : cpu1_cf_cf_def_config/fast
 
 # Convenience name for target.
 apps/cf/CMakeFiles/cpu1_cf_cf_def_config_tbl.dir/rule:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/cf/CMakeFiles/cpu1_cf_cf_def_config_tbl.dir/rule
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/cf/CMakeFiles/cpu1_cf_cf_def_config_tbl.dir/rule
 .PHONY : apps/cf/CMakeFiles/cpu1_cf_cf_def_config_tbl.dir/rule
 
 # Convenience name for target.
@@ -210,7 +210,7 @@ cpu1_cf_cf_def_config_tbl: apps/cf/CMakeFiles/cpu1_cf_cf_def_config_tbl.dir/rule
 
 # fast build rule for target.
 cpu1_cf_cf_def_config_tbl/fast:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/cf/CMakeFiles/cpu1_cf_cf_def_config_tbl.dir/build.make apps/cf/CMakeFiles/cpu1_cf_cf_def_config_tbl.dir/build
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/cf/CMakeFiles/cpu1_cf_cf_def_config_tbl.dir/build.make apps/cf/CMakeFiles/cpu1_cf_cf_def_config_tbl.dir/build
 .PHONY : cpu1_cf_cf_def_config_tbl/fast
 
 fsw/src/cf_app.o: fsw/src/cf_app.c.o
@@ -218,7 +218,7 @@ fsw/src/cf_app.o: fsw/src/cf_app.c.o
 
 # target to build an object file
 fsw/src/cf_app.c.o:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/cf/CMakeFiles/cf.dir/build.make apps/cf/CMakeFiles/cf.dir/fsw/src/cf_app.c.o
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/cf/CMakeFiles/cf.dir/build.make apps/cf/CMakeFiles/cf.dir/fsw/src/cf_app.c.o
 .PHONY : fsw/src/cf_app.c.o
 
 fsw/src/cf_app.i: fsw/src/cf_app.c.i
@@ -226,7 +226,7 @@ fsw/src/cf_app.i: fsw/src/cf_app.c.i
 
 # target to preprocess a source file
 fsw/src/cf_app.c.i:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/cf/CMakeFiles/cf.dir/build.make apps/cf/CMakeFiles/cf.dir/fsw/src/cf_app.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/cf/CMakeFiles/cf.dir/build.make apps/cf/CMakeFiles/cf.dir/fsw/src/cf_app.c.i
 .PHONY : fsw/src/cf_app.c.i
 
 fsw/src/cf_app.s: fsw/src/cf_app.c.s
@@ -234,7 +234,7 @@ fsw/src/cf_app.s: fsw/src/cf_app.c.s
 
 # target to generate assembly for a file
 fsw/src/cf_app.c.s:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/cf/CMakeFiles/cf.dir/build.make apps/cf/CMakeFiles/cf.dir/fsw/src/cf_app.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/cf/CMakeFiles/cf.dir/build.make apps/cf/CMakeFiles/cf.dir/fsw/src/cf_app.c.s
 .PHONY : fsw/src/cf_app.c.s
 
 fsw/src/cf_cfdp.o: fsw/src/cf_cfdp.c.o
@@ -242,7 +242,7 @@ fsw/src/cf_cfdp.o: fsw/src/cf_cfdp.c.o
 
 # target to build an object file
 fsw/src/cf_cfdp.c.o:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/cf/CMakeFiles/cf.dir/build.make apps/cf/CMakeFiles/cf.dir/fsw/src/cf_cfdp.c.o
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/cf/CMakeFiles/cf.dir/build.make apps/cf/CMakeFiles/cf.dir/fsw/src/cf_cfdp.c.o
 .PHONY : fsw/src/cf_cfdp.c.o
 
 fsw/src/cf_cfdp.i: fsw/src/cf_cfdp.c.i
@@ -250,7 +250,7 @@ fsw/src/cf_cfdp.i: fsw/src/cf_cfdp.c.i
 
 # target to preprocess a source file
 fsw/src/cf_cfdp.c.i:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/cf/CMakeFiles/cf.dir/build.make apps/cf/CMakeFiles/cf.dir/fsw/src/cf_cfdp.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/cf/CMakeFiles/cf.dir/build.make apps/cf/CMakeFiles/cf.dir/fsw/src/cf_cfdp.c.i
 .PHONY : fsw/src/cf_cfdp.c.i
 
 fsw/src/cf_cfdp.s: fsw/src/cf_cfdp.c.s
@@ -258,7 +258,7 @@ fsw/src/cf_cfdp.s: fsw/src/cf_cfdp.c.s
 
 # target to generate assembly for a file
 fsw/src/cf_cfdp.c.s:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/cf/CMakeFiles/cf.dir/build.make apps/cf/CMakeFiles/cf.dir/fsw/src/cf_cfdp.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/cf/CMakeFiles/cf.dir/build.make apps/cf/CMakeFiles/cf.dir/fsw/src/cf_cfdp.c.s
 .PHONY : fsw/src/cf_cfdp.c.s
 
 fsw/src/cf_cfdp_dispatch.o: fsw/src/cf_cfdp_dispatch.c.o
@@ -266,7 +266,7 @@ fsw/src/cf_cfdp_dispatch.o: fsw/src/cf_cfdp_dispatch.c.o
 
 # target to build an object file
 fsw/src/cf_cfdp_dispatch.c.o:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/cf/CMakeFiles/cf.dir/build.make apps/cf/CMakeFiles/cf.dir/fsw/src/cf_cfdp_dispatch.c.o
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/cf/CMakeFiles/cf.dir/build.make apps/cf/CMakeFiles/cf.dir/fsw/src/cf_cfdp_dispatch.c.o
 .PHONY : fsw/src/cf_cfdp_dispatch.c.o
 
 fsw/src/cf_cfdp_dispatch.i: fsw/src/cf_cfdp_dispatch.c.i
@@ -274,7 +274,7 @@ fsw/src/cf_cfdp_dispatch.i: fsw/src/cf_cfdp_dispatch.c.i
 
 # target to preprocess a source file
 fsw/src/cf_cfdp_dispatch.c.i:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/cf/CMakeFiles/cf.dir/build.make apps/cf/CMakeFiles/cf.dir/fsw/src/cf_cfdp_dispatch.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/cf/CMakeFiles/cf.dir/build.make apps/cf/CMakeFiles/cf.dir/fsw/src/cf_cfdp_dispatch.c.i
 .PHONY : fsw/src/cf_cfdp_dispatch.c.i
 
 fsw/src/cf_cfdp_dispatch.s: fsw/src/cf_cfdp_dispatch.c.s
@@ -282,7 +282,7 @@ fsw/src/cf_cfdp_dispatch.s: fsw/src/cf_cfdp_dispatch.c.s
 
 # target to generate assembly for a file
 fsw/src/cf_cfdp_dispatch.c.s:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/cf/CMakeFiles/cf.dir/build.make apps/cf/CMakeFiles/cf.dir/fsw/src/cf_cfdp_dispatch.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/cf/CMakeFiles/cf.dir/build.make apps/cf/CMakeFiles/cf.dir/fsw/src/cf_cfdp_dispatch.c.s
 .PHONY : fsw/src/cf_cfdp_dispatch.c.s
 
 fsw/src/cf_cfdp_r.o: fsw/src/cf_cfdp_r.c.o
@@ -290,7 +290,7 @@ fsw/src/cf_cfdp_r.o: fsw/src/cf_cfdp_r.c.o
 
 # target to build an object file
 fsw/src/cf_cfdp_r.c.o:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/cf/CMakeFiles/cf.dir/build.make apps/cf/CMakeFiles/cf.dir/fsw/src/cf_cfdp_r.c.o
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/cf/CMakeFiles/cf.dir/build.make apps/cf/CMakeFiles/cf.dir/fsw/src/cf_cfdp_r.c.o
 .PHONY : fsw/src/cf_cfdp_r.c.o
 
 fsw/src/cf_cfdp_r.i: fsw/src/cf_cfdp_r.c.i
@@ -298,7 +298,7 @@ fsw/src/cf_cfdp_r.i: fsw/src/cf_cfdp_r.c.i
 
 # target to preprocess a source file
 fsw/src/cf_cfdp_r.c.i:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/cf/CMakeFiles/cf.dir/build.make apps/cf/CMakeFiles/cf.dir/fsw/src/cf_cfdp_r.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/cf/CMakeFiles/cf.dir/build.make apps/cf/CMakeFiles/cf.dir/fsw/src/cf_cfdp_r.c.i
 .PHONY : fsw/src/cf_cfdp_r.c.i
 
 fsw/src/cf_cfdp_r.s: fsw/src/cf_cfdp_r.c.s
@@ -306,7 +306,7 @@ fsw/src/cf_cfdp_r.s: fsw/src/cf_cfdp_r.c.s
 
 # target to generate assembly for a file
 fsw/src/cf_cfdp_r.c.s:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/cf/CMakeFiles/cf.dir/build.make apps/cf/CMakeFiles/cf.dir/fsw/src/cf_cfdp_r.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/cf/CMakeFiles/cf.dir/build.make apps/cf/CMakeFiles/cf.dir/fsw/src/cf_cfdp_r.c.s
 .PHONY : fsw/src/cf_cfdp_r.c.s
 
 fsw/src/cf_cfdp_s.o: fsw/src/cf_cfdp_s.c.o
@@ -314,7 +314,7 @@ fsw/src/cf_cfdp_s.o: fsw/src/cf_cfdp_s.c.o
 
 # target to build an object file
 fsw/src/cf_cfdp_s.c.o:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/cf/CMakeFiles/cf.dir/build.make apps/cf/CMakeFiles/cf.dir/fsw/src/cf_cfdp_s.c.o
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/cf/CMakeFiles/cf.dir/build.make apps/cf/CMakeFiles/cf.dir/fsw/src/cf_cfdp_s.c.o
 .PHONY : fsw/src/cf_cfdp_s.c.o
 
 fsw/src/cf_cfdp_s.i: fsw/src/cf_cfdp_s.c.i
@@ -322,7 +322,7 @@ fsw/src/cf_cfdp_s.i: fsw/src/cf_cfdp_s.c.i
 
 # target to preprocess a source file
 fsw/src/cf_cfdp_s.c.i:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/cf/CMakeFiles/cf.dir/build.make apps/cf/CMakeFiles/cf.dir/fsw/src/cf_cfdp_s.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/cf/CMakeFiles/cf.dir/build.make apps/cf/CMakeFiles/cf.dir/fsw/src/cf_cfdp_s.c.i
 .PHONY : fsw/src/cf_cfdp_s.c.i
 
 fsw/src/cf_cfdp_s.s: fsw/src/cf_cfdp_s.c.s
@@ -330,7 +330,7 @@ fsw/src/cf_cfdp_s.s: fsw/src/cf_cfdp_s.c.s
 
 # target to generate assembly for a file
 fsw/src/cf_cfdp_s.c.s:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/cf/CMakeFiles/cf.dir/build.make apps/cf/CMakeFiles/cf.dir/fsw/src/cf_cfdp_s.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/cf/CMakeFiles/cf.dir/build.make apps/cf/CMakeFiles/cf.dir/fsw/src/cf_cfdp_s.c.s
 .PHONY : fsw/src/cf_cfdp_s.c.s
 
 fsw/src/cf_cfdp_sbintf.o: fsw/src/cf_cfdp_sbintf.c.o
@@ -338,7 +338,7 @@ fsw/src/cf_cfdp_sbintf.o: fsw/src/cf_cfdp_sbintf.c.o
 
 # target to build an object file
 fsw/src/cf_cfdp_sbintf.c.o:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/cf/CMakeFiles/cf.dir/build.make apps/cf/CMakeFiles/cf.dir/fsw/src/cf_cfdp_sbintf.c.o
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/cf/CMakeFiles/cf.dir/build.make apps/cf/CMakeFiles/cf.dir/fsw/src/cf_cfdp_sbintf.c.o
 .PHONY : fsw/src/cf_cfdp_sbintf.c.o
 
 fsw/src/cf_cfdp_sbintf.i: fsw/src/cf_cfdp_sbintf.c.i
@@ -346,7 +346,7 @@ fsw/src/cf_cfdp_sbintf.i: fsw/src/cf_cfdp_sbintf.c.i
 
 # target to preprocess a source file
 fsw/src/cf_cfdp_sbintf.c.i:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/cf/CMakeFiles/cf.dir/build.make apps/cf/CMakeFiles/cf.dir/fsw/src/cf_cfdp_sbintf.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/cf/CMakeFiles/cf.dir/build.make apps/cf/CMakeFiles/cf.dir/fsw/src/cf_cfdp_sbintf.c.i
 .PHONY : fsw/src/cf_cfdp_sbintf.c.i
 
 fsw/src/cf_cfdp_sbintf.s: fsw/src/cf_cfdp_sbintf.c.s
@@ -354,7 +354,7 @@ fsw/src/cf_cfdp_sbintf.s: fsw/src/cf_cfdp_sbintf.c.s
 
 # target to generate assembly for a file
 fsw/src/cf_cfdp_sbintf.c.s:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/cf/CMakeFiles/cf.dir/build.make apps/cf/CMakeFiles/cf.dir/fsw/src/cf_cfdp_sbintf.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/cf/CMakeFiles/cf.dir/build.make apps/cf/CMakeFiles/cf.dir/fsw/src/cf_cfdp_sbintf.c.s
 .PHONY : fsw/src/cf_cfdp_sbintf.c.s
 
 fsw/src/cf_chunk.o: fsw/src/cf_chunk.c.o
@@ -362,7 +362,7 @@ fsw/src/cf_chunk.o: fsw/src/cf_chunk.c.o
 
 # target to build an object file
 fsw/src/cf_chunk.c.o:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/cf/CMakeFiles/cf.dir/build.make apps/cf/CMakeFiles/cf.dir/fsw/src/cf_chunk.c.o
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/cf/CMakeFiles/cf.dir/build.make apps/cf/CMakeFiles/cf.dir/fsw/src/cf_chunk.c.o
 .PHONY : fsw/src/cf_chunk.c.o
 
 fsw/src/cf_chunk.i: fsw/src/cf_chunk.c.i
@@ -370,7 +370,7 @@ fsw/src/cf_chunk.i: fsw/src/cf_chunk.c.i
 
 # target to preprocess a source file
 fsw/src/cf_chunk.c.i:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/cf/CMakeFiles/cf.dir/build.make apps/cf/CMakeFiles/cf.dir/fsw/src/cf_chunk.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/cf/CMakeFiles/cf.dir/build.make apps/cf/CMakeFiles/cf.dir/fsw/src/cf_chunk.c.i
 .PHONY : fsw/src/cf_chunk.c.i
 
 fsw/src/cf_chunk.s: fsw/src/cf_chunk.c.s
@@ -378,7 +378,7 @@ fsw/src/cf_chunk.s: fsw/src/cf_chunk.c.s
 
 # target to generate assembly for a file
 fsw/src/cf_chunk.c.s:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/cf/CMakeFiles/cf.dir/build.make apps/cf/CMakeFiles/cf.dir/fsw/src/cf_chunk.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/cf/CMakeFiles/cf.dir/build.make apps/cf/CMakeFiles/cf.dir/fsw/src/cf_chunk.c.s
 .PHONY : fsw/src/cf_chunk.c.s
 
 fsw/src/cf_clist.o: fsw/src/cf_clist.c.o
@@ -386,7 +386,7 @@ fsw/src/cf_clist.o: fsw/src/cf_clist.c.o
 
 # target to build an object file
 fsw/src/cf_clist.c.o:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/cf/CMakeFiles/cf.dir/build.make apps/cf/CMakeFiles/cf.dir/fsw/src/cf_clist.c.o
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/cf/CMakeFiles/cf.dir/build.make apps/cf/CMakeFiles/cf.dir/fsw/src/cf_clist.c.o
 .PHONY : fsw/src/cf_clist.c.o
 
 fsw/src/cf_clist.i: fsw/src/cf_clist.c.i
@@ -394,7 +394,7 @@ fsw/src/cf_clist.i: fsw/src/cf_clist.c.i
 
 # target to preprocess a source file
 fsw/src/cf_clist.c.i:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/cf/CMakeFiles/cf.dir/build.make apps/cf/CMakeFiles/cf.dir/fsw/src/cf_clist.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/cf/CMakeFiles/cf.dir/build.make apps/cf/CMakeFiles/cf.dir/fsw/src/cf_clist.c.i
 .PHONY : fsw/src/cf_clist.c.i
 
 fsw/src/cf_clist.s: fsw/src/cf_clist.c.s
@@ -402,7 +402,7 @@ fsw/src/cf_clist.s: fsw/src/cf_clist.c.s
 
 # target to generate assembly for a file
 fsw/src/cf_clist.c.s:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/cf/CMakeFiles/cf.dir/build.make apps/cf/CMakeFiles/cf.dir/fsw/src/cf_clist.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/cf/CMakeFiles/cf.dir/build.make apps/cf/CMakeFiles/cf.dir/fsw/src/cf_clist.c.s
 .PHONY : fsw/src/cf_clist.c.s
 
 fsw/src/cf_cmd.o: fsw/src/cf_cmd.c.o
@@ -410,7 +410,7 @@ fsw/src/cf_cmd.o: fsw/src/cf_cmd.c.o
 
 # target to build an object file
 fsw/src/cf_cmd.c.o:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/cf/CMakeFiles/cf.dir/build.make apps/cf/CMakeFiles/cf.dir/fsw/src/cf_cmd.c.o
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/cf/CMakeFiles/cf.dir/build.make apps/cf/CMakeFiles/cf.dir/fsw/src/cf_cmd.c.o
 .PHONY : fsw/src/cf_cmd.c.o
 
 fsw/src/cf_cmd.i: fsw/src/cf_cmd.c.i
@@ -418,7 +418,7 @@ fsw/src/cf_cmd.i: fsw/src/cf_cmd.c.i
 
 # target to preprocess a source file
 fsw/src/cf_cmd.c.i:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/cf/CMakeFiles/cf.dir/build.make apps/cf/CMakeFiles/cf.dir/fsw/src/cf_cmd.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/cf/CMakeFiles/cf.dir/build.make apps/cf/CMakeFiles/cf.dir/fsw/src/cf_cmd.c.i
 .PHONY : fsw/src/cf_cmd.c.i
 
 fsw/src/cf_cmd.s: fsw/src/cf_cmd.c.s
@@ -426,7 +426,7 @@ fsw/src/cf_cmd.s: fsw/src/cf_cmd.c.s
 
 # target to generate assembly for a file
 fsw/src/cf_cmd.c.s:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/cf/CMakeFiles/cf.dir/build.make apps/cf/CMakeFiles/cf.dir/fsw/src/cf_cmd.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/cf/CMakeFiles/cf.dir/build.make apps/cf/CMakeFiles/cf.dir/fsw/src/cf_cmd.c.s
 .PHONY : fsw/src/cf_cmd.c.s
 
 fsw/src/cf_codec.o: fsw/src/cf_codec.c.o
@@ -434,7 +434,7 @@ fsw/src/cf_codec.o: fsw/src/cf_codec.c.o
 
 # target to build an object file
 fsw/src/cf_codec.c.o:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/cf/CMakeFiles/cf.dir/build.make apps/cf/CMakeFiles/cf.dir/fsw/src/cf_codec.c.o
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/cf/CMakeFiles/cf.dir/build.make apps/cf/CMakeFiles/cf.dir/fsw/src/cf_codec.c.o
 .PHONY : fsw/src/cf_codec.c.o
 
 fsw/src/cf_codec.i: fsw/src/cf_codec.c.i
@@ -442,7 +442,7 @@ fsw/src/cf_codec.i: fsw/src/cf_codec.c.i
 
 # target to preprocess a source file
 fsw/src/cf_codec.c.i:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/cf/CMakeFiles/cf.dir/build.make apps/cf/CMakeFiles/cf.dir/fsw/src/cf_codec.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/cf/CMakeFiles/cf.dir/build.make apps/cf/CMakeFiles/cf.dir/fsw/src/cf_codec.c.i
 .PHONY : fsw/src/cf_codec.c.i
 
 fsw/src/cf_codec.s: fsw/src/cf_codec.c.s
@@ -450,7 +450,7 @@ fsw/src/cf_codec.s: fsw/src/cf_codec.c.s
 
 # target to generate assembly for a file
 fsw/src/cf_codec.c.s:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/cf/CMakeFiles/cf.dir/build.make apps/cf/CMakeFiles/cf.dir/fsw/src/cf_codec.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/cf/CMakeFiles/cf.dir/build.make apps/cf/CMakeFiles/cf.dir/fsw/src/cf_codec.c.s
 .PHONY : fsw/src/cf_codec.c.s
 
 fsw/src/cf_crc.o: fsw/src/cf_crc.c.o
@@ -458,7 +458,7 @@ fsw/src/cf_crc.o: fsw/src/cf_crc.c.o
 
 # target to build an object file
 fsw/src/cf_crc.c.o:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/cf/CMakeFiles/cf.dir/build.make apps/cf/CMakeFiles/cf.dir/fsw/src/cf_crc.c.o
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/cf/CMakeFiles/cf.dir/build.make apps/cf/CMakeFiles/cf.dir/fsw/src/cf_crc.c.o
 .PHONY : fsw/src/cf_crc.c.o
 
 fsw/src/cf_crc.i: fsw/src/cf_crc.c.i
@@ -466,7 +466,7 @@ fsw/src/cf_crc.i: fsw/src/cf_crc.c.i
 
 # target to preprocess a source file
 fsw/src/cf_crc.c.i:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/cf/CMakeFiles/cf.dir/build.make apps/cf/CMakeFiles/cf.dir/fsw/src/cf_crc.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/cf/CMakeFiles/cf.dir/build.make apps/cf/CMakeFiles/cf.dir/fsw/src/cf_crc.c.i
 .PHONY : fsw/src/cf_crc.c.i
 
 fsw/src/cf_crc.s: fsw/src/cf_crc.c.s
@@ -474,7 +474,7 @@ fsw/src/cf_crc.s: fsw/src/cf_crc.c.s
 
 # target to generate assembly for a file
 fsw/src/cf_crc.c.s:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/cf/CMakeFiles/cf.dir/build.make apps/cf/CMakeFiles/cf.dir/fsw/src/cf_crc.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/cf/CMakeFiles/cf.dir/build.make apps/cf/CMakeFiles/cf.dir/fsw/src/cf_crc.c.s
 .PHONY : fsw/src/cf_crc.c.s
 
 fsw/src/cf_timer.o: fsw/src/cf_timer.c.o
@@ -482,7 +482,7 @@ fsw/src/cf_timer.o: fsw/src/cf_timer.c.o
 
 # target to build an object file
 fsw/src/cf_timer.c.o:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/cf/CMakeFiles/cf.dir/build.make apps/cf/CMakeFiles/cf.dir/fsw/src/cf_timer.c.o
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/cf/CMakeFiles/cf.dir/build.make apps/cf/CMakeFiles/cf.dir/fsw/src/cf_timer.c.o
 .PHONY : fsw/src/cf_timer.c.o
 
 fsw/src/cf_timer.i: fsw/src/cf_timer.c.i
@@ -490,7 +490,7 @@ fsw/src/cf_timer.i: fsw/src/cf_timer.c.i
 
 # target to preprocess a source file
 fsw/src/cf_timer.c.i:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/cf/CMakeFiles/cf.dir/build.make apps/cf/CMakeFiles/cf.dir/fsw/src/cf_timer.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/cf/CMakeFiles/cf.dir/build.make apps/cf/CMakeFiles/cf.dir/fsw/src/cf_timer.c.i
 .PHONY : fsw/src/cf_timer.c.i
 
 fsw/src/cf_timer.s: fsw/src/cf_timer.c.s
@@ -498,7 +498,7 @@ fsw/src/cf_timer.s: fsw/src/cf_timer.c.s
 
 # target to generate assembly for a file
 fsw/src/cf_timer.c.s:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/cf/CMakeFiles/cf.dir/build.make apps/cf/CMakeFiles/cf.dir/fsw/src/cf_timer.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/cf/CMakeFiles/cf.dir/build.make apps/cf/CMakeFiles/cf.dir/fsw/src/cf_timer.c.s
 .PHONY : fsw/src/cf_timer.c.s
 
 fsw/src/cf_utils.o: fsw/src/cf_utils.c.o
@@ -506,7 +506,7 @@ fsw/src/cf_utils.o: fsw/src/cf_utils.c.o
 
 # target to build an object file
 fsw/src/cf_utils.c.o:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/cf/CMakeFiles/cf.dir/build.make apps/cf/CMakeFiles/cf.dir/fsw/src/cf_utils.c.o
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/cf/CMakeFiles/cf.dir/build.make apps/cf/CMakeFiles/cf.dir/fsw/src/cf_utils.c.o
 .PHONY : fsw/src/cf_utils.c.o
 
 fsw/src/cf_utils.i: fsw/src/cf_utils.c.i
@@ -514,7 +514,7 @@ fsw/src/cf_utils.i: fsw/src/cf_utils.c.i
 
 # target to preprocess a source file
 fsw/src/cf_utils.c.i:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/cf/CMakeFiles/cf.dir/build.make apps/cf/CMakeFiles/cf.dir/fsw/src/cf_utils.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/cf/CMakeFiles/cf.dir/build.make apps/cf/CMakeFiles/cf.dir/fsw/src/cf_utils.c.i
 .PHONY : fsw/src/cf_utils.c.i
 
 fsw/src/cf_utils.s: fsw/src/cf_utils.c.s
@@ -522,32 +522,32 @@ fsw/src/cf_utils.s: fsw/src/cf_utils.c.s
 
 # target to generate assembly for a file
 fsw/src/cf_utils.c.s:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/cf/CMakeFiles/cf.dir/build.make apps/cf/CMakeFiles/cf.dir/fsw/src/cf_utils.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/cf/CMakeFiles/cf.dir/build.make apps/cf/CMakeFiles/cf.dir/fsw/src/cf_utils.c.s
 .PHONY : fsw/src/cf_utils.c.s
 
-home/jstar/Desktop/github-nos3/cfg/build/nos3_defs/tables/cf_def_config.o: home/jstar/Desktop/github-nos3/cfg/build/nos3_defs/tables/cf_def_config.c.o
-.PHONY : home/jstar/Desktop/github-nos3/cfg/build/nos3_defs/tables/cf_def_config.o
+mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/cfg/build/nos3_defs/tables/cf_def_config.o: mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/cfg/build/nos3_defs/tables/cf_def_config.c.o
+.PHONY : mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/cfg/build/nos3_defs/tables/cf_def_config.o
 
 # target to build an object file
-home/jstar/Desktop/github-nos3/cfg/build/nos3_defs/tables/cf_def_config.c.o:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/cf/CMakeFiles/cpu1_cf_cf_def_config.dir/build.make apps/cf/CMakeFiles/cpu1_cf_cf_def_config.dir/home/jstar/Desktop/github-nos3/cfg/build/nos3_defs/tables/cf_def_config.c.o
-.PHONY : home/jstar/Desktop/github-nos3/cfg/build/nos3_defs/tables/cf_def_config.c.o
+mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/cfg/build/nos3_defs/tables/cf_def_config.c.o:
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/cf/CMakeFiles/cpu1_cf_cf_def_config.dir/build.make apps/cf/CMakeFiles/cpu1_cf_cf_def_config.dir/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/cfg/build/nos3_defs/tables/cf_def_config.c.o
+.PHONY : mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/cfg/build/nos3_defs/tables/cf_def_config.c.o
 
-home/jstar/Desktop/github-nos3/cfg/build/nos3_defs/tables/cf_def_config.i: home/jstar/Desktop/github-nos3/cfg/build/nos3_defs/tables/cf_def_config.c.i
-.PHONY : home/jstar/Desktop/github-nos3/cfg/build/nos3_defs/tables/cf_def_config.i
+mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/cfg/build/nos3_defs/tables/cf_def_config.i: mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/cfg/build/nos3_defs/tables/cf_def_config.c.i
+.PHONY : mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/cfg/build/nos3_defs/tables/cf_def_config.i
 
 # target to preprocess a source file
-home/jstar/Desktop/github-nos3/cfg/build/nos3_defs/tables/cf_def_config.c.i:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/cf/CMakeFiles/cpu1_cf_cf_def_config.dir/build.make apps/cf/CMakeFiles/cpu1_cf_cf_def_config.dir/home/jstar/Desktop/github-nos3/cfg/build/nos3_defs/tables/cf_def_config.c.i
-.PHONY : home/jstar/Desktop/github-nos3/cfg/build/nos3_defs/tables/cf_def_config.c.i
+mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/cfg/build/nos3_defs/tables/cf_def_config.c.i:
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/cf/CMakeFiles/cpu1_cf_cf_def_config.dir/build.make apps/cf/CMakeFiles/cpu1_cf_cf_def_config.dir/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/cfg/build/nos3_defs/tables/cf_def_config.c.i
+.PHONY : mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/cfg/build/nos3_defs/tables/cf_def_config.c.i
 
-home/jstar/Desktop/github-nos3/cfg/build/nos3_defs/tables/cf_def_config.s: home/jstar/Desktop/github-nos3/cfg/build/nos3_defs/tables/cf_def_config.c.s
-.PHONY : home/jstar/Desktop/github-nos3/cfg/build/nos3_defs/tables/cf_def_config.s
+mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/cfg/build/nos3_defs/tables/cf_def_config.s: mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/cfg/build/nos3_defs/tables/cf_def_config.c.s
+.PHONY : mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/cfg/build/nos3_defs/tables/cf_def_config.s
 
 # target to generate assembly for a file
-home/jstar/Desktop/github-nos3/cfg/build/nos3_defs/tables/cf_def_config.c.s:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/cf/CMakeFiles/cpu1_cf_cf_def_config.dir/build.make apps/cf/CMakeFiles/cpu1_cf_cf_def_config.dir/home/jstar/Desktop/github-nos3/cfg/build/nos3_defs/tables/cf_def_config.c.s
-.PHONY : home/jstar/Desktop/github-nos3/cfg/build/nos3_defs/tables/cf_def_config.c.s
+mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/cfg/build/nos3_defs/tables/cf_def_config.c.s:
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/cf/CMakeFiles/cpu1_cf_cf_def_config.dir/build.make apps/cf/CMakeFiles/cpu1_cf_cf_def_config.dir/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/cfg/build/nos3_defs/tables/cf_def_config.c.s
+.PHONY : mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/cfg/build/nos3_defs/tables/cf_def_config.c.s
 
 # Help Target
 help:
@@ -604,9 +604,9 @@ help:
 	@echo "... fsw/src/cf_utils.o"
 	@echo "... fsw/src/cf_utils.i"
 	@echo "... fsw/src/cf_utils.s"
-	@echo "... home/jstar/Desktop/github-nos3/cfg/build/nos3_defs/tables/cf_def_config.o"
-	@echo "... home/jstar/Desktop/github-nos3/cfg/build/nos3_defs/tables/cf_def_config.i"
-	@echo "... home/jstar/Desktop/github-nos3/cfg/build/nos3_defs/tables/cf_def_config.s"
+	@echo "... mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/cfg/build/nos3_defs/tables/cf_def_config.o"
+	@echo "... mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/cfg/build/nos3_defs/tables/cf_def_config.i"
+	@echo "... mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/cfg/build/nos3_defs/tables/cf_def_config.s"
 .PHONY : help
 
 
@@ -618,6 +618,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

@@ -1,2 +1,2 @@
-/usr/bin/ar qc libcpu1_sc_sc_rts001.a CMakeFiles/cpu1_sc_sc_rts001.dir/home/jstar/Desktop/github-nos3/cfg/build/nos3_defs/tables/sc_rts001.c.o
+/usr/bin/ar qc libcpu1_sc_sc_rts001.a CMakeFiles/cpu1_sc_sc_rts001.dir/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/cfg/build/nos3_defs/tables/sc_rts001.c.o
 /usr/bin/ranlib libcpu1_sc_sc_rts001.a

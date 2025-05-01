@@ -8,9 +8,9 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/jstar/Desktop/github-nos3/components/oisl/fsw/src/CFDP_Luca.c" "apps/oisl/fsw/CMakeFiles/oisl.dir/src/CFDP_Luca.c.o" "gcc" "apps/oisl/fsw/CMakeFiles/oisl.dir/src/CFDP_Luca.c.o.d"
-  "/home/jstar/Desktop/github-nos3/components/oisl/fsw/src/oisl_app.c" "apps/oisl/fsw/CMakeFiles/oisl.dir/src/oisl_app.c.o" "gcc" "apps/oisl/fsw/CMakeFiles/oisl.dir/src/oisl_app.c.o.d"
-  "/home/jstar/Desktop/github-nos3/components/oisl/fsw/src/oisl_device.c" "apps/oisl/fsw/CMakeFiles/oisl.dir/src/oisl_device.c.o" "gcc" "apps/oisl/fsw/CMakeFiles/oisl.dir/src/oisl_device.c.o.d"
+  "/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/oisl/fsw/src/CFDP_Luca.c" "apps/oisl/fsw/CMakeFiles/oisl.dir/src/CFDP_Luca.c.o" "gcc" "apps/oisl/fsw/CMakeFiles/oisl.dir/src/CFDP_Luca.c.o.d"
+  "/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/oisl/fsw/src/oisl_app.c" "apps/oisl/fsw/CMakeFiles/oisl.dir/src/oisl_app.c.o" "gcc" "apps/oisl/fsw/CMakeFiles/oisl.dir/src/oisl_app.c.o.d"
+  "/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/oisl/fsw/src/oisl_device.c" "apps/oisl/fsw/CMakeFiles/oisl.dir/src/oisl_device.c.o" "gcc" "apps/oisl/fsw/CMakeFiles/oisl.dir/src/oisl_device.c.o.d"
   )
 
 # Targets to which this target links.

@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/cpu1_cf_cf_def_config.dir/home/jstar/Desktop/github-nos3/cfg/build/nos3_defs/tables/cf_def_config.c.o"
-  "CMakeFiles/cpu1_cf_cf_def_config.dir/home/jstar/Desktop/github-nos3/cfg/build/nos3_defs/tables/cf_def_config.c.o.d"
+  "CMakeFiles/cpu1_cf_cf_def_config.dir/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/cfg/build/nos3_defs/tables/cf_def_config.c.o"
+  "CMakeFiles/cpu1_cf_cf_def_config.dir/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/cfg/build/nos3_defs/tables/cf_def_config.c.o.d"
   "libcpu1_cf_cf_def_config.a"
   "libcpu1_cf_cf_def_config.pdb"
 )

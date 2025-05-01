@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/jstar/Desktop/github-nos3/fsw/cfe
+CMAKE_SOURCE_DIR = /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/cfe
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1
+CMAKE_BINARY_DIR = /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1
 
 # Include any dependencies generated for this target.
 include apps/generic_radio/fsw/CMakeFiles/generic_radio.dir/depend.make
@@ -70,32 +70,32 @@ include apps/generic_radio/fsw/CMakeFiles/generic_radio.dir/progress.make
 include apps/generic_radio/fsw/CMakeFiles/generic_radio.dir/flags.make
 
 apps/generic_radio/fsw/CMakeFiles/generic_radio.dir/src/generic_radio_app.c.o: apps/generic_radio/fsw/CMakeFiles/generic_radio.dir/flags.make
-apps/generic_radio/fsw/CMakeFiles/generic_radio.dir/src/generic_radio_app.c.o: /home/jstar/Desktop/github-nos3/components/generic_radio/fsw/src/generic_radio_app.c
+apps/generic_radio/fsw/CMakeFiles/generic_radio.dir/src/generic_radio_app.c.o: /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/generic_radio/fsw/src/generic_radio_app.c
 apps/generic_radio/fsw/CMakeFiles/generic_radio.dir/src/generic_radio_app.c.o: apps/generic_radio/fsw/CMakeFiles/generic_radio.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object apps/generic_radio/fsw/CMakeFiles/generic_radio.dir/src/generic_radio_app.c.o"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/apps/generic_radio/fsw && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT apps/generic_radio/fsw/CMakeFiles/generic_radio.dir/src/generic_radio_app.c.o -MF CMakeFiles/generic_radio.dir/src/generic_radio_app.c.o.d -o CMakeFiles/generic_radio.dir/src/generic_radio_app.c.o -c /home/jstar/Desktop/github-nos3/components/generic_radio/fsw/src/generic_radio_app.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object apps/generic_radio/fsw/CMakeFiles/generic_radio.dir/src/generic_radio_app.c.o"
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/apps/generic_radio/fsw && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT apps/generic_radio/fsw/CMakeFiles/generic_radio.dir/src/generic_radio_app.c.o -MF CMakeFiles/generic_radio.dir/src/generic_radio_app.c.o.d -o CMakeFiles/generic_radio.dir/src/generic_radio_app.c.o -c /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/generic_radio/fsw/src/generic_radio_app.c
 
 apps/generic_radio/fsw/CMakeFiles/generic_radio.dir/src/generic_radio_app.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/generic_radio.dir/src/generic_radio_app.c.i"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/apps/generic_radio/fsw && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jstar/Desktop/github-nos3/components/generic_radio/fsw/src/generic_radio_app.c > CMakeFiles/generic_radio.dir/src/generic_radio_app.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/apps/generic_radio/fsw && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/generic_radio/fsw/src/generic_radio_app.c > CMakeFiles/generic_radio.dir/src/generic_radio_app.c.i
 
 apps/generic_radio/fsw/CMakeFiles/generic_radio.dir/src/generic_radio_app.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/generic_radio.dir/src/generic_radio_app.c.s"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/apps/generic_radio/fsw && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jstar/Desktop/github-nos3/components/generic_radio/fsw/src/generic_radio_app.c -o CMakeFiles/generic_radio.dir/src/generic_radio_app.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/apps/generic_radio/fsw && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/generic_radio/fsw/src/generic_radio_app.c -o CMakeFiles/generic_radio.dir/src/generic_radio_app.c.s
 
 apps/generic_radio/fsw/CMakeFiles/generic_radio.dir/src/generic_radio_device.c.o: apps/generic_radio/fsw/CMakeFiles/generic_radio.dir/flags.make
-apps/generic_radio/fsw/CMakeFiles/generic_radio.dir/src/generic_radio_device.c.o: /home/jstar/Desktop/github-nos3/components/generic_radio/fsw/src/generic_radio_device.c
+apps/generic_radio/fsw/CMakeFiles/generic_radio.dir/src/generic_radio_device.c.o: /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/generic_radio/fsw/src/generic_radio_device.c
 apps/generic_radio/fsw/CMakeFiles/generic_radio.dir/src/generic_radio_device.c.o: apps/generic_radio/fsw/CMakeFiles/generic_radio.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object apps/generic_radio/fsw/CMakeFiles/generic_radio.dir/src/generic_radio_device.c.o"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/apps/generic_radio/fsw && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT apps/generic_radio/fsw/CMakeFiles/generic_radio.dir/src/generic_radio_device.c.o -MF CMakeFiles/generic_radio.dir/src/generic_radio_device.c.o.d -o CMakeFiles/generic_radio.dir/src/generic_radio_device.c.o -c /home/jstar/Desktop/github-nos3/components/generic_radio/fsw/src/generic_radio_device.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object apps/generic_radio/fsw/CMakeFiles/generic_radio.dir/src/generic_radio_device.c.o"
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/apps/generic_radio/fsw && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT apps/generic_radio/fsw/CMakeFiles/generic_radio.dir/src/generic_radio_device.c.o -MF CMakeFiles/generic_radio.dir/src/generic_radio_device.c.o.d -o CMakeFiles/generic_radio.dir/src/generic_radio_device.c.o -c /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/generic_radio/fsw/src/generic_radio_device.c
 
 apps/generic_radio/fsw/CMakeFiles/generic_radio.dir/src/generic_radio_device.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/generic_radio.dir/src/generic_radio_device.c.i"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/apps/generic_radio/fsw && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jstar/Desktop/github-nos3/components/generic_radio/fsw/src/generic_radio_device.c > CMakeFiles/generic_radio.dir/src/generic_radio_device.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/apps/generic_radio/fsw && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/generic_radio/fsw/src/generic_radio_device.c > CMakeFiles/generic_radio.dir/src/generic_radio_device.c.i
 
 apps/generic_radio/fsw/CMakeFiles/generic_radio.dir/src/generic_radio_device.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/generic_radio.dir/src/generic_radio_device.c.s"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/apps/generic_radio/fsw && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jstar/Desktop/github-nos3/components/generic_radio/fsw/src/generic_radio_device.c -o CMakeFiles/generic_radio.dir/src/generic_radio_device.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/apps/generic_radio/fsw && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/generic_radio/fsw/src/generic_radio_device.c -o CMakeFiles/generic_radio.dir/src/generic_radio_device.c.s
 
 # Object files for target generic_radio
 generic_radio_OBJECTS = \
@@ -109,18 +109,18 @@ apps/generic_radio/fsw/generic_radio.so: apps/generic_radio/fsw/CMakeFiles/gener
 apps/generic_radio/fsw/generic_radio.so: apps/generic_radio/fsw/CMakeFiles/generic_radio.dir/src/generic_radio_device.c.o
 apps/generic_radio/fsw/generic_radio.so: apps/generic_radio/fsw/CMakeFiles/generic_radio.dir/build.make
 apps/generic_radio/fsw/generic_radio.so: apps/generic_radio/fsw/CMakeFiles/generic_radio.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C shared module generic_radio.so"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/apps/generic_radio/fsw && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/generic_radio.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C shared module generic_radio.so"
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/apps/generic_radio/fsw && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/generic_radio.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 apps/generic_radio/fsw/CMakeFiles/generic_radio.dir/build: apps/generic_radio/fsw/generic_radio.so
 .PHONY : apps/generic_radio/fsw/CMakeFiles/generic_radio.dir/build
 
 apps/generic_radio/fsw/CMakeFiles/generic_radio.dir/clean:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/apps/generic_radio/fsw && $(CMAKE_COMMAND) -P CMakeFiles/generic_radio.dir/cmake_clean.cmake
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/apps/generic_radio/fsw && $(CMAKE_COMMAND) -P CMakeFiles/generic_radio.dir/cmake_clean.cmake
 .PHONY : apps/generic_radio/fsw/CMakeFiles/generic_radio.dir/clean
 
 apps/generic_radio/fsw/CMakeFiles/generic_radio.dir/depend:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/jstar/Desktop/github-nos3/fsw/cfe /home/jstar/Desktop/github-nos3/components/generic_radio/fsw /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/apps/generic_radio/fsw /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/apps/generic_radio/fsw/CMakeFiles/generic_radio.dir/DependInfo.cmake --color=$(COLOR)
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/cfe /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/generic_radio/fsw /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/apps/generic_radio/fsw /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/apps/generic_radio/fsw/CMakeFiles/generic_radio.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : apps/generic_radio/fsw/CMakeFiles/generic_radio.dir/depend
 

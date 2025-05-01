@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/jstar/Desktop/github-nos3/fsw/cfe
+CMAKE_SOURCE_DIR = /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/cfe
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1
+CMAKE_BINARY_DIR = /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1
 
 # Include any dependencies generated for this target.
 include psp/nos-linux-shared/CMakeFiles/psp-nos-linux-shared.dir/depend.make
@@ -70,88 +70,88 @@ include psp/nos-linux-shared/CMakeFiles/psp-nos-linux-shared.dir/progress.make
 include psp/nos-linux-shared/CMakeFiles/psp-nos-linux-shared.dir/flags.make
 
 psp/nos-linux-shared/CMakeFiles/psp-nos-linux-shared.dir/src/cfe_psp_error.c.o: psp/nos-linux-shared/CMakeFiles/psp-nos-linux-shared.dir/flags.make
-psp/nos-linux-shared/CMakeFiles/psp-nos-linux-shared.dir/src/cfe_psp_error.c.o: /home/jstar/Desktop/github-nos3/fsw/psp/fsw/shared/src/cfe_psp_error.c
+psp/nos-linux-shared/CMakeFiles/psp-nos-linux-shared.dir/src/cfe_psp_error.c.o: /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/psp/fsw/shared/src/cfe_psp_error.c
 psp/nos-linux-shared/CMakeFiles/psp-nos-linux-shared.dir/src/cfe_psp_error.c.o: psp/nos-linux-shared/CMakeFiles/psp-nos-linux-shared.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object psp/nos-linux-shared/CMakeFiles/psp-nos-linux-shared.dir/src/cfe_psp_error.c.o"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/psp/nos-linux-shared && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT psp/nos-linux-shared/CMakeFiles/psp-nos-linux-shared.dir/src/cfe_psp_error.c.o -MF CMakeFiles/psp-nos-linux-shared.dir/src/cfe_psp_error.c.o.d -o CMakeFiles/psp-nos-linux-shared.dir/src/cfe_psp_error.c.o -c /home/jstar/Desktop/github-nos3/fsw/psp/fsw/shared/src/cfe_psp_error.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object psp/nos-linux-shared/CMakeFiles/psp-nos-linux-shared.dir/src/cfe_psp_error.c.o"
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/psp/nos-linux-shared && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT psp/nos-linux-shared/CMakeFiles/psp-nos-linux-shared.dir/src/cfe_psp_error.c.o -MF CMakeFiles/psp-nos-linux-shared.dir/src/cfe_psp_error.c.o.d -o CMakeFiles/psp-nos-linux-shared.dir/src/cfe_psp_error.c.o -c /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/psp/fsw/shared/src/cfe_psp_error.c
 
 psp/nos-linux-shared/CMakeFiles/psp-nos-linux-shared.dir/src/cfe_psp_error.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/psp-nos-linux-shared.dir/src/cfe_psp_error.c.i"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/psp/nos-linux-shared && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jstar/Desktop/github-nos3/fsw/psp/fsw/shared/src/cfe_psp_error.c > CMakeFiles/psp-nos-linux-shared.dir/src/cfe_psp_error.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/psp/nos-linux-shared && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/psp/fsw/shared/src/cfe_psp_error.c > CMakeFiles/psp-nos-linux-shared.dir/src/cfe_psp_error.c.i
 
 psp/nos-linux-shared/CMakeFiles/psp-nos-linux-shared.dir/src/cfe_psp_error.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/psp-nos-linux-shared.dir/src/cfe_psp_error.c.s"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/psp/nos-linux-shared && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jstar/Desktop/github-nos3/fsw/psp/fsw/shared/src/cfe_psp_error.c -o CMakeFiles/psp-nos-linux-shared.dir/src/cfe_psp_error.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/psp/nos-linux-shared && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/psp/fsw/shared/src/cfe_psp_error.c -o CMakeFiles/psp-nos-linux-shared.dir/src/cfe_psp_error.c.s
 
 psp/nos-linux-shared/CMakeFiles/psp-nos-linux-shared.dir/src/cfe_psp_exceptionstorage.c.o: psp/nos-linux-shared/CMakeFiles/psp-nos-linux-shared.dir/flags.make
-psp/nos-linux-shared/CMakeFiles/psp-nos-linux-shared.dir/src/cfe_psp_exceptionstorage.c.o: /home/jstar/Desktop/github-nos3/fsw/psp/fsw/shared/src/cfe_psp_exceptionstorage.c
+psp/nos-linux-shared/CMakeFiles/psp-nos-linux-shared.dir/src/cfe_psp_exceptionstorage.c.o: /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/psp/fsw/shared/src/cfe_psp_exceptionstorage.c
 psp/nos-linux-shared/CMakeFiles/psp-nos-linux-shared.dir/src/cfe_psp_exceptionstorage.c.o: psp/nos-linux-shared/CMakeFiles/psp-nos-linux-shared.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object psp/nos-linux-shared/CMakeFiles/psp-nos-linux-shared.dir/src/cfe_psp_exceptionstorage.c.o"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/psp/nos-linux-shared && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT psp/nos-linux-shared/CMakeFiles/psp-nos-linux-shared.dir/src/cfe_psp_exceptionstorage.c.o -MF CMakeFiles/psp-nos-linux-shared.dir/src/cfe_psp_exceptionstorage.c.o.d -o CMakeFiles/psp-nos-linux-shared.dir/src/cfe_psp_exceptionstorage.c.o -c /home/jstar/Desktop/github-nos3/fsw/psp/fsw/shared/src/cfe_psp_exceptionstorage.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object psp/nos-linux-shared/CMakeFiles/psp-nos-linux-shared.dir/src/cfe_psp_exceptionstorage.c.o"
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/psp/nos-linux-shared && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT psp/nos-linux-shared/CMakeFiles/psp-nos-linux-shared.dir/src/cfe_psp_exceptionstorage.c.o -MF CMakeFiles/psp-nos-linux-shared.dir/src/cfe_psp_exceptionstorage.c.o.d -o CMakeFiles/psp-nos-linux-shared.dir/src/cfe_psp_exceptionstorage.c.o -c /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/psp/fsw/shared/src/cfe_psp_exceptionstorage.c
 
 psp/nos-linux-shared/CMakeFiles/psp-nos-linux-shared.dir/src/cfe_psp_exceptionstorage.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/psp-nos-linux-shared.dir/src/cfe_psp_exceptionstorage.c.i"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/psp/nos-linux-shared && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jstar/Desktop/github-nos3/fsw/psp/fsw/shared/src/cfe_psp_exceptionstorage.c > CMakeFiles/psp-nos-linux-shared.dir/src/cfe_psp_exceptionstorage.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/psp/nos-linux-shared && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/psp/fsw/shared/src/cfe_psp_exceptionstorage.c > CMakeFiles/psp-nos-linux-shared.dir/src/cfe_psp_exceptionstorage.c.i
 
 psp/nos-linux-shared/CMakeFiles/psp-nos-linux-shared.dir/src/cfe_psp_exceptionstorage.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/psp-nos-linux-shared.dir/src/cfe_psp_exceptionstorage.c.s"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/psp/nos-linux-shared && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jstar/Desktop/github-nos3/fsw/psp/fsw/shared/src/cfe_psp_exceptionstorage.c -o CMakeFiles/psp-nos-linux-shared.dir/src/cfe_psp_exceptionstorage.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/psp/nos-linux-shared && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/psp/fsw/shared/src/cfe_psp_exceptionstorage.c -o CMakeFiles/psp-nos-linux-shared.dir/src/cfe_psp_exceptionstorage.c.s
 
 psp/nos-linux-shared/CMakeFiles/psp-nos-linux-shared.dir/src/cfe_psp_memrange.c.o: psp/nos-linux-shared/CMakeFiles/psp-nos-linux-shared.dir/flags.make
-psp/nos-linux-shared/CMakeFiles/psp-nos-linux-shared.dir/src/cfe_psp_memrange.c.o: /home/jstar/Desktop/github-nos3/fsw/psp/fsw/shared/src/cfe_psp_memrange.c
+psp/nos-linux-shared/CMakeFiles/psp-nos-linux-shared.dir/src/cfe_psp_memrange.c.o: /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/psp/fsw/shared/src/cfe_psp_memrange.c
 psp/nos-linux-shared/CMakeFiles/psp-nos-linux-shared.dir/src/cfe_psp_memrange.c.o: psp/nos-linux-shared/CMakeFiles/psp-nos-linux-shared.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object psp/nos-linux-shared/CMakeFiles/psp-nos-linux-shared.dir/src/cfe_psp_memrange.c.o"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/psp/nos-linux-shared && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT psp/nos-linux-shared/CMakeFiles/psp-nos-linux-shared.dir/src/cfe_psp_memrange.c.o -MF CMakeFiles/psp-nos-linux-shared.dir/src/cfe_psp_memrange.c.o.d -o CMakeFiles/psp-nos-linux-shared.dir/src/cfe_psp_memrange.c.o -c /home/jstar/Desktop/github-nos3/fsw/psp/fsw/shared/src/cfe_psp_memrange.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object psp/nos-linux-shared/CMakeFiles/psp-nos-linux-shared.dir/src/cfe_psp_memrange.c.o"
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/psp/nos-linux-shared && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT psp/nos-linux-shared/CMakeFiles/psp-nos-linux-shared.dir/src/cfe_psp_memrange.c.o -MF CMakeFiles/psp-nos-linux-shared.dir/src/cfe_psp_memrange.c.o.d -o CMakeFiles/psp-nos-linux-shared.dir/src/cfe_psp_memrange.c.o -c /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/psp/fsw/shared/src/cfe_psp_memrange.c
 
 psp/nos-linux-shared/CMakeFiles/psp-nos-linux-shared.dir/src/cfe_psp_memrange.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/psp-nos-linux-shared.dir/src/cfe_psp_memrange.c.i"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/psp/nos-linux-shared && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jstar/Desktop/github-nos3/fsw/psp/fsw/shared/src/cfe_psp_memrange.c > CMakeFiles/psp-nos-linux-shared.dir/src/cfe_psp_memrange.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/psp/nos-linux-shared && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/psp/fsw/shared/src/cfe_psp_memrange.c > CMakeFiles/psp-nos-linux-shared.dir/src/cfe_psp_memrange.c.i
 
 psp/nos-linux-shared/CMakeFiles/psp-nos-linux-shared.dir/src/cfe_psp_memrange.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/psp-nos-linux-shared.dir/src/cfe_psp_memrange.c.s"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/psp/nos-linux-shared && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jstar/Desktop/github-nos3/fsw/psp/fsw/shared/src/cfe_psp_memrange.c -o CMakeFiles/psp-nos-linux-shared.dir/src/cfe_psp_memrange.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/psp/nos-linux-shared && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/psp/fsw/shared/src/cfe_psp_memrange.c -o CMakeFiles/psp-nos-linux-shared.dir/src/cfe_psp_memrange.c.s
 
 psp/nos-linux-shared/CMakeFiles/psp-nos-linux-shared.dir/src/cfe_psp_memutils.c.o: psp/nos-linux-shared/CMakeFiles/psp-nos-linux-shared.dir/flags.make
-psp/nos-linux-shared/CMakeFiles/psp-nos-linux-shared.dir/src/cfe_psp_memutils.c.o: /home/jstar/Desktop/github-nos3/fsw/psp/fsw/shared/src/cfe_psp_memutils.c
+psp/nos-linux-shared/CMakeFiles/psp-nos-linux-shared.dir/src/cfe_psp_memutils.c.o: /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/psp/fsw/shared/src/cfe_psp_memutils.c
 psp/nos-linux-shared/CMakeFiles/psp-nos-linux-shared.dir/src/cfe_psp_memutils.c.o: psp/nos-linux-shared/CMakeFiles/psp-nos-linux-shared.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object psp/nos-linux-shared/CMakeFiles/psp-nos-linux-shared.dir/src/cfe_psp_memutils.c.o"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/psp/nos-linux-shared && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT psp/nos-linux-shared/CMakeFiles/psp-nos-linux-shared.dir/src/cfe_psp_memutils.c.o -MF CMakeFiles/psp-nos-linux-shared.dir/src/cfe_psp_memutils.c.o.d -o CMakeFiles/psp-nos-linux-shared.dir/src/cfe_psp_memutils.c.o -c /home/jstar/Desktop/github-nos3/fsw/psp/fsw/shared/src/cfe_psp_memutils.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object psp/nos-linux-shared/CMakeFiles/psp-nos-linux-shared.dir/src/cfe_psp_memutils.c.o"
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/psp/nos-linux-shared && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT psp/nos-linux-shared/CMakeFiles/psp-nos-linux-shared.dir/src/cfe_psp_memutils.c.o -MF CMakeFiles/psp-nos-linux-shared.dir/src/cfe_psp_memutils.c.o.d -o CMakeFiles/psp-nos-linux-shared.dir/src/cfe_psp_memutils.c.o -c /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/psp/fsw/shared/src/cfe_psp_memutils.c
 
 psp/nos-linux-shared/CMakeFiles/psp-nos-linux-shared.dir/src/cfe_psp_memutils.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/psp-nos-linux-shared.dir/src/cfe_psp_memutils.c.i"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/psp/nos-linux-shared && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jstar/Desktop/github-nos3/fsw/psp/fsw/shared/src/cfe_psp_memutils.c > CMakeFiles/psp-nos-linux-shared.dir/src/cfe_psp_memutils.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/psp/nos-linux-shared && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/psp/fsw/shared/src/cfe_psp_memutils.c > CMakeFiles/psp-nos-linux-shared.dir/src/cfe_psp_memutils.c.i
 
 psp/nos-linux-shared/CMakeFiles/psp-nos-linux-shared.dir/src/cfe_psp_memutils.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/psp-nos-linux-shared.dir/src/cfe_psp_memutils.c.s"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/psp/nos-linux-shared && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jstar/Desktop/github-nos3/fsw/psp/fsw/shared/src/cfe_psp_memutils.c -o CMakeFiles/psp-nos-linux-shared.dir/src/cfe_psp_memutils.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/psp/nos-linux-shared && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/psp/fsw/shared/src/cfe_psp_memutils.c -o CMakeFiles/psp-nos-linux-shared.dir/src/cfe_psp_memutils.c.s
 
 psp/nos-linux-shared/CMakeFiles/psp-nos-linux-shared.dir/src/cfe_psp_module.c.o: psp/nos-linux-shared/CMakeFiles/psp-nos-linux-shared.dir/flags.make
-psp/nos-linux-shared/CMakeFiles/psp-nos-linux-shared.dir/src/cfe_psp_module.c.o: /home/jstar/Desktop/github-nos3/fsw/psp/fsw/shared/src/cfe_psp_module.c
+psp/nos-linux-shared/CMakeFiles/psp-nos-linux-shared.dir/src/cfe_psp_module.c.o: /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/psp/fsw/shared/src/cfe_psp_module.c
 psp/nos-linux-shared/CMakeFiles/psp-nos-linux-shared.dir/src/cfe_psp_module.c.o: psp/nos-linux-shared/CMakeFiles/psp-nos-linux-shared.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object psp/nos-linux-shared/CMakeFiles/psp-nos-linux-shared.dir/src/cfe_psp_module.c.o"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/psp/nos-linux-shared && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT psp/nos-linux-shared/CMakeFiles/psp-nos-linux-shared.dir/src/cfe_psp_module.c.o -MF CMakeFiles/psp-nos-linux-shared.dir/src/cfe_psp_module.c.o.d -o CMakeFiles/psp-nos-linux-shared.dir/src/cfe_psp_module.c.o -c /home/jstar/Desktop/github-nos3/fsw/psp/fsw/shared/src/cfe_psp_module.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object psp/nos-linux-shared/CMakeFiles/psp-nos-linux-shared.dir/src/cfe_psp_module.c.o"
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/psp/nos-linux-shared && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT psp/nos-linux-shared/CMakeFiles/psp-nos-linux-shared.dir/src/cfe_psp_module.c.o -MF CMakeFiles/psp-nos-linux-shared.dir/src/cfe_psp_module.c.o.d -o CMakeFiles/psp-nos-linux-shared.dir/src/cfe_psp_module.c.o -c /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/psp/fsw/shared/src/cfe_psp_module.c
 
 psp/nos-linux-shared/CMakeFiles/psp-nos-linux-shared.dir/src/cfe_psp_module.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/psp-nos-linux-shared.dir/src/cfe_psp_module.c.i"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/psp/nos-linux-shared && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jstar/Desktop/github-nos3/fsw/psp/fsw/shared/src/cfe_psp_module.c > CMakeFiles/psp-nos-linux-shared.dir/src/cfe_psp_module.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/psp/nos-linux-shared && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/psp/fsw/shared/src/cfe_psp_module.c > CMakeFiles/psp-nos-linux-shared.dir/src/cfe_psp_module.c.i
 
 psp/nos-linux-shared/CMakeFiles/psp-nos-linux-shared.dir/src/cfe_psp_module.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/psp-nos-linux-shared.dir/src/cfe_psp_module.c.s"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/psp/nos-linux-shared && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jstar/Desktop/github-nos3/fsw/psp/fsw/shared/src/cfe_psp_module.c -o CMakeFiles/psp-nos-linux-shared.dir/src/cfe_psp_module.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/psp/nos-linux-shared && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/psp/fsw/shared/src/cfe_psp_module.c -o CMakeFiles/psp-nos-linux-shared.dir/src/cfe_psp_module.c.s
 
 psp/nos-linux-shared/CMakeFiles/psp-nos-linux-shared.dir/src/cfe_psp_version.c.o: psp/nos-linux-shared/CMakeFiles/psp-nos-linux-shared.dir/flags.make
-psp/nos-linux-shared/CMakeFiles/psp-nos-linux-shared.dir/src/cfe_psp_version.c.o: /home/jstar/Desktop/github-nos3/fsw/psp/fsw/shared/src/cfe_psp_version.c
+psp/nos-linux-shared/CMakeFiles/psp-nos-linux-shared.dir/src/cfe_psp_version.c.o: /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/psp/fsw/shared/src/cfe_psp_version.c
 psp/nos-linux-shared/CMakeFiles/psp-nos-linux-shared.dir/src/cfe_psp_version.c.o: psp/nos-linux-shared/CMakeFiles/psp-nos-linux-shared.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object psp/nos-linux-shared/CMakeFiles/psp-nos-linux-shared.dir/src/cfe_psp_version.c.o"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/psp/nos-linux-shared && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT psp/nos-linux-shared/CMakeFiles/psp-nos-linux-shared.dir/src/cfe_psp_version.c.o -MF CMakeFiles/psp-nos-linux-shared.dir/src/cfe_psp_version.c.o.d -o CMakeFiles/psp-nos-linux-shared.dir/src/cfe_psp_version.c.o -c /home/jstar/Desktop/github-nos3/fsw/psp/fsw/shared/src/cfe_psp_version.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object psp/nos-linux-shared/CMakeFiles/psp-nos-linux-shared.dir/src/cfe_psp_version.c.o"
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/psp/nos-linux-shared && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT psp/nos-linux-shared/CMakeFiles/psp-nos-linux-shared.dir/src/cfe_psp_version.c.o -MF CMakeFiles/psp-nos-linux-shared.dir/src/cfe_psp_version.c.o.d -o CMakeFiles/psp-nos-linux-shared.dir/src/cfe_psp_version.c.o -c /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/psp/fsw/shared/src/cfe_psp_version.c
 
 psp/nos-linux-shared/CMakeFiles/psp-nos-linux-shared.dir/src/cfe_psp_version.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/psp-nos-linux-shared.dir/src/cfe_psp_version.c.i"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/psp/nos-linux-shared && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jstar/Desktop/github-nos3/fsw/psp/fsw/shared/src/cfe_psp_version.c > CMakeFiles/psp-nos-linux-shared.dir/src/cfe_psp_version.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/psp/nos-linux-shared && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/psp/fsw/shared/src/cfe_psp_version.c > CMakeFiles/psp-nos-linux-shared.dir/src/cfe_psp_version.c.i
 
 psp/nos-linux-shared/CMakeFiles/psp-nos-linux-shared.dir/src/cfe_psp_version.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/psp-nos-linux-shared.dir/src/cfe_psp_version.c.s"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/psp/nos-linux-shared && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jstar/Desktop/github-nos3/fsw/psp/fsw/shared/src/cfe_psp_version.c -o CMakeFiles/psp-nos-linux-shared.dir/src/cfe_psp_version.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/psp/nos-linux-shared && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/psp/fsw/shared/src/cfe_psp_version.c -o CMakeFiles/psp-nos-linux-shared.dir/src/cfe_psp_version.c.s
 
 psp-nos-linux-shared: psp/nos-linux-shared/CMakeFiles/psp-nos-linux-shared.dir/src/cfe_psp_error.c.o
 psp-nos-linux-shared: psp/nos-linux-shared/CMakeFiles/psp-nos-linux-shared.dir/src/cfe_psp_exceptionstorage.c.o
@@ -167,10 +167,10 @@ psp/nos-linux-shared/CMakeFiles/psp-nos-linux-shared.dir/build: psp-nos-linux-sh
 .PHONY : psp/nos-linux-shared/CMakeFiles/psp-nos-linux-shared.dir/build
 
 psp/nos-linux-shared/CMakeFiles/psp-nos-linux-shared.dir/clean:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/psp/nos-linux-shared && $(CMAKE_COMMAND) -P CMakeFiles/psp-nos-linux-shared.dir/cmake_clean.cmake
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/psp/nos-linux-shared && $(CMAKE_COMMAND) -P CMakeFiles/psp-nos-linux-shared.dir/cmake_clean.cmake
 .PHONY : psp/nos-linux-shared/CMakeFiles/psp-nos-linux-shared.dir/clean
 
 psp/nos-linux-shared/CMakeFiles/psp-nos-linux-shared.dir/depend:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/jstar/Desktop/github-nos3/fsw/cfe /home/jstar/Desktop/github-nos3/fsw/psp/fsw/shared /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/psp/nos-linux-shared /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/psp/nos-linux-shared/CMakeFiles/psp-nos-linux-shared.dir/DependInfo.cmake --color=$(COLOR)
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/cfe /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/psp/fsw/shared /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/psp/nos-linux-shared /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/psp/nos-linux-shared/CMakeFiles/psp-nos-linux-shared.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : psp/nos-linux-shared/CMakeFiles/psp-nos-linux-shared.dir/depend
 

@@ -1,8 +1,8 @@
-# Install script for directory: /home/jstar/Desktop/github-nos3/components/generic_adcs/fsw
+# Install script for directory: /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/generic_adcs/fsw
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/jstar/Desktop/github-nos3/fsw/build/exe")
+  set(CMAKE_INSTALL_PREFIX "/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/exe")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -49,7 +49,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/cpu1/cf/generic_adcs.so"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/cpu1/cf" TYPE MODULE FILES "/home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/apps/generic_adcs/fsw/generic_adcs.so")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/cpu1/cf" TYPE MODULE FILES "/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/apps/generic_adcs/fsw/generic_adcs.so")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/cpu1/cf/generic_adcs.so" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/cpu1/cf/generic_adcs.so")
     if(CMAKE_INSTALL_DO_STRIP)
@@ -60,37 +60,37 @@ endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/jstar/Desktop/github-nos3/fsw/build/exe/cpu1/cf/Inp_DI.txt")
+   "/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/exe/cpu1/cf/Inp_DI.txt")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/home/jstar/Desktop/github-nos3/fsw/build/exe/cpu1/cf" TYPE FILE FILES "/home/jstar/Desktop/github-nos3/components/generic_adcs/fsw/cfg/Inp_DI.txt")
+  file(INSTALL DESTINATION "/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/exe/cpu1/cf" TYPE FILE FILES "/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/generic_adcs/fsw/cfg/Inp_DI.txt")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/jstar/Desktop/github-nos3/fsw/build/exe/cpu1/cf/Inp_ADAC.txt")
+   "/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/exe/cpu1/cf/Inp_ADAC.txt")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/home/jstar/Desktop/github-nos3/fsw/build/exe/cpu1/cf" TYPE FILE FILES "/home/jstar/Desktop/github-nos3/components/generic_adcs/fsw/cfg/Inp_ADAC.txt")
+  file(INSTALL DESTINATION "/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/exe/cpu1/cf" TYPE FILE FILES "/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/generic_adcs/fsw/cfg/Inp_ADAC.txt")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/jstar/Desktop/github-nos3/fsw/build/exe/cpu1/cf/Inp_DO.txt")
+   "/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/exe/cpu1/cf/Inp_DO.txt")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/home/jstar/Desktop/github-nos3/fsw/build/exe/cpu1/cf" TYPE FILE FILES "/home/jstar/Desktop/github-nos3/components/generic_adcs/fsw/cfg/Inp_DO.txt")
+  file(INSTALL DESTINATION "/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/exe/cpu1/cf" TYPE FILE FILES "/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/generic_adcs/fsw/cfg/Inp_DO.txt")
 endif()
 

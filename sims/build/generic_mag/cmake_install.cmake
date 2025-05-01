@@ -1,8 +1,8 @@
-# Install script for directory: /home/jstar/Desktop/github-nos3/components/generic_mag/sim
+# Install script for directory: /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/generic_mag/sim
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/jstar/Desktop/github-nos3/sims/build")
+  set(CMAKE_INSTALL_PREFIX "/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/sims/build")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -49,12 +49,12 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libgeneric_mag_sim.so"
          RPATH ":$ORIGIN/../lib")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/jstar/Desktop/github-nos3/sims/build/generic_mag/libgeneric_mag_sim.so")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/sims/build/generic_mag/libgeneric_mag_sim.so")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libgeneric_mag_sim.so" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libgeneric_mag_sim.so")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libgeneric_mag_sim.so"
-         OLD_RPATH "/home/jstar/Desktop/github-nos3/sims/build/sim_common:"
+         OLD_RPATH "/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/sims/build/sim_common:"
          NEW_RPATH ":$ORIGIN/../lib")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libgeneric_mag_sim.so")

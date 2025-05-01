@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/jstar/Desktop/github-nos3/fsw/cfe
+CMAKE_SOURCE_DIR = /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/cfe
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/jstar/Desktop/github-nos3/fsw/build
+CMAKE_BINARY_DIR = /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build
 
 # Utility rule file for mission-install.
 
@@ -82,6 +82,6 @@ CMakeFiles/mission-install.dir/clean:
 .PHONY : CMakeFiles/mission-install.dir/clean
 
 CMakeFiles/mission-install.dir/depend:
-	cd /home/jstar/Desktop/github-nos3/fsw/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/jstar/Desktop/github-nos3/fsw/cfe /home/jstar/Desktop/github-nos3/fsw/cfe /home/jstar/Desktop/github-nos3/fsw/build /home/jstar/Desktop/github-nos3/fsw/build /home/jstar/Desktop/github-nos3/fsw/build/CMakeFiles/mission-install.dir/DependInfo.cmake --color=$(COLOR)
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/cfe /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/cfe /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/CMakeFiles/mission-install.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/mission-install.dir/depend
 

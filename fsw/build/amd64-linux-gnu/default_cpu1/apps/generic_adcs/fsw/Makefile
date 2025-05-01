@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/jstar/Desktop/github-nos3/fsw/cfe
+CMAKE_SOURCE_DIR = /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/cfe
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1
+CMAKE_BINARY_DIR = /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -142,14 +142,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(CMAKE_COMMAND) -E cmake_progress_start /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/apps/generic_adcs/fsw//CMakeFiles/progress.marks
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/generic_adcs/fsw/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles 0
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(CMAKE_COMMAND) -E cmake_progress_start /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/apps/generic_adcs/fsw//CMakeFiles/progress.marks
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/generic_adcs/fsw/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/generic_adcs/fsw/clean
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/generic_adcs/fsw/clean
 .PHONY : clean
 
 # The main clean target
@@ -158,22 +158,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/generic_adcs/fsw/preinstall
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/generic_adcs/fsw/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/generic_adcs/fsw/preinstall
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/generic_adcs/fsw/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 apps/generic_adcs/fsw/CMakeFiles/generic_adcs.dir/rule:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/generic_adcs/fsw/CMakeFiles/generic_adcs.dir/rule
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/generic_adcs/fsw/CMakeFiles/generic_adcs.dir/rule
 .PHONY : apps/generic_adcs/fsw/CMakeFiles/generic_adcs.dir/rule
 
 # Convenience name for target.
@@ -182,7 +182,7 @@ generic_adcs: apps/generic_adcs/fsw/CMakeFiles/generic_adcs.dir/rule
 
 # fast build rule for target.
 generic_adcs/fast:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/generic_adcs/fsw/CMakeFiles/generic_adcs.dir/build.make apps/generic_adcs/fsw/CMakeFiles/generic_adcs.dir/build
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/generic_adcs/fsw/CMakeFiles/generic_adcs.dir/build.make apps/generic_adcs/fsw/CMakeFiles/generic_adcs.dir/build
 .PHONY : generic_adcs/fast
 
 src/generic_adcs_adac.o: src/generic_adcs_adac.c.o
@@ -190,7 +190,7 @@ src/generic_adcs_adac.o: src/generic_adcs_adac.c.o
 
 # target to build an object file
 src/generic_adcs_adac.c.o:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/generic_adcs/fsw/CMakeFiles/generic_adcs.dir/build.make apps/generic_adcs/fsw/CMakeFiles/generic_adcs.dir/src/generic_adcs_adac.c.o
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/generic_adcs/fsw/CMakeFiles/generic_adcs.dir/build.make apps/generic_adcs/fsw/CMakeFiles/generic_adcs.dir/src/generic_adcs_adac.c.o
 .PHONY : src/generic_adcs_adac.c.o
 
 src/generic_adcs_adac.i: src/generic_adcs_adac.c.i
@@ -198,7 +198,7 @@ src/generic_adcs_adac.i: src/generic_adcs_adac.c.i
 
 # target to preprocess a source file
 src/generic_adcs_adac.c.i:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/generic_adcs/fsw/CMakeFiles/generic_adcs.dir/build.make apps/generic_adcs/fsw/CMakeFiles/generic_adcs.dir/src/generic_adcs_adac.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/generic_adcs/fsw/CMakeFiles/generic_adcs.dir/build.make apps/generic_adcs/fsw/CMakeFiles/generic_adcs.dir/src/generic_adcs_adac.c.i
 .PHONY : src/generic_adcs_adac.c.i
 
 src/generic_adcs_adac.s: src/generic_adcs_adac.c.s
@@ -206,7 +206,7 @@ src/generic_adcs_adac.s: src/generic_adcs_adac.c.s
 
 # target to generate assembly for a file
 src/generic_adcs_adac.c.s:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/generic_adcs/fsw/CMakeFiles/generic_adcs.dir/build.make apps/generic_adcs/fsw/CMakeFiles/generic_adcs.dir/src/generic_adcs_adac.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/generic_adcs/fsw/CMakeFiles/generic_adcs.dir/build.make apps/generic_adcs/fsw/CMakeFiles/generic_adcs.dir/src/generic_adcs_adac.c.s
 .PHONY : src/generic_adcs_adac.c.s
 
 src/generic_adcs_app.o: src/generic_adcs_app.c.o
@@ -214,7 +214,7 @@ src/generic_adcs_app.o: src/generic_adcs_app.c.o
 
 # target to build an object file
 src/generic_adcs_app.c.o:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/generic_adcs/fsw/CMakeFiles/generic_adcs.dir/build.make apps/generic_adcs/fsw/CMakeFiles/generic_adcs.dir/src/generic_adcs_app.c.o
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/generic_adcs/fsw/CMakeFiles/generic_adcs.dir/build.make apps/generic_adcs/fsw/CMakeFiles/generic_adcs.dir/src/generic_adcs_app.c.o
 .PHONY : src/generic_adcs_app.c.o
 
 src/generic_adcs_app.i: src/generic_adcs_app.c.i
@@ -222,7 +222,7 @@ src/generic_adcs_app.i: src/generic_adcs_app.c.i
 
 # target to preprocess a source file
 src/generic_adcs_app.c.i:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/generic_adcs/fsw/CMakeFiles/generic_adcs.dir/build.make apps/generic_adcs/fsw/CMakeFiles/generic_adcs.dir/src/generic_adcs_app.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/generic_adcs/fsw/CMakeFiles/generic_adcs.dir/build.make apps/generic_adcs/fsw/CMakeFiles/generic_adcs.dir/src/generic_adcs_app.c.i
 .PHONY : src/generic_adcs_app.c.i
 
 src/generic_adcs_app.s: src/generic_adcs_app.c.s
@@ -230,7 +230,7 @@ src/generic_adcs_app.s: src/generic_adcs_app.c.s
 
 # target to generate assembly for a file
 src/generic_adcs_app.c.s:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/generic_adcs/fsw/CMakeFiles/generic_adcs.dir/build.make apps/generic_adcs/fsw/CMakeFiles/generic_adcs.dir/src/generic_adcs_app.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/generic_adcs/fsw/CMakeFiles/generic_adcs.dir/build.make apps/generic_adcs/fsw/CMakeFiles/generic_adcs.dir/src/generic_adcs_app.c.s
 .PHONY : src/generic_adcs_app.c.s
 
 src/generic_adcs_ingest.o: src/generic_adcs_ingest.c.o
@@ -238,7 +238,7 @@ src/generic_adcs_ingest.o: src/generic_adcs_ingest.c.o
 
 # target to build an object file
 src/generic_adcs_ingest.c.o:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/generic_adcs/fsw/CMakeFiles/generic_adcs.dir/build.make apps/generic_adcs/fsw/CMakeFiles/generic_adcs.dir/src/generic_adcs_ingest.c.o
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/generic_adcs/fsw/CMakeFiles/generic_adcs.dir/build.make apps/generic_adcs/fsw/CMakeFiles/generic_adcs.dir/src/generic_adcs_ingest.c.o
 .PHONY : src/generic_adcs_ingest.c.o
 
 src/generic_adcs_ingest.i: src/generic_adcs_ingest.c.i
@@ -246,7 +246,7 @@ src/generic_adcs_ingest.i: src/generic_adcs_ingest.c.i
 
 # target to preprocess a source file
 src/generic_adcs_ingest.c.i:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/generic_adcs/fsw/CMakeFiles/generic_adcs.dir/build.make apps/generic_adcs/fsw/CMakeFiles/generic_adcs.dir/src/generic_adcs_ingest.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/generic_adcs/fsw/CMakeFiles/generic_adcs.dir/build.make apps/generic_adcs/fsw/CMakeFiles/generic_adcs.dir/src/generic_adcs_ingest.c.i
 .PHONY : src/generic_adcs_ingest.c.i
 
 src/generic_adcs_ingest.s: src/generic_adcs_ingest.c.s
@@ -254,7 +254,7 @@ src/generic_adcs_ingest.s: src/generic_adcs_ingest.c.s
 
 # target to generate assembly for a file
 src/generic_adcs_ingest.c.s:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/generic_adcs/fsw/CMakeFiles/generic_adcs.dir/build.make apps/generic_adcs/fsw/CMakeFiles/generic_adcs.dir/src/generic_adcs_ingest.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/generic_adcs/fsw/CMakeFiles/generic_adcs.dir/build.make apps/generic_adcs/fsw/CMakeFiles/generic_adcs.dir/src/generic_adcs_ingest.c.s
 .PHONY : src/generic_adcs_ingest.c.s
 
 src/generic_adcs_output.o: src/generic_adcs_output.c.o
@@ -262,7 +262,7 @@ src/generic_adcs_output.o: src/generic_adcs_output.c.o
 
 # target to build an object file
 src/generic_adcs_output.c.o:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/generic_adcs/fsw/CMakeFiles/generic_adcs.dir/build.make apps/generic_adcs/fsw/CMakeFiles/generic_adcs.dir/src/generic_adcs_output.c.o
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/generic_adcs/fsw/CMakeFiles/generic_adcs.dir/build.make apps/generic_adcs/fsw/CMakeFiles/generic_adcs.dir/src/generic_adcs_output.c.o
 .PHONY : src/generic_adcs_output.c.o
 
 src/generic_adcs_output.i: src/generic_adcs_output.c.i
@@ -270,7 +270,7 @@ src/generic_adcs_output.i: src/generic_adcs_output.c.i
 
 # target to preprocess a source file
 src/generic_adcs_output.c.i:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/generic_adcs/fsw/CMakeFiles/generic_adcs.dir/build.make apps/generic_adcs/fsw/CMakeFiles/generic_adcs.dir/src/generic_adcs_output.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/generic_adcs/fsw/CMakeFiles/generic_adcs.dir/build.make apps/generic_adcs/fsw/CMakeFiles/generic_adcs.dir/src/generic_adcs_output.c.i
 .PHONY : src/generic_adcs_output.c.i
 
 src/generic_adcs_output.s: src/generic_adcs_output.c.s
@@ -278,7 +278,7 @@ src/generic_adcs_output.s: src/generic_adcs_output.c.s
 
 # target to generate assembly for a file
 src/generic_adcs_output.c.s:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/generic_adcs/fsw/CMakeFiles/generic_adcs.dir/build.make apps/generic_adcs/fsw/CMakeFiles/generic_adcs.dir/src/generic_adcs_output.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/generic_adcs/fsw/CMakeFiles/generic_adcs.dir/build.make apps/generic_adcs/fsw/CMakeFiles/generic_adcs.dir/src/generic_adcs_output.c.s
 .PHONY : src/generic_adcs_output.c.s
 
 src/generic_adcs_utilities.o: src/generic_adcs_utilities.c.o
@@ -286,7 +286,7 @@ src/generic_adcs_utilities.o: src/generic_adcs_utilities.c.o
 
 # target to build an object file
 src/generic_adcs_utilities.c.o:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/generic_adcs/fsw/CMakeFiles/generic_adcs.dir/build.make apps/generic_adcs/fsw/CMakeFiles/generic_adcs.dir/src/generic_adcs_utilities.c.o
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/generic_adcs/fsw/CMakeFiles/generic_adcs.dir/build.make apps/generic_adcs/fsw/CMakeFiles/generic_adcs.dir/src/generic_adcs_utilities.c.o
 .PHONY : src/generic_adcs_utilities.c.o
 
 src/generic_adcs_utilities.i: src/generic_adcs_utilities.c.i
@@ -294,7 +294,7 @@ src/generic_adcs_utilities.i: src/generic_adcs_utilities.c.i
 
 # target to preprocess a source file
 src/generic_adcs_utilities.c.i:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/generic_adcs/fsw/CMakeFiles/generic_adcs.dir/build.make apps/generic_adcs/fsw/CMakeFiles/generic_adcs.dir/src/generic_adcs_utilities.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/generic_adcs/fsw/CMakeFiles/generic_adcs.dir/build.make apps/generic_adcs/fsw/CMakeFiles/generic_adcs.dir/src/generic_adcs_utilities.c.i
 .PHONY : src/generic_adcs_utilities.c.i
 
 src/generic_adcs_utilities.s: src/generic_adcs_utilities.c.s
@@ -302,7 +302,7 @@ src/generic_adcs_utilities.s: src/generic_adcs_utilities.c.s
 
 # target to generate assembly for a file
 src/generic_adcs_utilities.c.s:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/generic_adcs/fsw/CMakeFiles/generic_adcs.dir/build.make apps/generic_adcs/fsw/CMakeFiles/generic_adcs.dir/src/generic_adcs_utilities.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/generic_adcs/fsw/CMakeFiles/generic_adcs.dir/build.make apps/generic_adcs/fsw/CMakeFiles/generic_adcs.dir/src/generic_adcs_utilities.c.s
 .PHONY : src/generic_adcs_utilities.c.s
 
 # Help Target
@@ -345,6 +345,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

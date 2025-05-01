@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/jstar/Desktop/github-nos3/fsw/cfe
+CMAKE_SOURCE_DIR = /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/cfe
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1
+CMAKE_BINARY_DIR = /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1
 
 # Include any dependencies generated for this target.
 include apps/hwlib/CMakeFiles/hwlib.dir/depend.make
@@ -70,74 +70,74 @@ include apps/hwlib/CMakeFiles/hwlib.dir/progress.make
 include apps/hwlib/CMakeFiles/hwlib.dir/flags.make
 
 apps/hwlib/CMakeFiles/hwlib.dir/fsw/src/gpio_lib.c.o: apps/hwlib/CMakeFiles/hwlib.dir/flags.make
-apps/hwlib/CMakeFiles/hwlib.dir/fsw/src/gpio_lib.c.o: /home/jstar/Desktop/github-nos3/fsw/apps/hwlib/fsw/src/gpio_lib.c
+apps/hwlib/CMakeFiles/hwlib.dir/fsw/src/gpio_lib.c.o: /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/apps/hwlib/fsw/src/gpio_lib.c
 apps/hwlib/CMakeFiles/hwlib.dir/fsw/src/gpio_lib.c.o: apps/hwlib/CMakeFiles/hwlib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object apps/hwlib/CMakeFiles/hwlib.dir/fsw/src/gpio_lib.c.o"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/apps/hwlib && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT apps/hwlib/CMakeFiles/hwlib.dir/fsw/src/gpio_lib.c.o -MF CMakeFiles/hwlib.dir/fsw/src/gpio_lib.c.o.d -o CMakeFiles/hwlib.dir/fsw/src/gpio_lib.c.o -c /home/jstar/Desktop/github-nos3/fsw/apps/hwlib/fsw/src/gpio_lib.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object apps/hwlib/CMakeFiles/hwlib.dir/fsw/src/gpio_lib.c.o"
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/apps/hwlib && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT apps/hwlib/CMakeFiles/hwlib.dir/fsw/src/gpio_lib.c.o -MF CMakeFiles/hwlib.dir/fsw/src/gpio_lib.c.o.d -o CMakeFiles/hwlib.dir/fsw/src/gpio_lib.c.o -c /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/apps/hwlib/fsw/src/gpio_lib.c
 
 apps/hwlib/CMakeFiles/hwlib.dir/fsw/src/gpio_lib.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/hwlib.dir/fsw/src/gpio_lib.c.i"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/apps/hwlib && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jstar/Desktop/github-nos3/fsw/apps/hwlib/fsw/src/gpio_lib.c > CMakeFiles/hwlib.dir/fsw/src/gpio_lib.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/apps/hwlib && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/apps/hwlib/fsw/src/gpio_lib.c > CMakeFiles/hwlib.dir/fsw/src/gpio_lib.c.i
 
 apps/hwlib/CMakeFiles/hwlib.dir/fsw/src/gpio_lib.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/hwlib.dir/fsw/src/gpio_lib.c.s"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/apps/hwlib && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jstar/Desktop/github-nos3/fsw/apps/hwlib/fsw/src/gpio_lib.c -o CMakeFiles/hwlib.dir/fsw/src/gpio_lib.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/apps/hwlib && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/apps/hwlib/fsw/src/gpio_lib.c -o CMakeFiles/hwlib.dir/fsw/src/gpio_lib.c.s
 
 apps/hwlib/CMakeFiles/hwlib.dir/fsw/src/hwlib.c.o: apps/hwlib/CMakeFiles/hwlib.dir/flags.make
-apps/hwlib/CMakeFiles/hwlib.dir/fsw/src/hwlib.c.o: /home/jstar/Desktop/github-nos3/fsw/apps/hwlib/fsw/src/hwlib.c
+apps/hwlib/CMakeFiles/hwlib.dir/fsw/src/hwlib.c.o: /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/apps/hwlib/fsw/src/hwlib.c
 apps/hwlib/CMakeFiles/hwlib.dir/fsw/src/hwlib.c.o: apps/hwlib/CMakeFiles/hwlib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object apps/hwlib/CMakeFiles/hwlib.dir/fsw/src/hwlib.c.o"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/apps/hwlib && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT apps/hwlib/CMakeFiles/hwlib.dir/fsw/src/hwlib.c.o -MF CMakeFiles/hwlib.dir/fsw/src/hwlib.c.o.d -o CMakeFiles/hwlib.dir/fsw/src/hwlib.c.o -c /home/jstar/Desktop/github-nos3/fsw/apps/hwlib/fsw/src/hwlib.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object apps/hwlib/CMakeFiles/hwlib.dir/fsw/src/hwlib.c.o"
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/apps/hwlib && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT apps/hwlib/CMakeFiles/hwlib.dir/fsw/src/hwlib.c.o -MF CMakeFiles/hwlib.dir/fsw/src/hwlib.c.o.d -o CMakeFiles/hwlib.dir/fsw/src/hwlib.c.o -c /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/apps/hwlib/fsw/src/hwlib.c
 
 apps/hwlib/CMakeFiles/hwlib.dir/fsw/src/hwlib.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/hwlib.dir/fsw/src/hwlib.c.i"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/apps/hwlib && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jstar/Desktop/github-nos3/fsw/apps/hwlib/fsw/src/hwlib.c > CMakeFiles/hwlib.dir/fsw/src/hwlib.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/apps/hwlib && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/apps/hwlib/fsw/src/hwlib.c > CMakeFiles/hwlib.dir/fsw/src/hwlib.c.i
 
 apps/hwlib/CMakeFiles/hwlib.dir/fsw/src/hwlib.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/hwlib.dir/fsw/src/hwlib.c.s"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/apps/hwlib && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jstar/Desktop/github-nos3/fsw/apps/hwlib/fsw/src/hwlib.c -o CMakeFiles/hwlib.dir/fsw/src/hwlib.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/apps/hwlib && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/apps/hwlib/fsw/src/hwlib.c -o CMakeFiles/hwlib.dir/fsw/src/hwlib.c.s
 
 apps/hwlib/CMakeFiles/hwlib.dir/fsw/src/mem_lib.c.o: apps/hwlib/CMakeFiles/hwlib.dir/flags.make
-apps/hwlib/CMakeFiles/hwlib.dir/fsw/src/mem_lib.c.o: /home/jstar/Desktop/github-nos3/fsw/apps/hwlib/fsw/src/mem_lib.c
+apps/hwlib/CMakeFiles/hwlib.dir/fsw/src/mem_lib.c.o: /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/apps/hwlib/fsw/src/mem_lib.c
 apps/hwlib/CMakeFiles/hwlib.dir/fsw/src/mem_lib.c.o: apps/hwlib/CMakeFiles/hwlib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object apps/hwlib/CMakeFiles/hwlib.dir/fsw/src/mem_lib.c.o"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/apps/hwlib && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT apps/hwlib/CMakeFiles/hwlib.dir/fsw/src/mem_lib.c.o -MF CMakeFiles/hwlib.dir/fsw/src/mem_lib.c.o.d -o CMakeFiles/hwlib.dir/fsw/src/mem_lib.c.o -c /home/jstar/Desktop/github-nos3/fsw/apps/hwlib/fsw/src/mem_lib.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object apps/hwlib/CMakeFiles/hwlib.dir/fsw/src/mem_lib.c.o"
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/apps/hwlib && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT apps/hwlib/CMakeFiles/hwlib.dir/fsw/src/mem_lib.c.o -MF CMakeFiles/hwlib.dir/fsw/src/mem_lib.c.o.d -o CMakeFiles/hwlib.dir/fsw/src/mem_lib.c.o -c /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/apps/hwlib/fsw/src/mem_lib.c
 
 apps/hwlib/CMakeFiles/hwlib.dir/fsw/src/mem_lib.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/hwlib.dir/fsw/src/mem_lib.c.i"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/apps/hwlib && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jstar/Desktop/github-nos3/fsw/apps/hwlib/fsw/src/mem_lib.c > CMakeFiles/hwlib.dir/fsw/src/mem_lib.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/apps/hwlib && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/apps/hwlib/fsw/src/mem_lib.c > CMakeFiles/hwlib.dir/fsw/src/mem_lib.c.i
 
 apps/hwlib/CMakeFiles/hwlib.dir/fsw/src/mem_lib.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/hwlib.dir/fsw/src/mem_lib.c.s"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/apps/hwlib && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jstar/Desktop/github-nos3/fsw/apps/hwlib/fsw/src/mem_lib.c -o CMakeFiles/hwlib.dir/fsw/src/mem_lib.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/apps/hwlib && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/apps/hwlib/fsw/src/mem_lib.c -o CMakeFiles/hwlib.dir/fsw/src/mem_lib.c.s
 
 apps/hwlib/CMakeFiles/hwlib.dir/fsw/src/socket_lib.c.o: apps/hwlib/CMakeFiles/hwlib.dir/flags.make
-apps/hwlib/CMakeFiles/hwlib.dir/fsw/src/socket_lib.c.o: /home/jstar/Desktop/github-nos3/fsw/apps/hwlib/fsw/src/socket_lib.c
+apps/hwlib/CMakeFiles/hwlib.dir/fsw/src/socket_lib.c.o: /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/apps/hwlib/fsw/src/socket_lib.c
 apps/hwlib/CMakeFiles/hwlib.dir/fsw/src/socket_lib.c.o: apps/hwlib/CMakeFiles/hwlib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object apps/hwlib/CMakeFiles/hwlib.dir/fsw/src/socket_lib.c.o"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/apps/hwlib && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT apps/hwlib/CMakeFiles/hwlib.dir/fsw/src/socket_lib.c.o -MF CMakeFiles/hwlib.dir/fsw/src/socket_lib.c.o.d -o CMakeFiles/hwlib.dir/fsw/src/socket_lib.c.o -c /home/jstar/Desktop/github-nos3/fsw/apps/hwlib/fsw/src/socket_lib.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object apps/hwlib/CMakeFiles/hwlib.dir/fsw/src/socket_lib.c.o"
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/apps/hwlib && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT apps/hwlib/CMakeFiles/hwlib.dir/fsw/src/socket_lib.c.o -MF CMakeFiles/hwlib.dir/fsw/src/socket_lib.c.o.d -o CMakeFiles/hwlib.dir/fsw/src/socket_lib.c.o -c /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/apps/hwlib/fsw/src/socket_lib.c
 
 apps/hwlib/CMakeFiles/hwlib.dir/fsw/src/socket_lib.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/hwlib.dir/fsw/src/socket_lib.c.i"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/apps/hwlib && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jstar/Desktop/github-nos3/fsw/apps/hwlib/fsw/src/socket_lib.c > CMakeFiles/hwlib.dir/fsw/src/socket_lib.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/apps/hwlib && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/apps/hwlib/fsw/src/socket_lib.c > CMakeFiles/hwlib.dir/fsw/src/socket_lib.c.i
 
 apps/hwlib/CMakeFiles/hwlib.dir/fsw/src/socket_lib.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/hwlib.dir/fsw/src/socket_lib.c.s"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/apps/hwlib && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jstar/Desktop/github-nos3/fsw/apps/hwlib/fsw/src/socket_lib.c -o CMakeFiles/hwlib.dir/fsw/src/socket_lib.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/apps/hwlib && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/apps/hwlib/fsw/src/socket_lib.c -o CMakeFiles/hwlib.dir/fsw/src/socket_lib.c.s
 
 apps/hwlib/CMakeFiles/hwlib.dir/fsw/src/torquer_lib.c.o: apps/hwlib/CMakeFiles/hwlib.dir/flags.make
-apps/hwlib/CMakeFiles/hwlib.dir/fsw/src/torquer_lib.c.o: /home/jstar/Desktop/github-nos3/fsw/apps/hwlib/fsw/src/torquer_lib.c
+apps/hwlib/CMakeFiles/hwlib.dir/fsw/src/torquer_lib.c.o: /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/apps/hwlib/fsw/src/torquer_lib.c
 apps/hwlib/CMakeFiles/hwlib.dir/fsw/src/torquer_lib.c.o: apps/hwlib/CMakeFiles/hwlib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object apps/hwlib/CMakeFiles/hwlib.dir/fsw/src/torquer_lib.c.o"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/apps/hwlib && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT apps/hwlib/CMakeFiles/hwlib.dir/fsw/src/torquer_lib.c.o -MF CMakeFiles/hwlib.dir/fsw/src/torquer_lib.c.o.d -o CMakeFiles/hwlib.dir/fsw/src/torquer_lib.c.o -c /home/jstar/Desktop/github-nos3/fsw/apps/hwlib/fsw/src/torquer_lib.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object apps/hwlib/CMakeFiles/hwlib.dir/fsw/src/torquer_lib.c.o"
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/apps/hwlib && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT apps/hwlib/CMakeFiles/hwlib.dir/fsw/src/torquer_lib.c.o -MF CMakeFiles/hwlib.dir/fsw/src/torquer_lib.c.o.d -o CMakeFiles/hwlib.dir/fsw/src/torquer_lib.c.o -c /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/apps/hwlib/fsw/src/torquer_lib.c
 
 apps/hwlib/CMakeFiles/hwlib.dir/fsw/src/torquer_lib.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/hwlib.dir/fsw/src/torquer_lib.c.i"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/apps/hwlib && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jstar/Desktop/github-nos3/fsw/apps/hwlib/fsw/src/torquer_lib.c > CMakeFiles/hwlib.dir/fsw/src/torquer_lib.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/apps/hwlib && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/apps/hwlib/fsw/src/torquer_lib.c > CMakeFiles/hwlib.dir/fsw/src/torquer_lib.c.i
 
 apps/hwlib/CMakeFiles/hwlib.dir/fsw/src/torquer_lib.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/hwlib.dir/fsw/src/torquer_lib.c.s"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/apps/hwlib && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jstar/Desktop/github-nos3/fsw/apps/hwlib/fsw/src/torquer_lib.c -o CMakeFiles/hwlib.dir/fsw/src/torquer_lib.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/apps/hwlib && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/apps/hwlib/fsw/src/torquer_lib.c -o CMakeFiles/hwlib.dir/fsw/src/torquer_lib.c.s
 
 # Object files for target hwlib
 hwlib_OBJECTS = \
@@ -163,18 +163,18 @@ apps/hwlib/hwlib.so: /usr/lib/libnos_engine_i2c.so
 apps/hwlib/hwlib.so: /usr/lib/libnos_engine_spi.so
 apps/hwlib/hwlib.so: /usr/lib/libnos_engine_can.so
 apps/hwlib/hwlib.so: apps/hwlib/CMakeFiles/hwlib.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking C shared module hwlib.so"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/apps/hwlib && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/hwlib.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking C shared module hwlib.so"
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/apps/hwlib && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/hwlib.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 apps/hwlib/CMakeFiles/hwlib.dir/build: apps/hwlib/hwlib.so
 .PHONY : apps/hwlib/CMakeFiles/hwlib.dir/build
 
 apps/hwlib/CMakeFiles/hwlib.dir/clean:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/apps/hwlib && $(CMAKE_COMMAND) -P CMakeFiles/hwlib.dir/cmake_clean.cmake
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/apps/hwlib && $(CMAKE_COMMAND) -P CMakeFiles/hwlib.dir/cmake_clean.cmake
 .PHONY : apps/hwlib/CMakeFiles/hwlib.dir/clean
 
 apps/hwlib/CMakeFiles/hwlib.dir/depend:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/jstar/Desktop/github-nos3/fsw/cfe /home/jstar/Desktop/github-nos3/fsw/apps/hwlib /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/apps/hwlib /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/apps/hwlib/CMakeFiles/hwlib.dir/DependInfo.cmake --color=$(COLOR)
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/cfe /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/apps/hwlib /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/apps/hwlib /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/apps/hwlib/CMakeFiles/hwlib.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : apps/hwlib/CMakeFiles/hwlib.dir/depend
 

@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/jstar/Desktop/github-nos3/fsw/cfe
+CMAKE_SOURCE_DIR = /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/cfe
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/jstar/Desktop/github-nos3/fsw/build
+CMAKE_BINARY_DIR = /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build
 
 # Utility rule file for osal_public_api_headerlist.
 
@@ -69,8 +69,8 @@ include docs/osal-apiguide/CMakeFiles/osal_public_api_headerlist.dir/progress.ma
 docs/osal-apiguide/CMakeFiles/osal_public_api_headerlist: docs/osal-public-api.doxyfile
 
 docs/osal-public-api.doxyfile:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/jstar/Desktop/github-nos3/fsw/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating ../osal-public-api.doxyfile"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/docs/osal-apiguide && /usr/bin/cmake -DINCLUDE_DIRECTORIES="/home/jstar/Desktop/github-nos3/fsw/osal/src/os/inc /home/jstar/Desktop/github-nos3/fsw/build/osal_public_api/inc " -DCOMPILE_DEFINITIONS="" -DINPUT_TEMPLATE="/home/jstar/Desktop/github-nos3/fsw/osal/docs/src/osal-public-api.doxyfile.in" -DOUTPUT_FILE="/home/jstar/Desktop/github-nos3/fsw/build/docs/osal-public-api.doxyfile" -P /home/jstar/Desktop/github-nos3/fsw/osal/docs/src/generate-public-api-doxyfile.cmake
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating ../osal-public-api.doxyfile"
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/docs/osal-apiguide && /usr/bin/cmake -DINCLUDE_DIRECTORIES="/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/src/os/inc /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/osal_public_api/inc " -DCOMPILE_DEFINITIONS="" -DINPUT_TEMPLATE="/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/docs/src/osal-public-api.doxyfile.in" -DOUTPUT_FILE="/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/docs/osal-public-api.doxyfile" -P /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/docs/src/generate-public-api-doxyfile.cmake
 
 osal_public_api_headerlist: docs/osal-apiguide/CMakeFiles/osal_public_api_headerlist
 osal_public_api_headerlist: docs/osal-public-api.doxyfile
@@ -82,10 +82,10 @@ docs/osal-apiguide/CMakeFiles/osal_public_api_headerlist.dir/build: osal_public_
 .PHONY : docs/osal-apiguide/CMakeFiles/osal_public_api_headerlist.dir/build
 
 docs/osal-apiguide/CMakeFiles/osal_public_api_headerlist.dir/clean:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/docs/osal-apiguide && $(CMAKE_COMMAND) -P CMakeFiles/osal_public_api_headerlist.dir/cmake_clean.cmake
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/docs/osal-apiguide && $(CMAKE_COMMAND) -P CMakeFiles/osal_public_api_headerlist.dir/cmake_clean.cmake
 .PHONY : docs/osal-apiguide/CMakeFiles/osal_public_api_headerlist.dir/clean
 
 docs/osal-apiguide/CMakeFiles/osal_public_api_headerlist.dir/depend:
-	cd /home/jstar/Desktop/github-nos3/fsw/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/jstar/Desktop/github-nos3/fsw/cfe /home/jstar/Desktop/github-nos3/fsw/osal/docs/src /home/jstar/Desktop/github-nos3/fsw/build /home/jstar/Desktop/github-nos3/fsw/build/docs/osal-apiguide /home/jstar/Desktop/github-nos3/fsw/build/docs/osal-apiguide/CMakeFiles/osal_public_api_headerlist.dir/DependInfo.cmake --color=$(COLOR)
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/cfe /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/docs/src /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/docs/osal-apiguide /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/docs/osal-apiguide/CMakeFiles/osal_public_api_headerlist.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : docs/osal-apiguide/CMakeFiles/osal_public_api_headerlist.dir/depend
 

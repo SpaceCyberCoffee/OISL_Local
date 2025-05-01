@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/jstar/Desktop/github-nos3/fsw/cfe
+CMAKE_SOURCE_DIR = /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/cfe
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1
+CMAKE_BINARY_DIR = /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1
 
 # Include any dependencies generated for this target.
 include osal/CMakeFiles/osal.dir/depend.make
@@ -70,340 +70,340 @@ include osal/CMakeFiles/osal.dir/progress.make
 include osal/CMakeFiles/osal.dir/flags.make
 
 osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-binsem.c.o: osal/CMakeFiles/osal.dir/flags.make
-osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-binsem.c.o: /home/jstar/Desktop/github-nos3/fsw/osal/src/os/shared/src/osapi-binsem.c
+osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-binsem.c.o: /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/src/os/shared/src/osapi-binsem.c
 osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-binsem.c.o: osal/CMakeFiles/osal.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-binsem.c.o"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/osal && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-binsem.c.o -MF CMakeFiles/osal.dir/src/os/shared/src/osapi-binsem.c.o.d -o CMakeFiles/osal.dir/src/os/shared/src/osapi-binsem.c.o -c /home/jstar/Desktop/github-nos3/fsw/osal/src/os/shared/src/osapi-binsem.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-binsem.c.o"
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/osal && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-binsem.c.o -MF CMakeFiles/osal.dir/src/os/shared/src/osapi-binsem.c.o.d -o CMakeFiles/osal.dir/src/os/shared/src/osapi-binsem.c.o -c /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/src/os/shared/src/osapi-binsem.c
 
 osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-binsem.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/osal.dir/src/os/shared/src/osapi-binsem.c.i"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/osal && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jstar/Desktop/github-nos3/fsw/osal/src/os/shared/src/osapi-binsem.c > CMakeFiles/osal.dir/src/os/shared/src/osapi-binsem.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/osal && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/src/os/shared/src/osapi-binsem.c > CMakeFiles/osal.dir/src/os/shared/src/osapi-binsem.c.i
 
 osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-binsem.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/osal.dir/src/os/shared/src/osapi-binsem.c.s"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/osal && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jstar/Desktop/github-nos3/fsw/osal/src/os/shared/src/osapi-binsem.c -o CMakeFiles/osal.dir/src/os/shared/src/osapi-binsem.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/osal && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/src/os/shared/src/osapi-binsem.c -o CMakeFiles/osal.dir/src/os/shared/src/osapi-binsem.c.s
 
 osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-clock.c.o: osal/CMakeFiles/osal.dir/flags.make
-osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-clock.c.o: /home/jstar/Desktop/github-nos3/fsw/osal/src/os/shared/src/osapi-clock.c
+osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-clock.c.o: /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/src/os/shared/src/osapi-clock.c
 osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-clock.c.o: osal/CMakeFiles/osal.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-clock.c.o"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/osal && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-clock.c.o -MF CMakeFiles/osal.dir/src/os/shared/src/osapi-clock.c.o.d -o CMakeFiles/osal.dir/src/os/shared/src/osapi-clock.c.o -c /home/jstar/Desktop/github-nos3/fsw/osal/src/os/shared/src/osapi-clock.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-clock.c.o"
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/osal && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-clock.c.o -MF CMakeFiles/osal.dir/src/os/shared/src/osapi-clock.c.o.d -o CMakeFiles/osal.dir/src/os/shared/src/osapi-clock.c.o -c /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/src/os/shared/src/osapi-clock.c
 
 osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-clock.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/osal.dir/src/os/shared/src/osapi-clock.c.i"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/osal && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jstar/Desktop/github-nos3/fsw/osal/src/os/shared/src/osapi-clock.c > CMakeFiles/osal.dir/src/os/shared/src/osapi-clock.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/osal && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/src/os/shared/src/osapi-clock.c > CMakeFiles/osal.dir/src/os/shared/src/osapi-clock.c.i
 
 osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-clock.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/osal.dir/src/os/shared/src/osapi-clock.c.s"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/osal && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jstar/Desktop/github-nos3/fsw/osal/src/os/shared/src/osapi-clock.c -o CMakeFiles/osal.dir/src/os/shared/src/osapi-clock.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/osal && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/src/os/shared/src/osapi-clock.c -o CMakeFiles/osal.dir/src/os/shared/src/osapi-clock.c.s
 
 osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-common.c.o: osal/CMakeFiles/osal.dir/flags.make
-osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-common.c.o: /home/jstar/Desktop/github-nos3/fsw/osal/src/os/shared/src/osapi-common.c
+osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-common.c.o: /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/src/os/shared/src/osapi-common.c
 osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-common.c.o: osal/CMakeFiles/osal.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-common.c.o"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/osal && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-common.c.o -MF CMakeFiles/osal.dir/src/os/shared/src/osapi-common.c.o.d -o CMakeFiles/osal.dir/src/os/shared/src/osapi-common.c.o -c /home/jstar/Desktop/github-nos3/fsw/osal/src/os/shared/src/osapi-common.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-common.c.o"
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/osal && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-common.c.o -MF CMakeFiles/osal.dir/src/os/shared/src/osapi-common.c.o.d -o CMakeFiles/osal.dir/src/os/shared/src/osapi-common.c.o -c /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/src/os/shared/src/osapi-common.c
 
 osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-common.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/osal.dir/src/os/shared/src/osapi-common.c.i"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/osal && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jstar/Desktop/github-nos3/fsw/osal/src/os/shared/src/osapi-common.c > CMakeFiles/osal.dir/src/os/shared/src/osapi-common.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/osal && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/src/os/shared/src/osapi-common.c > CMakeFiles/osal.dir/src/os/shared/src/osapi-common.c.i
 
 osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-common.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/osal.dir/src/os/shared/src/osapi-common.c.s"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/osal && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jstar/Desktop/github-nos3/fsw/osal/src/os/shared/src/osapi-common.c -o CMakeFiles/osal.dir/src/os/shared/src/osapi-common.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/osal && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/src/os/shared/src/osapi-common.c -o CMakeFiles/osal.dir/src/os/shared/src/osapi-common.c.s
 
 osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-condvar.c.o: osal/CMakeFiles/osal.dir/flags.make
-osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-condvar.c.o: /home/jstar/Desktop/github-nos3/fsw/osal/src/os/shared/src/osapi-condvar.c
+osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-condvar.c.o: /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/src/os/shared/src/osapi-condvar.c
 osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-condvar.c.o: osal/CMakeFiles/osal.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-condvar.c.o"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/osal && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-condvar.c.o -MF CMakeFiles/osal.dir/src/os/shared/src/osapi-condvar.c.o.d -o CMakeFiles/osal.dir/src/os/shared/src/osapi-condvar.c.o -c /home/jstar/Desktop/github-nos3/fsw/osal/src/os/shared/src/osapi-condvar.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-condvar.c.o"
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/osal && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-condvar.c.o -MF CMakeFiles/osal.dir/src/os/shared/src/osapi-condvar.c.o.d -o CMakeFiles/osal.dir/src/os/shared/src/osapi-condvar.c.o -c /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/src/os/shared/src/osapi-condvar.c
 
 osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-condvar.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/osal.dir/src/os/shared/src/osapi-condvar.c.i"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/osal && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jstar/Desktop/github-nos3/fsw/osal/src/os/shared/src/osapi-condvar.c > CMakeFiles/osal.dir/src/os/shared/src/osapi-condvar.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/osal && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/src/os/shared/src/osapi-condvar.c > CMakeFiles/osal.dir/src/os/shared/src/osapi-condvar.c.i
 
 osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-condvar.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/osal.dir/src/os/shared/src/osapi-condvar.c.s"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/osal && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jstar/Desktop/github-nos3/fsw/osal/src/os/shared/src/osapi-condvar.c -o CMakeFiles/osal.dir/src/os/shared/src/osapi-condvar.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/osal && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/src/os/shared/src/osapi-condvar.c -o CMakeFiles/osal.dir/src/os/shared/src/osapi-condvar.c.s
 
 osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-countsem.c.o: osal/CMakeFiles/osal.dir/flags.make
-osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-countsem.c.o: /home/jstar/Desktop/github-nos3/fsw/osal/src/os/shared/src/osapi-countsem.c
+osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-countsem.c.o: /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/src/os/shared/src/osapi-countsem.c
 osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-countsem.c.o: osal/CMakeFiles/osal.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-countsem.c.o"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/osal && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-countsem.c.o -MF CMakeFiles/osal.dir/src/os/shared/src/osapi-countsem.c.o.d -o CMakeFiles/osal.dir/src/os/shared/src/osapi-countsem.c.o -c /home/jstar/Desktop/github-nos3/fsw/osal/src/os/shared/src/osapi-countsem.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-countsem.c.o"
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/osal && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-countsem.c.o -MF CMakeFiles/osal.dir/src/os/shared/src/osapi-countsem.c.o.d -o CMakeFiles/osal.dir/src/os/shared/src/osapi-countsem.c.o -c /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/src/os/shared/src/osapi-countsem.c
 
 osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-countsem.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/osal.dir/src/os/shared/src/osapi-countsem.c.i"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/osal && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jstar/Desktop/github-nos3/fsw/osal/src/os/shared/src/osapi-countsem.c > CMakeFiles/osal.dir/src/os/shared/src/osapi-countsem.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/osal && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/src/os/shared/src/osapi-countsem.c > CMakeFiles/osal.dir/src/os/shared/src/osapi-countsem.c.i
 
 osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-countsem.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/osal.dir/src/os/shared/src/osapi-countsem.c.s"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/osal && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jstar/Desktop/github-nos3/fsw/osal/src/os/shared/src/osapi-countsem.c -o CMakeFiles/osal.dir/src/os/shared/src/osapi-countsem.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/osal && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/src/os/shared/src/osapi-countsem.c -o CMakeFiles/osal.dir/src/os/shared/src/osapi-countsem.c.s
 
 osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-dir.c.o: osal/CMakeFiles/osal.dir/flags.make
-osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-dir.c.o: /home/jstar/Desktop/github-nos3/fsw/osal/src/os/shared/src/osapi-dir.c
+osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-dir.c.o: /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/src/os/shared/src/osapi-dir.c
 osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-dir.c.o: osal/CMakeFiles/osal.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-dir.c.o"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/osal && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-dir.c.o -MF CMakeFiles/osal.dir/src/os/shared/src/osapi-dir.c.o.d -o CMakeFiles/osal.dir/src/os/shared/src/osapi-dir.c.o -c /home/jstar/Desktop/github-nos3/fsw/osal/src/os/shared/src/osapi-dir.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-dir.c.o"
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/osal && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-dir.c.o -MF CMakeFiles/osal.dir/src/os/shared/src/osapi-dir.c.o.d -o CMakeFiles/osal.dir/src/os/shared/src/osapi-dir.c.o -c /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/src/os/shared/src/osapi-dir.c
 
 osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-dir.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/osal.dir/src/os/shared/src/osapi-dir.c.i"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/osal && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jstar/Desktop/github-nos3/fsw/osal/src/os/shared/src/osapi-dir.c > CMakeFiles/osal.dir/src/os/shared/src/osapi-dir.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/osal && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/src/os/shared/src/osapi-dir.c > CMakeFiles/osal.dir/src/os/shared/src/osapi-dir.c.i
 
 osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-dir.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/osal.dir/src/os/shared/src/osapi-dir.c.s"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/osal && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jstar/Desktop/github-nos3/fsw/osal/src/os/shared/src/osapi-dir.c -o CMakeFiles/osal.dir/src/os/shared/src/osapi-dir.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/osal && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/src/os/shared/src/osapi-dir.c -o CMakeFiles/osal.dir/src/os/shared/src/osapi-dir.c.s
 
 osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-errors.c.o: osal/CMakeFiles/osal.dir/flags.make
-osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-errors.c.o: /home/jstar/Desktop/github-nos3/fsw/osal/src/os/shared/src/osapi-errors.c
+osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-errors.c.o: /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/src/os/shared/src/osapi-errors.c
 osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-errors.c.o: osal/CMakeFiles/osal.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-errors.c.o"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/osal && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-errors.c.o -MF CMakeFiles/osal.dir/src/os/shared/src/osapi-errors.c.o.d -o CMakeFiles/osal.dir/src/os/shared/src/osapi-errors.c.o -c /home/jstar/Desktop/github-nos3/fsw/osal/src/os/shared/src/osapi-errors.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-errors.c.o"
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/osal && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-errors.c.o -MF CMakeFiles/osal.dir/src/os/shared/src/osapi-errors.c.o.d -o CMakeFiles/osal.dir/src/os/shared/src/osapi-errors.c.o -c /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/src/os/shared/src/osapi-errors.c
 
 osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-errors.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/osal.dir/src/os/shared/src/osapi-errors.c.i"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/osal && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jstar/Desktop/github-nos3/fsw/osal/src/os/shared/src/osapi-errors.c > CMakeFiles/osal.dir/src/os/shared/src/osapi-errors.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/osal && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/src/os/shared/src/osapi-errors.c > CMakeFiles/osal.dir/src/os/shared/src/osapi-errors.c.i
 
 osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-errors.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/osal.dir/src/os/shared/src/osapi-errors.c.s"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/osal && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jstar/Desktop/github-nos3/fsw/osal/src/os/shared/src/osapi-errors.c -o CMakeFiles/osal.dir/src/os/shared/src/osapi-errors.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/osal && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/src/os/shared/src/osapi-errors.c -o CMakeFiles/osal.dir/src/os/shared/src/osapi-errors.c.s
 
 osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-file.c.o: osal/CMakeFiles/osal.dir/flags.make
-osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-file.c.o: /home/jstar/Desktop/github-nos3/fsw/osal/src/os/shared/src/osapi-file.c
+osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-file.c.o: /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/src/os/shared/src/osapi-file.c
 osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-file.c.o: osal/CMakeFiles/osal.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-file.c.o"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/osal && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-file.c.o -MF CMakeFiles/osal.dir/src/os/shared/src/osapi-file.c.o.d -o CMakeFiles/osal.dir/src/os/shared/src/osapi-file.c.o -c /home/jstar/Desktop/github-nos3/fsw/osal/src/os/shared/src/osapi-file.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-file.c.o"
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/osal && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-file.c.o -MF CMakeFiles/osal.dir/src/os/shared/src/osapi-file.c.o.d -o CMakeFiles/osal.dir/src/os/shared/src/osapi-file.c.o -c /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/src/os/shared/src/osapi-file.c
 
 osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-file.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/osal.dir/src/os/shared/src/osapi-file.c.i"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/osal && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jstar/Desktop/github-nos3/fsw/osal/src/os/shared/src/osapi-file.c > CMakeFiles/osal.dir/src/os/shared/src/osapi-file.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/osal && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/src/os/shared/src/osapi-file.c > CMakeFiles/osal.dir/src/os/shared/src/osapi-file.c.i
 
 osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-file.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/osal.dir/src/os/shared/src/osapi-file.c.s"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/osal && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jstar/Desktop/github-nos3/fsw/osal/src/os/shared/src/osapi-file.c -o CMakeFiles/osal.dir/src/os/shared/src/osapi-file.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/osal && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/src/os/shared/src/osapi-file.c -o CMakeFiles/osal.dir/src/os/shared/src/osapi-file.c.s
 
 osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-filesys.c.o: osal/CMakeFiles/osal.dir/flags.make
-osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-filesys.c.o: /home/jstar/Desktop/github-nos3/fsw/osal/src/os/shared/src/osapi-filesys.c
+osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-filesys.c.o: /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/src/os/shared/src/osapi-filesys.c
 osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-filesys.c.o: osal/CMakeFiles/osal.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-filesys.c.o"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/osal && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-filesys.c.o -MF CMakeFiles/osal.dir/src/os/shared/src/osapi-filesys.c.o.d -o CMakeFiles/osal.dir/src/os/shared/src/osapi-filesys.c.o -c /home/jstar/Desktop/github-nos3/fsw/osal/src/os/shared/src/osapi-filesys.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-filesys.c.o"
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/osal && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-filesys.c.o -MF CMakeFiles/osal.dir/src/os/shared/src/osapi-filesys.c.o.d -o CMakeFiles/osal.dir/src/os/shared/src/osapi-filesys.c.o -c /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/src/os/shared/src/osapi-filesys.c
 
 osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-filesys.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/osal.dir/src/os/shared/src/osapi-filesys.c.i"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/osal && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jstar/Desktop/github-nos3/fsw/osal/src/os/shared/src/osapi-filesys.c > CMakeFiles/osal.dir/src/os/shared/src/osapi-filesys.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/osal && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/src/os/shared/src/osapi-filesys.c > CMakeFiles/osal.dir/src/os/shared/src/osapi-filesys.c.i
 
 osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-filesys.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/osal.dir/src/os/shared/src/osapi-filesys.c.s"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/osal && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jstar/Desktop/github-nos3/fsw/osal/src/os/shared/src/osapi-filesys.c -o CMakeFiles/osal.dir/src/os/shared/src/osapi-filesys.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/osal && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/src/os/shared/src/osapi-filesys.c -o CMakeFiles/osal.dir/src/os/shared/src/osapi-filesys.c.s
 
 osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-heap.c.o: osal/CMakeFiles/osal.dir/flags.make
-osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-heap.c.o: /home/jstar/Desktop/github-nos3/fsw/osal/src/os/shared/src/osapi-heap.c
+osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-heap.c.o: /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/src/os/shared/src/osapi-heap.c
 osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-heap.c.o: osal/CMakeFiles/osal.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-heap.c.o"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/osal && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-heap.c.o -MF CMakeFiles/osal.dir/src/os/shared/src/osapi-heap.c.o.d -o CMakeFiles/osal.dir/src/os/shared/src/osapi-heap.c.o -c /home/jstar/Desktop/github-nos3/fsw/osal/src/os/shared/src/osapi-heap.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-heap.c.o"
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/osal && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-heap.c.o -MF CMakeFiles/osal.dir/src/os/shared/src/osapi-heap.c.o.d -o CMakeFiles/osal.dir/src/os/shared/src/osapi-heap.c.o -c /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/src/os/shared/src/osapi-heap.c
 
 osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-heap.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/osal.dir/src/os/shared/src/osapi-heap.c.i"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/osal && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jstar/Desktop/github-nos3/fsw/osal/src/os/shared/src/osapi-heap.c > CMakeFiles/osal.dir/src/os/shared/src/osapi-heap.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/osal && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/src/os/shared/src/osapi-heap.c > CMakeFiles/osal.dir/src/os/shared/src/osapi-heap.c.i
 
 osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-heap.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/osal.dir/src/os/shared/src/osapi-heap.c.s"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/osal && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jstar/Desktop/github-nos3/fsw/osal/src/os/shared/src/osapi-heap.c -o CMakeFiles/osal.dir/src/os/shared/src/osapi-heap.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/osal && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/src/os/shared/src/osapi-heap.c -o CMakeFiles/osal.dir/src/os/shared/src/osapi-heap.c.s
 
 osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-idmap.c.o: osal/CMakeFiles/osal.dir/flags.make
-osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-idmap.c.o: /home/jstar/Desktop/github-nos3/fsw/osal/src/os/shared/src/osapi-idmap.c
+osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-idmap.c.o: /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/src/os/shared/src/osapi-idmap.c
 osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-idmap.c.o: osal/CMakeFiles/osal.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-idmap.c.o"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/osal && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-idmap.c.o -MF CMakeFiles/osal.dir/src/os/shared/src/osapi-idmap.c.o.d -o CMakeFiles/osal.dir/src/os/shared/src/osapi-idmap.c.o -c /home/jstar/Desktop/github-nos3/fsw/osal/src/os/shared/src/osapi-idmap.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-idmap.c.o"
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/osal && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-idmap.c.o -MF CMakeFiles/osal.dir/src/os/shared/src/osapi-idmap.c.o.d -o CMakeFiles/osal.dir/src/os/shared/src/osapi-idmap.c.o -c /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/src/os/shared/src/osapi-idmap.c
 
 osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-idmap.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/osal.dir/src/os/shared/src/osapi-idmap.c.i"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/osal && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jstar/Desktop/github-nos3/fsw/osal/src/os/shared/src/osapi-idmap.c > CMakeFiles/osal.dir/src/os/shared/src/osapi-idmap.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/osal && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/src/os/shared/src/osapi-idmap.c > CMakeFiles/osal.dir/src/os/shared/src/osapi-idmap.c.i
 
 osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-idmap.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/osal.dir/src/os/shared/src/osapi-idmap.c.s"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/osal && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jstar/Desktop/github-nos3/fsw/osal/src/os/shared/src/osapi-idmap.c -o CMakeFiles/osal.dir/src/os/shared/src/osapi-idmap.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/osal && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/src/os/shared/src/osapi-idmap.c -o CMakeFiles/osal.dir/src/os/shared/src/osapi-idmap.c.s
 
 osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-module.c.o: osal/CMakeFiles/osal.dir/flags.make
-osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-module.c.o: /home/jstar/Desktop/github-nos3/fsw/osal/src/os/shared/src/osapi-module.c
+osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-module.c.o: /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/src/os/shared/src/osapi-module.c
 osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-module.c.o: osal/CMakeFiles/osal.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-module.c.o"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/osal && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-module.c.o -MF CMakeFiles/osal.dir/src/os/shared/src/osapi-module.c.o.d -o CMakeFiles/osal.dir/src/os/shared/src/osapi-module.c.o -c /home/jstar/Desktop/github-nos3/fsw/osal/src/os/shared/src/osapi-module.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-module.c.o"
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/osal && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-module.c.o -MF CMakeFiles/osal.dir/src/os/shared/src/osapi-module.c.o.d -o CMakeFiles/osal.dir/src/os/shared/src/osapi-module.c.o -c /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/src/os/shared/src/osapi-module.c
 
 osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-module.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/osal.dir/src/os/shared/src/osapi-module.c.i"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/osal && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jstar/Desktop/github-nos3/fsw/osal/src/os/shared/src/osapi-module.c > CMakeFiles/osal.dir/src/os/shared/src/osapi-module.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/osal && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/src/os/shared/src/osapi-module.c > CMakeFiles/osal.dir/src/os/shared/src/osapi-module.c.i
 
 osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-module.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/osal.dir/src/os/shared/src/osapi-module.c.s"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/osal && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jstar/Desktop/github-nos3/fsw/osal/src/os/shared/src/osapi-module.c -o CMakeFiles/osal.dir/src/os/shared/src/osapi-module.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/osal && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/src/os/shared/src/osapi-module.c -o CMakeFiles/osal.dir/src/os/shared/src/osapi-module.c.s
 
 osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-mutex.c.o: osal/CMakeFiles/osal.dir/flags.make
-osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-mutex.c.o: /home/jstar/Desktop/github-nos3/fsw/osal/src/os/shared/src/osapi-mutex.c
+osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-mutex.c.o: /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/src/os/shared/src/osapi-mutex.c
 osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-mutex.c.o: osal/CMakeFiles/osal.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-mutex.c.o"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/osal && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-mutex.c.o -MF CMakeFiles/osal.dir/src/os/shared/src/osapi-mutex.c.o.d -o CMakeFiles/osal.dir/src/os/shared/src/osapi-mutex.c.o -c /home/jstar/Desktop/github-nos3/fsw/osal/src/os/shared/src/osapi-mutex.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-mutex.c.o"
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/osal && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-mutex.c.o -MF CMakeFiles/osal.dir/src/os/shared/src/osapi-mutex.c.o.d -o CMakeFiles/osal.dir/src/os/shared/src/osapi-mutex.c.o -c /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/src/os/shared/src/osapi-mutex.c
 
 osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-mutex.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/osal.dir/src/os/shared/src/osapi-mutex.c.i"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/osal && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jstar/Desktop/github-nos3/fsw/osal/src/os/shared/src/osapi-mutex.c > CMakeFiles/osal.dir/src/os/shared/src/osapi-mutex.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/osal && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/src/os/shared/src/osapi-mutex.c > CMakeFiles/osal.dir/src/os/shared/src/osapi-mutex.c.i
 
 osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-mutex.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/osal.dir/src/os/shared/src/osapi-mutex.c.s"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/osal && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jstar/Desktop/github-nos3/fsw/osal/src/os/shared/src/osapi-mutex.c -o CMakeFiles/osal.dir/src/os/shared/src/osapi-mutex.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/osal && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/src/os/shared/src/osapi-mutex.c -o CMakeFiles/osal.dir/src/os/shared/src/osapi-mutex.c.s
 
 osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-network.c.o: osal/CMakeFiles/osal.dir/flags.make
-osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-network.c.o: /home/jstar/Desktop/github-nos3/fsw/osal/src/os/shared/src/osapi-network.c
+osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-network.c.o: /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/src/os/shared/src/osapi-network.c
 osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-network.c.o: osal/CMakeFiles/osal.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-network.c.o"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/osal && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-network.c.o -MF CMakeFiles/osal.dir/src/os/shared/src/osapi-network.c.o.d -o CMakeFiles/osal.dir/src/os/shared/src/osapi-network.c.o -c /home/jstar/Desktop/github-nos3/fsw/osal/src/os/shared/src/osapi-network.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-network.c.o"
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/osal && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-network.c.o -MF CMakeFiles/osal.dir/src/os/shared/src/osapi-network.c.o.d -o CMakeFiles/osal.dir/src/os/shared/src/osapi-network.c.o -c /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/src/os/shared/src/osapi-network.c
 
 osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-network.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/osal.dir/src/os/shared/src/osapi-network.c.i"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/osal && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jstar/Desktop/github-nos3/fsw/osal/src/os/shared/src/osapi-network.c > CMakeFiles/osal.dir/src/os/shared/src/osapi-network.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/osal && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/src/os/shared/src/osapi-network.c > CMakeFiles/osal.dir/src/os/shared/src/osapi-network.c.i
 
 osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-network.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/osal.dir/src/os/shared/src/osapi-network.c.s"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/osal && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jstar/Desktop/github-nos3/fsw/osal/src/os/shared/src/osapi-network.c -o CMakeFiles/osal.dir/src/os/shared/src/osapi-network.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/osal && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/src/os/shared/src/osapi-network.c -o CMakeFiles/osal.dir/src/os/shared/src/osapi-network.c.s
 
 osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-printf.c.o: osal/CMakeFiles/osal.dir/flags.make
-osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-printf.c.o: /home/jstar/Desktop/github-nos3/fsw/osal/src/os/shared/src/osapi-printf.c
+osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-printf.c.o: /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/src/os/shared/src/osapi-printf.c
 osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-printf.c.o: osal/CMakeFiles/osal.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-printf.c.o"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/osal && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-printf.c.o -MF CMakeFiles/osal.dir/src/os/shared/src/osapi-printf.c.o.d -o CMakeFiles/osal.dir/src/os/shared/src/osapi-printf.c.o -c /home/jstar/Desktop/github-nos3/fsw/osal/src/os/shared/src/osapi-printf.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-printf.c.o"
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/osal && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-printf.c.o -MF CMakeFiles/osal.dir/src/os/shared/src/osapi-printf.c.o.d -o CMakeFiles/osal.dir/src/os/shared/src/osapi-printf.c.o -c /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/src/os/shared/src/osapi-printf.c
 
 osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-printf.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/osal.dir/src/os/shared/src/osapi-printf.c.i"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/osal && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jstar/Desktop/github-nos3/fsw/osal/src/os/shared/src/osapi-printf.c > CMakeFiles/osal.dir/src/os/shared/src/osapi-printf.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/osal && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/src/os/shared/src/osapi-printf.c > CMakeFiles/osal.dir/src/os/shared/src/osapi-printf.c.i
 
 osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-printf.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/osal.dir/src/os/shared/src/osapi-printf.c.s"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/osal && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jstar/Desktop/github-nos3/fsw/osal/src/os/shared/src/osapi-printf.c -o CMakeFiles/osal.dir/src/os/shared/src/osapi-printf.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/osal && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/src/os/shared/src/osapi-printf.c -o CMakeFiles/osal.dir/src/os/shared/src/osapi-printf.c.s
 
 osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-queue.c.o: osal/CMakeFiles/osal.dir/flags.make
-osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-queue.c.o: /home/jstar/Desktop/github-nos3/fsw/osal/src/os/shared/src/osapi-queue.c
+osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-queue.c.o: /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/src/os/shared/src/osapi-queue.c
 osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-queue.c.o: osal/CMakeFiles/osal.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-queue.c.o"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/osal && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-queue.c.o -MF CMakeFiles/osal.dir/src/os/shared/src/osapi-queue.c.o.d -o CMakeFiles/osal.dir/src/os/shared/src/osapi-queue.c.o -c /home/jstar/Desktop/github-nos3/fsw/osal/src/os/shared/src/osapi-queue.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-queue.c.o"
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/osal && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-queue.c.o -MF CMakeFiles/osal.dir/src/os/shared/src/osapi-queue.c.o.d -o CMakeFiles/osal.dir/src/os/shared/src/osapi-queue.c.o -c /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/src/os/shared/src/osapi-queue.c
 
 osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-queue.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/osal.dir/src/os/shared/src/osapi-queue.c.i"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/osal && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jstar/Desktop/github-nos3/fsw/osal/src/os/shared/src/osapi-queue.c > CMakeFiles/osal.dir/src/os/shared/src/osapi-queue.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/osal && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/src/os/shared/src/osapi-queue.c > CMakeFiles/osal.dir/src/os/shared/src/osapi-queue.c.i
 
 osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-queue.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/osal.dir/src/os/shared/src/osapi-queue.c.s"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/osal && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jstar/Desktop/github-nos3/fsw/osal/src/os/shared/src/osapi-queue.c -o CMakeFiles/osal.dir/src/os/shared/src/osapi-queue.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/osal && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/src/os/shared/src/osapi-queue.c -o CMakeFiles/osal.dir/src/os/shared/src/osapi-queue.c.s
 
 osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-select.c.o: osal/CMakeFiles/osal.dir/flags.make
-osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-select.c.o: /home/jstar/Desktop/github-nos3/fsw/osal/src/os/shared/src/osapi-select.c
+osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-select.c.o: /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/src/os/shared/src/osapi-select.c
 osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-select.c.o: osal/CMakeFiles/osal.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-select.c.o"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/osal && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-select.c.o -MF CMakeFiles/osal.dir/src/os/shared/src/osapi-select.c.o.d -o CMakeFiles/osal.dir/src/os/shared/src/osapi-select.c.o -c /home/jstar/Desktop/github-nos3/fsw/osal/src/os/shared/src/osapi-select.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-select.c.o"
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/osal && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-select.c.o -MF CMakeFiles/osal.dir/src/os/shared/src/osapi-select.c.o.d -o CMakeFiles/osal.dir/src/os/shared/src/osapi-select.c.o -c /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/src/os/shared/src/osapi-select.c
 
 osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-select.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/osal.dir/src/os/shared/src/osapi-select.c.i"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/osal && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jstar/Desktop/github-nos3/fsw/osal/src/os/shared/src/osapi-select.c > CMakeFiles/osal.dir/src/os/shared/src/osapi-select.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/osal && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/src/os/shared/src/osapi-select.c > CMakeFiles/osal.dir/src/os/shared/src/osapi-select.c.i
 
 osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-select.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/osal.dir/src/os/shared/src/osapi-select.c.s"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/osal && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jstar/Desktop/github-nos3/fsw/osal/src/os/shared/src/osapi-select.c -o CMakeFiles/osal.dir/src/os/shared/src/osapi-select.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/osal && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/src/os/shared/src/osapi-select.c -o CMakeFiles/osal.dir/src/os/shared/src/osapi-select.c.s
 
 osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-shell.c.o: osal/CMakeFiles/osal.dir/flags.make
-osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-shell.c.o: /home/jstar/Desktop/github-nos3/fsw/osal/src/os/shared/src/osapi-shell.c
+osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-shell.c.o: /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/src/os/shared/src/osapi-shell.c
 osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-shell.c.o: osal/CMakeFiles/osal.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-shell.c.o"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/osal && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-shell.c.o -MF CMakeFiles/osal.dir/src/os/shared/src/osapi-shell.c.o.d -o CMakeFiles/osal.dir/src/os/shared/src/osapi-shell.c.o -c /home/jstar/Desktop/github-nos3/fsw/osal/src/os/shared/src/osapi-shell.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-shell.c.o"
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/osal && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-shell.c.o -MF CMakeFiles/osal.dir/src/os/shared/src/osapi-shell.c.o.d -o CMakeFiles/osal.dir/src/os/shared/src/osapi-shell.c.o -c /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/src/os/shared/src/osapi-shell.c
 
 osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-shell.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/osal.dir/src/os/shared/src/osapi-shell.c.i"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/osal && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jstar/Desktop/github-nos3/fsw/osal/src/os/shared/src/osapi-shell.c > CMakeFiles/osal.dir/src/os/shared/src/osapi-shell.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/osal && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/src/os/shared/src/osapi-shell.c > CMakeFiles/osal.dir/src/os/shared/src/osapi-shell.c.i
 
 osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-shell.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/osal.dir/src/os/shared/src/osapi-shell.c.s"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/osal && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jstar/Desktop/github-nos3/fsw/osal/src/os/shared/src/osapi-shell.c -o CMakeFiles/osal.dir/src/os/shared/src/osapi-shell.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/osal && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/src/os/shared/src/osapi-shell.c -o CMakeFiles/osal.dir/src/os/shared/src/osapi-shell.c.s
 
 osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-sockets.c.o: osal/CMakeFiles/osal.dir/flags.make
-osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-sockets.c.o: /home/jstar/Desktop/github-nos3/fsw/osal/src/os/shared/src/osapi-sockets.c
+osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-sockets.c.o: /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/src/os/shared/src/osapi-sockets.c
 osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-sockets.c.o: osal/CMakeFiles/osal.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-sockets.c.o"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/osal && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-sockets.c.o -MF CMakeFiles/osal.dir/src/os/shared/src/osapi-sockets.c.o.d -o CMakeFiles/osal.dir/src/os/shared/src/osapi-sockets.c.o -c /home/jstar/Desktop/github-nos3/fsw/osal/src/os/shared/src/osapi-sockets.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-sockets.c.o"
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/osal && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-sockets.c.o -MF CMakeFiles/osal.dir/src/os/shared/src/osapi-sockets.c.o.d -o CMakeFiles/osal.dir/src/os/shared/src/osapi-sockets.c.o -c /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/src/os/shared/src/osapi-sockets.c
 
 osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-sockets.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/osal.dir/src/os/shared/src/osapi-sockets.c.i"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/osal && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jstar/Desktop/github-nos3/fsw/osal/src/os/shared/src/osapi-sockets.c > CMakeFiles/osal.dir/src/os/shared/src/osapi-sockets.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/osal && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/src/os/shared/src/osapi-sockets.c > CMakeFiles/osal.dir/src/os/shared/src/osapi-sockets.c.i
 
 osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-sockets.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/osal.dir/src/os/shared/src/osapi-sockets.c.s"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/osal && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jstar/Desktop/github-nos3/fsw/osal/src/os/shared/src/osapi-sockets.c -o CMakeFiles/osal.dir/src/os/shared/src/osapi-sockets.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/osal && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/src/os/shared/src/osapi-sockets.c -o CMakeFiles/osal.dir/src/os/shared/src/osapi-sockets.c.s
 
 osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-task.c.o: osal/CMakeFiles/osal.dir/flags.make
-osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-task.c.o: /home/jstar/Desktop/github-nos3/fsw/osal/src/os/shared/src/osapi-task.c
+osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-task.c.o: /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/src/os/shared/src/osapi-task.c
 osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-task.c.o: osal/CMakeFiles/osal.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-task.c.o"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/osal && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-task.c.o -MF CMakeFiles/osal.dir/src/os/shared/src/osapi-task.c.o.d -o CMakeFiles/osal.dir/src/os/shared/src/osapi-task.c.o -c /home/jstar/Desktop/github-nos3/fsw/osal/src/os/shared/src/osapi-task.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-task.c.o"
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/osal && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-task.c.o -MF CMakeFiles/osal.dir/src/os/shared/src/osapi-task.c.o.d -o CMakeFiles/osal.dir/src/os/shared/src/osapi-task.c.o -c /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/src/os/shared/src/osapi-task.c
 
 osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-task.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/osal.dir/src/os/shared/src/osapi-task.c.i"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/osal && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jstar/Desktop/github-nos3/fsw/osal/src/os/shared/src/osapi-task.c > CMakeFiles/osal.dir/src/os/shared/src/osapi-task.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/osal && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/src/os/shared/src/osapi-task.c > CMakeFiles/osal.dir/src/os/shared/src/osapi-task.c.i
 
 osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-task.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/osal.dir/src/os/shared/src/osapi-task.c.s"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/osal && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jstar/Desktop/github-nos3/fsw/osal/src/os/shared/src/osapi-task.c -o CMakeFiles/osal.dir/src/os/shared/src/osapi-task.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/osal && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/src/os/shared/src/osapi-task.c -o CMakeFiles/osal.dir/src/os/shared/src/osapi-task.c.s
 
 osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-timebase.c.o: osal/CMakeFiles/osal.dir/flags.make
-osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-timebase.c.o: /home/jstar/Desktop/github-nos3/fsw/osal/src/os/shared/src/osapi-timebase.c
+osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-timebase.c.o: /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/src/os/shared/src/osapi-timebase.c
 osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-timebase.c.o: osal/CMakeFiles/osal.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-timebase.c.o"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/osal && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-timebase.c.o -MF CMakeFiles/osal.dir/src/os/shared/src/osapi-timebase.c.o.d -o CMakeFiles/osal.dir/src/os/shared/src/osapi-timebase.c.o -c /home/jstar/Desktop/github-nos3/fsw/osal/src/os/shared/src/osapi-timebase.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-timebase.c.o"
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/osal && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-timebase.c.o -MF CMakeFiles/osal.dir/src/os/shared/src/osapi-timebase.c.o.d -o CMakeFiles/osal.dir/src/os/shared/src/osapi-timebase.c.o -c /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/src/os/shared/src/osapi-timebase.c
 
 osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-timebase.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/osal.dir/src/os/shared/src/osapi-timebase.c.i"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/osal && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jstar/Desktop/github-nos3/fsw/osal/src/os/shared/src/osapi-timebase.c > CMakeFiles/osal.dir/src/os/shared/src/osapi-timebase.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/osal && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/src/os/shared/src/osapi-timebase.c > CMakeFiles/osal.dir/src/os/shared/src/osapi-timebase.c.i
 
 osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-timebase.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/osal.dir/src/os/shared/src/osapi-timebase.c.s"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/osal && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jstar/Desktop/github-nos3/fsw/osal/src/os/shared/src/osapi-timebase.c -o CMakeFiles/osal.dir/src/os/shared/src/osapi-timebase.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/osal && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/src/os/shared/src/osapi-timebase.c -o CMakeFiles/osal.dir/src/os/shared/src/osapi-timebase.c.s
 
 osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-time.c.o: osal/CMakeFiles/osal.dir/flags.make
-osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-time.c.o: /home/jstar/Desktop/github-nos3/fsw/osal/src/os/shared/src/osapi-time.c
+osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-time.c.o: /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/src/os/shared/src/osapi-time.c
 osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-time.c.o: osal/CMakeFiles/osal.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-time.c.o"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/osal && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-time.c.o -MF CMakeFiles/osal.dir/src/os/shared/src/osapi-time.c.o.d -o CMakeFiles/osal.dir/src/os/shared/src/osapi-time.c.o -c /home/jstar/Desktop/github-nos3/fsw/osal/src/os/shared/src/osapi-time.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-time.c.o"
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/osal && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-time.c.o -MF CMakeFiles/osal.dir/src/os/shared/src/osapi-time.c.o.d -o CMakeFiles/osal.dir/src/os/shared/src/osapi-time.c.o -c /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/src/os/shared/src/osapi-time.c
 
 osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-time.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/osal.dir/src/os/shared/src/osapi-time.c.i"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/osal && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jstar/Desktop/github-nos3/fsw/osal/src/os/shared/src/osapi-time.c > CMakeFiles/osal.dir/src/os/shared/src/osapi-time.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/osal && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/src/os/shared/src/osapi-time.c > CMakeFiles/osal.dir/src/os/shared/src/osapi-time.c.i
 
 osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-time.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/osal.dir/src/os/shared/src/osapi-time.c.s"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/osal && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jstar/Desktop/github-nos3/fsw/osal/src/os/shared/src/osapi-time.c -o CMakeFiles/osal.dir/src/os/shared/src/osapi-time.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/osal && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/src/os/shared/src/osapi-time.c -o CMakeFiles/osal.dir/src/os/shared/src/osapi-time.c.s
 
 osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-version.c.o: osal/CMakeFiles/osal.dir/flags.make
-osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-version.c.o: /home/jstar/Desktop/github-nos3/fsw/osal/src/os/shared/src/osapi-version.c
+osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-version.c.o: /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/src/os/shared/src/osapi-version.c
 osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-version.c.o: osal/CMakeFiles/osal.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-version.c.o"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/osal && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-version.c.o -MF CMakeFiles/osal.dir/src/os/shared/src/osapi-version.c.o.d -o CMakeFiles/osal.dir/src/os/shared/src/osapi-version.c.o -c /home/jstar/Desktop/github-nos3/fsw/osal/src/os/shared/src/osapi-version.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-version.c.o"
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/osal && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-version.c.o -MF CMakeFiles/osal.dir/src/os/shared/src/osapi-version.c.o.d -o CMakeFiles/osal.dir/src/os/shared/src/osapi-version.c.o -c /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/src/os/shared/src/osapi-version.c
 
 osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-version.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/osal.dir/src/os/shared/src/osapi-version.c.i"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/osal && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jstar/Desktop/github-nos3/fsw/osal/src/os/shared/src/osapi-version.c > CMakeFiles/osal.dir/src/os/shared/src/osapi-version.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/osal && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/src/os/shared/src/osapi-version.c > CMakeFiles/osal.dir/src/os/shared/src/osapi-version.c.i
 
 osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-version.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/osal.dir/src/os/shared/src/osapi-version.c.s"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/osal && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jstar/Desktop/github-nos3/fsw/osal/src/os/shared/src/osapi-version.c -o CMakeFiles/osal.dir/src/os/shared/src/osapi-version.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/osal && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/src/os/shared/src/osapi-version.c -o CMakeFiles/osal.dir/src/os/shared/src/osapi-version.c.s
 
 osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-debug.c.o: osal/CMakeFiles/osal.dir/flags.make
-osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-debug.c.o: /home/jstar/Desktop/github-nos3/fsw/osal/src/os/shared/src/osapi-debug.c
+osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-debug.c.o: /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/src/os/shared/src/osapi-debug.c
 osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-debug.c.o: osal/CMakeFiles/osal.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-debug.c.o"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/osal && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-debug.c.o -MF CMakeFiles/osal.dir/src/os/shared/src/osapi-debug.c.o.d -o CMakeFiles/osal.dir/src/os/shared/src/osapi-debug.c.o -c /home/jstar/Desktop/github-nos3/fsw/osal/src/os/shared/src/osapi-debug.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-debug.c.o"
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/osal && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-debug.c.o -MF CMakeFiles/osal.dir/src/os/shared/src/osapi-debug.c.o.d -o CMakeFiles/osal.dir/src/os/shared/src/osapi-debug.c.o -c /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/src/os/shared/src/osapi-debug.c
 
 osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-debug.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/osal.dir/src/os/shared/src/osapi-debug.c.i"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/osal && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jstar/Desktop/github-nos3/fsw/osal/src/os/shared/src/osapi-debug.c > CMakeFiles/osal.dir/src/os/shared/src/osapi-debug.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/osal && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/src/os/shared/src/osapi-debug.c > CMakeFiles/osal.dir/src/os/shared/src/osapi-debug.c.i
 
 osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-debug.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/osal.dir/src/os/shared/src/osapi-debug.c.s"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/osal && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jstar/Desktop/github-nos3/fsw/osal/src/os/shared/src/osapi-debug.c -o CMakeFiles/osal.dir/src/os/shared/src/osapi-debug.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/osal && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/src/os/shared/src/osapi-debug.c -o CMakeFiles/osal.dir/src/os/shared/src/osapi-debug.c.s
 
 # Object files for target osal
 osal_OBJECTS = \
@@ -434,34 +434,34 @@ osal_OBJECTS = \
 
 # External object files for target osal
 osal_EXTERNAL_OBJECTS = \
-"/home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/osal/nos_impl/CMakeFiles/osal_nos_impl.dir/home/jstar/Desktop/github-nos3/fsw/osal/src/os/posix/src/os-impl-condvar.c.o" \
-"/home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/osal/nos_impl/CMakeFiles/osal_nos_impl.dir/home/jstar/Desktop/github-nos3/fsw/osal/src/os/posix/src/os-impl-dirs.c.o" \
-"/home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/osal/nos_impl/CMakeFiles/osal_nos_impl.dir/home/jstar/Desktop/github-nos3/fsw/osal/src/os/posix/src/os-impl-errors.c.o" \
-"/home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/osal/nos_impl/CMakeFiles/osal_nos_impl.dir/home/jstar/Desktop/github-nos3/fsw/osal/src/os/posix/src/os-impl-files.c.o" \
-"/home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/osal/nos_impl/CMakeFiles/osal_nos_impl.dir/home/jstar/Desktop/github-nos3/fsw/osal/src/os/posix/src/os-impl-filesys.c.o" \
-"/home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/osal/nos_impl/CMakeFiles/osal_nos_impl.dir/home/jstar/Desktop/github-nos3/fsw/osal/src/os/posix/src/os-impl-heap.c.o" \
-"/home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/osal/nos_impl/CMakeFiles/osal_nos_impl.dir/home/jstar/Desktop/github-nos3/fsw/osal/src/os/posix/src/os-impl-idmap.c.o" \
-"/home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/osal/nos_impl/CMakeFiles/osal_nos_impl.dir/home/jstar/Desktop/github-nos3/fsw/osal/src/os/posix/src/os-impl-mutex.c.o" \
-"/home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/osal/nos_impl/CMakeFiles/osal_nos_impl.dir/src/NOS-time.c.o" \
-"/home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/osal/nos_impl/CMakeFiles/osal_nos_impl.dir/src/os-impl-binsem.c.o" \
-"/home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/osal/nos_impl/CMakeFiles/osal_nos_impl.dir/src/os-impl-bsd-select.c.o" \
-"/home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/osal/nos_impl/CMakeFiles/osal_nos_impl.dir/src/os-impl-common.c.o" \
-"/home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/osal/nos_impl/CMakeFiles/osal_nos_impl.dir/src/os-impl-console.c.o" \
-"/home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/osal/nos_impl/CMakeFiles/osal_nos_impl.dir/src/os-impl-countsem.c.o" \
-"/home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/osal/nos_impl/CMakeFiles/osal_nos_impl.dir/src/os-impl-nos-gettime.c.o" \
-"/home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/osal/nos_impl/CMakeFiles/osal_nos_impl.dir/src/os-impl-queues.c.o" \
-"/home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/osal/nos_impl/CMakeFiles/osal_nos_impl.dir/src/os-impl-tasks.c.o" \
-"/home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/osal/nos_impl/CMakeFiles/osal_nos_impl.dir/src/os-impl-timebase.c.o" \
-"/home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/osal/nos_impl/CMakeFiles/osal_nos_impl.dir/home/jstar/Desktop/github-nos3/fsw/osal/src/os/portable/os-impl-console-bsp.c.o" \
-"/home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/osal/nos_impl/CMakeFiles/osal_nos_impl.dir/home/jstar/Desktop/github-nos3/fsw/osal/src/os/portable/os-impl-posix-io.c.o" \
-"/home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/osal/nos_impl/CMakeFiles/osal_nos_impl.dir/home/jstar/Desktop/github-nos3/fsw/osal/src/os/portable/os-impl-posix-files.c.o" \
-"/home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/osal/nos_impl/CMakeFiles/osal_nos_impl.dir/home/jstar/Desktop/github-nos3/fsw/osal/src/os/portable/os-impl-posix-dirs.c.o" \
-"/home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/osal/nos_impl/CMakeFiles/osal_nos_impl.dir/home/jstar/Desktop/github-nos3/fsw/osal/src/os/portable/os-impl-no-shell.c.o" \
-"/home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/osal/nos_impl/CMakeFiles/osal_nos_impl.dir/home/jstar/Desktop/github-nos3/fsw/osal/src/os/posix/src/os-impl-loader.c.o" \
-"/home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/osal/nos_impl/CMakeFiles/osal_nos_impl.dir/home/jstar/Desktop/github-nos3/fsw/osal/src/os/portable/os-impl-posix-dl-loader.c.o" \
-"/home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/osal/nos_impl/CMakeFiles/osal_nos_impl.dir/home/jstar/Desktop/github-nos3/fsw/osal/src/os/portable/os-impl-posix-dl-symtab.c.o" \
-"/home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/osal/nos_impl/CMakeFiles/osal_nos_impl.dir/home/jstar/Desktop/github-nos3/fsw/osal/src/os/portable/os-impl-bsd-sockets.c.o" \
-"/home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/osal/nos_impl/CMakeFiles/osal_nos_impl.dir/home/jstar/Desktop/github-nos3/fsw/osal/src/os/portable/os-impl-posix-network.c.o"
+"/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/osal/nos_impl/CMakeFiles/osal_nos_impl.dir/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/src/os/posix/src/os-impl-condvar.c.o" \
+"/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/osal/nos_impl/CMakeFiles/osal_nos_impl.dir/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/src/os/posix/src/os-impl-dirs.c.o" \
+"/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/osal/nos_impl/CMakeFiles/osal_nos_impl.dir/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/src/os/posix/src/os-impl-errors.c.o" \
+"/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/osal/nos_impl/CMakeFiles/osal_nos_impl.dir/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/src/os/posix/src/os-impl-files.c.o" \
+"/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/osal/nos_impl/CMakeFiles/osal_nos_impl.dir/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/src/os/posix/src/os-impl-filesys.c.o" \
+"/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/osal/nos_impl/CMakeFiles/osal_nos_impl.dir/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/src/os/posix/src/os-impl-heap.c.o" \
+"/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/osal/nos_impl/CMakeFiles/osal_nos_impl.dir/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/src/os/posix/src/os-impl-idmap.c.o" \
+"/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/osal/nos_impl/CMakeFiles/osal_nos_impl.dir/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/src/os/posix/src/os-impl-mutex.c.o" \
+"/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/osal/nos_impl/CMakeFiles/osal_nos_impl.dir/src/NOS-time.c.o" \
+"/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/osal/nos_impl/CMakeFiles/osal_nos_impl.dir/src/os-impl-binsem.c.o" \
+"/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/osal/nos_impl/CMakeFiles/osal_nos_impl.dir/src/os-impl-bsd-select.c.o" \
+"/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/osal/nos_impl/CMakeFiles/osal_nos_impl.dir/src/os-impl-common.c.o" \
+"/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/osal/nos_impl/CMakeFiles/osal_nos_impl.dir/src/os-impl-console.c.o" \
+"/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/osal/nos_impl/CMakeFiles/osal_nos_impl.dir/src/os-impl-countsem.c.o" \
+"/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/osal/nos_impl/CMakeFiles/osal_nos_impl.dir/src/os-impl-nos-gettime.c.o" \
+"/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/osal/nos_impl/CMakeFiles/osal_nos_impl.dir/src/os-impl-queues.c.o" \
+"/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/osal/nos_impl/CMakeFiles/osal_nos_impl.dir/src/os-impl-tasks.c.o" \
+"/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/osal/nos_impl/CMakeFiles/osal_nos_impl.dir/src/os-impl-timebase.c.o" \
+"/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/osal/nos_impl/CMakeFiles/osal_nos_impl.dir/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/src/os/portable/os-impl-console-bsp.c.o" \
+"/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/osal/nos_impl/CMakeFiles/osal_nos_impl.dir/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/src/os/portable/os-impl-posix-io.c.o" \
+"/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/osal/nos_impl/CMakeFiles/osal_nos_impl.dir/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/src/os/portable/os-impl-posix-files.c.o" \
+"/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/osal/nos_impl/CMakeFiles/osal_nos_impl.dir/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/src/os/portable/os-impl-posix-dirs.c.o" \
+"/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/osal/nos_impl/CMakeFiles/osal_nos_impl.dir/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/src/os/portable/os-impl-no-shell.c.o" \
+"/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/osal/nos_impl/CMakeFiles/osal_nos_impl.dir/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/src/os/posix/src/os-impl-loader.c.o" \
+"/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/osal/nos_impl/CMakeFiles/osal_nos_impl.dir/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/src/os/portable/os-impl-posix-dl-loader.c.o" \
+"/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/osal/nos_impl/CMakeFiles/osal_nos_impl.dir/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/src/os/portable/os-impl-posix-dl-symtab.c.o" \
+"/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/osal/nos_impl/CMakeFiles/osal_nos_impl.dir/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/src/os/portable/os-impl-bsd-sockets.c.o" \
+"/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/osal/nos_impl/CMakeFiles/osal_nos_impl.dir/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/src/os/portable/os-impl-posix-network.c.o"
 
 osal/libosal.a: osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-binsem.c.o
 osal/libosal.a: osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-clock.c.o
@@ -487,14 +487,14 @@ osal/libosal.a: osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-timebase.c.o
 osal/libosal.a: osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-time.c.o
 osal/libosal.a: osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-version.c.o
 osal/libosal.a: osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-debug.c.o
-osal/libosal.a: osal/nos_impl/CMakeFiles/osal_nos_impl.dir/home/jstar/Desktop/github-nos3/fsw/osal/src/os/posix/src/os-impl-condvar.c.o
-osal/libosal.a: osal/nos_impl/CMakeFiles/osal_nos_impl.dir/home/jstar/Desktop/github-nos3/fsw/osal/src/os/posix/src/os-impl-dirs.c.o
-osal/libosal.a: osal/nos_impl/CMakeFiles/osal_nos_impl.dir/home/jstar/Desktop/github-nos3/fsw/osal/src/os/posix/src/os-impl-errors.c.o
-osal/libosal.a: osal/nos_impl/CMakeFiles/osal_nos_impl.dir/home/jstar/Desktop/github-nos3/fsw/osal/src/os/posix/src/os-impl-files.c.o
-osal/libosal.a: osal/nos_impl/CMakeFiles/osal_nos_impl.dir/home/jstar/Desktop/github-nos3/fsw/osal/src/os/posix/src/os-impl-filesys.c.o
-osal/libosal.a: osal/nos_impl/CMakeFiles/osal_nos_impl.dir/home/jstar/Desktop/github-nos3/fsw/osal/src/os/posix/src/os-impl-heap.c.o
-osal/libosal.a: osal/nos_impl/CMakeFiles/osal_nos_impl.dir/home/jstar/Desktop/github-nos3/fsw/osal/src/os/posix/src/os-impl-idmap.c.o
-osal/libosal.a: osal/nos_impl/CMakeFiles/osal_nos_impl.dir/home/jstar/Desktop/github-nos3/fsw/osal/src/os/posix/src/os-impl-mutex.c.o
+osal/libosal.a: osal/nos_impl/CMakeFiles/osal_nos_impl.dir/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/src/os/posix/src/os-impl-condvar.c.o
+osal/libosal.a: osal/nos_impl/CMakeFiles/osal_nos_impl.dir/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/src/os/posix/src/os-impl-dirs.c.o
+osal/libosal.a: osal/nos_impl/CMakeFiles/osal_nos_impl.dir/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/src/os/posix/src/os-impl-errors.c.o
+osal/libosal.a: osal/nos_impl/CMakeFiles/osal_nos_impl.dir/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/src/os/posix/src/os-impl-files.c.o
+osal/libosal.a: osal/nos_impl/CMakeFiles/osal_nos_impl.dir/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/src/os/posix/src/os-impl-filesys.c.o
+osal/libosal.a: osal/nos_impl/CMakeFiles/osal_nos_impl.dir/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/src/os/posix/src/os-impl-heap.c.o
+osal/libosal.a: osal/nos_impl/CMakeFiles/osal_nos_impl.dir/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/src/os/posix/src/os-impl-idmap.c.o
+osal/libosal.a: osal/nos_impl/CMakeFiles/osal_nos_impl.dir/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/src/os/posix/src/os-impl-mutex.c.o
 osal/libosal.a: osal/nos_impl/CMakeFiles/osal_nos_impl.dir/src/NOS-time.c.o
 osal/libosal.a: osal/nos_impl/CMakeFiles/osal_nos_impl.dir/src/os-impl-binsem.c.o
 osal/libosal.a: osal/nos_impl/CMakeFiles/osal_nos_impl.dir/src/os-impl-bsd-select.c.o
@@ -505,31 +505,31 @@ osal/libosal.a: osal/nos_impl/CMakeFiles/osal_nos_impl.dir/src/os-impl-nos-getti
 osal/libosal.a: osal/nos_impl/CMakeFiles/osal_nos_impl.dir/src/os-impl-queues.c.o
 osal/libosal.a: osal/nos_impl/CMakeFiles/osal_nos_impl.dir/src/os-impl-tasks.c.o
 osal/libosal.a: osal/nos_impl/CMakeFiles/osal_nos_impl.dir/src/os-impl-timebase.c.o
-osal/libosal.a: osal/nos_impl/CMakeFiles/osal_nos_impl.dir/home/jstar/Desktop/github-nos3/fsw/osal/src/os/portable/os-impl-console-bsp.c.o
-osal/libosal.a: osal/nos_impl/CMakeFiles/osal_nos_impl.dir/home/jstar/Desktop/github-nos3/fsw/osal/src/os/portable/os-impl-posix-io.c.o
-osal/libosal.a: osal/nos_impl/CMakeFiles/osal_nos_impl.dir/home/jstar/Desktop/github-nos3/fsw/osal/src/os/portable/os-impl-posix-files.c.o
-osal/libosal.a: osal/nos_impl/CMakeFiles/osal_nos_impl.dir/home/jstar/Desktop/github-nos3/fsw/osal/src/os/portable/os-impl-posix-dirs.c.o
-osal/libosal.a: osal/nos_impl/CMakeFiles/osal_nos_impl.dir/home/jstar/Desktop/github-nos3/fsw/osal/src/os/portable/os-impl-no-shell.c.o
-osal/libosal.a: osal/nos_impl/CMakeFiles/osal_nos_impl.dir/home/jstar/Desktop/github-nos3/fsw/osal/src/os/posix/src/os-impl-loader.c.o
-osal/libosal.a: osal/nos_impl/CMakeFiles/osal_nos_impl.dir/home/jstar/Desktop/github-nos3/fsw/osal/src/os/portable/os-impl-posix-dl-loader.c.o
-osal/libosal.a: osal/nos_impl/CMakeFiles/osal_nos_impl.dir/home/jstar/Desktop/github-nos3/fsw/osal/src/os/portable/os-impl-posix-dl-symtab.c.o
-osal/libosal.a: osal/nos_impl/CMakeFiles/osal_nos_impl.dir/home/jstar/Desktop/github-nos3/fsw/osal/src/os/portable/os-impl-bsd-sockets.c.o
-osal/libosal.a: osal/nos_impl/CMakeFiles/osal_nos_impl.dir/home/jstar/Desktop/github-nos3/fsw/osal/src/os/portable/os-impl-posix-network.c.o
+osal/libosal.a: osal/nos_impl/CMakeFiles/osal_nos_impl.dir/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/src/os/portable/os-impl-console-bsp.c.o
+osal/libosal.a: osal/nos_impl/CMakeFiles/osal_nos_impl.dir/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/src/os/portable/os-impl-posix-io.c.o
+osal/libosal.a: osal/nos_impl/CMakeFiles/osal_nos_impl.dir/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/src/os/portable/os-impl-posix-files.c.o
+osal/libosal.a: osal/nos_impl/CMakeFiles/osal_nos_impl.dir/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/src/os/portable/os-impl-posix-dirs.c.o
+osal/libosal.a: osal/nos_impl/CMakeFiles/osal_nos_impl.dir/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/src/os/portable/os-impl-no-shell.c.o
+osal/libosal.a: osal/nos_impl/CMakeFiles/osal_nos_impl.dir/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/src/os/posix/src/os-impl-loader.c.o
+osal/libosal.a: osal/nos_impl/CMakeFiles/osal_nos_impl.dir/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/src/os/portable/os-impl-posix-dl-loader.c.o
+osal/libosal.a: osal/nos_impl/CMakeFiles/osal_nos_impl.dir/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/src/os/portable/os-impl-posix-dl-symtab.c.o
+osal/libosal.a: osal/nos_impl/CMakeFiles/osal_nos_impl.dir/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/src/os/portable/os-impl-bsd-sockets.c.o
+osal/libosal.a: osal/nos_impl/CMakeFiles/osal_nos_impl.dir/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/src/os/portable/os-impl-posix-network.c.o
 osal/libosal.a: osal/CMakeFiles/osal.dir/build.make
 osal/libosal.a: osal/CMakeFiles/osal.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Linking C static library libosal.a"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/osal && $(CMAKE_COMMAND) -P CMakeFiles/osal.dir/cmake_clean_target.cmake
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/osal && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/osal.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Linking C static library libosal.a"
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/osal && $(CMAKE_COMMAND) -P CMakeFiles/osal.dir/cmake_clean_target.cmake
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/osal && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/osal.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 osal/CMakeFiles/osal.dir/build: osal/libosal.a
 .PHONY : osal/CMakeFiles/osal.dir/build
 
 osal/CMakeFiles/osal.dir/clean:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/osal && $(CMAKE_COMMAND) -P CMakeFiles/osal.dir/cmake_clean.cmake
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/osal && $(CMAKE_COMMAND) -P CMakeFiles/osal.dir/cmake_clean.cmake
 .PHONY : osal/CMakeFiles/osal.dir/clean
 
 osal/CMakeFiles/osal.dir/depend:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/jstar/Desktop/github-nos3/fsw/cfe /home/jstar/Desktop/github-nos3/fsw/osal /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/osal /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/osal/CMakeFiles/osal.dir/DependInfo.cmake --color=$(COLOR)
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/cfe /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/osal /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/osal/CMakeFiles/osal.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : osal/CMakeFiles/osal.dir/depend
 

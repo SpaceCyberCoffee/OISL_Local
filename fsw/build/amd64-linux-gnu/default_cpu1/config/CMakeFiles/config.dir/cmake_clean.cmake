@@ -7,8 +7,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/config.dir/fsw/src/cfe_config_lookup.c.o.d"
   "CMakeFiles/config.dir/fsw/src/cfe_config_set.c.o"
   "CMakeFiles/config.dir/fsw/src/cfe_config_set.c.o.d"
-  "CMakeFiles/config.dir/home/jstar/Desktop/github-nos3/fsw/build/src/cfe_config_map.c.o"
-  "CMakeFiles/config.dir/home/jstar/Desktop/github-nos3/fsw/build/src/cfe_config_map.c.o.d"
+  "CMakeFiles/config.dir/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/src/cfe_config_map.c.o"
+  "CMakeFiles/config.dir/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/src/cfe_config_map.c.o.d"
   "libconfig.a"
   "libconfig.pdb"
 )

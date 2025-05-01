@@ -3,4 +3,4 @@
 #---------------------------------------------------------------------------
 
 # Common files
-@INCLUDE = /home/jstar/Desktop/github-nos3/fsw/build/docs/sc-common.doxyfile
+@INCLUDE = /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/docs/sc-common.doxyfile

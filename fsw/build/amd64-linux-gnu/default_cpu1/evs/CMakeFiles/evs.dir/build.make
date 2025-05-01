@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/jstar/Desktop/github-nos3/fsw/cfe
+CMAKE_SOURCE_DIR = /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/cfe
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1
+CMAKE_BINARY_DIR = /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1
 
 # Include any dependencies generated for this target.
 include evs/CMakeFiles/evs.dir/depend.make
@@ -70,60 +70,60 @@ include evs/CMakeFiles/evs.dir/progress.make
 include evs/CMakeFiles/evs.dir/flags.make
 
 evs/CMakeFiles/evs.dir/fsw/src/cfe_evs.c.o: evs/CMakeFiles/evs.dir/flags.make
-evs/CMakeFiles/evs.dir/fsw/src/cfe_evs.c.o: /home/jstar/Desktop/github-nos3/fsw/cfe/modules/evs/fsw/src/cfe_evs.c
+evs/CMakeFiles/evs.dir/fsw/src/cfe_evs.c.o: /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/cfe/modules/evs/fsw/src/cfe_evs.c
 evs/CMakeFiles/evs.dir/fsw/src/cfe_evs.c.o: evs/CMakeFiles/evs.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object evs/CMakeFiles/evs.dir/fsw/src/cfe_evs.c.o"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/evs && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT evs/CMakeFiles/evs.dir/fsw/src/cfe_evs.c.o -MF CMakeFiles/evs.dir/fsw/src/cfe_evs.c.o.d -o CMakeFiles/evs.dir/fsw/src/cfe_evs.c.o -c /home/jstar/Desktop/github-nos3/fsw/cfe/modules/evs/fsw/src/cfe_evs.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object evs/CMakeFiles/evs.dir/fsw/src/cfe_evs.c.o"
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/evs && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT evs/CMakeFiles/evs.dir/fsw/src/cfe_evs.c.o -MF CMakeFiles/evs.dir/fsw/src/cfe_evs.c.o.d -o CMakeFiles/evs.dir/fsw/src/cfe_evs.c.o -c /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/cfe/modules/evs/fsw/src/cfe_evs.c
 
 evs/CMakeFiles/evs.dir/fsw/src/cfe_evs.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/evs.dir/fsw/src/cfe_evs.c.i"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/evs && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jstar/Desktop/github-nos3/fsw/cfe/modules/evs/fsw/src/cfe_evs.c > CMakeFiles/evs.dir/fsw/src/cfe_evs.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/evs && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/cfe/modules/evs/fsw/src/cfe_evs.c > CMakeFiles/evs.dir/fsw/src/cfe_evs.c.i
 
 evs/CMakeFiles/evs.dir/fsw/src/cfe_evs.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/evs.dir/fsw/src/cfe_evs.c.s"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/evs && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jstar/Desktop/github-nos3/fsw/cfe/modules/evs/fsw/src/cfe_evs.c -o CMakeFiles/evs.dir/fsw/src/cfe_evs.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/evs && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/cfe/modules/evs/fsw/src/cfe_evs.c -o CMakeFiles/evs.dir/fsw/src/cfe_evs.c.s
 
 evs/CMakeFiles/evs.dir/fsw/src/cfe_evs_log.c.o: evs/CMakeFiles/evs.dir/flags.make
-evs/CMakeFiles/evs.dir/fsw/src/cfe_evs_log.c.o: /home/jstar/Desktop/github-nos3/fsw/cfe/modules/evs/fsw/src/cfe_evs_log.c
+evs/CMakeFiles/evs.dir/fsw/src/cfe_evs_log.c.o: /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/cfe/modules/evs/fsw/src/cfe_evs_log.c
 evs/CMakeFiles/evs.dir/fsw/src/cfe_evs_log.c.o: evs/CMakeFiles/evs.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object evs/CMakeFiles/evs.dir/fsw/src/cfe_evs_log.c.o"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/evs && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT evs/CMakeFiles/evs.dir/fsw/src/cfe_evs_log.c.o -MF CMakeFiles/evs.dir/fsw/src/cfe_evs_log.c.o.d -o CMakeFiles/evs.dir/fsw/src/cfe_evs_log.c.o -c /home/jstar/Desktop/github-nos3/fsw/cfe/modules/evs/fsw/src/cfe_evs_log.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object evs/CMakeFiles/evs.dir/fsw/src/cfe_evs_log.c.o"
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/evs && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT evs/CMakeFiles/evs.dir/fsw/src/cfe_evs_log.c.o -MF CMakeFiles/evs.dir/fsw/src/cfe_evs_log.c.o.d -o CMakeFiles/evs.dir/fsw/src/cfe_evs_log.c.o -c /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/cfe/modules/evs/fsw/src/cfe_evs_log.c
 
 evs/CMakeFiles/evs.dir/fsw/src/cfe_evs_log.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/evs.dir/fsw/src/cfe_evs_log.c.i"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/evs && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jstar/Desktop/github-nos3/fsw/cfe/modules/evs/fsw/src/cfe_evs_log.c > CMakeFiles/evs.dir/fsw/src/cfe_evs_log.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/evs && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/cfe/modules/evs/fsw/src/cfe_evs_log.c > CMakeFiles/evs.dir/fsw/src/cfe_evs_log.c.i
 
 evs/CMakeFiles/evs.dir/fsw/src/cfe_evs_log.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/evs.dir/fsw/src/cfe_evs_log.c.s"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/evs && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jstar/Desktop/github-nos3/fsw/cfe/modules/evs/fsw/src/cfe_evs_log.c -o CMakeFiles/evs.dir/fsw/src/cfe_evs_log.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/evs && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/cfe/modules/evs/fsw/src/cfe_evs_log.c -o CMakeFiles/evs.dir/fsw/src/cfe_evs_log.c.s
 
 evs/CMakeFiles/evs.dir/fsw/src/cfe_evs_task.c.o: evs/CMakeFiles/evs.dir/flags.make
-evs/CMakeFiles/evs.dir/fsw/src/cfe_evs_task.c.o: /home/jstar/Desktop/github-nos3/fsw/cfe/modules/evs/fsw/src/cfe_evs_task.c
+evs/CMakeFiles/evs.dir/fsw/src/cfe_evs_task.c.o: /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/cfe/modules/evs/fsw/src/cfe_evs_task.c
 evs/CMakeFiles/evs.dir/fsw/src/cfe_evs_task.c.o: evs/CMakeFiles/evs.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object evs/CMakeFiles/evs.dir/fsw/src/cfe_evs_task.c.o"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/evs && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT evs/CMakeFiles/evs.dir/fsw/src/cfe_evs_task.c.o -MF CMakeFiles/evs.dir/fsw/src/cfe_evs_task.c.o.d -o CMakeFiles/evs.dir/fsw/src/cfe_evs_task.c.o -c /home/jstar/Desktop/github-nos3/fsw/cfe/modules/evs/fsw/src/cfe_evs_task.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object evs/CMakeFiles/evs.dir/fsw/src/cfe_evs_task.c.o"
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/evs && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT evs/CMakeFiles/evs.dir/fsw/src/cfe_evs_task.c.o -MF CMakeFiles/evs.dir/fsw/src/cfe_evs_task.c.o.d -o CMakeFiles/evs.dir/fsw/src/cfe_evs_task.c.o -c /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/cfe/modules/evs/fsw/src/cfe_evs_task.c
 
 evs/CMakeFiles/evs.dir/fsw/src/cfe_evs_task.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/evs.dir/fsw/src/cfe_evs_task.c.i"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/evs && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jstar/Desktop/github-nos3/fsw/cfe/modules/evs/fsw/src/cfe_evs_task.c > CMakeFiles/evs.dir/fsw/src/cfe_evs_task.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/evs && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/cfe/modules/evs/fsw/src/cfe_evs_task.c > CMakeFiles/evs.dir/fsw/src/cfe_evs_task.c.i
 
 evs/CMakeFiles/evs.dir/fsw/src/cfe_evs_task.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/evs.dir/fsw/src/cfe_evs_task.c.s"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/evs && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jstar/Desktop/github-nos3/fsw/cfe/modules/evs/fsw/src/cfe_evs_task.c -o CMakeFiles/evs.dir/fsw/src/cfe_evs_task.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/evs && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/cfe/modules/evs/fsw/src/cfe_evs_task.c -o CMakeFiles/evs.dir/fsw/src/cfe_evs_task.c.s
 
 evs/CMakeFiles/evs.dir/fsw/src/cfe_evs_utils.c.o: evs/CMakeFiles/evs.dir/flags.make
-evs/CMakeFiles/evs.dir/fsw/src/cfe_evs_utils.c.o: /home/jstar/Desktop/github-nos3/fsw/cfe/modules/evs/fsw/src/cfe_evs_utils.c
+evs/CMakeFiles/evs.dir/fsw/src/cfe_evs_utils.c.o: /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/cfe/modules/evs/fsw/src/cfe_evs_utils.c
 evs/CMakeFiles/evs.dir/fsw/src/cfe_evs_utils.c.o: evs/CMakeFiles/evs.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object evs/CMakeFiles/evs.dir/fsw/src/cfe_evs_utils.c.o"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/evs && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT evs/CMakeFiles/evs.dir/fsw/src/cfe_evs_utils.c.o -MF CMakeFiles/evs.dir/fsw/src/cfe_evs_utils.c.o.d -o CMakeFiles/evs.dir/fsw/src/cfe_evs_utils.c.o -c /home/jstar/Desktop/github-nos3/fsw/cfe/modules/evs/fsw/src/cfe_evs_utils.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object evs/CMakeFiles/evs.dir/fsw/src/cfe_evs_utils.c.o"
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/evs && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT evs/CMakeFiles/evs.dir/fsw/src/cfe_evs_utils.c.o -MF CMakeFiles/evs.dir/fsw/src/cfe_evs_utils.c.o.d -o CMakeFiles/evs.dir/fsw/src/cfe_evs_utils.c.o -c /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/cfe/modules/evs/fsw/src/cfe_evs_utils.c
 
 evs/CMakeFiles/evs.dir/fsw/src/cfe_evs_utils.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/evs.dir/fsw/src/cfe_evs_utils.c.i"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/evs && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jstar/Desktop/github-nos3/fsw/cfe/modules/evs/fsw/src/cfe_evs_utils.c > CMakeFiles/evs.dir/fsw/src/cfe_evs_utils.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/evs && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/cfe/modules/evs/fsw/src/cfe_evs_utils.c > CMakeFiles/evs.dir/fsw/src/cfe_evs_utils.c.i
 
 evs/CMakeFiles/evs.dir/fsw/src/cfe_evs_utils.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/evs.dir/fsw/src/cfe_evs_utils.c.s"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/evs && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jstar/Desktop/github-nos3/fsw/cfe/modules/evs/fsw/src/cfe_evs_utils.c -o CMakeFiles/evs.dir/fsw/src/cfe_evs_utils.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/evs && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/cfe/modules/evs/fsw/src/cfe_evs_utils.c -o CMakeFiles/evs.dir/fsw/src/cfe_evs_utils.c.s
 
 # Object files for target evs
 evs_OBJECTS = \
@@ -141,19 +141,19 @@ evs/libevs.a: evs/CMakeFiles/evs.dir/fsw/src/cfe_evs_task.c.o
 evs/libevs.a: evs/CMakeFiles/evs.dir/fsw/src/cfe_evs_utils.c.o
 evs/libevs.a: evs/CMakeFiles/evs.dir/build.make
 evs/libevs.a: evs/CMakeFiles/evs.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking C static library libevs.a"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/evs && $(CMAKE_COMMAND) -P CMakeFiles/evs.dir/cmake_clean_target.cmake
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/evs && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/evs.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking C static library libevs.a"
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/evs && $(CMAKE_COMMAND) -P CMakeFiles/evs.dir/cmake_clean_target.cmake
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/evs && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/evs.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 evs/CMakeFiles/evs.dir/build: evs/libevs.a
 .PHONY : evs/CMakeFiles/evs.dir/build
 
 evs/CMakeFiles/evs.dir/clean:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/evs && $(CMAKE_COMMAND) -P CMakeFiles/evs.dir/cmake_clean.cmake
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/evs && $(CMAKE_COMMAND) -P CMakeFiles/evs.dir/cmake_clean.cmake
 .PHONY : evs/CMakeFiles/evs.dir/clean
 
 evs/CMakeFiles/evs.dir/depend:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/jstar/Desktop/github-nos3/fsw/cfe /home/jstar/Desktop/github-nos3/fsw/cfe/modules/evs /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/evs /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/evs/CMakeFiles/evs.dir/DependInfo.cmake --color=$(COLOR)
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/cfe /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/cfe/modules/evs /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/evs /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/evs/CMakeFiles/evs.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : evs/CMakeFiles/evs.dir/depend
 

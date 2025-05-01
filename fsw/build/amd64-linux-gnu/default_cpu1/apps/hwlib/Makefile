@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/jstar/Desktop/github-nos3/fsw/cfe
+CMAKE_SOURCE_DIR = /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/cfe
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1
+CMAKE_BINARY_DIR = /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -142,14 +142,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(CMAKE_COMMAND) -E cmake_progress_start /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/apps/hwlib//CMakeFiles/progress.marks
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/hwlib/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles 0
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(CMAKE_COMMAND) -E cmake_progress_start /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/apps/hwlib//CMakeFiles/progress.marks
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/hwlib/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/hwlib/clean
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/hwlib/clean
 .PHONY : clean
 
 # The main clean target
@@ -158,22 +158,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/hwlib/preinstall
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/hwlib/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/hwlib/preinstall
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/hwlib/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 apps/hwlib/CMakeFiles/hwlib.dir/rule:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/hwlib/CMakeFiles/hwlib.dir/rule
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/hwlib/CMakeFiles/hwlib.dir/rule
 .PHONY : apps/hwlib/CMakeFiles/hwlib.dir/rule
 
 # Convenience name for target.
@@ -182,7 +182,7 @@ hwlib: apps/hwlib/CMakeFiles/hwlib.dir/rule
 
 # fast build rule for target.
 hwlib/fast:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/hwlib/CMakeFiles/hwlib.dir/build.make apps/hwlib/CMakeFiles/hwlib.dir/build
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/hwlib/CMakeFiles/hwlib.dir/build.make apps/hwlib/CMakeFiles/hwlib.dir/build
 .PHONY : hwlib/fast
 
 fsw/src/gpio_lib.o: fsw/src/gpio_lib.c.o
@@ -190,7 +190,7 @@ fsw/src/gpio_lib.o: fsw/src/gpio_lib.c.o
 
 # target to build an object file
 fsw/src/gpio_lib.c.o:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/hwlib/CMakeFiles/hwlib.dir/build.make apps/hwlib/CMakeFiles/hwlib.dir/fsw/src/gpio_lib.c.o
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/hwlib/CMakeFiles/hwlib.dir/build.make apps/hwlib/CMakeFiles/hwlib.dir/fsw/src/gpio_lib.c.o
 .PHONY : fsw/src/gpio_lib.c.o
 
 fsw/src/gpio_lib.i: fsw/src/gpio_lib.c.i
@@ -198,7 +198,7 @@ fsw/src/gpio_lib.i: fsw/src/gpio_lib.c.i
 
 # target to preprocess a source file
 fsw/src/gpio_lib.c.i:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/hwlib/CMakeFiles/hwlib.dir/build.make apps/hwlib/CMakeFiles/hwlib.dir/fsw/src/gpio_lib.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/hwlib/CMakeFiles/hwlib.dir/build.make apps/hwlib/CMakeFiles/hwlib.dir/fsw/src/gpio_lib.c.i
 .PHONY : fsw/src/gpio_lib.c.i
 
 fsw/src/gpio_lib.s: fsw/src/gpio_lib.c.s
@@ -206,7 +206,7 @@ fsw/src/gpio_lib.s: fsw/src/gpio_lib.c.s
 
 # target to generate assembly for a file
 fsw/src/gpio_lib.c.s:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/hwlib/CMakeFiles/hwlib.dir/build.make apps/hwlib/CMakeFiles/hwlib.dir/fsw/src/gpio_lib.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/hwlib/CMakeFiles/hwlib.dir/build.make apps/hwlib/CMakeFiles/hwlib.dir/fsw/src/gpio_lib.c.s
 .PHONY : fsw/src/gpio_lib.c.s
 
 fsw/src/hwlib.o: fsw/src/hwlib.c.o
@@ -214,7 +214,7 @@ fsw/src/hwlib.o: fsw/src/hwlib.c.o
 
 # target to build an object file
 fsw/src/hwlib.c.o:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/hwlib/CMakeFiles/hwlib.dir/build.make apps/hwlib/CMakeFiles/hwlib.dir/fsw/src/hwlib.c.o
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/hwlib/CMakeFiles/hwlib.dir/build.make apps/hwlib/CMakeFiles/hwlib.dir/fsw/src/hwlib.c.o
 .PHONY : fsw/src/hwlib.c.o
 
 fsw/src/hwlib.i: fsw/src/hwlib.c.i
@@ -222,7 +222,7 @@ fsw/src/hwlib.i: fsw/src/hwlib.c.i
 
 # target to preprocess a source file
 fsw/src/hwlib.c.i:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/hwlib/CMakeFiles/hwlib.dir/build.make apps/hwlib/CMakeFiles/hwlib.dir/fsw/src/hwlib.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/hwlib/CMakeFiles/hwlib.dir/build.make apps/hwlib/CMakeFiles/hwlib.dir/fsw/src/hwlib.c.i
 .PHONY : fsw/src/hwlib.c.i
 
 fsw/src/hwlib.s: fsw/src/hwlib.c.s
@@ -230,7 +230,7 @@ fsw/src/hwlib.s: fsw/src/hwlib.c.s
 
 # target to generate assembly for a file
 fsw/src/hwlib.c.s:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/hwlib/CMakeFiles/hwlib.dir/build.make apps/hwlib/CMakeFiles/hwlib.dir/fsw/src/hwlib.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/hwlib/CMakeFiles/hwlib.dir/build.make apps/hwlib/CMakeFiles/hwlib.dir/fsw/src/hwlib.c.s
 .PHONY : fsw/src/hwlib.c.s
 
 fsw/src/mem_lib.o: fsw/src/mem_lib.c.o
@@ -238,7 +238,7 @@ fsw/src/mem_lib.o: fsw/src/mem_lib.c.o
 
 # target to build an object file
 fsw/src/mem_lib.c.o:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/hwlib/CMakeFiles/hwlib.dir/build.make apps/hwlib/CMakeFiles/hwlib.dir/fsw/src/mem_lib.c.o
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/hwlib/CMakeFiles/hwlib.dir/build.make apps/hwlib/CMakeFiles/hwlib.dir/fsw/src/mem_lib.c.o
 .PHONY : fsw/src/mem_lib.c.o
 
 fsw/src/mem_lib.i: fsw/src/mem_lib.c.i
@@ -246,7 +246,7 @@ fsw/src/mem_lib.i: fsw/src/mem_lib.c.i
 
 # target to preprocess a source file
 fsw/src/mem_lib.c.i:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/hwlib/CMakeFiles/hwlib.dir/build.make apps/hwlib/CMakeFiles/hwlib.dir/fsw/src/mem_lib.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/hwlib/CMakeFiles/hwlib.dir/build.make apps/hwlib/CMakeFiles/hwlib.dir/fsw/src/mem_lib.c.i
 .PHONY : fsw/src/mem_lib.c.i
 
 fsw/src/mem_lib.s: fsw/src/mem_lib.c.s
@@ -254,7 +254,7 @@ fsw/src/mem_lib.s: fsw/src/mem_lib.c.s
 
 # target to generate assembly for a file
 fsw/src/mem_lib.c.s:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/hwlib/CMakeFiles/hwlib.dir/build.make apps/hwlib/CMakeFiles/hwlib.dir/fsw/src/mem_lib.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/hwlib/CMakeFiles/hwlib.dir/build.make apps/hwlib/CMakeFiles/hwlib.dir/fsw/src/mem_lib.c.s
 .PHONY : fsw/src/mem_lib.c.s
 
 fsw/src/socket_lib.o: fsw/src/socket_lib.c.o
@@ -262,7 +262,7 @@ fsw/src/socket_lib.o: fsw/src/socket_lib.c.o
 
 # target to build an object file
 fsw/src/socket_lib.c.o:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/hwlib/CMakeFiles/hwlib.dir/build.make apps/hwlib/CMakeFiles/hwlib.dir/fsw/src/socket_lib.c.o
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/hwlib/CMakeFiles/hwlib.dir/build.make apps/hwlib/CMakeFiles/hwlib.dir/fsw/src/socket_lib.c.o
 .PHONY : fsw/src/socket_lib.c.o
 
 fsw/src/socket_lib.i: fsw/src/socket_lib.c.i
@@ -270,7 +270,7 @@ fsw/src/socket_lib.i: fsw/src/socket_lib.c.i
 
 # target to preprocess a source file
 fsw/src/socket_lib.c.i:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/hwlib/CMakeFiles/hwlib.dir/build.make apps/hwlib/CMakeFiles/hwlib.dir/fsw/src/socket_lib.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/hwlib/CMakeFiles/hwlib.dir/build.make apps/hwlib/CMakeFiles/hwlib.dir/fsw/src/socket_lib.c.i
 .PHONY : fsw/src/socket_lib.c.i
 
 fsw/src/socket_lib.s: fsw/src/socket_lib.c.s
@@ -278,7 +278,7 @@ fsw/src/socket_lib.s: fsw/src/socket_lib.c.s
 
 # target to generate assembly for a file
 fsw/src/socket_lib.c.s:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/hwlib/CMakeFiles/hwlib.dir/build.make apps/hwlib/CMakeFiles/hwlib.dir/fsw/src/socket_lib.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/hwlib/CMakeFiles/hwlib.dir/build.make apps/hwlib/CMakeFiles/hwlib.dir/fsw/src/socket_lib.c.s
 .PHONY : fsw/src/socket_lib.c.s
 
 fsw/src/torquer_lib.o: fsw/src/torquer_lib.c.o
@@ -286,7 +286,7 @@ fsw/src/torquer_lib.o: fsw/src/torquer_lib.c.o
 
 # target to build an object file
 fsw/src/torquer_lib.c.o:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/hwlib/CMakeFiles/hwlib.dir/build.make apps/hwlib/CMakeFiles/hwlib.dir/fsw/src/torquer_lib.c.o
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/hwlib/CMakeFiles/hwlib.dir/build.make apps/hwlib/CMakeFiles/hwlib.dir/fsw/src/torquer_lib.c.o
 .PHONY : fsw/src/torquer_lib.c.o
 
 fsw/src/torquer_lib.i: fsw/src/torquer_lib.c.i
@@ -294,7 +294,7 @@ fsw/src/torquer_lib.i: fsw/src/torquer_lib.c.i
 
 # target to preprocess a source file
 fsw/src/torquer_lib.c.i:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/hwlib/CMakeFiles/hwlib.dir/build.make apps/hwlib/CMakeFiles/hwlib.dir/fsw/src/torquer_lib.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/hwlib/CMakeFiles/hwlib.dir/build.make apps/hwlib/CMakeFiles/hwlib.dir/fsw/src/torquer_lib.c.i
 .PHONY : fsw/src/torquer_lib.c.i
 
 fsw/src/torquer_lib.s: fsw/src/torquer_lib.c.s
@@ -302,7 +302,7 @@ fsw/src/torquer_lib.s: fsw/src/torquer_lib.c.s
 
 # target to generate assembly for a file
 fsw/src/torquer_lib.c.s:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/hwlib/CMakeFiles/hwlib.dir/build.make apps/hwlib/CMakeFiles/hwlib.dir/fsw/src/torquer_lib.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/hwlib/CMakeFiles/hwlib.dir/build.make apps/hwlib/CMakeFiles/hwlib.dir/fsw/src/torquer_lib.c.s
 .PHONY : fsw/src/torquer_lib.c.s
 
 # Help Target
@@ -345,6 +345,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

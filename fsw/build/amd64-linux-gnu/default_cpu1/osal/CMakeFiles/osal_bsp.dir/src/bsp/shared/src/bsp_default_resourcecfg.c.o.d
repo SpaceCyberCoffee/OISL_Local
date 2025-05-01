@@ -1,9 +1,9 @@
 osal/CMakeFiles/osal_bsp.dir/src/bsp/shared/src/bsp_default_resourcecfg.c.o: \
- /home/jstar/Desktop/github-nos3/fsw/osal/src/bsp/shared/src/bsp_default_resourcecfg.c \
+ /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/src/bsp/shared/src/bsp_default_resourcecfg.c \
  /usr/include/stdc-predef.h \
- /home/jstar/Desktop/github-nos3/fsw/osal/src/os/inc/osapi-idmap.h \
- /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/osal/inc/osconfig.h \
- /home/jstar/Desktop/github-nos3/fsw/osal/src/os/inc/common_types.h \
+ /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/src/os/inc/osapi-idmap.h \
+ /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/osal/inc/osconfig.h \
+ /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/src/os/inc/common_types.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -21,7 +21,7 @@ osal/CMakeFiles/osal_bsp.dir/src/bsp/shared/src/bsp_default_resourcecfg.c.o: \
  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdbool.h \
- /home/jstar/Desktop/github-nos3/fsw/osal/src/bsp/shared/inc/bsp-impl.h \
+ /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/src/bsp/shared/inc/bsp-impl.h \
  /usr/include/stdio.h /usr/lib/gcc/x86_64-linux-gnu/11/include/stdarg.h \
  /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h \
@@ -33,6 +33,6 @@ osal/CMakeFiles/osal_bsp.dir/src/bsp/shared/src/bsp_default_resourcecfg.c.o: \
  /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
  /usr/include/x86_64-linux-gnu/bits/floatn.h \
  /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
- /home/jstar/Desktop/github-nos3/fsw/osal/src/os/inc/osapi-common.h \
- /home/jstar/Desktop/github-nos3/fsw/osal/src/os/inc/osapi-bsp.h \
- /home/jstar/Desktop/github-nos3/fsw/osal/src/os/inc/osapi-error.h
+ /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/src/os/inc/osapi-common.h \
+ /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/src/os/inc/osapi-bsp.h \
+ /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/src/os/inc/osapi-error.h

@@ -1,8 +1,8 @@
-# Install script for directory: /home/jstar/Desktop/github-nos3/components/syn/synopsis
+# Install script for directory: /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/syn/synopsis
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/jstar/Desktop/github-nos3/fsw/build/exe")
+  set(CMAKE_INSTALL_PREFIX "/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/exe")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -44,7 +44,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/apps/syn/json/cmake_install.cmake")
+  include("/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/apps/syn/json/cmake_install.cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -54,7 +54,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libsynopsis.so"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/apps/syn/libsynopsis.so")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/apps/syn/libsynopsis.so")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libsynopsis.so" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libsynopsis.so")
     if(CMAKE_INSTALL_DO_STRIP)
@@ -67,29 +67,29 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE FILE FILES "/home/jstar/Desktop/github-nos3/components/syn/synopsis/include/synopsis.hpp")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE FILE FILES "/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/syn/synopsis/include/synopsis.hpp")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  if(EXISTS "$ENV{DESTDIR}/home/jstar/Desktop/github-nos3/fsw/build/exe/cpu1/cf/libsynopsis.so" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}/home/jstar/Desktop/github-nos3/fsw/build/exe/cpu1/cf/libsynopsis.so")
+  if(EXISTS "$ENV{DESTDIR}/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/exe/cpu1/cf/libsynopsis.so" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/exe/cpu1/cf/libsynopsis.so")
     file(RPATH_CHECK
-         FILE "$ENV{DESTDIR}/home/jstar/Desktop/github-nos3/fsw/build/exe/cpu1/cf/libsynopsis.so"
+         FILE "$ENV{DESTDIR}/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/exe/cpu1/cf/libsynopsis.so"
          RPATH "")
   endif()
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/jstar/Desktop/github-nos3/fsw/build/exe/cpu1/cf/libsynopsis.so")
+   "/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/exe/cpu1/cf/libsynopsis.so")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/home/jstar/Desktop/github-nos3/fsw/build/exe/cpu1/cf" TYPE SHARED_LIBRARY FILES "/home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/apps/syn/libsynopsis.so")
-  if(EXISTS "$ENV{DESTDIR}/home/jstar/Desktop/github-nos3/fsw/build/exe/cpu1/cf/libsynopsis.so" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}/home/jstar/Desktop/github-nos3/fsw/build/exe/cpu1/cf/libsynopsis.so")
+  file(INSTALL DESTINATION "/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/exe/cpu1/cf" TYPE SHARED_LIBRARY FILES "/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/apps/syn/libsynopsis.so")
+  if(EXISTS "$ENV{DESTDIR}/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/exe/cpu1/cf/libsynopsis.so" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/exe/cpu1/cf/libsynopsis.so")
     if(CMAKE_INSTALL_DO_STRIP)
-      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}/home/jstar/Desktop/github-nos3/fsw/build/exe/cpu1/cf/libsynopsis.so")
+      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/exe/cpu1/cf/libsynopsis.so")
     endif()
   endif()
 endif()
@@ -99,13 +99,13 @@ endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/jstar/Desktop/github-nos3/fsw/build/exe/cpu1/cf/synopsis.hpp")
+   "/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/exe/cpu1/cf/synopsis.hpp")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/home/jstar/Desktop/github-nos3/fsw/build/exe/cpu1/cf" TYPE FILE FILES "/home/jstar/Desktop/github-nos3/components/syn/synopsis/include/synopsis.hpp")
+  file(INSTALL DESTINATION "/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/exe/cpu1/cf" TYPE FILE FILES "/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/syn/synopsis/include/synopsis.hpp")
 endif()
 

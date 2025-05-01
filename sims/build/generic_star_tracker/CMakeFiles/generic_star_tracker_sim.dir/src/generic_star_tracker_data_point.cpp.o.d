@@ -1,5 +1,5 @@
 generic_star_tracker/CMakeFiles/generic_star_tracker_sim.dir/src/generic_star_tracker_data_point.cpp.o: \
- /home/jstar/Desktop/github-nos3/components/generic_star_tracker/sim/src/generic_star_tracker_data_point.cpp \
+ /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/generic_star_tracker/sim/src/generic_star_tracker_data_point.cpp \
  /usr/include/stdc-predef.h /usr/include/ItcLogger/Logger.hpp \
  /usr/include/c++/11/cstdarg \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
@@ -1088,6 +1088,6 @@ generic_star_tracker/CMakeFiles/generic_star_tracker_sim.dir/src/generic_star_tr
  /usr/include/ItcLogger/LibNotValid.hpp \
  /usr/include/ItcLogger/LoggerOutputStream.hpp \
  /usr/include/c++/11/iomanip \
- /home/jstar/Desktop/github-nos3/components/generic_star_tracker/sim/inc/generic_star_tracker_data_point.hpp \
- /home/jstar/Desktop/github-nos3/sims/sim_common/inc/sim_42data_point.hpp \
- /home/jstar/Desktop/github-nos3/sims/sim_common/inc/sim_i_data_point.hpp
+ /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/generic_star_tracker/sim/inc/generic_star_tracker_data_point.hpp \
+ /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/sims/sim_common/inc/sim_42data_point.hpp \
+ /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/sims/sim_common/inc/sim_i_data_point.hpp

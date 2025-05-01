@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/jstar/Desktop/github-nos3/components/cryptolib
+CMAKE_SOURCE_DIR = /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/cryptolib
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/jstar/Desktop/github-nos3/gsw/build
+CMAKE_BINARY_DIR = /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/gsw/build
 
 # Include any dependencies generated for this target.
 include support/CMakeFiles/standalone.dir/depend.make
@@ -70,18 +70,18 @@ include support/CMakeFiles/standalone.dir/progress.make
 include support/CMakeFiles/standalone.dir/flags.make
 
 support/CMakeFiles/standalone.dir/standalone/standalone.c.o: support/CMakeFiles/standalone.dir/flags.make
-support/CMakeFiles/standalone.dir/standalone/standalone.c.o: /home/jstar/Desktop/github-nos3/components/cryptolib/support/standalone/standalone.c
+support/CMakeFiles/standalone.dir/standalone/standalone.c.o: /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/cryptolib/support/standalone/standalone.c
 support/CMakeFiles/standalone.dir/standalone/standalone.c.o: support/CMakeFiles/standalone.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jstar/Desktop/github-nos3/gsw/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object support/CMakeFiles/standalone.dir/standalone/standalone.c.o"
-	cd /home/jstar/Desktop/github-nos3/gsw/build/support && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT support/CMakeFiles/standalone.dir/standalone/standalone.c.o -MF CMakeFiles/standalone.dir/standalone/standalone.c.o.d -o CMakeFiles/standalone.dir/standalone/standalone.c.o -c /home/jstar/Desktop/github-nos3/components/cryptolib/support/standalone/standalone.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/gsw/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object support/CMakeFiles/standalone.dir/standalone/standalone.c.o"
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/gsw/build/support && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT support/CMakeFiles/standalone.dir/standalone/standalone.c.o -MF CMakeFiles/standalone.dir/standalone/standalone.c.o.d -o CMakeFiles/standalone.dir/standalone/standalone.c.o -c /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/cryptolib/support/standalone/standalone.c
 
 support/CMakeFiles/standalone.dir/standalone/standalone.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/standalone.dir/standalone/standalone.c.i"
-	cd /home/jstar/Desktop/github-nos3/gsw/build/support && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jstar/Desktop/github-nos3/components/cryptolib/support/standalone/standalone.c > CMakeFiles/standalone.dir/standalone/standalone.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/gsw/build/support && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/cryptolib/support/standalone/standalone.c > CMakeFiles/standalone.dir/standalone/standalone.c.i
 
 support/CMakeFiles/standalone.dir/standalone/standalone.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/standalone.dir/standalone/standalone.c.s"
-	cd /home/jstar/Desktop/github-nos3/gsw/build/support && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jstar/Desktop/github-nos3/components/cryptolib/support/standalone/standalone.c -o CMakeFiles/standalone.dir/standalone/standalone.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/gsw/build/support && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/cryptolib/support/standalone/standalone.c -o CMakeFiles/standalone.dir/standalone/standalone.c.s
 
 # Object files for target standalone
 standalone_OBJECTS = \
@@ -94,18 +94,18 @@ support/standalone: support/CMakeFiles/standalone.dir/standalone/standalone.c.o
 support/standalone: support/CMakeFiles/standalone.dir/build.make
 support/standalone: src/libcrypto.so
 support/standalone: support/CMakeFiles/standalone.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/jstar/Desktop/github-nos3/gsw/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable standalone"
-	cd /home/jstar/Desktop/github-nos3/gsw/build/support && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/standalone.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/gsw/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable standalone"
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/gsw/build/support && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/standalone.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 support/CMakeFiles/standalone.dir/build: support/standalone
 .PHONY : support/CMakeFiles/standalone.dir/build
 
 support/CMakeFiles/standalone.dir/clean:
-	cd /home/jstar/Desktop/github-nos3/gsw/build/support && $(CMAKE_COMMAND) -P CMakeFiles/standalone.dir/cmake_clean.cmake
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/gsw/build/support && $(CMAKE_COMMAND) -P CMakeFiles/standalone.dir/cmake_clean.cmake
 .PHONY : support/CMakeFiles/standalone.dir/clean
 
 support/CMakeFiles/standalone.dir/depend:
-	cd /home/jstar/Desktop/github-nos3/gsw/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/jstar/Desktop/github-nos3/components/cryptolib /home/jstar/Desktop/github-nos3/components/cryptolib/support /home/jstar/Desktop/github-nos3/gsw/build /home/jstar/Desktop/github-nos3/gsw/build/support /home/jstar/Desktop/github-nos3/gsw/build/support/CMakeFiles/standalone.dir/DependInfo.cmake --color=$(COLOR)
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/gsw/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/cryptolib /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/cryptolib/support /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/gsw/build /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/gsw/build/support /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/gsw/build/support/CMakeFiles/standalone.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : support/CMakeFiles/standalone.dir/depend
 

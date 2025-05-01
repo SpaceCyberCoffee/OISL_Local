@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/jstar/Desktop/github-nos3/fsw/cfe
+CMAKE_SOURCE_DIR = /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/cfe
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1
+CMAKE_BINARY_DIR = /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -142,14 +142,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(CMAKE_COMMAND) -E cmake_progress_start /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/apps/sc//CMakeFiles/progress.marks
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles 0
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(CMAKE_COMMAND) -E cmake_progress_start /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/apps/sc//CMakeFiles/progress.marks
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/clean
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/clean
 .PHONY : clean
 
 # The main clean target
@@ -158,22 +158,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/preinstall
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/preinstall
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 apps/sc/CMakeFiles/sc.dir/rule:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/sc.dir/rule
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/sc.dir/rule
 .PHONY : apps/sc/CMakeFiles/sc.dir/rule
 
 # Convenience name for target.
@@ -182,12 +182,12 @@ sc: apps/sc/CMakeFiles/sc.dir/rule
 
 # fast build rule for target.
 sc/fast:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/sc.dir/build.make apps/sc/CMakeFiles/sc.dir/build
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/sc.dir/build.make apps/sc/CMakeFiles/sc.dir/build
 .PHONY : sc/fast
 
 # Convenience name for target.
 apps/sc/CMakeFiles/cpu1_sc_sc_ats1.dir/rule:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_ats1.dir/rule
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_ats1.dir/rule
 .PHONY : apps/sc/CMakeFiles/cpu1_sc_sc_ats1.dir/rule
 
 # Convenience name for target.
@@ -196,12 +196,12 @@ cpu1_sc_sc_ats1: apps/sc/CMakeFiles/cpu1_sc_sc_ats1.dir/rule
 
 # fast build rule for target.
 cpu1_sc_sc_ats1/fast:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_ats1.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_ats1.dir/build
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_ats1.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_ats1.dir/build
 .PHONY : cpu1_sc_sc_ats1/fast
 
 # Convenience name for target.
 apps/sc/CMakeFiles/cpu1_sc_sc_ats1_tbl.dir/rule:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_ats1_tbl.dir/rule
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_ats1_tbl.dir/rule
 .PHONY : apps/sc/CMakeFiles/cpu1_sc_sc_ats1_tbl.dir/rule
 
 # Convenience name for target.
@@ -210,12 +210,12 @@ cpu1_sc_sc_ats1_tbl: apps/sc/CMakeFiles/cpu1_sc_sc_ats1_tbl.dir/rule
 
 # fast build rule for target.
 cpu1_sc_sc_ats1_tbl/fast:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_ats1_tbl.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_ats1_tbl.dir/build
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_ats1_tbl.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_ats1_tbl.dir/build
 .PHONY : cpu1_sc_sc_ats1_tbl/fast
 
 # Convenience name for target.
 apps/sc/CMakeFiles/cpu1_sc_sc_rts001.dir/rule:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts001.dir/rule
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts001.dir/rule
 .PHONY : apps/sc/CMakeFiles/cpu1_sc_sc_rts001.dir/rule
 
 # Convenience name for target.
@@ -224,12 +224,12 @@ cpu1_sc_sc_rts001: apps/sc/CMakeFiles/cpu1_sc_sc_rts001.dir/rule
 
 # fast build rule for target.
 cpu1_sc_sc_rts001/fast:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts001.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts001.dir/build
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts001.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts001.dir/build
 .PHONY : cpu1_sc_sc_rts001/fast
 
 # Convenience name for target.
 apps/sc/CMakeFiles/cpu1_sc_sc_rts001_tbl.dir/rule:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts001_tbl.dir/rule
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts001_tbl.dir/rule
 .PHONY : apps/sc/CMakeFiles/cpu1_sc_sc_rts001_tbl.dir/rule
 
 # Convenience name for target.
@@ -238,12 +238,12 @@ cpu1_sc_sc_rts001_tbl: apps/sc/CMakeFiles/cpu1_sc_sc_rts001_tbl.dir/rule
 
 # fast build rule for target.
 cpu1_sc_sc_rts001_tbl/fast:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts001_tbl.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts001_tbl.dir/build
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts001_tbl.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts001_tbl.dir/build
 .PHONY : cpu1_sc_sc_rts001_tbl/fast
 
 # Convenience name for target.
 apps/sc/CMakeFiles/cpu1_sc_sc_rts002.dir/rule:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts002.dir/rule
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts002.dir/rule
 .PHONY : apps/sc/CMakeFiles/cpu1_sc_sc_rts002.dir/rule
 
 # Convenience name for target.
@@ -252,12 +252,12 @@ cpu1_sc_sc_rts002: apps/sc/CMakeFiles/cpu1_sc_sc_rts002.dir/rule
 
 # fast build rule for target.
 cpu1_sc_sc_rts002/fast:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts002.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts002.dir/build
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts002.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts002.dir/build
 .PHONY : cpu1_sc_sc_rts002/fast
 
 # Convenience name for target.
 apps/sc/CMakeFiles/cpu1_sc_sc_rts002_tbl.dir/rule:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts002_tbl.dir/rule
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts002_tbl.dir/rule
 .PHONY : apps/sc/CMakeFiles/cpu1_sc_sc_rts002_tbl.dir/rule
 
 # Convenience name for target.
@@ -266,12 +266,12 @@ cpu1_sc_sc_rts002_tbl: apps/sc/CMakeFiles/cpu1_sc_sc_rts002_tbl.dir/rule
 
 # fast build rule for target.
 cpu1_sc_sc_rts002_tbl/fast:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts002_tbl.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts002_tbl.dir/build
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts002_tbl.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts002_tbl.dir/build
 .PHONY : cpu1_sc_sc_rts002_tbl/fast
 
 # Convenience name for target.
 apps/sc/CMakeFiles/cpu1_sc_sc_rts003.dir/rule:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts003.dir/rule
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts003.dir/rule
 .PHONY : apps/sc/CMakeFiles/cpu1_sc_sc_rts003.dir/rule
 
 # Convenience name for target.
@@ -280,12 +280,12 @@ cpu1_sc_sc_rts003: apps/sc/CMakeFiles/cpu1_sc_sc_rts003.dir/rule
 
 # fast build rule for target.
 cpu1_sc_sc_rts003/fast:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts003.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts003.dir/build
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts003.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts003.dir/build
 .PHONY : cpu1_sc_sc_rts003/fast
 
 # Convenience name for target.
 apps/sc/CMakeFiles/cpu1_sc_sc_rts003_tbl.dir/rule:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts003_tbl.dir/rule
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts003_tbl.dir/rule
 .PHONY : apps/sc/CMakeFiles/cpu1_sc_sc_rts003_tbl.dir/rule
 
 # Convenience name for target.
@@ -294,12 +294,12 @@ cpu1_sc_sc_rts003_tbl: apps/sc/CMakeFiles/cpu1_sc_sc_rts003_tbl.dir/rule
 
 # fast build rule for target.
 cpu1_sc_sc_rts003_tbl/fast:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts003_tbl.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts003_tbl.dir/build
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts003_tbl.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts003_tbl.dir/build
 .PHONY : cpu1_sc_sc_rts003_tbl/fast
 
 # Convenience name for target.
 apps/sc/CMakeFiles/cpu1_sc_sc_rts004.dir/rule:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts004.dir/rule
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts004.dir/rule
 .PHONY : apps/sc/CMakeFiles/cpu1_sc_sc_rts004.dir/rule
 
 # Convenience name for target.
@@ -308,12 +308,12 @@ cpu1_sc_sc_rts004: apps/sc/CMakeFiles/cpu1_sc_sc_rts004.dir/rule
 
 # fast build rule for target.
 cpu1_sc_sc_rts004/fast:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts004.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts004.dir/build
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts004.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts004.dir/build
 .PHONY : cpu1_sc_sc_rts004/fast
 
 # Convenience name for target.
 apps/sc/CMakeFiles/cpu1_sc_sc_rts004_tbl.dir/rule:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts004_tbl.dir/rule
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts004_tbl.dir/rule
 .PHONY : apps/sc/CMakeFiles/cpu1_sc_sc_rts004_tbl.dir/rule
 
 # Convenience name for target.
@@ -322,12 +322,12 @@ cpu1_sc_sc_rts004_tbl: apps/sc/CMakeFiles/cpu1_sc_sc_rts004_tbl.dir/rule
 
 # fast build rule for target.
 cpu1_sc_sc_rts004_tbl/fast:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts004_tbl.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts004_tbl.dir/build
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts004_tbl.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts004_tbl.dir/build
 .PHONY : cpu1_sc_sc_rts004_tbl/fast
 
 # Convenience name for target.
 apps/sc/CMakeFiles/cpu1_sc_sc_rts005.dir/rule:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts005.dir/rule
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts005.dir/rule
 .PHONY : apps/sc/CMakeFiles/cpu1_sc_sc_rts005.dir/rule
 
 # Convenience name for target.
@@ -336,12 +336,12 @@ cpu1_sc_sc_rts005: apps/sc/CMakeFiles/cpu1_sc_sc_rts005.dir/rule
 
 # fast build rule for target.
 cpu1_sc_sc_rts005/fast:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts005.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts005.dir/build
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts005.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts005.dir/build
 .PHONY : cpu1_sc_sc_rts005/fast
 
 # Convenience name for target.
 apps/sc/CMakeFiles/cpu1_sc_sc_rts005_tbl.dir/rule:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts005_tbl.dir/rule
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts005_tbl.dir/rule
 .PHONY : apps/sc/CMakeFiles/cpu1_sc_sc_rts005_tbl.dir/rule
 
 # Convenience name for target.
@@ -350,12 +350,12 @@ cpu1_sc_sc_rts005_tbl: apps/sc/CMakeFiles/cpu1_sc_sc_rts005_tbl.dir/rule
 
 # fast build rule for target.
 cpu1_sc_sc_rts005_tbl/fast:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts005_tbl.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts005_tbl.dir/build
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts005_tbl.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts005_tbl.dir/build
 .PHONY : cpu1_sc_sc_rts005_tbl/fast
 
 # Convenience name for target.
 apps/sc/CMakeFiles/cpu1_sc_sc_rts006.dir/rule:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts006.dir/rule
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts006.dir/rule
 .PHONY : apps/sc/CMakeFiles/cpu1_sc_sc_rts006.dir/rule
 
 # Convenience name for target.
@@ -364,12 +364,12 @@ cpu1_sc_sc_rts006: apps/sc/CMakeFiles/cpu1_sc_sc_rts006.dir/rule
 
 # fast build rule for target.
 cpu1_sc_sc_rts006/fast:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts006.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts006.dir/build
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts006.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts006.dir/build
 .PHONY : cpu1_sc_sc_rts006/fast
 
 # Convenience name for target.
 apps/sc/CMakeFiles/cpu1_sc_sc_rts006_tbl.dir/rule:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts006_tbl.dir/rule
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts006_tbl.dir/rule
 .PHONY : apps/sc/CMakeFiles/cpu1_sc_sc_rts006_tbl.dir/rule
 
 # Convenience name for target.
@@ -378,12 +378,12 @@ cpu1_sc_sc_rts006_tbl: apps/sc/CMakeFiles/cpu1_sc_sc_rts006_tbl.dir/rule
 
 # fast build rule for target.
 cpu1_sc_sc_rts006_tbl/fast:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts006_tbl.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts006_tbl.dir/build
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts006_tbl.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts006_tbl.dir/build
 .PHONY : cpu1_sc_sc_rts006_tbl/fast
 
 # Convenience name for target.
 apps/sc/CMakeFiles/cpu1_sc_sc_rts007.dir/rule:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts007.dir/rule
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts007.dir/rule
 .PHONY : apps/sc/CMakeFiles/cpu1_sc_sc_rts007.dir/rule
 
 # Convenience name for target.
@@ -392,12 +392,12 @@ cpu1_sc_sc_rts007: apps/sc/CMakeFiles/cpu1_sc_sc_rts007.dir/rule
 
 # fast build rule for target.
 cpu1_sc_sc_rts007/fast:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts007.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts007.dir/build
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts007.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts007.dir/build
 .PHONY : cpu1_sc_sc_rts007/fast
 
 # Convenience name for target.
 apps/sc/CMakeFiles/cpu1_sc_sc_rts007_tbl.dir/rule:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts007_tbl.dir/rule
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts007_tbl.dir/rule
 .PHONY : apps/sc/CMakeFiles/cpu1_sc_sc_rts007_tbl.dir/rule
 
 # Convenience name for target.
@@ -406,12 +406,12 @@ cpu1_sc_sc_rts007_tbl: apps/sc/CMakeFiles/cpu1_sc_sc_rts007_tbl.dir/rule
 
 # fast build rule for target.
 cpu1_sc_sc_rts007_tbl/fast:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts007_tbl.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts007_tbl.dir/build
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts007_tbl.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts007_tbl.dir/build
 .PHONY : cpu1_sc_sc_rts007_tbl/fast
 
 # Convenience name for target.
 apps/sc/CMakeFiles/cpu1_sc_sc_rts008.dir/rule:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts008.dir/rule
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts008.dir/rule
 .PHONY : apps/sc/CMakeFiles/cpu1_sc_sc_rts008.dir/rule
 
 # Convenience name for target.
@@ -420,12 +420,12 @@ cpu1_sc_sc_rts008: apps/sc/CMakeFiles/cpu1_sc_sc_rts008.dir/rule
 
 # fast build rule for target.
 cpu1_sc_sc_rts008/fast:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts008.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts008.dir/build
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts008.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts008.dir/build
 .PHONY : cpu1_sc_sc_rts008/fast
 
 # Convenience name for target.
 apps/sc/CMakeFiles/cpu1_sc_sc_rts008_tbl.dir/rule:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts008_tbl.dir/rule
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts008_tbl.dir/rule
 .PHONY : apps/sc/CMakeFiles/cpu1_sc_sc_rts008_tbl.dir/rule
 
 # Convenience name for target.
@@ -434,12 +434,12 @@ cpu1_sc_sc_rts008_tbl: apps/sc/CMakeFiles/cpu1_sc_sc_rts008_tbl.dir/rule
 
 # fast build rule for target.
 cpu1_sc_sc_rts008_tbl/fast:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts008_tbl.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts008_tbl.dir/build
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts008_tbl.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts008_tbl.dir/build
 .PHONY : cpu1_sc_sc_rts008_tbl/fast
 
 # Convenience name for target.
 apps/sc/CMakeFiles/cpu1_sc_sc_rts009.dir/rule:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts009.dir/rule
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts009.dir/rule
 .PHONY : apps/sc/CMakeFiles/cpu1_sc_sc_rts009.dir/rule
 
 # Convenience name for target.
@@ -448,12 +448,12 @@ cpu1_sc_sc_rts009: apps/sc/CMakeFiles/cpu1_sc_sc_rts009.dir/rule
 
 # fast build rule for target.
 cpu1_sc_sc_rts009/fast:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts009.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts009.dir/build
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts009.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts009.dir/build
 .PHONY : cpu1_sc_sc_rts009/fast
 
 # Convenience name for target.
 apps/sc/CMakeFiles/cpu1_sc_sc_rts009_tbl.dir/rule:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts009_tbl.dir/rule
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts009_tbl.dir/rule
 .PHONY : apps/sc/CMakeFiles/cpu1_sc_sc_rts009_tbl.dir/rule
 
 # Convenience name for target.
@@ -462,12 +462,12 @@ cpu1_sc_sc_rts009_tbl: apps/sc/CMakeFiles/cpu1_sc_sc_rts009_tbl.dir/rule
 
 # fast build rule for target.
 cpu1_sc_sc_rts009_tbl/fast:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts009_tbl.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts009_tbl.dir/build
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts009_tbl.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts009_tbl.dir/build
 .PHONY : cpu1_sc_sc_rts009_tbl/fast
 
 # Convenience name for target.
 apps/sc/CMakeFiles/cpu1_sc_sc_rts010.dir/rule:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts010.dir/rule
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts010.dir/rule
 .PHONY : apps/sc/CMakeFiles/cpu1_sc_sc_rts010.dir/rule
 
 # Convenience name for target.
@@ -476,12 +476,12 @@ cpu1_sc_sc_rts010: apps/sc/CMakeFiles/cpu1_sc_sc_rts010.dir/rule
 
 # fast build rule for target.
 cpu1_sc_sc_rts010/fast:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts010.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts010.dir/build
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts010.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts010.dir/build
 .PHONY : cpu1_sc_sc_rts010/fast
 
 # Convenience name for target.
 apps/sc/CMakeFiles/cpu1_sc_sc_rts010_tbl.dir/rule:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts010_tbl.dir/rule
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts010_tbl.dir/rule
 .PHONY : apps/sc/CMakeFiles/cpu1_sc_sc_rts010_tbl.dir/rule
 
 # Convenience name for target.
@@ -490,12 +490,12 @@ cpu1_sc_sc_rts010_tbl: apps/sc/CMakeFiles/cpu1_sc_sc_rts010_tbl.dir/rule
 
 # fast build rule for target.
 cpu1_sc_sc_rts010_tbl/fast:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts010_tbl.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts010_tbl.dir/build
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts010_tbl.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts010_tbl.dir/build
 .PHONY : cpu1_sc_sc_rts010_tbl/fast
 
 # Convenience name for target.
 apps/sc/CMakeFiles/cpu1_sc_sc_rts011.dir/rule:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts011.dir/rule
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts011.dir/rule
 .PHONY : apps/sc/CMakeFiles/cpu1_sc_sc_rts011.dir/rule
 
 # Convenience name for target.
@@ -504,12 +504,12 @@ cpu1_sc_sc_rts011: apps/sc/CMakeFiles/cpu1_sc_sc_rts011.dir/rule
 
 # fast build rule for target.
 cpu1_sc_sc_rts011/fast:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts011.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts011.dir/build
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts011.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts011.dir/build
 .PHONY : cpu1_sc_sc_rts011/fast
 
 # Convenience name for target.
 apps/sc/CMakeFiles/cpu1_sc_sc_rts011_tbl.dir/rule:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts011_tbl.dir/rule
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts011_tbl.dir/rule
 .PHONY : apps/sc/CMakeFiles/cpu1_sc_sc_rts011_tbl.dir/rule
 
 # Convenience name for target.
@@ -518,12 +518,12 @@ cpu1_sc_sc_rts011_tbl: apps/sc/CMakeFiles/cpu1_sc_sc_rts011_tbl.dir/rule
 
 # fast build rule for target.
 cpu1_sc_sc_rts011_tbl/fast:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts011_tbl.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts011_tbl.dir/build
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts011_tbl.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts011_tbl.dir/build
 .PHONY : cpu1_sc_sc_rts011_tbl/fast
 
 # Convenience name for target.
 apps/sc/CMakeFiles/cpu1_sc_sc_rts012.dir/rule:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts012.dir/rule
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts012.dir/rule
 .PHONY : apps/sc/CMakeFiles/cpu1_sc_sc_rts012.dir/rule
 
 # Convenience name for target.
@@ -532,12 +532,12 @@ cpu1_sc_sc_rts012: apps/sc/CMakeFiles/cpu1_sc_sc_rts012.dir/rule
 
 # fast build rule for target.
 cpu1_sc_sc_rts012/fast:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts012.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts012.dir/build
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts012.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts012.dir/build
 .PHONY : cpu1_sc_sc_rts012/fast
 
 # Convenience name for target.
 apps/sc/CMakeFiles/cpu1_sc_sc_rts012_tbl.dir/rule:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts012_tbl.dir/rule
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts012_tbl.dir/rule
 .PHONY : apps/sc/CMakeFiles/cpu1_sc_sc_rts012_tbl.dir/rule
 
 # Convenience name for target.
@@ -546,12 +546,12 @@ cpu1_sc_sc_rts012_tbl: apps/sc/CMakeFiles/cpu1_sc_sc_rts012_tbl.dir/rule
 
 # fast build rule for target.
 cpu1_sc_sc_rts012_tbl/fast:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts012_tbl.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts012_tbl.dir/build
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts012_tbl.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts012_tbl.dir/build
 .PHONY : cpu1_sc_sc_rts012_tbl/fast
 
 # Convenience name for target.
 apps/sc/CMakeFiles/cpu1_sc_sc_rts013.dir/rule:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts013.dir/rule
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts013.dir/rule
 .PHONY : apps/sc/CMakeFiles/cpu1_sc_sc_rts013.dir/rule
 
 # Convenience name for target.
@@ -560,12 +560,12 @@ cpu1_sc_sc_rts013: apps/sc/CMakeFiles/cpu1_sc_sc_rts013.dir/rule
 
 # fast build rule for target.
 cpu1_sc_sc_rts013/fast:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts013.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts013.dir/build
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts013.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts013.dir/build
 .PHONY : cpu1_sc_sc_rts013/fast
 
 # Convenience name for target.
 apps/sc/CMakeFiles/cpu1_sc_sc_rts013_tbl.dir/rule:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts013_tbl.dir/rule
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts013_tbl.dir/rule
 .PHONY : apps/sc/CMakeFiles/cpu1_sc_sc_rts013_tbl.dir/rule
 
 # Convenience name for target.
@@ -574,12 +574,12 @@ cpu1_sc_sc_rts013_tbl: apps/sc/CMakeFiles/cpu1_sc_sc_rts013_tbl.dir/rule
 
 # fast build rule for target.
 cpu1_sc_sc_rts013_tbl/fast:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts013_tbl.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts013_tbl.dir/build
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts013_tbl.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts013_tbl.dir/build
 .PHONY : cpu1_sc_sc_rts013_tbl/fast
 
 # Convenience name for target.
 apps/sc/CMakeFiles/cpu1_sc_sc_rts014.dir/rule:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts014.dir/rule
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts014.dir/rule
 .PHONY : apps/sc/CMakeFiles/cpu1_sc_sc_rts014.dir/rule
 
 # Convenience name for target.
@@ -588,12 +588,12 @@ cpu1_sc_sc_rts014: apps/sc/CMakeFiles/cpu1_sc_sc_rts014.dir/rule
 
 # fast build rule for target.
 cpu1_sc_sc_rts014/fast:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts014.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts014.dir/build
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts014.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts014.dir/build
 .PHONY : cpu1_sc_sc_rts014/fast
 
 # Convenience name for target.
 apps/sc/CMakeFiles/cpu1_sc_sc_rts014_tbl.dir/rule:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts014_tbl.dir/rule
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts014_tbl.dir/rule
 .PHONY : apps/sc/CMakeFiles/cpu1_sc_sc_rts014_tbl.dir/rule
 
 # Convenience name for target.
@@ -602,12 +602,12 @@ cpu1_sc_sc_rts014_tbl: apps/sc/CMakeFiles/cpu1_sc_sc_rts014_tbl.dir/rule
 
 # fast build rule for target.
 cpu1_sc_sc_rts014_tbl/fast:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts014_tbl.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts014_tbl.dir/build
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts014_tbl.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts014_tbl.dir/build
 .PHONY : cpu1_sc_sc_rts014_tbl/fast
 
 # Convenience name for target.
 apps/sc/CMakeFiles/cpu1_sc_sc_rts015.dir/rule:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts015.dir/rule
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts015.dir/rule
 .PHONY : apps/sc/CMakeFiles/cpu1_sc_sc_rts015.dir/rule
 
 # Convenience name for target.
@@ -616,12 +616,12 @@ cpu1_sc_sc_rts015: apps/sc/CMakeFiles/cpu1_sc_sc_rts015.dir/rule
 
 # fast build rule for target.
 cpu1_sc_sc_rts015/fast:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts015.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts015.dir/build
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts015.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts015.dir/build
 .PHONY : cpu1_sc_sc_rts015/fast
 
 # Convenience name for target.
 apps/sc/CMakeFiles/cpu1_sc_sc_rts015_tbl.dir/rule:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts015_tbl.dir/rule
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts015_tbl.dir/rule
 .PHONY : apps/sc/CMakeFiles/cpu1_sc_sc_rts015_tbl.dir/rule
 
 # Convenience name for target.
@@ -630,12 +630,12 @@ cpu1_sc_sc_rts015_tbl: apps/sc/CMakeFiles/cpu1_sc_sc_rts015_tbl.dir/rule
 
 # fast build rule for target.
 cpu1_sc_sc_rts015_tbl/fast:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts015_tbl.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts015_tbl.dir/build
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts015_tbl.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts015_tbl.dir/build
 .PHONY : cpu1_sc_sc_rts015_tbl/fast
 
 # Convenience name for target.
 apps/sc/CMakeFiles/cpu1_sc_sc_rts016.dir/rule:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts016.dir/rule
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts016.dir/rule
 .PHONY : apps/sc/CMakeFiles/cpu1_sc_sc_rts016.dir/rule
 
 # Convenience name for target.
@@ -644,12 +644,12 @@ cpu1_sc_sc_rts016: apps/sc/CMakeFiles/cpu1_sc_sc_rts016.dir/rule
 
 # fast build rule for target.
 cpu1_sc_sc_rts016/fast:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts016.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts016.dir/build
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts016.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts016.dir/build
 .PHONY : cpu1_sc_sc_rts016/fast
 
 # Convenience name for target.
 apps/sc/CMakeFiles/cpu1_sc_sc_rts016_tbl.dir/rule:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts016_tbl.dir/rule
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts016_tbl.dir/rule
 .PHONY : apps/sc/CMakeFiles/cpu1_sc_sc_rts016_tbl.dir/rule
 
 # Convenience name for target.
@@ -658,12 +658,12 @@ cpu1_sc_sc_rts016_tbl: apps/sc/CMakeFiles/cpu1_sc_sc_rts016_tbl.dir/rule
 
 # fast build rule for target.
 cpu1_sc_sc_rts016_tbl/fast:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts016_tbl.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts016_tbl.dir/build
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts016_tbl.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts016_tbl.dir/build
 .PHONY : cpu1_sc_sc_rts016_tbl/fast
 
 # Convenience name for target.
 apps/sc/CMakeFiles/cpu1_sc_sc_rts017.dir/rule:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts017.dir/rule
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts017.dir/rule
 .PHONY : apps/sc/CMakeFiles/cpu1_sc_sc_rts017.dir/rule
 
 # Convenience name for target.
@@ -672,12 +672,12 @@ cpu1_sc_sc_rts017: apps/sc/CMakeFiles/cpu1_sc_sc_rts017.dir/rule
 
 # fast build rule for target.
 cpu1_sc_sc_rts017/fast:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts017.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts017.dir/build
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts017.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts017.dir/build
 .PHONY : cpu1_sc_sc_rts017/fast
 
 # Convenience name for target.
 apps/sc/CMakeFiles/cpu1_sc_sc_rts017_tbl.dir/rule:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts017_tbl.dir/rule
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts017_tbl.dir/rule
 .PHONY : apps/sc/CMakeFiles/cpu1_sc_sc_rts017_tbl.dir/rule
 
 # Convenience name for target.
@@ -686,12 +686,12 @@ cpu1_sc_sc_rts017_tbl: apps/sc/CMakeFiles/cpu1_sc_sc_rts017_tbl.dir/rule
 
 # fast build rule for target.
 cpu1_sc_sc_rts017_tbl/fast:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts017_tbl.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts017_tbl.dir/build
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts017_tbl.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts017_tbl.dir/build
 .PHONY : cpu1_sc_sc_rts017_tbl/fast
 
 # Convenience name for target.
 apps/sc/CMakeFiles/cpu1_sc_sc_rts018.dir/rule:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts018.dir/rule
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts018.dir/rule
 .PHONY : apps/sc/CMakeFiles/cpu1_sc_sc_rts018.dir/rule
 
 # Convenience name for target.
@@ -700,12 +700,12 @@ cpu1_sc_sc_rts018: apps/sc/CMakeFiles/cpu1_sc_sc_rts018.dir/rule
 
 # fast build rule for target.
 cpu1_sc_sc_rts018/fast:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts018.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts018.dir/build
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts018.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts018.dir/build
 .PHONY : cpu1_sc_sc_rts018/fast
 
 # Convenience name for target.
 apps/sc/CMakeFiles/cpu1_sc_sc_rts018_tbl.dir/rule:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts018_tbl.dir/rule
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts018_tbl.dir/rule
 .PHONY : apps/sc/CMakeFiles/cpu1_sc_sc_rts018_tbl.dir/rule
 
 # Convenience name for target.
@@ -714,12 +714,12 @@ cpu1_sc_sc_rts018_tbl: apps/sc/CMakeFiles/cpu1_sc_sc_rts018_tbl.dir/rule
 
 # fast build rule for target.
 cpu1_sc_sc_rts018_tbl/fast:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts018_tbl.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts018_tbl.dir/build
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts018_tbl.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts018_tbl.dir/build
 .PHONY : cpu1_sc_sc_rts018_tbl/fast
 
 # Convenience name for target.
 apps/sc/CMakeFiles/cpu1_sc_sc_rts019.dir/rule:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts019.dir/rule
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts019.dir/rule
 .PHONY : apps/sc/CMakeFiles/cpu1_sc_sc_rts019.dir/rule
 
 # Convenience name for target.
@@ -728,12 +728,12 @@ cpu1_sc_sc_rts019: apps/sc/CMakeFiles/cpu1_sc_sc_rts019.dir/rule
 
 # fast build rule for target.
 cpu1_sc_sc_rts019/fast:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts019.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts019.dir/build
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts019.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts019.dir/build
 .PHONY : cpu1_sc_sc_rts019/fast
 
 # Convenience name for target.
 apps/sc/CMakeFiles/cpu1_sc_sc_rts019_tbl.dir/rule:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts019_tbl.dir/rule
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts019_tbl.dir/rule
 .PHONY : apps/sc/CMakeFiles/cpu1_sc_sc_rts019_tbl.dir/rule
 
 # Convenience name for target.
@@ -742,12 +742,12 @@ cpu1_sc_sc_rts019_tbl: apps/sc/CMakeFiles/cpu1_sc_sc_rts019_tbl.dir/rule
 
 # fast build rule for target.
 cpu1_sc_sc_rts019_tbl/fast:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts019_tbl.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts019_tbl.dir/build
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts019_tbl.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts019_tbl.dir/build
 .PHONY : cpu1_sc_sc_rts019_tbl/fast
 
 # Convenience name for target.
 apps/sc/CMakeFiles/cpu1_sc_sc_rts020.dir/rule:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts020.dir/rule
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts020.dir/rule
 .PHONY : apps/sc/CMakeFiles/cpu1_sc_sc_rts020.dir/rule
 
 # Convenience name for target.
@@ -756,12 +756,12 @@ cpu1_sc_sc_rts020: apps/sc/CMakeFiles/cpu1_sc_sc_rts020.dir/rule
 
 # fast build rule for target.
 cpu1_sc_sc_rts020/fast:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts020.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts020.dir/build
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts020.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts020.dir/build
 .PHONY : cpu1_sc_sc_rts020/fast
 
 # Convenience name for target.
 apps/sc/CMakeFiles/cpu1_sc_sc_rts020_tbl.dir/rule:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts020_tbl.dir/rule
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts020_tbl.dir/rule
 .PHONY : apps/sc/CMakeFiles/cpu1_sc_sc_rts020_tbl.dir/rule
 
 # Convenience name for target.
@@ -770,12 +770,12 @@ cpu1_sc_sc_rts020_tbl: apps/sc/CMakeFiles/cpu1_sc_sc_rts020_tbl.dir/rule
 
 # fast build rule for target.
 cpu1_sc_sc_rts020_tbl/fast:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts020_tbl.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts020_tbl.dir/build
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts020_tbl.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts020_tbl.dir/build
 .PHONY : cpu1_sc_sc_rts020_tbl/fast
 
 # Convenience name for target.
 apps/sc/CMakeFiles/cpu1_sc_sc_rts021.dir/rule:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts021.dir/rule
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts021.dir/rule
 .PHONY : apps/sc/CMakeFiles/cpu1_sc_sc_rts021.dir/rule
 
 # Convenience name for target.
@@ -784,12 +784,12 @@ cpu1_sc_sc_rts021: apps/sc/CMakeFiles/cpu1_sc_sc_rts021.dir/rule
 
 # fast build rule for target.
 cpu1_sc_sc_rts021/fast:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts021.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts021.dir/build
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts021.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts021.dir/build
 .PHONY : cpu1_sc_sc_rts021/fast
 
 # Convenience name for target.
 apps/sc/CMakeFiles/cpu1_sc_sc_rts021_tbl.dir/rule:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts021_tbl.dir/rule
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts021_tbl.dir/rule
 .PHONY : apps/sc/CMakeFiles/cpu1_sc_sc_rts021_tbl.dir/rule
 
 # Convenience name for target.
@@ -798,12 +798,12 @@ cpu1_sc_sc_rts021_tbl: apps/sc/CMakeFiles/cpu1_sc_sc_rts021_tbl.dir/rule
 
 # fast build rule for target.
 cpu1_sc_sc_rts021_tbl/fast:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts021_tbl.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts021_tbl.dir/build
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts021_tbl.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts021_tbl.dir/build
 .PHONY : cpu1_sc_sc_rts021_tbl/fast
 
 # Convenience name for target.
 apps/sc/CMakeFiles/cpu1_sc_sc_rts022.dir/rule:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts022.dir/rule
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts022.dir/rule
 .PHONY : apps/sc/CMakeFiles/cpu1_sc_sc_rts022.dir/rule
 
 # Convenience name for target.
@@ -812,12 +812,12 @@ cpu1_sc_sc_rts022: apps/sc/CMakeFiles/cpu1_sc_sc_rts022.dir/rule
 
 # fast build rule for target.
 cpu1_sc_sc_rts022/fast:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts022.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts022.dir/build
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts022.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts022.dir/build
 .PHONY : cpu1_sc_sc_rts022/fast
 
 # Convenience name for target.
 apps/sc/CMakeFiles/cpu1_sc_sc_rts022_tbl.dir/rule:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts022_tbl.dir/rule
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts022_tbl.dir/rule
 .PHONY : apps/sc/CMakeFiles/cpu1_sc_sc_rts022_tbl.dir/rule
 
 # Convenience name for target.
@@ -826,12 +826,12 @@ cpu1_sc_sc_rts022_tbl: apps/sc/CMakeFiles/cpu1_sc_sc_rts022_tbl.dir/rule
 
 # fast build rule for target.
 cpu1_sc_sc_rts022_tbl/fast:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts022_tbl.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts022_tbl.dir/build
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts022_tbl.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts022_tbl.dir/build
 .PHONY : cpu1_sc_sc_rts022_tbl/fast
 
 # Convenience name for target.
 apps/sc/CMakeFiles/cpu1_sc_sc_rts023.dir/rule:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts023.dir/rule
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts023.dir/rule
 .PHONY : apps/sc/CMakeFiles/cpu1_sc_sc_rts023.dir/rule
 
 # Convenience name for target.
@@ -840,12 +840,12 @@ cpu1_sc_sc_rts023: apps/sc/CMakeFiles/cpu1_sc_sc_rts023.dir/rule
 
 # fast build rule for target.
 cpu1_sc_sc_rts023/fast:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts023.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts023.dir/build
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts023.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts023.dir/build
 .PHONY : cpu1_sc_sc_rts023/fast
 
 # Convenience name for target.
 apps/sc/CMakeFiles/cpu1_sc_sc_rts023_tbl.dir/rule:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts023_tbl.dir/rule
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts023_tbl.dir/rule
 .PHONY : apps/sc/CMakeFiles/cpu1_sc_sc_rts023_tbl.dir/rule
 
 # Convenience name for target.
@@ -854,12 +854,12 @@ cpu1_sc_sc_rts023_tbl: apps/sc/CMakeFiles/cpu1_sc_sc_rts023_tbl.dir/rule
 
 # fast build rule for target.
 cpu1_sc_sc_rts023_tbl/fast:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts023_tbl.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts023_tbl.dir/build
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts023_tbl.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts023_tbl.dir/build
 .PHONY : cpu1_sc_sc_rts023_tbl/fast
 
 # Convenience name for target.
 apps/sc/CMakeFiles/cpu1_sc_sc_rts024.dir/rule:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts024.dir/rule
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts024.dir/rule
 .PHONY : apps/sc/CMakeFiles/cpu1_sc_sc_rts024.dir/rule
 
 # Convenience name for target.
@@ -868,12 +868,12 @@ cpu1_sc_sc_rts024: apps/sc/CMakeFiles/cpu1_sc_sc_rts024.dir/rule
 
 # fast build rule for target.
 cpu1_sc_sc_rts024/fast:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts024.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts024.dir/build
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts024.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts024.dir/build
 .PHONY : cpu1_sc_sc_rts024/fast
 
 # Convenience name for target.
 apps/sc/CMakeFiles/cpu1_sc_sc_rts024_tbl.dir/rule:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts024_tbl.dir/rule
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts024_tbl.dir/rule
 .PHONY : apps/sc/CMakeFiles/cpu1_sc_sc_rts024_tbl.dir/rule
 
 # Convenience name for target.
@@ -882,12 +882,12 @@ cpu1_sc_sc_rts024_tbl: apps/sc/CMakeFiles/cpu1_sc_sc_rts024_tbl.dir/rule
 
 # fast build rule for target.
 cpu1_sc_sc_rts024_tbl/fast:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts024_tbl.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts024_tbl.dir/build
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts024_tbl.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts024_tbl.dir/build
 .PHONY : cpu1_sc_sc_rts024_tbl/fast
 
 # Convenience name for target.
 apps/sc/CMakeFiles/cpu1_sc_sc_rts025.dir/rule:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts025.dir/rule
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts025.dir/rule
 .PHONY : apps/sc/CMakeFiles/cpu1_sc_sc_rts025.dir/rule
 
 # Convenience name for target.
@@ -896,12 +896,12 @@ cpu1_sc_sc_rts025: apps/sc/CMakeFiles/cpu1_sc_sc_rts025.dir/rule
 
 # fast build rule for target.
 cpu1_sc_sc_rts025/fast:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts025.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts025.dir/build
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts025.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts025.dir/build
 .PHONY : cpu1_sc_sc_rts025/fast
 
 # Convenience name for target.
 apps/sc/CMakeFiles/cpu1_sc_sc_rts025_tbl.dir/rule:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts025_tbl.dir/rule
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts025_tbl.dir/rule
 .PHONY : apps/sc/CMakeFiles/cpu1_sc_sc_rts025_tbl.dir/rule
 
 # Convenience name for target.
@@ -910,12 +910,12 @@ cpu1_sc_sc_rts025_tbl: apps/sc/CMakeFiles/cpu1_sc_sc_rts025_tbl.dir/rule
 
 # fast build rule for target.
 cpu1_sc_sc_rts025_tbl/fast:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts025_tbl.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts025_tbl.dir/build
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts025_tbl.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts025_tbl.dir/build
 .PHONY : cpu1_sc_sc_rts025_tbl/fast
 
 # Convenience name for target.
 apps/sc/CMakeFiles/cpu1_sc_sc_rts026.dir/rule:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts026.dir/rule
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts026.dir/rule
 .PHONY : apps/sc/CMakeFiles/cpu1_sc_sc_rts026.dir/rule
 
 # Convenience name for target.
@@ -924,12 +924,12 @@ cpu1_sc_sc_rts026: apps/sc/CMakeFiles/cpu1_sc_sc_rts026.dir/rule
 
 # fast build rule for target.
 cpu1_sc_sc_rts026/fast:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts026.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts026.dir/build
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts026.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts026.dir/build
 .PHONY : cpu1_sc_sc_rts026/fast
 
 # Convenience name for target.
 apps/sc/CMakeFiles/cpu1_sc_sc_rts026_tbl.dir/rule:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts026_tbl.dir/rule
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts026_tbl.dir/rule
 .PHONY : apps/sc/CMakeFiles/cpu1_sc_sc_rts026_tbl.dir/rule
 
 # Convenience name for target.
@@ -938,12 +938,12 @@ cpu1_sc_sc_rts026_tbl: apps/sc/CMakeFiles/cpu1_sc_sc_rts026_tbl.dir/rule
 
 # fast build rule for target.
 cpu1_sc_sc_rts026_tbl/fast:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts026_tbl.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts026_tbl.dir/build
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts026_tbl.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts026_tbl.dir/build
 .PHONY : cpu1_sc_sc_rts026_tbl/fast
 
 # Convenience name for target.
 apps/sc/CMakeFiles/cpu1_sc_sc_rts027.dir/rule:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts027.dir/rule
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts027.dir/rule
 .PHONY : apps/sc/CMakeFiles/cpu1_sc_sc_rts027.dir/rule
 
 # Convenience name for target.
@@ -952,12 +952,12 @@ cpu1_sc_sc_rts027: apps/sc/CMakeFiles/cpu1_sc_sc_rts027.dir/rule
 
 # fast build rule for target.
 cpu1_sc_sc_rts027/fast:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts027.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts027.dir/build
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts027.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts027.dir/build
 .PHONY : cpu1_sc_sc_rts027/fast
 
 # Convenience name for target.
 apps/sc/CMakeFiles/cpu1_sc_sc_rts027_tbl.dir/rule:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts027_tbl.dir/rule
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts027_tbl.dir/rule
 .PHONY : apps/sc/CMakeFiles/cpu1_sc_sc_rts027_tbl.dir/rule
 
 # Convenience name for target.
@@ -966,12 +966,12 @@ cpu1_sc_sc_rts027_tbl: apps/sc/CMakeFiles/cpu1_sc_sc_rts027_tbl.dir/rule
 
 # fast build rule for target.
 cpu1_sc_sc_rts027_tbl/fast:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts027_tbl.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts027_tbl.dir/build
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts027_tbl.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts027_tbl.dir/build
 .PHONY : cpu1_sc_sc_rts027_tbl/fast
 
 # Convenience name for target.
 apps/sc/CMakeFiles/cpu1_sc_sc_rts028.dir/rule:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts028.dir/rule
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts028.dir/rule
 .PHONY : apps/sc/CMakeFiles/cpu1_sc_sc_rts028.dir/rule
 
 # Convenience name for target.
@@ -980,12 +980,12 @@ cpu1_sc_sc_rts028: apps/sc/CMakeFiles/cpu1_sc_sc_rts028.dir/rule
 
 # fast build rule for target.
 cpu1_sc_sc_rts028/fast:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts028.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts028.dir/build
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts028.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts028.dir/build
 .PHONY : cpu1_sc_sc_rts028/fast
 
 # Convenience name for target.
 apps/sc/CMakeFiles/cpu1_sc_sc_rts028_tbl.dir/rule:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts028_tbl.dir/rule
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts028_tbl.dir/rule
 .PHONY : apps/sc/CMakeFiles/cpu1_sc_sc_rts028_tbl.dir/rule
 
 # Convenience name for target.
@@ -994,12 +994,12 @@ cpu1_sc_sc_rts028_tbl: apps/sc/CMakeFiles/cpu1_sc_sc_rts028_tbl.dir/rule
 
 # fast build rule for target.
 cpu1_sc_sc_rts028_tbl/fast:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts028_tbl.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts028_tbl.dir/build
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts028_tbl.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts028_tbl.dir/build
 .PHONY : cpu1_sc_sc_rts028_tbl/fast
 
 # Convenience name for target.
 apps/sc/CMakeFiles/cpu1_sc_sc_rts029.dir/rule:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts029.dir/rule
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts029.dir/rule
 .PHONY : apps/sc/CMakeFiles/cpu1_sc_sc_rts029.dir/rule
 
 # Convenience name for target.
@@ -1008,12 +1008,12 @@ cpu1_sc_sc_rts029: apps/sc/CMakeFiles/cpu1_sc_sc_rts029.dir/rule
 
 # fast build rule for target.
 cpu1_sc_sc_rts029/fast:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts029.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts029.dir/build
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts029.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts029.dir/build
 .PHONY : cpu1_sc_sc_rts029/fast
 
 # Convenience name for target.
 apps/sc/CMakeFiles/cpu1_sc_sc_rts029_tbl.dir/rule:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts029_tbl.dir/rule
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts029_tbl.dir/rule
 .PHONY : apps/sc/CMakeFiles/cpu1_sc_sc_rts029_tbl.dir/rule
 
 # Convenience name for target.
@@ -1022,12 +1022,12 @@ cpu1_sc_sc_rts029_tbl: apps/sc/CMakeFiles/cpu1_sc_sc_rts029_tbl.dir/rule
 
 # fast build rule for target.
 cpu1_sc_sc_rts029_tbl/fast:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts029_tbl.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts029_tbl.dir/build
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts029_tbl.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts029_tbl.dir/build
 .PHONY : cpu1_sc_sc_rts029_tbl/fast
 
 # Convenience name for target.
 apps/sc/CMakeFiles/cpu1_sc_sc_rts030.dir/rule:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts030.dir/rule
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts030.dir/rule
 .PHONY : apps/sc/CMakeFiles/cpu1_sc_sc_rts030.dir/rule
 
 # Convenience name for target.
@@ -1036,12 +1036,12 @@ cpu1_sc_sc_rts030: apps/sc/CMakeFiles/cpu1_sc_sc_rts030.dir/rule
 
 # fast build rule for target.
 cpu1_sc_sc_rts030/fast:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts030.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts030.dir/build
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts030.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts030.dir/build
 .PHONY : cpu1_sc_sc_rts030/fast
 
 # Convenience name for target.
 apps/sc/CMakeFiles/cpu1_sc_sc_rts030_tbl.dir/rule:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts030_tbl.dir/rule
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts030_tbl.dir/rule
 .PHONY : apps/sc/CMakeFiles/cpu1_sc_sc_rts030_tbl.dir/rule
 
 # Convenience name for target.
@@ -1050,12 +1050,12 @@ cpu1_sc_sc_rts030_tbl: apps/sc/CMakeFiles/cpu1_sc_sc_rts030_tbl.dir/rule
 
 # fast build rule for target.
 cpu1_sc_sc_rts030_tbl/fast:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts030_tbl.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts030_tbl.dir/build
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts030_tbl.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts030_tbl.dir/build
 .PHONY : cpu1_sc_sc_rts030_tbl/fast
 
 # Convenience name for target.
 apps/sc/CMakeFiles/cpu1_sc_sc_rts031.dir/rule:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts031.dir/rule
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts031.dir/rule
 .PHONY : apps/sc/CMakeFiles/cpu1_sc_sc_rts031.dir/rule
 
 # Convenience name for target.
@@ -1064,12 +1064,12 @@ cpu1_sc_sc_rts031: apps/sc/CMakeFiles/cpu1_sc_sc_rts031.dir/rule
 
 # fast build rule for target.
 cpu1_sc_sc_rts031/fast:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts031.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts031.dir/build
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts031.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts031.dir/build
 .PHONY : cpu1_sc_sc_rts031/fast
 
 # Convenience name for target.
 apps/sc/CMakeFiles/cpu1_sc_sc_rts031_tbl.dir/rule:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts031_tbl.dir/rule
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts031_tbl.dir/rule
 .PHONY : apps/sc/CMakeFiles/cpu1_sc_sc_rts031_tbl.dir/rule
 
 # Convenience name for target.
@@ -1078,12 +1078,12 @@ cpu1_sc_sc_rts031_tbl: apps/sc/CMakeFiles/cpu1_sc_sc_rts031_tbl.dir/rule
 
 # fast build rule for target.
 cpu1_sc_sc_rts031_tbl/fast:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts031_tbl.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts031_tbl.dir/build
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts031_tbl.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts031_tbl.dir/build
 .PHONY : cpu1_sc_sc_rts031_tbl/fast
 
 # Convenience name for target.
 apps/sc/CMakeFiles/cpu1_sc_sc_rts032.dir/rule:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts032.dir/rule
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts032.dir/rule
 .PHONY : apps/sc/CMakeFiles/cpu1_sc_sc_rts032.dir/rule
 
 # Convenience name for target.
@@ -1092,12 +1092,12 @@ cpu1_sc_sc_rts032: apps/sc/CMakeFiles/cpu1_sc_sc_rts032.dir/rule
 
 # fast build rule for target.
 cpu1_sc_sc_rts032/fast:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts032.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts032.dir/build
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts032.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts032.dir/build
 .PHONY : cpu1_sc_sc_rts032/fast
 
 # Convenience name for target.
 apps/sc/CMakeFiles/cpu1_sc_sc_rts032_tbl.dir/rule:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts032_tbl.dir/rule
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts032_tbl.dir/rule
 .PHONY : apps/sc/CMakeFiles/cpu1_sc_sc_rts032_tbl.dir/rule
 
 # Convenience name for target.
@@ -1106,12 +1106,12 @@ cpu1_sc_sc_rts032_tbl: apps/sc/CMakeFiles/cpu1_sc_sc_rts032_tbl.dir/rule
 
 # fast build rule for target.
 cpu1_sc_sc_rts032_tbl/fast:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts032_tbl.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts032_tbl.dir/build
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts032_tbl.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts032_tbl.dir/build
 .PHONY : cpu1_sc_sc_rts032_tbl/fast
 
 # Convenience name for target.
 apps/sc/CMakeFiles/cpu1_sc_sc_rts033.dir/rule:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts033.dir/rule
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts033.dir/rule
 .PHONY : apps/sc/CMakeFiles/cpu1_sc_sc_rts033.dir/rule
 
 # Convenience name for target.
@@ -1120,12 +1120,12 @@ cpu1_sc_sc_rts033: apps/sc/CMakeFiles/cpu1_sc_sc_rts033.dir/rule
 
 # fast build rule for target.
 cpu1_sc_sc_rts033/fast:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts033.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts033.dir/build
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts033.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts033.dir/build
 .PHONY : cpu1_sc_sc_rts033/fast
 
 # Convenience name for target.
 apps/sc/CMakeFiles/cpu1_sc_sc_rts033_tbl.dir/rule:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts033_tbl.dir/rule
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts033_tbl.dir/rule
 .PHONY : apps/sc/CMakeFiles/cpu1_sc_sc_rts033_tbl.dir/rule
 
 # Convenience name for target.
@@ -1134,12 +1134,12 @@ cpu1_sc_sc_rts033_tbl: apps/sc/CMakeFiles/cpu1_sc_sc_rts033_tbl.dir/rule
 
 # fast build rule for target.
 cpu1_sc_sc_rts033_tbl/fast:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts033_tbl.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts033_tbl.dir/build
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts033_tbl.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts033_tbl.dir/build
 .PHONY : cpu1_sc_sc_rts033_tbl/fast
 
 # Convenience name for target.
 apps/sc/CMakeFiles/cpu1_sc_sc_rts034.dir/rule:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts034.dir/rule
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts034.dir/rule
 .PHONY : apps/sc/CMakeFiles/cpu1_sc_sc_rts034.dir/rule
 
 # Convenience name for target.
@@ -1148,12 +1148,12 @@ cpu1_sc_sc_rts034: apps/sc/CMakeFiles/cpu1_sc_sc_rts034.dir/rule
 
 # fast build rule for target.
 cpu1_sc_sc_rts034/fast:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts034.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts034.dir/build
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts034.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts034.dir/build
 .PHONY : cpu1_sc_sc_rts034/fast
 
 # Convenience name for target.
 apps/sc/CMakeFiles/cpu1_sc_sc_rts034_tbl.dir/rule:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts034_tbl.dir/rule
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts034_tbl.dir/rule
 .PHONY : apps/sc/CMakeFiles/cpu1_sc_sc_rts034_tbl.dir/rule
 
 # Convenience name for target.
@@ -1162,12 +1162,12 @@ cpu1_sc_sc_rts034_tbl: apps/sc/CMakeFiles/cpu1_sc_sc_rts034_tbl.dir/rule
 
 # fast build rule for target.
 cpu1_sc_sc_rts034_tbl/fast:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts034_tbl.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts034_tbl.dir/build
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts034_tbl.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts034_tbl.dir/build
 .PHONY : cpu1_sc_sc_rts034_tbl/fast
 
 # Convenience name for target.
 apps/sc/CMakeFiles/cpu1_sc_sc_rts035.dir/rule:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts035.dir/rule
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts035.dir/rule
 .PHONY : apps/sc/CMakeFiles/cpu1_sc_sc_rts035.dir/rule
 
 # Convenience name for target.
@@ -1176,12 +1176,12 @@ cpu1_sc_sc_rts035: apps/sc/CMakeFiles/cpu1_sc_sc_rts035.dir/rule
 
 # fast build rule for target.
 cpu1_sc_sc_rts035/fast:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts035.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts035.dir/build
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts035.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts035.dir/build
 .PHONY : cpu1_sc_sc_rts035/fast
 
 # Convenience name for target.
 apps/sc/CMakeFiles/cpu1_sc_sc_rts035_tbl.dir/rule:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts035_tbl.dir/rule
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts035_tbl.dir/rule
 .PHONY : apps/sc/CMakeFiles/cpu1_sc_sc_rts035_tbl.dir/rule
 
 # Convenience name for target.
@@ -1190,12 +1190,12 @@ cpu1_sc_sc_rts035_tbl: apps/sc/CMakeFiles/cpu1_sc_sc_rts035_tbl.dir/rule
 
 # fast build rule for target.
 cpu1_sc_sc_rts035_tbl/fast:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts035_tbl.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts035_tbl.dir/build
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts035_tbl.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts035_tbl.dir/build
 .PHONY : cpu1_sc_sc_rts035_tbl/fast
 
 # Convenience name for target.
 apps/sc/CMakeFiles/cpu1_sc_sc_rts036.dir/rule:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts036.dir/rule
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts036.dir/rule
 .PHONY : apps/sc/CMakeFiles/cpu1_sc_sc_rts036.dir/rule
 
 # Convenience name for target.
@@ -1204,12 +1204,12 @@ cpu1_sc_sc_rts036: apps/sc/CMakeFiles/cpu1_sc_sc_rts036.dir/rule
 
 # fast build rule for target.
 cpu1_sc_sc_rts036/fast:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts036.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts036.dir/build
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts036.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts036.dir/build
 .PHONY : cpu1_sc_sc_rts036/fast
 
 # Convenience name for target.
 apps/sc/CMakeFiles/cpu1_sc_sc_rts036_tbl.dir/rule:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts036_tbl.dir/rule
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts036_tbl.dir/rule
 .PHONY : apps/sc/CMakeFiles/cpu1_sc_sc_rts036_tbl.dir/rule
 
 # Convenience name for target.
@@ -1218,12 +1218,12 @@ cpu1_sc_sc_rts036_tbl: apps/sc/CMakeFiles/cpu1_sc_sc_rts036_tbl.dir/rule
 
 # fast build rule for target.
 cpu1_sc_sc_rts036_tbl/fast:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts036_tbl.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts036_tbl.dir/build
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts036_tbl.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts036_tbl.dir/build
 .PHONY : cpu1_sc_sc_rts036_tbl/fast
 
 # Convenience name for target.
 apps/sc/CMakeFiles/cpu1_sc_sc_rts037.dir/rule:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts037.dir/rule
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts037.dir/rule
 .PHONY : apps/sc/CMakeFiles/cpu1_sc_sc_rts037.dir/rule
 
 # Convenience name for target.
@@ -1232,12 +1232,12 @@ cpu1_sc_sc_rts037: apps/sc/CMakeFiles/cpu1_sc_sc_rts037.dir/rule
 
 # fast build rule for target.
 cpu1_sc_sc_rts037/fast:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts037.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts037.dir/build
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts037.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts037.dir/build
 .PHONY : cpu1_sc_sc_rts037/fast
 
 # Convenience name for target.
 apps/sc/CMakeFiles/cpu1_sc_sc_rts037_tbl.dir/rule:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts037_tbl.dir/rule
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts037_tbl.dir/rule
 .PHONY : apps/sc/CMakeFiles/cpu1_sc_sc_rts037_tbl.dir/rule
 
 # Convenience name for target.
@@ -1246,12 +1246,12 @@ cpu1_sc_sc_rts037_tbl: apps/sc/CMakeFiles/cpu1_sc_sc_rts037_tbl.dir/rule
 
 # fast build rule for target.
 cpu1_sc_sc_rts037_tbl/fast:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts037_tbl.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts037_tbl.dir/build
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts037_tbl.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts037_tbl.dir/build
 .PHONY : cpu1_sc_sc_rts037_tbl/fast
 
 # Convenience name for target.
 apps/sc/CMakeFiles/cpu1_sc_sc_rts038.dir/rule:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts038.dir/rule
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts038.dir/rule
 .PHONY : apps/sc/CMakeFiles/cpu1_sc_sc_rts038.dir/rule
 
 # Convenience name for target.
@@ -1260,12 +1260,12 @@ cpu1_sc_sc_rts038: apps/sc/CMakeFiles/cpu1_sc_sc_rts038.dir/rule
 
 # fast build rule for target.
 cpu1_sc_sc_rts038/fast:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts038.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts038.dir/build
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts038.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts038.dir/build
 .PHONY : cpu1_sc_sc_rts038/fast
 
 # Convenience name for target.
 apps/sc/CMakeFiles/cpu1_sc_sc_rts038_tbl.dir/rule:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts038_tbl.dir/rule
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts038_tbl.dir/rule
 .PHONY : apps/sc/CMakeFiles/cpu1_sc_sc_rts038_tbl.dir/rule
 
 # Convenience name for target.
@@ -1274,12 +1274,12 @@ cpu1_sc_sc_rts038_tbl: apps/sc/CMakeFiles/cpu1_sc_sc_rts038_tbl.dir/rule
 
 # fast build rule for target.
 cpu1_sc_sc_rts038_tbl/fast:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts038_tbl.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts038_tbl.dir/build
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts038_tbl.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts038_tbl.dir/build
 .PHONY : cpu1_sc_sc_rts038_tbl/fast
 
 # Convenience name for target.
 apps/sc/CMakeFiles/cpu1_sc_sc_rts039.dir/rule:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts039.dir/rule
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts039.dir/rule
 .PHONY : apps/sc/CMakeFiles/cpu1_sc_sc_rts039.dir/rule
 
 # Convenience name for target.
@@ -1288,12 +1288,12 @@ cpu1_sc_sc_rts039: apps/sc/CMakeFiles/cpu1_sc_sc_rts039.dir/rule
 
 # fast build rule for target.
 cpu1_sc_sc_rts039/fast:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts039.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts039.dir/build
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts039.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts039.dir/build
 .PHONY : cpu1_sc_sc_rts039/fast
 
 # Convenience name for target.
 apps/sc/CMakeFiles/cpu1_sc_sc_rts039_tbl.dir/rule:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts039_tbl.dir/rule
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts039_tbl.dir/rule
 .PHONY : apps/sc/CMakeFiles/cpu1_sc_sc_rts039_tbl.dir/rule
 
 # Convenience name for target.
@@ -1302,12 +1302,12 @@ cpu1_sc_sc_rts039_tbl: apps/sc/CMakeFiles/cpu1_sc_sc_rts039_tbl.dir/rule
 
 # fast build rule for target.
 cpu1_sc_sc_rts039_tbl/fast:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts039_tbl.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts039_tbl.dir/build
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts039_tbl.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts039_tbl.dir/build
 .PHONY : cpu1_sc_sc_rts039_tbl/fast
 
 # Convenience name for target.
 apps/sc/CMakeFiles/cpu1_sc_sc_rts040.dir/rule:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts040.dir/rule
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts040.dir/rule
 .PHONY : apps/sc/CMakeFiles/cpu1_sc_sc_rts040.dir/rule
 
 # Convenience name for target.
@@ -1316,12 +1316,12 @@ cpu1_sc_sc_rts040: apps/sc/CMakeFiles/cpu1_sc_sc_rts040.dir/rule
 
 # fast build rule for target.
 cpu1_sc_sc_rts040/fast:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts040.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts040.dir/build
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts040.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts040.dir/build
 .PHONY : cpu1_sc_sc_rts040/fast
 
 # Convenience name for target.
 apps/sc/CMakeFiles/cpu1_sc_sc_rts040_tbl.dir/rule:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts040_tbl.dir/rule
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts040_tbl.dir/rule
 .PHONY : apps/sc/CMakeFiles/cpu1_sc_sc_rts040_tbl.dir/rule
 
 # Convenience name for target.
@@ -1330,12 +1330,12 @@ cpu1_sc_sc_rts040_tbl: apps/sc/CMakeFiles/cpu1_sc_sc_rts040_tbl.dir/rule
 
 # fast build rule for target.
 cpu1_sc_sc_rts040_tbl/fast:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts040_tbl.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts040_tbl.dir/build
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts040_tbl.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts040_tbl.dir/build
 .PHONY : cpu1_sc_sc_rts040_tbl/fast
 
 # Convenience name for target.
 apps/sc/CMakeFiles/cpu1_sc_sc_rts041.dir/rule:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts041.dir/rule
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts041.dir/rule
 .PHONY : apps/sc/CMakeFiles/cpu1_sc_sc_rts041.dir/rule
 
 # Convenience name for target.
@@ -1344,12 +1344,12 @@ cpu1_sc_sc_rts041: apps/sc/CMakeFiles/cpu1_sc_sc_rts041.dir/rule
 
 # fast build rule for target.
 cpu1_sc_sc_rts041/fast:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts041.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts041.dir/build
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts041.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts041.dir/build
 .PHONY : cpu1_sc_sc_rts041/fast
 
 # Convenience name for target.
 apps/sc/CMakeFiles/cpu1_sc_sc_rts041_tbl.dir/rule:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts041_tbl.dir/rule
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts041_tbl.dir/rule
 .PHONY : apps/sc/CMakeFiles/cpu1_sc_sc_rts041_tbl.dir/rule
 
 # Convenience name for target.
@@ -1358,12 +1358,12 @@ cpu1_sc_sc_rts041_tbl: apps/sc/CMakeFiles/cpu1_sc_sc_rts041_tbl.dir/rule
 
 # fast build rule for target.
 cpu1_sc_sc_rts041_tbl/fast:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts041_tbl.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts041_tbl.dir/build
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts041_tbl.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts041_tbl.dir/build
 .PHONY : cpu1_sc_sc_rts041_tbl/fast
 
 # Convenience name for target.
 apps/sc/CMakeFiles/cpu1_sc_sc_rts042.dir/rule:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts042.dir/rule
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts042.dir/rule
 .PHONY : apps/sc/CMakeFiles/cpu1_sc_sc_rts042.dir/rule
 
 # Convenience name for target.
@@ -1372,12 +1372,12 @@ cpu1_sc_sc_rts042: apps/sc/CMakeFiles/cpu1_sc_sc_rts042.dir/rule
 
 # fast build rule for target.
 cpu1_sc_sc_rts042/fast:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts042.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts042.dir/build
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts042.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts042.dir/build
 .PHONY : cpu1_sc_sc_rts042/fast
 
 # Convenience name for target.
 apps/sc/CMakeFiles/cpu1_sc_sc_rts042_tbl.dir/rule:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts042_tbl.dir/rule
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts042_tbl.dir/rule
 .PHONY : apps/sc/CMakeFiles/cpu1_sc_sc_rts042_tbl.dir/rule
 
 # Convenience name for target.
@@ -1386,12 +1386,12 @@ cpu1_sc_sc_rts042_tbl: apps/sc/CMakeFiles/cpu1_sc_sc_rts042_tbl.dir/rule
 
 # fast build rule for target.
 cpu1_sc_sc_rts042_tbl/fast:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts042_tbl.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts042_tbl.dir/build
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts042_tbl.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts042_tbl.dir/build
 .PHONY : cpu1_sc_sc_rts042_tbl/fast
 
 # Convenience name for target.
 apps/sc/CMakeFiles/cpu1_sc_sc_rts043.dir/rule:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts043.dir/rule
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts043.dir/rule
 .PHONY : apps/sc/CMakeFiles/cpu1_sc_sc_rts043.dir/rule
 
 # Convenience name for target.
@@ -1400,12 +1400,12 @@ cpu1_sc_sc_rts043: apps/sc/CMakeFiles/cpu1_sc_sc_rts043.dir/rule
 
 # fast build rule for target.
 cpu1_sc_sc_rts043/fast:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts043.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts043.dir/build
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts043.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts043.dir/build
 .PHONY : cpu1_sc_sc_rts043/fast
 
 # Convenience name for target.
 apps/sc/CMakeFiles/cpu1_sc_sc_rts043_tbl.dir/rule:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts043_tbl.dir/rule
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts043_tbl.dir/rule
 .PHONY : apps/sc/CMakeFiles/cpu1_sc_sc_rts043_tbl.dir/rule
 
 # Convenience name for target.
@@ -1414,12 +1414,12 @@ cpu1_sc_sc_rts043_tbl: apps/sc/CMakeFiles/cpu1_sc_sc_rts043_tbl.dir/rule
 
 # fast build rule for target.
 cpu1_sc_sc_rts043_tbl/fast:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts043_tbl.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts043_tbl.dir/build
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts043_tbl.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts043_tbl.dir/build
 .PHONY : cpu1_sc_sc_rts043_tbl/fast
 
 # Convenience name for target.
 apps/sc/CMakeFiles/cpu1_sc_sc_rts044.dir/rule:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts044.dir/rule
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts044.dir/rule
 .PHONY : apps/sc/CMakeFiles/cpu1_sc_sc_rts044.dir/rule
 
 # Convenience name for target.
@@ -1428,12 +1428,12 @@ cpu1_sc_sc_rts044: apps/sc/CMakeFiles/cpu1_sc_sc_rts044.dir/rule
 
 # fast build rule for target.
 cpu1_sc_sc_rts044/fast:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts044.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts044.dir/build
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts044.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts044.dir/build
 .PHONY : cpu1_sc_sc_rts044/fast
 
 # Convenience name for target.
 apps/sc/CMakeFiles/cpu1_sc_sc_rts044_tbl.dir/rule:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts044_tbl.dir/rule
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts044_tbl.dir/rule
 .PHONY : apps/sc/CMakeFiles/cpu1_sc_sc_rts044_tbl.dir/rule
 
 # Convenience name for target.
@@ -1442,12 +1442,12 @@ cpu1_sc_sc_rts044_tbl: apps/sc/CMakeFiles/cpu1_sc_sc_rts044_tbl.dir/rule
 
 # fast build rule for target.
 cpu1_sc_sc_rts044_tbl/fast:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts044_tbl.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts044_tbl.dir/build
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts044_tbl.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts044_tbl.dir/build
 .PHONY : cpu1_sc_sc_rts044_tbl/fast
 
 # Convenience name for target.
 apps/sc/CMakeFiles/cpu1_sc_sc_rts045.dir/rule:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts045.dir/rule
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts045.dir/rule
 .PHONY : apps/sc/CMakeFiles/cpu1_sc_sc_rts045.dir/rule
 
 # Convenience name for target.
@@ -1456,12 +1456,12 @@ cpu1_sc_sc_rts045: apps/sc/CMakeFiles/cpu1_sc_sc_rts045.dir/rule
 
 # fast build rule for target.
 cpu1_sc_sc_rts045/fast:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts045.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts045.dir/build
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts045.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts045.dir/build
 .PHONY : cpu1_sc_sc_rts045/fast
 
 # Convenience name for target.
 apps/sc/CMakeFiles/cpu1_sc_sc_rts045_tbl.dir/rule:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts045_tbl.dir/rule
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts045_tbl.dir/rule
 .PHONY : apps/sc/CMakeFiles/cpu1_sc_sc_rts045_tbl.dir/rule
 
 # Convenience name for target.
@@ -1470,12 +1470,12 @@ cpu1_sc_sc_rts045_tbl: apps/sc/CMakeFiles/cpu1_sc_sc_rts045_tbl.dir/rule
 
 # fast build rule for target.
 cpu1_sc_sc_rts045_tbl/fast:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts045_tbl.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts045_tbl.dir/build
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts045_tbl.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts045_tbl.dir/build
 .PHONY : cpu1_sc_sc_rts045_tbl/fast
 
 # Convenience name for target.
 apps/sc/CMakeFiles/cpu1_sc_sc_rts046.dir/rule:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts046.dir/rule
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts046.dir/rule
 .PHONY : apps/sc/CMakeFiles/cpu1_sc_sc_rts046.dir/rule
 
 # Convenience name for target.
@@ -1484,12 +1484,12 @@ cpu1_sc_sc_rts046: apps/sc/CMakeFiles/cpu1_sc_sc_rts046.dir/rule
 
 # fast build rule for target.
 cpu1_sc_sc_rts046/fast:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts046.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts046.dir/build
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts046.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts046.dir/build
 .PHONY : cpu1_sc_sc_rts046/fast
 
 # Convenience name for target.
 apps/sc/CMakeFiles/cpu1_sc_sc_rts046_tbl.dir/rule:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts046_tbl.dir/rule
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts046_tbl.dir/rule
 .PHONY : apps/sc/CMakeFiles/cpu1_sc_sc_rts046_tbl.dir/rule
 
 # Convenience name for target.
@@ -1498,12 +1498,12 @@ cpu1_sc_sc_rts046_tbl: apps/sc/CMakeFiles/cpu1_sc_sc_rts046_tbl.dir/rule
 
 # fast build rule for target.
 cpu1_sc_sc_rts046_tbl/fast:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts046_tbl.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts046_tbl.dir/build
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts046_tbl.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts046_tbl.dir/build
 .PHONY : cpu1_sc_sc_rts046_tbl/fast
 
 # Convenience name for target.
 apps/sc/CMakeFiles/cpu1_sc_sc_rts047.dir/rule:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts047.dir/rule
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts047.dir/rule
 .PHONY : apps/sc/CMakeFiles/cpu1_sc_sc_rts047.dir/rule
 
 # Convenience name for target.
@@ -1512,12 +1512,12 @@ cpu1_sc_sc_rts047: apps/sc/CMakeFiles/cpu1_sc_sc_rts047.dir/rule
 
 # fast build rule for target.
 cpu1_sc_sc_rts047/fast:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts047.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts047.dir/build
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts047.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts047.dir/build
 .PHONY : cpu1_sc_sc_rts047/fast
 
 # Convenience name for target.
 apps/sc/CMakeFiles/cpu1_sc_sc_rts047_tbl.dir/rule:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts047_tbl.dir/rule
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts047_tbl.dir/rule
 .PHONY : apps/sc/CMakeFiles/cpu1_sc_sc_rts047_tbl.dir/rule
 
 # Convenience name for target.
@@ -1526,12 +1526,12 @@ cpu1_sc_sc_rts047_tbl: apps/sc/CMakeFiles/cpu1_sc_sc_rts047_tbl.dir/rule
 
 # fast build rule for target.
 cpu1_sc_sc_rts047_tbl/fast:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts047_tbl.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts047_tbl.dir/build
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts047_tbl.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts047_tbl.dir/build
 .PHONY : cpu1_sc_sc_rts047_tbl/fast
 
 # Convenience name for target.
 apps/sc/CMakeFiles/cpu1_sc_sc_rts048.dir/rule:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts048.dir/rule
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts048.dir/rule
 .PHONY : apps/sc/CMakeFiles/cpu1_sc_sc_rts048.dir/rule
 
 # Convenience name for target.
@@ -1540,12 +1540,12 @@ cpu1_sc_sc_rts048: apps/sc/CMakeFiles/cpu1_sc_sc_rts048.dir/rule
 
 # fast build rule for target.
 cpu1_sc_sc_rts048/fast:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts048.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts048.dir/build
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts048.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts048.dir/build
 .PHONY : cpu1_sc_sc_rts048/fast
 
 # Convenience name for target.
 apps/sc/CMakeFiles/cpu1_sc_sc_rts048_tbl.dir/rule:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts048_tbl.dir/rule
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts048_tbl.dir/rule
 .PHONY : apps/sc/CMakeFiles/cpu1_sc_sc_rts048_tbl.dir/rule
 
 # Convenience name for target.
@@ -1554,12 +1554,12 @@ cpu1_sc_sc_rts048_tbl: apps/sc/CMakeFiles/cpu1_sc_sc_rts048_tbl.dir/rule
 
 # fast build rule for target.
 cpu1_sc_sc_rts048_tbl/fast:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts048_tbl.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts048_tbl.dir/build
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts048_tbl.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts048_tbl.dir/build
 .PHONY : cpu1_sc_sc_rts048_tbl/fast
 
 # Convenience name for target.
 apps/sc/CMakeFiles/cpu1_sc_sc_rts049.dir/rule:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts049.dir/rule
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts049.dir/rule
 .PHONY : apps/sc/CMakeFiles/cpu1_sc_sc_rts049.dir/rule
 
 # Convenience name for target.
@@ -1568,12 +1568,12 @@ cpu1_sc_sc_rts049: apps/sc/CMakeFiles/cpu1_sc_sc_rts049.dir/rule
 
 # fast build rule for target.
 cpu1_sc_sc_rts049/fast:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts049.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts049.dir/build
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts049.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts049.dir/build
 .PHONY : cpu1_sc_sc_rts049/fast
 
 # Convenience name for target.
 apps/sc/CMakeFiles/cpu1_sc_sc_rts049_tbl.dir/rule:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts049_tbl.dir/rule
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts049_tbl.dir/rule
 .PHONY : apps/sc/CMakeFiles/cpu1_sc_sc_rts049_tbl.dir/rule
 
 # Convenience name for target.
@@ -1582,12 +1582,12 @@ cpu1_sc_sc_rts049_tbl: apps/sc/CMakeFiles/cpu1_sc_sc_rts049_tbl.dir/rule
 
 # fast build rule for target.
 cpu1_sc_sc_rts049_tbl/fast:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts049_tbl.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts049_tbl.dir/build
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts049_tbl.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts049_tbl.dir/build
 .PHONY : cpu1_sc_sc_rts049_tbl/fast
 
 # Convenience name for target.
 apps/sc/CMakeFiles/cpu1_sc_sc_rts050.dir/rule:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts050.dir/rule
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts050.dir/rule
 .PHONY : apps/sc/CMakeFiles/cpu1_sc_sc_rts050.dir/rule
 
 # Convenience name for target.
@@ -1596,12 +1596,12 @@ cpu1_sc_sc_rts050: apps/sc/CMakeFiles/cpu1_sc_sc_rts050.dir/rule
 
 # fast build rule for target.
 cpu1_sc_sc_rts050/fast:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts050.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts050.dir/build
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts050.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts050.dir/build
 .PHONY : cpu1_sc_sc_rts050/fast
 
 # Convenience name for target.
 apps/sc/CMakeFiles/cpu1_sc_sc_rts050_tbl.dir/rule:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts050_tbl.dir/rule
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts050_tbl.dir/rule
 .PHONY : apps/sc/CMakeFiles/cpu1_sc_sc_rts050_tbl.dir/rule
 
 # Convenience name for target.
@@ -1610,12 +1610,12 @@ cpu1_sc_sc_rts050_tbl: apps/sc/CMakeFiles/cpu1_sc_sc_rts050_tbl.dir/rule
 
 # fast build rule for target.
 cpu1_sc_sc_rts050_tbl/fast:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts050_tbl.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts050_tbl.dir/build
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts050_tbl.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts050_tbl.dir/build
 .PHONY : cpu1_sc_sc_rts050_tbl/fast
 
 # Convenience name for target.
 apps/sc/CMakeFiles/cpu1_sc_sc_rts051.dir/rule:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts051.dir/rule
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts051.dir/rule
 .PHONY : apps/sc/CMakeFiles/cpu1_sc_sc_rts051.dir/rule
 
 # Convenience name for target.
@@ -1624,12 +1624,12 @@ cpu1_sc_sc_rts051: apps/sc/CMakeFiles/cpu1_sc_sc_rts051.dir/rule
 
 # fast build rule for target.
 cpu1_sc_sc_rts051/fast:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts051.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts051.dir/build
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts051.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts051.dir/build
 .PHONY : cpu1_sc_sc_rts051/fast
 
 # Convenience name for target.
 apps/sc/CMakeFiles/cpu1_sc_sc_rts051_tbl.dir/rule:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts051_tbl.dir/rule
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts051_tbl.dir/rule
 .PHONY : apps/sc/CMakeFiles/cpu1_sc_sc_rts051_tbl.dir/rule
 
 # Convenience name for target.
@@ -1638,12 +1638,12 @@ cpu1_sc_sc_rts051_tbl: apps/sc/CMakeFiles/cpu1_sc_sc_rts051_tbl.dir/rule
 
 # fast build rule for target.
 cpu1_sc_sc_rts051_tbl/fast:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts051_tbl.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts051_tbl.dir/build
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts051_tbl.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts051_tbl.dir/build
 .PHONY : cpu1_sc_sc_rts051_tbl/fast
 
 # Convenience name for target.
 apps/sc/CMakeFiles/cpu1_sc_sc_rts052.dir/rule:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts052.dir/rule
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts052.dir/rule
 .PHONY : apps/sc/CMakeFiles/cpu1_sc_sc_rts052.dir/rule
 
 # Convenience name for target.
@@ -1652,12 +1652,12 @@ cpu1_sc_sc_rts052: apps/sc/CMakeFiles/cpu1_sc_sc_rts052.dir/rule
 
 # fast build rule for target.
 cpu1_sc_sc_rts052/fast:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts052.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts052.dir/build
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts052.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts052.dir/build
 .PHONY : cpu1_sc_sc_rts052/fast
 
 # Convenience name for target.
 apps/sc/CMakeFiles/cpu1_sc_sc_rts052_tbl.dir/rule:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts052_tbl.dir/rule
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts052_tbl.dir/rule
 .PHONY : apps/sc/CMakeFiles/cpu1_sc_sc_rts052_tbl.dir/rule
 
 # Convenience name for target.
@@ -1666,12 +1666,12 @@ cpu1_sc_sc_rts052_tbl: apps/sc/CMakeFiles/cpu1_sc_sc_rts052_tbl.dir/rule
 
 # fast build rule for target.
 cpu1_sc_sc_rts052_tbl/fast:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts052_tbl.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts052_tbl.dir/build
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts052_tbl.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts052_tbl.dir/build
 .PHONY : cpu1_sc_sc_rts052_tbl/fast
 
 # Convenience name for target.
 apps/sc/CMakeFiles/cpu1_sc_sc_rts053.dir/rule:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts053.dir/rule
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts053.dir/rule
 .PHONY : apps/sc/CMakeFiles/cpu1_sc_sc_rts053.dir/rule
 
 # Convenience name for target.
@@ -1680,12 +1680,12 @@ cpu1_sc_sc_rts053: apps/sc/CMakeFiles/cpu1_sc_sc_rts053.dir/rule
 
 # fast build rule for target.
 cpu1_sc_sc_rts053/fast:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts053.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts053.dir/build
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts053.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts053.dir/build
 .PHONY : cpu1_sc_sc_rts053/fast
 
 # Convenience name for target.
 apps/sc/CMakeFiles/cpu1_sc_sc_rts053_tbl.dir/rule:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts053_tbl.dir/rule
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts053_tbl.dir/rule
 .PHONY : apps/sc/CMakeFiles/cpu1_sc_sc_rts053_tbl.dir/rule
 
 # Convenience name for target.
@@ -1694,12 +1694,12 @@ cpu1_sc_sc_rts053_tbl: apps/sc/CMakeFiles/cpu1_sc_sc_rts053_tbl.dir/rule
 
 # fast build rule for target.
 cpu1_sc_sc_rts053_tbl/fast:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts053_tbl.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts053_tbl.dir/build
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts053_tbl.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts053_tbl.dir/build
 .PHONY : cpu1_sc_sc_rts053_tbl/fast
 
 # Convenience name for target.
 apps/sc/CMakeFiles/cpu1_sc_sc_rts054.dir/rule:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts054.dir/rule
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts054.dir/rule
 .PHONY : apps/sc/CMakeFiles/cpu1_sc_sc_rts054.dir/rule
 
 # Convenience name for target.
@@ -1708,12 +1708,12 @@ cpu1_sc_sc_rts054: apps/sc/CMakeFiles/cpu1_sc_sc_rts054.dir/rule
 
 # fast build rule for target.
 cpu1_sc_sc_rts054/fast:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts054.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts054.dir/build
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts054.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts054.dir/build
 .PHONY : cpu1_sc_sc_rts054/fast
 
 # Convenience name for target.
 apps/sc/CMakeFiles/cpu1_sc_sc_rts054_tbl.dir/rule:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts054_tbl.dir/rule
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts054_tbl.dir/rule
 .PHONY : apps/sc/CMakeFiles/cpu1_sc_sc_rts054_tbl.dir/rule
 
 # Convenience name for target.
@@ -1722,12 +1722,12 @@ cpu1_sc_sc_rts054_tbl: apps/sc/CMakeFiles/cpu1_sc_sc_rts054_tbl.dir/rule
 
 # fast build rule for target.
 cpu1_sc_sc_rts054_tbl/fast:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts054_tbl.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts054_tbl.dir/build
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts054_tbl.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts054_tbl.dir/build
 .PHONY : cpu1_sc_sc_rts054_tbl/fast
 
 # Convenience name for target.
 apps/sc/CMakeFiles/cpu1_sc_sc_rts055.dir/rule:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts055.dir/rule
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts055.dir/rule
 .PHONY : apps/sc/CMakeFiles/cpu1_sc_sc_rts055.dir/rule
 
 # Convenience name for target.
@@ -1736,12 +1736,12 @@ cpu1_sc_sc_rts055: apps/sc/CMakeFiles/cpu1_sc_sc_rts055.dir/rule
 
 # fast build rule for target.
 cpu1_sc_sc_rts055/fast:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts055.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts055.dir/build
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts055.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts055.dir/build
 .PHONY : cpu1_sc_sc_rts055/fast
 
 # Convenience name for target.
 apps/sc/CMakeFiles/cpu1_sc_sc_rts055_tbl.dir/rule:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts055_tbl.dir/rule
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts055_tbl.dir/rule
 .PHONY : apps/sc/CMakeFiles/cpu1_sc_sc_rts055_tbl.dir/rule
 
 # Convenience name for target.
@@ -1750,12 +1750,12 @@ cpu1_sc_sc_rts055_tbl: apps/sc/CMakeFiles/cpu1_sc_sc_rts055_tbl.dir/rule
 
 # fast build rule for target.
 cpu1_sc_sc_rts055_tbl/fast:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts055_tbl.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts055_tbl.dir/build
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts055_tbl.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts055_tbl.dir/build
 .PHONY : cpu1_sc_sc_rts055_tbl/fast
 
 # Convenience name for target.
 apps/sc/CMakeFiles/cpu1_sc_sc_rts056.dir/rule:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts056.dir/rule
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts056.dir/rule
 .PHONY : apps/sc/CMakeFiles/cpu1_sc_sc_rts056.dir/rule
 
 # Convenience name for target.
@@ -1764,12 +1764,12 @@ cpu1_sc_sc_rts056: apps/sc/CMakeFiles/cpu1_sc_sc_rts056.dir/rule
 
 # fast build rule for target.
 cpu1_sc_sc_rts056/fast:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts056.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts056.dir/build
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts056.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts056.dir/build
 .PHONY : cpu1_sc_sc_rts056/fast
 
 # Convenience name for target.
 apps/sc/CMakeFiles/cpu1_sc_sc_rts056_tbl.dir/rule:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts056_tbl.dir/rule
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts056_tbl.dir/rule
 .PHONY : apps/sc/CMakeFiles/cpu1_sc_sc_rts056_tbl.dir/rule
 
 # Convenience name for target.
@@ -1778,12 +1778,12 @@ cpu1_sc_sc_rts056_tbl: apps/sc/CMakeFiles/cpu1_sc_sc_rts056_tbl.dir/rule
 
 # fast build rule for target.
 cpu1_sc_sc_rts056_tbl/fast:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts056_tbl.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts056_tbl.dir/build
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts056_tbl.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts056_tbl.dir/build
 .PHONY : cpu1_sc_sc_rts056_tbl/fast
 
 # Convenience name for target.
 apps/sc/CMakeFiles/cpu1_sc_sc_rts057.dir/rule:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts057.dir/rule
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts057.dir/rule
 .PHONY : apps/sc/CMakeFiles/cpu1_sc_sc_rts057.dir/rule
 
 # Convenience name for target.
@@ -1792,12 +1792,12 @@ cpu1_sc_sc_rts057: apps/sc/CMakeFiles/cpu1_sc_sc_rts057.dir/rule
 
 # fast build rule for target.
 cpu1_sc_sc_rts057/fast:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts057.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts057.dir/build
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts057.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts057.dir/build
 .PHONY : cpu1_sc_sc_rts057/fast
 
 # Convenience name for target.
 apps/sc/CMakeFiles/cpu1_sc_sc_rts057_tbl.dir/rule:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts057_tbl.dir/rule
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts057_tbl.dir/rule
 .PHONY : apps/sc/CMakeFiles/cpu1_sc_sc_rts057_tbl.dir/rule
 
 # Convenience name for target.
@@ -1806,12 +1806,12 @@ cpu1_sc_sc_rts057_tbl: apps/sc/CMakeFiles/cpu1_sc_sc_rts057_tbl.dir/rule
 
 # fast build rule for target.
 cpu1_sc_sc_rts057_tbl/fast:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts057_tbl.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts057_tbl.dir/build
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts057_tbl.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts057_tbl.dir/build
 .PHONY : cpu1_sc_sc_rts057_tbl/fast
 
 # Convenience name for target.
 apps/sc/CMakeFiles/cpu1_sc_sc_rts058.dir/rule:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts058.dir/rule
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts058.dir/rule
 .PHONY : apps/sc/CMakeFiles/cpu1_sc_sc_rts058.dir/rule
 
 # Convenience name for target.
@@ -1820,12 +1820,12 @@ cpu1_sc_sc_rts058: apps/sc/CMakeFiles/cpu1_sc_sc_rts058.dir/rule
 
 # fast build rule for target.
 cpu1_sc_sc_rts058/fast:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts058.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts058.dir/build
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts058.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts058.dir/build
 .PHONY : cpu1_sc_sc_rts058/fast
 
 # Convenience name for target.
 apps/sc/CMakeFiles/cpu1_sc_sc_rts058_tbl.dir/rule:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts058_tbl.dir/rule
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts058_tbl.dir/rule
 .PHONY : apps/sc/CMakeFiles/cpu1_sc_sc_rts058_tbl.dir/rule
 
 # Convenience name for target.
@@ -1834,12 +1834,12 @@ cpu1_sc_sc_rts058_tbl: apps/sc/CMakeFiles/cpu1_sc_sc_rts058_tbl.dir/rule
 
 # fast build rule for target.
 cpu1_sc_sc_rts058_tbl/fast:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts058_tbl.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts058_tbl.dir/build
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts058_tbl.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts058_tbl.dir/build
 .PHONY : cpu1_sc_sc_rts058_tbl/fast
 
 # Convenience name for target.
 apps/sc/CMakeFiles/cpu1_sc_sc_rts059.dir/rule:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts059.dir/rule
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts059.dir/rule
 .PHONY : apps/sc/CMakeFiles/cpu1_sc_sc_rts059.dir/rule
 
 # Convenience name for target.
@@ -1848,12 +1848,12 @@ cpu1_sc_sc_rts059: apps/sc/CMakeFiles/cpu1_sc_sc_rts059.dir/rule
 
 # fast build rule for target.
 cpu1_sc_sc_rts059/fast:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts059.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts059.dir/build
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts059.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts059.dir/build
 .PHONY : cpu1_sc_sc_rts059/fast
 
 # Convenience name for target.
 apps/sc/CMakeFiles/cpu1_sc_sc_rts059_tbl.dir/rule:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts059_tbl.dir/rule
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts059_tbl.dir/rule
 .PHONY : apps/sc/CMakeFiles/cpu1_sc_sc_rts059_tbl.dir/rule
 
 # Convenience name for target.
@@ -1862,12 +1862,12 @@ cpu1_sc_sc_rts059_tbl: apps/sc/CMakeFiles/cpu1_sc_sc_rts059_tbl.dir/rule
 
 # fast build rule for target.
 cpu1_sc_sc_rts059_tbl/fast:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts059_tbl.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts059_tbl.dir/build
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts059_tbl.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts059_tbl.dir/build
 .PHONY : cpu1_sc_sc_rts059_tbl/fast
 
 # Convenience name for target.
 apps/sc/CMakeFiles/cpu1_sc_sc_rts060.dir/rule:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts060.dir/rule
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts060.dir/rule
 .PHONY : apps/sc/CMakeFiles/cpu1_sc_sc_rts060.dir/rule
 
 # Convenience name for target.
@@ -1876,12 +1876,12 @@ cpu1_sc_sc_rts060: apps/sc/CMakeFiles/cpu1_sc_sc_rts060.dir/rule
 
 # fast build rule for target.
 cpu1_sc_sc_rts060/fast:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts060.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts060.dir/build
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts060.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts060.dir/build
 .PHONY : cpu1_sc_sc_rts060/fast
 
 # Convenience name for target.
 apps/sc/CMakeFiles/cpu1_sc_sc_rts060_tbl.dir/rule:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts060_tbl.dir/rule
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts060_tbl.dir/rule
 .PHONY : apps/sc/CMakeFiles/cpu1_sc_sc_rts060_tbl.dir/rule
 
 # Convenience name for target.
@@ -1890,12 +1890,12 @@ cpu1_sc_sc_rts060_tbl: apps/sc/CMakeFiles/cpu1_sc_sc_rts060_tbl.dir/rule
 
 # fast build rule for target.
 cpu1_sc_sc_rts060_tbl/fast:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts060_tbl.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts060_tbl.dir/build
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts060_tbl.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts060_tbl.dir/build
 .PHONY : cpu1_sc_sc_rts060_tbl/fast
 
 # Convenience name for target.
 apps/sc/CMakeFiles/cpu1_sc_sc_rts061.dir/rule:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts061.dir/rule
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts061.dir/rule
 .PHONY : apps/sc/CMakeFiles/cpu1_sc_sc_rts061.dir/rule
 
 # Convenience name for target.
@@ -1904,12 +1904,12 @@ cpu1_sc_sc_rts061: apps/sc/CMakeFiles/cpu1_sc_sc_rts061.dir/rule
 
 # fast build rule for target.
 cpu1_sc_sc_rts061/fast:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts061.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts061.dir/build
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts061.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts061.dir/build
 .PHONY : cpu1_sc_sc_rts061/fast
 
 # Convenience name for target.
 apps/sc/CMakeFiles/cpu1_sc_sc_rts061_tbl.dir/rule:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts061_tbl.dir/rule
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts061_tbl.dir/rule
 .PHONY : apps/sc/CMakeFiles/cpu1_sc_sc_rts061_tbl.dir/rule
 
 # Convenience name for target.
@@ -1918,12 +1918,12 @@ cpu1_sc_sc_rts061_tbl: apps/sc/CMakeFiles/cpu1_sc_sc_rts061_tbl.dir/rule
 
 # fast build rule for target.
 cpu1_sc_sc_rts061_tbl/fast:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts061_tbl.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts061_tbl.dir/build
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts061_tbl.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts061_tbl.dir/build
 .PHONY : cpu1_sc_sc_rts061_tbl/fast
 
 # Convenience name for target.
 apps/sc/CMakeFiles/cpu1_sc_sc_rts062.dir/rule:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts062.dir/rule
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts062.dir/rule
 .PHONY : apps/sc/CMakeFiles/cpu1_sc_sc_rts062.dir/rule
 
 # Convenience name for target.
@@ -1932,12 +1932,12 @@ cpu1_sc_sc_rts062: apps/sc/CMakeFiles/cpu1_sc_sc_rts062.dir/rule
 
 # fast build rule for target.
 cpu1_sc_sc_rts062/fast:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts062.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts062.dir/build
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts062.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts062.dir/build
 .PHONY : cpu1_sc_sc_rts062/fast
 
 # Convenience name for target.
 apps/sc/CMakeFiles/cpu1_sc_sc_rts062_tbl.dir/rule:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts062_tbl.dir/rule
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts062_tbl.dir/rule
 .PHONY : apps/sc/CMakeFiles/cpu1_sc_sc_rts062_tbl.dir/rule
 
 # Convenience name for target.
@@ -1946,12 +1946,12 @@ cpu1_sc_sc_rts062_tbl: apps/sc/CMakeFiles/cpu1_sc_sc_rts062_tbl.dir/rule
 
 # fast build rule for target.
 cpu1_sc_sc_rts062_tbl/fast:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts062_tbl.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts062_tbl.dir/build
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts062_tbl.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts062_tbl.dir/build
 .PHONY : cpu1_sc_sc_rts062_tbl/fast
 
 # Convenience name for target.
 apps/sc/CMakeFiles/cpu1_sc_sc_rts063.dir/rule:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts063.dir/rule
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts063.dir/rule
 .PHONY : apps/sc/CMakeFiles/cpu1_sc_sc_rts063.dir/rule
 
 # Convenience name for target.
@@ -1960,12 +1960,12 @@ cpu1_sc_sc_rts063: apps/sc/CMakeFiles/cpu1_sc_sc_rts063.dir/rule
 
 # fast build rule for target.
 cpu1_sc_sc_rts063/fast:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts063.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts063.dir/build
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts063.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts063.dir/build
 .PHONY : cpu1_sc_sc_rts063/fast
 
 # Convenience name for target.
 apps/sc/CMakeFiles/cpu1_sc_sc_rts063_tbl.dir/rule:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts063_tbl.dir/rule
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts063_tbl.dir/rule
 .PHONY : apps/sc/CMakeFiles/cpu1_sc_sc_rts063_tbl.dir/rule
 
 # Convenience name for target.
@@ -1974,12 +1974,12 @@ cpu1_sc_sc_rts063_tbl: apps/sc/CMakeFiles/cpu1_sc_sc_rts063_tbl.dir/rule
 
 # fast build rule for target.
 cpu1_sc_sc_rts063_tbl/fast:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts063_tbl.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts063_tbl.dir/build
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts063_tbl.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts063_tbl.dir/build
 .PHONY : cpu1_sc_sc_rts063_tbl/fast
 
 # Convenience name for target.
 apps/sc/CMakeFiles/cpu1_sc_sc_rts064.dir/rule:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts064.dir/rule
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts064.dir/rule
 .PHONY : apps/sc/CMakeFiles/cpu1_sc_sc_rts064.dir/rule
 
 # Convenience name for target.
@@ -1988,12 +1988,12 @@ cpu1_sc_sc_rts064: apps/sc/CMakeFiles/cpu1_sc_sc_rts064.dir/rule
 
 # fast build rule for target.
 cpu1_sc_sc_rts064/fast:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts064.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts064.dir/build
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts064.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts064.dir/build
 .PHONY : cpu1_sc_sc_rts064/fast
 
 # Convenience name for target.
 apps/sc/CMakeFiles/cpu1_sc_sc_rts064_tbl.dir/rule:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts064_tbl.dir/rule
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/sc/CMakeFiles/cpu1_sc_sc_rts064_tbl.dir/rule
 .PHONY : apps/sc/CMakeFiles/cpu1_sc_sc_rts064_tbl.dir/rule
 
 # Convenience name for target.
@@ -2002,7 +2002,7 @@ cpu1_sc_sc_rts064_tbl: apps/sc/CMakeFiles/cpu1_sc_sc_rts064_tbl.dir/rule
 
 # fast build rule for target.
 cpu1_sc_sc_rts064_tbl/fast:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts064_tbl.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts064_tbl.dir/build
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts064_tbl.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts064_tbl.dir/build
 .PHONY : cpu1_sc_sc_rts064_tbl/fast
 
 fsw/src/sc_app.o: fsw/src/sc_app.c.o
@@ -2010,7 +2010,7 @@ fsw/src/sc_app.o: fsw/src/sc_app.c.o
 
 # target to build an object file
 fsw/src/sc_app.c.o:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/sc.dir/build.make apps/sc/CMakeFiles/sc.dir/fsw/src/sc_app.c.o
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/sc.dir/build.make apps/sc/CMakeFiles/sc.dir/fsw/src/sc_app.c.o
 .PHONY : fsw/src/sc_app.c.o
 
 fsw/src/sc_app.i: fsw/src/sc_app.c.i
@@ -2018,7 +2018,7 @@ fsw/src/sc_app.i: fsw/src/sc_app.c.i
 
 # target to preprocess a source file
 fsw/src/sc_app.c.i:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/sc.dir/build.make apps/sc/CMakeFiles/sc.dir/fsw/src/sc_app.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/sc.dir/build.make apps/sc/CMakeFiles/sc.dir/fsw/src/sc_app.c.i
 .PHONY : fsw/src/sc_app.c.i
 
 fsw/src/sc_app.s: fsw/src/sc_app.c.s
@@ -2026,7 +2026,7 @@ fsw/src/sc_app.s: fsw/src/sc_app.c.s
 
 # target to generate assembly for a file
 fsw/src/sc_app.c.s:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/sc.dir/build.make apps/sc/CMakeFiles/sc.dir/fsw/src/sc_app.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/sc.dir/build.make apps/sc/CMakeFiles/sc.dir/fsw/src/sc_app.c.s
 .PHONY : fsw/src/sc_app.c.s
 
 fsw/src/sc_atsrq.o: fsw/src/sc_atsrq.c.o
@@ -2034,7 +2034,7 @@ fsw/src/sc_atsrq.o: fsw/src/sc_atsrq.c.o
 
 # target to build an object file
 fsw/src/sc_atsrq.c.o:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/sc.dir/build.make apps/sc/CMakeFiles/sc.dir/fsw/src/sc_atsrq.c.o
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/sc.dir/build.make apps/sc/CMakeFiles/sc.dir/fsw/src/sc_atsrq.c.o
 .PHONY : fsw/src/sc_atsrq.c.o
 
 fsw/src/sc_atsrq.i: fsw/src/sc_atsrq.c.i
@@ -2042,7 +2042,7 @@ fsw/src/sc_atsrq.i: fsw/src/sc_atsrq.c.i
 
 # target to preprocess a source file
 fsw/src/sc_atsrq.c.i:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/sc.dir/build.make apps/sc/CMakeFiles/sc.dir/fsw/src/sc_atsrq.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/sc.dir/build.make apps/sc/CMakeFiles/sc.dir/fsw/src/sc_atsrq.c.i
 .PHONY : fsw/src/sc_atsrq.c.i
 
 fsw/src/sc_atsrq.s: fsw/src/sc_atsrq.c.s
@@ -2050,7 +2050,7 @@ fsw/src/sc_atsrq.s: fsw/src/sc_atsrq.c.s
 
 # target to generate assembly for a file
 fsw/src/sc_atsrq.c.s:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/sc.dir/build.make apps/sc/CMakeFiles/sc.dir/fsw/src/sc_atsrq.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/sc.dir/build.make apps/sc/CMakeFiles/sc.dir/fsw/src/sc_atsrq.c.s
 .PHONY : fsw/src/sc_atsrq.c.s
 
 fsw/src/sc_cmds.o: fsw/src/sc_cmds.c.o
@@ -2058,7 +2058,7 @@ fsw/src/sc_cmds.o: fsw/src/sc_cmds.c.o
 
 # target to build an object file
 fsw/src/sc_cmds.c.o:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/sc.dir/build.make apps/sc/CMakeFiles/sc.dir/fsw/src/sc_cmds.c.o
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/sc.dir/build.make apps/sc/CMakeFiles/sc.dir/fsw/src/sc_cmds.c.o
 .PHONY : fsw/src/sc_cmds.c.o
 
 fsw/src/sc_cmds.i: fsw/src/sc_cmds.c.i
@@ -2066,7 +2066,7 @@ fsw/src/sc_cmds.i: fsw/src/sc_cmds.c.i
 
 # target to preprocess a source file
 fsw/src/sc_cmds.c.i:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/sc.dir/build.make apps/sc/CMakeFiles/sc.dir/fsw/src/sc_cmds.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/sc.dir/build.make apps/sc/CMakeFiles/sc.dir/fsw/src/sc_cmds.c.i
 .PHONY : fsw/src/sc_cmds.c.i
 
 fsw/src/sc_cmds.s: fsw/src/sc_cmds.c.s
@@ -2074,7 +2074,7 @@ fsw/src/sc_cmds.s: fsw/src/sc_cmds.c.s
 
 # target to generate assembly for a file
 fsw/src/sc_cmds.c.s:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/sc.dir/build.make apps/sc/CMakeFiles/sc.dir/fsw/src/sc_cmds.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/sc.dir/build.make apps/sc/CMakeFiles/sc.dir/fsw/src/sc_cmds.c.s
 .PHONY : fsw/src/sc_cmds.c.s
 
 fsw/src/sc_loads.o: fsw/src/sc_loads.c.o
@@ -2082,7 +2082,7 @@ fsw/src/sc_loads.o: fsw/src/sc_loads.c.o
 
 # target to build an object file
 fsw/src/sc_loads.c.o:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/sc.dir/build.make apps/sc/CMakeFiles/sc.dir/fsw/src/sc_loads.c.o
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/sc.dir/build.make apps/sc/CMakeFiles/sc.dir/fsw/src/sc_loads.c.o
 .PHONY : fsw/src/sc_loads.c.o
 
 fsw/src/sc_loads.i: fsw/src/sc_loads.c.i
@@ -2090,7 +2090,7 @@ fsw/src/sc_loads.i: fsw/src/sc_loads.c.i
 
 # target to preprocess a source file
 fsw/src/sc_loads.c.i:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/sc.dir/build.make apps/sc/CMakeFiles/sc.dir/fsw/src/sc_loads.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/sc.dir/build.make apps/sc/CMakeFiles/sc.dir/fsw/src/sc_loads.c.i
 .PHONY : fsw/src/sc_loads.c.i
 
 fsw/src/sc_loads.s: fsw/src/sc_loads.c.s
@@ -2098,7 +2098,7 @@ fsw/src/sc_loads.s: fsw/src/sc_loads.c.s
 
 # target to generate assembly for a file
 fsw/src/sc_loads.c.s:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/sc.dir/build.make apps/sc/CMakeFiles/sc.dir/fsw/src/sc_loads.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/sc.dir/build.make apps/sc/CMakeFiles/sc.dir/fsw/src/sc_loads.c.s
 .PHONY : fsw/src/sc_loads.c.s
 
 fsw/src/sc_rtsrq.o: fsw/src/sc_rtsrq.c.o
@@ -2106,7 +2106,7 @@ fsw/src/sc_rtsrq.o: fsw/src/sc_rtsrq.c.o
 
 # target to build an object file
 fsw/src/sc_rtsrq.c.o:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/sc.dir/build.make apps/sc/CMakeFiles/sc.dir/fsw/src/sc_rtsrq.c.o
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/sc.dir/build.make apps/sc/CMakeFiles/sc.dir/fsw/src/sc_rtsrq.c.o
 .PHONY : fsw/src/sc_rtsrq.c.o
 
 fsw/src/sc_rtsrq.i: fsw/src/sc_rtsrq.c.i
@@ -2114,7 +2114,7 @@ fsw/src/sc_rtsrq.i: fsw/src/sc_rtsrq.c.i
 
 # target to preprocess a source file
 fsw/src/sc_rtsrq.c.i:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/sc.dir/build.make apps/sc/CMakeFiles/sc.dir/fsw/src/sc_rtsrq.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/sc.dir/build.make apps/sc/CMakeFiles/sc.dir/fsw/src/sc_rtsrq.c.i
 .PHONY : fsw/src/sc_rtsrq.c.i
 
 fsw/src/sc_rtsrq.s: fsw/src/sc_rtsrq.c.s
@@ -2122,7 +2122,7 @@ fsw/src/sc_rtsrq.s: fsw/src/sc_rtsrq.c.s
 
 # target to generate assembly for a file
 fsw/src/sc_rtsrq.c.s:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/sc.dir/build.make apps/sc/CMakeFiles/sc.dir/fsw/src/sc_rtsrq.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/sc.dir/build.make apps/sc/CMakeFiles/sc.dir/fsw/src/sc_rtsrq.c.s
 .PHONY : fsw/src/sc_rtsrq.c.s
 
 fsw/src/sc_state.o: fsw/src/sc_state.c.o
@@ -2130,7 +2130,7 @@ fsw/src/sc_state.o: fsw/src/sc_state.c.o
 
 # target to build an object file
 fsw/src/sc_state.c.o:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/sc.dir/build.make apps/sc/CMakeFiles/sc.dir/fsw/src/sc_state.c.o
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/sc.dir/build.make apps/sc/CMakeFiles/sc.dir/fsw/src/sc_state.c.o
 .PHONY : fsw/src/sc_state.c.o
 
 fsw/src/sc_state.i: fsw/src/sc_state.c.i
@@ -2138,7 +2138,7 @@ fsw/src/sc_state.i: fsw/src/sc_state.c.i
 
 # target to preprocess a source file
 fsw/src/sc_state.c.i:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/sc.dir/build.make apps/sc/CMakeFiles/sc.dir/fsw/src/sc_state.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/sc.dir/build.make apps/sc/CMakeFiles/sc.dir/fsw/src/sc_state.c.i
 .PHONY : fsw/src/sc_state.c.i
 
 fsw/src/sc_state.s: fsw/src/sc_state.c.s
@@ -2146,7 +2146,7 @@ fsw/src/sc_state.s: fsw/src/sc_state.c.s
 
 # target to generate assembly for a file
 fsw/src/sc_state.c.s:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/sc.dir/build.make apps/sc/CMakeFiles/sc.dir/fsw/src/sc_state.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/sc.dir/build.make apps/sc/CMakeFiles/sc.dir/fsw/src/sc_state.c.s
 .PHONY : fsw/src/sc_state.c.s
 
 fsw/src/sc_utils.o: fsw/src/sc_utils.c.o
@@ -2154,7 +2154,7 @@ fsw/src/sc_utils.o: fsw/src/sc_utils.c.o
 
 # target to build an object file
 fsw/src/sc_utils.c.o:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/sc.dir/build.make apps/sc/CMakeFiles/sc.dir/fsw/src/sc_utils.c.o
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/sc.dir/build.make apps/sc/CMakeFiles/sc.dir/fsw/src/sc_utils.c.o
 .PHONY : fsw/src/sc_utils.c.o
 
 fsw/src/sc_utils.i: fsw/src/sc_utils.c.i
@@ -2162,7 +2162,7 @@ fsw/src/sc_utils.i: fsw/src/sc_utils.c.i
 
 # target to preprocess a source file
 fsw/src/sc_utils.c.i:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/sc.dir/build.make apps/sc/CMakeFiles/sc.dir/fsw/src/sc_utils.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/sc.dir/build.make apps/sc/CMakeFiles/sc.dir/fsw/src/sc_utils.c.i
 .PHONY : fsw/src/sc_utils.c.i
 
 fsw/src/sc_utils.s: fsw/src/sc_utils.c.s
@@ -2170,7 +2170,7 @@ fsw/src/sc_utils.s: fsw/src/sc_utils.c.s
 
 # target to generate assembly for a file
 fsw/src/sc_utils.c.s:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/sc.dir/build.make apps/sc/CMakeFiles/sc.dir/fsw/src/sc_utils.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/sc.dir/build.make apps/sc/CMakeFiles/sc.dir/fsw/src/sc_utils.c.s
 .PHONY : fsw/src/sc_utils.c.s
 
 fsw/tables/sc_ats1.o: fsw/tables/sc_ats1.c.o
@@ -2178,7 +2178,7 @@ fsw/tables/sc_ats1.o: fsw/tables/sc_ats1.c.o
 
 # target to build an object file
 fsw/tables/sc_ats1.c.o:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_ats1.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_ats1.dir/fsw/tables/sc_ats1.c.o
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_ats1.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_ats1.dir/fsw/tables/sc_ats1.c.o
 .PHONY : fsw/tables/sc_ats1.c.o
 
 fsw/tables/sc_ats1.i: fsw/tables/sc_ats1.c.i
@@ -2186,7 +2186,7 @@ fsw/tables/sc_ats1.i: fsw/tables/sc_ats1.c.i
 
 # target to preprocess a source file
 fsw/tables/sc_ats1.c.i:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_ats1.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_ats1.dir/fsw/tables/sc_ats1.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_ats1.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_ats1.dir/fsw/tables/sc_ats1.c.i
 .PHONY : fsw/tables/sc_ats1.c.i
 
 fsw/tables/sc_ats1.s: fsw/tables/sc_ats1.c.s
@@ -2194,7 +2194,7 @@ fsw/tables/sc_ats1.s: fsw/tables/sc_ats1.c.s
 
 # target to generate assembly for a file
 fsw/tables/sc_ats1.c.s:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_ats1.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_ats1.dir/fsw/tables/sc_ats1.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_ats1.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_ats1.dir/fsw/tables/sc_ats1.c.s
 .PHONY : fsw/tables/sc_ats1.c.s
 
 fsw/tables/sc_rts002.o: fsw/tables/sc_rts002.c.o
@@ -2202,7 +2202,7 @@ fsw/tables/sc_rts002.o: fsw/tables/sc_rts002.c.o
 
 # target to build an object file
 fsw/tables/sc_rts002.c.o:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts002.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts002.dir/fsw/tables/sc_rts002.c.o
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts002.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts002.dir/fsw/tables/sc_rts002.c.o
 .PHONY : fsw/tables/sc_rts002.c.o
 
 fsw/tables/sc_rts002.i: fsw/tables/sc_rts002.c.i
@@ -2210,7 +2210,7 @@ fsw/tables/sc_rts002.i: fsw/tables/sc_rts002.c.i
 
 # target to preprocess a source file
 fsw/tables/sc_rts002.c.i:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts002.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts002.dir/fsw/tables/sc_rts002.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts002.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts002.dir/fsw/tables/sc_rts002.c.i
 .PHONY : fsw/tables/sc_rts002.c.i
 
 fsw/tables/sc_rts002.s: fsw/tables/sc_rts002.c.s
@@ -2218,7 +2218,7 @@ fsw/tables/sc_rts002.s: fsw/tables/sc_rts002.c.s
 
 # target to generate assembly for a file
 fsw/tables/sc_rts002.c.s:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts002.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts002.dir/fsw/tables/sc_rts002.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts002.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts002.dir/fsw/tables/sc_rts002.c.s
 .PHONY : fsw/tables/sc_rts002.c.s
 
 fsw/tables/sc_rts004.o: fsw/tables/sc_rts004.c.o
@@ -2226,7 +2226,7 @@ fsw/tables/sc_rts004.o: fsw/tables/sc_rts004.c.o
 
 # target to build an object file
 fsw/tables/sc_rts004.c.o:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts004.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts004.dir/fsw/tables/sc_rts004.c.o
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts004.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts004.dir/fsw/tables/sc_rts004.c.o
 .PHONY : fsw/tables/sc_rts004.c.o
 
 fsw/tables/sc_rts004.i: fsw/tables/sc_rts004.c.i
@@ -2234,7 +2234,7 @@ fsw/tables/sc_rts004.i: fsw/tables/sc_rts004.c.i
 
 # target to preprocess a source file
 fsw/tables/sc_rts004.c.i:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts004.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts004.dir/fsw/tables/sc_rts004.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts004.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts004.dir/fsw/tables/sc_rts004.c.i
 .PHONY : fsw/tables/sc_rts004.c.i
 
 fsw/tables/sc_rts004.s: fsw/tables/sc_rts004.c.s
@@ -2242,7 +2242,7 @@ fsw/tables/sc_rts004.s: fsw/tables/sc_rts004.c.s
 
 # target to generate assembly for a file
 fsw/tables/sc_rts004.c.s:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts004.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts004.dir/fsw/tables/sc_rts004.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts004.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts004.dir/fsw/tables/sc_rts004.c.s
 .PHONY : fsw/tables/sc_rts004.c.s
 
 fsw/tables/sc_rts006.o: fsw/tables/sc_rts006.c.o
@@ -2250,7 +2250,7 @@ fsw/tables/sc_rts006.o: fsw/tables/sc_rts006.c.o
 
 # target to build an object file
 fsw/tables/sc_rts006.c.o:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts006.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts006.dir/fsw/tables/sc_rts006.c.o
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts006.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts006.dir/fsw/tables/sc_rts006.c.o
 .PHONY : fsw/tables/sc_rts006.c.o
 
 fsw/tables/sc_rts006.i: fsw/tables/sc_rts006.c.i
@@ -2258,7 +2258,7 @@ fsw/tables/sc_rts006.i: fsw/tables/sc_rts006.c.i
 
 # target to preprocess a source file
 fsw/tables/sc_rts006.c.i:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts006.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts006.dir/fsw/tables/sc_rts006.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts006.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts006.dir/fsw/tables/sc_rts006.c.i
 .PHONY : fsw/tables/sc_rts006.c.i
 
 fsw/tables/sc_rts006.s: fsw/tables/sc_rts006.c.s
@@ -2266,7 +2266,7 @@ fsw/tables/sc_rts006.s: fsw/tables/sc_rts006.c.s
 
 # target to generate assembly for a file
 fsw/tables/sc_rts006.c.s:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts006.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts006.dir/fsw/tables/sc_rts006.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts006.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts006.dir/fsw/tables/sc_rts006.c.s
 .PHONY : fsw/tables/sc_rts006.c.s
 
 fsw/tables/sc_rts007.o: fsw/tables/sc_rts007.c.o
@@ -2274,7 +2274,7 @@ fsw/tables/sc_rts007.o: fsw/tables/sc_rts007.c.o
 
 # target to build an object file
 fsw/tables/sc_rts007.c.o:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts007.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts007.dir/fsw/tables/sc_rts007.c.o
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts007.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts007.dir/fsw/tables/sc_rts007.c.o
 .PHONY : fsw/tables/sc_rts007.c.o
 
 fsw/tables/sc_rts007.i: fsw/tables/sc_rts007.c.i
@@ -2282,7 +2282,7 @@ fsw/tables/sc_rts007.i: fsw/tables/sc_rts007.c.i
 
 # target to preprocess a source file
 fsw/tables/sc_rts007.c.i:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts007.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts007.dir/fsw/tables/sc_rts007.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts007.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts007.dir/fsw/tables/sc_rts007.c.i
 .PHONY : fsw/tables/sc_rts007.c.i
 
 fsw/tables/sc_rts007.s: fsw/tables/sc_rts007.c.s
@@ -2290,7 +2290,7 @@ fsw/tables/sc_rts007.s: fsw/tables/sc_rts007.c.s
 
 # target to generate assembly for a file
 fsw/tables/sc_rts007.c.s:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts007.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts007.dir/fsw/tables/sc_rts007.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts007.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts007.dir/fsw/tables/sc_rts007.c.s
 .PHONY : fsw/tables/sc_rts007.c.s
 
 fsw/tables/sc_rts008.o: fsw/tables/sc_rts008.c.o
@@ -2298,7 +2298,7 @@ fsw/tables/sc_rts008.o: fsw/tables/sc_rts008.c.o
 
 # target to build an object file
 fsw/tables/sc_rts008.c.o:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts008.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts008.dir/fsw/tables/sc_rts008.c.o
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts008.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts008.dir/fsw/tables/sc_rts008.c.o
 .PHONY : fsw/tables/sc_rts008.c.o
 
 fsw/tables/sc_rts008.i: fsw/tables/sc_rts008.c.i
@@ -2306,7 +2306,7 @@ fsw/tables/sc_rts008.i: fsw/tables/sc_rts008.c.i
 
 # target to preprocess a source file
 fsw/tables/sc_rts008.c.i:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts008.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts008.dir/fsw/tables/sc_rts008.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts008.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts008.dir/fsw/tables/sc_rts008.c.i
 .PHONY : fsw/tables/sc_rts008.c.i
 
 fsw/tables/sc_rts008.s: fsw/tables/sc_rts008.c.s
@@ -2314,7 +2314,7 @@ fsw/tables/sc_rts008.s: fsw/tables/sc_rts008.c.s
 
 # target to generate assembly for a file
 fsw/tables/sc_rts008.c.s:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts008.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts008.dir/fsw/tables/sc_rts008.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts008.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts008.dir/fsw/tables/sc_rts008.c.s
 .PHONY : fsw/tables/sc_rts008.c.s
 
 fsw/tables/sc_rts009.o: fsw/tables/sc_rts009.c.o
@@ -2322,7 +2322,7 @@ fsw/tables/sc_rts009.o: fsw/tables/sc_rts009.c.o
 
 # target to build an object file
 fsw/tables/sc_rts009.c.o:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts009.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts009.dir/fsw/tables/sc_rts009.c.o
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts009.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts009.dir/fsw/tables/sc_rts009.c.o
 .PHONY : fsw/tables/sc_rts009.c.o
 
 fsw/tables/sc_rts009.i: fsw/tables/sc_rts009.c.i
@@ -2330,7 +2330,7 @@ fsw/tables/sc_rts009.i: fsw/tables/sc_rts009.c.i
 
 # target to preprocess a source file
 fsw/tables/sc_rts009.c.i:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts009.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts009.dir/fsw/tables/sc_rts009.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts009.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts009.dir/fsw/tables/sc_rts009.c.i
 .PHONY : fsw/tables/sc_rts009.c.i
 
 fsw/tables/sc_rts009.s: fsw/tables/sc_rts009.c.s
@@ -2338,7 +2338,7 @@ fsw/tables/sc_rts009.s: fsw/tables/sc_rts009.c.s
 
 # target to generate assembly for a file
 fsw/tables/sc_rts009.c.s:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts009.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts009.dir/fsw/tables/sc_rts009.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts009.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts009.dir/fsw/tables/sc_rts009.c.s
 .PHONY : fsw/tables/sc_rts009.c.s
 
 fsw/tables/sc_rts010.o: fsw/tables/sc_rts010.c.o
@@ -2346,7 +2346,7 @@ fsw/tables/sc_rts010.o: fsw/tables/sc_rts010.c.o
 
 # target to build an object file
 fsw/tables/sc_rts010.c.o:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts010.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts010.dir/fsw/tables/sc_rts010.c.o
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts010.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts010.dir/fsw/tables/sc_rts010.c.o
 .PHONY : fsw/tables/sc_rts010.c.o
 
 fsw/tables/sc_rts010.i: fsw/tables/sc_rts010.c.i
@@ -2354,7 +2354,7 @@ fsw/tables/sc_rts010.i: fsw/tables/sc_rts010.c.i
 
 # target to preprocess a source file
 fsw/tables/sc_rts010.c.i:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts010.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts010.dir/fsw/tables/sc_rts010.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts010.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts010.dir/fsw/tables/sc_rts010.c.i
 .PHONY : fsw/tables/sc_rts010.c.i
 
 fsw/tables/sc_rts010.s: fsw/tables/sc_rts010.c.s
@@ -2362,7 +2362,7 @@ fsw/tables/sc_rts010.s: fsw/tables/sc_rts010.c.s
 
 # target to generate assembly for a file
 fsw/tables/sc_rts010.c.s:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts010.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts010.dir/fsw/tables/sc_rts010.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts010.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts010.dir/fsw/tables/sc_rts010.c.s
 .PHONY : fsw/tables/sc_rts010.c.s
 
 fsw/tables/sc_rts011.o: fsw/tables/sc_rts011.c.o
@@ -2370,7 +2370,7 @@ fsw/tables/sc_rts011.o: fsw/tables/sc_rts011.c.o
 
 # target to build an object file
 fsw/tables/sc_rts011.c.o:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts011.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts011.dir/fsw/tables/sc_rts011.c.o
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts011.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts011.dir/fsw/tables/sc_rts011.c.o
 .PHONY : fsw/tables/sc_rts011.c.o
 
 fsw/tables/sc_rts011.i: fsw/tables/sc_rts011.c.i
@@ -2378,7 +2378,7 @@ fsw/tables/sc_rts011.i: fsw/tables/sc_rts011.c.i
 
 # target to preprocess a source file
 fsw/tables/sc_rts011.c.i:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts011.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts011.dir/fsw/tables/sc_rts011.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts011.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts011.dir/fsw/tables/sc_rts011.c.i
 .PHONY : fsw/tables/sc_rts011.c.i
 
 fsw/tables/sc_rts011.s: fsw/tables/sc_rts011.c.s
@@ -2386,7 +2386,7 @@ fsw/tables/sc_rts011.s: fsw/tables/sc_rts011.c.s
 
 # target to generate assembly for a file
 fsw/tables/sc_rts011.c.s:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts011.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts011.dir/fsw/tables/sc_rts011.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts011.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts011.dir/fsw/tables/sc_rts011.c.s
 .PHONY : fsw/tables/sc_rts011.c.s
 
 fsw/tables/sc_rts012.o: fsw/tables/sc_rts012.c.o
@@ -2394,7 +2394,7 @@ fsw/tables/sc_rts012.o: fsw/tables/sc_rts012.c.o
 
 # target to build an object file
 fsw/tables/sc_rts012.c.o:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts012.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts012.dir/fsw/tables/sc_rts012.c.o
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts012.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts012.dir/fsw/tables/sc_rts012.c.o
 .PHONY : fsw/tables/sc_rts012.c.o
 
 fsw/tables/sc_rts012.i: fsw/tables/sc_rts012.c.i
@@ -2402,7 +2402,7 @@ fsw/tables/sc_rts012.i: fsw/tables/sc_rts012.c.i
 
 # target to preprocess a source file
 fsw/tables/sc_rts012.c.i:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts012.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts012.dir/fsw/tables/sc_rts012.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts012.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts012.dir/fsw/tables/sc_rts012.c.i
 .PHONY : fsw/tables/sc_rts012.c.i
 
 fsw/tables/sc_rts012.s: fsw/tables/sc_rts012.c.s
@@ -2410,7 +2410,7 @@ fsw/tables/sc_rts012.s: fsw/tables/sc_rts012.c.s
 
 # target to generate assembly for a file
 fsw/tables/sc_rts012.c.s:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts012.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts012.dir/fsw/tables/sc_rts012.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts012.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts012.dir/fsw/tables/sc_rts012.c.s
 .PHONY : fsw/tables/sc_rts012.c.s
 
 fsw/tables/sc_rts013.o: fsw/tables/sc_rts013.c.o
@@ -2418,7 +2418,7 @@ fsw/tables/sc_rts013.o: fsw/tables/sc_rts013.c.o
 
 # target to build an object file
 fsw/tables/sc_rts013.c.o:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts013.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts013.dir/fsw/tables/sc_rts013.c.o
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts013.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts013.dir/fsw/tables/sc_rts013.c.o
 .PHONY : fsw/tables/sc_rts013.c.o
 
 fsw/tables/sc_rts013.i: fsw/tables/sc_rts013.c.i
@@ -2426,7 +2426,7 @@ fsw/tables/sc_rts013.i: fsw/tables/sc_rts013.c.i
 
 # target to preprocess a source file
 fsw/tables/sc_rts013.c.i:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts013.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts013.dir/fsw/tables/sc_rts013.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts013.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts013.dir/fsw/tables/sc_rts013.c.i
 .PHONY : fsw/tables/sc_rts013.c.i
 
 fsw/tables/sc_rts013.s: fsw/tables/sc_rts013.c.s
@@ -2434,7 +2434,7 @@ fsw/tables/sc_rts013.s: fsw/tables/sc_rts013.c.s
 
 # target to generate assembly for a file
 fsw/tables/sc_rts013.c.s:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts013.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts013.dir/fsw/tables/sc_rts013.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts013.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts013.dir/fsw/tables/sc_rts013.c.s
 .PHONY : fsw/tables/sc_rts013.c.s
 
 fsw/tables/sc_rts014.o: fsw/tables/sc_rts014.c.o
@@ -2442,7 +2442,7 @@ fsw/tables/sc_rts014.o: fsw/tables/sc_rts014.c.o
 
 # target to build an object file
 fsw/tables/sc_rts014.c.o:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts014.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts014.dir/fsw/tables/sc_rts014.c.o
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts014.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts014.dir/fsw/tables/sc_rts014.c.o
 .PHONY : fsw/tables/sc_rts014.c.o
 
 fsw/tables/sc_rts014.i: fsw/tables/sc_rts014.c.i
@@ -2450,7 +2450,7 @@ fsw/tables/sc_rts014.i: fsw/tables/sc_rts014.c.i
 
 # target to preprocess a source file
 fsw/tables/sc_rts014.c.i:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts014.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts014.dir/fsw/tables/sc_rts014.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts014.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts014.dir/fsw/tables/sc_rts014.c.i
 .PHONY : fsw/tables/sc_rts014.c.i
 
 fsw/tables/sc_rts014.s: fsw/tables/sc_rts014.c.s
@@ -2458,7 +2458,7 @@ fsw/tables/sc_rts014.s: fsw/tables/sc_rts014.c.s
 
 # target to generate assembly for a file
 fsw/tables/sc_rts014.c.s:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts014.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts014.dir/fsw/tables/sc_rts014.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts014.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts014.dir/fsw/tables/sc_rts014.c.s
 .PHONY : fsw/tables/sc_rts014.c.s
 
 fsw/tables/sc_rts015.o: fsw/tables/sc_rts015.c.o
@@ -2466,7 +2466,7 @@ fsw/tables/sc_rts015.o: fsw/tables/sc_rts015.c.o
 
 # target to build an object file
 fsw/tables/sc_rts015.c.o:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts015.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts015.dir/fsw/tables/sc_rts015.c.o
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts015.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts015.dir/fsw/tables/sc_rts015.c.o
 .PHONY : fsw/tables/sc_rts015.c.o
 
 fsw/tables/sc_rts015.i: fsw/tables/sc_rts015.c.i
@@ -2474,7 +2474,7 @@ fsw/tables/sc_rts015.i: fsw/tables/sc_rts015.c.i
 
 # target to preprocess a source file
 fsw/tables/sc_rts015.c.i:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts015.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts015.dir/fsw/tables/sc_rts015.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts015.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts015.dir/fsw/tables/sc_rts015.c.i
 .PHONY : fsw/tables/sc_rts015.c.i
 
 fsw/tables/sc_rts015.s: fsw/tables/sc_rts015.c.s
@@ -2482,7 +2482,7 @@ fsw/tables/sc_rts015.s: fsw/tables/sc_rts015.c.s
 
 # target to generate assembly for a file
 fsw/tables/sc_rts015.c.s:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts015.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts015.dir/fsw/tables/sc_rts015.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts015.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts015.dir/fsw/tables/sc_rts015.c.s
 .PHONY : fsw/tables/sc_rts015.c.s
 
 fsw/tables/sc_rts016.o: fsw/tables/sc_rts016.c.o
@@ -2490,7 +2490,7 @@ fsw/tables/sc_rts016.o: fsw/tables/sc_rts016.c.o
 
 # target to build an object file
 fsw/tables/sc_rts016.c.o:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts016.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts016.dir/fsw/tables/sc_rts016.c.o
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts016.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts016.dir/fsw/tables/sc_rts016.c.o
 .PHONY : fsw/tables/sc_rts016.c.o
 
 fsw/tables/sc_rts016.i: fsw/tables/sc_rts016.c.i
@@ -2498,7 +2498,7 @@ fsw/tables/sc_rts016.i: fsw/tables/sc_rts016.c.i
 
 # target to preprocess a source file
 fsw/tables/sc_rts016.c.i:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts016.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts016.dir/fsw/tables/sc_rts016.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts016.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts016.dir/fsw/tables/sc_rts016.c.i
 .PHONY : fsw/tables/sc_rts016.c.i
 
 fsw/tables/sc_rts016.s: fsw/tables/sc_rts016.c.s
@@ -2506,7 +2506,7 @@ fsw/tables/sc_rts016.s: fsw/tables/sc_rts016.c.s
 
 # target to generate assembly for a file
 fsw/tables/sc_rts016.c.s:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts016.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts016.dir/fsw/tables/sc_rts016.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts016.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts016.dir/fsw/tables/sc_rts016.c.s
 .PHONY : fsw/tables/sc_rts016.c.s
 
 fsw/tables/sc_rts017.o: fsw/tables/sc_rts017.c.o
@@ -2514,7 +2514,7 @@ fsw/tables/sc_rts017.o: fsw/tables/sc_rts017.c.o
 
 # target to build an object file
 fsw/tables/sc_rts017.c.o:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts017.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts017.dir/fsw/tables/sc_rts017.c.o
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts017.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts017.dir/fsw/tables/sc_rts017.c.o
 .PHONY : fsw/tables/sc_rts017.c.o
 
 fsw/tables/sc_rts017.i: fsw/tables/sc_rts017.c.i
@@ -2522,7 +2522,7 @@ fsw/tables/sc_rts017.i: fsw/tables/sc_rts017.c.i
 
 # target to preprocess a source file
 fsw/tables/sc_rts017.c.i:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts017.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts017.dir/fsw/tables/sc_rts017.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts017.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts017.dir/fsw/tables/sc_rts017.c.i
 .PHONY : fsw/tables/sc_rts017.c.i
 
 fsw/tables/sc_rts017.s: fsw/tables/sc_rts017.c.s
@@ -2530,7 +2530,7 @@ fsw/tables/sc_rts017.s: fsw/tables/sc_rts017.c.s
 
 # target to generate assembly for a file
 fsw/tables/sc_rts017.c.s:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts017.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts017.dir/fsw/tables/sc_rts017.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts017.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts017.dir/fsw/tables/sc_rts017.c.s
 .PHONY : fsw/tables/sc_rts017.c.s
 
 fsw/tables/sc_rts018.o: fsw/tables/sc_rts018.c.o
@@ -2538,7 +2538,7 @@ fsw/tables/sc_rts018.o: fsw/tables/sc_rts018.c.o
 
 # target to build an object file
 fsw/tables/sc_rts018.c.o:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts018.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts018.dir/fsw/tables/sc_rts018.c.o
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts018.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts018.dir/fsw/tables/sc_rts018.c.o
 .PHONY : fsw/tables/sc_rts018.c.o
 
 fsw/tables/sc_rts018.i: fsw/tables/sc_rts018.c.i
@@ -2546,7 +2546,7 @@ fsw/tables/sc_rts018.i: fsw/tables/sc_rts018.c.i
 
 # target to preprocess a source file
 fsw/tables/sc_rts018.c.i:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts018.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts018.dir/fsw/tables/sc_rts018.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts018.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts018.dir/fsw/tables/sc_rts018.c.i
 .PHONY : fsw/tables/sc_rts018.c.i
 
 fsw/tables/sc_rts018.s: fsw/tables/sc_rts018.c.s
@@ -2554,7 +2554,7 @@ fsw/tables/sc_rts018.s: fsw/tables/sc_rts018.c.s
 
 # target to generate assembly for a file
 fsw/tables/sc_rts018.c.s:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts018.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts018.dir/fsw/tables/sc_rts018.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts018.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts018.dir/fsw/tables/sc_rts018.c.s
 .PHONY : fsw/tables/sc_rts018.c.s
 
 fsw/tables/sc_rts019.o: fsw/tables/sc_rts019.c.o
@@ -2562,7 +2562,7 @@ fsw/tables/sc_rts019.o: fsw/tables/sc_rts019.c.o
 
 # target to build an object file
 fsw/tables/sc_rts019.c.o:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts019.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts019.dir/fsw/tables/sc_rts019.c.o
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts019.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts019.dir/fsw/tables/sc_rts019.c.o
 .PHONY : fsw/tables/sc_rts019.c.o
 
 fsw/tables/sc_rts019.i: fsw/tables/sc_rts019.c.i
@@ -2570,7 +2570,7 @@ fsw/tables/sc_rts019.i: fsw/tables/sc_rts019.c.i
 
 # target to preprocess a source file
 fsw/tables/sc_rts019.c.i:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts019.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts019.dir/fsw/tables/sc_rts019.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts019.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts019.dir/fsw/tables/sc_rts019.c.i
 .PHONY : fsw/tables/sc_rts019.c.i
 
 fsw/tables/sc_rts019.s: fsw/tables/sc_rts019.c.s
@@ -2578,7 +2578,7 @@ fsw/tables/sc_rts019.s: fsw/tables/sc_rts019.c.s
 
 # target to generate assembly for a file
 fsw/tables/sc_rts019.c.s:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts019.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts019.dir/fsw/tables/sc_rts019.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts019.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts019.dir/fsw/tables/sc_rts019.c.s
 .PHONY : fsw/tables/sc_rts019.c.s
 
 fsw/tables/sc_rts020.o: fsw/tables/sc_rts020.c.o
@@ -2586,7 +2586,7 @@ fsw/tables/sc_rts020.o: fsw/tables/sc_rts020.c.o
 
 # target to build an object file
 fsw/tables/sc_rts020.c.o:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts020.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts020.dir/fsw/tables/sc_rts020.c.o
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts020.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts020.dir/fsw/tables/sc_rts020.c.o
 .PHONY : fsw/tables/sc_rts020.c.o
 
 fsw/tables/sc_rts020.i: fsw/tables/sc_rts020.c.i
@@ -2594,7 +2594,7 @@ fsw/tables/sc_rts020.i: fsw/tables/sc_rts020.c.i
 
 # target to preprocess a source file
 fsw/tables/sc_rts020.c.i:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts020.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts020.dir/fsw/tables/sc_rts020.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts020.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts020.dir/fsw/tables/sc_rts020.c.i
 .PHONY : fsw/tables/sc_rts020.c.i
 
 fsw/tables/sc_rts020.s: fsw/tables/sc_rts020.c.s
@@ -2602,7 +2602,7 @@ fsw/tables/sc_rts020.s: fsw/tables/sc_rts020.c.s
 
 # target to generate assembly for a file
 fsw/tables/sc_rts020.c.s:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts020.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts020.dir/fsw/tables/sc_rts020.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts020.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts020.dir/fsw/tables/sc_rts020.c.s
 .PHONY : fsw/tables/sc_rts020.c.s
 
 fsw/tables/sc_rts021.o: fsw/tables/sc_rts021.c.o
@@ -2610,7 +2610,7 @@ fsw/tables/sc_rts021.o: fsw/tables/sc_rts021.c.o
 
 # target to build an object file
 fsw/tables/sc_rts021.c.o:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts021.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts021.dir/fsw/tables/sc_rts021.c.o
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts021.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts021.dir/fsw/tables/sc_rts021.c.o
 .PHONY : fsw/tables/sc_rts021.c.o
 
 fsw/tables/sc_rts021.i: fsw/tables/sc_rts021.c.i
@@ -2618,7 +2618,7 @@ fsw/tables/sc_rts021.i: fsw/tables/sc_rts021.c.i
 
 # target to preprocess a source file
 fsw/tables/sc_rts021.c.i:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts021.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts021.dir/fsw/tables/sc_rts021.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts021.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts021.dir/fsw/tables/sc_rts021.c.i
 .PHONY : fsw/tables/sc_rts021.c.i
 
 fsw/tables/sc_rts021.s: fsw/tables/sc_rts021.c.s
@@ -2626,7 +2626,7 @@ fsw/tables/sc_rts021.s: fsw/tables/sc_rts021.c.s
 
 # target to generate assembly for a file
 fsw/tables/sc_rts021.c.s:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts021.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts021.dir/fsw/tables/sc_rts021.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts021.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts021.dir/fsw/tables/sc_rts021.c.s
 .PHONY : fsw/tables/sc_rts021.c.s
 
 fsw/tables/sc_rts022.o: fsw/tables/sc_rts022.c.o
@@ -2634,7 +2634,7 @@ fsw/tables/sc_rts022.o: fsw/tables/sc_rts022.c.o
 
 # target to build an object file
 fsw/tables/sc_rts022.c.o:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts022.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts022.dir/fsw/tables/sc_rts022.c.o
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts022.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts022.dir/fsw/tables/sc_rts022.c.o
 .PHONY : fsw/tables/sc_rts022.c.o
 
 fsw/tables/sc_rts022.i: fsw/tables/sc_rts022.c.i
@@ -2642,7 +2642,7 @@ fsw/tables/sc_rts022.i: fsw/tables/sc_rts022.c.i
 
 # target to preprocess a source file
 fsw/tables/sc_rts022.c.i:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts022.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts022.dir/fsw/tables/sc_rts022.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts022.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts022.dir/fsw/tables/sc_rts022.c.i
 .PHONY : fsw/tables/sc_rts022.c.i
 
 fsw/tables/sc_rts022.s: fsw/tables/sc_rts022.c.s
@@ -2650,7 +2650,7 @@ fsw/tables/sc_rts022.s: fsw/tables/sc_rts022.c.s
 
 # target to generate assembly for a file
 fsw/tables/sc_rts022.c.s:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts022.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts022.dir/fsw/tables/sc_rts022.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts022.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts022.dir/fsw/tables/sc_rts022.c.s
 .PHONY : fsw/tables/sc_rts022.c.s
 
 fsw/tables/sc_rts023.o: fsw/tables/sc_rts023.c.o
@@ -2658,7 +2658,7 @@ fsw/tables/sc_rts023.o: fsw/tables/sc_rts023.c.o
 
 # target to build an object file
 fsw/tables/sc_rts023.c.o:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts023.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts023.dir/fsw/tables/sc_rts023.c.o
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts023.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts023.dir/fsw/tables/sc_rts023.c.o
 .PHONY : fsw/tables/sc_rts023.c.o
 
 fsw/tables/sc_rts023.i: fsw/tables/sc_rts023.c.i
@@ -2666,7 +2666,7 @@ fsw/tables/sc_rts023.i: fsw/tables/sc_rts023.c.i
 
 # target to preprocess a source file
 fsw/tables/sc_rts023.c.i:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts023.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts023.dir/fsw/tables/sc_rts023.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts023.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts023.dir/fsw/tables/sc_rts023.c.i
 .PHONY : fsw/tables/sc_rts023.c.i
 
 fsw/tables/sc_rts023.s: fsw/tables/sc_rts023.c.s
@@ -2674,7 +2674,7 @@ fsw/tables/sc_rts023.s: fsw/tables/sc_rts023.c.s
 
 # target to generate assembly for a file
 fsw/tables/sc_rts023.c.s:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts023.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts023.dir/fsw/tables/sc_rts023.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts023.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts023.dir/fsw/tables/sc_rts023.c.s
 .PHONY : fsw/tables/sc_rts023.c.s
 
 fsw/tables/sc_rts024.o: fsw/tables/sc_rts024.c.o
@@ -2682,7 +2682,7 @@ fsw/tables/sc_rts024.o: fsw/tables/sc_rts024.c.o
 
 # target to build an object file
 fsw/tables/sc_rts024.c.o:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts024.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts024.dir/fsw/tables/sc_rts024.c.o
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts024.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts024.dir/fsw/tables/sc_rts024.c.o
 .PHONY : fsw/tables/sc_rts024.c.o
 
 fsw/tables/sc_rts024.i: fsw/tables/sc_rts024.c.i
@@ -2690,7 +2690,7 @@ fsw/tables/sc_rts024.i: fsw/tables/sc_rts024.c.i
 
 # target to preprocess a source file
 fsw/tables/sc_rts024.c.i:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts024.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts024.dir/fsw/tables/sc_rts024.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts024.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts024.dir/fsw/tables/sc_rts024.c.i
 .PHONY : fsw/tables/sc_rts024.c.i
 
 fsw/tables/sc_rts024.s: fsw/tables/sc_rts024.c.s
@@ -2698,7 +2698,7 @@ fsw/tables/sc_rts024.s: fsw/tables/sc_rts024.c.s
 
 # target to generate assembly for a file
 fsw/tables/sc_rts024.c.s:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts024.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts024.dir/fsw/tables/sc_rts024.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts024.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts024.dir/fsw/tables/sc_rts024.c.s
 .PHONY : fsw/tables/sc_rts024.c.s
 
 fsw/tables/sc_rts025.o: fsw/tables/sc_rts025.c.o
@@ -2706,7 +2706,7 @@ fsw/tables/sc_rts025.o: fsw/tables/sc_rts025.c.o
 
 # target to build an object file
 fsw/tables/sc_rts025.c.o:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts025.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts025.dir/fsw/tables/sc_rts025.c.o
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts025.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts025.dir/fsw/tables/sc_rts025.c.o
 .PHONY : fsw/tables/sc_rts025.c.o
 
 fsw/tables/sc_rts025.i: fsw/tables/sc_rts025.c.i
@@ -2714,7 +2714,7 @@ fsw/tables/sc_rts025.i: fsw/tables/sc_rts025.c.i
 
 # target to preprocess a source file
 fsw/tables/sc_rts025.c.i:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts025.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts025.dir/fsw/tables/sc_rts025.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts025.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts025.dir/fsw/tables/sc_rts025.c.i
 .PHONY : fsw/tables/sc_rts025.c.i
 
 fsw/tables/sc_rts025.s: fsw/tables/sc_rts025.c.s
@@ -2722,7 +2722,7 @@ fsw/tables/sc_rts025.s: fsw/tables/sc_rts025.c.s
 
 # target to generate assembly for a file
 fsw/tables/sc_rts025.c.s:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts025.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts025.dir/fsw/tables/sc_rts025.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts025.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts025.dir/fsw/tables/sc_rts025.c.s
 .PHONY : fsw/tables/sc_rts025.c.s
 
 fsw/tables/sc_rts026.o: fsw/tables/sc_rts026.c.o
@@ -2730,7 +2730,7 @@ fsw/tables/sc_rts026.o: fsw/tables/sc_rts026.c.o
 
 # target to build an object file
 fsw/tables/sc_rts026.c.o:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts026.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts026.dir/fsw/tables/sc_rts026.c.o
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts026.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts026.dir/fsw/tables/sc_rts026.c.o
 .PHONY : fsw/tables/sc_rts026.c.o
 
 fsw/tables/sc_rts026.i: fsw/tables/sc_rts026.c.i
@@ -2738,7 +2738,7 @@ fsw/tables/sc_rts026.i: fsw/tables/sc_rts026.c.i
 
 # target to preprocess a source file
 fsw/tables/sc_rts026.c.i:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts026.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts026.dir/fsw/tables/sc_rts026.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts026.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts026.dir/fsw/tables/sc_rts026.c.i
 .PHONY : fsw/tables/sc_rts026.c.i
 
 fsw/tables/sc_rts026.s: fsw/tables/sc_rts026.c.s
@@ -2746,7 +2746,7 @@ fsw/tables/sc_rts026.s: fsw/tables/sc_rts026.c.s
 
 # target to generate assembly for a file
 fsw/tables/sc_rts026.c.s:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts026.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts026.dir/fsw/tables/sc_rts026.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts026.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts026.dir/fsw/tables/sc_rts026.c.s
 .PHONY : fsw/tables/sc_rts026.c.s
 
 fsw/tables/sc_rts027.o: fsw/tables/sc_rts027.c.o
@@ -2754,7 +2754,7 @@ fsw/tables/sc_rts027.o: fsw/tables/sc_rts027.c.o
 
 # target to build an object file
 fsw/tables/sc_rts027.c.o:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts027.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts027.dir/fsw/tables/sc_rts027.c.o
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts027.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts027.dir/fsw/tables/sc_rts027.c.o
 .PHONY : fsw/tables/sc_rts027.c.o
 
 fsw/tables/sc_rts027.i: fsw/tables/sc_rts027.c.i
@@ -2762,7 +2762,7 @@ fsw/tables/sc_rts027.i: fsw/tables/sc_rts027.c.i
 
 # target to preprocess a source file
 fsw/tables/sc_rts027.c.i:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts027.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts027.dir/fsw/tables/sc_rts027.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts027.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts027.dir/fsw/tables/sc_rts027.c.i
 .PHONY : fsw/tables/sc_rts027.c.i
 
 fsw/tables/sc_rts027.s: fsw/tables/sc_rts027.c.s
@@ -2770,7 +2770,7 @@ fsw/tables/sc_rts027.s: fsw/tables/sc_rts027.c.s
 
 # target to generate assembly for a file
 fsw/tables/sc_rts027.c.s:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts027.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts027.dir/fsw/tables/sc_rts027.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts027.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts027.dir/fsw/tables/sc_rts027.c.s
 .PHONY : fsw/tables/sc_rts027.c.s
 
 fsw/tables/sc_rts028.o: fsw/tables/sc_rts028.c.o
@@ -2778,7 +2778,7 @@ fsw/tables/sc_rts028.o: fsw/tables/sc_rts028.c.o
 
 # target to build an object file
 fsw/tables/sc_rts028.c.o:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts028.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts028.dir/fsw/tables/sc_rts028.c.o
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts028.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts028.dir/fsw/tables/sc_rts028.c.o
 .PHONY : fsw/tables/sc_rts028.c.o
 
 fsw/tables/sc_rts028.i: fsw/tables/sc_rts028.c.i
@@ -2786,7 +2786,7 @@ fsw/tables/sc_rts028.i: fsw/tables/sc_rts028.c.i
 
 # target to preprocess a source file
 fsw/tables/sc_rts028.c.i:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts028.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts028.dir/fsw/tables/sc_rts028.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts028.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts028.dir/fsw/tables/sc_rts028.c.i
 .PHONY : fsw/tables/sc_rts028.c.i
 
 fsw/tables/sc_rts028.s: fsw/tables/sc_rts028.c.s
@@ -2794,7 +2794,7 @@ fsw/tables/sc_rts028.s: fsw/tables/sc_rts028.c.s
 
 # target to generate assembly for a file
 fsw/tables/sc_rts028.c.s:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts028.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts028.dir/fsw/tables/sc_rts028.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts028.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts028.dir/fsw/tables/sc_rts028.c.s
 .PHONY : fsw/tables/sc_rts028.c.s
 
 fsw/tables/sc_rts029.o: fsw/tables/sc_rts029.c.o
@@ -2802,7 +2802,7 @@ fsw/tables/sc_rts029.o: fsw/tables/sc_rts029.c.o
 
 # target to build an object file
 fsw/tables/sc_rts029.c.o:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts029.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts029.dir/fsw/tables/sc_rts029.c.o
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts029.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts029.dir/fsw/tables/sc_rts029.c.o
 .PHONY : fsw/tables/sc_rts029.c.o
 
 fsw/tables/sc_rts029.i: fsw/tables/sc_rts029.c.i
@@ -2810,7 +2810,7 @@ fsw/tables/sc_rts029.i: fsw/tables/sc_rts029.c.i
 
 # target to preprocess a source file
 fsw/tables/sc_rts029.c.i:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts029.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts029.dir/fsw/tables/sc_rts029.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts029.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts029.dir/fsw/tables/sc_rts029.c.i
 .PHONY : fsw/tables/sc_rts029.c.i
 
 fsw/tables/sc_rts029.s: fsw/tables/sc_rts029.c.s
@@ -2818,7 +2818,7 @@ fsw/tables/sc_rts029.s: fsw/tables/sc_rts029.c.s
 
 # target to generate assembly for a file
 fsw/tables/sc_rts029.c.s:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts029.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts029.dir/fsw/tables/sc_rts029.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts029.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts029.dir/fsw/tables/sc_rts029.c.s
 .PHONY : fsw/tables/sc_rts029.c.s
 
 fsw/tables/sc_rts030.o: fsw/tables/sc_rts030.c.o
@@ -2826,7 +2826,7 @@ fsw/tables/sc_rts030.o: fsw/tables/sc_rts030.c.o
 
 # target to build an object file
 fsw/tables/sc_rts030.c.o:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts030.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts030.dir/fsw/tables/sc_rts030.c.o
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts030.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts030.dir/fsw/tables/sc_rts030.c.o
 .PHONY : fsw/tables/sc_rts030.c.o
 
 fsw/tables/sc_rts030.i: fsw/tables/sc_rts030.c.i
@@ -2834,7 +2834,7 @@ fsw/tables/sc_rts030.i: fsw/tables/sc_rts030.c.i
 
 # target to preprocess a source file
 fsw/tables/sc_rts030.c.i:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts030.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts030.dir/fsw/tables/sc_rts030.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts030.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts030.dir/fsw/tables/sc_rts030.c.i
 .PHONY : fsw/tables/sc_rts030.c.i
 
 fsw/tables/sc_rts030.s: fsw/tables/sc_rts030.c.s
@@ -2842,7 +2842,7 @@ fsw/tables/sc_rts030.s: fsw/tables/sc_rts030.c.s
 
 # target to generate assembly for a file
 fsw/tables/sc_rts030.c.s:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts030.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts030.dir/fsw/tables/sc_rts030.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts030.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts030.dir/fsw/tables/sc_rts030.c.s
 .PHONY : fsw/tables/sc_rts030.c.s
 
 fsw/tables/sc_rts031.o: fsw/tables/sc_rts031.c.o
@@ -2850,7 +2850,7 @@ fsw/tables/sc_rts031.o: fsw/tables/sc_rts031.c.o
 
 # target to build an object file
 fsw/tables/sc_rts031.c.o:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts031.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts031.dir/fsw/tables/sc_rts031.c.o
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts031.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts031.dir/fsw/tables/sc_rts031.c.o
 .PHONY : fsw/tables/sc_rts031.c.o
 
 fsw/tables/sc_rts031.i: fsw/tables/sc_rts031.c.i
@@ -2858,7 +2858,7 @@ fsw/tables/sc_rts031.i: fsw/tables/sc_rts031.c.i
 
 # target to preprocess a source file
 fsw/tables/sc_rts031.c.i:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts031.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts031.dir/fsw/tables/sc_rts031.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts031.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts031.dir/fsw/tables/sc_rts031.c.i
 .PHONY : fsw/tables/sc_rts031.c.i
 
 fsw/tables/sc_rts031.s: fsw/tables/sc_rts031.c.s
@@ -2866,7 +2866,7 @@ fsw/tables/sc_rts031.s: fsw/tables/sc_rts031.c.s
 
 # target to generate assembly for a file
 fsw/tables/sc_rts031.c.s:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts031.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts031.dir/fsw/tables/sc_rts031.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts031.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts031.dir/fsw/tables/sc_rts031.c.s
 .PHONY : fsw/tables/sc_rts031.c.s
 
 fsw/tables/sc_rts032.o: fsw/tables/sc_rts032.c.o
@@ -2874,7 +2874,7 @@ fsw/tables/sc_rts032.o: fsw/tables/sc_rts032.c.o
 
 # target to build an object file
 fsw/tables/sc_rts032.c.o:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts032.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts032.dir/fsw/tables/sc_rts032.c.o
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts032.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts032.dir/fsw/tables/sc_rts032.c.o
 .PHONY : fsw/tables/sc_rts032.c.o
 
 fsw/tables/sc_rts032.i: fsw/tables/sc_rts032.c.i
@@ -2882,7 +2882,7 @@ fsw/tables/sc_rts032.i: fsw/tables/sc_rts032.c.i
 
 # target to preprocess a source file
 fsw/tables/sc_rts032.c.i:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts032.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts032.dir/fsw/tables/sc_rts032.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts032.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts032.dir/fsw/tables/sc_rts032.c.i
 .PHONY : fsw/tables/sc_rts032.c.i
 
 fsw/tables/sc_rts032.s: fsw/tables/sc_rts032.c.s
@@ -2890,7 +2890,7 @@ fsw/tables/sc_rts032.s: fsw/tables/sc_rts032.c.s
 
 # target to generate assembly for a file
 fsw/tables/sc_rts032.c.s:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts032.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts032.dir/fsw/tables/sc_rts032.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts032.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts032.dir/fsw/tables/sc_rts032.c.s
 .PHONY : fsw/tables/sc_rts032.c.s
 
 fsw/tables/sc_rts033.o: fsw/tables/sc_rts033.c.o
@@ -2898,7 +2898,7 @@ fsw/tables/sc_rts033.o: fsw/tables/sc_rts033.c.o
 
 # target to build an object file
 fsw/tables/sc_rts033.c.o:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts033.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts033.dir/fsw/tables/sc_rts033.c.o
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts033.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts033.dir/fsw/tables/sc_rts033.c.o
 .PHONY : fsw/tables/sc_rts033.c.o
 
 fsw/tables/sc_rts033.i: fsw/tables/sc_rts033.c.i
@@ -2906,7 +2906,7 @@ fsw/tables/sc_rts033.i: fsw/tables/sc_rts033.c.i
 
 # target to preprocess a source file
 fsw/tables/sc_rts033.c.i:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts033.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts033.dir/fsw/tables/sc_rts033.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts033.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts033.dir/fsw/tables/sc_rts033.c.i
 .PHONY : fsw/tables/sc_rts033.c.i
 
 fsw/tables/sc_rts033.s: fsw/tables/sc_rts033.c.s
@@ -2914,7 +2914,7 @@ fsw/tables/sc_rts033.s: fsw/tables/sc_rts033.c.s
 
 # target to generate assembly for a file
 fsw/tables/sc_rts033.c.s:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts033.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts033.dir/fsw/tables/sc_rts033.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts033.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts033.dir/fsw/tables/sc_rts033.c.s
 .PHONY : fsw/tables/sc_rts033.c.s
 
 fsw/tables/sc_rts034.o: fsw/tables/sc_rts034.c.o
@@ -2922,7 +2922,7 @@ fsw/tables/sc_rts034.o: fsw/tables/sc_rts034.c.o
 
 # target to build an object file
 fsw/tables/sc_rts034.c.o:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts034.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts034.dir/fsw/tables/sc_rts034.c.o
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts034.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts034.dir/fsw/tables/sc_rts034.c.o
 .PHONY : fsw/tables/sc_rts034.c.o
 
 fsw/tables/sc_rts034.i: fsw/tables/sc_rts034.c.i
@@ -2930,7 +2930,7 @@ fsw/tables/sc_rts034.i: fsw/tables/sc_rts034.c.i
 
 # target to preprocess a source file
 fsw/tables/sc_rts034.c.i:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts034.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts034.dir/fsw/tables/sc_rts034.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts034.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts034.dir/fsw/tables/sc_rts034.c.i
 .PHONY : fsw/tables/sc_rts034.c.i
 
 fsw/tables/sc_rts034.s: fsw/tables/sc_rts034.c.s
@@ -2938,7 +2938,7 @@ fsw/tables/sc_rts034.s: fsw/tables/sc_rts034.c.s
 
 # target to generate assembly for a file
 fsw/tables/sc_rts034.c.s:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts034.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts034.dir/fsw/tables/sc_rts034.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts034.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts034.dir/fsw/tables/sc_rts034.c.s
 .PHONY : fsw/tables/sc_rts034.c.s
 
 fsw/tables/sc_rts035.o: fsw/tables/sc_rts035.c.o
@@ -2946,7 +2946,7 @@ fsw/tables/sc_rts035.o: fsw/tables/sc_rts035.c.o
 
 # target to build an object file
 fsw/tables/sc_rts035.c.o:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts035.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts035.dir/fsw/tables/sc_rts035.c.o
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts035.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts035.dir/fsw/tables/sc_rts035.c.o
 .PHONY : fsw/tables/sc_rts035.c.o
 
 fsw/tables/sc_rts035.i: fsw/tables/sc_rts035.c.i
@@ -2954,7 +2954,7 @@ fsw/tables/sc_rts035.i: fsw/tables/sc_rts035.c.i
 
 # target to preprocess a source file
 fsw/tables/sc_rts035.c.i:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts035.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts035.dir/fsw/tables/sc_rts035.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts035.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts035.dir/fsw/tables/sc_rts035.c.i
 .PHONY : fsw/tables/sc_rts035.c.i
 
 fsw/tables/sc_rts035.s: fsw/tables/sc_rts035.c.s
@@ -2962,7 +2962,7 @@ fsw/tables/sc_rts035.s: fsw/tables/sc_rts035.c.s
 
 # target to generate assembly for a file
 fsw/tables/sc_rts035.c.s:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts035.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts035.dir/fsw/tables/sc_rts035.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts035.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts035.dir/fsw/tables/sc_rts035.c.s
 .PHONY : fsw/tables/sc_rts035.c.s
 
 fsw/tables/sc_rts036.o: fsw/tables/sc_rts036.c.o
@@ -2970,7 +2970,7 @@ fsw/tables/sc_rts036.o: fsw/tables/sc_rts036.c.o
 
 # target to build an object file
 fsw/tables/sc_rts036.c.o:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts036.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts036.dir/fsw/tables/sc_rts036.c.o
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts036.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts036.dir/fsw/tables/sc_rts036.c.o
 .PHONY : fsw/tables/sc_rts036.c.o
 
 fsw/tables/sc_rts036.i: fsw/tables/sc_rts036.c.i
@@ -2978,7 +2978,7 @@ fsw/tables/sc_rts036.i: fsw/tables/sc_rts036.c.i
 
 # target to preprocess a source file
 fsw/tables/sc_rts036.c.i:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts036.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts036.dir/fsw/tables/sc_rts036.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts036.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts036.dir/fsw/tables/sc_rts036.c.i
 .PHONY : fsw/tables/sc_rts036.c.i
 
 fsw/tables/sc_rts036.s: fsw/tables/sc_rts036.c.s
@@ -2986,7 +2986,7 @@ fsw/tables/sc_rts036.s: fsw/tables/sc_rts036.c.s
 
 # target to generate assembly for a file
 fsw/tables/sc_rts036.c.s:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts036.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts036.dir/fsw/tables/sc_rts036.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts036.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts036.dir/fsw/tables/sc_rts036.c.s
 .PHONY : fsw/tables/sc_rts036.c.s
 
 fsw/tables/sc_rts037.o: fsw/tables/sc_rts037.c.o
@@ -2994,7 +2994,7 @@ fsw/tables/sc_rts037.o: fsw/tables/sc_rts037.c.o
 
 # target to build an object file
 fsw/tables/sc_rts037.c.o:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts037.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts037.dir/fsw/tables/sc_rts037.c.o
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts037.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts037.dir/fsw/tables/sc_rts037.c.o
 .PHONY : fsw/tables/sc_rts037.c.o
 
 fsw/tables/sc_rts037.i: fsw/tables/sc_rts037.c.i
@@ -3002,7 +3002,7 @@ fsw/tables/sc_rts037.i: fsw/tables/sc_rts037.c.i
 
 # target to preprocess a source file
 fsw/tables/sc_rts037.c.i:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts037.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts037.dir/fsw/tables/sc_rts037.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts037.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts037.dir/fsw/tables/sc_rts037.c.i
 .PHONY : fsw/tables/sc_rts037.c.i
 
 fsw/tables/sc_rts037.s: fsw/tables/sc_rts037.c.s
@@ -3010,7 +3010,7 @@ fsw/tables/sc_rts037.s: fsw/tables/sc_rts037.c.s
 
 # target to generate assembly for a file
 fsw/tables/sc_rts037.c.s:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts037.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts037.dir/fsw/tables/sc_rts037.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts037.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts037.dir/fsw/tables/sc_rts037.c.s
 .PHONY : fsw/tables/sc_rts037.c.s
 
 fsw/tables/sc_rts038.o: fsw/tables/sc_rts038.c.o
@@ -3018,7 +3018,7 @@ fsw/tables/sc_rts038.o: fsw/tables/sc_rts038.c.o
 
 # target to build an object file
 fsw/tables/sc_rts038.c.o:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts038.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts038.dir/fsw/tables/sc_rts038.c.o
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts038.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts038.dir/fsw/tables/sc_rts038.c.o
 .PHONY : fsw/tables/sc_rts038.c.o
 
 fsw/tables/sc_rts038.i: fsw/tables/sc_rts038.c.i
@@ -3026,7 +3026,7 @@ fsw/tables/sc_rts038.i: fsw/tables/sc_rts038.c.i
 
 # target to preprocess a source file
 fsw/tables/sc_rts038.c.i:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts038.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts038.dir/fsw/tables/sc_rts038.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts038.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts038.dir/fsw/tables/sc_rts038.c.i
 .PHONY : fsw/tables/sc_rts038.c.i
 
 fsw/tables/sc_rts038.s: fsw/tables/sc_rts038.c.s
@@ -3034,7 +3034,7 @@ fsw/tables/sc_rts038.s: fsw/tables/sc_rts038.c.s
 
 # target to generate assembly for a file
 fsw/tables/sc_rts038.c.s:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts038.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts038.dir/fsw/tables/sc_rts038.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts038.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts038.dir/fsw/tables/sc_rts038.c.s
 .PHONY : fsw/tables/sc_rts038.c.s
 
 fsw/tables/sc_rts039.o: fsw/tables/sc_rts039.c.o
@@ -3042,7 +3042,7 @@ fsw/tables/sc_rts039.o: fsw/tables/sc_rts039.c.o
 
 # target to build an object file
 fsw/tables/sc_rts039.c.o:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts039.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts039.dir/fsw/tables/sc_rts039.c.o
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts039.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts039.dir/fsw/tables/sc_rts039.c.o
 .PHONY : fsw/tables/sc_rts039.c.o
 
 fsw/tables/sc_rts039.i: fsw/tables/sc_rts039.c.i
@@ -3050,7 +3050,7 @@ fsw/tables/sc_rts039.i: fsw/tables/sc_rts039.c.i
 
 # target to preprocess a source file
 fsw/tables/sc_rts039.c.i:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts039.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts039.dir/fsw/tables/sc_rts039.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts039.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts039.dir/fsw/tables/sc_rts039.c.i
 .PHONY : fsw/tables/sc_rts039.c.i
 
 fsw/tables/sc_rts039.s: fsw/tables/sc_rts039.c.s
@@ -3058,7 +3058,7 @@ fsw/tables/sc_rts039.s: fsw/tables/sc_rts039.c.s
 
 # target to generate assembly for a file
 fsw/tables/sc_rts039.c.s:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts039.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts039.dir/fsw/tables/sc_rts039.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts039.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts039.dir/fsw/tables/sc_rts039.c.s
 .PHONY : fsw/tables/sc_rts039.c.s
 
 fsw/tables/sc_rts040.o: fsw/tables/sc_rts040.c.o
@@ -3066,7 +3066,7 @@ fsw/tables/sc_rts040.o: fsw/tables/sc_rts040.c.o
 
 # target to build an object file
 fsw/tables/sc_rts040.c.o:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts040.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts040.dir/fsw/tables/sc_rts040.c.o
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts040.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts040.dir/fsw/tables/sc_rts040.c.o
 .PHONY : fsw/tables/sc_rts040.c.o
 
 fsw/tables/sc_rts040.i: fsw/tables/sc_rts040.c.i
@@ -3074,7 +3074,7 @@ fsw/tables/sc_rts040.i: fsw/tables/sc_rts040.c.i
 
 # target to preprocess a source file
 fsw/tables/sc_rts040.c.i:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts040.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts040.dir/fsw/tables/sc_rts040.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts040.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts040.dir/fsw/tables/sc_rts040.c.i
 .PHONY : fsw/tables/sc_rts040.c.i
 
 fsw/tables/sc_rts040.s: fsw/tables/sc_rts040.c.s
@@ -3082,7 +3082,7 @@ fsw/tables/sc_rts040.s: fsw/tables/sc_rts040.c.s
 
 # target to generate assembly for a file
 fsw/tables/sc_rts040.c.s:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts040.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts040.dir/fsw/tables/sc_rts040.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts040.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts040.dir/fsw/tables/sc_rts040.c.s
 .PHONY : fsw/tables/sc_rts040.c.s
 
 fsw/tables/sc_rts041.o: fsw/tables/sc_rts041.c.o
@@ -3090,7 +3090,7 @@ fsw/tables/sc_rts041.o: fsw/tables/sc_rts041.c.o
 
 # target to build an object file
 fsw/tables/sc_rts041.c.o:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts041.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts041.dir/fsw/tables/sc_rts041.c.o
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts041.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts041.dir/fsw/tables/sc_rts041.c.o
 .PHONY : fsw/tables/sc_rts041.c.o
 
 fsw/tables/sc_rts041.i: fsw/tables/sc_rts041.c.i
@@ -3098,7 +3098,7 @@ fsw/tables/sc_rts041.i: fsw/tables/sc_rts041.c.i
 
 # target to preprocess a source file
 fsw/tables/sc_rts041.c.i:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts041.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts041.dir/fsw/tables/sc_rts041.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts041.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts041.dir/fsw/tables/sc_rts041.c.i
 .PHONY : fsw/tables/sc_rts041.c.i
 
 fsw/tables/sc_rts041.s: fsw/tables/sc_rts041.c.s
@@ -3106,7 +3106,7 @@ fsw/tables/sc_rts041.s: fsw/tables/sc_rts041.c.s
 
 # target to generate assembly for a file
 fsw/tables/sc_rts041.c.s:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts041.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts041.dir/fsw/tables/sc_rts041.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts041.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts041.dir/fsw/tables/sc_rts041.c.s
 .PHONY : fsw/tables/sc_rts041.c.s
 
 fsw/tables/sc_rts042.o: fsw/tables/sc_rts042.c.o
@@ -3114,7 +3114,7 @@ fsw/tables/sc_rts042.o: fsw/tables/sc_rts042.c.o
 
 # target to build an object file
 fsw/tables/sc_rts042.c.o:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts042.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts042.dir/fsw/tables/sc_rts042.c.o
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts042.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts042.dir/fsw/tables/sc_rts042.c.o
 .PHONY : fsw/tables/sc_rts042.c.o
 
 fsw/tables/sc_rts042.i: fsw/tables/sc_rts042.c.i
@@ -3122,7 +3122,7 @@ fsw/tables/sc_rts042.i: fsw/tables/sc_rts042.c.i
 
 # target to preprocess a source file
 fsw/tables/sc_rts042.c.i:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts042.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts042.dir/fsw/tables/sc_rts042.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts042.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts042.dir/fsw/tables/sc_rts042.c.i
 .PHONY : fsw/tables/sc_rts042.c.i
 
 fsw/tables/sc_rts042.s: fsw/tables/sc_rts042.c.s
@@ -3130,7 +3130,7 @@ fsw/tables/sc_rts042.s: fsw/tables/sc_rts042.c.s
 
 # target to generate assembly for a file
 fsw/tables/sc_rts042.c.s:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts042.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts042.dir/fsw/tables/sc_rts042.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts042.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts042.dir/fsw/tables/sc_rts042.c.s
 .PHONY : fsw/tables/sc_rts042.c.s
 
 fsw/tables/sc_rts043.o: fsw/tables/sc_rts043.c.o
@@ -3138,7 +3138,7 @@ fsw/tables/sc_rts043.o: fsw/tables/sc_rts043.c.o
 
 # target to build an object file
 fsw/tables/sc_rts043.c.o:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts043.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts043.dir/fsw/tables/sc_rts043.c.o
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts043.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts043.dir/fsw/tables/sc_rts043.c.o
 .PHONY : fsw/tables/sc_rts043.c.o
 
 fsw/tables/sc_rts043.i: fsw/tables/sc_rts043.c.i
@@ -3146,7 +3146,7 @@ fsw/tables/sc_rts043.i: fsw/tables/sc_rts043.c.i
 
 # target to preprocess a source file
 fsw/tables/sc_rts043.c.i:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts043.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts043.dir/fsw/tables/sc_rts043.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts043.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts043.dir/fsw/tables/sc_rts043.c.i
 .PHONY : fsw/tables/sc_rts043.c.i
 
 fsw/tables/sc_rts043.s: fsw/tables/sc_rts043.c.s
@@ -3154,7 +3154,7 @@ fsw/tables/sc_rts043.s: fsw/tables/sc_rts043.c.s
 
 # target to generate assembly for a file
 fsw/tables/sc_rts043.c.s:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts043.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts043.dir/fsw/tables/sc_rts043.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts043.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts043.dir/fsw/tables/sc_rts043.c.s
 .PHONY : fsw/tables/sc_rts043.c.s
 
 fsw/tables/sc_rts044.o: fsw/tables/sc_rts044.c.o
@@ -3162,7 +3162,7 @@ fsw/tables/sc_rts044.o: fsw/tables/sc_rts044.c.o
 
 # target to build an object file
 fsw/tables/sc_rts044.c.o:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts044.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts044.dir/fsw/tables/sc_rts044.c.o
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts044.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts044.dir/fsw/tables/sc_rts044.c.o
 .PHONY : fsw/tables/sc_rts044.c.o
 
 fsw/tables/sc_rts044.i: fsw/tables/sc_rts044.c.i
@@ -3170,7 +3170,7 @@ fsw/tables/sc_rts044.i: fsw/tables/sc_rts044.c.i
 
 # target to preprocess a source file
 fsw/tables/sc_rts044.c.i:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts044.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts044.dir/fsw/tables/sc_rts044.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts044.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts044.dir/fsw/tables/sc_rts044.c.i
 .PHONY : fsw/tables/sc_rts044.c.i
 
 fsw/tables/sc_rts044.s: fsw/tables/sc_rts044.c.s
@@ -3178,7 +3178,7 @@ fsw/tables/sc_rts044.s: fsw/tables/sc_rts044.c.s
 
 # target to generate assembly for a file
 fsw/tables/sc_rts044.c.s:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts044.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts044.dir/fsw/tables/sc_rts044.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts044.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts044.dir/fsw/tables/sc_rts044.c.s
 .PHONY : fsw/tables/sc_rts044.c.s
 
 fsw/tables/sc_rts045.o: fsw/tables/sc_rts045.c.o
@@ -3186,7 +3186,7 @@ fsw/tables/sc_rts045.o: fsw/tables/sc_rts045.c.o
 
 # target to build an object file
 fsw/tables/sc_rts045.c.o:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts045.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts045.dir/fsw/tables/sc_rts045.c.o
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts045.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts045.dir/fsw/tables/sc_rts045.c.o
 .PHONY : fsw/tables/sc_rts045.c.o
 
 fsw/tables/sc_rts045.i: fsw/tables/sc_rts045.c.i
@@ -3194,7 +3194,7 @@ fsw/tables/sc_rts045.i: fsw/tables/sc_rts045.c.i
 
 # target to preprocess a source file
 fsw/tables/sc_rts045.c.i:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts045.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts045.dir/fsw/tables/sc_rts045.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts045.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts045.dir/fsw/tables/sc_rts045.c.i
 .PHONY : fsw/tables/sc_rts045.c.i
 
 fsw/tables/sc_rts045.s: fsw/tables/sc_rts045.c.s
@@ -3202,7 +3202,7 @@ fsw/tables/sc_rts045.s: fsw/tables/sc_rts045.c.s
 
 # target to generate assembly for a file
 fsw/tables/sc_rts045.c.s:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts045.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts045.dir/fsw/tables/sc_rts045.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts045.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts045.dir/fsw/tables/sc_rts045.c.s
 .PHONY : fsw/tables/sc_rts045.c.s
 
 fsw/tables/sc_rts046.o: fsw/tables/sc_rts046.c.o
@@ -3210,7 +3210,7 @@ fsw/tables/sc_rts046.o: fsw/tables/sc_rts046.c.o
 
 # target to build an object file
 fsw/tables/sc_rts046.c.o:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts046.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts046.dir/fsw/tables/sc_rts046.c.o
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts046.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts046.dir/fsw/tables/sc_rts046.c.o
 .PHONY : fsw/tables/sc_rts046.c.o
 
 fsw/tables/sc_rts046.i: fsw/tables/sc_rts046.c.i
@@ -3218,7 +3218,7 @@ fsw/tables/sc_rts046.i: fsw/tables/sc_rts046.c.i
 
 # target to preprocess a source file
 fsw/tables/sc_rts046.c.i:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts046.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts046.dir/fsw/tables/sc_rts046.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts046.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts046.dir/fsw/tables/sc_rts046.c.i
 .PHONY : fsw/tables/sc_rts046.c.i
 
 fsw/tables/sc_rts046.s: fsw/tables/sc_rts046.c.s
@@ -3226,7 +3226,7 @@ fsw/tables/sc_rts046.s: fsw/tables/sc_rts046.c.s
 
 # target to generate assembly for a file
 fsw/tables/sc_rts046.c.s:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts046.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts046.dir/fsw/tables/sc_rts046.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts046.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts046.dir/fsw/tables/sc_rts046.c.s
 .PHONY : fsw/tables/sc_rts046.c.s
 
 fsw/tables/sc_rts047.o: fsw/tables/sc_rts047.c.o
@@ -3234,7 +3234,7 @@ fsw/tables/sc_rts047.o: fsw/tables/sc_rts047.c.o
 
 # target to build an object file
 fsw/tables/sc_rts047.c.o:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts047.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts047.dir/fsw/tables/sc_rts047.c.o
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts047.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts047.dir/fsw/tables/sc_rts047.c.o
 .PHONY : fsw/tables/sc_rts047.c.o
 
 fsw/tables/sc_rts047.i: fsw/tables/sc_rts047.c.i
@@ -3242,7 +3242,7 @@ fsw/tables/sc_rts047.i: fsw/tables/sc_rts047.c.i
 
 # target to preprocess a source file
 fsw/tables/sc_rts047.c.i:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts047.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts047.dir/fsw/tables/sc_rts047.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts047.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts047.dir/fsw/tables/sc_rts047.c.i
 .PHONY : fsw/tables/sc_rts047.c.i
 
 fsw/tables/sc_rts047.s: fsw/tables/sc_rts047.c.s
@@ -3250,7 +3250,7 @@ fsw/tables/sc_rts047.s: fsw/tables/sc_rts047.c.s
 
 # target to generate assembly for a file
 fsw/tables/sc_rts047.c.s:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts047.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts047.dir/fsw/tables/sc_rts047.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts047.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts047.dir/fsw/tables/sc_rts047.c.s
 .PHONY : fsw/tables/sc_rts047.c.s
 
 fsw/tables/sc_rts048.o: fsw/tables/sc_rts048.c.o
@@ -3258,7 +3258,7 @@ fsw/tables/sc_rts048.o: fsw/tables/sc_rts048.c.o
 
 # target to build an object file
 fsw/tables/sc_rts048.c.o:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts048.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts048.dir/fsw/tables/sc_rts048.c.o
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts048.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts048.dir/fsw/tables/sc_rts048.c.o
 .PHONY : fsw/tables/sc_rts048.c.o
 
 fsw/tables/sc_rts048.i: fsw/tables/sc_rts048.c.i
@@ -3266,7 +3266,7 @@ fsw/tables/sc_rts048.i: fsw/tables/sc_rts048.c.i
 
 # target to preprocess a source file
 fsw/tables/sc_rts048.c.i:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts048.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts048.dir/fsw/tables/sc_rts048.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts048.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts048.dir/fsw/tables/sc_rts048.c.i
 .PHONY : fsw/tables/sc_rts048.c.i
 
 fsw/tables/sc_rts048.s: fsw/tables/sc_rts048.c.s
@@ -3274,7 +3274,7 @@ fsw/tables/sc_rts048.s: fsw/tables/sc_rts048.c.s
 
 # target to generate assembly for a file
 fsw/tables/sc_rts048.c.s:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts048.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts048.dir/fsw/tables/sc_rts048.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts048.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts048.dir/fsw/tables/sc_rts048.c.s
 .PHONY : fsw/tables/sc_rts048.c.s
 
 fsw/tables/sc_rts049.o: fsw/tables/sc_rts049.c.o
@@ -3282,7 +3282,7 @@ fsw/tables/sc_rts049.o: fsw/tables/sc_rts049.c.o
 
 # target to build an object file
 fsw/tables/sc_rts049.c.o:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts049.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts049.dir/fsw/tables/sc_rts049.c.o
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts049.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts049.dir/fsw/tables/sc_rts049.c.o
 .PHONY : fsw/tables/sc_rts049.c.o
 
 fsw/tables/sc_rts049.i: fsw/tables/sc_rts049.c.i
@@ -3290,7 +3290,7 @@ fsw/tables/sc_rts049.i: fsw/tables/sc_rts049.c.i
 
 # target to preprocess a source file
 fsw/tables/sc_rts049.c.i:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts049.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts049.dir/fsw/tables/sc_rts049.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts049.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts049.dir/fsw/tables/sc_rts049.c.i
 .PHONY : fsw/tables/sc_rts049.c.i
 
 fsw/tables/sc_rts049.s: fsw/tables/sc_rts049.c.s
@@ -3298,7 +3298,7 @@ fsw/tables/sc_rts049.s: fsw/tables/sc_rts049.c.s
 
 # target to generate assembly for a file
 fsw/tables/sc_rts049.c.s:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts049.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts049.dir/fsw/tables/sc_rts049.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts049.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts049.dir/fsw/tables/sc_rts049.c.s
 .PHONY : fsw/tables/sc_rts049.c.s
 
 fsw/tables/sc_rts050.o: fsw/tables/sc_rts050.c.o
@@ -3306,7 +3306,7 @@ fsw/tables/sc_rts050.o: fsw/tables/sc_rts050.c.o
 
 # target to build an object file
 fsw/tables/sc_rts050.c.o:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts050.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts050.dir/fsw/tables/sc_rts050.c.o
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts050.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts050.dir/fsw/tables/sc_rts050.c.o
 .PHONY : fsw/tables/sc_rts050.c.o
 
 fsw/tables/sc_rts050.i: fsw/tables/sc_rts050.c.i
@@ -3314,7 +3314,7 @@ fsw/tables/sc_rts050.i: fsw/tables/sc_rts050.c.i
 
 # target to preprocess a source file
 fsw/tables/sc_rts050.c.i:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts050.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts050.dir/fsw/tables/sc_rts050.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts050.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts050.dir/fsw/tables/sc_rts050.c.i
 .PHONY : fsw/tables/sc_rts050.c.i
 
 fsw/tables/sc_rts050.s: fsw/tables/sc_rts050.c.s
@@ -3322,7 +3322,7 @@ fsw/tables/sc_rts050.s: fsw/tables/sc_rts050.c.s
 
 # target to generate assembly for a file
 fsw/tables/sc_rts050.c.s:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts050.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts050.dir/fsw/tables/sc_rts050.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts050.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts050.dir/fsw/tables/sc_rts050.c.s
 .PHONY : fsw/tables/sc_rts050.c.s
 
 fsw/tables/sc_rts051.o: fsw/tables/sc_rts051.c.o
@@ -3330,7 +3330,7 @@ fsw/tables/sc_rts051.o: fsw/tables/sc_rts051.c.o
 
 # target to build an object file
 fsw/tables/sc_rts051.c.o:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts051.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts051.dir/fsw/tables/sc_rts051.c.o
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts051.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts051.dir/fsw/tables/sc_rts051.c.o
 .PHONY : fsw/tables/sc_rts051.c.o
 
 fsw/tables/sc_rts051.i: fsw/tables/sc_rts051.c.i
@@ -3338,7 +3338,7 @@ fsw/tables/sc_rts051.i: fsw/tables/sc_rts051.c.i
 
 # target to preprocess a source file
 fsw/tables/sc_rts051.c.i:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts051.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts051.dir/fsw/tables/sc_rts051.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts051.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts051.dir/fsw/tables/sc_rts051.c.i
 .PHONY : fsw/tables/sc_rts051.c.i
 
 fsw/tables/sc_rts051.s: fsw/tables/sc_rts051.c.s
@@ -3346,7 +3346,7 @@ fsw/tables/sc_rts051.s: fsw/tables/sc_rts051.c.s
 
 # target to generate assembly for a file
 fsw/tables/sc_rts051.c.s:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts051.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts051.dir/fsw/tables/sc_rts051.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts051.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts051.dir/fsw/tables/sc_rts051.c.s
 .PHONY : fsw/tables/sc_rts051.c.s
 
 fsw/tables/sc_rts052.o: fsw/tables/sc_rts052.c.o
@@ -3354,7 +3354,7 @@ fsw/tables/sc_rts052.o: fsw/tables/sc_rts052.c.o
 
 # target to build an object file
 fsw/tables/sc_rts052.c.o:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts052.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts052.dir/fsw/tables/sc_rts052.c.o
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts052.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts052.dir/fsw/tables/sc_rts052.c.o
 .PHONY : fsw/tables/sc_rts052.c.o
 
 fsw/tables/sc_rts052.i: fsw/tables/sc_rts052.c.i
@@ -3362,7 +3362,7 @@ fsw/tables/sc_rts052.i: fsw/tables/sc_rts052.c.i
 
 # target to preprocess a source file
 fsw/tables/sc_rts052.c.i:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts052.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts052.dir/fsw/tables/sc_rts052.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts052.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts052.dir/fsw/tables/sc_rts052.c.i
 .PHONY : fsw/tables/sc_rts052.c.i
 
 fsw/tables/sc_rts052.s: fsw/tables/sc_rts052.c.s
@@ -3370,7 +3370,7 @@ fsw/tables/sc_rts052.s: fsw/tables/sc_rts052.c.s
 
 # target to generate assembly for a file
 fsw/tables/sc_rts052.c.s:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts052.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts052.dir/fsw/tables/sc_rts052.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts052.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts052.dir/fsw/tables/sc_rts052.c.s
 .PHONY : fsw/tables/sc_rts052.c.s
 
 fsw/tables/sc_rts053.o: fsw/tables/sc_rts053.c.o
@@ -3378,7 +3378,7 @@ fsw/tables/sc_rts053.o: fsw/tables/sc_rts053.c.o
 
 # target to build an object file
 fsw/tables/sc_rts053.c.o:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts053.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts053.dir/fsw/tables/sc_rts053.c.o
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts053.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts053.dir/fsw/tables/sc_rts053.c.o
 .PHONY : fsw/tables/sc_rts053.c.o
 
 fsw/tables/sc_rts053.i: fsw/tables/sc_rts053.c.i
@@ -3386,7 +3386,7 @@ fsw/tables/sc_rts053.i: fsw/tables/sc_rts053.c.i
 
 # target to preprocess a source file
 fsw/tables/sc_rts053.c.i:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts053.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts053.dir/fsw/tables/sc_rts053.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts053.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts053.dir/fsw/tables/sc_rts053.c.i
 .PHONY : fsw/tables/sc_rts053.c.i
 
 fsw/tables/sc_rts053.s: fsw/tables/sc_rts053.c.s
@@ -3394,7 +3394,7 @@ fsw/tables/sc_rts053.s: fsw/tables/sc_rts053.c.s
 
 # target to generate assembly for a file
 fsw/tables/sc_rts053.c.s:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts053.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts053.dir/fsw/tables/sc_rts053.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts053.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts053.dir/fsw/tables/sc_rts053.c.s
 .PHONY : fsw/tables/sc_rts053.c.s
 
 fsw/tables/sc_rts054.o: fsw/tables/sc_rts054.c.o
@@ -3402,7 +3402,7 @@ fsw/tables/sc_rts054.o: fsw/tables/sc_rts054.c.o
 
 # target to build an object file
 fsw/tables/sc_rts054.c.o:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts054.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts054.dir/fsw/tables/sc_rts054.c.o
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts054.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts054.dir/fsw/tables/sc_rts054.c.o
 .PHONY : fsw/tables/sc_rts054.c.o
 
 fsw/tables/sc_rts054.i: fsw/tables/sc_rts054.c.i
@@ -3410,7 +3410,7 @@ fsw/tables/sc_rts054.i: fsw/tables/sc_rts054.c.i
 
 # target to preprocess a source file
 fsw/tables/sc_rts054.c.i:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts054.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts054.dir/fsw/tables/sc_rts054.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts054.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts054.dir/fsw/tables/sc_rts054.c.i
 .PHONY : fsw/tables/sc_rts054.c.i
 
 fsw/tables/sc_rts054.s: fsw/tables/sc_rts054.c.s
@@ -3418,7 +3418,7 @@ fsw/tables/sc_rts054.s: fsw/tables/sc_rts054.c.s
 
 # target to generate assembly for a file
 fsw/tables/sc_rts054.c.s:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts054.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts054.dir/fsw/tables/sc_rts054.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts054.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts054.dir/fsw/tables/sc_rts054.c.s
 .PHONY : fsw/tables/sc_rts054.c.s
 
 fsw/tables/sc_rts055.o: fsw/tables/sc_rts055.c.o
@@ -3426,7 +3426,7 @@ fsw/tables/sc_rts055.o: fsw/tables/sc_rts055.c.o
 
 # target to build an object file
 fsw/tables/sc_rts055.c.o:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts055.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts055.dir/fsw/tables/sc_rts055.c.o
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts055.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts055.dir/fsw/tables/sc_rts055.c.o
 .PHONY : fsw/tables/sc_rts055.c.o
 
 fsw/tables/sc_rts055.i: fsw/tables/sc_rts055.c.i
@@ -3434,7 +3434,7 @@ fsw/tables/sc_rts055.i: fsw/tables/sc_rts055.c.i
 
 # target to preprocess a source file
 fsw/tables/sc_rts055.c.i:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts055.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts055.dir/fsw/tables/sc_rts055.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts055.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts055.dir/fsw/tables/sc_rts055.c.i
 .PHONY : fsw/tables/sc_rts055.c.i
 
 fsw/tables/sc_rts055.s: fsw/tables/sc_rts055.c.s
@@ -3442,7 +3442,7 @@ fsw/tables/sc_rts055.s: fsw/tables/sc_rts055.c.s
 
 # target to generate assembly for a file
 fsw/tables/sc_rts055.c.s:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts055.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts055.dir/fsw/tables/sc_rts055.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts055.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts055.dir/fsw/tables/sc_rts055.c.s
 .PHONY : fsw/tables/sc_rts055.c.s
 
 fsw/tables/sc_rts056.o: fsw/tables/sc_rts056.c.o
@@ -3450,7 +3450,7 @@ fsw/tables/sc_rts056.o: fsw/tables/sc_rts056.c.o
 
 # target to build an object file
 fsw/tables/sc_rts056.c.o:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts056.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts056.dir/fsw/tables/sc_rts056.c.o
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts056.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts056.dir/fsw/tables/sc_rts056.c.o
 .PHONY : fsw/tables/sc_rts056.c.o
 
 fsw/tables/sc_rts056.i: fsw/tables/sc_rts056.c.i
@@ -3458,7 +3458,7 @@ fsw/tables/sc_rts056.i: fsw/tables/sc_rts056.c.i
 
 # target to preprocess a source file
 fsw/tables/sc_rts056.c.i:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts056.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts056.dir/fsw/tables/sc_rts056.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts056.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts056.dir/fsw/tables/sc_rts056.c.i
 .PHONY : fsw/tables/sc_rts056.c.i
 
 fsw/tables/sc_rts056.s: fsw/tables/sc_rts056.c.s
@@ -3466,7 +3466,7 @@ fsw/tables/sc_rts056.s: fsw/tables/sc_rts056.c.s
 
 # target to generate assembly for a file
 fsw/tables/sc_rts056.c.s:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts056.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts056.dir/fsw/tables/sc_rts056.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts056.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts056.dir/fsw/tables/sc_rts056.c.s
 .PHONY : fsw/tables/sc_rts056.c.s
 
 fsw/tables/sc_rts057.o: fsw/tables/sc_rts057.c.o
@@ -3474,7 +3474,7 @@ fsw/tables/sc_rts057.o: fsw/tables/sc_rts057.c.o
 
 # target to build an object file
 fsw/tables/sc_rts057.c.o:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts057.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts057.dir/fsw/tables/sc_rts057.c.o
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts057.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts057.dir/fsw/tables/sc_rts057.c.o
 .PHONY : fsw/tables/sc_rts057.c.o
 
 fsw/tables/sc_rts057.i: fsw/tables/sc_rts057.c.i
@@ -3482,7 +3482,7 @@ fsw/tables/sc_rts057.i: fsw/tables/sc_rts057.c.i
 
 # target to preprocess a source file
 fsw/tables/sc_rts057.c.i:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts057.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts057.dir/fsw/tables/sc_rts057.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts057.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts057.dir/fsw/tables/sc_rts057.c.i
 .PHONY : fsw/tables/sc_rts057.c.i
 
 fsw/tables/sc_rts057.s: fsw/tables/sc_rts057.c.s
@@ -3490,7 +3490,7 @@ fsw/tables/sc_rts057.s: fsw/tables/sc_rts057.c.s
 
 # target to generate assembly for a file
 fsw/tables/sc_rts057.c.s:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts057.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts057.dir/fsw/tables/sc_rts057.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts057.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts057.dir/fsw/tables/sc_rts057.c.s
 .PHONY : fsw/tables/sc_rts057.c.s
 
 fsw/tables/sc_rts058.o: fsw/tables/sc_rts058.c.o
@@ -3498,7 +3498,7 @@ fsw/tables/sc_rts058.o: fsw/tables/sc_rts058.c.o
 
 # target to build an object file
 fsw/tables/sc_rts058.c.o:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts058.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts058.dir/fsw/tables/sc_rts058.c.o
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts058.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts058.dir/fsw/tables/sc_rts058.c.o
 .PHONY : fsw/tables/sc_rts058.c.o
 
 fsw/tables/sc_rts058.i: fsw/tables/sc_rts058.c.i
@@ -3506,7 +3506,7 @@ fsw/tables/sc_rts058.i: fsw/tables/sc_rts058.c.i
 
 # target to preprocess a source file
 fsw/tables/sc_rts058.c.i:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts058.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts058.dir/fsw/tables/sc_rts058.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts058.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts058.dir/fsw/tables/sc_rts058.c.i
 .PHONY : fsw/tables/sc_rts058.c.i
 
 fsw/tables/sc_rts058.s: fsw/tables/sc_rts058.c.s
@@ -3514,7 +3514,7 @@ fsw/tables/sc_rts058.s: fsw/tables/sc_rts058.c.s
 
 # target to generate assembly for a file
 fsw/tables/sc_rts058.c.s:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts058.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts058.dir/fsw/tables/sc_rts058.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts058.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts058.dir/fsw/tables/sc_rts058.c.s
 .PHONY : fsw/tables/sc_rts058.c.s
 
 fsw/tables/sc_rts059.o: fsw/tables/sc_rts059.c.o
@@ -3522,7 +3522,7 @@ fsw/tables/sc_rts059.o: fsw/tables/sc_rts059.c.o
 
 # target to build an object file
 fsw/tables/sc_rts059.c.o:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts059.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts059.dir/fsw/tables/sc_rts059.c.o
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts059.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts059.dir/fsw/tables/sc_rts059.c.o
 .PHONY : fsw/tables/sc_rts059.c.o
 
 fsw/tables/sc_rts059.i: fsw/tables/sc_rts059.c.i
@@ -3530,7 +3530,7 @@ fsw/tables/sc_rts059.i: fsw/tables/sc_rts059.c.i
 
 # target to preprocess a source file
 fsw/tables/sc_rts059.c.i:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts059.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts059.dir/fsw/tables/sc_rts059.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts059.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts059.dir/fsw/tables/sc_rts059.c.i
 .PHONY : fsw/tables/sc_rts059.c.i
 
 fsw/tables/sc_rts059.s: fsw/tables/sc_rts059.c.s
@@ -3538,7 +3538,7 @@ fsw/tables/sc_rts059.s: fsw/tables/sc_rts059.c.s
 
 # target to generate assembly for a file
 fsw/tables/sc_rts059.c.s:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts059.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts059.dir/fsw/tables/sc_rts059.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts059.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts059.dir/fsw/tables/sc_rts059.c.s
 .PHONY : fsw/tables/sc_rts059.c.s
 
 fsw/tables/sc_rts060.o: fsw/tables/sc_rts060.c.o
@@ -3546,7 +3546,7 @@ fsw/tables/sc_rts060.o: fsw/tables/sc_rts060.c.o
 
 # target to build an object file
 fsw/tables/sc_rts060.c.o:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts060.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts060.dir/fsw/tables/sc_rts060.c.o
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts060.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts060.dir/fsw/tables/sc_rts060.c.o
 .PHONY : fsw/tables/sc_rts060.c.o
 
 fsw/tables/sc_rts060.i: fsw/tables/sc_rts060.c.i
@@ -3554,7 +3554,7 @@ fsw/tables/sc_rts060.i: fsw/tables/sc_rts060.c.i
 
 # target to preprocess a source file
 fsw/tables/sc_rts060.c.i:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts060.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts060.dir/fsw/tables/sc_rts060.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts060.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts060.dir/fsw/tables/sc_rts060.c.i
 .PHONY : fsw/tables/sc_rts060.c.i
 
 fsw/tables/sc_rts060.s: fsw/tables/sc_rts060.c.s
@@ -3562,7 +3562,7 @@ fsw/tables/sc_rts060.s: fsw/tables/sc_rts060.c.s
 
 # target to generate assembly for a file
 fsw/tables/sc_rts060.c.s:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts060.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts060.dir/fsw/tables/sc_rts060.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts060.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts060.dir/fsw/tables/sc_rts060.c.s
 .PHONY : fsw/tables/sc_rts060.c.s
 
 fsw/tables/sc_rts061.o: fsw/tables/sc_rts061.c.o
@@ -3570,7 +3570,7 @@ fsw/tables/sc_rts061.o: fsw/tables/sc_rts061.c.o
 
 # target to build an object file
 fsw/tables/sc_rts061.c.o:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts061.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts061.dir/fsw/tables/sc_rts061.c.o
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts061.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts061.dir/fsw/tables/sc_rts061.c.o
 .PHONY : fsw/tables/sc_rts061.c.o
 
 fsw/tables/sc_rts061.i: fsw/tables/sc_rts061.c.i
@@ -3578,7 +3578,7 @@ fsw/tables/sc_rts061.i: fsw/tables/sc_rts061.c.i
 
 # target to preprocess a source file
 fsw/tables/sc_rts061.c.i:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts061.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts061.dir/fsw/tables/sc_rts061.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts061.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts061.dir/fsw/tables/sc_rts061.c.i
 .PHONY : fsw/tables/sc_rts061.c.i
 
 fsw/tables/sc_rts061.s: fsw/tables/sc_rts061.c.s
@@ -3586,7 +3586,7 @@ fsw/tables/sc_rts061.s: fsw/tables/sc_rts061.c.s
 
 # target to generate assembly for a file
 fsw/tables/sc_rts061.c.s:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts061.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts061.dir/fsw/tables/sc_rts061.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts061.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts061.dir/fsw/tables/sc_rts061.c.s
 .PHONY : fsw/tables/sc_rts061.c.s
 
 fsw/tables/sc_rts062.o: fsw/tables/sc_rts062.c.o
@@ -3594,7 +3594,7 @@ fsw/tables/sc_rts062.o: fsw/tables/sc_rts062.c.o
 
 # target to build an object file
 fsw/tables/sc_rts062.c.o:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts062.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts062.dir/fsw/tables/sc_rts062.c.o
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts062.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts062.dir/fsw/tables/sc_rts062.c.o
 .PHONY : fsw/tables/sc_rts062.c.o
 
 fsw/tables/sc_rts062.i: fsw/tables/sc_rts062.c.i
@@ -3602,7 +3602,7 @@ fsw/tables/sc_rts062.i: fsw/tables/sc_rts062.c.i
 
 # target to preprocess a source file
 fsw/tables/sc_rts062.c.i:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts062.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts062.dir/fsw/tables/sc_rts062.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts062.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts062.dir/fsw/tables/sc_rts062.c.i
 .PHONY : fsw/tables/sc_rts062.c.i
 
 fsw/tables/sc_rts062.s: fsw/tables/sc_rts062.c.s
@@ -3610,7 +3610,7 @@ fsw/tables/sc_rts062.s: fsw/tables/sc_rts062.c.s
 
 # target to generate assembly for a file
 fsw/tables/sc_rts062.c.s:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts062.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts062.dir/fsw/tables/sc_rts062.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts062.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts062.dir/fsw/tables/sc_rts062.c.s
 .PHONY : fsw/tables/sc_rts062.c.s
 
 fsw/tables/sc_rts063.o: fsw/tables/sc_rts063.c.o
@@ -3618,7 +3618,7 @@ fsw/tables/sc_rts063.o: fsw/tables/sc_rts063.c.o
 
 # target to build an object file
 fsw/tables/sc_rts063.c.o:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts063.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts063.dir/fsw/tables/sc_rts063.c.o
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts063.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts063.dir/fsw/tables/sc_rts063.c.o
 .PHONY : fsw/tables/sc_rts063.c.o
 
 fsw/tables/sc_rts063.i: fsw/tables/sc_rts063.c.i
@@ -3626,7 +3626,7 @@ fsw/tables/sc_rts063.i: fsw/tables/sc_rts063.c.i
 
 # target to preprocess a source file
 fsw/tables/sc_rts063.c.i:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts063.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts063.dir/fsw/tables/sc_rts063.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts063.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts063.dir/fsw/tables/sc_rts063.c.i
 .PHONY : fsw/tables/sc_rts063.c.i
 
 fsw/tables/sc_rts063.s: fsw/tables/sc_rts063.c.s
@@ -3634,7 +3634,7 @@ fsw/tables/sc_rts063.s: fsw/tables/sc_rts063.c.s
 
 # target to generate assembly for a file
 fsw/tables/sc_rts063.c.s:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts063.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts063.dir/fsw/tables/sc_rts063.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts063.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts063.dir/fsw/tables/sc_rts063.c.s
 .PHONY : fsw/tables/sc_rts063.c.s
 
 fsw/tables/sc_rts064.o: fsw/tables/sc_rts064.c.o
@@ -3642,7 +3642,7 @@ fsw/tables/sc_rts064.o: fsw/tables/sc_rts064.c.o
 
 # target to build an object file
 fsw/tables/sc_rts064.c.o:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts064.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts064.dir/fsw/tables/sc_rts064.c.o
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts064.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts064.dir/fsw/tables/sc_rts064.c.o
 .PHONY : fsw/tables/sc_rts064.c.o
 
 fsw/tables/sc_rts064.i: fsw/tables/sc_rts064.c.i
@@ -3650,7 +3650,7 @@ fsw/tables/sc_rts064.i: fsw/tables/sc_rts064.c.i
 
 # target to preprocess a source file
 fsw/tables/sc_rts064.c.i:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts064.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts064.dir/fsw/tables/sc_rts064.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts064.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts064.dir/fsw/tables/sc_rts064.c.i
 .PHONY : fsw/tables/sc_rts064.c.i
 
 fsw/tables/sc_rts064.s: fsw/tables/sc_rts064.c.s
@@ -3658,80 +3658,80 @@ fsw/tables/sc_rts064.s: fsw/tables/sc_rts064.c.s
 
 # target to generate assembly for a file
 fsw/tables/sc_rts064.c.s:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts064.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts064.dir/fsw/tables/sc_rts064.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts064.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts064.dir/fsw/tables/sc_rts064.c.s
 .PHONY : fsw/tables/sc_rts064.c.s
 
-home/jstar/Desktop/github-nos3/cfg/build/nos3_defs/tables/sc_rts001.o: home/jstar/Desktop/github-nos3/cfg/build/nos3_defs/tables/sc_rts001.c.o
-.PHONY : home/jstar/Desktop/github-nos3/cfg/build/nos3_defs/tables/sc_rts001.o
+mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/cfg/build/nos3_defs/tables/sc_rts001.o: mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/cfg/build/nos3_defs/tables/sc_rts001.c.o
+.PHONY : mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/cfg/build/nos3_defs/tables/sc_rts001.o
 
 # target to build an object file
-home/jstar/Desktop/github-nos3/cfg/build/nos3_defs/tables/sc_rts001.c.o:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts001.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts001.dir/home/jstar/Desktop/github-nos3/cfg/build/nos3_defs/tables/sc_rts001.c.o
-.PHONY : home/jstar/Desktop/github-nos3/cfg/build/nos3_defs/tables/sc_rts001.c.o
+mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/cfg/build/nos3_defs/tables/sc_rts001.c.o:
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts001.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts001.dir/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/cfg/build/nos3_defs/tables/sc_rts001.c.o
+.PHONY : mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/cfg/build/nos3_defs/tables/sc_rts001.c.o
 
-home/jstar/Desktop/github-nos3/cfg/build/nos3_defs/tables/sc_rts001.i: home/jstar/Desktop/github-nos3/cfg/build/nos3_defs/tables/sc_rts001.c.i
-.PHONY : home/jstar/Desktop/github-nos3/cfg/build/nos3_defs/tables/sc_rts001.i
+mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/cfg/build/nos3_defs/tables/sc_rts001.i: mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/cfg/build/nos3_defs/tables/sc_rts001.c.i
+.PHONY : mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/cfg/build/nos3_defs/tables/sc_rts001.i
 
 # target to preprocess a source file
-home/jstar/Desktop/github-nos3/cfg/build/nos3_defs/tables/sc_rts001.c.i:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts001.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts001.dir/home/jstar/Desktop/github-nos3/cfg/build/nos3_defs/tables/sc_rts001.c.i
-.PHONY : home/jstar/Desktop/github-nos3/cfg/build/nos3_defs/tables/sc_rts001.c.i
+mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/cfg/build/nos3_defs/tables/sc_rts001.c.i:
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts001.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts001.dir/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/cfg/build/nos3_defs/tables/sc_rts001.c.i
+.PHONY : mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/cfg/build/nos3_defs/tables/sc_rts001.c.i
 
-home/jstar/Desktop/github-nos3/cfg/build/nos3_defs/tables/sc_rts001.s: home/jstar/Desktop/github-nos3/cfg/build/nos3_defs/tables/sc_rts001.c.s
-.PHONY : home/jstar/Desktop/github-nos3/cfg/build/nos3_defs/tables/sc_rts001.s
+mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/cfg/build/nos3_defs/tables/sc_rts001.s: mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/cfg/build/nos3_defs/tables/sc_rts001.c.s
+.PHONY : mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/cfg/build/nos3_defs/tables/sc_rts001.s
 
 # target to generate assembly for a file
-home/jstar/Desktop/github-nos3/cfg/build/nos3_defs/tables/sc_rts001.c.s:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts001.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts001.dir/home/jstar/Desktop/github-nos3/cfg/build/nos3_defs/tables/sc_rts001.c.s
-.PHONY : home/jstar/Desktop/github-nos3/cfg/build/nos3_defs/tables/sc_rts001.c.s
+mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/cfg/build/nos3_defs/tables/sc_rts001.c.s:
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts001.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts001.dir/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/cfg/build/nos3_defs/tables/sc_rts001.c.s
+.PHONY : mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/cfg/build/nos3_defs/tables/sc_rts001.c.s
 
-home/jstar/Desktop/github-nos3/cfg/build/nos3_defs/tables/sc_rts003.o: home/jstar/Desktop/github-nos3/cfg/build/nos3_defs/tables/sc_rts003.c.o
-.PHONY : home/jstar/Desktop/github-nos3/cfg/build/nos3_defs/tables/sc_rts003.o
+mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/cfg/build/nos3_defs/tables/sc_rts003.o: mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/cfg/build/nos3_defs/tables/sc_rts003.c.o
+.PHONY : mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/cfg/build/nos3_defs/tables/sc_rts003.o
 
 # target to build an object file
-home/jstar/Desktop/github-nos3/cfg/build/nos3_defs/tables/sc_rts003.c.o:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts003.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts003.dir/home/jstar/Desktop/github-nos3/cfg/build/nos3_defs/tables/sc_rts003.c.o
-.PHONY : home/jstar/Desktop/github-nos3/cfg/build/nos3_defs/tables/sc_rts003.c.o
+mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/cfg/build/nos3_defs/tables/sc_rts003.c.o:
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts003.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts003.dir/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/cfg/build/nos3_defs/tables/sc_rts003.c.o
+.PHONY : mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/cfg/build/nos3_defs/tables/sc_rts003.c.o
 
-home/jstar/Desktop/github-nos3/cfg/build/nos3_defs/tables/sc_rts003.i: home/jstar/Desktop/github-nos3/cfg/build/nos3_defs/tables/sc_rts003.c.i
-.PHONY : home/jstar/Desktop/github-nos3/cfg/build/nos3_defs/tables/sc_rts003.i
+mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/cfg/build/nos3_defs/tables/sc_rts003.i: mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/cfg/build/nos3_defs/tables/sc_rts003.c.i
+.PHONY : mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/cfg/build/nos3_defs/tables/sc_rts003.i
 
 # target to preprocess a source file
-home/jstar/Desktop/github-nos3/cfg/build/nos3_defs/tables/sc_rts003.c.i:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts003.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts003.dir/home/jstar/Desktop/github-nos3/cfg/build/nos3_defs/tables/sc_rts003.c.i
-.PHONY : home/jstar/Desktop/github-nos3/cfg/build/nos3_defs/tables/sc_rts003.c.i
+mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/cfg/build/nos3_defs/tables/sc_rts003.c.i:
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts003.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts003.dir/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/cfg/build/nos3_defs/tables/sc_rts003.c.i
+.PHONY : mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/cfg/build/nos3_defs/tables/sc_rts003.c.i
 
-home/jstar/Desktop/github-nos3/cfg/build/nos3_defs/tables/sc_rts003.s: home/jstar/Desktop/github-nos3/cfg/build/nos3_defs/tables/sc_rts003.c.s
-.PHONY : home/jstar/Desktop/github-nos3/cfg/build/nos3_defs/tables/sc_rts003.s
+mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/cfg/build/nos3_defs/tables/sc_rts003.s: mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/cfg/build/nos3_defs/tables/sc_rts003.c.s
+.PHONY : mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/cfg/build/nos3_defs/tables/sc_rts003.s
 
 # target to generate assembly for a file
-home/jstar/Desktop/github-nos3/cfg/build/nos3_defs/tables/sc_rts003.c.s:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts003.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts003.dir/home/jstar/Desktop/github-nos3/cfg/build/nos3_defs/tables/sc_rts003.c.s
-.PHONY : home/jstar/Desktop/github-nos3/cfg/build/nos3_defs/tables/sc_rts003.c.s
+mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/cfg/build/nos3_defs/tables/sc_rts003.c.s:
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts003.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts003.dir/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/cfg/build/nos3_defs/tables/sc_rts003.c.s
+.PHONY : mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/cfg/build/nos3_defs/tables/sc_rts003.c.s
 
-home/jstar/Desktop/github-nos3/cfg/build/nos3_defs/tables/sc_rts005.o: home/jstar/Desktop/github-nos3/cfg/build/nos3_defs/tables/sc_rts005.c.o
-.PHONY : home/jstar/Desktop/github-nos3/cfg/build/nos3_defs/tables/sc_rts005.o
+mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/cfg/build/nos3_defs/tables/sc_rts005.o: mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/cfg/build/nos3_defs/tables/sc_rts005.c.o
+.PHONY : mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/cfg/build/nos3_defs/tables/sc_rts005.o
 
 # target to build an object file
-home/jstar/Desktop/github-nos3/cfg/build/nos3_defs/tables/sc_rts005.c.o:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts005.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts005.dir/home/jstar/Desktop/github-nos3/cfg/build/nos3_defs/tables/sc_rts005.c.o
-.PHONY : home/jstar/Desktop/github-nos3/cfg/build/nos3_defs/tables/sc_rts005.c.o
+mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/cfg/build/nos3_defs/tables/sc_rts005.c.o:
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts005.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts005.dir/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/cfg/build/nos3_defs/tables/sc_rts005.c.o
+.PHONY : mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/cfg/build/nos3_defs/tables/sc_rts005.c.o
 
-home/jstar/Desktop/github-nos3/cfg/build/nos3_defs/tables/sc_rts005.i: home/jstar/Desktop/github-nos3/cfg/build/nos3_defs/tables/sc_rts005.c.i
-.PHONY : home/jstar/Desktop/github-nos3/cfg/build/nos3_defs/tables/sc_rts005.i
+mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/cfg/build/nos3_defs/tables/sc_rts005.i: mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/cfg/build/nos3_defs/tables/sc_rts005.c.i
+.PHONY : mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/cfg/build/nos3_defs/tables/sc_rts005.i
 
 # target to preprocess a source file
-home/jstar/Desktop/github-nos3/cfg/build/nos3_defs/tables/sc_rts005.c.i:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts005.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts005.dir/home/jstar/Desktop/github-nos3/cfg/build/nos3_defs/tables/sc_rts005.c.i
-.PHONY : home/jstar/Desktop/github-nos3/cfg/build/nos3_defs/tables/sc_rts005.c.i
+mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/cfg/build/nos3_defs/tables/sc_rts005.c.i:
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts005.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts005.dir/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/cfg/build/nos3_defs/tables/sc_rts005.c.i
+.PHONY : mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/cfg/build/nos3_defs/tables/sc_rts005.c.i
 
-home/jstar/Desktop/github-nos3/cfg/build/nos3_defs/tables/sc_rts005.s: home/jstar/Desktop/github-nos3/cfg/build/nos3_defs/tables/sc_rts005.c.s
-.PHONY : home/jstar/Desktop/github-nos3/cfg/build/nos3_defs/tables/sc_rts005.s
+mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/cfg/build/nos3_defs/tables/sc_rts005.s: mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/cfg/build/nos3_defs/tables/sc_rts005.c.s
+.PHONY : mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/cfg/build/nos3_defs/tables/sc_rts005.s
 
 # target to generate assembly for a file
-home/jstar/Desktop/github-nos3/cfg/build/nos3_defs/tables/sc_rts005.c.s:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts005.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts005.dir/home/jstar/Desktop/github-nos3/cfg/build/nos3_defs/tables/sc_rts005.c.s
-.PHONY : home/jstar/Desktop/github-nos3/cfg/build/nos3_defs/tables/sc_rts005.c.s
+mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/cfg/build/nos3_defs/tables/sc_rts005.c.s:
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/sc/CMakeFiles/cpu1_sc_sc_rts005.dir/build.make apps/sc/CMakeFiles/cpu1_sc_sc_rts005.dir/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/cfg/build/nos3_defs/tables/sc_rts005.c.s
+.PHONY : mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/cfg/build/nos3_defs/tables/sc_rts005.c.s
 
 # Help Target
 help:
@@ -4084,15 +4084,15 @@ help:
 	@echo "... fsw/tables/sc_rts064.o"
 	@echo "... fsw/tables/sc_rts064.i"
 	@echo "... fsw/tables/sc_rts064.s"
-	@echo "... home/jstar/Desktop/github-nos3/cfg/build/nos3_defs/tables/sc_rts001.o"
-	@echo "... home/jstar/Desktop/github-nos3/cfg/build/nos3_defs/tables/sc_rts001.i"
-	@echo "... home/jstar/Desktop/github-nos3/cfg/build/nos3_defs/tables/sc_rts001.s"
-	@echo "... home/jstar/Desktop/github-nos3/cfg/build/nos3_defs/tables/sc_rts003.o"
-	@echo "... home/jstar/Desktop/github-nos3/cfg/build/nos3_defs/tables/sc_rts003.i"
-	@echo "... home/jstar/Desktop/github-nos3/cfg/build/nos3_defs/tables/sc_rts003.s"
-	@echo "... home/jstar/Desktop/github-nos3/cfg/build/nos3_defs/tables/sc_rts005.o"
-	@echo "... home/jstar/Desktop/github-nos3/cfg/build/nos3_defs/tables/sc_rts005.i"
-	@echo "... home/jstar/Desktop/github-nos3/cfg/build/nos3_defs/tables/sc_rts005.s"
+	@echo "... mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/cfg/build/nos3_defs/tables/sc_rts001.o"
+	@echo "... mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/cfg/build/nos3_defs/tables/sc_rts001.i"
+	@echo "... mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/cfg/build/nos3_defs/tables/sc_rts001.s"
+	@echo "... mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/cfg/build/nos3_defs/tables/sc_rts003.o"
+	@echo "... mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/cfg/build/nos3_defs/tables/sc_rts003.i"
+	@echo "... mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/cfg/build/nos3_defs/tables/sc_rts003.s"
+	@echo "... mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/cfg/build/nos3_defs/tables/sc_rts005.o"
+	@echo "... mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/cfg/build/nos3_defs/tables/sc_rts005.i"
+	@echo "... mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/cfg/build/nos3_defs/tables/sc_rts005.s"
 .PHONY : help
 
 
@@ -4104,6 +4104,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

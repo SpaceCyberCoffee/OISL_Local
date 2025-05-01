@@ -1,1 +1,1 @@
-/usr/bin/cc  -Wall -Wextra -Werror -g -O0 -g CMakeFiles/standalone.dir/standalone/standalone.c.o -o standalone  -Wl,-rpath,/home/jstar/Desktop/github-nos3/gsw/build/src ../src/libcrypto.so -lpthread -lgcrypt 
+/usr/bin/cc  -Wall -Wextra -Werror -g -O0 -g CMakeFiles/standalone.dir/standalone/standalone.c.o -o standalone  -Wl,-rpath,/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/gsw/build/src ../src/libcrypto.so -lpthread -lgcrypt 

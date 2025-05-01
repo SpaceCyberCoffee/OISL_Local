@@ -1,8 +1,8 @@
-# Install script for directory: /home/jstar/Desktop/github-nos3/components/syn/fsw
+# Install script for directory: /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/syn/fsw
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/jstar/Desktop/github-nos3/fsw/build/exe")
+  set(CMAKE_INSTALL_PREFIX "/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/exe")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -47,15 +47,15 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/cpu1/cf/syn.so")
     file(RPATH_CHECK
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/cpu1/cf/syn.so"
-         RPATH "/home/jstar/Desktop/github-nos3/fsw/build/exe/cpu1/cf")
+         RPATH "/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/exe/cpu1/cf")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/cpu1/cf" TYPE MODULE FILES "/home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/apps/syn/fsw/syn.so")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/cpu1/cf" TYPE MODULE FILES "/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/apps/syn/fsw/syn.so")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/cpu1/cf/syn.so" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/cpu1/cf/syn.so")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/cpu1/cf/syn.so"
-         OLD_RPATH "/home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/apps/syn:"
-         NEW_RPATH "/home/jstar/Desktop/github-nos3/fsw/build/exe/cpu1/cf")
+         OLD_RPATH "/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/apps/syn:"
+         NEW_RPATH "/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/exe/cpu1/cf")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/cpu1/cf/syn.so")
     endif()
@@ -64,7 +64,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/apps/syn/cmake_install.cmake")
+  include("/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/apps/syn/cmake_install.cmake")
 
 endif()
 

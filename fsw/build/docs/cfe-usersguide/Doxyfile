@@ -3,21 +3,21 @@
 #---------------------------------------------------------------------------
 
 # Allow overrides
-@INCLUDE_PATH          = /home/jstar/Desktop/github-nos3/fsw
+@INCLUDE_PATH          = /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw
 
 # Common setup
-@INCLUDE               = /home/jstar/Desktop/github-nos3/fsw/build/docs/cfe-common.doxyfile
+@INCLUDE               = /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/docs/cfe-common.doxyfile
 
 # Include osal to resolve references and provide default settings
-@INCLUDE               = /home/jstar/Desktop/github-nos3/fsw/build/docs/osal-common.doxyfile
+@INCLUDE               = /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/docs/osal-common.doxyfile
 
 # Document specific settings
 PROJECT_NAME           = "Core Flight Executive Users Guide"
-OUTPUT_DIRECTORY       = /home/jstar/Desktop/github-nos3/fsw/build/docs/cfe-usersguide
+OUTPUT_DIRECTORY       = /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/docs/cfe-usersguide
 WARN_LOGFILE           = cfe-usersguide-warnings.log
 
 # For purposes of the user guide, reference the "stock" mission configuration
 # Although missions may override these files, for the users guide we are mainly
 # interested in the documentation of those items.
-STRIP_FROM_PATH       += /home/jstar/Desktop/github-nos3/fsw/cfe/cmake/sample_defs
-INPUT                 += /home/jstar/Desktop/github-nos3/fsw/cfe/cmake/sample_defs
+STRIP_FROM_PATH       += /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/cfe/cmake/sample_defs
+INPUT                 += /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/cfe/cmake/sample_defs

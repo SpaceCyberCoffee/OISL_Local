@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/jstar/Desktop/github-nos3/fsw/cfe
+CMAKE_SOURCE_DIR = /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/cfe
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1
+CMAKE_BINARY_DIR = /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1
 
 # Include any dependencies generated for this target.
 include apps/sch/CMakeFiles/sch.dir/depend.make
@@ -70,60 +70,60 @@ include apps/sch/CMakeFiles/sch.dir/progress.make
 include apps/sch/CMakeFiles/sch.dir/flags.make
 
 apps/sch/CMakeFiles/sch.dir/fsw/src/sch_api.c.o: apps/sch/CMakeFiles/sch.dir/flags.make
-apps/sch/CMakeFiles/sch.dir/fsw/src/sch_api.c.o: /home/jstar/Desktop/github-nos3/fsw/apps/sch/fsw/src/sch_api.c
+apps/sch/CMakeFiles/sch.dir/fsw/src/sch_api.c.o: /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/apps/sch/fsw/src/sch_api.c
 apps/sch/CMakeFiles/sch.dir/fsw/src/sch_api.c.o: apps/sch/CMakeFiles/sch.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object apps/sch/CMakeFiles/sch.dir/fsw/src/sch_api.c.o"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/apps/sch && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT apps/sch/CMakeFiles/sch.dir/fsw/src/sch_api.c.o -MF CMakeFiles/sch.dir/fsw/src/sch_api.c.o.d -o CMakeFiles/sch.dir/fsw/src/sch_api.c.o -c /home/jstar/Desktop/github-nos3/fsw/apps/sch/fsw/src/sch_api.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object apps/sch/CMakeFiles/sch.dir/fsw/src/sch_api.c.o"
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/apps/sch && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT apps/sch/CMakeFiles/sch.dir/fsw/src/sch_api.c.o -MF CMakeFiles/sch.dir/fsw/src/sch_api.c.o.d -o CMakeFiles/sch.dir/fsw/src/sch_api.c.o -c /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/apps/sch/fsw/src/sch_api.c
 
 apps/sch/CMakeFiles/sch.dir/fsw/src/sch_api.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/sch.dir/fsw/src/sch_api.c.i"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/apps/sch && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jstar/Desktop/github-nos3/fsw/apps/sch/fsw/src/sch_api.c > CMakeFiles/sch.dir/fsw/src/sch_api.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/apps/sch && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/apps/sch/fsw/src/sch_api.c > CMakeFiles/sch.dir/fsw/src/sch_api.c.i
 
 apps/sch/CMakeFiles/sch.dir/fsw/src/sch_api.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/sch.dir/fsw/src/sch_api.c.s"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/apps/sch && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jstar/Desktop/github-nos3/fsw/apps/sch/fsw/src/sch_api.c -o CMakeFiles/sch.dir/fsw/src/sch_api.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/apps/sch && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/apps/sch/fsw/src/sch_api.c -o CMakeFiles/sch.dir/fsw/src/sch_api.c.s
 
 apps/sch/CMakeFiles/sch.dir/fsw/src/sch_app.c.o: apps/sch/CMakeFiles/sch.dir/flags.make
-apps/sch/CMakeFiles/sch.dir/fsw/src/sch_app.c.o: /home/jstar/Desktop/github-nos3/fsw/apps/sch/fsw/src/sch_app.c
+apps/sch/CMakeFiles/sch.dir/fsw/src/sch_app.c.o: /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/apps/sch/fsw/src/sch_app.c
 apps/sch/CMakeFiles/sch.dir/fsw/src/sch_app.c.o: apps/sch/CMakeFiles/sch.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object apps/sch/CMakeFiles/sch.dir/fsw/src/sch_app.c.o"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/apps/sch && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT apps/sch/CMakeFiles/sch.dir/fsw/src/sch_app.c.o -MF CMakeFiles/sch.dir/fsw/src/sch_app.c.o.d -o CMakeFiles/sch.dir/fsw/src/sch_app.c.o -c /home/jstar/Desktop/github-nos3/fsw/apps/sch/fsw/src/sch_app.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object apps/sch/CMakeFiles/sch.dir/fsw/src/sch_app.c.o"
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/apps/sch && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT apps/sch/CMakeFiles/sch.dir/fsw/src/sch_app.c.o -MF CMakeFiles/sch.dir/fsw/src/sch_app.c.o.d -o CMakeFiles/sch.dir/fsw/src/sch_app.c.o -c /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/apps/sch/fsw/src/sch_app.c
 
 apps/sch/CMakeFiles/sch.dir/fsw/src/sch_app.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/sch.dir/fsw/src/sch_app.c.i"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/apps/sch && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jstar/Desktop/github-nos3/fsw/apps/sch/fsw/src/sch_app.c > CMakeFiles/sch.dir/fsw/src/sch_app.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/apps/sch && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/apps/sch/fsw/src/sch_app.c > CMakeFiles/sch.dir/fsw/src/sch_app.c.i
 
 apps/sch/CMakeFiles/sch.dir/fsw/src/sch_app.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/sch.dir/fsw/src/sch_app.c.s"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/apps/sch && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jstar/Desktop/github-nos3/fsw/apps/sch/fsw/src/sch_app.c -o CMakeFiles/sch.dir/fsw/src/sch_app.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/apps/sch && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/apps/sch/fsw/src/sch_app.c -o CMakeFiles/sch.dir/fsw/src/sch_app.c.s
 
 apps/sch/CMakeFiles/sch.dir/fsw/src/sch_cmds.c.o: apps/sch/CMakeFiles/sch.dir/flags.make
-apps/sch/CMakeFiles/sch.dir/fsw/src/sch_cmds.c.o: /home/jstar/Desktop/github-nos3/fsw/apps/sch/fsw/src/sch_cmds.c
+apps/sch/CMakeFiles/sch.dir/fsw/src/sch_cmds.c.o: /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/apps/sch/fsw/src/sch_cmds.c
 apps/sch/CMakeFiles/sch.dir/fsw/src/sch_cmds.c.o: apps/sch/CMakeFiles/sch.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object apps/sch/CMakeFiles/sch.dir/fsw/src/sch_cmds.c.o"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/apps/sch && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT apps/sch/CMakeFiles/sch.dir/fsw/src/sch_cmds.c.o -MF CMakeFiles/sch.dir/fsw/src/sch_cmds.c.o.d -o CMakeFiles/sch.dir/fsw/src/sch_cmds.c.o -c /home/jstar/Desktop/github-nos3/fsw/apps/sch/fsw/src/sch_cmds.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object apps/sch/CMakeFiles/sch.dir/fsw/src/sch_cmds.c.o"
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/apps/sch && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT apps/sch/CMakeFiles/sch.dir/fsw/src/sch_cmds.c.o -MF CMakeFiles/sch.dir/fsw/src/sch_cmds.c.o.d -o CMakeFiles/sch.dir/fsw/src/sch_cmds.c.o -c /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/apps/sch/fsw/src/sch_cmds.c
 
 apps/sch/CMakeFiles/sch.dir/fsw/src/sch_cmds.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/sch.dir/fsw/src/sch_cmds.c.i"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/apps/sch && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jstar/Desktop/github-nos3/fsw/apps/sch/fsw/src/sch_cmds.c > CMakeFiles/sch.dir/fsw/src/sch_cmds.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/apps/sch && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/apps/sch/fsw/src/sch_cmds.c > CMakeFiles/sch.dir/fsw/src/sch_cmds.c.i
 
 apps/sch/CMakeFiles/sch.dir/fsw/src/sch_cmds.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/sch.dir/fsw/src/sch_cmds.c.s"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/apps/sch && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jstar/Desktop/github-nos3/fsw/apps/sch/fsw/src/sch_cmds.c -o CMakeFiles/sch.dir/fsw/src/sch_cmds.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/apps/sch && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/apps/sch/fsw/src/sch_cmds.c -o CMakeFiles/sch.dir/fsw/src/sch_cmds.c.s
 
 apps/sch/CMakeFiles/sch.dir/fsw/src/sch_custom.c.o: apps/sch/CMakeFiles/sch.dir/flags.make
-apps/sch/CMakeFiles/sch.dir/fsw/src/sch_custom.c.o: /home/jstar/Desktop/github-nos3/fsw/apps/sch/fsw/src/sch_custom.c
+apps/sch/CMakeFiles/sch.dir/fsw/src/sch_custom.c.o: /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/apps/sch/fsw/src/sch_custom.c
 apps/sch/CMakeFiles/sch.dir/fsw/src/sch_custom.c.o: apps/sch/CMakeFiles/sch.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object apps/sch/CMakeFiles/sch.dir/fsw/src/sch_custom.c.o"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/apps/sch && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT apps/sch/CMakeFiles/sch.dir/fsw/src/sch_custom.c.o -MF CMakeFiles/sch.dir/fsw/src/sch_custom.c.o.d -o CMakeFiles/sch.dir/fsw/src/sch_custom.c.o -c /home/jstar/Desktop/github-nos3/fsw/apps/sch/fsw/src/sch_custom.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object apps/sch/CMakeFiles/sch.dir/fsw/src/sch_custom.c.o"
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/apps/sch && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT apps/sch/CMakeFiles/sch.dir/fsw/src/sch_custom.c.o -MF CMakeFiles/sch.dir/fsw/src/sch_custom.c.o.d -o CMakeFiles/sch.dir/fsw/src/sch_custom.c.o -c /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/apps/sch/fsw/src/sch_custom.c
 
 apps/sch/CMakeFiles/sch.dir/fsw/src/sch_custom.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/sch.dir/fsw/src/sch_custom.c.i"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/apps/sch && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jstar/Desktop/github-nos3/fsw/apps/sch/fsw/src/sch_custom.c > CMakeFiles/sch.dir/fsw/src/sch_custom.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/apps/sch && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/apps/sch/fsw/src/sch_custom.c > CMakeFiles/sch.dir/fsw/src/sch_custom.c.i
 
 apps/sch/CMakeFiles/sch.dir/fsw/src/sch_custom.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/sch.dir/fsw/src/sch_custom.c.s"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/apps/sch && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jstar/Desktop/github-nos3/fsw/apps/sch/fsw/src/sch_custom.c -o CMakeFiles/sch.dir/fsw/src/sch_custom.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/apps/sch && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/apps/sch/fsw/src/sch_custom.c -o CMakeFiles/sch.dir/fsw/src/sch_custom.c.s
 
 # Object files for target sch
 sch_OBJECTS = \
@@ -141,18 +141,18 @@ apps/sch/sch.so: apps/sch/CMakeFiles/sch.dir/fsw/src/sch_cmds.c.o
 apps/sch/sch.so: apps/sch/CMakeFiles/sch.dir/fsw/src/sch_custom.c.o
 apps/sch/sch.so: apps/sch/CMakeFiles/sch.dir/build.make
 apps/sch/sch.so: apps/sch/CMakeFiles/sch.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking C shared module sch.so"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/apps/sch && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/sch.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking C shared module sch.so"
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/apps/sch && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/sch.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 apps/sch/CMakeFiles/sch.dir/build: apps/sch/sch.so
 .PHONY : apps/sch/CMakeFiles/sch.dir/build
 
 apps/sch/CMakeFiles/sch.dir/clean:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/apps/sch && $(CMAKE_COMMAND) -P CMakeFiles/sch.dir/cmake_clean.cmake
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/apps/sch && $(CMAKE_COMMAND) -P CMakeFiles/sch.dir/cmake_clean.cmake
 .PHONY : apps/sch/CMakeFiles/sch.dir/clean
 
 apps/sch/CMakeFiles/sch.dir/depend:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/jstar/Desktop/github-nos3/fsw/cfe /home/jstar/Desktop/github-nos3/fsw/apps/sch /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/apps/sch /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/apps/sch/CMakeFiles/sch.dir/DependInfo.cmake --color=$(COLOR)
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/cfe /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/apps/sch /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/apps/sch /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/apps/sch/CMakeFiles/sch.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : apps/sch/CMakeFiles/sch.dir/depend
 

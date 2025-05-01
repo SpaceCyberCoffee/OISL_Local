@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/jstar/Desktop/github-nos3/fsw/cfe
+CMAKE_SOURCE_DIR = /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/cfe
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1
+CMAKE_BINARY_DIR = /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -142,14 +142,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(CMAKE_COMMAND) -E cmake_progress_start /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/apps/ds//CMakeFiles/progress.marks
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/ds/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles 0
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(CMAKE_COMMAND) -E cmake_progress_start /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/apps/ds//CMakeFiles/progress.marks
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/ds/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/ds/clean
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/ds/clean
 .PHONY : clean
 
 # The main clean target
@@ -158,22 +158,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/ds/preinstall
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/ds/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/ds/preinstall
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/ds/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 apps/ds/CMakeFiles/ds.dir/rule:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/ds/CMakeFiles/ds.dir/rule
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/ds/CMakeFiles/ds.dir/rule
 .PHONY : apps/ds/CMakeFiles/ds.dir/rule
 
 # Convenience name for target.
@@ -182,12 +182,12 @@ ds: apps/ds/CMakeFiles/ds.dir/rule
 
 # fast build rule for target.
 ds/fast:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/ds/CMakeFiles/ds.dir/build.make apps/ds/CMakeFiles/ds.dir/build
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/ds/CMakeFiles/ds.dir/build.make apps/ds/CMakeFiles/ds.dir/build
 .PHONY : ds/fast
 
 # Convenience name for target.
 apps/ds/CMakeFiles/cpu1_ds_ds_filter_tbl.dir/rule:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/ds/CMakeFiles/cpu1_ds_ds_filter_tbl.dir/rule
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/ds/CMakeFiles/cpu1_ds_ds_filter_tbl.dir/rule
 .PHONY : apps/ds/CMakeFiles/cpu1_ds_ds_filter_tbl.dir/rule
 
 # Convenience name for target.
@@ -196,12 +196,12 @@ cpu1_ds_ds_filter_tbl: apps/ds/CMakeFiles/cpu1_ds_ds_filter_tbl.dir/rule
 
 # fast build rule for target.
 cpu1_ds_ds_filter_tbl/fast:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/ds/CMakeFiles/cpu1_ds_ds_filter_tbl.dir/build.make apps/ds/CMakeFiles/cpu1_ds_ds_filter_tbl.dir/build
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/ds/CMakeFiles/cpu1_ds_ds_filter_tbl.dir/build.make apps/ds/CMakeFiles/cpu1_ds_ds_filter_tbl.dir/build
 .PHONY : cpu1_ds_ds_filter_tbl/fast
 
 # Convenience name for target.
 apps/ds/CMakeFiles/cpu1_ds_ds_filter_tbl_tbl.dir/rule:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/ds/CMakeFiles/cpu1_ds_ds_filter_tbl_tbl.dir/rule
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/ds/CMakeFiles/cpu1_ds_ds_filter_tbl_tbl.dir/rule
 .PHONY : apps/ds/CMakeFiles/cpu1_ds_ds_filter_tbl_tbl.dir/rule
 
 # Convenience name for target.
@@ -210,12 +210,12 @@ cpu1_ds_ds_filter_tbl_tbl: apps/ds/CMakeFiles/cpu1_ds_ds_filter_tbl_tbl.dir/rule
 
 # fast build rule for target.
 cpu1_ds_ds_filter_tbl_tbl/fast:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/ds/CMakeFiles/cpu1_ds_ds_filter_tbl_tbl.dir/build.make apps/ds/CMakeFiles/cpu1_ds_ds_filter_tbl_tbl.dir/build
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/ds/CMakeFiles/cpu1_ds_ds_filter_tbl_tbl.dir/build.make apps/ds/CMakeFiles/cpu1_ds_ds_filter_tbl_tbl.dir/build
 .PHONY : cpu1_ds_ds_filter_tbl_tbl/fast
 
 # Convenience name for target.
 apps/ds/CMakeFiles/cpu1_ds_ds_file_tbl.dir/rule:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/ds/CMakeFiles/cpu1_ds_ds_file_tbl.dir/rule
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/ds/CMakeFiles/cpu1_ds_ds_file_tbl.dir/rule
 .PHONY : apps/ds/CMakeFiles/cpu1_ds_ds_file_tbl.dir/rule
 
 # Convenience name for target.
@@ -224,12 +224,12 @@ cpu1_ds_ds_file_tbl: apps/ds/CMakeFiles/cpu1_ds_ds_file_tbl.dir/rule
 
 # fast build rule for target.
 cpu1_ds_ds_file_tbl/fast:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/ds/CMakeFiles/cpu1_ds_ds_file_tbl.dir/build.make apps/ds/CMakeFiles/cpu1_ds_ds_file_tbl.dir/build
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/ds/CMakeFiles/cpu1_ds_ds_file_tbl.dir/build.make apps/ds/CMakeFiles/cpu1_ds_ds_file_tbl.dir/build
 .PHONY : cpu1_ds_ds_file_tbl/fast
 
 # Convenience name for target.
 apps/ds/CMakeFiles/cpu1_ds_ds_file_tbl_tbl.dir/rule:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/ds/CMakeFiles/cpu1_ds_ds_file_tbl_tbl.dir/rule
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/ds/CMakeFiles/cpu1_ds_ds_file_tbl_tbl.dir/rule
 .PHONY : apps/ds/CMakeFiles/cpu1_ds_ds_file_tbl_tbl.dir/rule
 
 # Convenience name for target.
@@ -238,7 +238,7 @@ cpu1_ds_ds_file_tbl_tbl: apps/ds/CMakeFiles/cpu1_ds_ds_file_tbl_tbl.dir/rule
 
 # fast build rule for target.
 cpu1_ds_ds_file_tbl_tbl/fast:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/ds/CMakeFiles/cpu1_ds_ds_file_tbl_tbl.dir/build.make apps/ds/CMakeFiles/cpu1_ds_ds_file_tbl_tbl.dir/build
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/ds/CMakeFiles/cpu1_ds_ds_file_tbl_tbl.dir/build.make apps/ds/CMakeFiles/cpu1_ds_ds_file_tbl_tbl.dir/build
 .PHONY : cpu1_ds_ds_file_tbl_tbl/fast
 
 fsw/src/ds_app.o: fsw/src/ds_app.c.o
@@ -246,7 +246,7 @@ fsw/src/ds_app.o: fsw/src/ds_app.c.o
 
 # target to build an object file
 fsw/src/ds_app.c.o:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/ds/CMakeFiles/ds.dir/build.make apps/ds/CMakeFiles/ds.dir/fsw/src/ds_app.c.o
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/ds/CMakeFiles/ds.dir/build.make apps/ds/CMakeFiles/ds.dir/fsw/src/ds_app.c.o
 .PHONY : fsw/src/ds_app.c.o
 
 fsw/src/ds_app.i: fsw/src/ds_app.c.i
@@ -254,7 +254,7 @@ fsw/src/ds_app.i: fsw/src/ds_app.c.i
 
 # target to preprocess a source file
 fsw/src/ds_app.c.i:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/ds/CMakeFiles/ds.dir/build.make apps/ds/CMakeFiles/ds.dir/fsw/src/ds_app.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/ds/CMakeFiles/ds.dir/build.make apps/ds/CMakeFiles/ds.dir/fsw/src/ds_app.c.i
 .PHONY : fsw/src/ds_app.c.i
 
 fsw/src/ds_app.s: fsw/src/ds_app.c.s
@@ -262,7 +262,7 @@ fsw/src/ds_app.s: fsw/src/ds_app.c.s
 
 # target to generate assembly for a file
 fsw/src/ds_app.c.s:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/ds/CMakeFiles/ds.dir/build.make apps/ds/CMakeFiles/ds.dir/fsw/src/ds_app.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/ds/CMakeFiles/ds.dir/build.make apps/ds/CMakeFiles/ds.dir/fsw/src/ds_app.c.s
 .PHONY : fsw/src/ds_app.c.s
 
 fsw/src/ds_cmds.o: fsw/src/ds_cmds.c.o
@@ -270,7 +270,7 @@ fsw/src/ds_cmds.o: fsw/src/ds_cmds.c.o
 
 # target to build an object file
 fsw/src/ds_cmds.c.o:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/ds/CMakeFiles/ds.dir/build.make apps/ds/CMakeFiles/ds.dir/fsw/src/ds_cmds.c.o
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/ds/CMakeFiles/ds.dir/build.make apps/ds/CMakeFiles/ds.dir/fsw/src/ds_cmds.c.o
 .PHONY : fsw/src/ds_cmds.c.o
 
 fsw/src/ds_cmds.i: fsw/src/ds_cmds.c.i
@@ -278,7 +278,7 @@ fsw/src/ds_cmds.i: fsw/src/ds_cmds.c.i
 
 # target to preprocess a source file
 fsw/src/ds_cmds.c.i:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/ds/CMakeFiles/ds.dir/build.make apps/ds/CMakeFiles/ds.dir/fsw/src/ds_cmds.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/ds/CMakeFiles/ds.dir/build.make apps/ds/CMakeFiles/ds.dir/fsw/src/ds_cmds.c.i
 .PHONY : fsw/src/ds_cmds.c.i
 
 fsw/src/ds_cmds.s: fsw/src/ds_cmds.c.s
@@ -286,7 +286,7 @@ fsw/src/ds_cmds.s: fsw/src/ds_cmds.c.s
 
 # target to generate assembly for a file
 fsw/src/ds_cmds.c.s:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/ds/CMakeFiles/ds.dir/build.make apps/ds/CMakeFiles/ds.dir/fsw/src/ds_cmds.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/ds/CMakeFiles/ds.dir/build.make apps/ds/CMakeFiles/ds.dir/fsw/src/ds_cmds.c.s
 .PHONY : fsw/src/ds_cmds.c.s
 
 fsw/src/ds_dispatch.o: fsw/src/ds_dispatch.c.o
@@ -294,7 +294,7 @@ fsw/src/ds_dispatch.o: fsw/src/ds_dispatch.c.o
 
 # target to build an object file
 fsw/src/ds_dispatch.c.o:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/ds/CMakeFiles/ds.dir/build.make apps/ds/CMakeFiles/ds.dir/fsw/src/ds_dispatch.c.o
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/ds/CMakeFiles/ds.dir/build.make apps/ds/CMakeFiles/ds.dir/fsw/src/ds_dispatch.c.o
 .PHONY : fsw/src/ds_dispatch.c.o
 
 fsw/src/ds_dispatch.i: fsw/src/ds_dispatch.c.i
@@ -302,7 +302,7 @@ fsw/src/ds_dispatch.i: fsw/src/ds_dispatch.c.i
 
 # target to preprocess a source file
 fsw/src/ds_dispatch.c.i:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/ds/CMakeFiles/ds.dir/build.make apps/ds/CMakeFiles/ds.dir/fsw/src/ds_dispatch.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/ds/CMakeFiles/ds.dir/build.make apps/ds/CMakeFiles/ds.dir/fsw/src/ds_dispatch.c.i
 .PHONY : fsw/src/ds_dispatch.c.i
 
 fsw/src/ds_dispatch.s: fsw/src/ds_dispatch.c.s
@@ -310,7 +310,7 @@ fsw/src/ds_dispatch.s: fsw/src/ds_dispatch.c.s
 
 # target to generate assembly for a file
 fsw/src/ds_dispatch.c.s:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/ds/CMakeFiles/ds.dir/build.make apps/ds/CMakeFiles/ds.dir/fsw/src/ds_dispatch.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/ds/CMakeFiles/ds.dir/build.make apps/ds/CMakeFiles/ds.dir/fsw/src/ds_dispatch.c.s
 .PHONY : fsw/src/ds_dispatch.c.s
 
 fsw/src/ds_file.o: fsw/src/ds_file.c.o
@@ -318,7 +318,7 @@ fsw/src/ds_file.o: fsw/src/ds_file.c.o
 
 # target to build an object file
 fsw/src/ds_file.c.o:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/ds/CMakeFiles/ds.dir/build.make apps/ds/CMakeFiles/ds.dir/fsw/src/ds_file.c.o
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/ds/CMakeFiles/ds.dir/build.make apps/ds/CMakeFiles/ds.dir/fsw/src/ds_file.c.o
 .PHONY : fsw/src/ds_file.c.o
 
 fsw/src/ds_file.i: fsw/src/ds_file.c.i
@@ -326,7 +326,7 @@ fsw/src/ds_file.i: fsw/src/ds_file.c.i
 
 # target to preprocess a source file
 fsw/src/ds_file.c.i:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/ds/CMakeFiles/ds.dir/build.make apps/ds/CMakeFiles/ds.dir/fsw/src/ds_file.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/ds/CMakeFiles/ds.dir/build.make apps/ds/CMakeFiles/ds.dir/fsw/src/ds_file.c.i
 .PHONY : fsw/src/ds_file.c.i
 
 fsw/src/ds_file.s: fsw/src/ds_file.c.s
@@ -334,7 +334,7 @@ fsw/src/ds_file.s: fsw/src/ds_file.c.s
 
 # target to generate assembly for a file
 fsw/src/ds_file.c.s:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/ds/CMakeFiles/ds.dir/build.make apps/ds/CMakeFiles/ds.dir/fsw/src/ds_file.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/ds/CMakeFiles/ds.dir/build.make apps/ds/CMakeFiles/ds.dir/fsw/src/ds_file.c.s
 .PHONY : fsw/src/ds_file.c.s
 
 fsw/src/ds_table.o: fsw/src/ds_table.c.o
@@ -342,7 +342,7 @@ fsw/src/ds_table.o: fsw/src/ds_table.c.o
 
 # target to build an object file
 fsw/src/ds_table.c.o:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/ds/CMakeFiles/ds.dir/build.make apps/ds/CMakeFiles/ds.dir/fsw/src/ds_table.c.o
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/ds/CMakeFiles/ds.dir/build.make apps/ds/CMakeFiles/ds.dir/fsw/src/ds_table.c.o
 .PHONY : fsw/src/ds_table.c.o
 
 fsw/src/ds_table.i: fsw/src/ds_table.c.i
@@ -350,7 +350,7 @@ fsw/src/ds_table.i: fsw/src/ds_table.c.i
 
 # target to preprocess a source file
 fsw/src/ds_table.c.i:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/ds/CMakeFiles/ds.dir/build.make apps/ds/CMakeFiles/ds.dir/fsw/src/ds_table.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/ds/CMakeFiles/ds.dir/build.make apps/ds/CMakeFiles/ds.dir/fsw/src/ds_table.c.i
 .PHONY : fsw/src/ds_table.c.i
 
 fsw/src/ds_table.s: fsw/src/ds_table.c.s
@@ -358,56 +358,56 @@ fsw/src/ds_table.s: fsw/src/ds_table.c.s
 
 # target to generate assembly for a file
 fsw/src/ds_table.c.s:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/ds/CMakeFiles/ds.dir/build.make apps/ds/CMakeFiles/ds.dir/fsw/src/ds_table.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/ds/CMakeFiles/ds.dir/build.make apps/ds/CMakeFiles/ds.dir/fsw/src/ds_table.c.s
 .PHONY : fsw/src/ds_table.c.s
 
-home/jstar/Desktop/github-nos3/cfg/build/nos3_defs/tables/ds_file_tbl.o: home/jstar/Desktop/github-nos3/cfg/build/nos3_defs/tables/ds_file_tbl.c.o
-.PHONY : home/jstar/Desktop/github-nos3/cfg/build/nos3_defs/tables/ds_file_tbl.o
+mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/cfg/build/nos3_defs/tables/ds_file_tbl.o: mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/cfg/build/nos3_defs/tables/ds_file_tbl.c.o
+.PHONY : mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/cfg/build/nos3_defs/tables/ds_file_tbl.o
 
 # target to build an object file
-home/jstar/Desktop/github-nos3/cfg/build/nos3_defs/tables/ds_file_tbl.c.o:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/ds/CMakeFiles/cpu1_ds_ds_file_tbl.dir/build.make apps/ds/CMakeFiles/cpu1_ds_ds_file_tbl.dir/home/jstar/Desktop/github-nos3/cfg/build/nos3_defs/tables/ds_file_tbl.c.o
-.PHONY : home/jstar/Desktop/github-nos3/cfg/build/nos3_defs/tables/ds_file_tbl.c.o
+mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/cfg/build/nos3_defs/tables/ds_file_tbl.c.o:
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/ds/CMakeFiles/cpu1_ds_ds_file_tbl.dir/build.make apps/ds/CMakeFiles/cpu1_ds_ds_file_tbl.dir/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/cfg/build/nos3_defs/tables/ds_file_tbl.c.o
+.PHONY : mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/cfg/build/nos3_defs/tables/ds_file_tbl.c.o
 
-home/jstar/Desktop/github-nos3/cfg/build/nos3_defs/tables/ds_file_tbl.i: home/jstar/Desktop/github-nos3/cfg/build/nos3_defs/tables/ds_file_tbl.c.i
-.PHONY : home/jstar/Desktop/github-nos3/cfg/build/nos3_defs/tables/ds_file_tbl.i
+mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/cfg/build/nos3_defs/tables/ds_file_tbl.i: mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/cfg/build/nos3_defs/tables/ds_file_tbl.c.i
+.PHONY : mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/cfg/build/nos3_defs/tables/ds_file_tbl.i
 
 # target to preprocess a source file
-home/jstar/Desktop/github-nos3/cfg/build/nos3_defs/tables/ds_file_tbl.c.i:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/ds/CMakeFiles/cpu1_ds_ds_file_tbl.dir/build.make apps/ds/CMakeFiles/cpu1_ds_ds_file_tbl.dir/home/jstar/Desktop/github-nos3/cfg/build/nos3_defs/tables/ds_file_tbl.c.i
-.PHONY : home/jstar/Desktop/github-nos3/cfg/build/nos3_defs/tables/ds_file_tbl.c.i
+mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/cfg/build/nos3_defs/tables/ds_file_tbl.c.i:
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/ds/CMakeFiles/cpu1_ds_ds_file_tbl.dir/build.make apps/ds/CMakeFiles/cpu1_ds_ds_file_tbl.dir/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/cfg/build/nos3_defs/tables/ds_file_tbl.c.i
+.PHONY : mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/cfg/build/nos3_defs/tables/ds_file_tbl.c.i
 
-home/jstar/Desktop/github-nos3/cfg/build/nos3_defs/tables/ds_file_tbl.s: home/jstar/Desktop/github-nos3/cfg/build/nos3_defs/tables/ds_file_tbl.c.s
-.PHONY : home/jstar/Desktop/github-nos3/cfg/build/nos3_defs/tables/ds_file_tbl.s
+mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/cfg/build/nos3_defs/tables/ds_file_tbl.s: mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/cfg/build/nos3_defs/tables/ds_file_tbl.c.s
+.PHONY : mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/cfg/build/nos3_defs/tables/ds_file_tbl.s
 
 # target to generate assembly for a file
-home/jstar/Desktop/github-nos3/cfg/build/nos3_defs/tables/ds_file_tbl.c.s:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/ds/CMakeFiles/cpu1_ds_ds_file_tbl.dir/build.make apps/ds/CMakeFiles/cpu1_ds_ds_file_tbl.dir/home/jstar/Desktop/github-nos3/cfg/build/nos3_defs/tables/ds_file_tbl.c.s
-.PHONY : home/jstar/Desktop/github-nos3/cfg/build/nos3_defs/tables/ds_file_tbl.c.s
+mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/cfg/build/nos3_defs/tables/ds_file_tbl.c.s:
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/ds/CMakeFiles/cpu1_ds_ds_file_tbl.dir/build.make apps/ds/CMakeFiles/cpu1_ds_ds_file_tbl.dir/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/cfg/build/nos3_defs/tables/ds_file_tbl.c.s
+.PHONY : mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/cfg/build/nos3_defs/tables/ds_file_tbl.c.s
 
-home/jstar/Desktop/github-nos3/cfg/build/nos3_defs/tables/ds_filter_tbl.o: home/jstar/Desktop/github-nos3/cfg/build/nos3_defs/tables/ds_filter_tbl.c.o
-.PHONY : home/jstar/Desktop/github-nos3/cfg/build/nos3_defs/tables/ds_filter_tbl.o
+mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/cfg/build/nos3_defs/tables/ds_filter_tbl.o: mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/cfg/build/nos3_defs/tables/ds_filter_tbl.c.o
+.PHONY : mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/cfg/build/nos3_defs/tables/ds_filter_tbl.o
 
 # target to build an object file
-home/jstar/Desktop/github-nos3/cfg/build/nos3_defs/tables/ds_filter_tbl.c.o:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/ds/CMakeFiles/cpu1_ds_ds_filter_tbl.dir/build.make apps/ds/CMakeFiles/cpu1_ds_ds_filter_tbl.dir/home/jstar/Desktop/github-nos3/cfg/build/nos3_defs/tables/ds_filter_tbl.c.o
-.PHONY : home/jstar/Desktop/github-nos3/cfg/build/nos3_defs/tables/ds_filter_tbl.c.o
+mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/cfg/build/nos3_defs/tables/ds_filter_tbl.c.o:
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/ds/CMakeFiles/cpu1_ds_ds_filter_tbl.dir/build.make apps/ds/CMakeFiles/cpu1_ds_ds_filter_tbl.dir/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/cfg/build/nos3_defs/tables/ds_filter_tbl.c.o
+.PHONY : mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/cfg/build/nos3_defs/tables/ds_filter_tbl.c.o
 
-home/jstar/Desktop/github-nos3/cfg/build/nos3_defs/tables/ds_filter_tbl.i: home/jstar/Desktop/github-nos3/cfg/build/nos3_defs/tables/ds_filter_tbl.c.i
-.PHONY : home/jstar/Desktop/github-nos3/cfg/build/nos3_defs/tables/ds_filter_tbl.i
+mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/cfg/build/nos3_defs/tables/ds_filter_tbl.i: mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/cfg/build/nos3_defs/tables/ds_filter_tbl.c.i
+.PHONY : mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/cfg/build/nos3_defs/tables/ds_filter_tbl.i
 
 # target to preprocess a source file
-home/jstar/Desktop/github-nos3/cfg/build/nos3_defs/tables/ds_filter_tbl.c.i:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/ds/CMakeFiles/cpu1_ds_ds_filter_tbl.dir/build.make apps/ds/CMakeFiles/cpu1_ds_ds_filter_tbl.dir/home/jstar/Desktop/github-nos3/cfg/build/nos3_defs/tables/ds_filter_tbl.c.i
-.PHONY : home/jstar/Desktop/github-nos3/cfg/build/nos3_defs/tables/ds_filter_tbl.c.i
+mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/cfg/build/nos3_defs/tables/ds_filter_tbl.c.i:
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/ds/CMakeFiles/cpu1_ds_ds_filter_tbl.dir/build.make apps/ds/CMakeFiles/cpu1_ds_ds_filter_tbl.dir/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/cfg/build/nos3_defs/tables/ds_filter_tbl.c.i
+.PHONY : mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/cfg/build/nos3_defs/tables/ds_filter_tbl.c.i
 
-home/jstar/Desktop/github-nos3/cfg/build/nos3_defs/tables/ds_filter_tbl.s: home/jstar/Desktop/github-nos3/cfg/build/nos3_defs/tables/ds_filter_tbl.c.s
-.PHONY : home/jstar/Desktop/github-nos3/cfg/build/nos3_defs/tables/ds_filter_tbl.s
+mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/cfg/build/nos3_defs/tables/ds_filter_tbl.s: mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/cfg/build/nos3_defs/tables/ds_filter_tbl.c.s
+.PHONY : mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/cfg/build/nos3_defs/tables/ds_filter_tbl.s
 
 # target to generate assembly for a file
-home/jstar/Desktop/github-nos3/cfg/build/nos3_defs/tables/ds_filter_tbl.c.s:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/ds/CMakeFiles/cpu1_ds_ds_filter_tbl.dir/build.make apps/ds/CMakeFiles/cpu1_ds_ds_filter_tbl.dir/home/jstar/Desktop/github-nos3/cfg/build/nos3_defs/tables/ds_filter_tbl.c.s
-.PHONY : home/jstar/Desktop/github-nos3/cfg/build/nos3_defs/tables/ds_filter_tbl.c.s
+mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/cfg/build/nos3_defs/tables/ds_filter_tbl.c.s:
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/ds/CMakeFiles/cpu1_ds_ds_filter_tbl.dir/build.make apps/ds/CMakeFiles/cpu1_ds_ds_filter_tbl.dir/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/cfg/build/nos3_defs/tables/ds_filter_tbl.c.s
+.PHONY : mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/cfg/build/nos3_defs/tables/ds_filter_tbl.c.s
 
 # Help Target
 help:
@@ -442,12 +442,12 @@ help:
 	@echo "... fsw/src/ds_table.o"
 	@echo "... fsw/src/ds_table.i"
 	@echo "... fsw/src/ds_table.s"
-	@echo "... home/jstar/Desktop/github-nos3/cfg/build/nos3_defs/tables/ds_file_tbl.o"
-	@echo "... home/jstar/Desktop/github-nos3/cfg/build/nos3_defs/tables/ds_file_tbl.i"
-	@echo "... home/jstar/Desktop/github-nos3/cfg/build/nos3_defs/tables/ds_file_tbl.s"
-	@echo "... home/jstar/Desktop/github-nos3/cfg/build/nos3_defs/tables/ds_filter_tbl.o"
-	@echo "... home/jstar/Desktop/github-nos3/cfg/build/nos3_defs/tables/ds_filter_tbl.i"
-	@echo "... home/jstar/Desktop/github-nos3/cfg/build/nos3_defs/tables/ds_filter_tbl.s"
+	@echo "... mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/cfg/build/nos3_defs/tables/ds_file_tbl.o"
+	@echo "... mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/cfg/build/nos3_defs/tables/ds_file_tbl.i"
+	@echo "... mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/cfg/build/nos3_defs/tables/ds_file_tbl.s"
+	@echo "... mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/cfg/build/nos3_defs/tables/ds_filter_tbl.o"
+	@echo "... mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/cfg/build/nos3_defs/tables/ds_filter_tbl.i"
+	@echo "... mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/cfg/build/nos3_defs/tables/ds_filter_tbl.s"
 .PHONY : help
 
 
@@ -459,6 +459,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

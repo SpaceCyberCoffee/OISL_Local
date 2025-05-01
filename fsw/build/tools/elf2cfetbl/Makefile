@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/jstar/Desktop/github-nos3/fsw/cfe
+CMAKE_SOURCE_DIR = /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/cfe
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/jstar/Desktop/github-nos3/fsw/build
+CMAKE_BINARY_DIR = /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -142,14 +142,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/jstar/Desktop/github-nos3/fsw/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/jstar/Desktop/github-nos3/fsw/build/CMakeFiles /home/jstar/Desktop/github-nos3/fsw/build/tools/elf2cfetbl//CMakeFiles/progress.marks
-	cd /home/jstar/Desktop/github-nos3/fsw/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tools/elf2cfetbl/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/jstar/Desktop/github-nos3/fsw/build/CMakeFiles 0
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build && $(CMAKE_COMMAND) -E cmake_progress_start /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/CMakeFiles /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/tools/elf2cfetbl//CMakeFiles/progress.marks
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tools/elf2cfetbl/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/jstar/Desktop/github-nos3/fsw/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tools/elf2cfetbl/clean
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tools/elf2cfetbl/clean
 .PHONY : clean
 
 # The main clean target
@@ -158,22 +158,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/jstar/Desktop/github-nos3/fsw/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tools/elf2cfetbl/preinstall
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tools/elf2cfetbl/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/jstar/Desktop/github-nos3/fsw/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tools/elf2cfetbl/preinstall
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tools/elf2cfetbl/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/jstar/Desktop/github-nos3/fsw/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 tools/elf2cfetbl/CMakeFiles/elf2cfetbl.dir/rule:
-	cd /home/jstar/Desktop/github-nos3/fsw/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tools/elf2cfetbl/CMakeFiles/elf2cfetbl.dir/rule
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tools/elf2cfetbl/CMakeFiles/elf2cfetbl.dir/rule
 .PHONY : tools/elf2cfetbl/CMakeFiles/elf2cfetbl.dir/rule
 
 # Convenience name for target.
@@ -182,7 +182,7 @@ elf2cfetbl: tools/elf2cfetbl/CMakeFiles/elf2cfetbl.dir/rule
 
 # fast build rule for target.
 elf2cfetbl/fast:
-	cd /home/jstar/Desktop/github-nos3/fsw/build && $(MAKE) $(MAKESILENT) -f tools/elf2cfetbl/CMakeFiles/elf2cfetbl.dir/build.make tools/elf2cfetbl/CMakeFiles/elf2cfetbl.dir/build
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build && $(MAKE) $(MAKESILENT) -f tools/elf2cfetbl/CMakeFiles/elf2cfetbl.dir/build.make tools/elf2cfetbl/CMakeFiles/elf2cfetbl.dir/build
 .PHONY : elf2cfetbl/fast
 
 elf2cfetbl.o: elf2cfetbl.c.o
@@ -190,7 +190,7 @@ elf2cfetbl.o: elf2cfetbl.c.o
 
 # target to build an object file
 elf2cfetbl.c.o:
-	cd /home/jstar/Desktop/github-nos3/fsw/build && $(MAKE) $(MAKESILENT) -f tools/elf2cfetbl/CMakeFiles/elf2cfetbl.dir/build.make tools/elf2cfetbl/CMakeFiles/elf2cfetbl.dir/elf2cfetbl.c.o
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build && $(MAKE) $(MAKESILENT) -f tools/elf2cfetbl/CMakeFiles/elf2cfetbl.dir/build.make tools/elf2cfetbl/CMakeFiles/elf2cfetbl.dir/elf2cfetbl.c.o
 .PHONY : elf2cfetbl.c.o
 
 elf2cfetbl.i: elf2cfetbl.c.i
@@ -198,7 +198,7 @@ elf2cfetbl.i: elf2cfetbl.c.i
 
 # target to preprocess a source file
 elf2cfetbl.c.i:
-	cd /home/jstar/Desktop/github-nos3/fsw/build && $(MAKE) $(MAKESILENT) -f tools/elf2cfetbl/CMakeFiles/elf2cfetbl.dir/build.make tools/elf2cfetbl/CMakeFiles/elf2cfetbl.dir/elf2cfetbl.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build && $(MAKE) $(MAKESILENT) -f tools/elf2cfetbl/CMakeFiles/elf2cfetbl.dir/build.make tools/elf2cfetbl/CMakeFiles/elf2cfetbl.dir/elf2cfetbl.c.i
 .PHONY : elf2cfetbl.c.i
 
 elf2cfetbl.s: elf2cfetbl.c.s
@@ -206,7 +206,7 @@ elf2cfetbl.s: elf2cfetbl.c.s
 
 # target to generate assembly for a file
 elf2cfetbl.c.s:
-	cd /home/jstar/Desktop/github-nos3/fsw/build && $(MAKE) $(MAKESILENT) -f tools/elf2cfetbl/CMakeFiles/elf2cfetbl.dir/build.make tools/elf2cfetbl/CMakeFiles/elf2cfetbl.dir/elf2cfetbl.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build && $(MAKE) $(MAKESILENT) -f tools/elf2cfetbl/CMakeFiles/elf2cfetbl.dir/build.make tools/elf2cfetbl/CMakeFiles/elf2cfetbl.dir/elf2cfetbl.c.s
 .PHONY : elf2cfetbl.c.s
 
 # Help Target
@@ -237,6 +237,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/jstar/Desktop/github-nos3/fsw/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

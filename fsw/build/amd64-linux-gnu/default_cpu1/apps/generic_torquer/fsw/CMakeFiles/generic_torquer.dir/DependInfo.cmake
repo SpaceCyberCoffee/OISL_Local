@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/jstar/Desktop/github-nos3/components/generic_torquer/fsw/src/generic_torquer_app.c" "apps/generic_torquer/fsw/CMakeFiles/generic_torquer.dir/src/generic_torquer_app.c.o" "gcc" "apps/generic_torquer/fsw/CMakeFiles/generic_torquer.dir/src/generic_torquer_app.c.o.d"
+  "/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/generic_torquer/fsw/src/generic_torquer_app.c" "apps/generic_torquer/fsw/CMakeFiles/generic_torquer.dir/src/generic_torquer_app.c.o" "gcc" "apps/generic_torquer/fsw/CMakeFiles/generic_torquer.dir/src/generic_torquer_app.c.o.d"
   )
 
 # Targets to which this target links.

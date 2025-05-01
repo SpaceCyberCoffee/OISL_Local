@@ -1,8 +1,8 @@
-# Install script for directory: /home/jstar/Desktop/github-nos3/fsw/osal
+# Install script for directory: /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/jstar/Desktop/github-nos3/fsw/build/exe")
+  set(CMAKE_INSTALL_PREFIX "/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/exe")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -44,10 +44,10 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/osal/ut_assert/cmake_install.cmake")
-  include("/home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/osal/ut-stubs/cmake_install.cmake")
-  include("/home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/osal/nos-linux_impl/cmake_install.cmake")
-  include("/home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/osal/nos_impl/cmake_install.cmake")
+  include("/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/osal/ut_assert/cmake_install.cmake")
+  include("/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/osal/ut-stubs/cmake_install.cmake")
+  include("/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/osal/nos-linux_impl/cmake_install.cmake")
+  include("/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/osal/nos_impl/cmake_install.cmake")
 
 endif()
 

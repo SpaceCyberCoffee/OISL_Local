@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/jstar/Desktop/github-nos3/fsw/cfe
+CMAKE_SOURCE_DIR = /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/cfe
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1
+CMAKE_BINARY_DIR = /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -142,14 +142,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(CMAKE_COMMAND) -E cmake_progress_start /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/apps/syn//CMakeFiles/progress.marks
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/syn/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles 0
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(CMAKE_COMMAND) -E cmake_progress_start /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/apps/syn//CMakeFiles/progress.marks
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/syn/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/syn/clean
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/syn/clean
 .PHONY : clean
 
 # The main clean target
@@ -158,22 +158,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/syn/preinstall
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/syn/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/syn/preinstall
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/syn/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 apps/syn/CMakeFiles/synopsis.dir/rule:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/syn/CMakeFiles/synopsis.dir/rule
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/syn/CMakeFiles/synopsis.dir/rule
 .PHONY : apps/syn/CMakeFiles/synopsis.dir/rule
 
 # Convenience name for target.
@@ -182,12 +182,12 @@ synopsis: apps/syn/CMakeFiles/synopsis.dir/rule
 
 # fast build rule for target.
 synopsis/fast:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/syn/CMakeFiles/synopsis.dir/build.make apps/syn/CMakeFiles/synopsis.dir/build
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/syn/CMakeFiles/synopsis.dir/build.make apps/syn/CMakeFiles/synopsis.dir/build
 .PHONY : synopsis/fast
 
 # Convenience name for target.
 apps/syn/CMakeFiles/synopsis_cli.dir/rule:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/syn/CMakeFiles/synopsis_cli.dir/rule
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/syn/CMakeFiles/synopsis_cli.dir/rule
 .PHONY : apps/syn/CMakeFiles/synopsis_cli.dir/rule
 
 # Convenience name for target.
@@ -196,7 +196,7 @@ synopsis_cli: apps/syn/CMakeFiles/synopsis_cli.dir/rule
 
 # fast build rule for target.
 synopsis_cli/fast:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/syn/CMakeFiles/synopsis_cli.dir/build.make apps/syn/CMakeFiles/synopsis_cli.dir/build
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/syn/CMakeFiles/synopsis_cli.dir/build.make apps/syn/CMakeFiles/synopsis_cli.dir/build
 .PHONY : synopsis_cli/fast
 
 bin/synopsis_cli.o: bin/synopsis_cli.cpp.o
@@ -204,7 +204,7 @@ bin/synopsis_cli.o: bin/synopsis_cli.cpp.o
 
 # target to build an object file
 bin/synopsis_cli.cpp.o:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/syn/CMakeFiles/synopsis_cli.dir/build.make apps/syn/CMakeFiles/synopsis_cli.dir/bin/synopsis_cli.cpp.o
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/syn/CMakeFiles/synopsis_cli.dir/build.make apps/syn/CMakeFiles/synopsis_cli.dir/bin/synopsis_cli.cpp.o
 .PHONY : bin/synopsis_cli.cpp.o
 
 bin/synopsis_cli.i: bin/synopsis_cli.cpp.i
@@ -212,7 +212,7 @@ bin/synopsis_cli.i: bin/synopsis_cli.cpp.i
 
 # target to preprocess a source file
 bin/synopsis_cli.cpp.i:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/syn/CMakeFiles/synopsis_cli.dir/build.make apps/syn/CMakeFiles/synopsis_cli.dir/bin/synopsis_cli.cpp.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/syn/CMakeFiles/synopsis_cli.dir/build.make apps/syn/CMakeFiles/synopsis_cli.dir/bin/synopsis_cli.cpp.i
 .PHONY : bin/synopsis_cli.cpp.i
 
 bin/synopsis_cli.s: bin/synopsis_cli.cpp.s
@@ -220,7 +220,7 @@ bin/synopsis_cli.s: bin/synopsis_cli.cpp.s
 
 # target to generate assembly for a file
 bin/synopsis_cli.cpp.s:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/syn/CMakeFiles/synopsis_cli.dir/build.make apps/syn/CMakeFiles/synopsis_cli.dir/bin/synopsis_cli.cpp.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/syn/CMakeFiles/synopsis_cli.dir/build.make apps/syn/CMakeFiles/synopsis_cli.dir/bin/synopsis_cli.cpp.s
 .PHONY : bin/synopsis_cli.cpp.s
 
 src/ASDS.o: src/ASDS.cpp.o
@@ -228,7 +228,7 @@ src/ASDS.o: src/ASDS.cpp.o
 
 # target to build an object file
 src/ASDS.cpp.o:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/syn/CMakeFiles/synopsis.dir/build.make apps/syn/CMakeFiles/synopsis.dir/src/ASDS.cpp.o
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/syn/CMakeFiles/synopsis.dir/build.make apps/syn/CMakeFiles/synopsis.dir/src/ASDS.cpp.o
 .PHONY : src/ASDS.cpp.o
 
 src/ASDS.i: src/ASDS.cpp.i
@@ -236,7 +236,7 @@ src/ASDS.i: src/ASDS.cpp.i
 
 # target to preprocess a source file
 src/ASDS.cpp.i:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/syn/CMakeFiles/synopsis.dir/build.make apps/syn/CMakeFiles/synopsis.dir/src/ASDS.cpp.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/syn/CMakeFiles/synopsis.dir/build.make apps/syn/CMakeFiles/synopsis.dir/src/ASDS.cpp.i
 .PHONY : src/ASDS.cpp.i
 
 src/ASDS.s: src/ASDS.cpp.s
@@ -244,7 +244,7 @@ src/ASDS.s: src/ASDS.cpp.s
 
 # target to generate assembly for a file
 src/ASDS.cpp.s:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/syn/CMakeFiles/synopsis.dir/build.make apps/syn/CMakeFiles/synopsis.dir/src/ASDS.cpp.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/syn/CMakeFiles/synopsis.dir/build.make apps/syn/CMakeFiles/synopsis.dir/src/ASDS.cpp.s
 .PHONY : src/ASDS.cpp.s
 
 src/DownlinkPlanner.o: src/DownlinkPlanner.cpp.o
@@ -252,7 +252,7 @@ src/DownlinkPlanner.o: src/DownlinkPlanner.cpp.o
 
 # target to build an object file
 src/DownlinkPlanner.cpp.o:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/syn/CMakeFiles/synopsis.dir/build.make apps/syn/CMakeFiles/synopsis.dir/src/DownlinkPlanner.cpp.o
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/syn/CMakeFiles/synopsis.dir/build.make apps/syn/CMakeFiles/synopsis.dir/src/DownlinkPlanner.cpp.o
 .PHONY : src/DownlinkPlanner.cpp.o
 
 src/DownlinkPlanner.i: src/DownlinkPlanner.cpp.i
@@ -260,7 +260,7 @@ src/DownlinkPlanner.i: src/DownlinkPlanner.cpp.i
 
 # target to preprocess a source file
 src/DownlinkPlanner.cpp.i:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/syn/CMakeFiles/synopsis.dir/build.make apps/syn/CMakeFiles/synopsis.dir/src/DownlinkPlanner.cpp.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/syn/CMakeFiles/synopsis.dir/build.make apps/syn/CMakeFiles/synopsis.dir/src/DownlinkPlanner.cpp.i
 .PHONY : src/DownlinkPlanner.cpp.i
 
 src/DownlinkPlanner.s: src/DownlinkPlanner.cpp.s
@@ -268,7 +268,7 @@ src/DownlinkPlanner.s: src/DownlinkPlanner.cpp.s
 
 # target to generate assembly for a file
 src/DownlinkPlanner.cpp.s:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/syn/CMakeFiles/synopsis.dir/build.make apps/syn/CMakeFiles/synopsis.dir/src/DownlinkPlanner.cpp.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/syn/CMakeFiles/synopsis.dir/build.make apps/syn/CMakeFiles/synopsis.dir/src/DownlinkPlanner.cpp.s
 .PHONY : src/DownlinkPlanner.cpp.s
 
 src/DpDbMsg.o: src/DpDbMsg.cpp.o
@@ -276,7 +276,7 @@ src/DpDbMsg.o: src/DpDbMsg.cpp.o
 
 # target to build an object file
 src/DpDbMsg.cpp.o:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/syn/CMakeFiles/synopsis.dir/build.make apps/syn/CMakeFiles/synopsis.dir/src/DpDbMsg.cpp.o
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/syn/CMakeFiles/synopsis.dir/build.make apps/syn/CMakeFiles/synopsis.dir/src/DpDbMsg.cpp.o
 .PHONY : src/DpDbMsg.cpp.o
 
 src/DpDbMsg.i: src/DpDbMsg.cpp.i
@@ -284,7 +284,7 @@ src/DpDbMsg.i: src/DpDbMsg.cpp.i
 
 # target to preprocess a source file
 src/DpDbMsg.cpp.i:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/syn/CMakeFiles/synopsis.dir/build.make apps/syn/CMakeFiles/synopsis.dir/src/DpDbMsg.cpp.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/syn/CMakeFiles/synopsis.dir/build.make apps/syn/CMakeFiles/synopsis.dir/src/DpDbMsg.cpp.i
 .PHONY : src/DpDbMsg.cpp.i
 
 src/DpDbMsg.s: src/DpDbMsg.cpp.s
@@ -292,7 +292,7 @@ src/DpDbMsg.s: src/DpDbMsg.cpp.s
 
 # target to generate assembly for a file
 src/DpDbMsg.cpp.s:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/syn/CMakeFiles/synopsis.dir/build.make apps/syn/CMakeFiles/synopsis.dir/src/DpDbMsg.cpp.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/syn/CMakeFiles/synopsis.dir/build.make apps/syn/CMakeFiles/synopsis.dir/src/DpDbMsg.cpp.s
 .PHONY : src/DpDbMsg.cpp.s
 
 src/DpMsg.o: src/DpMsg.cpp.o
@@ -300,7 +300,7 @@ src/DpMsg.o: src/DpMsg.cpp.o
 
 # target to build an object file
 src/DpMsg.cpp.o:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/syn/CMakeFiles/synopsis.dir/build.make apps/syn/CMakeFiles/synopsis.dir/src/DpMsg.cpp.o
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/syn/CMakeFiles/synopsis.dir/build.make apps/syn/CMakeFiles/synopsis.dir/src/DpMsg.cpp.o
 .PHONY : src/DpMsg.cpp.o
 
 src/DpMsg.i: src/DpMsg.cpp.i
@@ -308,7 +308,7 @@ src/DpMsg.i: src/DpMsg.cpp.i
 
 # target to preprocess a source file
 src/DpMsg.cpp.i:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/syn/CMakeFiles/synopsis.dir/build.make apps/syn/CMakeFiles/synopsis.dir/src/DpMsg.cpp.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/syn/CMakeFiles/synopsis.dir/build.make apps/syn/CMakeFiles/synopsis.dir/src/DpMsg.cpp.i
 .PHONY : src/DpMsg.cpp.i
 
 src/DpMsg.s: src/DpMsg.cpp.s
@@ -316,7 +316,7 @@ src/DpMsg.s: src/DpMsg.cpp.s
 
 # target to generate assembly for a file
 src/DpMsg.cpp.s:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/syn/CMakeFiles/synopsis.dir/build.make apps/syn/CMakeFiles/synopsis.dir/src/DpMsg.cpp.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/syn/CMakeFiles/synopsis.dir/build.make apps/syn/CMakeFiles/synopsis.dir/src/DpMsg.cpp.s
 .PHONY : src/DpMsg.cpp.s
 
 src/LinuxClock.o: src/LinuxClock.cpp.o
@@ -324,7 +324,7 @@ src/LinuxClock.o: src/LinuxClock.cpp.o
 
 # target to build an object file
 src/LinuxClock.cpp.o:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/syn/CMakeFiles/synopsis.dir/build.make apps/syn/CMakeFiles/synopsis.dir/src/LinuxClock.cpp.o
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/syn/CMakeFiles/synopsis.dir/build.make apps/syn/CMakeFiles/synopsis.dir/src/LinuxClock.cpp.o
 .PHONY : src/LinuxClock.cpp.o
 
 src/LinuxClock.i: src/LinuxClock.cpp.i
@@ -332,7 +332,7 @@ src/LinuxClock.i: src/LinuxClock.cpp.i
 
 # target to preprocess a source file
 src/LinuxClock.cpp.i:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/syn/CMakeFiles/synopsis.dir/build.make apps/syn/CMakeFiles/synopsis.dir/src/LinuxClock.cpp.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/syn/CMakeFiles/synopsis.dir/build.make apps/syn/CMakeFiles/synopsis.dir/src/LinuxClock.cpp.i
 .PHONY : src/LinuxClock.cpp.i
 
 src/LinuxClock.s: src/LinuxClock.cpp.s
@@ -340,7 +340,7 @@ src/LinuxClock.s: src/LinuxClock.cpp.s
 
 # target to generate assembly for a file
 src/LinuxClock.cpp.s:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/syn/CMakeFiles/synopsis.dir/build.make apps/syn/CMakeFiles/synopsis.dir/src/LinuxClock.cpp.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/syn/CMakeFiles/synopsis.dir/build.make apps/syn/CMakeFiles/synopsis.dir/src/LinuxClock.cpp.s
 .PHONY : src/LinuxClock.cpp.s
 
 src/MaxMarginalRelevanceDownlinkPlanner.o: src/MaxMarginalRelevanceDownlinkPlanner.cpp.o
@@ -348,7 +348,7 @@ src/MaxMarginalRelevanceDownlinkPlanner.o: src/MaxMarginalRelevanceDownlinkPlann
 
 # target to build an object file
 src/MaxMarginalRelevanceDownlinkPlanner.cpp.o:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/syn/CMakeFiles/synopsis.dir/build.make apps/syn/CMakeFiles/synopsis.dir/src/MaxMarginalRelevanceDownlinkPlanner.cpp.o
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/syn/CMakeFiles/synopsis.dir/build.make apps/syn/CMakeFiles/synopsis.dir/src/MaxMarginalRelevanceDownlinkPlanner.cpp.o
 .PHONY : src/MaxMarginalRelevanceDownlinkPlanner.cpp.o
 
 src/MaxMarginalRelevanceDownlinkPlanner.i: src/MaxMarginalRelevanceDownlinkPlanner.cpp.i
@@ -356,7 +356,7 @@ src/MaxMarginalRelevanceDownlinkPlanner.i: src/MaxMarginalRelevanceDownlinkPlann
 
 # target to preprocess a source file
 src/MaxMarginalRelevanceDownlinkPlanner.cpp.i:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/syn/CMakeFiles/synopsis.dir/build.make apps/syn/CMakeFiles/synopsis.dir/src/MaxMarginalRelevanceDownlinkPlanner.cpp.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/syn/CMakeFiles/synopsis.dir/build.make apps/syn/CMakeFiles/synopsis.dir/src/MaxMarginalRelevanceDownlinkPlanner.cpp.i
 .PHONY : src/MaxMarginalRelevanceDownlinkPlanner.cpp.i
 
 src/MaxMarginalRelevanceDownlinkPlanner.s: src/MaxMarginalRelevanceDownlinkPlanner.cpp.s
@@ -364,7 +364,7 @@ src/MaxMarginalRelevanceDownlinkPlanner.s: src/MaxMarginalRelevanceDownlinkPlann
 
 # target to generate assembly for a file
 src/MaxMarginalRelevanceDownlinkPlanner.cpp.s:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/syn/CMakeFiles/synopsis.dir/build.make apps/syn/CMakeFiles/synopsis.dir/src/MaxMarginalRelevanceDownlinkPlanner.cpp.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/syn/CMakeFiles/synopsis.dir/build.make apps/syn/CMakeFiles/synopsis.dir/src/MaxMarginalRelevanceDownlinkPlanner.cpp.s
 .PHONY : src/MaxMarginalRelevanceDownlinkPlanner.cpp.s
 
 src/PassthroughASDS.o: src/PassthroughASDS.cpp.o
@@ -372,7 +372,7 @@ src/PassthroughASDS.o: src/PassthroughASDS.cpp.o
 
 # target to build an object file
 src/PassthroughASDS.cpp.o:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/syn/CMakeFiles/synopsis.dir/build.make apps/syn/CMakeFiles/synopsis.dir/src/PassthroughASDS.cpp.o
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/syn/CMakeFiles/synopsis.dir/build.make apps/syn/CMakeFiles/synopsis.dir/src/PassthroughASDS.cpp.o
 .PHONY : src/PassthroughASDS.cpp.o
 
 src/PassthroughASDS.i: src/PassthroughASDS.cpp.i
@@ -380,7 +380,7 @@ src/PassthroughASDS.i: src/PassthroughASDS.cpp.i
 
 # target to preprocess a source file
 src/PassthroughASDS.cpp.i:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/syn/CMakeFiles/synopsis.dir/build.make apps/syn/CMakeFiles/synopsis.dir/src/PassthroughASDS.cpp.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/syn/CMakeFiles/synopsis.dir/build.make apps/syn/CMakeFiles/synopsis.dir/src/PassthroughASDS.cpp.i
 .PHONY : src/PassthroughASDS.cpp.i
 
 src/PassthroughASDS.s: src/PassthroughASDS.cpp.s
@@ -388,7 +388,7 @@ src/PassthroughASDS.s: src/PassthroughASDS.cpp.s
 
 # target to generate assembly for a file
 src/PassthroughASDS.cpp.s:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/syn/CMakeFiles/synopsis.dir/build.make apps/syn/CMakeFiles/synopsis.dir/src/PassthroughASDS.cpp.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/syn/CMakeFiles/synopsis.dir/build.make apps/syn/CMakeFiles/synopsis.dir/src/PassthroughASDS.cpp.s
 .PHONY : src/PassthroughASDS.cpp.s
 
 src/RuleAST.o: src/RuleAST.cpp.o
@@ -396,7 +396,7 @@ src/RuleAST.o: src/RuleAST.cpp.o
 
 # target to build an object file
 src/RuleAST.cpp.o:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/syn/CMakeFiles/synopsis.dir/build.make apps/syn/CMakeFiles/synopsis.dir/src/RuleAST.cpp.o
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/syn/CMakeFiles/synopsis.dir/build.make apps/syn/CMakeFiles/synopsis.dir/src/RuleAST.cpp.o
 .PHONY : src/RuleAST.cpp.o
 
 src/RuleAST.i: src/RuleAST.cpp.i
@@ -404,7 +404,7 @@ src/RuleAST.i: src/RuleAST.cpp.i
 
 # target to preprocess a source file
 src/RuleAST.cpp.i:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/syn/CMakeFiles/synopsis.dir/build.make apps/syn/CMakeFiles/synopsis.dir/src/RuleAST.cpp.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/syn/CMakeFiles/synopsis.dir/build.make apps/syn/CMakeFiles/synopsis.dir/src/RuleAST.cpp.i
 .PHONY : src/RuleAST.cpp.i
 
 src/RuleAST.s: src/RuleAST.cpp.s
@@ -412,7 +412,7 @@ src/RuleAST.s: src/RuleAST.cpp.s
 
 # target to generate assembly for a file
 src/RuleAST.cpp.s:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/syn/CMakeFiles/synopsis.dir/build.make apps/syn/CMakeFiles/synopsis.dir/src/RuleAST.cpp.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/syn/CMakeFiles/synopsis.dir/build.make apps/syn/CMakeFiles/synopsis.dir/src/RuleAST.cpp.s
 .PHONY : src/RuleAST.cpp.s
 
 src/Similarity.o: src/Similarity.cpp.o
@@ -420,7 +420,7 @@ src/Similarity.o: src/Similarity.cpp.o
 
 # target to build an object file
 src/Similarity.cpp.o:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/syn/CMakeFiles/synopsis.dir/build.make apps/syn/CMakeFiles/synopsis.dir/src/Similarity.cpp.o
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/syn/CMakeFiles/synopsis.dir/build.make apps/syn/CMakeFiles/synopsis.dir/src/Similarity.cpp.o
 .PHONY : src/Similarity.cpp.o
 
 src/Similarity.i: src/Similarity.cpp.i
@@ -428,7 +428,7 @@ src/Similarity.i: src/Similarity.cpp.i
 
 # target to preprocess a source file
 src/Similarity.cpp.i:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/syn/CMakeFiles/synopsis.dir/build.make apps/syn/CMakeFiles/synopsis.dir/src/Similarity.cpp.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/syn/CMakeFiles/synopsis.dir/build.make apps/syn/CMakeFiles/synopsis.dir/src/Similarity.cpp.i
 .PHONY : src/Similarity.cpp.i
 
 src/Similarity.s: src/Similarity.cpp.s
@@ -436,7 +436,7 @@ src/Similarity.s: src/Similarity.cpp.s
 
 # target to generate assembly for a file
 src/Similarity.cpp.s:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/syn/CMakeFiles/synopsis.dir/build.make apps/syn/CMakeFiles/synopsis.dir/src/Similarity.cpp.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/syn/CMakeFiles/synopsis.dir/build.make apps/syn/CMakeFiles/synopsis.dir/src/Similarity.cpp.s
 .PHONY : src/Similarity.cpp.s
 
 src/Sqlite3Statement.o: src/Sqlite3Statement.cpp.o
@@ -444,7 +444,7 @@ src/Sqlite3Statement.o: src/Sqlite3Statement.cpp.o
 
 # target to build an object file
 src/Sqlite3Statement.cpp.o:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/syn/CMakeFiles/synopsis.dir/build.make apps/syn/CMakeFiles/synopsis.dir/src/Sqlite3Statement.cpp.o
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/syn/CMakeFiles/synopsis.dir/build.make apps/syn/CMakeFiles/synopsis.dir/src/Sqlite3Statement.cpp.o
 .PHONY : src/Sqlite3Statement.cpp.o
 
 src/Sqlite3Statement.i: src/Sqlite3Statement.cpp.i
@@ -452,7 +452,7 @@ src/Sqlite3Statement.i: src/Sqlite3Statement.cpp.i
 
 # target to preprocess a source file
 src/Sqlite3Statement.cpp.i:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/syn/CMakeFiles/synopsis.dir/build.make apps/syn/CMakeFiles/synopsis.dir/src/Sqlite3Statement.cpp.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/syn/CMakeFiles/synopsis.dir/build.make apps/syn/CMakeFiles/synopsis.dir/src/Sqlite3Statement.cpp.i
 .PHONY : src/Sqlite3Statement.cpp.i
 
 src/Sqlite3Statement.s: src/Sqlite3Statement.cpp.s
@@ -460,7 +460,7 @@ src/Sqlite3Statement.s: src/Sqlite3Statement.cpp.s
 
 # target to generate assembly for a file
 src/Sqlite3Statement.cpp.s:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/syn/CMakeFiles/synopsis.dir/build.make apps/syn/CMakeFiles/synopsis.dir/src/Sqlite3Statement.cpp.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/syn/CMakeFiles/synopsis.dir/build.make apps/syn/CMakeFiles/synopsis.dir/src/Sqlite3Statement.cpp.s
 .PHONY : src/Sqlite3Statement.cpp.s
 
 src/SqliteASDPDB.o: src/SqliteASDPDB.cpp.o
@@ -468,7 +468,7 @@ src/SqliteASDPDB.o: src/SqliteASDPDB.cpp.o
 
 # target to build an object file
 src/SqliteASDPDB.cpp.o:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/syn/CMakeFiles/synopsis.dir/build.make apps/syn/CMakeFiles/synopsis.dir/src/SqliteASDPDB.cpp.o
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/syn/CMakeFiles/synopsis.dir/build.make apps/syn/CMakeFiles/synopsis.dir/src/SqliteASDPDB.cpp.o
 .PHONY : src/SqliteASDPDB.cpp.o
 
 src/SqliteASDPDB.i: src/SqliteASDPDB.cpp.i
@@ -476,7 +476,7 @@ src/SqliteASDPDB.i: src/SqliteASDPDB.cpp.i
 
 # target to preprocess a source file
 src/SqliteASDPDB.cpp.i:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/syn/CMakeFiles/synopsis.dir/build.make apps/syn/CMakeFiles/synopsis.dir/src/SqliteASDPDB.cpp.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/syn/CMakeFiles/synopsis.dir/build.make apps/syn/CMakeFiles/synopsis.dir/src/SqliteASDPDB.cpp.i
 .PHONY : src/SqliteASDPDB.cpp.i
 
 src/SqliteASDPDB.s: src/SqliteASDPDB.cpp.s
@@ -484,7 +484,7 @@ src/SqliteASDPDB.s: src/SqliteASDPDB.cpp.s
 
 # target to generate assembly for a file
 src/SqliteASDPDB.cpp.s:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/syn/CMakeFiles/synopsis.dir/build.make apps/syn/CMakeFiles/synopsis.dir/src/SqliteASDPDB.cpp.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/syn/CMakeFiles/synopsis.dir/build.make apps/syn/CMakeFiles/synopsis.dir/src/SqliteASDPDB.cpp.s
 .PHONY : src/SqliteASDPDB.cpp.s
 
 src/StdLogger.o: src/StdLogger.cpp.o
@@ -492,7 +492,7 @@ src/StdLogger.o: src/StdLogger.cpp.o
 
 # target to build an object file
 src/StdLogger.cpp.o:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/syn/CMakeFiles/synopsis.dir/build.make apps/syn/CMakeFiles/synopsis.dir/src/StdLogger.cpp.o
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/syn/CMakeFiles/synopsis.dir/build.make apps/syn/CMakeFiles/synopsis.dir/src/StdLogger.cpp.o
 .PHONY : src/StdLogger.cpp.o
 
 src/StdLogger.i: src/StdLogger.cpp.i
@@ -500,7 +500,7 @@ src/StdLogger.i: src/StdLogger.cpp.i
 
 # target to preprocess a source file
 src/StdLogger.cpp.i:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/syn/CMakeFiles/synopsis.dir/build.make apps/syn/CMakeFiles/synopsis.dir/src/StdLogger.cpp.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/syn/CMakeFiles/synopsis.dir/build.make apps/syn/CMakeFiles/synopsis.dir/src/StdLogger.cpp.i
 .PHONY : src/StdLogger.cpp.i
 
 src/StdLogger.s: src/StdLogger.cpp.s
@@ -508,7 +508,7 @@ src/StdLogger.s: src/StdLogger.cpp.s
 
 # target to generate assembly for a file
 src/StdLogger.cpp.s:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/syn/CMakeFiles/synopsis.dir/build.make apps/syn/CMakeFiles/synopsis.dir/src/StdLogger.cpp.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/syn/CMakeFiles/synopsis.dir/build.make apps/syn/CMakeFiles/synopsis.dir/src/StdLogger.cpp.s
 .PHONY : src/StdLogger.cpp.s
 
 src/Timer.o: src/Timer.cpp.o
@@ -516,7 +516,7 @@ src/Timer.o: src/Timer.cpp.o
 
 # target to build an object file
 src/Timer.cpp.o:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/syn/CMakeFiles/synopsis.dir/build.make apps/syn/CMakeFiles/synopsis.dir/src/Timer.cpp.o
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/syn/CMakeFiles/synopsis.dir/build.make apps/syn/CMakeFiles/synopsis.dir/src/Timer.cpp.o
 .PHONY : src/Timer.cpp.o
 
 src/Timer.i: src/Timer.cpp.i
@@ -524,7 +524,7 @@ src/Timer.i: src/Timer.cpp.i
 
 # target to preprocess a source file
 src/Timer.cpp.i:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/syn/CMakeFiles/synopsis.dir/build.make apps/syn/CMakeFiles/synopsis.dir/src/Timer.cpp.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/syn/CMakeFiles/synopsis.dir/build.make apps/syn/CMakeFiles/synopsis.dir/src/Timer.cpp.i
 .PHONY : src/Timer.cpp.i
 
 src/Timer.s: src/Timer.cpp.s
@@ -532,7 +532,7 @@ src/Timer.s: src/Timer.cpp.s
 
 # target to generate assembly for a file
 src/Timer.cpp.s:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/syn/CMakeFiles/synopsis.dir/build.make apps/syn/CMakeFiles/synopsis.dir/src/Timer.cpp.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/syn/CMakeFiles/synopsis.dir/build.make apps/syn/CMakeFiles/synopsis.dir/src/Timer.cpp.s
 .PHONY : src/Timer.cpp.s
 
 src/itc_synopsis_bridge.o: src/itc_synopsis_bridge.cpp.o
@@ -540,7 +540,7 @@ src/itc_synopsis_bridge.o: src/itc_synopsis_bridge.cpp.o
 
 # target to build an object file
 src/itc_synopsis_bridge.cpp.o:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/syn/CMakeFiles/synopsis.dir/build.make apps/syn/CMakeFiles/synopsis.dir/src/itc_synopsis_bridge.cpp.o
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/syn/CMakeFiles/synopsis.dir/build.make apps/syn/CMakeFiles/synopsis.dir/src/itc_synopsis_bridge.cpp.o
 .PHONY : src/itc_synopsis_bridge.cpp.o
 
 src/itc_synopsis_bridge.i: src/itc_synopsis_bridge.cpp.i
@@ -548,7 +548,7 @@ src/itc_synopsis_bridge.i: src/itc_synopsis_bridge.cpp.i
 
 # target to preprocess a source file
 src/itc_synopsis_bridge.cpp.i:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/syn/CMakeFiles/synopsis.dir/build.make apps/syn/CMakeFiles/synopsis.dir/src/itc_synopsis_bridge.cpp.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/syn/CMakeFiles/synopsis.dir/build.make apps/syn/CMakeFiles/synopsis.dir/src/itc_synopsis_bridge.cpp.i
 .PHONY : src/itc_synopsis_bridge.cpp.i
 
 src/itc_synopsis_bridge.s: src/itc_synopsis_bridge.cpp.s
@@ -556,7 +556,7 @@ src/itc_synopsis_bridge.s: src/itc_synopsis_bridge.cpp.s
 
 # target to generate assembly for a file
 src/itc_synopsis_bridge.cpp.s:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/syn/CMakeFiles/synopsis.dir/build.make apps/syn/CMakeFiles/synopsis.dir/src/itc_synopsis_bridge.cpp.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/syn/CMakeFiles/synopsis.dir/build.make apps/syn/CMakeFiles/synopsis.dir/src/itc_synopsis_bridge.cpp.s
 .PHONY : src/itc_synopsis_bridge.cpp.s
 
 src/sqlite3.o: src/sqlite3.c.o
@@ -564,7 +564,7 @@ src/sqlite3.o: src/sqlite3.c.o
 
 # target to build an object file
 src/sqlite3.c.o:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/syn/CMakeFiles/synopsis.dir/build.make apps/syn/CMakeFiles/synopsis.dir/src/sqlite3.c.o
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/syn/CMakeFiles/synopsis.dir/build.make apps/syn/CMakeFiles/synopsis.dir/src/sqlite3.c.o
 .PHONY : src/sqlite3.c.o
 
 src/sqlite3.i: src/sqlite3.c.i
@@ -572,7 +572,7 @@ src/sqlite3.i: src/sqlite3.c.i
 
 # target to preprocess a source file
 src/sqlite3.c.i:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/syn/CMakeFiles/synopsis.dir/build.make apps/syn/CMakeFiles/synopsis.dir/src/sqlite3.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/syn/CMakeFiles/synopsis.dir/build.make apps/syn/CMakeFiles/synopsis.dir/src/sqlite3.c.i
 .PHONY : src/sqlite3.c.i
 
 src/sqlite3.s: src/sqlite3.c.s
@@ -580,7 +580,7 @@ src/sqlite3.s: src/sqlite3.c.s
 
 # target to generate assembly for a file
 src/sqlite3.c.s:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/syn/CMakeFiles/synopsis.dir/build.make apps/syn/CMakeFiles/synopsis.dir/src/sqlite3.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/syn/CMakeFiles/synopsis.dir/build.make apps/syn/CMakeFiles/synopsis.dir/src/sqlite3.c.s
 .PHONY : src/sqlite3.c.s
 
 src/synopsis.o: src/synopsis.cpp.o
@@ -588,7 +588,7 @@ src/synopsis.o: src/synopsis.cpp.o
 
 # target to build an object file
 src/synopsis.cpp.o:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/syn/CMakeFiles/synopsis.dir/build.make apps/syn/CMakeFiles/synopsis.dir/src/synopsis.cpp.o
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/syn/CMakeFiles/synopsis.dir/build.make apps/syn/CMakeFiles/synopsis.dir/src/synopsis.cpp.o
 .PHONY : src/synopsis.cpp.o
 
 src/synopsis.i: src/synopsis.cpp.i
@@ -596,7 +596,7 @@ src/synopsis.i: src/synopsis.cpp.i
 
 # target to preprocess a source file
 src/synopsis.cpp.i:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/syn/CMakeFiles/synopsis.dir/build.make apps/syn/CMakeFiles/synopsis.dir/src/synopsis.cpp.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/syn/CMakeFiles/synopsis.dir/build.make apps/syn/CMakeFiles/synopsis.dir/src/synopsis.cpp.i
 .PHONY : src/synopsis.cpp.i
 
 src/synopsis.s: src/synopsis.cpp.s
@@ -604,7 +604,7 @@ src/synopsis.s: src/synopsis.cpp.s
 
 # target to generate assembly for a file
 src/synopsis.cpp.s:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/syn/CMakeFiles/synopsis.dir/build.make apps/syn/CMakeFiles/synopsis.dir/src/synopsis.cpp.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/syn/CMakeFiles/synopsis.dir/build.make apps/syn/CMakeFiles/synopsis.dir/src/synopsis.cpp.s
 .PHONY : src/synopsis.cpp.s
 
 # Help Target
@@ -684,6 +684,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

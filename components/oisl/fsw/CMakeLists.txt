@@ -7,6 +7,9 @@ include_directories(public_inc)
 include_directories(mission_inc)
 include_directories(platform_inc)
 include_directories(src)
+include_directories(../../generic_adcs/fsw/platform_inc)
+include_directories(../../generic_adcs/fsw/src)
+
 
 include_directories(${hwlib_MISSION_DIR}/fsw/public_inc)
 

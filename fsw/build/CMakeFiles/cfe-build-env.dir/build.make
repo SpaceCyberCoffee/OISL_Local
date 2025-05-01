@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/jstar/Desktop/github-nos3/fsw/cfe
+CMAKE_SOURCE_DIR = /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/cfe
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/jstar/Desktop/github-nos3/fsw/build
+CMAKE_BINARY_DIR = /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build
 
 # Utility rule file for cfe-build-env.
 
@@ -67,7 +67,7 @@ include CMakeFiles/cfe-build-env.dir/compiler_depend.make
 include CMakeFiles/cfe-build-env.dir/progress.make
 
 CMakeFiles/cfe-build-env:
-	cd /home/jstar/Desktop/github-nos3/fsw/cfe && /usr/bin/cmake -D BIN=/home/jstar/Desktop/github-nos3/fsw/build -P /home/jstar/Desktop/github-nos3/fsw/cfe/cmake/generate_build_env.cmake
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/cfe && /usr/bin/cmake -D BIN=/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build -P /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/cfe/cmake/generate_build_env.cmake
 
 cfe-build-env: CMakeFiles/cfe-build-env
 cfe-build-env: CMakeFiles/cfe-build-env.dir/build.make
@@ -82,6 +82,6 @@ CMakeFiles/cfe-build-env.dir/clean:
 .PHONY : CMakeFiles/cfe-build-env.dir/clean
 
 CMakeFiles/cfe-build-env.dir/depend:
-	cd /home/jstar/Desktop/github-nos3/fsw/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/jstar/Desktop/github-nos3/fsw/cfe /home/jstar/Desktop/github-nos3/fsw/cfe /home/jstar/Desktop/github-nos3/fsw/build /home/jstar/Desktop/github-nos3/fsw/build /home/jstar/Desktop/github-nos3/fsw/build/CMakeFiles/cfe-build-env.dir/DependInfo.cmake --color=$(COLOR)
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/cfe /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/cfe /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/CMakeFiles/cfe-build-env.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/cfe-build-env.dir/depend
 

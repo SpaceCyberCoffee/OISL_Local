@@ -17,18 +17,18 @@
 /*
 ** Constants representing the paths of different files
 */
-const char* file_beam_forward = "/home/jstar/Desktop/github-nos3/F.txt"; 
-const char* file_beam_backward = "/home/jstar/Desktop/github-nos3/B.txt"; 
-const char* file_beam_receiver = "/home/jstar/Desktop/github-nos3/components/oisl/fsw/src/fileInput/ireceive.txt";    // if this file is present, then this sat is the receving end of a transmission.
+const char* file_beam_forward = "/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/F.txt"; 
+const char* file_beam_backward = "/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/B.txt"; 
+const char* file_beam_receiver = "/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/oisl/fsw/src/fileInput/ireceive.txt";    // if this file is present, then this sat is the receving end of a transmission.
 
-const char* alignment_info_forward = "/home/jstar/Desktop/github-nos3/components/oisl/fsw/src/F_sat_back_alignment.txt";
-const char* alignment_info_backward = "/home/jstar/Desktop/github-nos3/components/oisl/fsw/src/B_sat_for_alignment.txt";
-const char* my_alignments = "/home/jstar/Desktop/github-nos3/components/oisl/fsw/src/my_alignments.txt";
+const char* alignment_info_forward = "/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/oisl/fsw/src/F_sat_back_alignment.txt";
+const char* alignment_info_backward = "/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/oisl/fsw/src/B_sat_for_alignment.txt";
+const char* my_alignments = "/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/oisl/fsw/src/my_alignments.txt";
 
-const char* tle_file_path_forward = "/home/jstar/Desktop/github-nos3/components/oisl/fsw/src/forward_sat.txt";
-const char* tle_file_path_backward = "/home/jstar/Desktop/github-nos3/components/oisl/fsw/src/backward_sat.txt";
+const char* tle_file_path_forward = "/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/oisl/fsw/src/forward_sat.txt";
+const char* tle_file_path_backward = "/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/oisl/fsw/src/backward_sat.txt";
 
-const char* ECI_position_file_path = "/home/jstar/Desktop/github-nos3/components/oisl/fsw/src/ECI_position.txt";
+const char* ECI_position_file_path = "/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/oisl/fsw/src/ECI_position.txt";
 
 extern struct __cmdline cmdline;
 
@@ -456,7 +456,7 @@ void get_isl_vectors(double* forward_ISL_vector, double* backward_ISL_vector)
     for (int i=0; i<2; i++) {
         // Construct the command with arguments
         snprintf(command, sizeof(command),
-             "python3 /home/jstar/Desktop/github-nos3/components/oisl/fsw/src/orbital_propagation.py %s %f",
+             "python3 /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/oisl/fsw/src/orbital_propagation.py %s %f",
              tle_files[i], pd);
 
         // Run the Python script and capture its output

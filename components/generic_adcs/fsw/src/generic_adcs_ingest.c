@@ -12,7 +12,6 @@
 #include "generic_imu_msg.h"
 #include "generic_reaction_wheel_msg.h"
 #include "generic_star_tracker_msg.h"
-#include "generic_reaction_wheel_msg.h"
 #include "oisl_msg.h"
 #include "generic_adcs_utilities.h"
 #include "generic_adcs_ingest.h"

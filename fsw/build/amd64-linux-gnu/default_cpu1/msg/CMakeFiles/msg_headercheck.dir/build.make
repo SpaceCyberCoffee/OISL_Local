@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/jstar/Desktop/github-nos3/fsw/cfe
+CMAKE_SOURCE_DIR = /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/cfe
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1
+CMAKE_BINARY_DIR = /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1
 
 # Include any dependencies generated for this target.
 include msg/CMakeFiles/msg_headercheck.dir/depend.make
@@ -72,30 +72,30 @@ include msg/CMakeFiles/msg_headercheck.dir/flags.make
 msg/CMakeFiles/msg_headercheck.dir/src/check_ccsds_hdr.h.c.o: msg/CMakeFiles/msg_headercheck.dir/flags.make
 msg/CMakeFiles/msg_headercheck.dir/src/check_ccsds_hdr.h.c.o: msg/src/check_ccsds_hdr.h.c
 msg/CMakeFiles/msg_headercheck.dir/src/check_ccsds_hdr.h.c.o: msg/CMakeFiles/msg_headercheck.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object msg/CMakeFiles/msg_headercheck.dir/src/check_ccsds_hdr.h.c.o"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/msg && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT msg/CMakeFiles/msg_headercheck.dir/src/check_ccsds_hdr.h.c.o -MF CMakeFiles/msg_headercheck.dir/src/check_ccsds_hdr.h.c.o.d -o CMakeFiles/msg_headercheck.dir/src/check_ccsds_hdr.h.c.o -c /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/msg/src/check_ccsds_hdr.h.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object msg/CMakeFiles/msg_headercheck.dir/src/check_ccsds_hdr.h.c.o"
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/msg && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT msg/CMakeFiles/msg_headercheck.dir/src/check_ccsds_hdr.h.c.o -MF CMakeFiles/msg_headercheck.dir/src/check_ccsds_hdr.h.c.o.d -o CMakeFiles/msg_headercheck.dir/src/check_ccsds_hdr.h.c.o -c /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/msg/src/check_ccsds_hdr.h.c
 
 msg/CMakeFiles/msg_headercheck.dir/src/check_ccsds_hdr.h.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/msg_headercheck.dir/src/check_ccsds_hdr.h.c.i"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/msg && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/msg/src/check_ccsds_hdr.h.c > CMakeFiles/msg_headercheck.dir/src/check_ccsds_hdr.h.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/msg && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/msg/src/check_ccsds_hdr.h.c > CMakeFiles/msg_headercheck.dir/src/check_ccsds_hdr.h.c.i
 
 msg/CMakeFiles/msg_headercheck.dir/src/check_ccsds_hdr.h.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/msg_headercheck.dir/src/check_ccsds_hdr.h.c.s"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/msg && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/msg/src/check_ccsds_hdr.h.c -o CMakeFiles/msg_headercheck.dir/src/check_ccsds_hdr.h.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/msg && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/msg/src/check_ccsds_hdr.h.c -o CMakeFiles/msg_headercheck.dir/src/check_ccsds_hdr.h.c.s
 
 msg/CMakeFiles/msg_headercheck.dir/src/check_cfe_msg_api_typedefs.h.c.o: msg/CMakeFiles/msg_headercheck.dir/flags.make
 msg/CMakeFiles/msg_headercheck.dir/src/check_cfe_msg_api_typedefs.h.c.o: msg/src/check_cfe_msg_api_typedefs.h.c
 msg/CMakeFiles/msg_headercheck.dir/src/check_cfe_msg_api_typedefs.h.c.o: msg/CMakeFiles/msg_headercheck.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object msg/CMakeFiles/msg_headercheck.dir/src/check_cfe_msg_api_typedefs.h.c.o"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/msg && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT msg/CMakeFiles/msg_headercheck.dir/src/check_cfe_msg_api_typedefs.h.c.o -MF CMakeFiles/msg_headercheck.dir/src/check_cfe_msg_api_typedefs.h.c.o.d -o CMakeFiles/msg_headercheck.dir/src/check_cfe_msg_api_typedefs.h.c.o -c /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/msg/src/check_cfe_msg_api_typedefs.h.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object msg/CMakeFiles/msg_headercheck.dir/src/check_cfe_msg_api_typedefs.h.c.o"
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/msg && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT msg/CMakeFiles/msg_headercheck.dir/src/check_cfe_msg_api_typedefs.h.c.o -MF CMakeFiles/msg_headercheck.dir/src/check_cfe_msg_api_typedefs.h.c.o.d -o CMakeFiles/msg_headercheck.dir/src/check_cfe_msg_api_typedefs.h.c.o -c /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/msg/src/check_cfe_msg_api_typedefs.h.c
 
 msg/CMakeFiles/msg_headercheck.dir/src/check_cfe_msg_api_typedefs.h.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/msg_headercheck.dir/src/check_cfe_msg_api_typedefs.h.c.i"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/msg && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/msg/src/check_cfe_msg_api_typedefs.h.c > CMakeFiles/msg_headercheck.dir/src/check_cfe_msg_api_typedefs.h.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/msg && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/msg/src/check_cfe_msg_api_typedefs.h.c > CMakeFiles/msg_headercheck.dir/src/check_cfe_msg_api_typedefs.h.c.i
 
 msg/CMakeFiles/msg_headercheck.dir/src/check_cfe_msg_api_typedefs.h.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/msg_headercheck.dir/src/check_cfe_msg_api_typedefs.h.c.s"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/msg && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/msg/src/check_cfe_msg_api_typedefs.h.c -o CMakeFiles/msg_headercheck.dir/src/check_cfe_msg_api_typedefs.h.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/msg && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/msg/src/check_cfe_msg_api_typedefs.h.c -o CMakeFiles/msg_headercheck.dir/src/check_cfe_msg_api_typedefs.h.c.s
 
 # Object files for target msg_headercheck
 msg_headercheck_OBJECTS = \
@@ -109,19 +109,19 @@ msg/libmsg_headercheck.a: msg/CMakeFiles/msg_headercheck.dir/src/check_ccsds_hdr
 msg/libmsg_headercheck.a: msg/CMakeFiles/msg_headercheck.dir/src/check_cfe_msg_api_typedefs.h.c.o
 msg/libmsg_headercheck.a: msg/CMakeFiles/msg_headercheck.dir/build.make
 msg/libmsg_headercheck.a: msg/CMakeFiles/msg_headercheck.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C static library libmsg_headercheck.a"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/msg && $(CMAKE_COMMAND) -P CMakeFiles/msg_headercheck.dir/cmake_clean_target.cmake
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/msg && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/msg_headercheck.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C static library libmsg_headercheck.a"
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/msg && $(CMAKE_COMMAND) -P CMakeFiles/msg_headercheck.dir/cmake_clean_target.cmake
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/msg && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/msg_headercheck.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 msg/CMakeFiles/msg_headercheck.dir/build: msg/libmsg_headercheck.a
 .PHONY : msg/CMakeFiles/msg_headercheck.dir/build
 
 msg/CMakeFiles/msg_headercheck.dir/clean:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/msg && $(CMAKE_COMMAND) -P CMakeFiles/msg_headercheck.dir/cmake_clean.cmake
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/msg && $(CMAKE_COMMAND) -P CMakeFiles/msg_headercheck.dir/cmake_clean.cmake
 .PHONY : msg/CMakeFiles/msg_headercheck.dir/clean
 
 msg/CMakeFiles/msg_headercheck.dir/depend:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/jstar/Desktop/github-nos3/fsw/cfe /home/jstar/Desktop/github-nos3/fsw/cfe/modules/msg /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/msg /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/msg/CMakeFiles/msg_headercheck.dir/DependInfo.cmake --color=$(COLOR)
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/cfe /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/cfe/modules/msg /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/msg /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/msg/CMakeFiles/msg_headercheck.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : msg/CMakeFiles/msg_headercheck.dir/depend
 

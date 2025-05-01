@@ -1,8 +1,8 @@
 osal/ut-stubs/CMakeFiles/ut_osapi_stubs.dir/osapi-version-stubs.c.o: \
- /home/jstar/Desktop/github-nos3/fsw/osal/src/ut-stubs/osapi-version-stubs.c \
+ /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/src/ut-stubs/osapi-version-stubs.c \
  /usr/include/stdc-predef.h \
- /home/jstar/Desktop/github-nos3/fsw/osal/src/os/inc/osapi-version.h \
- /home/jstar/Desktop/github-nos3/fsw/osal/src/os/inc/common_types.h \
+ /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/src/os/inc/osapi-version.h \
+ /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/src/os/inc/common_types.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -20,7 +20,7 @@ osal/ut-stubs/CMakeFiles/ut_osapi_stubs.dir/osapi-version-stubs.c.o: \
  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdbool.h \
- /home/jstar/Desktop/github-nos3/fsw/osal/ut_assert/inc/utgenstub.h \
- /home/jstar/Desktop/github-nos3/fsw/osal/src/os/inc/common_types.h \
- /home/jstar/Desktop/github-nos3/fsw/osal/ut_assert/inc/utstubs.h \
+ /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/ut_assert/inc/utgenstub.h \
+ /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/src/os/inc/common_types.h \
+ /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/ut_assert/inc/utstubs.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdarg.h

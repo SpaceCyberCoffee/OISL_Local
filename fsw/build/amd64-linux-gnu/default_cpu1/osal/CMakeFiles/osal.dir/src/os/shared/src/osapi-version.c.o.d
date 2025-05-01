@@ -1,8 +1,8 @@
 osal/CMakeFiles/osal.dir/src/os/shared/src/osapi-version.c.o: \
- /home/jstar/Desktop/github-nos3/fsw/osal/src/os/shared/src/osapi-version.c \
+ /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/src/os/shared/src/osapi-version.c \
  /usr/include/stdc-predef.h \
- /home/jstar/Desktop/github-nos3/fsw/osal/src/os/inc/osapi-version.h \
- /home/jstar/Desktop/github-nos3/fsw/osal/src/os/inc/common_types.h \
+ /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/src/os/inc/osapi-version.h \
+ /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/src/os/inc/common_types.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \

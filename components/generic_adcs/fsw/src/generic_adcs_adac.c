@@ -299,7 +299,7 @@ static void AC_oisl_NADIR(Generic_ADCS_GNC_Tlm_Payload_t *GNC, Generic_ADCS_AC_S
     double side[] = {0,1,0};
 
     // Retrieve the ECI GPS position of this satellite
-    FILE *file_in = fopen("/home/jstar/Desktop/github-nos3/components/oisl/fsw/src/ECI_position.txt", "r");
+    FILE *file_in = fopen("/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/oisl/fsw/src/ECI_position.txt", "r");
     double x, y, z;
     fscanf(file_in, "%lf %lf %lf", &x, &y, &z);
     fclose(file_in);
@@ -418,12 +418,12 @@ static void AC_oisl(Generic_ADCS_GNC_Tlm_Payload_t *GNC, Generic_ADCS_AC_OISL_Tl
     }
 
     /* Writing to a file to be read by OISL HW model to understand if the alignment has been accomplished. TODO: if needed make more elegant*/
-    char *filename_F = "/home/jstar/Desktop/github-nos3/sims/build/bin/VoV_FORWARD.txt";
+    char *filename_F = "/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/sims/build/bin/VoV_FORWARD.txt";
     FILE *fp_F = fopen(filename_F, "w");
     fprintf(fp_F, "%f", SoS_F);
     fclose(fp_F);
 
-    char *filename_B = "/home/jstar/Desktop/github-nos3/sims/build/bin/VoV_BACKWARD.txt";
+    char *filename_B = "/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/sims/build/bin/VoV_BACKWARD.txt";
     FILE *fp_B = fopen(filename_B, "w");
     fprintf(fp_B, "%f", SoS_B);
     fclose(fp_B);
@@ -489,7 +489,7 @@ static void AC_oisl(Generic_ADCS_GNC_Tlm_Payload_t *GNC, Generic_ADCS_AC_OISL_Tl
 }
 
 #define MAX_LINE_LENGTH 128
-#define OGS_ECEF_LOCATION_PATH "/home/jstar/Desktop/github-nos3/components/generic_adcs/fsw/src/ECEF_locations.txt"
+#define OGS_ECEF_LOCATION_PATH "/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/generic_adcs/fsw/src/ECEF_locations.txt"
 // Function to read and get the ECEF coordinates based on the OGS name
 static int get_ECEF_from_file(const char *ogs_name, double *ECEF_OGS) {
     FILE *file = fopen(OGS_ECEF_LOCATION_PATH, "r");
@@ -539,9 +539,9 @@ static int get_ECEF_from_file(const char *ogs_name, double *ECEF_OGS) {
  * @param DI_St Pointer to the structure holding the current sensor quaternion (attitude information).
  * @param ogs_name Name of the Optical Ground Station (OGS) to align with.
  */
-#define PY_SCRIPT_PATH "/home/jstar/Desktop/github-nos3/components/generic_adcs/fsw/src/ECEF2ECI.py"
-#define OGS_ECI_POS_PATH "/home/jstar/Desktop/github-nos3/components/oisl/fsw/src/ECI_position.txt"
-#define VOV_OUTPUT_PATH "/home/jstar/Desktop/github-nos3/sims/build/bin/VoV_OGS.txt"
+#define PY_SCRIPT_PATH "/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/generic_adcs/fsw/src/ECEF2ECI.py"
+#define OGS_ECI_POS_PATH "/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/oisl/fsw/src/ECI_position.txt"
+#define VOV_OUTPUT_PATH "/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/sims/build/bin/VoV_OGS.txt"
 
 static void AC_oisl_OGS(Generic_ADCS_GNC_Tlm_Payload_t *GNC, Generic_ADCS_AC_OISL_Tlm_t *ACS, const Generic_ADCS_DI_St_Tlm_Payload_t *DI_St, const char *ogs_name) 
 { 

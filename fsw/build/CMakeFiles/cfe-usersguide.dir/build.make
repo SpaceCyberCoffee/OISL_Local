@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/jstar/Desktop/github-nos3/fsw/cfe
+CMAKE_SOURCE_DIR = /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/cfe
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/jstar/Desktop/github-nos3/fsw/build
+CMAKE_BINARY_DIR = /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build
 
 # Utility rule file for cfe-usersguide.
 
@@ -67,8 +67,8 @@ include CMakeFiles/cfe-usersguide.dir/compiler_depend.make
 include CMakeFiles/cfe-usersguide.dir/progress.make
 
 CMakeFiles/cfe-usersguide:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/docs/cfe-usersguide && doxygen
-	cd /home/jstar/Desktop/github-nos3/fsw/build/docs/cfe-usersguide && echo Users\ Guide:\ file:///home/jstar/Desktop/github-nos3/fsw/build/docs/cfe-usersguide/html/index.html
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/docs/cfe-usersguide && doxygen
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/docs/cfe-usersguide && echo Users\ Guide:\ file:///mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/docs/cfe-usersguide/html/index.html
 
 cfe-usersguide: CMakeFiles/cfe-usersguide
 cfe-usersguide: CMakeFiles/cfe-usersguide.dir/build.make
@@ -83,6 +83,6 @@ CMakeFiles/cfe-usersguide.dir/clean:
 .PHONY : CMakeFiles/cfe-usersguide.dir/clean
 
 CMakeFiles/cfe-usersguide.dir/depend:
-	cd /home/jstar/Desktop/github-nos3/fsw/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/jstar/Desktop/github-nos3/fsw/cfe /home/jstar/Desktop/github-nos3/fsw/cfe /home/jstar/Desktop/github-nos3/fsw/build /home/jstar/Desktop/github-nos3/fsw/build /home/jstar/Desktop/github-nos3/fsw/build/CMakeFiles/cfe-usersguide.dir/DependInfo.cmake --color=$(COLOR)
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/cfe /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/cfe /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/CMakeFiles/cfe-usersguide.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/cfe-usersguide.dir/depend
 

@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/jstar/Desktop/github-nos3/fsw/cfe
+CMAKE_SOURCE_DIR = /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/cfe
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1
+CMAKE_BINARY_DIR = /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1
 
 # Utility rule file for cpu1_cf_cf_def_config_tbl.
 
@@ -68,10 +68,10 @@ include apps/cf/CMakeFiles/cpu1_cf_cf_def_config_tbl.dir/progress.make
 
 apps/cf/CMakeFiles/cpu1_cf_cf_def_config_tbl: apps/cf/cpu1_cf_cf_def_config/cf_def_config.tbl
 
-apps/cf/cpu1_cf_cf_def_config/cf_def_config.tbl: /home/jstar/Desktop/github-nos3/fsw/build/tools/elf2cfetbl/elf2cfetbl
+apps/cf/cpu1_cf_cf_def_config/cf_def_config.tbl: /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/tools/elf2cfetbl/elf2cfetbl
 apps/cf/cpu1_cf_cf_def_config/cf_def_config.tbl: apps/cf/libcpu1_cf_cf_def_config.a
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating cpu1_cf_cf_def_config/cf_def_config.tbl"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/apps/cf/cpu1_cf_cf_def_config && /usr/bin/cmake -DCMAKE_AR=/usr/bin/ar -DTBLTOOL=/home/jstar/Desktop/github-nos3/fsw/build/tools/elf2cfetbl/elf2cfetbl -DLIB=/home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/apps/cf/libcpu1_cf_cf_def_config.a -P /home/jstar/Desktop/github-nos3/fsw/cfe/cmake/generate_table.cmake
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating cpu1_cf_cf_def_config/cf_def_config.tbl"
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/apps/cf/cpu1_cf_cf_def_config && /usr/bin/cmake -DCMAKE_AR=/usr/bin/ar -DTBLTOOL=/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/tools/elf2cfetbl/elf2cfetbl -DLIB=/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/apps/cf/libcpu1_cf_cf_def_config.a -P /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/cfe/cmake/generate_table.cmake
 
 cpu1_cf_cf_def_config_tbl: apps/cf/CMakeFiles/cpu1_cf_cf_def_config_tbl
 cpu1_cf_cf_def_config_tbl: apps/cf/cpu1_cf_cf_def_config/cf_def_config.tbl
@@ -83,10 +83,10 @@ apps/cf/CMakeFiles/cpu1_cf_cf_def_config_tbl.dir/build: cpu1_cf_cf_def_config_tb
 .PHONY : apps/cf/CMakeFiles/cpu1_cf_cf_def_config_tbl.dir/build
 
 apps/cf/CMakeFiles/cpu1_cf_cf_def_config_tbl.dir/clean:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/apps/cf && $(CMAKE_COMMAND) -P CMakeFiles/cpu1_cf_cf_def_config_tbl.dir/cmake_clean.cmake
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/apps/cf && $(CMAKE_COMMAND) -P CMakeFiles/cpu1_cf_cf_def_config_tbl.dir/cmake_clean.cmake
 .PHONY : apps/cf/CMakeFiles/cpu1_cf_cf_def_config_tbl.dir/clean
 
 apps/cf/CMakeFiles/cpu1_cf_cf_def_config_tbl.dir/depend:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/jstar/Desktop/github-nos3/fsw/cfe /home/jstar/Desktop/github-nos3/fsw/apps/cf /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/apps/cf /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/apps/cf/CMakeFiles/cpu1_cf_cf_def_config_tbl.dir/DependInfo.cmake --color=$(COLOR)
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/cfe /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/apps/cf /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/apps/cf /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/apps/cf/CMakeFiles/cpu1_cf_cf_def_config_tbl.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : apps/cf/CMakeFiles/cpu1_cf_cf_def_config_tbl.dir/depend
 

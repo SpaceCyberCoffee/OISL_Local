@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/jstar/Desktop/github-nos3/components/cryptolib
+CMAKE_SOURCE_DIR = /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/cryptolib
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/jstar/Desktop/github-nos3/gsw/build
+CMAKE_BINARY_DIR = /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/gsw/build
 
 # Include any dependencies generated for this target.
 include src/CMakeFiles/crypto.dir/depend.make
@@ -70,312 +70,312 @@ include src/CMakeFiles/crypto.dir/progress.make
 include src/CMakeFiles/crypto.dir/flags.make
 
 src/CMakeFiles/crypto.dir/core/crypto.c.o: src/CMakeFiles/crypto.dir/flags.make
-src/CMakeFiles/crypto.dir/core/crypto.c.o: /home/jstar/Desktop/github-nos3/components/cryptolib/src/core/crypto.c
+src/CMakeFiles/crypto.dir/core/crypto.c.o: /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/cryptolib/src/core/crypto.c
 src/CMakeFiles/crypto.dir/core/crypto.c.o: src/CMakeFiles/crypto.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jstar/Desktop/github-nos3/gsw/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object src/CMakeFiles/crypto.dir/core/crypto.c.o"
-	cd /home/jstar/Desktop/github-nos3/gsw/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/crypto.dir/core/crypto.c.o -MF CMakeFiles/crypto.dir/core/crypto.c.o.d -o CMakeFiles/crypto.dir/core/crypto.c.o -c /home/jstar/Desktop/github-nos3/components/cryptolib/src/core/crypto.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/gsw/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object src/CMakeFiles/crypto.dir/core/crypto.c.o"
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/gsw/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/crypto.dir/core/crypto.c.o -MF CMakeFiles/crypto.dir/core/crypto.c.o.d -o CMakeFiles/crypto.dir/core/crypto.c.o -c /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/cryptolib/src/core/crypto.c
 
 src/CMakeFiles/crypto.dir/core/crypto.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/crypto.dir/core/crypto.c.i"
-	cd /home/jstar/Desktop/github-nos3/gsw/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jstar/Desktop/github-nos3/components/cryptolib/src/core/crypto.c > CMakeFiles/crypto.dir/core/crypto.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/gsw/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/cryptolib/src/core/crypto.c > CMakeFiles/crypto.dir/core/crypto.c.i
 
 src/CMakeFiles/crypto.dir/core/crypto.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/crypto.dir/core/crypto.c.s"
-	cd /home/jstar/Desktop/github-nos3/gsw/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jstar/Desktop/github-nos3/components/cryptolib/src/core/crypto.c -o CMakeFiles/crypto.dir/core/crypto.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/gsw/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/cryptolib/src/core/crypto.c -o CMakeFiles/crypto.dir/core/crypto.c.s
 
 src/CMakeFiles/crypto.dir/core/crypto_aos.c.o: src/CMakeFiles/crypto.dir/flags.make
-src/CMakeFiles/crypto.dir/core/crypto_aos.c.o: /home/jstar/Desktop/github-nos3/components/cryptolib/src/core/crypto_aos.c
+src/CMakeFiles/crypto.dir/core/crypto_aos.c.o: /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/cryptolib/src/core/crypto_aos.c
 src/CMakeFiles/crypto.dir/core/crypto_aos.c.o: src/CMakeFiles/crypto.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jstar/Desktop/github-nos3/gsw/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object src/CMakeFiles/crypto.dir/core/crypto_aos.c.o"
-	cd /home/jstar/Desktop/github-nos3/gsw/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/crypto.dir/core/crypto_aos.c.o -MF CMakeFiles/crypto.dir/core/crypto_aos.c.o.d -o CMakeFiles/crypto.dir/core/crypto_aos.c.o -c /home/jstar/Desktop/github-nos3/components/cryptolib/src/core/crypto_aos.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/gsw/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object src/CMakeFiles/crypto.dir/core/crypto_aos.c.o"
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/gsw/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/crypto.dir/core/crypto_aos.c.o -MF CMakeFiles/crypto.dir/core/crypto_aos.c.o.d -o CMakeFiles/crypto.dir/core/crypto_aos.c.o -c /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/cryptolib/src/core/crypto_aos.c
 
 src/CMakeFiles/crypto.dir/core/crypto_aos.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/crypto.dir/core/crypto_aos.c.i"
-	cd /home/jstar/Desktop/github-nos3/gsw/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jstar/Desktop/github-nos3/components/cryptolib/src/core/crypto_aos.c > CMakeFiles/crypto.dir/core/crypto_aos.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/gsw/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/cryptolib/src/core/crypto_aos.c > CMakeFiles/crypto.dir/core/crypto_aos.c.i
 
 src/CMakeFiles/crypto.dir/core/crypto_aos.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/crypto.dir/core/crypto_aos.c.s"
-	cd /home/jstar/Desktop/github-nos3/gsw/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jstar/Desktop/github-nos3/components/cryptolib/src/core/crypto_aos.c -o CMakeFiles/crypto.dir/core/crypto_aos.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/gsw/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/cryptolib/src/core/crypto_aos.c -o CMakeFiles/crypto.dir/core/crypto_aos.c.s
 
 src/CMakeFiles/crypto.dir/core/crypto_config.c.o: src/CMakeFiles/crypto.dir/flags.make
-src/CMakeFiles/crypto.dir/core/crypto_config.c.o: /home/jstar/Desktop/github-nos3/components/cryptolib/src/core/crypto_config.c
+src/CMakeFiles/crypto.dir/core/crypto_config.c.o: /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/cryptolib/src/core/crypto_config.c
 src/CMakeFiles/crypto.dir/core/crypto_config.c.o: src/CMakeFiles/crypto.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jstar/Desktop/github-nos3/gsw/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object src/CMakeFiles/crypto.dir/core/crypto_config.c.o"
-	cd /home/jstar/Desktop/github-nos3/gsw/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/crypto.dir/core/crypto_config.c.o -MF CMakeFiles/crypto.dir/core/crypto_config.c.o.d -o CMakeFiles/crypto.dir/core/crypto_config.c.o -c /home/jstar/Desktop/github-nos3/components/cryptolib/src/core/crypto_config.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/gsw/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object src/CMakeFiles/crypto.dir/core/crypto_config.c.o"
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/gsw/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/crypto.dir/core/crypto_config.c.o -MF CMakeFiles/crypto.dir/core/crypto_config.c.o.d -o CMakeFiles/crypto.dir/core/crypto_config.c.o -c /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/cryptolib/src/core/crypto_config.c
 
 src/CMakeFiles/crypto.dir/core/crypto_config.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/crypto.dir/core/crypto_config.c.i"
-	cd /home/jstar/Desktop/github-nos3/gsw/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jstar/Desktop/github-nos3/components/cryptolib/src/core/crypto_config.c > CMakeFiles/crypto.dir/core/crypto_config.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/gsw/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/cryptolib/src/core/crypto_config.c > CMakeFiles/crypto.dir/core/crypto_config.c.i
 
 src/CMakeFiles/crypto.dir/core/crypto_config.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/crypto.dir/core/crypto_config.c.s"
-	cd /home/jstar/Desktop/github-nos3/gsw/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jstar/Desktop/github-nos3/components/cryptolib/src/core/crypto_config.c -o CMakeFiles/crypto.dir/core/crypto_config.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/gsw/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/cryptolib/src/core/crypto_config.c -o CMakeFiles/crypto.dir/core/crypto_config.c.s
 
 src/CMakeFiles/crypto.dir/core/crypto_error.c.o: src/CMakeFiles/crypto.dir/flags.make
-src/CMakeFiles/crypto.dir/core/crypto_error.c.o: /home/jstar/Desktop/github-nos3/components/cryptolib/src/core/crypto_error.c
+src/CMakeFiles/crypto.dir/core/crypto_error.c.o: /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/cryptolib/src/core/crypto_error.c
 src/CMakeFiles/crypto.dir/core/crypto_error.c.o: src/CMakeFiles/crypto.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jstar/Desktop/github-nos3/gsw/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object src/CMakeFiles/crypto.dir/core/crypto_error.c.o"
-	cd /home/jstar/Desktop/github-nos3/gsw/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/crypto.dir/core/crypto_error.c.o -MF CMakeFiles/crypto.dir/core/crypto_error.c.o.d -o CMakeFiles/crypto.dir/core/crypto_error.c.o -c /home/jstar/Desktop/github-nos3/components/cryptolib/src/core/crypto_error.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/gsw/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object src/CMakeFiles/crypto.dir/core/crypto_error.c.o"
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/gsw/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/crypto.dir/core/crypto_error.c.o -MF CMakeFiles/crypto.dir/core/crypto_error.c.o.d -o CMakeFiles/crypto.dir/core/crypto_error.c.o -c /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/cryptolib/src/core/crypto_error.c
 
 src/CMakeFiles/crypto.dir/core/crypto_error.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/crypto.dir/core/crypto_error.c.i"
-	cd /home/jstar/Desktop/github-nos3/gsw/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jstar/Desktop/github-nos3/components/cryptolib/src/core/crypto_error.c > CMakeFiles/crypto.dir/core/crypto_error.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/gsw/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/cryptolib/src/core/crypto_error.c > CMakeFiles/crypto.dir/core/crypto_error.c.i
 
 src/CMakeFiles/crypto.dir/core/crypto_error.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/crypto.dir/core/crypto_error.c.s"
-	cd /home/jstar/Desktop/github-nos3/gsw/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jstar/Desktop/github-nos3/components/cryptolib/src/core/crypto_error.c -o CMakeFiles/crypto.dir/core/crypto_error.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/gsw/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/cryptolib/src/core/crypto_error.c -o CMakeFiles/crypto.dir/core/crypto_error.c.s
 
 src/CMakeFiles/crypto.dir/core/crypto_key_mgmt.c.o: src/CMakeFiles/crypto.dir/flags.make
-src/CMakeFiles/crypto.dir/core/crypto_key_mgmt.c.o: /home/jstar/Desktop/github-nos3/components/cryptolib/src/core/crypto_key_mgmt.c
+src/CMakeFiles/crypto.dir/core/crypto_key_mgmt.c.o: /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/cryptolib/src/core/crypto_key_mgmt.c
 src/CMakeFiles/crypto.dir/core/crypto_key_mgmt.c.o: src/CMakeFiles/crypto.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jstar/Desktop/github-nos3/gsw/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object src/CMakeFiles/crypto.dir/core/crypto_key_mgmt.c.o"
-	cd /home/jstar/Desktop/github-nos3/gsw/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/crypto.dir/core/crypto_key_mgmt.c.o -MF CMakeFiles/crypto.dir/core/crypto_key_mgmt.c.o.d -o CMakeFiles/crypto.dir/core/crypto_key_mgmt.c.o -c /home/jstar/Desktop/github-nos3/components/cryptolib/src/core/crypto_key_mgmt.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/gsw/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object src/CMakeFiles/crypto.dir/core/crypto_key_mgmt.c.o"
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/gsw/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/crypto.dir/core/crypto_key_mgmt.c.o -MF CMakeFiles/crypto.dir/core/crypto_key_mgmt.c.o.d -o CMakeFiles/crypto.dir/core/crypto_key_mgmt.c.o -c /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/cryptolib/src/core/crypto_key_mgmt.c
 
 src/CMakeFiles/crypto.dir/core/crypto_key_mgmt.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/crypto.dir/core/crypto_key_mgmt.c.i"
-	cd /home/jstar/Desktop/github-nos3/gsw/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jstar/Desktop/github-nos3/components/cryptolib/src/core/crypto_key_mgmt.c > CMakeFiles/crypto.dir/core/crypto_key_mgmt.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/gsw/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/cryptolib/src/core/crypto_key_mgmt.c > CMakeFiles/crypto.dir/core/crypto_key_mgmt.c.i
 
 src/CMakeFiles/crypto.dir/core/crypto_key_mgmt.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/crypto.dir/core/crypto_key_mgmt.c.s"
-	cd /home/jstar/Desktop/github-nos3/gsw/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jstar/Desktop/github-nos3/components/cryptolib/src/core/crypto_key_mgmt.c -o CMakeFiles/crypto.dir/core/crypto_key_mgmt.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/gsw/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/cryptolib/src/core/crypto_key_mgmt.c -o CMakeFiles/crypto.dir/core/crypto_key_mgmt.c.s
 
 src/CMakeFiles/crypto.dir/core/crypto_mc.c.o: src/CMakeFiles/crypto.dir/flags.make
-src/CMakeFiles/crypto.dir/core/crypto_mc.c.o: /home/jstar/Desktop/github-nos3/components/cryptolib/src/core/crypto_mc.c
+src/CMakeFiles/crypto.dir/core/crypto_mc.c.o: /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/cryptolib/src/core/crypto_mc.c
 src/CMakeFiles/crypto.dir/core/crypto_mc.c.o: src/CMakeFiles/crypto.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jstar/Desktop/github-nos3/gsw/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object src/CMakeFiles/crypto.dir/core/crypto_mc.c.o"
-	cd /home/jstar/Desktop/github-nos3/gsw/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/crypto.dir/core/crypto_mc.c.o -MF CMakeFiles/crypto.dir/core/crypto_mc.c.o.d -o CMakeFiles/crypto.dir/core/crypto_mc.c.o -c /home/jstar/Desktop/github-nos3/components/cryptolib/src/core/crypto_mc.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/gsw/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object src/CMakeFiles/crypto.dir/core/crypto_mc.c.o"
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/gsw/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/crypto.dir/core/crypto_mc.c.o -MF CMakeFiles/crypto.dir/core/crypto_mc.c.o.d -o CMakeFiles/crypto.dir/core/crypto_mc.c.o -c /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/cryptolib/src/core/crypto_mc.c
 
 src/CMakeFiles/crypto.dir/core/crypto_mc.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/crypto.dir/core/crypto_mc.c.i"
-	cd /home/jstar/Desktop/github-nos3/gsw/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jstar/Desktop/github-nos3/components/cryptolib/src/core/crypto_mc.c > CMakeFiles/crypto.dir/core/crypto_mc.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/gsw/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/cryptolib/src/core/crypto_mc.c > CMakeFiles/crypto.dir/core/crypto_mc.c.i
 
 src/CMakeFiles/crypto.dir/core/crypto_mc.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/crypto.dir/core/crypto_mc.c.s"
-	cd /home/jstar/Desktop/github-nos3/gsw/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jstar/Desktop/github-nos3/components/cryptolib/src/core/crypto_mc.c -o CMakeFiles/crypto.dir/core/crypto_mc.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/gsw/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/cryptolib/src/core/crypto_mc.c -o CMakeFiles/crypto.dir/core/crypto_mc.c.s
 
 src/CMakeFiles/crypto.dir/core/crypto_print.c.o: src/CMakeFiles/crypto.dir/flags.make
-src/CMakeFiles/crypto.dir/core/crypto_print.c.o: /home/jstar/Desktop/github-nos3/components/cryptolib/src/core/crypto_print.c
+src/CMakeFiles/crypto.dir/core/crypto_print.c.o: /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/cryptolib/src/core/crypto_print.c
 src/CMakeFiles/crypto.dir/core/crypto_print.c.o: src/CMakeFiles/crypto.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jstar/Desktop/github-nos3/gsw/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object src/CMakeFiles/crypto.dir/core/crypto_print.c.o"
-	cd /home/jstar/Desktop/github-nos3/gsw/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/crypto.dir/core/crypto_print.c.o -MF CMakeFiles/crypto.dir/core/crypto_print.c.o.d -o CMakeFiles/crypto.dir/core/crypto_print.c.o -c /home/jstar/Desktop/github-nos3/components/cryptolib/src/core/crypto_print.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/gsw/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object src/CMakeFiles/crypto.dir/core/crypto_print.c.o"
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/gsw/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/crypto.dir/core/crypto_print.c.o -MF CMakeFiles/crypto.dir/core/crypto_print.c.o.d -o CMakeFiles/crypto.dir/core/crypto_print.c.o -c /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/cryptolib/src/core/crypto_print.c
 
 src/CMakeFiles/crypto.dir/core/crypto_print.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/crypto.dir/core/crypto_print.c.i"
-	cd /home/jstar/Desktop/github-nos3/gsw/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jstar/Desktop/github-nos3/components/cryptolib/src/core/crypto_print.c > CMakeFiles/crypto.dir/core/crypto_print.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/gsw/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/cryptolib/src/core/crypto_print.c > CMakeFiles/crypto.dir/core/crypto_print.c.i
 
 src/CMakeFiles/crypto.dir/core/crypto_print.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/crypto.dir/core/crypto_print.c.s"
-	cd /home/jstar/Desktop/github-nos3/gsw/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jstar/Desktop/github-nos3/components/cryptolib/src/core/crypto_print.c -o CMakeFiles/crypto.dir/core/crypto_print.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/gsw/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/cryptolib/src/core/crypto_print.c -o CMakeFiles/crypto.dir/core/crypto_print.c.s
 
 src/CMakeFiles/crypto.dir/core/crypto_tc.c.o: src/CMakeFiles/crypto.dir/flags.make
-src/CMakeFiles/crypto.dir/core/crypto_tc.c.o: /home/jstar/Desktop/github-nos3/components/cryptolib/src/core/crypto_tc.c
+src/CMakeFiles/crypto.dir/core/crypto_tc.c.o: /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/cryptolib/src/core/crypto_tc.c
 src/CMakeFiles/crypto.dir/core/crypto_tc.c.o: src/CMakeFiles/crypto.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jstar/Desktop/github-nos3/gsw/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object src/CMakeFiles/crypto.dir/core/crypto_tc.c.o"
-	cd /home/jstar/Desktop/github-nos3/gsw/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/crypto.dir/core/crypto_tc.c.o -MF CMakeFiles/crypto.dir/core/crypto_tc.c.o.d -o CMakeFiles/crypto.dir/core/crypto_tc.c.o -c /home/jstar/Desktop/github-nos3/components/cryptolib/src/core/crypto_tc.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/gsw/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object src/CMakeFiles/crypto.dir/core/crypto_tc.c.o"
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/gsw/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/crypto.dir/core/crypto_tc.c.o -MF CMakeFiles/crypto.dir/core/crypto_tc.c.o.d -o CMakeFiles/crypto.dir/core/crypto_tc.c.o -c /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/cryptolib/src/core/crypto_tc.c
 
 src/CMakeFiles/crypto.dir/core/crypto_tc.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/crypto.dir/core/crypto_tc.c.i"
-	cd /home/jstar/Desktop/github-nos3/gsw/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jstar/Desktop/github-nos3/components/cryptolib/src/core/crypto_tc.c > CMakeFiles/crypto.dir/core/crypto_tc.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/gsw/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/cryptolib/src/core/crypto_tc.c > CMakeFiles/crypto.dir/core/crypto_tc.c.i
 
 src/CMakeFiles/crypto.dir/core/crypto_tc.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/crypto.dir/core/crypto_tc.c.s"
-	cd /home/jstar/Desktop/github-nos3/gsw/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jstar/Desktop/github-nos3/components/cryptolib/src/core/crypto_tc.c -o CMakeFiles/crypto.dir/core/crypto_tc.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/gsw/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/cryptolib/src/core/crypto_tc.c -o CMakeFiles/crypto.dir/core/crypto_tc.c.s
 
 src/CMakeFiles/crypto.dir/core/crypto_tm.c.o: src/CMakeFiles/crypto.dir/flags.make
-src/CMakeFiles/crypto.dir/core/crypto_tm.c.o: /home/jstar/Desktop/github-nos3/components/cryptolib/src/core/crypto_tm.c
+src/CMakeFiles/crypto.dir/core/crypto_tm.c.o: /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/cryptolib/src/core/crypto_tm.c
 src/CMakeFiles/crypto.dir/core/crypto_tm.c.o: src/CMakeFiles/crypto.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jstar/Desktop/github-nos3/gsw/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object src/CMakeFiles/crypto.dir/core/crypto_tm.c.o"
-	cd /home/jstar/Desktop/github-nos3/gsw/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/crypto.dir/core/crypto_tm.c.o -MF CMakeFiles/crypto.dir/core/crypto_tm.c.o.d -o CMakeFiles/crypto.dir/core/crypto_tm.c.o -c /home/jstar/Desktop/github-nos3/components/cryptolib/src/core/crypto_tm.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/gsw/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object src/CMakeFiles/crypto.dir/core/crypto_tm.c.o"
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/gsw/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/crypto.dir/core/crypto_tm.c.o -MF CMakeFiles/crypto.dir/core/crypto_tm.c.o.d -o CMakeFiles/crypto.dir/core/crypto_tm.c.o -c /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/cryptolib/src/core/crypto_tm.c
 
 src/CMakeFiles/crypto.dir/core/crypto_tm.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/crypto.dir/core/crypto_tm.c.i"
-	cd /home/jstar/Desktop/github-nos3/gsw/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jstar/Desktop/github-nos3/components/cryptolib/src/core/crypto_tm.c > CMakeFiles/crypto.dir/core/crypto_tm.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/gsw/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/cryptolib/src/core/crypto_tm.c > CMakeFiles/crypto.dir/core/crypto_tm.c.i
 
 src/CMakeFiles/crypto.dir/core/crypto_tm.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/crypto.dir/core/crypto_tm.c.s"
-	cd /home/jstar/Desktop/github-nos3/gsw/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jstar/Desktop/github-nos3/components/cryptolib/src/core/crypto_tm.c -o CMakeFiles/crypto.dir/core/crypto_tm.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/gsw/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/cryptolib/src/core/crypto_tm.c -o CMakeFiles/crypto.dir/core/crypto_tm.c.s
 
 src/CMakeFiles/crypto.dir/core/crypto_user.c.o: src/CMakeFiles/crypto.dir/flags.make
-src/CMakeFiles/crypto.dir/core/crypto_user.c.o: /home/jstar/Desktop/github-nos3/components/cryptolib/src/core/crypto_user.c
+src/CMakeFiles/crypto.dir/core/crypto_user.c.o: /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/cryptolib/src/core/crypto_user.c
 src/CMakeFiles/crypto.dir/core/crypto_user.c.o: src/CMakeFiles/crypto.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jstar/Desktop/github-nos3/gsw/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object src/CMakeFiles/crypto.dir/core/crypto_user.c.o"
-	cd /home/jstar/Desktop/github-nos3/gsw/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/crypto.dir/core/crypto_user.c.o -MF CMakeFiles/crypto.dir/core/crypto_user.c.o.d -o CMakeFiles/crypto.dir/core/crypto_user.c.o -c /home/jstar/Desktop/github-nos3/components/cryptolib/src/core/crypto_user.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/gsw/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object src/CMakeFiles/crypto.dir/core/crypto_user.c.o"
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/gsw/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/crypto.dir/core/crypto_user.c.o -MF CMakeFiles/crypto.dir/core/crypto_user.c.o.d -o CMakeFiles/crypto.dir/core/crypto_user.c.o -c /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/cryptolib/src/core/crypto_user.c
 
 src/CMakeFiles/crypto.dir/core/crypto_user.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/crypto.dir/core/crypto_user.c.i"
-	cd /home/jstar/Desktop/github-nos3/gsw/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jstar/Desktop/github-nos3/components/cryptolib/src/core/crypto_user.c > CMakeFiles/crypto.dir/core/crypto_user.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/gsw/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/cryptolib/src/core/crypto_user.c > CMakeFiles/crypto.dir/core/crypto_user.c.i
 
 src/CMakeFiles/crypto.dir/core/crypto_user.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/crypto.dir/core/crypto_user.c.s"
-	cd /home/jstar/Desktop/github-nos3/gsw/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jstar/Desktop/github-nos3/components/cryptolib/src/core/crypto_user.c -o CMakeFiles/crypto.dir/core/crypto_user.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/gsw/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/cryptolib/src/core/crypto_user.c -o CMakeFiles/crypto.dir/core/crypto_user.c.s
 
 src/CMakeFiles/crypto.dir/crypto/libgcrypt/cryptography_interface_libgcrypt.template.c.o: src/CMakeFiles/crypto.dir/flags.make
-src/CMakeFiles/crypto.dir/crypto/libgcrypt/cryptography_interface_libgcrypt.template.c.o: /home/jstar/Desktop/github-nos3/components/cryptolib/src/crypto/libgcrypt/cryptography_interface_libgcrypt.template.c
+src/CMakeFiles/crypto.dir/crypto/libgcrypt/cryptography_interface_libgcrypt.template.c.o: /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/cryptolib/src/crypto/libgcrypt/cryptography_interface_libgcrypt.template.c
 src/CMakeFiles/crypto.dir/crypto/libgcrypt/cryptography_interface_libgcrypt.template.c.o: src/CMakeFiles/crypto.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jstar/Desktop/github-nos3/gsw/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object src/CMakeFiles/crypto.dir/crypto/libgcrypt/cryptography_interface_libgcrypt.template.c.o"
-	cd /home/jstar/Desktop/github-nos3/gsw/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/crypto.dir/crypto/libgcrypt/cryptography_interface_libgcrypt.template.c.o -MF CMakeFiles/crypto.dir/crypto/libgcrypt/cryptography_interface_libgcrypt.template.c.o.d -o CMakeFiles/crypto.dir/crypto/libgcrypt/cryptography_interface_libgcrypt.template.c.o -c /home/jstar/Desktop/github-nos3/components/cryptolib/src/crypto/libgcrypt/cryptography_interface_libgcrypt.template.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/gsw/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object src/CMakeFiles/crypto.dir/crypto/libgcrypt/cryptography_interface_libgcrypt.template.c.o"
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/gsw/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/crypto.dir/crypto/libgcrypt/cryptography_interface_libgcrypt.template.c.o -MF CMakeFiles/crypto.dir/crypto/libgcrypt/cryptography_interface_libgcrypt.template.c.o.d -o CMakeFiles/crypto.dir/crypto/libgcrypt/cryptography_interface_libgcrypt.template.c.o -c /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/cryptolib/src/crypto/libgcrypt/cryptography_interface_libgcrypt.template.c
 
 src/CMakeFiles/crypto.dir/crypto/libgcrypt/cryptography_interface_libgcrypt.template.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/crypto.dir/crypto/libgcrypt/cryptography_interface_libgcrypt.template.c.i"
-	cd /home/jstar/Desktop/github-nos3/gsw/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jstar/Desktop/github-nos3/components/cryptolib/src/crypto/libgcrypt/cryptography_interface_libgcrypt.template.c > CMakeFiles/crypto.dir/crypto/libgcrypt/cryptography_interface_libgcrypt.template.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/gsw/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/cryptolib/src/crypto/libgcrypt/cryptography_interface_libgcrypt.template.c > CMakeFiles/crypto.dir/crypto/libgcrypt/cryptography_interface_libgcrypt.template.c.i
 
 src/CMakeFiles/crypto.dir/crypto/libgcrypt/cryptography_interface_libgcrypt.template.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/crypto.dir/crypto/libgcrypt/cryptography_interface_libgcrypt.template.c.s"
-	cd /home/jstar/Desktop/github-nos3/gsw/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jstar/Desktop/github-nos3/components/cryptolib/src/crypto/libgcrypt/cryptography_interface_libgcrypt.template.c -o CMakeFiles/crypto.dir/crypto/libgcrypt/cryptography_interface_libgcrypt.template.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/gsw/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/cryptolib/src/crypto/libgcrypt/cryptography_interface_libgcrypt.template.c -o CMakeFiles/crypto.dir/crypto/libgcrypt/cryptography_interface_libgcrypt.template.c.s
 
 src/CMakeFiles/crypto.dir/crypto/kmc_stub/cryptography_interface_kmc.stub.c.o: src/CMakeFiles/crypto.dir/flags.make
-src/CMakeFiles/crypto.dir/crypto/kmc_stub/cryptography_interface_kmc.stub.c.o: /home/jstar/Desktop/github-nos3/components/cryptolib/src/crypto/kmc_stub/cryptography_interface_kmc.stub.c
+src/CMakeFiles/crypto.dir/crypto/kmc_stub/cryptography_interface_kmc.stub.c.o: /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/cryptolib/src/crypto/kmc_stub/cryptography_interface_kmc.stub.c
 src/CMakeFiles/crypto.dir/crypto/kmc_stub/cryptography_interface_kmc.stub.c.o: src/CMakeFiles/crypto.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jstar/Desktop/github-nos3/gsw/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object src/CMakeFiles/crypto.dir/crypto/kmc_stub/cryptography_interface_kmc.stub.c.o"
-	cd /home/jstar/Desktop/github-nos3/gsw/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/crypto.dir/crypto/kmc_stub/cryptography_interface_kmc.stub.c.o -MF CMakeFiles/crypto.dir/crypto/kmc_stub/cryptography_interface_kmc.stub.c.o.d -o CMakeFiles/crypto.dir/crypto/kmc_stub/cryptography_interface_kmc.stub.c.o -c /home/jstar/Desktop/github-nos3/components/cryptolib/src/crypto/kmc_stub/cryptography_interface_kmc.stub.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/gsw/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object src/CMakeFiles/crypto.dir/crypto/kmc_stub/cryptography_interface_kmc.stub.c.o"
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/gsw/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/crypto.dir/crypto/kmc_stub/cryptography_interface_kmc.stub.c.o -MF CMakeFiles/crypto.dir/crypto/kmc_stub/cryptography_interface_kmc.stub.c.o.d -o CMakeFiles/crypto.dir/crypto/kmc_stub/cryptography_interface_kmc.stub.c.o -c /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/cryptolib/src/crypto/kmc_stub/cryptography_interface_kmc.stub.c
 
 src/CMakeFiles/crypto.dir/crypto/kmc_stub/cryptography_interface_kmc.stub.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/crypto.dir/crypto/kmc_stub/cryptography_interface_kmc.stub.c.i"
-	cd /home/jstar/Desktop/github-nos3/gsw/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jstar/Desktop/github-nos3/components/cryptolib/src/crypto/kmc_stub/cryptography_interface_kmc.stub.c > CMakeFiles/crypto.dir/crypto/kmc_stub/cryptography_interface_kmc.stub.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/gsw/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/cryptolib/src/crypto/kmc_stub/cryptography_interface_kmc.stub.c > CMakeFiles/crypto.dir/crypto/kmc_stub/cryptography_interface_kmc.stub.c.i
 
 src/CMakeFiles/crypto.dir/crypto/kmc_stub/cryptography_interface_kmc.stub.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/crypto.dir/crypto/kmc_stub/cryptography_interface_kmc.stub.c.s"
-	cd /home/jstar/Desktop/github-nos3/gsw/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jstar/Desktop/github-nos3/components/cryptolib/src/crypto/kmc_stub/cryptography_interface_kmc.stub.c -o CMakeFiles/crypto.dir/crypto/kmc_stub/cryptography_interface_kmc.stub.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/gsw/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/cryptolib/src/crypto/kmc_stub/cryptography_interface_kmc.stub.c -o CMakeFiles/crypto.dir/crypto/kmc_stub/cryptography_interface_kmc.stub.c.s
 
 src/CMakeFiles/crypto.dir/crypto/wolfssl_stub/cryptography_interface_wolfssl.stub.c.o: src/CMakeFiles/crypto.dir/flags.make
-src/CMakeFiles/crypto.dir/crypto/wolfssl_stub/cryptography_interface_wolfssl.stub.c.o: /home/jstar/Desktop/github-nos3/components/cryptolib/src/crypto/wolfssl_stub/cryptography_interface_wolfssl.stub.c
+src/CMakeFiles/crypto.dir/crypto/wolfssl_stub/cryptography_interface_wolfssl.stub.c.o: /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/cryptolib/src/crypto/wolfssl_stub/cryptography_interface_wolfssl.stub.c
 src/CMakeFiles/crypto.dir/crypto/wolfssl_stub/cryptography_interface_wolfssl.stub.c.o: src/CMakeFiles/crypto.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jstar/Desktop/github-nos3/gsw/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object src/CMakeFiles/crypto.dir/crypto/wolfssl_stub/cryptography_interface_wolfssl.stub.c.o"
-	cd /home/jstar/Desktop/github-nos3/gsw/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/crypto.dir/crypto/wolfssl_stub/cryptography_interface_wolfssl.stub.c.o -MF CMakeFiles/crypto.dir/crypto/wolfssl_stub/cryptography_interface_wolfssl.stub.c.o.d -o CMakeFiles/crypto.dir/crypto/wolfssl_stub/cryptography_interface_wolfssl.stub.c.o -c /home/jstar/Desktop/github-nos3/components/cryptolib/src/crypto/wolfssl_stub/cryptography_interface_wolfssl.stub.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/gsw/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object src/CMakeFiles/crypto.dir/crypto/wolfssl_stub/cryptography_interface_wolfssl.stub.c.o"
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/gsw/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/crypto.dir/crypto/wolfssl_stub/cryptography_interface_wolfssl.stub.c.o -MF CMakeFiles/crypto.dir/crypto/wolfssl_stub/cryptography_interface_wolfssl.stub.c.o.d -o CMakeFiles/crypto.dir/crypto/wolfssl_stub/cryptography_interface_wolfssl.stub.c.o -c /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/cryptolib/src/crypto/wolfssl_stub/cryptography_interface_wolfssl.stub.c
 
 src/CMakeFiles/crypto.dir/crypto/wolfssl_stub/cryptography_interface_wolfssl.stub.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/crypto.dir/crypto/wolfssl_stub/cryptography_interface_wolfssl.stub.c.i"
-	cd /home/jstar/Desktop/github-nos3/gsw/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jstar/Desktop/github-nos3/components/cryptolib/src/crypto/wolfssl_stub/cryptography_interface_wolfssl.stub.c > CMakeFiles/crypto.dir/crypto/wolfssl_stub/cryptography_interface_wolfssl.stub.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/gsw/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/cryptolib/src/crypto/wolfssl_stub/cryptography_interface_wolfssl.stub.c > CMakeFiles/crypto.dir/crypto/wolfssl_stub/cryptography_interface_wolfssl.stub.c.i
 
 src/CMakeFiles/crypto.dir/crypto/wolfssl_stub/cryptography_interface_wolfssl.stub.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/crypto.dir/crypto/wolfssl_stub/cryptography_interface_wolfssl.stub.c.s"
-	cd /home/jstar/Desktop/github-nos3/gsw/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jstar/Desktop/github-nos3/components/cryptolib/src/crypto/wolfssl_stub/cryptography_interface_wolfssl.stub.c -o CMakeFiles/crypto.dir/crypto/wolfssl_stub/cryptography_interface_wolfssl.stub.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/gsw/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/cryptolib/src/crypto/wolfssl_stub/cryptography_interface_wolfssl.stub.c -o CMakeFiles/crypto.dir/crypto/wolfssl_stub/cryptography_interface_wolfssl.stub.c.s
 
 src/CMakeFiles/crypto.dir/key/custom_stub/key_interface_custom_stub.template.c.o: src/CMakeFiles/crypto.dir/flags.make
-src/CMakeFiles/crypto.dir/key/custom_stub/key_interface_custom_stub.template.c.o: /home/jstar/Desktop/github-nos3/components/cryptolib/src/key/custom_stub/key_interface_custom_stub.template.c
+src/CMakeFiles/crypto.dir/key/custom_stub/key_interface_custom_stub.template.c.o: /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/cryptolib/src/key/custom_stub/key_interface_custom_stub.template.c
 src/CMakeFiles/crypto.dir/key/custom_stub/key_interface_custom_stub.template.c.o: src/CMakeFiles/crypto.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jstar/Desktop/github-nos3/gsw/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object src/CMakeFiles/crypto.dir/key/custom_stub/key_interface_custom_stub.template.c.o"
-	cd /home/jstar/Desktop/github-nos3/gsw/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/crypto.dir/key/custom_stub/key_interface_custom_stub.template.c.o -MF CMakeFiles/crypto.dir/key/custom_stub/key_interface_custom_stub.template.c.o.d -o CMakeFiles/crypto.dir/key/custom_stub/key_interface_custom_stub.template.c.o -c /home/jstar/Desktop/github-nos3/components/cryptolib/src/key/custom_stub/key_interface_custom_stub.template.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/gsw/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object src/CMakeFiles/crypto.dir/key/custom_stub/key_interface_custom_stub.template.c.o"
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/gsw/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/crypto.dir/key/custom_stub/key_interface_custom_stub.template.c.o -MF CMakeFiles/crypto.dir/key/custom_stub/key_interface_custom_stub.template.c.o.d -o CMakeFiles/crypto.dir/key/custom_stub/key_interface_custom_stub.template.c.o -c /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/cryptolib/src/key/custom_stub/key_interface_custom_stub.template.c
 
 src/CMakeFiles/crypto.dir/key/custom_stub/key_interface_custom_stub.template.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/crypto.dir/key/custom_stub/key_interface_custom_stub.template.c.i"
-	cd /home/jstar/Desktop/github-nos3/gsw/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jstar/Desktop/github-nos3/components/cryptolib/src/key/custom_stub/key_interface_custom_stub.template.c > CMakeFiles/crypto.dir/key/custom_stub/key_interface_custom_stub.template.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/gsw/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/cryptolib/src/key/custom_stub/key_interface_custom_stub.template.c > CMakeFiles/crypto.dir/key/custom_stub/key_interface_custom_stub.template.c.i
 
 src/CMakeFiles/crypto.dir/key/custom_stub/key_interface_custom_stub.template.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/crypto.dir/key/custom_stub/key_interface_custom_stub.template.c.s"
-	cd /home/jstar/Desktop/github-nos3/gsw/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jstar/Desktop/github-nos3/components/cryptolib/src/key/custom_stub/key_interface_custom_stub.template.c -o CMakeFiles/crypto.dir/key/custom_stub/key_interface_custom_stub.template.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/gsw/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/cryptolib/src/key/custom_stub/key_interface_custom_stub.template.c -o CMakeFiles/crypto.dir/key/custom_stub/key_interface_custom_stub.template.c.s
 
 src/CMakeFiles/crypto.dir/key/internal/key_interface_internal.template.c.o: src/CMakeFiles/crypto.dir/flags.make
-src/CMakeFiles/crypto.dir/key/internal/key_interface_internal.template.c.o: /home/jstar/Desktop/github-nos3/components/cryptolib/src/key/internal/key_interface_internal.template.c
+src/CMakeFiles/crypto.dir/key/internal/key_interface_internal.template.c.o: /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/cryptolib/src/key/internal/key_interface_internal.template.c
 src/CMakeFiles/crypto.dir/key/internal/key_interface_internal.template.c.o: src/CMakeFiles/crypto.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jstar/Desktop/github-nos3/gsw/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object src/CMakeFiles/crypto.dir/key/internal/key_interface_internal.template.c.o"
-	cd /home/jstar/Desktop/github-nos3/gsw/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/crypto.dir/key/internal/key_interface_internal.template.c.o -MF CMakeFiles/crypto.dir/key/internal/key_interface_internal.template.c.o.d -o CMakeFiles/crypto.dir/key/internal/key_interface_internal.template.c.o -c /home/jstar/Desktop/github-nos3/components/cryptolib/src/key/internal/key_interface_internal.template.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/gsw/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object src/CMakeFiles/crypto.dir/key/internal/key_interface_internal.template.c.o"
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/gsw/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/crypto.dir/key/internal/key_interface_internal.template.c.o -MF CMakeFiles/crypto.dir/key/internal/key_interface_internal.template.c.o.d -o CMakeFiles/crypto.dir/key/internal/key_interface_internal.template.c.o -c /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/cryptolib/src/key/internal/key_interface_internal.template.c
 
 src/CMakeFiles/crypto.dir/key/internal/key_interface_internal.template.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/crypto.dir/key/internal/key_interface_internal.template.c.i"
-	cd /home/jstar/Desktop/github-nos3/gsw/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jstar/Desktop/github-nos3/components/cryptolib/src/key/internal/key_interface_internal.template.c > CMakeFiles/crypto.dir/key/internal/key_interface_internal.template.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/gsw/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/cryptolib/src/key/internal/key_interface_internal.template.c > CMakeFiles/crypto.dir/key/internal/key_interface_internal.template.c.i
 
 src/CMakeFiles/crypto.dir/key/internal/key_interface_internal.template.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/crypto.dir/key/internal/key_interface_internal.template.c.s"
-	cd /home/jstar/Desktop/github-nos3/gsw/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jstar/Desktop/github-nos3/components/cryptolib/src/key/internal/key_interface_internal.template.c -o CMakeFiles/crypto.dir/key/internal/key_interface_internal.template.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/gsw/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/cryptolib/src/key/internal/key_interface_internal.template.c -o CMakeFiles/crypto.dir/key/internal/key_interface_internal.template.c.s
 
 src/CMakeFiles/crypto.dir/key/kmc_stub/key_interface_kmc_stub.template.c.o: src/CMakeFiles/crypto.dir/flags.make
-src/CMakeFiles/crypto.dir/key/kmc_stub/key_interface_kmc_stub.template.c.o: /home/jstar/Desktop/github-nos3/components/cryptolib/src/key/kmc_stub/key_interface_kmc_stub.template.c
+src/CMakeFiles/crypto.dir/key/kmc_stub/key_interface_kmc_stub.template.c.o: /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/cryptolib/src/key/kmc_stub/key_interface_kmc_stub.template.c
 src/CMakeFiles/crypto.dir/key/kmc_stub/key_interface_kmc_stub.template.c.o: src/CMakeFiles/crypto.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jstar/Desktop/github-nos3/gsw/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object src/CMakeFiles/crypto.dir/key/kmc_stub/key_interface_kmc_stub.template.c.o"
-	cd /home/jstar/Desktop/github-nos3/gsw/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/crypto.dir/key/kmc_stub/key_interface_kmc_stub.template.c.o -MF CMakeFiles/crypto.dir/key/kmc_stub/key_interface_kmc_stub.template.c.o.d -o CMakeFiles/crypto.dir/key/kmc_stub/key_interface_kmc_stub.template.c.o -c /home/jstar/Desktop/github-nos3/components/cryptolib/src/key/kmc_stub/key_interface_kmc_stub.template.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/gsw/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object src/CMakeFiles/crypto.dir/key/kmc_stub/key_interface_kmc_stub.template.c.o"
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/gsw/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/crypto.dir/key/kmc_stub/key_interface_kmc_stub.template.c.o -MF CMakeFiles/crypto.dir/key/kmc_stub/key_interface_kmc_stub.template.c.o.d -o CMakeFiles/crypto.dir/key/kmc_stub/key_interface_kmc_stub.template.c.o -c /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/cryptolib/src/key/kmc_stub/key_interface_kmc_stub.template.c
 
 src/CMakeFiles/crypto.dir/key/kmc_stub/key_interface_kmc_stub.template.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/crypto.dir/key/kmc_stub/key_interface_kmc_stub.template.c.i"
-	cd /home/jstar/Desktop/github-nos3/gsw/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jstar/Desktop/github-nos3/components/cryptolib/src/key/kmc_stub/key_interface_kmc_stub.template.c > CMakeFiles/crypto.dir/key/kmc_stub/key_interface_kmc_stub.template.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/gsw/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/cryptolib/src/key/kmc_stub/key_interface_kmc_stub.template.c > CMakeFiles/crypto.dir/key/kmc_stub/key_interface_kmc_stub.template.c.i
 
 src/CMakeFiles/crypto.dir/key/kmc_stub/key_interface_kmc_stub.template.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/crypto.dir/key/kmc_stub/key_interface_kmc_stub.template.c.s"
-	cd /home/jstar/Desktop/github-nos3/gsw/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jstar/Desktop/github-nos3/components/cryptolib/src/key/kmc_stub/key_interface_kmc_stub.template.c -o CMakeFiles/crypto.dir/key/kmc_stub/key_interface_kmc_stub.template.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/gsw/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/cryptolib/src/key/kmc_stub/key_interface_kmc_stub.template.c -o CMakeFiles/crypto.dir/key/kmc_stub/key_interface_kmc_stub.template.c.s
 
 src/CMakeFiles/crypto.dir/mc/custom_stub/mc_interface_custom_stub.template.c.o: src/CMakeFiles/crypto.dir/flags.make
-src/CMakeFiles/crypto.dir/mc/custom_stub/mc_interface_custom_stub.template.c.o: /home/jstar/Desktop/github-nos3/components/cryptolib/src/mc/custom_stub/mc_interface_custom_stub.template.c
+src/CMakeFiles/crypto.dir/mc/custom_stub/mc_interface_custom_stub.template.c.o: /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/cryptolib/src/mc/custom_stub/mc_interface_custom_stub.template.c
 src/CMakeFiles/crypto.dir/mc/custom_stub/mc_interface_custom_stub.template.c.o: src/CMakeFiles/crypto.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jstar/Desktop/github-nos3/gsw/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object src/CMakeFiles/crypto.dir/mc/custom_stub/mc_interface_custom_stub.template.c.o"
-	cd /home/jstar/Desktop/github-nos3/gsw/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/crypto.dir/mc/custom_stub/mc_interface_custom_stub.template.c.o -MF CMakeFiles/crypto.dir/mc/custom_stub/mc_interface_custom_stub.template.c.o.d -o CMakeFiles/crypto.dir/mc/custom_stub/mc_interface_custom_stub.template.c.o -c /home/jstar/Desktop/github-nos3/components/cryptolib/src/mc/custom_stub/mc_interface_custom_stub.template.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/gsw/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object src/CMakeFiles/crypto.dir/mc/custom_stub/mc_interface_custom_stub.template.c.o"
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/gsw/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/crypto.dir/mc/custom_stub/mc_interface_custom_stub.template.c.o -MF CMakeFiles/crypto.dir/mc/custom_stub/mc_interface_custom_stub.template.c.o.d -o CMakeFiles/crypto.dir/mc/custom_stub/mc_interface_custom_stub.template.c.o -c /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/cryptolib/src/mc/custom_stub/mc_interface_custom_stub.template.c
 
 src/CMakeFiles/crypto.dir/mc/custom_stub/mc_interface_custom_stub.template.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/crypto.dir/mc/custom_stub/mc_interface_custom_stub.template.c.i"
-	cd /home/jstar/Desktop/github-nos3/gsw/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jstar/Desktop/github-nos3/components/cryptolib/src/mc/custom_stub/mc_interface_custom_stub.template.c > CMakeFiles/crypto.dir/mc/custom_stub/mc_interface_custom_stub.template.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/gsw/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/cryptolib/src/mc/custom_stub/mc_interface_custom_stub.template.c > CMakeFiles/crypto.dir/mc/custom_stub/mc_interface_custom_stub.template.c.i
 
 src/CMakeFiles/crypto.dir/mc/custom_stub/mc_interface_custom_stub.template.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/crypto.dir/mc/custom_stub/mc_interface_custom_stub.template.c.s"
-	cd /home/jstar/Desktop/github-nos3/gsw/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jstar/Desktop/github-nos3/components/cryptolib/src/mc/custom_stub/mc_interface_custom_stub.template.c -o CMakeFiles/crypto.dir/mc/custom_stub/mc_interface_custom_stub.template.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/gsw/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/cryptolib/src/mc/custom_stub/mc_interface_custom_stub.template.c -o CMakeFiles/crypto.dir/mc/custom_stub/mc_interface_custom_stub.template.c.s
 
 src/CMakeFiles/crypto.dir/mc/disabled_stub/mc_interface_disabled_stub.template.c.o: src/CMakeFiles/crypto.dir/flags.make
-src/CMakeFiles/crypto.dir/mc/disabled_stub/mc_interface_disabled_stub.template.c.o: /home/jstar/Desktop/github-nos3/components/cryptolib/src/mc/disabled_stub/mc_interface_disabled_stub.template.c
+src/CMakeFiles/crypto.dir/mc/disabled_stub/mc_interface_disabled_stub.template.c.o: /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/cryptolib/src/mc/disabled_stub/mc_interface_disabled_stub.template.c
 src/CMakeFiles/crypto.dir/mc/disabled_stub/mc_interface_disabled_stub.template.c.o: src/CMakeFiles/crypto.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jstar/Desktop/github-nos3/gsw/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object src/CMakeFiles/crypto.dir/mc/disabled_stub/mc_interface_disabled_stub.template.c.o"
-	cd /home/jstar/Desktop/github-nos3/gsw/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/crypto.dir/mc/disabled_stub/mc_interface_disabled_stub.template.c.o -MF CMakeFiles/crypto.dir/mc/disabled_stub/mc_interface_disabled_stub.template.c.o.d -o CMakeFiles/crypto.dir/mc/disabled_stub/mc_interface_disabled_stub.template.c.o -c /home/jstar/Desktop/github-nos3/components/cryptolib/src/mc/disabled_stub/mc_interface_disabled_stub.template.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/gsw/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object src/CMakeFiles/crypto.dir/mc/disabled_stub/mc_interface_disabled_stub.template.c.o"
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/gsw/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/crypto.dir/mc/disabled_stub/mc_interface_disabled_stub.template.c.o -MF CMakeFiles/crypto.dir/mc/disabled_stub/mc_interface_disabled_stub.template.c.o.d -o CMakeFiles/crypto.dir/mc/disabled_stub/mc_interface_disabled_stub.template.c.o -c /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/cryptolib/src/mc/disabled_stub/mc_interface_disabled_stub.template.c
 
 src/CMakeFiles/crypto.dir/mc/disabled_stub/mc_interface_disabled_stub.template.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/crypto.dir/mc/disabled_stub/mc_interface_disabled_stub.template.c.i"
-	cd /home/jstar/Desktop/github-nos3/gsw/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jstar/Desktop/github-nos3/components/cryptolib/src/mc/disabled_stub/mc_interface_disabled_stub.template.c > CMakeFiles/crypto.dir/mc/disabled_stub/mc_interface_disabled_stub.template.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/gsw/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/cryptolib/src/mc/disabled_stub/mc_interface_disabled_stub.template.c > CMakeFiles/crypto.dir/mc/disabled_stub/mc_interface_disabled_stub.template.c.i
 
 src/CMakeFiles/crypto.dir/mc/disabled_stub/mc_interface_disabled_stub.template.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/crypto.dir/mc/disabled_stub/mc_interface_disabled_stub.template.c.s"
-	cd /home/jstar/Desktop/github-nos3/gsw/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jstar/Desktop/github-nos3/components/cryptolib/src/mc/disabled_stub/mc_interface_disabled_stub.template.c -o CMakeFiles/crypto.dir/mc/disabled_stub/mc_interface_disabled_stub.template.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/gsw/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/cryptolib/src/mc/disabled_stub/mc_interface_disabled_stub.template.c -o CMakeFiles/crypto.dir/mc/disabled_stub/mc_interface_disabled_stub.template.c.s
 
 src/CMakeFiles/crypto.dir/mc/internal/mc_interface_internal.template.c.o: src/CMakeFiles/crypto.dir/flags.make
-src/CMakeFiles/crypto.dir/mc/internal/mc_interface_internal.template.c.o: /home/jstar/Desktop/github-nos3/components/cryptolib/src/mc/internal/mc_interface_internal.template.c
+src/CMakeFiles/crypto.dir/mc/internal/mc_interface_internal.template.c.o: /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/cryptolib/src/mc/internal/mc_interface_internal.template.c
 src/CMakeFiles/crypto.dir/mc/internal/mc_interface_internal.template.c.o: src/CMakeFiles/crypto.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jstar/Desktop/github-nos3/gsw/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object src/CMakeFiles/crypto.dir/mc/internal/mc_interface_internal.template.c.o"
-	cd /home/jstar/Desktop/github-nos3/gsw/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/crypto.dir/mc/internal/mc_interface_internal.template.c.o -MF CMakeFiles/crypto.dir/mc/internal/mc_interface_internal.template.c.o.d -o CMakeFiles/crypto.dir/mc/internal/mc_interface_internal.template.c.o -c /home/jstar/Desktop/github-nos3/components/cryptolib/src/mc/internal/mc_interface_internal.template.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/gsw/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object src/CMakeFiles/crypto.dir/mc/internal/mc_interface_internal.template.c.o"
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/gsw/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/crypto.dir/mc/internal/mc_interface_internal.template.c.o -MF CMakeFiles/crypto.dir/mc/internal/mc_interface_internal.template.c.o.d -o CMakeFiles/crypto.dir/mc/internal/mc_interface_internal.template.c.o -c /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/cryptolib/src/mc/internal/mc_interface_internal.template.c
 
 src/CMakeFiles/crypto.dir/mc/internal/mc_interface_internal.template.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/crypto.dir/mc/internal/mc_interface_internal.template.c.i"
-	cd /home/jstar/Desktop/github-nos3/gsw/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jstar/Desktop/github-nos3/components/cryptolib/src/mc/internal/mc_interface_internal.template.c > CMakeFiles/crypto.dir/mc/internal/mc_interface_internal.template.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/gsw/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/cryptolib/src/mc/internal/mc_interface_internal.template.c > CMakeFiles/crypto.dir/mc/internal/mc_interface_internal.template.c.i
 
 src/CMakeFiles/crypto.dir/mc/internal/mc_interface_internal.template.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/crypto.dir/mc/internal/mc_interface_internal.template.c.s"
-	cd /home/jstar/Desktop/github-nos3/gsw/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jstar/Desktop/github-nos3/components/cryptolib/src/mc/internal/mc_interface_internal.template.c -o CMakeFiles/crypto.dir/mc/internal/mc_interface_internal.template.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/gsw/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/cryptolib/src/mc/internal/mc_interface_internal.template.c -o CMakeFiles/crypto.dir/mc/internal/mc_interface_internal.template.c.s
 
 src/CMakeFiles/crypto.dir/sa/custom_stub/sa_interface_custom.stub.c.o: src/CMakeFiles/crypto.dir/flags.make
-src/CMakeFiles/crypto.dir/sa/custom_stub/sa_interface_custom.stub.c.o: /home/jstar/Desktop/github-nos3/components/cryptolib/src/sa/custom_stub/sa_interface_custom.stub.c
+src/CMakeFiles/crypto.dir/sa/custom_stub/sa_interface_custom.stub.c.o: /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/cryptolib/src/sa/custom_stub/sa_interface_custom.stub.c
 src/CMakeFiles/crypto.dir/sa/custom_stub/sa_interface_custom.stub.c.o: src/CMakeFiles/crypto.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jstar/Desktop/github-nos3/gsw/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object src/CMakeFiles/crypto.dir/sa/custom_stub/sa_interface_custom.stub.c.o"
-	cd /home/jstar/Desktop/github-nos3/gsw/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/crypto.dir/sa/custom_stub/sa_interface_custom.stub.c.o -MF CMakeFiles/crypto.dir/sa/custom_stub/sa_interface_custom.stub.c.o.d -o CMakeFiles/crypto.dir/sa/custom_stub/sa_interface_custom.stub.c.o -c /home/jstar/Desktop/github-nos3/components/cryptolib/src/sa/custom_stub/sa_interface_custom.stub.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/gsw/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object src/CMakeFiles/crypto.dir/sa/custom_stub/sa_interface_custom.stub.c.o"
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/gsw/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/crypto.dir/sa/custom_stub/sa_interface_custom.stub.c.o -MF CMakeFiles/crypto.dir/sa/custom_stub/sa_interface_custom.stub.c.o.d -o CMakeFiles/crypto.dir/sa/custom_stub/sa_interface_custom.stub.c.o -c /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/cryptolib/src/sa/custom_stub/sa_interface_custom.stub.c
 
 src/CMakeFiles/crypto.dir/sa/custom_stub/sa_interface_custom.stub.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/crypto.dir/sa/custom_stub/sa_interface_custom.stub.c.i"
-	cd /home/jstar/Desktop/github-nos3/gsw/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jstar/Desktop/github-nos3/components/cryptolib/src/sa/custom_stub/sa_interface_custom.stub.c > CMakeFiles/crypto.dir/sa/custom_stub/sa_interface_custom.stub.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/gsw/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/cryptolib/src/sa/custom_stub/sa_interface_custom.stub.c > CMakeFiles/crypto.dir/sa/custom_stub/sa_interface_custom.stub.c.i
 
 src/CMakeFiles/crypto.dir/sa/custom_stub/sa_interface_custom.stub.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/crypto.dir/sa/custom_stub/sa_interface_custom.stub.c.s"
-	cd /home/jstar/Desktop/github-nos3/gsw/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jstar/Desktop/github-nos3/components/cryptolib/src/sa/custom_stub/sa_interface_custom.stub.c -o CMakeFiles/crypto.dir/sa/custom_stub/sa_interface_custom.stub.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/gsw/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/cryptolib/src/sa/custom_stub/sa_interface_custom.stub.c -o CMakeFiles/crypto.dir/sa/custom_stub/sa_interface_custom.stub.c.s
 
 src/CMakeFiles/crypto.dir/sa/internal/sa_interface_inmemory.template.c.o: src/CMakeFiles/crypto.dir/flags.make
-src/CMakeFiles/crypto.dir/sa/internal/sa_interface_inmemory.template.c.o: /home/jstar/Desktop/github-nos3/components/cryptolib/src/sa/internal/sa_interface_inmemory.template.c
+src/CMakeFiles/crypto.dir/sa/internal/sa_interface_inmemory.template.c.o: /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/cryptolib/src/sa/internal/sa_interface_inmemory.template.c
 src/CMakeFiles/crypto.dir/sa/internal/sa_interface_inmemory.template.c.o: src/CMakeFiles/crypto.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jstar/Desktop/github-nos3/gsw/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object src/CMakeFiles/crypto.dir/sa/internal/sa_interface_inmemory.template.c.o"
-	cd /home/jstar/Desktop/github-nos3/gsw/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/crypto.dir/sa/internal/sa_interface_inmemory.template.c.o -MF CMakeFiles/crypto.dir/sa/internal/sa_interface_inmemory.template.c.o.d -o CMakeFiles/crypto.dir/sa/internal/sa_interface_inmemory.template.c.o -c /home/jstar/Desktop/github-nos3/components/cryptolib/src/sa/internal/sa_interface_inmemory.template.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/gsw/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object src/CMakeFiles/crypto.dir/sa/internal/sa_interface_inmemory.template.c.o"
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/gsw/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/crypto.dir/sa/internal/sa_interface_inmemory.template.c.o -MF CMakeFiles/crypto.dir/sa/internal/sa_interface_inmemory.template.c.o.d -o CMakeFiles/crypto.dir/sa/internal/sa_interface_inmemory.template.c.o -c /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/cryptolib/src/sa/internal/sa_interface_inmemory.template.c
 
 src/CMakeFiles/crypto.dir/sa/internal/sa_interface_inmemory.template.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/crypto.dir/sa/internal/sa_interface_inmemory.template.c.i"
-	cd /home/jstar/Desktop/github-nos3/gsw/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jstar/Desktop/github-nos3/components/cryptolib/src/sa/internal/sa_interface_inmemory.template.c > CMakeFiles/crypto.dir/sa/internal/sa_interface_inmemory.template.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/gsw/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/cryptolib/src/sa/internal/sa_interface_inmemory.template.c > CMakeFiles/crypto.dir/sa/internal/sa_interface_inmemory.template.c.i
 
 src/CMakeFiles/crypto.dir/sa/internal/sa_interface_inmemory.template.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/crypto.dir/sa/internal/sa_interface_inmemory.template.c.s"
-	cd /home/jstar/Desktop/github-nos3/gsw/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jstar/Desktop/github-nos3/components/cryptolib/src/sa/internal/sa_interface_inmemory.template.c -o CMakeFiles/crypto.dir/sa/internal/sa_interface_inmemory.template.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/gsw/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/cryptolib/src/sa/internal/sa_interface_inmemory.template.c -o CMakeFiles/crypto.dir/sa/internal/sa_interface_inmemory.template.c.s
 
 src/CMakeFiles/crypto.dir/sa/mariadb_stub/sa_interface_mariadb.stub.c.o: src/CMakeFiles/crypto.dir/flags.make
-src/CMakeFiles/crypto.dir/sa/mariadb_stub/sa_interface_mariadb.stub.c.o: /home/jstar/Desktop/github-nos3/components/cryptolib/src/sa/mariadb_stub/sa_interface_mariadb.stub.c
+src/CMakeFiles/crypto.dir/sa/mariadb_stub/sa_interface_mariadb.stub.c.o: /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/cryptolib/src/sa/mariadb_stub/sa_interface_mariadb.stub.c
 src/CMakeFiles/crypto.dir/sa/mariadb_stub/sa_interface_mariadb.stub.c.o: src/CMakeFiles/crypto.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jstar/Desktop/github-nos3/gsw/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object src/CMakeFiles/crypto.dir/sa/mariadb_stub/sa_interface_mariadb.stub.c.o"
-	cd /home/jstar/Desktop/github-nos3/gsw/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/crypto.dir/sa/mariadb_stub/sa_interface_mariadb.stub.c.o -MF CMakeFiles/crypto.dir/sa/mariadb_stub/sa_interface_mariadb.stub.c.o.d -o CMakeFiles/crypto.dir/sa/mariadb_stub/sa_interface_mariadb.stub.c.o -c /home/jstar/Desktop/github-nos3/components/cryptolib/src/sa/mariadb_stub/sa_interface_mariadb.stub.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/gsw/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object src/CMakeFiles/crypto.dir/sa/mariadb_stub/sa_interface_mariadb.stub.c.o"
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/gsw/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/crypto.dir/sa/mariadb_stub/sa_interface_mariadb.stub.c.o -MF CMakeFiles/crypto.dir/sa/mariadb_stub/sa_interface_mariadb.stub.c.o.d -o CMakeFiles/crypto.dir/sa/mariadb_stub/sa_interface_mariadb.stub.c.o -c /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/cryptolib/src/sa/mariadb_stub/sa_interface_mariadb.stub.c
 
 src/CMakeFiles/crypto.dir/sa/mariadb_stub/sa_interface_mariadb.stub.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/crypto.dir/sa/mariadb_stub/sa_interface_mariadb.stub.c.i"
-	cd /home/jstar/Desktop/github-nos3/gsw/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jstar/Desktop/github-nos3/components/cryptolib/src/sa/mariadb_stub/sa_interface_mariadb.stub.c > CMakeFiles/crypto.dir/sa/mariadb_stub/sa_interface_mariadb.stub.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/gsw/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/cryptolib/src/sa/mariadb_stub/sa_interface_mariadb.stub.c > CMakeFiles/crypto.dir/sa/mariadb_stub/sa_interface_mariadb.stub.c.i
 
 src/CMakeFiles/crypto.dir/sa/mariadb_stub/sa_interface_mariadb.stub.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/crypto.dir/sa/mariadb_stub/sa_interface_mariadb.stub.c.s"
-	cd /home/jstar/Desktop/github-nos3/gsw/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jstar/Desktop/github-nos3/components/cryptolib/src/sa/mariadb_stub/sa_interface_mariadb.stub.c -o CMakeFiles/crypto.dir/sa/mariadb_stub/sa_interface_mariadb.stub.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/gsw/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/cryptolib/src/sa/mariadb_stub/sa_interface_mariadb.stub.c -o CMakeFiles/crypto.dir/sa/mariadb_stub/sa_interface_mariadb.stub.c.s
 
 # Object files for target crypto
 crypto_OBJECTS = \
@@ -429,20 +429,20 @@ src/libcrypto.so: src/CMakeFiles/crypto.dir/sa/internal/sa_interface_inmemory.te
 src/libcrypto.so: src/CMakeFiles/crypto.dir/sa/mariadb_stub/sa_interface_mariadb.stub.c.o
 src/libcrypto.so: src/CMakeFiles/crypto.dir/build.make
 src/libcrypto.so: src/CMakeFiles/crypto.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/jstar/Desktop/github-nos3/gsw/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Linking C shared library libcrypto.so"
-	cd /home/jstar/Desktop/github-nos3/gsw/build/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/crypto.dir/link.txt --verbose=$(VERBOSE)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Created /home/jstar/Desktop/github-nos3/gsw/build/lib/libCrypto.so"
-	cd /home/jstar/Desktop/github-nos3/gsw/build/src && /usr/bin/cmake -E copy /home/jstar/Desktop/github-nos3/gsw/build/src/libcrypto.so /home/jstar/Desktop/github-nos3/gsw/build/lib/libcrypto.so
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/gsw/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Linking C shared library libcrypto.so"
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/gsw/build/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/crypto.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Created /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/gsw/build/lib/libCrypto.so"
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/gsw/build/src && /usr/bin/cmake -E copy /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/gsw/build/src/libcrypto.so /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/gsw/build/lib/libcrypto.so
 
 # Rule to build all files generated by this target.
 src/CMakeFiles/crypto.dir/build: src/libcrypto.so
 .PHONY : src/CMakeFiles/crypto.dir/build
 
 src/CMakeFiles/crypto.dir/clean:
-	cd /home/jstar/Desktop/github-nos3/gsw/build/src && $(CMAKE_COMMAND) -P CMakeFiles/crypto.dir/cmake_clean.cmake
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/gsw/build/src && $(CMAKE_COMMAND) -P CMakeFiles/crypto.dir/cmake_clean.cmake
 .PHONY : src/CMakeFiles/crypto.dir/clean
 
 src/CMakeFiles/crypto.dir/depend:
-	cd /home/jstar/Desktop/github-nos3/gsw/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/jstar/Desktop/github-nos3/components/cryptolib /home/jstar/Desktop/github-nos3/components/cryptolib/src /home/jstar/Desktop/github-nos3/gsw/build /home/jstar/Desktop/github-nos3/gsw/build/src /home/jstar/Desktop/github-nos3/gsw/build/src/CMakeFiles/crypto.dir/DependInfo.cmake --color=$(COLOR)
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/gsw/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/cryptolib /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/cryptolib/src /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/gsw/build /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/gsw/build/src /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/gsw/build/src/CMakeFiles/crypto.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : src/CMakeFiles/crypto.dir/depend
 

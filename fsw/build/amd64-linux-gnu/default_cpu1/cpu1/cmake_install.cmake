@@ -1,8 +1,8 @@
-# Install script for directory: /home/jstar/Desktop/github-nos3/fsw/cfe/cmake/target
+# Install script for directory: /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/cfe/cmake/target
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/jstar/Desktop/github-nos3/fsw/build/exe")
+  set(CMAKE_INSTALL_PREFIX "/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/exe")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -49,7 +49,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/cpu1/core-cpu1"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/cpu1" TYPE EXECUTABLE FILES "/home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/cpu1/core-cpu1")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/cpu1" TYPE EXECUTABLE FILES "/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/cpu1/core-cpu1")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/cpu1/core-cpu1" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/cpu1/core-cpu1")
     if(CMAKE_INSTALL_DO_STRIP)

@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/jstar/Desktop/github-nos3/fsw/cfe
+CMAKE_SOURCE_DIR = /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/cfe
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1
+CMAKE_BINARY_DIR = /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1
 
 # Include any dependencies generated for this target.
 include apps/syn/CMakeFiles/synopsis.dir/depend.make
@@ -70,228 +70,228 @@ include apps/syn/CMakeFiles/synopsis.dir/progress.make
 include apps/syn/CMakeFiles/synopsis.dir/flags.make
 
 apps/syn/CMakeFiles/synopsis.dir/src/sqlite3.c.o: apps/syn/CMakeFiles/synopsis.dir/flags.make
-apps/syn/CMakeFiles/synopsis.dir/src/sqlite3.c.o: /home/jstar/Desktop/github-nos3/components/syn/synopsis/src/sqlite3.c
+apps/syn/CMakeFiles/synopsis.dir/src/sqlite3.c.o: /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/syn/synopsis/src/sqlite3.c
 apps/syn/CMakeFiles/synopsis.dir/src/sqlite3.c.o: apps/syn/CMakeFiles/synopsis.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object apps/syn/CMakeFiles/synopsis.dir/src/sqlite3.c.o"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/apps/syn && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT apps/syn/CMakeFiles/synopsis.dir/src/sqlite3.c.o -MF CMakeFiles/synopsis.dir/src/sqlite3.c.o.d -o CMakeFiles/synopsis.dir/src/sqlite3.c.o -c /home/jstar/Desktop/github-nos3/components/syn/synopsis/src/sqlite3.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object apps/syn/CMakeFiles/synopsis.dir/src/sqlite3.c.o"
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/apps/syn && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT apps/syn/CMakeFiles/synopsis.dir/src/sqlite3.c.o -MF CMakeFiles/synopsis.dir/src/sqlite3.c.o.d -o CMakeFiles/synopsis.dir/src/sqlite3.c.o -c /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/syn/synopsis/src/sqlite3.c
 
 apps/syn/CMakeFiles/synopsis.dir/src/sqlite3.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/synopsis.dir/src/sqlite3.c.i"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/apps/syn && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jstar/Desktop/github-nos3/components/syn/synopsis/src/sqlite3.c > CMakeFiles/synopsis.dir/src/sqlite3.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/apps/syn && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/syn/synopsis/src/sqlite3.c > CMakeFiles/synopsis.dir/src/sqlite3.c.i
 
 apps/syn/CMakeFiles/synopsis.dir/src/sqlite3.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/synopsis.dir/src/sqlite3.c.s"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/apps/syn && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jstar/Desktop/github-nos3/components/syn/synopsis/src/sqlite3.c -o CMakeFiles/synopsis.dir/src/sqlite3.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/apps/syn && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/syn/synopsis/src/sqlite3.c -o CMakeFiles/synopsis.dir/src/sqlite3.c.s
 
 apps/syn/CMakeFiles/synopsis.dir/src/Sqlite3Statement.cpp.o: apps/syn/CMakeFiles/synopsis.dir/flags.make
-apps/syn/CMakeFiles/synopsis.dir/src/Sqlite3Statement.cpp.o: /home/jstar/Desktop/github-nos3/components/syn/synopsis/src/Sqlite3Statement.cpp
+apps/syn/CMakeFiles/synopsis.dir/src/Sqlite3Statement.cpp.o: /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/syn/synopsis/src/Sqlite3Statement.cpp
 apps/syn/CMakeFiles/synopsis.dir/src/Sqlite3Statement.cpp.o: apps/syn/CMakeFiles/synopsis.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object apps/syn/CMakeFiles/synopsis.dir/src/Sqlite3Statement.cpp.o"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/apps/syn && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT apps/syn/CMakeFiles/synopsis.dir/src/Sqlite3Statement.cpp.o -MF CMakeFiles/synopsis.dir/src/Sqlite3Statement.cpp.o.d -o CMakeFiles/synopsis.dir/src/Sqlite3Statement.cpp.o -c /home/jstar/Desktop/github-nos3/components/syn/synopsis/src/Sqlite3Statement.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object apps/syn/CMakeFiles/synopsis.dir/src/Sqlite3Statement.cpp.o"
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/apps/syn && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT apps/syn/CMakeFiles/synopsis.dir/src/Sqlite3Statement.cpp.o -MF CMakeFiles/synopsis.dir/src/Sqlite3Statement.cpp.o.d -o CMakeFiles/synopsis.dir/src/Sqlite3Statement.cpp.o -c /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/syn/synopsis/src/Sqlite3Statement.cpp
 
 apps/syn/CMakeFiles/synopsis.dir/src/Sqlite3Statement.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/synopsis.dir/src/Sqlite3Statement.cpp.i"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/apps/syn && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jstar/Desktop/github-nos3/components/syn/synopsis/src/Sqlite3Statement.cpp > CMakeFiles/synopsis.dir/src/Sqlite3Statement.cpp.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/apps/syn && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/syn/synopsis/src/Sqlite3Statement.cpp > CMakeFiles/synopsis.dir/src/Sqlite3Statement.cpp.i
 
 apps/syn/CMakeFiles/synopsis.dir/src/Sqlite3Statement.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/synopsis.dir/src/Sqlite3Statement.cpp.s"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/apps/syn && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jstar/Desktop/github-nos3/components/syn/synopsis/src/Sqlite3Statement.cpp -o CMakeFiles/synopsis.dir/src/Sqlite3Statement.cpp.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/apps/syn && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/syn/synopsis/src/Sqlite3Statement.cpp -o CMakeFiles/synopsis.dir/src/Sqlite3Statement.cpp.s
 
 apps/syn/CMakeFiles/synopsis.dir/src/synopsis.cpp.o: apps/syn/CMakeFiles/synopsis.dir/flags.make
-apps/syn/CMakeFiles/synopsis.dir/src/synopsis.cpp.o: /home/jstar/Desktop/github-nos3/components/syn/synopsis/src/synopsis.cpp
+apps/syn/CMakeFiles/synopsis.dir/src/synopsis.cpp.o: /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/syn/synopsis/src/synopsis.cpp
 apps/syn/CMakeFiles/synopsis.dir/src/synopsis.cpp.o: apps/syn/CMakeFiles/synopsis.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object apps/syn/CMakeFiles/synopsis.dir/src/synopsis.cpp.o"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/apps/syn && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT apps/syn/CMakeFiles/synopsis.dir/src/synopsis.cpp.o -MF CMakeFiles/synopsis.dir/src/synopsis.cpp.o.d -o CMakeFiles/synopsis.dir/src/synopsis.cpp.o -c /home/jstar/Desktop/github-nos3/components/syn/synopsis/src/synopsis.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object apps/syn/CMakeFiles/synopsis.dir/src/synopsis.cpp.o"
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/apps/syn && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT apps/syn/CMakeFiles/synopsis.dir/src/synopsis.cpp.o -MF CMakeFiles/synopsis.dir/src/synopsis.cpp.o.d -o CMakeFiles/synopsis.dir/src/synopsis.cpp.o -c /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/syn/synopsis/src/synopsis.cpp
 
 apps/syn/CMakeFiles/synopsis.dir/src/synopsis.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/synopsis.dir/src/synopsis.cpp.i"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/apps/syn && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jstar/Desktop/github-nos3/components/syn/synopsis/src/synopsis.cpp > CMakeFiles/synopsis.dir/src/synopsis.cpp.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/apps/syn && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/syn/synopsis/src/synopsis.cpp > CMakeFiles/synopsis.dir/src/synopsis.cpp.i
 
 apps/syn/CMakeFiles/synopsis.dir/src/synopsis.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/synopsis.dir/src/synopsis.cpp.s"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/apps/syn && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jstar/Desktop/github-nos3/components/syn/synopsis/src/synopsis.cpp -o CMakeFiles/synopsis.dir/src/synopsis.cpp.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/apps/syn && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/syn/synopsis/src/synopsis.cpp -o CMakeFiles/synopsis.dir/src/synopsis.cpp.s
 
 apps/syn/CMakeFiles/synopsis.dir/src/ASDS.cpp.o: apps/syn/CMakeFiles/synopsis.dir/flags.make
-apps/syn/CMakeFiles/synopsis.dir/src/ASDS.cpp.o: /home/jstar/Desktop/github-nos3/components/syn/synopsis/src/ASDS.cpp
+apps/syn/CMakeFiles/synopsis.dir/src/ASDS.cpp.o: /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/syn/synopsis/src/ASDS.cpp
 apps/syn/CMakeFiles/synopsis.dir/src/ASDS.cpp.o: apps/syn/CMakeFiles/synopsis.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object apps/syn/CMakeFiles/synopsis.dir/src/ASDS.cpp.o"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/apps/syn && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT apps/syn/CMakeFiles/synopsis.dir/src/ASDS.cpp.o -MF CMakeFiles/synopsis.dir/src/ASDS.cpp.o.d -o CMakeFiles/synopsis.dir/src/ASDS.cpp.o -c /home/jstar/Desktop/github-nos3/components/syn/synopsis/src/ASDS.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object apps/syn/CMakeFiles/synopsis.dir/src/ASDS.cpp.o"
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/apps/syn && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT apps/syn/CMakeFiles/synopsis.dir/src/ASDS.cpp.o -MF CMakeFiles/synopsis.dir/src/ASDS.cpp.o.d -o CMakeFiles/synopsis.dir/src/ASDS.cpp.o -c /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/syn/synopsis/src/ASDS.cpp
 
 apps/syn/CMakeFiles/synopsis.dir/src/ASDS.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/synopsis.dir/src/ASDS.cpp.i"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/apps/syn && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jstar/Desktop/github-nos3/components/syn/synopsis/src/ASDS.cpp > CMakeFiles/synopsis.dir/src/ASDS.cpp.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/apps/syn && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/syn/synopsis/src/ASDS.cpp > CMakeFiles/synopsis.dir/src/ASDS.cpp.i
 
 apps/syn/CMakeFiles/synopsis.dir/src/ASDS.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/synopsis.dir/src/ASDS.cpp.s"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/apps/syn && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jstar/Desktop/github-nos3/components/syn/synopsis/src/ASDS.cpp -o CMakeFiles/synopsis.dir/src/ASDS.cpp.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/apps/syn && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/syn/synopsis/src/ASDS.cpp -o CMakeFiles/synopsis.dir/src/ASDS.cpp.s
 
 apps/syn/CMakeFiles/synopsis.dir/src/DpMsg.cpp.o: apps/syn/CMakeFiles/synopsis.dir/flags.make
-apps/syn/CMakeFiles/synopsis.dir/src/DpMsg.cpp.o: /home/jstar/Desktop/github-nos3/components/syn/synopsis/src/DpMsg.cpp
+apps/syn/CMakeFiles/synopsis.dir/src/DpMsg.cpp.o: /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/syn/synopsis/src/DpMsg.cpp
 apps/syn/CMakeFiles/synopsis.dir/src/DpMsg.cpp.o: apps/syn/CMakeFiles/synopsis.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object apps/syn/CMakeFiles/synopsis.dir/src/DpMsg.cpp.o"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/apps/syn && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT apps/syn/CMakeFiles/synopsis.dir/src/DpMsg.cpp.o -MF CMakeFiles/synopsis.dir/src/DpMsg.cpp.o.d -o CMakeFiles/synopsis.dir/src/DpMsg.cpp.o -c /home/jstar/Desktop/github-nos3/components/syn/synopsis/src/DpMsg.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object apps/syn/CMakeFiles/synopsis.dir/src/DpMsg.cpp.o"
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/apps/syn && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT apps/syn/CMakeFiles/synopsis.dir/src/DpMsg.cpp.o -MF CMakeFiles/synopsis.dir/src/DpMsg.cpp.o.d -o CMakeFiles/synopsis.dir/src/DpMsg.cpp.o -c /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/syn/synopsis/src/DpMsg.cpp
 
 apps/syn/CMakeFiles/synopsis.dir/src/DpMsg.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/synopsis.dir/src/DpMsg.cpp.i"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/apps/syn && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jstar/Desktop/github-nos3/components/syn/synopsis/src/DpMsg.cpp > CMakeFiles/synopsis.dir/src/DpMsg.cpp.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/apps/syn && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/syn/synopsis/src/DpMsg.cpp > CMakeFiles/synopsis.dir/src/DpMsg.cpp.i
 
 apps/syn/CMakeFiles/synopsis.dir/src/DpMsg.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/synopsis.dir/src/DpMsg.cpp.s"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/apps/syn && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jstar/Desktop/github-nos3/components/syn/synopsis/src/DpMsg.cpp -o CMakeFiles/synopsis.dir/src/DpMsg.cpp.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/apps/syn && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/syn/synopsis/src/DpMsg.cpp -o CMakeFiles/synopsis.dir/src/DpMsg.cpp.s
 
 apps/syn/CMakeFiles/synopsis.dir/src/DpDbMsg.cpp.o: apps/syn/CMakeFiles/synopsis.dir/flags.make
-apps/syn/CMakeFiles/synopsis.dir/src/DpDbMsg.cpp.o: /home/jstar/Desktop/github-nos3/components/syn/synopsis/src/DpDbMsg.cpp
+apps/syn/CMakeFiles/synopsis.dir/src/DpDbMsg.cpp.o: /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/syn/synopsis/src/DpDbMsg.cpp
 apps/syn/CMakeFiles/synopsis.dir/src/DpDbMsg.cpp.o: apps/syn/CMakeFiles/synopsis.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object apps/syn/CMakeFiles/synopsis.dir/src/DpDbMsg.cpp.o"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/apps/syn && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT apps/syn/CMakeFiles/synopsis.dir/src/DpDbMsg.cpp.o -MF CMakeFiles/synopsis.dir/src/DpDbMsg.cpp.o.d -o CMakeFiles/synopsis.dir/src/DpDbMsg.cpp.o -c /home/jstar/Desktop/github-nos3/components/syn/synopsis/src/DpDbMsg.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object apps/syn/CMakeFiles/synopsis.dir/src/DpDbMsg.cpp.o"
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/apps/syn && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT apps/syn/CMakeFiles/synopsis.dir/src/DpDbMsg.cpp.o -MF CMakeFiles/synopsis.dir/src/DpDbMsg.cpp.o.d -o CMakeFiles/synopsis.dir/src/DpDbMsg.cpp.o -c /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/syn/synopsis/src/DpDbMsg.cpp
 
 apps/syn/CMakeFiles/synopsis.dir/src/DpDbMsg.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/synopsis.dir/src/DpDbMsg.cpp.i"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/apps/syn && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jstar/Desktop/github-nos3/components/syn/synopsis/src/DpDbMsg.cpp > CMakeFiles/synopsis.dir/src/DpDbMsg.cpp.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/apps/syn && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/syn/synopsis/src/DpDbMsg.cpp > CMakeFiles/synopsis.dir/src/DpDbMsg.cpp.i
 
 apps/syn/CMakeFiles/synopsis.dir/src/DpDbMsg.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/synopsis.dir/src/DpDbMsg.cpp.s"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/apps/syn && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jstar/Desktop/github-nos3/components/syn/synopsis/src/DpDbMsg.cpp -o CMakeFiles/synopsis.dir/src/DpDbMsg.cpp.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/apps/syn && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/syn/synopsis/src/DpDbMsg.cpp -o CMakeFiles/synopsis.dir/src/DpDbMsg.cpp.s
 
 apps/syn/CMakeFiles/synopsis.dir/src/PassthroughASDS.cpp.o: apps/syn/CMakeFiles/synopsis.dir/flags.make
-apps/syn/CMakeFiles/synopsis.dir/src/PassthroughASDS.cpp.o: /home/jstar/Desktop/github-nos3/components/syn/synopsis/src/PassthroughASDS.cpp
+apps/syn/CMakeFiles/synopsis.dir/src/PassthroughASDS.cpp.o: /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/syn/synopsis/src/PassthroughASDS.cpp
 apps/syn/CMakeFiles/synopsis.dir/src/PassthroughASDS.cpp.o: apps/syn/CMakeFiles/synopsis.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object apps/syn/CMakeFiles/synopsis.dir/src/PassthroughASDS.cpp.o"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/apps/syn && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT apps/syn/CMakeFiles/synopsis.dir/src/PassthroughASDS.cpp.o -MF CMakeFiles/synopsis.dir/src/PassthroughASDS.cpp.o.d -o CMakeFiles/synopsis.dir/src/PassthroughASDS.cpp.o -c /home/jstar/Desktop/github-nos3/components/syn/synopsis/src/PassthroughASDS.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object apps/syn/CMakeFiles/synopsis.dir/src/PassthroughASDS.cpp.o"
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/apps/syn && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT apps/syn/CMakeFiles/synopsis.dir/src/PassthroughASDS.cpp.o -MF CMakeFiles/synopsis.dir/src/PassthroughASDS.cpp.o.d -o CMakeFiles/synopsis.dir/src/PassthroughASDS.cpp.o -c /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/syn/synopsis/src/PassthroughASDS.cpp
 
 apps/syn/CMakeFiles/synopsis.dir/src/PassthroughASDS.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/synopsis.dir/src/PassthroughASDS.cpp.i"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/apps/syn && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jstar/Desktop/github-nos3/components/syn/synopsis/src/PassthroughASDS.cpp > CMakeFiles/synopsis.dir/src/PassthroughASDS.cpp.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/apps/syn && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/syn/synopsis/src/PassthroughASDS.cpp > CMakeFiles/synopsis.dir/src/PassthroughASDS.cpp.i
 
 apps/syn/CMakeFiles/synopsis.dir/src/PassthroughASDS.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/synopsis.dir/src/PassthroughASDS.cpp.s"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/apps/syn && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jstar/Desktop/github-nos3/components/syn/synopsis/src/PassthroughASDS.cpp -o CMakeFiles/synopsis.dir/src/PassthroughASDS.cpp.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/apps/syn && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/syn/synopsis/src/PassthroughASDS.cpp -o CMakeFiles/synopsis.dir/src/PassthroughASDS.cpp.s
 
 apps/syn/CMakeFiles/synopsis.dir/src/SqliteASDPDB.cpp.o: apps/syn/CMakeFiles/synopsis.dir/flags.make
-apps/syn/CMakeFiles/synopsis.dir/src/SqliteASDPDB.cpp.o: /home/jstar/Desktop/github-nos3/components/syn/synopsis/src/SqliteASDPDB.cpp
+apps/syn/CMakeFiles/synopsis.dir/src/SqliteASDPDB.cpp.o: /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/syn/synopsis/src/SqliteASDPDB.cpp
 apps/syn/CMakeFiles/synopsis.dir/src/SqliteASDPDB.cpp.o: apps/syn/CMakeFiles/synopsis.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object apps/syn/CMakeFiles/synopsis.dir/src/SqliteASDPDB.cpp.o"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/apps/syn && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT apps/syn/CMakeFiles/synopsis.dir/src/SqliteASDPDB.cpp.o -MF CMakeFiles/synopsis.dir/src/SqliteASDPDB.cpp.o.d -o CMakeFiles/synopsis.dir/src/SqliteASDPDB.cpp.o -c /home/jstar/Desktop/github-nos3/components/syn/synopsis/src/SqliteASDPDB.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object apps/syn/CMakeFiles/synopsis.dir/src/SqliteASDPDB.cpp.o"
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/apps/syn && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT apps/syn/CMakeFiles/synopsis.dir/src/SqliteASDPDB.cpp.o -MF CMakeFiles/synopsis.dir/src/SqliteASDPDB.cpp.o.d -o CMakeFiles/synopsis.dir/src/SqliteASDPDB.cpp.o -c /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/syn/synopsis/src/SqliteASDPDB.cpp
 
 apps/syn/CMakeFiles/synopsis.dir/src/SqliteASDPDB.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/synopsis.dir/src/SqliteASDPDB.cpp.i"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/apps/syn && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jstar/Desktop/github-nos3/components/syn/synopsis/src/SqliteASDPDB.cpp > CMakeFiles/synopsis.dir/src/SqliteASDPDB.cpp.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/apps/syn && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/syn/synopsis/src/SqliteASDPDB.cpp > CMakeFiles/synopsis.dir/src/SqliteASDPDB.cpp.i
 
 apps/syn/CMakeFiles/synopsis.dir/src/SqliteASDPDB.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/synopsis.dir/src/SqliteASDPDB.cpp.s"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/apps/syn && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jstar/Desktop/github-nos3/components/syn/synopsis/src/SqliteASDPDB.cpp -o CMakeFiles/synopsis.dir/src/SqliteASDPDB.cpp.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/apps/syn && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/syn/synopsis/src/SqliteASDPDB.cpp -o CMakeFiles/synopsis.dir/src/SqliteASDPDB.cpp.s
 
 apps/syn/CMakeFiles/synopsis.dir/src/StdLogger.cpp.o: apps/syn/CMakeFiles/synopsis.dir/flags.make
-apps/syn/CMakeFiles/synopsis.dir/src/StdLogger.cpp.o: /home/jstar/Desktop/github-nos3/components/syn/synopsis/src/StdLogger.cpp
+apps/syn/CMakeFiles/synopsis.dir/src/StdLogger.cpp.o: /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/syn/synopsis/src/StdLogger.cpp
 apps/syn/CMakeFiles/synopsis.dir/src/StdLogger.cpp.o: apps/syn/CMakeFiles/synopsis.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object apps/syn/CMakeFiles/synopsis.dir/src/StdLogger.cpp.o"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/apps/syn && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT apps/syn/CMakeFiles/synopsis.dir/src/StdLogger.cpp.o -MF CMakeFiles/synopsis.dir/src/StdLogger.cpp.o.d -o CMakeFiles/synopsis.dir/src/StdLogger.cpp.o -c /home/jstar/Desktop/github-nos3/components/syn/synopsis/src/StdLogger.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object apps/syn/CMakeFiles/synopsis.dir/src/StdLogger.cpp.o"
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/apps/syn && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT apps/syn/CMakeFiles/synopsis.dir/src/StdLogger.cpp.o -MF CMakeFiles/synopsis.dir/src/StdLogger.cpp.o.d -o CMakeFiles/synopsis.dir/src/StdLogger.cpp.o -c /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/syn/synopsis/src/StdLogger.cpp
 
 apps/syn/CMakeFiles/synopsis.dir/src/StdLogger.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/synopsis.dir/src/StdLogger.cpp.i"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/apps/syn && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jstar/Desktop/github-nos3/components/syn/synopsis/src/StdLogger.cpp > CMakeFiles/synopsis.dir/src/StdLogger.cpp.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/apps/syn && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/syn/synopsis/src/StdLogger.cpp > CMakeFiles/synopsis.dir/src/StdLogger.cpp.i
 
 apps/syn/CMakeFiles/synopsis.dir/src/StdLogger.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/synopsis.dir/src/StdLogger.cpp.s"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/apps/syn && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jstar/Desktop/github-nos3/components/syn/synopsis/src/StdLogger.cpp -o CMakeFiles/synopsis.dir/src/StdLogger.cpp.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/apps/syn && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/syn/synopsis/src/StdLogger.cpp -o CMakeFiles/synopsis.dir/src/StdLogger.cpp.s
 
 apps/syn/CMakeFiles/synopsis.dir/src/LinuxClock.cpp.o: apps/syn/CMakeFiles/synopsis.dir/flags.make
-apps/syn/CMakeFiles/synopsis.dir/src/LinuxClock.cpp.o: /home/jstar/Desktop/github-nos3/components/syn/synopsis/src/LinuxClock.cpp
+apps/syn/CMakeFiles/synopsis.dir/src/LinuxClock.cpp.o: /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/syn/synopsis/src/LinuxClock.cpp
 apps/syn/CMakeFiles/synopsis.dir/src/LinuxClock.cpp.o: apps/syn/CMakeFiles/synopsis.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object apps/syn/CMakeFiles/synopsis.dir/src/LinuxClock.cpp.o"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/apps/syn && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT apps/syn/CMakeFiles/synopsis.dir/src/LinuxClock.cpp.o -MF CMakeFiles/synopsis.dir/src/LinuxClock.cpp.o.d -o CMakeFiles/synopsis.dir/src/LinuxClock.cpp.o -c /home/jstar/Desktop/github-nos3/components/syn/synopsis/src/LinuxClock.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object apps/syn/CMakeFiles/synopsis.dir/src/LinuxClock.cpp.o"
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/apps/syn && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT apps/syn/CMakeFiles/synopsis.dir/src/LinuxClock.cpp.o -MF CMakeFiles/synopsis.dir/src/LinuxClock.cpp.o.d -o CMakeFiles/synopsis.dir/src/LinuxClock.cpp.o -c /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/syn/synopsis/src/LinuxClock.cpp
 
 apps/syn/CMakeFiles/synopsis.dir/src/LinuxClock.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/synopsis.dir/src/LinuxClock.cpp.i"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/apps/syn && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jstar/Desktop/github-nos3/components/syn/synopsis/src/LinuxClock.cpp > CMakeFiles/synopsis.dir/src/LinuxClock.cpp.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/apps/syn && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/syn/synopsis/src/LinuxClock.cpp > CMakeFiles/synopsis.dir/src/LinuxClock.cpp.i
 
 apps/syn/CMakeFiles/synopsis.dir/src/LinuxClock.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/synopsis.dir/src/LinuxClock.cpp.s"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/apps/syn && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jstar/Desktop/github-nos3/components/syn/synopsis/src/LinuxClock.cpp -o CMakeFiles/synopsis.dir/src/LinuxClock.cpp.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/apps/syn && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/syn/synopsis/src/LinuxClock.cpp -o CMakeFiles/synopsis.dir/src/LinuxClock.cpp.s
 
 apps/syn/CMakeFiles/synopsis.dir/src/Timer.cpp.o: apps/syn/CMakeFiles/synopsis.dir/flags.make
-apps/syn/CMakeFiles/synopsis.dir/src/Timer.cpp.o: /home/jstar/Desktop/github-nos3/components/syn/synopsis/src/Timer.cpp
+apps/syn/CMakeFiles/synopsis.dir/src/Timer.cpp.o: /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/syn/synopsis/src/Timer.cpp
 apps/syn/CMakeFiles/synopsis.dir/src/Timer.cpp.o: apps/syn/CMakeFiles/synopsis.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object apps/syn/CMakeFiles/synopsis.dir/src/Timer.cpp.o"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/apps/syn && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT apps/syn/CMakeFiles/synopsis.dir/src/Timer.cpp.o -MF CMakeFiles/synopsis.dir/src/Timer.cpp.o.d -o CMakeFiles/synopsis.dir/src/Timer.cpp.o -c /home/jstar/Desktop/github-nos3/components/syn/synopsis/src/Timer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object apps/syn/CMakeFiles/synopsis.dir/src/Timer.cpp.o"
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/apps/syn && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT apps/syn/CMakeFiles/synopsis.dir/src/Timer.cpp.o -MF CMakeFiles/synopsis.dir/src/Timer.cpp.o.d -o CMakeFiles/synopsis.dir/src/Timer.cpp.o -c /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/syn/synopsis/src/Timer.cpp
 
 apps/syn/CMakeFiles/synopsis.dir/src/Timer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/synopsis.dir/src/Timer.cpp.i"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/apps/syn && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jstar/Desktop/github-nos3/components/syn/synopsis/src/Timer.cpp > CMakeFiles/synopsis.dir/src/Timer.cpp.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/apps/syn && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/syn/synopsis/src/Timer.cpp > CMakeFiles/synopsis.dir/src/Timer.cpp.i
 
 apps/syn/CMakeFiles/synopsis.dir/src/Timer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/synopsis.dir/src/Timer.cpp.s"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/apps/syn && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jstar/Desktop/github-nos3/components/syn/synopsis/src/Timer.cpp -o CMakeFiles/synopsis.dir/src/Timer.cpp.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/apps/syn && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/syn/synopsis/src/Timer.cpp -o CMakeFiles/synopsis.dir/src/Timer.cpp.s
 
 apps/syn/CMakeFiles/synopsis.dir/src/RuleAST.cpp.o: apps/syn/CMakeFiles/synopsis.dir/flags.make
-apps/syn/CMakeFiles/synopsis.dir/src/RuleAST.cpp.o: /home/jstar/Desktop/github-nos3/components/syn/synopsis/src/RuleAST.cpp
+apps/syn/CMakeFiles/synopsis.dir/src/RuleAST.cpp.o: /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/syn/synopsis/src/RuleAST.cpp
 apps/syn/CMakeFiles/synopsis.dir/src/RuleAST.cpp.o: apps/syn/CMakeFiles/synopsis.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object apps/syn/CMakeFiles/synopsis.dir/src/RuleAST.cpp.o"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/apps/syn && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT apps/syn/CMakeFiles/synopsis.dir/src/RuleAST.cpp.o -MF CMakeFiles/synopsis.dir/src/RuleAST.cpp.o.d -o CMakeFiles/synopsis.dir/src/RuleAST.cpp.o -c /home/jstar/Desktop/github-nos3/components/syn/synopsis/src/RuleAST.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object apps/syn/CMakeFiles/synopsis.dir/src/RuleAST.cpp.o"
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/apps/syn && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT apps/syn/CMakeFiles/synopsis.dir/src/RuleAST.cpp.o -MF CMakeFiles/synopsis.dir/src/RuleAST.cpp.o.d -o CMakeFiles/synopsis.dir/src/RuleAST.cpp.o -c /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/syn/synopsis/src/RuleAST.cpp
 
 apps/syn/CMakeFiles/synopsis.dir/src/RuleAST.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/synopsis.dir/src/RuleAST.cpp.i"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/apps/syn && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jstar/Desktop/github-nos3/components/syn/synopsis/src/RuleAST.cpp > CMakeFiles/synopsis.dir/src/RuleAST.cpp.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/apps/syn && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/syn/synopsis/src/RuleAST.cpp > CMakeFiles/synopsis.dir/src/RuleAST.cpp.i
 
 apps/syn/CMakeFiles/synopsis.dir/src/RuleAST.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/synopsis.dir/src/RuleAST.cpp.s"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/apps/syn && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jstar/Desktop/github-nos3/components/syn/synopsis/src/RuleAST.cpp -o CMakeFiles/synopsis.dir/src/RuleAST.cpp.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/apps/syn && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/syn/synopsis/src/RuleAST.cpp -o CMakeFiles/synopsis.dir/src/RuleAST.cpp.s
 
 apps/syn/CMakeFiles/synopsis.dir/src/DownlinkPlanner.cpp.o: apps/syn/CMakeFiles/synopsis.dir/flags.make
-apps/syn/CMakeFiles/synopsis.dir/src/DownlinkPlanner.cpp.o: /home/jstar/Desktop/github-nos3/components/syn/synopsis/src/DownlinkPlanner.cpp
+apps/syn/CMakeFiles/synopsis.dir/src/DownlinkPlanner.cpp.o: /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/syn/synopsis/src/DownlinkPlanner.cpp
 apps/syn/CMakeFiles/synopsis.dir/src/DownlinkPlanner.cpp.o: apps/syn/CMakeFiles/synopsis.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object apps/syn/CMakeFiles/synopsis.dir/src/DownlinkPlanner.cpp.o"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/apps/syn && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT apps/syn/CMakeFiles/synopsis.dir/src/DownlinkPlanner.cpp.o -MF CMakeFiles/synopsis.dir/src/DownlinkPlanner.cpp.o.d -o CMakeFiles/synopsis.dir/src/DownlinkPlanner.cpp.o -c /home/jstar/Desktop/github-nos3/components/syn/synopsis/src/DownlinkPlanner.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object apps/syn/CMakeFiles/synopsis.dir/src/DownlinkPlanner.cpp.o"
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/apps/syn && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT apps/syn/CMakeFiles/synopsis.dir/src/DownlinkPlanner.cpp.o -MF CMakeFiles/synopsis.dir/src/DownlinkPlanner.cpp.o.d -o CMakeFiles/synopsis.dir/src/DownlinkPlanner.cpp.o -c /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/syn/synopsis/src/DownlinkPlanner.cpp
 
 apps/syn/CMakeFiles/synopsis.dir/src/DownlinkPlanner.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/synopsis.dir/src/DownlinkPlanner.cpp.i"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/apps/syn && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jstar/Desktop/github-nos3/components/syn/synopsis/src/DownlinkPlanner.cpp > CMakeFiles/synopsis.dir/src/DownlinkPlanner.cpp.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/apps/syn && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/syn/synopsis/src/DownlinkPlanner.cpp > CMakeFiles/synopsis.dir/src/DownlinkPlanner.cpp.i
 
 apps/syn/CMakeFiles/synopsis.dir/src/DownlinkPlanner.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/synopsis.dir/src/DownlinkPlanner.cpp.s"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/apps/syn && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jstar/Desktop/github-nos3/components/syn/synopsis/src/DownlinkPlanner.cpp -o CMakeFiles/synopsis.dir/src/DownlinkPlanner.cpp.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/apps/syn && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/syn/synopsis/src/DownlinkPlanner.cpp -o CMakeFiles/synopsis.dir/src/DownlinkPlanner.cpp.s
 
 apps/syn/CMakeFiles/synopsis.dir/src/MaxMarginalRelevanceDownlinkPlanner.cpp.o: apps/syn/CMakeFiles/synopsis.dir/flags.make
-apps/syn/CMakeFiles/synopsis.dir/src/MaxMarginalRelevanceDownlinkPlanner.cpp.o: /home/jstar/Desktop/github-nos3/components/syn/synopsis/src/MaxMarginalRelevanceDownlinkPlanner.cpp
+apps/syn/CMakeFiles/synopsis.dir/src/MaxMarginalRelevanceDownlinkPlanner.cpp.o: /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/syn/synopsis/src/MaxMarginalRelevanceDownlinkPlanner.cpp
 apps/syn/CMakeFiles/synopsis.dir/src/MaxMarginalRelevanceDownlinkPlanner.cpp.o: apps/syn/CMakeFiles/synopsis.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object apps/syn/CMakeFiles/synopsis.dir/src/MaxMarginalRelevanceDownlinkPlanner.cpp.o"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/apps/syn && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT apps/syn/CMakeFiles/synopsis.dir/src/MaxMarginalRelevanceDownlinkPlanner.cpp.o -MF CMakeFiles/synopsis.dir/src/MaxMarginalRelevanceDownlinkPlanner.cpp.o.d -o CMakeFiles/synopsis.dir/src/MaxMarginalRelevanceDownlinkPlanner.cpp.o -c /home/jstar/Desktop/github-nos3/components/syn/synopsis/src/MaxMarginalRelevanceDownlinkPlanner.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object apps/syn/CMakeFiles/synopsis.dir/src/MaxMarginalRelevanceDownlinkPlanner.cpp.o"
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/apps/syn && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT apps/syn/CMakeFiles/synopsis.dir/src/MaxMarginalRelevanceDownlinkPlanner.cpp.o -MF CMakeFiles/synopsis.dir/src/MaxMarginalRelevanceDownlinkPlanner.cpp.o.d -o CMakeFiles/synopsis.dir/src/MaxMarginalRelevanceDownlinkPlanner.cpp.o -c /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/syn/synopsis/src/MaxMarginalRelevanceDownlinkPlanner.cpp
 
 apps/syn/CMakeFiles/synopsis.dir/src/MaxMarginalRelevanceDownlinkPlanner.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/synopsis.dir/src/MaxMarginalRelevanceDownlinkPlanner.cpp.i"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/apps/syn && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jstar/Desktop/github-nos3/components/syn/synopsis/src/MaxMarginalRelevanceDownlinkPlanner.cpp > CMakeFiles/synopsis.dir/src/MaxMarginalRelevanceDownlinkPlanner.cpp.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/apps/syn && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/syn/synopsis/src/MaxMarginalRelevanceDownlinkPlanner.cpp > CMakeFiles/synopsis.dir/src/MaxMarginalRelevanceDownlinkPlanner.cpp.i
 
 apps/syn/CMakeFiles/synopsis.dir/src/MaxMarginalRelevanceDownlinkPlanner.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/synopsis.dir/src/MaxMarginalRelevanceDownlinkPlanner.cpp.s"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/apps/syn && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jstar/Desktop/github-nos3/components/syn/synopsis/src/MaxMarginalRelevanceDownlinkPlanner.cpp -o CMakeFiles/synopsis.dir/src/MaxMarginalRelevanceDownlinkPlanner.cpp.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/apps/syn && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/syn/synopsis/src/MaxMarginalRelevanceDownlinkPlanner.cpp -o CMakeFiles/synopsis.dir/src/MaxMarginalRelevanceDownlinkPlanner.cpp.s
 
 apps/syn/CMakeFiles/synopsis.dir/src/Similarity.cpp.o: apps/syn/CMakeFiles/synopsis.dir/flags.make
-apps/syn/CMakeFiles/synopsis.dir/src/Similarity.cpp.o: /home/jstar/Desktop/github-nos3/components/syn/synopsis/src/Similarity.cpp
+apps/syn/CMakeFiles/synopsis.dir/src/Similarity.cpp.o: /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/syn/synopsis/src/Similarity.cpp
 apps/syn/CMakeFiles/synopsis.dir/src/Similarity.cpp.o: apps/syn/CMakeFiles/synopsis.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object apps/syn/CMakeFiles/synopsis.dir/src/Similarity.cpp.o"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/apps/syn && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT apps/syn/CMakeFiles/synopsis.dir/src/Similarity.cpp.o -MF CMakeFiles/synopsis.dir/src/Similarity.cpp.o.d -o CMakeFiles/synopsis.dir/src/Similarity.cpp.o -c /home/jstar/Desktop/github-nos3/components/syn/synopsis/src/Similarity.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object apps/syn/CMakeFiles/synopsis.dir/src/Similarity.cpp.o"
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/apps/syn && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT apps/syn/CMakeFiles/synopsis.dir/src/Similarity.cpp.o -MF CMakeFiles/synopsis.dir/src/Similarity.cpp.o.d -o CMakeFiles/synopsis.dir/src/Similarity.cpp.o -c /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/syn/synopsis/src/Similarity.cpp
 
 apps/syn/CMakeFiles/synopsis.dir/src/Similarity.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/synopsis.dir/src/Similarity.cpp.i"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/apps/syn && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jstar/Desktop/github-nos3/components/syn/synopsis/src/Similarity.cpp > CMakeFiles/synopsis.dir/src/Similarity.cpp.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/apps/syn && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/syn/synopsis/src/Similarity.cpp > CMakeFiles/synopsis.dir/src/Similarity.cpp.i
 
 apps/syn/CMakeFiles/synopsis.dir/src/Similarity.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/synopsis.dir/src/Similarity.cpp.s"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/apps/syn && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jstar/Desktop/github-nos3/components/syn/synopsis/src/Similarity.cpp -o CMakeFiles/synopsis.dir/src/Similarity.cpp.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/apps/syn && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/syn/synopsis/src/Similarity.cpp -o CMakeFiles/synopsis.dir/src/Similarity.cpp.s
 
 apps/syn/CMakeFiles/synopsis.dir/src/itc_synopsis_bridge.cpp.o: apps/syn/CMakeFiles/synopsis.dir/flags.make
-apps/syn/CMakeFiles/synopsis.dir/src/itc_synopsis_bridge.cpp.o: /home/jstar/Desktop/github-nos3/components/syn/synopsis/src/itc_synopsis_bridge.cpp
+apps/syn/CMakeFiles/synopsis.dir/src/itc_synopsis_bridge.cpp.o: /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/syn/synopsis/src/itc_synopsis_bridge.cpp
 apps/syn/CMakeFiles/synopsis.dir/src/itc_synopsis_bridge.cpp.o: apps/syn/CMakeFiles/synopsis.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object apps/syn/CMakeFiles/synopsis.dir/src/itc_synopsis_bridge.cpp.o"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/apps/syn && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT apps/syn/CMakeFiles/synopsis.dir/src/itc_synopsis_bridge.cpp.o -MF CMakeFiles/synopsis.dir/src/itc_synopsis_bridge.cpp.o.d -o CMakeFiles/synopsis.dir/src/itc_synopsis_bridge.cpp.o -c /home/jstar/Desktop/github-nos3/components/syn/synopsis/src/itc_synopsis_bridge.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object apps/syn/CMakeFiles/synopsis.dir/src/itc_synopsis_bridge.cpp.o"
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/apps/syn && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT apps/syn/CMakeFiles/synopsis.dir/src/itc_synopsis_bridge.cpp.o -MF CMakeFiles/synopsis.dir/src/itc_synopsis_bridge.cpp.o.d -o CMakeFiles/synopsis.dir/src/itc_synopsis_bridge.cpp.o -c /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/syn/synopsis/src/itc_synopsis_bridge.cpp
 
 apps/syn/CMakeFiles/synopsis.dir/src/itc_synopsis_bridge.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/synopsis.dir/src/itc_synopsis_bridge.cpp.i"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/apps/syn && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jstar/Desktop/github-nos3/components/syn/synopsis/src/itc_synopsis_bridge.cpp > CMakeFiles/synopsis.dir/src/itc_synopsis_bridge.cpp.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/apps/syn && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/syn/synopsis/src/itc_synopsis_bridge.cpp > CMakeFiles/synopsis.dir/src/itc_synopsis_bridge.cpp.i
 
 apps/syn/CMakeFiles/synopsis.dir/src/itc_synopsis_bridge.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/synopsis.dir/src/itc_synopsis_bridge.cpp.s"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/apps/syn && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jstar/Desktop/github-nos3/components/syn/synopsis/src/itc_synopsis_bridge.cpp -o CMakeFiles/synopsis.dir/src/itc_synopsis_bridge.cpp.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/apps/syn && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/syn/synopsis/src/itc_synopsis_bridge.cpp -o CMakeFiles/synopsis.dir/src/itc_synopsis_bridge.cpp.s
 
 # Object files for target synopsis
 synopsis_OBJECTS = \
@@ -333,18 +333,18 @@ apps/syn/libsynopsis.so: apps/syn/CMakeFiles/synopsis.dir/src/Similarity.cpp.o
 apps/syn/libsynopsis.so: apps/syn/CMakeFiles/synopsis.dir/src/itc_synopsis_bridge.cpp.o
 apps/syn/libsynopsis.so: apps/syn/CMakeFiles/synopsis.dir/build.make
 apps/syn/libsynopsis.so: apps/syn/CMakeFiles/synopsis.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Linking CXX shared library libsynopsis.so"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/apps/syn && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/synopsis.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Linking CXX shared library libsynopsis.so"
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/apps/syn && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/synopsis.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 apps/syn/CMakeFiles/synopsis.dir/build: apps/syn/libsynopsis.so
 .PHONY : apps/syn/CMakeFiles/synopsis.dir/build
 
 apps/syn/CMakeFiles/synopsis.dir/clean:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/apps/syn && $(CMAKE_COMMAND) -P CMakeFiles/synopsis.dir/cmake_clean.cmake
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/apps/syn && $(CMAKE_COMMAND) -P CMakeFiles/synopsis.dir/cmake_clean.cmake
 .PHONY : apps/syn/CMakeFiles/synopsis.dir/clean
 
 apps/syn/CMakeFiles/synopsis.dir/depend:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/jstar/Desktop/github-nos3/fsw/cfe /home/jstar/Desktop/github-nos3/components/syn/synopsis /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/apps/syn /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/apps/syn/CMakeFiles/synopsis.dir/DependInfo.cmake --color=$(COLOR)
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/cfe /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/syn/synopsis /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/apps/syn /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/apps/syn/CMakeFiles/synopsis.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : apps/syn/CMakeFiles/synopsis.dir/depend
 

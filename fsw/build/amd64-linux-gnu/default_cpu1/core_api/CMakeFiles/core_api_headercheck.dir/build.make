@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/jstar/Desktop/github-nos3/fsw/cfe
+CMAKE_SOURCE_DIR = /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/cfe
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1
+CMAKE_BINARY_DIR = /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1
 
 # Include any dependencies generated for this target.
 include core_api/CMakeFiles/core_api_headercheck.dir/depend.make
@@ -72,184 +72,184 @@ include core_api/CMakeFiles/core_api_headercheck.dir/flags.make
 core_api/CMakeFiles/core_api_headercheck.dir/src/check_cfe_resourceid.h.c.o: core_api/CMakeFiles/core_api_headercheck.dir/flags.make
 core_api/CMakeFiles/core_api_headercheck.dir/src/check_cfe_resourceid.h.c.o: core_api/src/check_cfe_resourceid.h.c
 core_api/CMakeFiles/core_api_headercheck.dir/src/check_cfe_resourceid.h.c.o: core_api/CMakeFiles/core_api_headercheck.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object core_api/CMakeFiles/core_api_headercheck.dir/src/check_cfe_resourceid.h.c.o"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/core_api && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT core_api/CMakeFiles/core_api_headercheck.dir/src/check_cfe_resourceid.h.c.o -MF CMakeFiles/core_api_headercheck.dir/src/check_cfe_resourceid.h.c.o.d -o CMakeFiles/core_api_headercheck.dir/src/check_cfe_resourceid.h.c.o -c /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/core_api/src/check_cfe_resourceid.h.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object core_api/CMakeFiles/core_api_headercheck.dir/src/check_cfe_resourceid.h.c.o"
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/core_api && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT core_api/CMakeFiles/core_api_headercheck.dir/src/check_cfe_resourceid.h.c.o -MF CMakeFiles/core_api_headercheck.dir/src/check_cfe_resourceid.h.c.o.d -o CMakeFiles/core_api_headercheck.dir/src/check_cfe_resourceid.h.c.o -c /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/core_api/src/check_cfe_resourceid.h.c
 
 core_api/CMakeFiles/core_api_headercheck.dir/src/check_cfe_resourceid.h.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/core_api_headercheck.dir/src/check_cfe_resourceid.h.c.i"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/core_api && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/core_api/src/check_cfe_resourceid.h.c > CMakeFiles/core_api_headercheck.dir/src/check_cfe_resourceid.h.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/core_api && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/core_api/src/check_cfe_resourceid.h.c > CMakeFiles/core_api_headercheck.dir/src/check_cfe_resourceid.h.c.i
 
 core_api/CMakeFiles/core_api_headercheck.dir/src/check_cfe_resourceid.h.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/core_api_headercheck.dir/src/check_cfe_resourceid.h.c.s"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/core_api && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/core_api/src/check_cfe_resourceid.h.c -o CMakeFiles/core_api_headercheck.dir/src/check_cfe_resourceid.h.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/core_api && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/core_api/src/check_cfe_resourceid.h.c -o CMakeFiles/core_api_headercheck.dir/src/check_cfe_resourceid.h.c.s
 
 core_api/CMakeFiles/core_api_headercheck.dir/src/check_cfe_endian.h.c.o: core_api/CMakeFiles/core_api_headercheck.dir/flags.make
 core_api/CMakeFiles/core_api_headercheck.dir/src/check_cfe_endian.h.c.o: core_api/src/check_cfe_endian.h.c
 core_api/CMakeFiles/core_api_headercheck.dir/src/check_cfe_endian.h.c.o: core_api/CMakeFiles/core_api_headercheck.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object core_api/CMakeFiles/core_api_headercheck.dir/src/check_cfe_endian.h.c.o"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/core_api && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT core_api/CMakeFiles/core_api_headercheck.dir/src/check_cfe_endian.h.c.o -MF CMakeFiles/core_api_headercheck.dir/src/check_cfe_endian.h.c.o.d -o CMakeFiles/core_api_headercheck.dir/src/check_cfe_endian.h.c.o -c /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/core_api/src/check_cfe_endian.h.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object core_api/CMakeFiles/core_api_headercheck.dir/src/check_cfe_endian.h.c.o"
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/core_api && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT core_api/CMakeFiles/core_api_headercheck.dir/src/check_cfe_endian.h.c.o -MF CMakeFiles/core_api_headercheck.dir/src/check_cfe_endian.h.c.o.d -o CMakeFiles/core_api_headercheck.dir/src/check_cfe_endian.h.c.o -c /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/core_api/src/check_cfe_endian.h.c
 
 core_api/CMakeFiles/core_api_headercheck.dir/src/check_cfe_endian.h.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/core_api_headercheck.dir/src/check_cfe_endian.h.c.i"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/core_api && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/core_api/src/check_cfe_endian.h.c > CMakeFiles/core_api_headercheck.dir/src/check_cfe_endian.h.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/core_api && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/core_api/src/check_cfe_endian.h.c > CMakeFiles/core_api_headercheck.dir/src/check_cfe_endian.h.c.i
 
 core_api/CMakeFiles/core_api_headercheck.dir/src/check_cfe_endian.h.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/core_api_headercheck.dir/src/check_cfe_endian.h.c.s"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/core_api && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/core_api/src/check_cfe_endian.h.c -o CMakeFiles/core_api_headercheck.dir/src/check_cfe_endian.h.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/core_api && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/core_api/src/check_cfe_endian.h.c -o CMakeFiles/core_api_headercheck.dir/src/check_cfe_endian.h.c.s
 
 core_api/CMakeFiles/core_api_headercheck.dir/src/check_cfe_msg.h.c.o: core_api/CMakeFiles/core_api_headercheck.dir/flags.make
 core_api/CMakeFiles/core_api_headercheck.dir/src/check_cfe_msg.h.c.o: core_api/src/check_cfe_msg.h.c
 core_api/CMakeFiles/core_api_headercheck.dir/src/check_cfe_msg.h.c.o: core_api/CMakeFiles/core_api_headercheck.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object core_api/CMakeFiles/core_api_headercheck.dir/src/check_cfe_msg.h.c.o"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/core_api && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT core_api/CMakeFiles/core_api_headercheck.dir/src/check_cfe_msg.h.c.o -MF CMakeFiles/core_api_headercheck.dir/src/check_cfe_msg.h.c.o.d -o CMakeFiles/core_api_headercheck.dir/src/check_cfe_msg.h.c.o -c /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/core_api/src/check_cfe_msg.h.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object core_api/CMakeFiles/core_api_headercheck.dir/src/check_cfe_msg.h.c.o"
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/core_api && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT core_api/CMakeFiles/core_api_headercheck.dir/src/check_cfe_msg.h.c.o -MF CMakeFiles/core_api_headercheck.dir/src/check_cfe_msg.h.c.o.d -o CMakeFiles/core_api_headercheck.dir/src/check_cfe_msg.h.c.o -c /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/core_api/src/check_cfe_msg.h.c
 
 core_api/CMakeFiles/core_api_headercheck.dir/src/check_cfe_msg.h.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/core_api_headercheck.dir/src/check_cfe_msg.h.c.i"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/core_api && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/core_api/src/check_cfe_msg.h.c > CMakeFiles/core_api_headercheck.dir/src/check_cfe_msg.h.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/core_api && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/core_api/src/check_cfe_msg.h.c > CMakeFiles/core_api_headercheck.dir/src/check_cfe_msg.h.c.i
 
 core_api/CMakeFiles/core_api_headercheck.dir/src/check_cfe_msg.h.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/core_api_headercheck.dir/src/check_cfe_msg.h.c.s"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/core_api && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/core_api/src/check_cfe_msg.h.c -o CMakeFiles/core_api_headercheck.dir/src/check_cfe_msg.h.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/core_api && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/core_api/src/check_cfe_msg.h.c -o CMakeFiles/core_api_headercheck.dir/src/check_cfe_msg.h.c.s
 
 core_api/CMakeFiles/core_api_headercheck.dir/src/check_cfe_error.h.c.o: core_api/CMakeFiles/core_api_headercheck.dir/flags.make
 core_api/CMakeFiles/core_api_headercheck.dir/src/check_cfe_error.h.c.o: core_api/src/check_cfe_error.h.c
 core_api/CMakeFiles/core_api_headercheck.dir/src/check_cfe_error.h.c.o: core_api/CMakeFiles/core_api_headercheck.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object core_api/CMakeFiles/core_api_headercheck.dir/src/check_cfe_error.h.c.o"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/core_api && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT core_api/CMakeFiles/core_api_headercheck.dir/src/check_cfe_error.h.c.o -MF CMakeFiles/core_api_headercheck.dir/src/check_cfe_error.h.c.o.d -o CMakeFiles/core_api_headercheck.dir/src/check_cfe_error.h.c.o -c /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/core_api/src/check_cfe_error.h.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object core_api/CMakeFiles/core_api_headercheck.dir/src/check_cfe_error.h.c.o"
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/core_api && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT core_api/CMakeFiles/core_api_headercheck.dir/src/check_cfe_error.h.c.o -MF CMakeFiles/core_api_headercheck.dir/src/check_cfe_error.h.c.o.d -o CMakeFiles/core_api_headercheck.dir/src/check_cfe_error.h.c.o -c /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/core_api/src/check_cfe_error.h.c
 
 core_api/CMakeFiles/core_api_headercheck.dir/src/check_cfe_error.h.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/core_api_headercheck.dir/src/check_cfe_error.h.c.i"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/core_api && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/core_api/src/check_cfe_error.h.c > CMakeFiles/core_api_headercheck.dir/src/check_cfe_error.h.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/core_api && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/core_api/src/check_cfe_error.h.c > CMakeFiles/core_api_headercheck.dir/src/check_cfe_error.h.c.i
 
 core_api/CMakeFiles/core_api_headercheck.dir/src/check_cfe_error.h.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/core_api_headercheck.dir/src/check_cfe_error.h.c.s"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/core_api && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/core_api/src/check_cfe_error.h.c -o CMakeFiles/core_api_headercheck.dir/src/check_cfe_error.h.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/core_api && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/core_api/src/check_cfe_error.h.c -o CMakeFiles/core_api_headercheck.dir/src/check_cfe_error.h.c.s
 
 core_api/CMakeFiles/core_api_headercheck.dir/src/check_cfe.h.c.o: core_api/CMakeFiles/core_api_headercheck.dir/flags.make
 core_api/CMakeFiles/core_api_headercheck.dir/src/check_cfe.h.c.o: core_api/src/check_cfe.h.c
 core_api/CMakeFiles/core_api_headercheck.dir/src/check_cfe.h.c.o: core_api/CMakeFiles/core_api_headercheck.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object core_api/CMakeFiles/core_api_headercheck.dir/src/check_cfe.h.c.o"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/core_api && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT core_api/CMakeFiles/core_api_headercheck.dir/src/check_cfe.h.c.o -MF CMakeFiles/core_api_headercheck.dir/src/check_cfe.h.c.o.d -o CMakeFiles/core_api_headercheck.dir/src/check_cfe.h.c.o -c /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/core_api/src/check_cfe.h.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object core_api/CMakeFiles/core_api_headercheck.dir/src/check_cfe.h.c.o"
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/core_api && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT core_api/CMakeFiles/core_api_headercheck.dir/src/check_cfe.h.c.o -MF CMakeFiles/core_api_headercheck.dir/src/check_cfe.h.c.o.d -o CMakeFiles/core_api_headercheck.dir/src/check_cfe.h.c.o -c /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/core_api/src/check_cfe.h.c
 
 core_api/CMakeFiles/core_api_headercheck.dir/src/check_cfe.h.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/core_api_headercheck.dir/src/check_cfe.h.c.i"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/core_api && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/core_api/src/check_cfe.h.c > CMakeFiles/core_api_headercheck.dir/src/check_cfe.h.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/core_api && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/core_api/src/check_cfe.h.c > CMakeFiles/core_api_headercheck.dir/src/check_cfe.h.c.i
 
 core_api/CMakeFiles/core_api_headercheck.dir/src/check_cfe.h.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/core_api_headercheck.dir/src/check_cfe.h.c.s"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/core_api && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/core_api/src/check_cfe.h.c -o CMakeFiles/core_api_headercheck.dir/src/check_cfe.h.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/core_api && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/core_api/src/check_cfe.h.c -o CMakeFiles/core_api_headercheck.dir/src/check_cfe.h.c.s
 
 core_api/CMakeFiles/core_api_headercheck.dir/src/check_cfe_version.h.c.o: core_api/CMakeFiles/core_api_headercheck.dir/flags.make
 core_api/CMakeFiles/core_api_headercheck.dir/src/check_cfe_version.h.c.o: core_api/src/check_cfe_version.h.c
 core_api/CMakeFiles/core_api_headercheck.dir/src/check_cfe_version.h.c.o: core_api/CMakeFiles/core_api_headercheck.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object core_api/CMakeFiles/core_api_headercheck.dir/src/check_cfe_version.h.c.o"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/core_api && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT core_api/CMakeFiles/core_api_headercheck.dir/src/check_cfe_version.h.c.o -MF CMakeFiles/core_api_headercheck.dir/src/check_cfe_version.h.c.o.d -o CMakeFiles/core_api_headercheck.dir/src/check_cfe_version.h.c.o -c /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/core_api/src/check_cfe_version.h.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object core_api/CMakeFiles/core_api_headercheck.dir/src/check_cfe_version.h.c.o"
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/core_api && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT core_api/CMakeFiles/core_api_headercheck.dir/src/check_cfe_version.h.c.o -MF CMakeFiles/core_api_headercheck.dir/src/check_cfe_version.h.c.o.d -o CMakeFiles/core_api_headercheck.dir/src/check_cfe_version.h.c.o -c /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/core_api/src/check_cfe_version.h.c
 
 core_api/CMakeFiles/core_api_headercheck.dir/src/check_cfe_version.h.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/core_api_headercheck.dir/src/check_cfe_version.h.c.i"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/core_api && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/core_api/src/check_cfe_version.h.c > CMakeFiles/core_api_headercheck.dir/src/check_cfe_version.h.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/core_api && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/core_api/src/check_cfe_version.h.c > CMakeFiles/core_api_headercheck.dir/src/check_cfe_version.h.c.i
 
 core_api/CMakeFiles/core_api_headercheck.dir/src/check_cfe_version.h.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/core_api_headercheck.dir/src/check_cfe_version.h.c.s"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/core_api && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/core_api/src/check_cfe_version.h.c -o CMakeFiles/core_api_headercheck.dir/src/check_cfe_version.h.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/core_api && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/core_api/src/check_cfe_version.h.c -o CMakeFiles/core_api_headercheck.dir/src/check_cfe_version.h.c.s
 
 core_api/CMakeFiles/core_api_headercheck.dir/src/check_cfe_es_extern_typedefs.h.c.o: core_api/CMakeFiles/core_api_headercheck.dir/flags.make
 core_api/CMakeFiles/core_api_headercheck.dir/src/check_cfe_es_extern_typedefs.h.c.o: core_api/src/check_cfe_es_extern_typedefs.h.c
 core_api/CMakeFiles/core_api_headercheck.dir/src/check_cfe_es_extern_typedefs.h.c.o: core_api/CMakeFiles/core_api_headercheck.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object core_api/CMakeFiles/core_api_headercheck.dir/src/check_cfe_es_extern_typedefs.h.c.o"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/core_api && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT core_api/CMakeFiles/core_api_headercheck.dir/src/check_cfe_es_extern_typedefs.h.c.o -MF CMakeFiles/core_api_headercheck.dir/src/check_cfe_es_extern_typedefs.h.c.o.d -o CMakeFiles/core_api_headercheck.dir/src/check_cfe_es_extern_typedefs.h.c.o -c /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/core_api/src/check_cfe_es_extern_typedefs.h.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object core_api/CMakeFiles/core_api_headercheck.dir/src/check_cfe_es_extern_typedefs.h.c.o"
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/core_api && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT core_api/CMakeFiles/core_api_headercheck.dir/src/check_cfe_es_extern_typedefs.h.c.o -MF CMakeFiles/core_api_headercheck.dir/src/check_cfe_es_extern_typedefs.h.c.o.d -o CMakeFiles/core_api_headercheck.dir/src/check_cfe_es_extern_typedefs.h.c.o -c /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/core_api/src/check_cfe_es_extern_typedefs.h.c
 
 core_api/CMakeFiles/core_api_headercheck.dir/src/check_cfe_es_extern_typedefs.h.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/core_api_headercheck.dir/src/check_cfe_es_extern_typedefs.h.c.i"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/core_api && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/core_api/src/check_cfe_es_extern_typedefs.h.c > CMakeFiles/core_api_headercheck.dir/src/check_cfe_es_extern_typedefs.h.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/core_api && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/core_api/src/check_cfe_es_extern_typedefs.h.c > CMakeFiles/core_api_headercheck.dir/src/check_cfe_es_extern_typedefs.h.c.i
 
 core_api/CMakeFiles/core_api_headercheck.dir/src/check_cfe_es_extern_typedefs.h.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/core_api_headercheck.dir/src/check_cfe_es_extern_typedefs.h.c.s"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/core_api && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/core_api/src/check_cfe_es_extern_typedefs.h.c -o CMakeFiles/core_api_headercheck.dir/src/check_cfe_es_extern_typedefs.h.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/core_api && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/core_api/src/check_cfe_es_extern_typedefs.h.c -o CMakeFiles/core_api_headercheck.dir/src/check_cfe_es_extern_typedefs.h.c.s
 
 core_api/CMakeFiles/core_api_headercheck.dir/src/check_cfe_evs_extern_typedefs.h.c.o: core_api/CMakeFiles/core_api_headercheck.dir/flags.make
 core_api/CMakeFiles/core_api_headercheck.dir/src/check_cfe_evs_extern_typedefs.h.c.o: core_api/src/check_cfe_evs_extern_typedefs.h.c
 core_api/CMakeFiles/core_api_headercheck.dir/src/check_cfe_evs_extern_typedefs.h.c.o: core_api/CMakeFiles/core_api_headercheck.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object core_api/CMakeFiles/core_api_headercheck.dir/src/check_cfe_evs_extern_typedefs.h.c.o"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/core_api && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT core_api/CMakeFiles/core_api_headercheck.dir/src/check_cfe_evs_extern_typedefs.h.c.o -MF CMakeFiles/core_api_headercheck.dir/src/check_cfe_evs_extern_typedefs.h.c.o.d -o CMakeFiles/core_api_headercheck.dir/src/check_cfe_evs_extern_typedefs.h.c.o -c /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/core_api/src/check_cfe_evs_extern_typedefs.h.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object core_api/CMakeFiles/core_api_headercheck.dir/src/check_cfe_evs_extern_typedefs.h.c.o"
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/core_api && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT core_api/CMakeFiles/core_api_headercheck.dir/src/check_cfe_evs_extern_typedefs.h.c.o -MF CMakeFiles/core_api_headercheck.dir/src/check_cfe_evs_extern_typedefs.h.c.o.d -o CMakeFiles/core_api_headercheck.dir/src/check_cfe_evs_extern_typedefs.h.c.o -c /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/core_api/src/check_cfe_evs_extern_typedefs.h.c
 
 core_api/CMakeFiles/core_api_headercheck.dir/src/check_cfe_evs_extern_typedefs.h.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/core_api_headercheck.dir/src/check_cfe_evs_extern_typedefs.h.c.i"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/core_api && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/core_api/src/check_cfe_evs_extern_typedefs.h.c > CMakeFiles/core_api_headercheck.dir/src/check_cfe_evs_extern_typedefs.h.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/core_api && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/core_api/src/check_cfe_evs_extern_typedefs.h.c > CMakeFiles/core_api_headercheck.dir/src/check_cfe_evs_extern_typedefs.h.c.i
 
 core_api/CMakeFiles/core_api_headercheck.dir/src/check_cfe_evs_extern_typedefs.h.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/core_api_headercheck.dir/src/check_cfe_evs_extern_typedefs.h.c.s"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/core_api && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/core_api/src/check_cfe_evs_extern_typedefs.h.c -o CMakeFiles/core_api_headercheck.dir/src/check_cfe_evs_extern_typedefs.h.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/core_api && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/core_api/src/check_cfe_evs_extern_typedefs.h.c -o CMakeFiles/core_api_headercheck.dir/src/check_cfe_evs_extern_typedefs.h.c.s
 
 core_api/CMakeFiles/core_api_headercheck.dir/src/check_cfe_fs_extern_typedefs.h.c.o: core_api/CMakeFiles/core_api_headercheck.dir/flags.make
 core_api/CMakeFiles/core_api_headercheck.dir/src/check_cfe_fs_extern_typedefs.h.c.o: core_api/src/check_cfe_fs_extern_typedefs.h.c
 core_api/CMakeFiles/core_api_headercheck.dir/src/check_cfe_fs_extern_typedefs.h.c.o: core_api/CMakeFiles/core_api_headercheck.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object core_api/CMakeFiles/core_api_headercheck.dir/src/check_cfe_fs_extern_typedefs.h.c.o"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/core_api && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT core_api/CMakeFiles/core_api_headercheck.dir/src/check_cfe_fs_extern_typedefs.h.c.o -MF CMakeFiles/core_api_headercheck.dir/src/check_cfe_fs_extern_typedefs.h.c.o.d -o CMakeFiles/core_api_headercheck.dir/src/check_cfe_fs_extern_typedefs.h.c.o -c /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/core_api/src/check_cfe_fs_extern_typedefs.h.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object core_api/CMakeFiles/core_api_headercheck.dir/src/check_cfe_fs_extern_typedefs.h.c.o"
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/core_api && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT core_api/CMakeFiles/core_api_headercheck.dir/src/check_cfe_fs_extern_typedefs.h.c.o -MF CMakeFiles/core_api_headercheck.dir/src/check_cfe_fs_extern_typedefs.h.c.o.d -o CMakeFiles/core_api_headercheck.dir/src/check_cfe_fs_extern_typedefs.h.c.o -c /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/core_api/src/check_cfe_fs_extern_typedefs.h.c
 
 core_api/CMakeFiles/core_api_headercheck.dir/src/check_cfe_fs_extern_typedefs.h.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/core_api_headercheck.dir/src/check_cfe_fs_extern_typedefs.h.c.i"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/core_api && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/core_api/src/check_cfe_fs_extern_typedefs.h.c > CMakeFiles/core_api_headercheck.dir/src/check_cfe_fs_extern_typedefs.h.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/core_api && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/core_api/src/check_cfe_fs_extern_typedefs.h.c > CMakeFiles/core_api_headercheck.dir/src/check_cfe_fs_extern_typedefs.h.c.i
 
 core_api/CMakeFiles/core_api_headercheck.dir/src/check_cfe_fs_extern_typedefs.h.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/core_api_headercheck.dir/src/check_cfe_fs_extern_typedefs.h.c.s"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/core_api && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/core_api/src/check_cfe_fs_extern_typedefs.h.c -o CMakeFiles/core_api_headercheck.dir/src/check_cfe_fs_extern_typedefs.h.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/core_api && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/core_api/src/check_cfe_fs_extern_typedefs.h.c -o CMakeFiles/core_api_headercheck.dir/src/check_cfe_fs_extern_typedefs.h.c.s
 
 core_api/CMakeFiles/core_api_headercheck.dir/src/check_cfe_sb_extern_typedefs.h.c.o: core_api/CMakeFiles/core_api_headercheck.dir/flags.make
 core_api/CMakeFiles/core_api_headercheck.dir/src/check_cfe_sb_extern_typedefs.h.c.o: core_api/src/check_cfe_sb_extern_typedefs.h.c
 core_api/CMakeFiles/core_api_headercheck.dir/src/check_cfe_sb_extern_typedefs.h.c.o: core_api/CMakeFiles/core_api_headercheck.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object core_api/CMakeFiles/core_api_headercheck.dir/src/check_cfe_sb_extern_typedefs.h.c.o"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/core_api && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT core_api/CMakeFiles/core_api_headercheck.dir/src/check_cfe_sb_extern_typedefs.h.c.o -MF CMakeFiles/core_api_headercheck.dir/src/check_cfe_sb_extern_typedefs.h.c.o.d -o CMakeFiles/core_api_headercheck.dir/src/check_cfe_sb_extern_typedefs.h.c.o -c /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/core_api/src/check_cfe_sb_extern_typedefs.h.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object core_api/CMakeFiles/core_api_headercheck.dir/src/check_cfe_sb_extern_typedefs.h.c.o"
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/core_api && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT core_api/CMakeFiles/core_api_headercheck.dir/src/check_cfe_sb_extern_typedefs.h.c.o -MF CMakeFiles/core_api_headercheck.dir/src/check_cfe_sb_extern_typedefs.h.c.o.d -o CMakeFiles/core_api_headercheck.dir/src/check_cfe_sb_extern_typedefs.h.c.o -c /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/core_api/src/check_cfe_sb_extern_typedefs.h.c
 
 core_api/CMakeFiles/core_api_headercheck.dir/src/check_cfe_sb_extern_typedefs.h.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/core_api_headercheck.dir/src/check_cfe_sb_extern_typedefs.h.c.i"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/core_api && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/core_api/src/check_cfe_sb_extern_typedefs.h.c > CMakeFiles/core_api_headercheck.dir/src/check_cfe_sb_extern_typedefs.h.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/core_api && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/core_api/src/check_cfe_sb_extern_typedefs.h.c > CMakeFiles/core_api_headercheck.dir/src/check_cfe_sb_extern_typedefs.h.c.i
 
 core_api/CMakeFiles/core_api_headercheck.dir/src/check_cfe_sb_extern_typedefs.h.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/core_api_headercheck.dir/src/check_cfe_sb_extern_typedefs.h.c.s"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/core_api && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/core_api/src/check_cfe_sb_extern_typedefs.h.c -o CMakeFiles/core_api_headercheck.dir/src/check_cfe_sb_extern_typedefs.h.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/core_api && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/core_api/src/check_cfe_sb_extern_typedefs.h.c -o CMakeFiles/core_api_headercheck.dir/src/check_cfe_sb_extern_typedefs.h.c.s
 
 core_api/CMakeFiles/core_api_headercheck.dir/src/check_cfe_tbl_extern_typedefs.h.c.o: core_api/CMakeFiles/core_api_headercheck.dir/flags.make
 core_api/CMakeFiles/core_api_headercheck.dir/src/check_cfe_tbl_extern_typedefs.h.c.o: core_api/src/check_cfe_tbl_extern_typedefs.h.c
 core_api/CMakeFiles/core_api_headercheck.dir/src/check_cfe_tbl_extern_typedefs.h.c.o: core_api/CMakeFiles/core_api_headercheck.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object core_api/CMakeFiles/core_api_headercheck.dir/src/check_cfe_tbl_extern_typedefs.h.c.o"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/core_api && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT core_api/CMakeFiles/core_api_headercheck.dir/src/check_cfe_tbl_extern_typedefs.h.c.o -MF CMakeFiles/core_api_headercheck.dir/src/check_cfe_tbl_extern_typedefs.h.c.o.d -o CMakeFiles/core_api_headercheck.dir/src/check_cfe_tbl_extern_typedefs.h.c.o -c /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/core_api/src/check_cfe_tbl_extern_typedefs.h.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object core_api/CMakeFiles/core_api_headercheck.dir/src/check_cfe_tbl_extern_typedefs.h.c.o"
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/core_api && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT core_api/CMakeFiles/core_api_headercheck.dir/src/check_cfe_tbl_extern_typedefs.h.c.o -MF CMakeFiles/core_api_headercheck.dir/src/check_cfe_tbl_extern_typedefs.h.c.o.d -o CMakeFiles/core_api_headercheck.dir/src/check_cfe_tbl_extern_typedefs.h.c.o -c /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/core_api/src/check_cfe_tbl_extern_typedefs.h.c
 
 core_api/CMakeFiles/core_api_headercheck.dir/src/check_cfe_tbl_extern_typedefs.h.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/core_api_headercheck.dir/src/check_cfe_tbl_extern_typedefs.h.c.i"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/core_api && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/core_api/src/check_cfe_tbl_extern_typedefs.h.c > CMakeFiles/core_api_headercheck.dir/src/check_cfe_tbl_extern_typedefs.h.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/core_api && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/core_api/src/check_cfe_tbl_extern_typedefs.h.c > CMakeFiles/core_api_headercheck.dir/src/check_cfe_tbl_extern_typedefs.h.c.i
 
 core_api/CMakeFiles/core_api_headercheck.dir/src/check_cfe_tbl_extern_typedefs.h.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/core_api_headercheck.dir/src/check_cfe_tbl_extern_typedefs.h.c.s"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/core_api && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/core_api/src/check_cfe_tbl_extern_typedefs.h.c -o CMakeFiles/core_api_headercheck.dir/src/check_cfe_tbl_extern_typedefs.h.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/core_api && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/core_api/src/check_cfe_tbl_extern_typedefs.h.c -o CMakeFiles/core_api_headercheck.dir/src/check_cfe_tbl_extern_typedefs.h.c.s
 
 core_api/CMakeFiles/core_api_headercheck.dir/src/check_cfe_time_extern_typedefs.h.c.o: core_api/CMakeFiles/core_api_headercheck.dir/flags.make
 core_api/CMakeFiles/core_api_headercheck.dir/src/check_cfe_time_extern_typedefs.h.c.o: core_api/src/check_cfe_time_extern_typedefs.h.c
 core_api/CMakeFiles/core_api_headercheck.dir/src/check_cfe_time_extern_typedefs.h.c.o: core_api/CMakeFiles/core_api_headercheck.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object core_api/CMakeFiles/core_api_headercheck.dir/src/check_cfe_time_extern_typedefs.h.c.o"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/core_api && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT core_api/CMakeFiles/core_api_headercheck.dir/src/check_cfe_time_extern_typedefs.h.c.o -MF CMakeFiles/core_api_headercheck.dir/src/check_cfe_time_extern_typedefs.h.c.o.d -o CMakeFiles/core_api_headercheck.dir/src/check_cfe_time_extern_typedefs.h.c.o -c /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/core_api/src/check_cfe_time_extern_typedefs.h.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object core_api/CMakeFiles/core_api_headercheck.dir/src/check_cfe_time_extern_typedefs.h.c.o"
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/core_api && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT core_api/CMakeFiles/core_api_headercheck.dir/src/check_cfe_time_extern_typedefs.h.c.o -MF CMakeFiles/core_api_headercheck.dir/src/check_cfe_time_extern_typedefs.h.c.o.d -o CMakeFiles/core_api_headercheck.dir/src/check_cfe_time_extern_typedefs.h.c.o -c /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/core_api/src/check_cfe_time_extern_typedefs.h.c
 
 core_api/CMakeFiles/core_api_headercheck.dir/src/check_cfe_time_extern_typedefs.h.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/core_api_headercheck.dir/src/check_cfe_time_extern_typedefs.h.c.i"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/core_api && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/core_api/src/check_cfe_time_extern_typedefs.h.c > CMakeFiles/core_api_headercheck.dir/src/check_cfe_time_extern_typedefs.h.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/core_api && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/core_api/src/check_cfe_time_extern_typedefs.h.c > CMakeFiles/core_api_headercheck.dir/src/check_cfe_time_extern_typedefs.h.c.i
 
 core_api/CMakeFiles/core_api_headercheck.dir/src/check_cfe_time_extern_typedefs.h.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/core_api_headercheck.dir/src/check_cfe_time_extern_typedefs.h.c.s"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/core_api && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/core_api/src/check_cfe_time_extern_typedefs.h.c -o CMakeFiles/core_api_headercheck.dir/src/check_cfe_time_extern_typedefs.h.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/core_api && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/core_api/src/check_cfe_time_extern_typedefs.h.c -o CMakeFiles/core_api_headercheck.dir/src/check_cfe_time_extern_typedefs.h.c.s
 
 core_api/CMakeFiles/core_api_headercheck.dir/src/check_cfe_tbl_filedef.h.c.o: core_api/CMakeFiles/core_api_headercheck.dir/flags.make
 core_api/CMakeFiles/core_api_headercheck.dir/src/check_cfe_tbl_filedef.h.c.o: core_api/src/check_cfe_tbl_filedef.h.c
 core_api/CMakeFiles/core_api_headercheck.dir/src/check_cfe_tbl_filedef.h.c.o: core_api/CMakeFiles/core_api_headercheck.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object core_api/CMakeFiles/core_api_headercheck.dir/src/check_cfe_tbl_filedef.h.c.o"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/core_api && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT core_api/CMakeFiles/core_api_headercheck.dir/src/check_cfe_tbl_filedef.h.c.o -MF CMakeFiles/core_api_headercheck.dir/src/check_cfe_tbl_filedef.h.c.o.d -o CMakeFiles/core_api_headercheck.dir/src/check_cfe_tbl_filedef.h.c.o -c /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/core_api/src/check_cfe_tbl_filedef.h.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object core_api/CMakeFiles/core_api_headercheck.dir/src/check_cfe_tbl_filedef.h.c.o"
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/core_api && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT core_api/CMakeFiles/core_api_headercheck.dir/src/check_cfe_tbl_filedef.h.c.o -MF CMakeFiles/core_api_headercheck.dir/src/check_cfe_tbl_filedef.h.c.o.d -o CMakeFiles/core_api_headercheck.dir/src/check_cfe_tbl_filedef.h.c.o -c /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/core_api/src/check_cfe_tbl_filedef.h.c
 
 core_api/CMakeFiles/core_api_headercheck.dir/src/check_cfe_tbl_filedef.h.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/core_api_headercheck.dir/src/check_cfe_tbl_filedef.h.c.i"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/core_api && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/core_api/src/check_cfe_tbl_filedef.h.c > CMakeFiles/core_api_headercheck.dir/src/check_cfe_tbl_filedef.h.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/core_api && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/core_api/src/check_cfe_tbl_filedef.h.c > CMakeFiles/core_api_headercheck.dir/src/check_cfe_tbl_filedef.h.c.i
 
 core_api/CMakeFiles/core_api_headercheck.dir/src/check_cfe_tbl_filedef.h.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/core_api_headercheck.dir/src/check_cfe_tbl_filedef.h.c.s"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/core_api && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/core_api/src/check_cfe_tbl_filedef.h.c -o CMakeFiles/core_api_headercheck.dir/src/check_cfe_tbl_filedef.h.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/core_api && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/core_api/src/check_cfe_tbl_filedef.h.c -o CMakeFiles/core_api_headercheck.dir/src/check_cfe_tbl_filedef.h.c.s
 
 # Object files for target core_api_headercheck
 core_api_headercheck_OBJECTS = \
@@ -285,19 +285,19 @@ core_api/libcore_api_headercheck.a: core_api/CMakeFiles/core_api_headercheck.dir
 core_api/libcore_api_headercheck.a: core_api/CMakeFiles/core_api_headercheck.dir/src/check_cfe_tbl_filedef.h.c.o
 core_api/libcore_api_headercheck.a: core_api/CMakeFiles/core_api_headercheck.dir/build.make
 core_api/libcore_api_headercheck.a: core_api/CMakeFiles/core_api_headercheck.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Linking C static library libcore_api_headercheck.a"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/core_api && $(CMAKE_COMMAND) -P CMakeFiles/core_api_headercheck.dir/cmake_clean_target.cmake
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/core_api && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/core_api_headercheck.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Linking C static library libcore_api_headercheck.a"
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/core_api && $(CMAKE_COMMAND) -P CMakeFiles/core_api_headercheck.dir/cmake_clean_target.cmake
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/core_api && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/core_api_headercheck.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 core_api/CMakeFiles/core_api_headercheck.dir/build: core_api/libcore_api_headercheck.a
 .PHONY : core_api/CMakeFiles/core_api_headercheck.dir/build
 
 core_api/CMakeFiles/core_api_headercheck.dir/clean:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/core_api && $(CMAKE_COMMAND) -P CMakeFiles/core_api_headercheck.dir/cmake_clean.cmake
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/core_api && $(CMAKE_COMMAND) -P CMakeFiles/core_api_headercheck.dir/cmake_clean.cmake
 .PHONY : core_api/CMakeFiles/core_api_headercheck.dir/clean
 
 core_api/CMakeFiles/core_api_headercheck.dir/depend:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/jstar/Desktop/github-nos3/fsw/cfe /home/jstar/Desktop/github-nos3/fsw/cfe/modules/core_api /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/core_api /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/core_api/CMakeFiles/core_api_headercheck.dir/DependInfo.cmake --color=$(COLOR)
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/cfe /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/cfe/modules/core_api /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/core_api /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/core_api/CMakeFiles/core_api_headercheck.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : core_api/CMakeFiles/core_api_headercheck.dir/depend
 

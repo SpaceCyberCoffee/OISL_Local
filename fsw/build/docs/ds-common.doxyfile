@@ -3,7 +3,7 @@
 #---------------------------------------------------------------------------
 
 # Include front material followed by everything in fsw
-INPUT      += /home/jstar/Desktop/github-nos3/fsw/apps/ds/docs/dox_src/cfs_ds.dox
-INPUT      += /home/jstar/Desktop/github-nos3/fsw/apps/ds/fsw
+INPUT      += /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/apps/ds/docs/dox_src/cfs_ds.dox
+INPUT      += /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/apps/ds/fsw
 
-IMAGE_PATH += /home/jstar/Desktop/github-nos3/fsw/apps/ds/docs/dox_src
+IMAGE_PATH += /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/apps/ds/docs/dox_src

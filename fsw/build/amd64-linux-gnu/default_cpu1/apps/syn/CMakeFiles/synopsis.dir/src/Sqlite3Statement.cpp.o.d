@@ -1,7 +1,7 @@
 apps/syn/CMakeFiles/synopsis.dir/src/Sqlite3Statement.cpp.o: \
- /home/jstar/Desktop/github-nos3/components/syn/synopsis/src/Sqlite3Statement.cpp \
+ /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/syn/synopsis/src/Sqlite3Statement.cpp \
  /usr/include/stdc-predef.h \
- /home/jstar/Desktop/github-nos3/components/syn/synopsis/include/Sqlite3Statement.hpp \
+ /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/syn/synopsis/include/Sqlite3Statement.hpp \
  /usr/include/c++/11/string \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -128,4 +128,4 @@ apps/syn/CMakeFiles/synopsis.dir/src/Sqlite3Statement.cpp.o: \
  /usr/include/c++/11/bits/functional_hash.h \
  /usr/include/c++/11/bits/hash_bytes.h \
  /usr/include/c++/11/bits/basic_string.tcc \
- /home/jstar/Desktop/github-nos3/components/syn/synopsis/include/sqlite3.h
+ /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/syn/synopsis/include/sqlite3.h

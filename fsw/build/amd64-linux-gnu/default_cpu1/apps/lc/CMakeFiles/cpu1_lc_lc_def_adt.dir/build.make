@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/jstar/Desktop/github-nos3/fsw/cfe
+CMAKE_SOURCE_DIR = /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/cfe
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1
+CMAKE_BINARY_DIR = /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1
 
 # Include any dependencies generated for this target.
 include apps/lc/CMakeFiles/cpu1_lc_lc_def_adt.dir/depend.make
@@ -70,18 +70,18 @@ include apps/lc/CMakeFiles/cpu1_lc_lc_def_adt.dir/progress.make
 include apps/lc/CMakeFiles/cpu1_lc_lc_def_adt.dir/flags.make
 
 apps/lc/CMakeFiles/cpu1_lc_lc_def_adt.dir/fsw/tables/lc_def_adt.c.o: apps/lc/CMakeFiles/cpu1_lc_lc_def_adt.dir/flags.make
-apps/lc/CMakeFiles/cpu1_lc_lc_def_adt.dir/fsw/tables/lc_def_adt.c.o: /home/jstar/Desktop/github-nos3/fsw/apps/lc/fsw/tables/lc_def_adt.c
+apps/lc/CMakeFiles/cpu1_lc_lc_def_adt.dir/fsw/tables/lc_def_adt.c.o: /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/apps/lc/fsw/tables/lc_def_adt.c
 apps/lc/CMakeFiles/cpu1_lc_lc_def_adt.dir/fsw/tables/lc_def_adt.c.o: apps/lc/CMakeFiles/cpu1_lc_lc_def_adt.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object apps/lc/CMakeFiles/cpu1_lc_lc_def_adt.dir/fsw/tables/lc_def_adt.c.o"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/apps/lc && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT apps/lc/CMakeFiles/cpu1_lc_lc_def_adt.dir/fsw/tables/lc_def_adt.c.o -MF CMakeFiles/cpu1_lc_lc_def_adt.dir/fsw/tables/lc_def_adt.c.o.d -o CMakeFiles/cpu1_lc_lc_def_adt.dir/fsw/tables/lc_def_adt.c.o -c /home/jstar/Desktop/github-nos3/fsw/apps/lc/fsw/tables/lc_def_adt.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object apps/lc/CMakeFiles/cpu1_lc_lc_def_adt.dir/fsw/tables/lc_def_adt.c.o"
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/apps/lc && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT apps/lc/CMakeFiles/cpu1_lc_lc_def_adt.dir/fsw/tables/lc_def_adt.c.o -MF CMakeFiles/cpu1_lc_lc_def_adt.dir/fsw/tables/lc_def_adt.c.o.d -o CMakeFiles/cpu1_lc_lc_def_adt.dir/fsw/tables/lc_def_adt.c.o -c /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/apps/lc/fsw/tables/lc_def_adt.c
 
 apps/lc/CMakeFiles/cpu1_lc_lc_def_adt.dir/fsw/tables/lc_def_adt.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cpu1_lc_lc_def_adt.dir/fsw/tables/lc_def_adt.c.i"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/apps/lc && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jstar/Desktop/github-nos3/fsw/apps/lc/fsw/tables/lc_def_adt.c > CMakeFiles/cpu1_lc_lc_def_adt.dir/fsw/tables/lc_def_adt.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/apps/lc && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/apps/lc/fsw/tables/lc_def_adt.c > CMakeFiles/cpu1_lc_lc_def_adt.dir/fsw/tables/lc_def_adt.c.i
 
 apps/lc/CMakeFiles/cpu1_lc_lc_def_adt.dir/fsw/tables/lc_def_adt.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cpu1_lc_lc_def_adt.dir/fsw/tables/lc_def_adt.c.s"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/apps/lc && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jstar/Desktop/github-nos3/fsw/apps/lc/fsw/tables/lc_def_adt.c -o CMakeFiles/cpu1_lc_lc_def_adt.dir/fsw/tables/lc_def_adt.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/apps/lc && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/apps/lc/fsw/tables/lc_def_adt.c -o CMakeFiles/cpu1_lc_lc_def_adt.dir/fsw/tables/lc_def_adt.c.s
 
 # Object files for target cpu1_lc_lc_def_adt
 cpu1_lc_lc_def_adt_OBJECTS = \
@@ -93,19 +93,19 @@ cpu1_lc_lc_def_adt_EXTERNAL_OBJECTS =
 apps/lc/libcpu1_lc_lc_def_adt.a: apps/lc/CMakeFiles/cpu1_lc_lc_def_adt.dir/fsw/tables/lc_def_adt.c.o
 apps/lc/libcpu1_lc_lc_def_adt.a: apps/lc/CMakeFiles/cpu1_lc_lc_def_adt.dir/build.make
 apps/lc/libcpu1_lc_lc_def_adt.a: apps/lc/CMakeFiles/cpu1_lc_lc_def_adt.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C static library libcpu1_lc_lc_def_adt.a"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/apps/lc && $(CMAKE_COMMAND) -P CMakeFiles/cpu1_lc_lc_def_adt.dir/cmake_clean_target.cmake
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/apps/lc && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/cpu1_lc_lc_def_adt.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C static library libcpu1_lc_lc_def_adt.a"
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/apps/lc && $(CMAKE_COMMAND) -P CMakeFiles/cpu1_lc_lc_def_adt.dir/cmake_clean_target.cmake
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/apps/lc && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/cpu1_lc_lc_def_adt.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 apps/lc/CMakeFiles/cpu1_lc_lc_def_adt.dir/build: apps/lc/libcpu1_lc_lc_def_adt.a
 .PHONY : apps/lc/CMakeFiles/cpu1_lc_lc_def_adt.dir/build
 
 apps/lc/CMakeFiles/cpu1_lc_lc_def_adt.dir/clean:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/apps/lc && $(CMAKE_COMMAND) -P CMakeFiles/cpu1_lc_lc_def_adt.dir/cmake_clean.cmake
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/apps/lc && $(CMAKE_COMMAND) -P CMakeFiles/cpu1_lc_lc_def_adt.dir/cmake_clean.cmake
 .PHONY : apps/lc/CMakeFiles/cpu1_lc_lc_def_adt.dir/clean
 
 apps/lc/CMakeFiles/cpu1_lc_lc_def_adt.dir/depend:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/jstar/Desktop/github-nos3/fsw/cfe /home/jstar/Desktop/github-nos3/fsw/apps/lc /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/apps/lc /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/apps/lc/CMakeFiles/cpu1_lc_lc_def_adt.dir/DependInfo.cmake --color=$(COLOR)
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/cfe /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/apps/lc /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/apps/lc /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/apps/lc/CMakeFiles/cpu1_lc_lc_def_adt.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : apps/lc/CMakeFiles/cpu1_lc_lc_def_adt.dir/depend
 

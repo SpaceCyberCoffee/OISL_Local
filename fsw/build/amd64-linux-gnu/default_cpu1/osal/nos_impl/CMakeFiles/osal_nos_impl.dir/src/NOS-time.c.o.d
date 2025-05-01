@@ -1,5 +1,5 @@
 osal/nos_impl/CMakeFiles/osal_nos_impl.dir/src/NOS-time.c.o: \
- /home/jstar/Desktop/github-nos3/fsw/osal/src/os/nos/src/NOS-time.c \
+ /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/src/os/nos/src/NOS-time.c \
  /usr/include/stdc-predef.h /usr/include/errno.h /usr/include/features.h \
  /usr/include/features-time64.h \
  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
@@ -74,9 +74,9 @@ osal/nos_impl/CMakeFiles/osal_nos_impl.dir/src/NOS-time.c.o: \
  /usr/include/x86_64-linux-gnu/bits/types/struct_sigstack.h \
  /usr/include/x86_64-linux-gnu/bits/sigthread.h \
  /usr/include/x86_64-linux-gnu/bits/signal_ext.h \
- /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/osal/inc/osconfig.h \
- /home/jstar/Desktop/github-nos3/fsw/osal/src/os/nos/../posix/inc/os-impl-timebase.h \
- /home/jstar/Desktop/github-nos3/fsw/osal/src/os/nos/inc/NOS-time.h \
+ /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/osal/inc/osconfig.h \
+ /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/src/os/nos/../posix/inc/os-impl-timebase.h \
+ /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal/src/os/nos/inc/NOS-time.h \
  /usr/include/Client/CInterface.h /usr/include/Client/visibility.hpp \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \

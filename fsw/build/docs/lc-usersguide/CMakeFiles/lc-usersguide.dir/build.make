@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/jstar/Desktop/github-nos3/fsw/cfe
+CMAKE_SOURCE_DIR = /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/cfe
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/jstar/Desktop/github-nos3/fsw/build
+CMAKE_BINARY_DIR = /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build
 
 # Utility rule file for lc-usersguide.
 
@@ -67,11 +67,11 @@ include docs/lc-usersguide/CMakeFiles/lc-usersguide.dir/compiler_depend.make
 include docs/lc-usersguide/CMakeFiles/lc-usersguide.dir/progress.make
 
 docs/lc-usersguide/CMakeFiles/lc-usersguide: docs/lc-usersguide/ALWAYSBUILD
-	cd /home/jstar/Desktop/github-nos3/fsw/build/docs/lc-usersguide && echo LC\ UsersGuide:\ file:///home/jstar/Desktop/github-nos3/fsw/build/docs/lc-usersguide/html/index.html
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/docs/lc-usersguide && echo LC\ UsersGuide:\ file:///mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/docs/lc-usersguide/html/index.html
 
 docs/lc-usersguide/html/index.html:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/jstar/Desktop/github-nos3/fsw/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating html/index.html, ALWAYSBUILD"
-	cd /home/jstar/Desktop/github-nos3/fsw/build/docs/lc-usersguide && doxygen /home/jstar/Desktop/github-nos3/fsw/build/docs/lc-usersguide/lc-usersguide.doxyfile
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating html/index.html, ALWAYSBUILD"
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/docs/lc-usersguide && doxygen /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/docs/lc-usersguide/lc-usersguide.doxyfile
 
 docs/lc-usersguide/ALWAYSBUILD: docs/lc-usersguide/html/index.html
 	@$(CMAKE_COMMAND) -E touch_nocreate docs/lc-usersguide/ALWAYSBUILD
@@ -87,10 +87,10 @@ docs/lc-usersguide/CMakeFiles/lc-usersguide.dir/build: lc-usersguide
 .PHONY : docs/lc-usersguide/CMakeFiles/lc-usersguide.dir/build
 
 docs/lc-usersguide/CMakeFiles/lc-usersguide.dir/clean:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/docs/lc-usersguide && $(CMAKE_COMMAND) -P CMakeFiles/lc-usersguide.dir/cmake_clean.cmake
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/docs/lc-usersguide && $(CMAKE_COMMAND) -P CMakeFiles/lc-usersguide.dir/cmake_clean.cmake
 .PHONY : docs/lc-usersguide/CMakeFiles/lc-usersguide.dir/clean
 
 docs/lc-usersguide/CMakeFiles/lc-usersguide.dir/depend:
-	cd /home/jstar/Desktop/github-nos3/fsw/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/jstar/Desktop/github-nos3/fsw/cfe /home/jstar/Desktop/github-nos3/fsw/apps/lc/docs/dox_src /home/jstar/Desktop/github-nos3/fsw/build /home/jstar/Desktop/github-nos3/fsw/build/docs/lc-usersguide /home/jstar/Desktop/github-nos3/fsw/build/docs/lc-usersguide/CMakeFiles/lc-usersguide.dir/DependInfo.cmake --color=$(COLOR)
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/cfe /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/apps/lc/docs/dox_src /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/docs/lc-usersguide /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/docs/lc-usersguide/CMakeFiles/lc-usersguide.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : docs/lc-usersguide/CMakeFiles/lc-usersguide.dir/depend
 

@@ -3,17 +3,17 @@
 #---------------------------------------------------------------------------
 
 # Allow overrides
-@INCLUDE_PATH          = /home/jstar/Desktop/github-nos3/fsw
+@INCLUDE_PATH          = /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw
 
 # Common setup
-@INCLUDE               = /home/jstar/Desktop/github-nos3/fsw/build/docs/cf-common.doxyfile
+@INCLUDE               = /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/docs/cf-common.doxyfile
 
 # OSAL and cfe to resolve references and provide default settings
-@INCLUDE               = /home/jstar/Desktop/github-nos3/fsw/build/docs/cfe-common.doxyfile
-@INCLUDE               = /home/jstar/Desktop/github-nos3/fsw/build/docs/osal-common.doxyfile
+@INCLUDE               = /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/docs/cfe-common.doxyfile
+@INCLUDE               = /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/docs/osal-common.doxyfile
 
 # Use sample definitions for generic users guide
-INPUT                 += /home/jstar/Desktop/github-nos3/fsw/cfe/cmake/sample_defs
+INPUT                 += /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/cfe/cmake/sample_defs
 
 PROJECT_NAME           = "CF User's Guide"
 WARN_LOGFILE           = cf-usersguide-warnings.log

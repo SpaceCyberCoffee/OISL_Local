@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/jstar/Desktop/github-nos3/sims
+CMAKE_SOURCE_DIR = /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/sims
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/jstar/Desktop/github-nos3/sims/build
+CMAKE_BINARY_DIR = /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/sims/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -132,14 +132,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/jstar/Desktop/github-nos3/sims/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/jstar/Desktop/github-nos3/sims/build/CMakeFiles /home/jstar/Desktop/github-nos3/sims/build/sim_terminal//CMakeFiles/progress.marks
-	cd /home/jstar/Desktop/github-nos3/sims/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sim_terminal/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/jstar/Desktop/github-nos3/sims/build/CMakeFiles 0
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/sims/build && $(CMAKE_COMMAND) -E cmake_progress_start /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/sims/build/CMakeFiles /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/sims/build/sim_terminal//CMakeFiles/progress.marks
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/sims/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sim_terminal/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/sims/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/jstar/Desktop/github-nos3/sims/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sim_terminal/clean
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/sims/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sim_terminal/clean
 .PHONY : clean
 
 # The main clean target
@@ -148,22 +148,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/jstar/Desktop/github-nos3/sims/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sim_terminal/preinstall
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/sims/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sim_terminal/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/jstar/Desktop/github-nos3/sims/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sim_terminal/preinstall
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/sims/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sim_terminal/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/jstar/Desktop/github-nos3/sims/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/sims/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 sim_terminal/CMakeFiles/sim_terminal.dir/rule:
-	cd /home/jstar/Desktop/github-nos3/sims/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sim_terminal/CMakeFiles/sim_terminal.dir/rule
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/sims/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sim_terminal/CMakeFiles/sim_terminal.dir/rule
 .PHONY : sim_terminal/CMakeFiles/sim_terminal.dir/rule
 
 # Convenience name for target.
@@ -172,7 +172,7 @@ sim_terminal: sim_terminal/CMakeFiles/sim_terminal.dir/rule
 
 # fast build rule for target.
 sim_terminal/fast:
-	cd /home/jstar/Desktop/github-nos3/sims/build && $(MAKE) $(MAKESILENT) -f sim_terminal/CMakeFiles/sim_terminal.dir/build.make sim_terminal/CMakeFiles/sim_terminal.dir/build
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/sims/build && $(MAKE) $(MAKESILENT) -f sim_terminal/CMakeFiles/sim_terminal.dir/build.make sim_terminal/CMakeFiles/sim_terminal.dir/build
 .PHONY : sim_terminal/fast
 
 src/bus_connections.o: src/bus_connections.cpp.o
@@ -180,7 +180,7 @@ src/bus_connections.o: src/bus_connections.cpp.o
 
 # target to build an object file
 src/bus_connections.cpp.o:
-	cd /home/jstar/Desktop/github-nos3/sims/build && $(MAKE) $(MAKESILENT) -f sim_terminal/CMakeFiles/sim_terminal.dir/build.make sim_terminal/CMakeFiles/sim_terminal.dir/src/bus_connections.cpp.o
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/sims/build && $(MAKE) $(MAKESILENT) -f sim_terminal/CMakeFiles/sim_terminal.dir/build.make sim_terminal/CMakeFiles/sim_terminal.dir/src/bus_connections.cpp.o
 .PHONY : src/bus_connections.cpp.o
 
 src/bus_connections.i: src/bus_connections.cpp.i
@@ -188,7 +188,7 @@ src/bus_connections.i: src/bus_connections.cpp.i
 
 # target to preprocess a source file
 src/bus_connections.cpp.i:
-	cd /home/jstar/Desktop/github-nos3/sims/build && $(MAKE) $(MAKESILENT) -f sim_terminal/CMakeFiles/sim_terminal.dir/build.make sim_terminal/CMakeFiles/sim_terminal.dir/src/bus_connections.cpp.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/sims/build && $(MAKE) $(MAKESILENT) -f sim_terminal/CMakeFiles/sim_terminal.dir/build.make sim_terminal/CMakeFiles/sim_terminal.dir/src/bus_connections.cpp.i
 .PHONY : src/bus_connections.cpp.i
 
 src/bus_connections.s: src/bus_connections.cpp.s
@@ -196,7 +196,7 @@ src/bus_connections.s: src/bus_connections.cpp.s
 
 # target to generate assembly for a file
 src/bus_connections.cpp.s:
-	cd /home/jstar/Desktop/github-nos3/sims/build && $(MAKE) $(MAKESILENT) -f sim_terminal/CMakeFiles/sim_terminal.dir/build.make sim_terminal/CMakeFiles/sim_terminal.dir/src/bus_connections.cpp.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/sims/build && $(MAKE) $(MAKESILENT) -f sim_terminal/CMakeFiles/sim_terminal.dir/build.make sim_terminal/CMakeFiles/sim_terminal.dir/src/bus_connections.cpp.s
 .PHONY : src/bus_connections.cpp.s
 
 src/simulator_terminal.o: src/simulator_terminal.cpp.o
@@ -204,7 +204,7 @@ src/simulator_terminal.o: src/simulator_terminal.cpp.o
 
 # target to build an object file
 src/simulator_terminal.cpp.o:
-	cd /home/jstar/Desktop/github-nos3/sims/build && $(MAKE) $(MAKESILENT) -f sim_terminal/CMakeFiles/sim_terminal.dir/build.make sim_terminal/CMakeFiles/sim_terminal.dir/src/simulator_terminal.cpp.o
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/sims/build && $(MAKE) $(MAKESILENT) -f sim_terminal/CMakeFiles/sim_terminal.dir/build.make sim_terminal/CMakeFiles/sim_terminal.dir/src/simulator_terminal.cpp.o
 .PHONY : src/simulator_terminal.cpp.o
 
 src/simulator_terminal.i: src/simulator_terminal.cpp.i
@@ -212,7 +212,7 @@ src/simulator_terminal.i: src/simulator_terminal.cpp.i
 
 # target to preprocess a source file
 src/simulator_terminal.cpp.i:
-	cd /home/jstar/Desktop/github-nos3/sims/build && $(MAKE) $(MAKESILENT) -f sim_terminal/CMakeFiles/sim_terminal.dir/build.make sim_terminal/CMakeFiles/sim_terminal.dir/src/simulator_terminal.cpp.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/sims/build && $(MAKE) $(MAKESILENT) -f sim_terminal/CMakeFiles/sim_terminal.dir/build.make sim_terminal/CMakeFiles/sim_terminal.dir/src/simulator_terminal.cpp.i
 .PHONY : src/simulator_terminal.cpp.i
 
 src/simulator_terminal.s: src/simulator_terminal.cpp.s
@@ -220,7 +220,7 @@ src/simulator_terminal.s: src/simulator_terminal.cpp.s
 
 # target to generate assembly for a file
 src/simulator_terminal.cpp.s:
-	cd /home/jstar/Desktop/github-nos3/sims/build && $(MAKE) $(MAKESILENT) -f sim_terminal/CMakeFiles/sim_terminal.dir/build.make sim_terminal/CMakeFiles/sim_terminal.dir/src/simulator_terminal.cpp.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/sims/build && $(MAKE) $(MAKESILENT) -f sim_terminal/CMakeFiles/sim_terminal.dir/build.make sim_terminal/CMakeFiles/sim_terminal.dir/src/simulator_terminal.cpp.s
 .PHONY : src/simulator_terminal.cpp.s
 
 # Help Target
@@ -253,6 +253,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/jstar/Desktop/github-nos3/sims/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/sims/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

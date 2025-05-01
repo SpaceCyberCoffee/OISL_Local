@@ -613,7 +613,7 @@ void NOVATEL_OEM615_ParseBestXYZA(NOVATEL_OEM615_Device_Data_tlm_t* device_data_
     #endif
 
     double ECI_vector [] = {device_data_struct->ECIX, device_data_struct->ECIY, device_data_struct->ECIZ};
-    char *filename = "/home/jstar/Desktop/github-nos3/components/oisl/fsw/src/ECI_position.txt";
+    char *filename = "/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/components/oisl/fsw/src/ECI_position.txt"; // TODO: HARDCODED!
 
     // open the file for writing
     FILE *fp = fopen(filename, "w");

@@ -1,4 +1,4 @@
 Name: nlohmann_json
 Description: JSON for Modern C++
 Version: 3.11.2
-Cflags: -I/home/jstar/Desktop/github-nos3/fsw/build/exe/include
+Cflags: -I/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/exe/include

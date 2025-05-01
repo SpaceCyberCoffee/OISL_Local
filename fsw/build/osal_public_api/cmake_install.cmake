@@ -1,8 +1,8 @@
-# Install script for directory: /home/jstar/Desktop/github-nos3/fsw/osal
+# Install script for directory: /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/osal
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/jstar/Desktop/github-nos3/fsw/build/exe")
+  set(CMAKE_INSTALL_PREFIX "/mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/exe")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 

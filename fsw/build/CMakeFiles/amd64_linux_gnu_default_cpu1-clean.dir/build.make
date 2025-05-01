@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/jstar/Desktop/github-nos3/fsw/cfe
+CMAKE_SOURCE_DIR = /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/cfe
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/jstar/Desktop/github-nos3/fsw/build
+CMAKE_BINARY_DIR = /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build
 
 # Utility rule file for amd64_linux_gnu_default_cpu1-clean.
 
@@ -67,7 +67,7 @@ include CMakeFiles/amd64_linux_gnu_default_cpu1-clean.dir/compiler_depend.make
 include CMakeFiles/amd64_linux_gnu_default_cpu1-clean.dir/progress.make
 
 CMakeFiles/amd64_linux_gnu_default_cpu1-clean:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) clean
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) clean
 
 amd64_linux_gnu_default_cpu1-clean: CMakeFiles/amd64_linux_gnu_default_cpu1-clean
 amd64_linux_gnu_default_cpu1-clean: CMakeFiles/amd64_linux_gnu_default_cpu1-clean.dir/build.make
@@ -82,6 +82,6 @@ CMakeFiles/amd64_linux_gnu_default_cpu1-clean.dir/clean:
 .PHONY : CMakeFiles/amd64_linux_gnu_default_cpu1-clean.dir/clean
 
 CMakeFiles/amd64_linux_gnu_default_cpu1-clean.dir/depend:
-	cd /home/jstar/Desktop/github-nos3/fsw/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/jstar/Desktop/github-nos3/fsw/cfe /home/jstar/Desktop/github-nos3/fsw/cfe /home/jstar/Desktop/github-nos3/fsw/build /home/jstar/Desktop/github-nos3/fsw/build /home/jstar/Desktop/github-nos3/fsw/build/CMakeFiles/amd64_linux_gnu_default_cpu1-clean.dir/DependInfo.cmake --color=$(COLOR)
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/cfe /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/cfe /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/CMakeFiles/amd64_linux_gnu_default_cpu1-clean.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/amd64_linux_gnu_default_cpu1-clean.dir/depend
 

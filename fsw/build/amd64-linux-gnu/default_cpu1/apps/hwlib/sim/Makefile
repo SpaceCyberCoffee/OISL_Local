@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/jstar/Desktop/github-nos3/fsw/cfe
+CMAKE_SOURCE_DIR = /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/cfe
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1
+CMAKE_BINARY_DIR = /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -142,14 +142,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(CMAKE_COMMAND) -E cmake_progress_start /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/apps/hwlib/sim//CMakeFiles/progress.marks
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/hwlib/sim/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles 0
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(CMAKE_COMMAND) -E cmake_progress_start /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/apps/hwlib/sim//CMakeFiles/progress.marks
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/hwlib/sim/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/hwlib/sim/clean
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/hwlib/sim/clean
 .PHONY : clean
 
 # The main clean target
@@ -158,22 +158,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/hwlib/sim/preinstall
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/hwlib/sim/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/hwlib/sim/preinstall
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/hwlib/sim/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 apps/hwlib/sim/CMakeFiles/noslink.dir/rule:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/hwlib/sim/CMakeFiles/noslink.dir/rule
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/hwlib/sim/CMakeFiles/noslink.dir/rule
 .PHONY : apps/hwlib/sim/CMakeFiles/noslink.dir/rule
 
 # Convenience name for target.
@@ -182,7 +182,7 @@ noslink: apps/hwlib/sim/CMakeFiles/noslink.dir/rule
 
 # fast build rule for target.
 noslink/fast:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/hwlib/sim/CMakeFiles/noslink.dir/build.make apps/hwlib/sim/CMakeFiles/noslink.dir/build
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/hwlib/sim/CMakeFiles/noslink.dir/build.make apps/hwlib/sim/CMakeFiles/noslink.dir/build
 .PHONY : noslink/fast
 
 src/libcan.o: src/libcan.c.o
@@ -190,7 +190,7 @@ src/libcan.o: src/libcan.c.o
 
 # target to build an object file
 src/libcan.c.o:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/hwlib/sim/CMakeFiles/noslink.dir/build.make apps/hwlib/sim/CMakeFiles/noslink.dir/src/libcan.c.o
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/hwlib/sim/CMakeFiles/noslink.dir/build.make apps/hwlib/sim/CMakeFiles/noslink.dir/src/libcan.c.o
 .PHONY : src/libcan.c.o
 
 src/libcan.i: src/libcan.c.i
@@ -198,7 +198,7 @@ src/libcan.i: src/libcan.c.i
 
 # target to preprocess a source file
 src/libcan.c.i:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/hwlib/sim/CMakeFiles/noslink.dir/build.make apps/hwlib/sim/CMakeFiles/noslink.dir/src/libcan.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/hwlib/sim/CMakeFiles/noslink.dir/build.make apps/hwlib/sim/CMakeFiles/noslink.dir/src/libcan.c.i
 .PHONY : src/libcan.c.i
 
 src/libcan.s: src/libcan.c.s
@@ -206,7 +206,7 @@ src/libcan.s: src/libcan.c.s
 
 # target to generate assembly for a file
 src/libcan.c.s:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/hwlib/sim/CMakeFiles/noslink.dir/build.make apps/hwlib/sim/CMakeFiles/noslink.dir/src/libcan.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/hwlib/sim/CMakeFiles/noslink.dir/build.make apps/hwlib/sim/CMakeFiles/noslink.dir/src/libcan.c.s
 .PHONY : src/libcan.c.s
 
 src/libgpio.o: src/libgpio.c.o
@@ -214,7 +214,7 @@ src/libgpio.o: src/libgpio.c.o
 
 # target to build an object file
 src/libgpio.c.o:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/hwlib/sim/CMakeFiles/noslink.dir/build.make apps/hwlib/sim/CMakeFiles/noslink.dir/src/libgpio.c.o
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/hwlib/sim/CMakeFiles/noslink.dir/build.make apps/hwlib/sim/CMakeFiles/noslink.dir/src/libgpio.c.o
 .PHONY : src/libgpio.c.o
 
 src/libgpio.i: src/libgpio.c.i
@@ -222,7 +222,7 @@ src/libgpio.i: src/libgpio.c.i
 
 # target to preprocess a source file
 src/libgpio.c.i:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/hwlib/sim/CMakeFiles/noslink.dir/build.make apps/hwlib/sim/CMakeFiles/noslink.dir/src/libgpio.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/hwlib/sim/CMakeFiles/noslink.dir/build.make apps/hwlib/sim/CMakeFiles/noslink.dir/src/libgpio.c.i
 .PHONY : src/libgpio.c.i
 
 src/libgpio.s: src/libgpio.c.s
@@ -230,7 +230,7 @@ src/libgpio.s: src/libgpio.c.s
 
 # target to generate assembly for a file
 src/libgpio.c.s:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/hwlib/sim/CMakeFiles/noslink.dir/build.make apps/hwlib/sim/CMakeFiles/noslink.dir/src/libgpio.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/hwlib/sim/CMakeFiles/noslink.dir/build.make apps/hwlib/sim/CMakeFiles/noslink.dir/src/libgpio.c.s
 .PHONY : src/libgpio.c.s
 
 src/libi2c.o: src/libi2c.c.o
@@ -238,7 +238,7 @@ src/libi2c.o: src/libi2c.c.o
 
 # target to build an object file
 src/libi2c.c.o:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/hwlib/sim/CMakeFiles/noslink.dir/build.make apps/hwlib/sim/CMakeFiles/noslink.dir/src/libi2c.c.o
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/hwlib/sim/CMakeFiles/noslink.dir/build.make apps/hwlib/sim/CMakeFiles/noslink.dir/src/libi2c.c.o
 .PHONY : src/libi2c.c.o
 
 src/libi2c.i: src/libi2c.c.i
@@ -246,7 +246,7 @@ src/libi2c.i: src/libi2c.c.i
 
 # target to preprocess a source file
 src/libi2c.c.i:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/hwlib/sim/CMakeFiles/noslink.dir/build.make apps/hwlib/sim/CMakeFiles/noslink.dir/src/libi2c.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/hwlib/sim/CMakeFiles/noslink.dir/build.make apps/hwlib/sim/CMakeFiles/noslink.dir/src/libi2c.c.i
 .PHONY : src/libi2c.c.i
 
 src/libi2c.s: src/libi2c.c.s
@@ -254,7 +254,7 @@ src/libi2c.s: src/libi2c.c.s
 
 # target to generate assembly for a file
 src/libi2c.c.s:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/hwlib/sim/CMakeFiles/noslink.dir/build.make apps/hwlib/sim/CMakeFiles/noslink.dir/src/libi2c.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/hwlib/sim/CMakeFiles/noslink.dir/build.make apps/hwlib/sim/CMakeFiles/noslink.dir/src/libi2c.c.s
 .PHONY : src/libi2c.c.s
 
 src/libmem.o: src/libmem.c.o
@@ -262,7 +262,7 @@ src/libmem.o: src/libmem.c.o
 
 # target to build an object file
 src/libmem.c.o:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/hwlib/sim/CMakeFiles/noslink.dir/build.make apps/hwlib/sim/CMakeFiles/noslink.dir/src/libmem.c.o
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/hwlib/sim/CMakeFiles/noslink.dir/build.make apps/hwlib/sim/CMakeFiles/noslink.dir/src/libmem.c.o
 .PHONY : src/libmem.c.o
 
 src/libmem.i: src/libmem.c.i
@@ -270,7 +270,7 @@ src/libmem.i: src/libmem.c.i
 
 # target to preprocess a source file
 src/libmem.c.i:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/hwlib/sim/CMakeFiles/noslink.dir/build.make apps/hwlib/sim/CMakeFiles/noslink.dir/src/libmem.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/hwlib/sim/CMakeFiles/noslink.dir/build.make apps/hwlib/sim/CMakeFiles/noslink.dir/src/libmem.c.i
 .PHONY : src/libmem.c.i
 
 src/libmem.s: src/libmem.c.s
@@ -278,7 +278,7 @@ src/libmem.s: src/libmem.c.s
 
 # target to generate assembly for a file
 src/libmem.c.s:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/hwlib/sim/CMakeFiles/noslink.dir/build.make apps/hwlib/sim/CMakeFiles/noslink.dir/src/libmem.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/hwlib/sim/CMakeFiles/noslink.dir/build.make apps/hwlib/sim/CMakeFiles/noslink.dir/src/libmem.c.s
 .PHONY : src/libmem.c.s
 
 src/libsocket.o: src/libsocket.c.o
@@ -286,7 +286,7 @@ src/libsocket.o: src/libsocket.c.o
 
 # target to build an object file
 src/libsocket.c.o:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/hwlib/sim/CMakeFiles/noslink.dir/build.make apps/hwlib/sim/CMakeFiles/noslink.dir/src/libsocket.c.o
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/hwlib/sim/CMakeFiles/noslink.dir/build.make apps/hwlib/sim/CMakeFiles/noslink.dir/src/libsocket.c.o
 .PHONY : src/libsocket.c.o
 
 src/libsocket.i: src/libsocket.c.i
@@ -294,7 +294,7 @@ src/libsocket.i: src/libsocket.c.i
 
 # target to preprocess a source file
 src/libsocket.c.i:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/hwlib/sim/CMakeFiles/noslink.dir/build.make apps/hwlib/sim/CMakeFiles/noslink.dir/src/libsocket.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/hwlib/sim/CMakeFiles/noslink.dir/build.make apps/hwlib/sim/CMakeFiles/noslink.dir/src/libsocket.c.i
 .PHONY : src/libsocket.c.i
 
 src/libsocket.s: src/libsocket.c.s
@@ -302,7 +302,7 @@ src/libsocket.s: src/libsocket.c.s
 
 # target to generate assembly for a file
 src/libsocket.c.s:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/hwlib/sim/CMakeFiles/noslink.dir/build.make apps/hwlib/sim/CMakeFiles/noslink.dir/src/libsocket.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/hwlib/sim/CMakeFiles/noslink.dir/build.make apps/hwlib/sim/CMakeFiles/noslink.dir/src/libsocket.c.s
 .PHONY : src/libsocket.c.s
 
 src/libspi.o: src/libspi.c.o
@@ -310,7 +310,7 @@ src/libspi.o: src/libspi.c.o
 
 # target to build an object file
 src/libspi.c.o:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/hwlib/sim/CMakeFiles/noslink.dir/build.make apps/hwlib/sim/CMakeFiles/noslink.dir/src/libspi.c.o
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/hwlib/sim/CMakeFiles/noslink.dir/build.make apps/hwlib/sim/CMakeFiles/noslink.dir/src/libspi.c.o
 .PHONY : src/libspi.c.o
 
 src/libspi.i: src/libspi.c.i
@@ -318,7 +318,7 @@ src/libspi.i: src/libspi.c.i
 
 # target to preprocess a source file
 src/libspi.c.i:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/hwlib/sim/CMakeFiles/noslink.dir/build.make apps/hwlib/sim/CMakeFiles/noslink.dir/src/libspi.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/hwlib/sim/CMakeFiles/noslink.dir/build.make apps/hwlib/sim/CMakeFiles/noslink.dir/src/libspi.c.i
 .PHONY : src/libspi.c.i
 
 src/libspi.s: src/libspi.c.s
@@ -326,7 +326,7 @@ src/libspi.s: src/libspi.c.s
 
 # target to generate assembly for a file
 src/libspi.c.s:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/hwlib/sim/CMakeFiles/noslink.dir/build.make apps/hwlib/sim/CMakeFiles/noslink.dir/src/libspi.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/hwlib/sim/CMakeFiles/noslink.dir/build.make apps/hwlib/sim/CMakeFiles/noslink.dir/src/libspi.c.s
 .PHONY : src/libspi.c.s
 
 src/libtrq.o: src/libtrq.c.o
@@ -334,7 +334,7 @@ src/libtrq.o: src/libtrq.c.o
 
 # target to build an object file
 src/libtrq.c.o:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/hwlib/sim/CMakeFiles/noslink.dir/build.make apps/hwlib/sim/CMakeFiles/noslink.dir/src/libtrq.c.o
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/hwlib/sim/CMakeFiles/noslink.dir/build.make apps/hwlib/sim/CMakeFiles/noslink.dir/src/libtrq.c.o
 .PHONY : src/libtrq.c.o
 
 src/libtrq.i: src/libtrq.c.i
@@ -342,7 +342,7 @@ src/libtrq.i: src/libtrq.c.i
 
 # target to preprocess a source file
 src/libtrq.c.i:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/hwlib/sim/CMakeFiles/noslink.dir/build.make apps/hwlib/sim/CMakeFiles/noslink.dir/src/libtrq.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/hwlib/sim/CMakeFiles/noslink.dir/build.make apps/hwlib/sim/CMakeFiles/noslink.dir/src/libtrq.c.i
 .PHONY : src/libtrq.c.i
 
 src/libtrq.s: src/libtrq.c.s
@@ -350,7 +350,7 @@ src/libtrq.s: src/libtrq.c.s
 
 # target to generate assembly for a file
 src/libtrq.c.s:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/hwlib/sim/CMakeFiles/noslink.dir/build.make apps/hwlib/sim/CMakeFiles/noslink.dir/src/libtrq.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/hwlib/sim/CMakeFiles/noslink.dir/build.make apps/hwlib/sim/CMakeFiles/noslink.dir/src/libtrq.c.s
 .PHONY : src/libtrq.c.s
 
 src/libuart.o: src/libuart.c.o
@@ -358,7 +358,7 @@ src/libuart.o: src/libuart.c.o
 
 # target to build an object file
 src/libuart.c.o:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/hwlib/sim/CMakeFiles/noslink.dir/build.make apps/hwlib/sim/CMakeFiles/noslink.dir/src/libuart.c.o
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/hwlib/sim/CMakeFiles/noslink.dir/build.make apps/hwlib/sim/CMakeFiles/noslink.dir/src/libuart.c.o
 .PHONY : src/libuart.c.o
 
 src/libuart.i: src/libuart.c.i
@@ -366,7 +366,7 @@ src/libuart.i: src/libuart.c.i
 
 # target to preprocess a source file
 src/libuart.c.i:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/hwlib/sim/CMakeFiles/noslink.dir/build.make apps/hwlib/sim/CMakeFiles/noslink.dir/src/libuart.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/hwlib/sim/CMakeFiles/noslink.dir/build.make apps/hwlib/sim/CMakeFiles/noslink.dir/src/libuart.c.i
 .PHONY : src/libuart.c.i
 
 src/libuart.s: src/libuart.c.s
@@ -374,7 +374,7 @@ src/libuart.s: src/libuart.c.s
 
 # target to generate assembly for a file
 src/libuart.c.s:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/hwlib/sim/CMakeFiles/noslink.dir/build.make apps/hwlib/sim/CMakeFiles/noslink.dir/src/libuart.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/hwlib/sim/CMakeFiles/noslink.dir/build.make apps/hwlib/sim/CMakeFiles/noslink.dir/src/libuart.c.s
 .PHONY : src/libuart.c.s
 
 src/nos_link.o: src/nos_link.c.o
@@ -382,7 +382,7 @@ src/nos_link.o: src/nos_link.c.o
 
 # target to build an object file
 src/nos_link.c.o:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/hwlib/sim/CMakeFiles/noslink.dir/build.make apps/hwlib/sim/CMakeFiles/noslink.dir/src/nos_link.c.o
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/hwlib/sim/CMakeFiles/noslink.dir/build.make apps/hwlib/sim/CMakeFiles/noslink.dir/src/nos_link.c.o
 .PHONY : src/nos_link.c.o
 
 src/nos_link.i: src/nos_link.c.i
@@ -390,7 +390,7 @@ src/nos_link.i: src/nos_link.c.i
 
 # target to preprocess a source file
 src/nos_link.c.i:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/hwlib/sim/CMakeFiles/noslink.dir/build.make apps/hwlib/sim/CMakeFiles/noslink.dir/src/nos_link.c.i
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/hwlib/sim/CMakeFiles/noslink.dir/build.make apps/hwlib/sim/CMakeFiles/noslink.dir/src/nos_link.c.i
 .PHONY : src/nos_link.c.i
 
 src/nos_link.s: src/nos_link.c.s
@@ -398,7 +398,7 @@ src/nos_link.s: src/nos_link.c.s
 
 # target to generate assembly for a file
 src/nos_link.c.s:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/hwlib/sim/CMakeFiles/noslink.dir/build.make apps/hwlib/sim/CMakeFiles/noslink.dir/src/nos_link.c.s
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(MAKE) $(MAKESILENT) -f apps/hwlib/sim/CMakeFiles/noslink.dir/build.make apps/hwlib/sim/CMakeFiles/noslink.dir/src/nos_link.c.s
 .PHONY : src/nos_link.c.s
 
 # Help Target
@@ -453,6 +453,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/jstar/Desktop/github-nos3/fsw/build/amd64-linux-gnu/default_cpu1 && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /mnt/extras/SSD/NOS3_RBT/nos3_local_OISL/fsw/build/amd64-linux-gnu/default_cpu1 && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 
