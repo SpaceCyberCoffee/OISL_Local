@@ -6,7 +6,8 @@
 .history
 .pyc
 .exe
-
+.log
+.iso
 
 #
 # Build Files
